@@ -1,0 +1,4 @@
+## Security
+.env
+venv/
+digests/
