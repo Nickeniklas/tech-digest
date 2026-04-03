@@ -15,11 +15,9 @@ from dotenv import load_dotenv
 # Config
 # ---------------------------------------------------------------------------
 
-MODEL      = "claude-sonnet-4-6"
-FROM_EMAIL = "savonheimoniklas@gmail.com"
-TO_EMAIL   = "savonheimoniklas@gmail.com"
-SMTP_HOST  = "smtp.gmail.com"
-SMTP_PORT  = 587
+MODEL     = "claude-sonnet-4-6"
+SMTP_HOST = "smtp.gmail.com"
+SMTP_PORT = 587
 
 MAX_CONTEXT_CHARS = 20_000
 
@@ -348,11 +346,13 @@ def save_files(date_str: str, md: str, html: str) -> tuple[Path, Path]:
 
 
 def send_email(date_str: str, full_date: str, html: str, md_path: Path, app_password: str) -> None:
-    subject = f"🗞️ Daily Tech Digest — {full_date}"
+    from_email = os.environ["MAIL_FROM"]
+    to_email   = os.environ["MAIL_TO"]
+    subject    = f"🗞️ Daily Tech Digest — {full_date}"
 
     msg = MIMEMultipart("mixed")
-    msg["From"]    = FROM_EMAIL
-    msg["To"]      = TO_EMAIL
+    msg["From"]    = from_email
+    msg["To"]      = to_email
     msg["Subject"] = subject
 
     msg.attach(MIMEText(html, "html", "utf-8"))
@@ -368,8 +368,8 @@ def send_email(date_str: str, full_date: str, html: str, md_path: Path, app_pass
     with smtplib.SMTP(SMTP_HOST, SMTP_PORT) as smtp:
         smtp.ehlo()
         smtp.starttls()
-        smtp.login(FROM_EMAIL, app_password)
-        smtp.sendmail(FROM_EMAIL, TO_EMAIL, msg.as_string())
+        smtp.login(from_email, app_password)
+        smtp.sendmail(from_email, to_email, msg.as_string())
 
 
 # ---------------------------------------------------------------------------
@@ -382,6 +382,8 @@ def main() -> None:
     app_password = os.environ.get("GMAIL_APP_PASSWORD")
     if not app_password:
         raise EnvironmentError("GMAIL_APP_PASSWORD not set in .env")
+    if not os.environ.get("MAIL_FROM") or not os.environ.get("MAIL_TO"):
+        raise EnvironmentError("MAIL_FROM and MAIL_TO must be set in .env")
 
     today     = datetime.date.today()
     date_str  = today.strftime("%Y-%m-%d")

@@ -33,6 +33,8 @@ Create a `.env` file in the project root:
 ```
 ANTHROPIC_API_KEY=sk-ant-...
 GMAIL_APP_PASSWORD=your16charpassword
+MAIL_FROM=you@gmail.com
+MAIL_TO=you@gmail.com
 ```
 
 ## Usage

@@ -33,9 +33,8 @@ cost constraint, not a quality decision.
 
 ## Email config
 - SMTP: smtp.gmail.com, port 587
-- From: savonheimoniklas@gmail.com
-- To: savonheimoniklas@gmail.com
-- App password: stored in .env as GMAIL_APP_PASSWORD
+- All credentials and addresses stored in `.env` — never hardcode them
+- Required `.env` keys: `GMAIL_APP_PASSWORD`, `MAIL_FROM`, `MAIL_TO`, `ANTHROPIC_API_KEY`
 
 ## Commands
 
