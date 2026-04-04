@@ -10,10 +10,17 @@ import anthropic
 import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
+import logging
 
 # ---------------------------------------------------------------------------
 # Config
 # ---------------------------------------------------------------------------
+
+logging.basicConfig(
+    filename="digest.log",
+    level=logging.INFO,
+    format="%(asctime)s %(message)s"
+)
 
 MODEL     = "claude-sonnet-4-6"
 SMTP_HOST = "smtp.gmail.com"
@@ -179,6 +186,7 @@ def fetch_page(url: str) -> str:
         return r.text
     except Exception as e:
         print(f"  [warn] Could not fetch {url}: {e}")
+        logging.info(f"  [warn] Could not fetch {url}: {e}")
         return ""
 
 
@@ -299,23 +307,25 @@ def gather_context() -> str:
 # ---------------------------------------------------------------------------
 
 def generate_digest(date_str: str, context: str) -> str:
-    client = anthropic.Anthropic()
-    response = client.messages.create(
-        model=MODEL,
-        max_tokens=8000,
-        system=SYSTEM_PROMPT,
-        messages=[{
-            "role": "user",
-            "content": (
-                f"Today's date is {date_str}.\n\n"
-                f"Here are today's headlines from key tech sources:\n\n"
-                f"{context}\n\n"
-                "Generate the digest."
-            ),
-        }],
-    )
-    return response.content[0].text
-
+    client = anthropic.Anthropic(timeout=120)
+    try:
+        response = client.messages.create(
+            model=MODEL,
+            max_tokens=8000,
+            system=SYSTEM_PROMPT,
+            messages=[{
+                "role": "user",
+                "content": (
+                    f"Today's date is {date_str}.\n\n"
+                    f"Here are today's headlines from key tech sources:\n\n"
+                    f"{context}\n\n"
+                    "Generate the digest."
+                ),
+            }],
+        )
+        return response.content[0].text
+    except Exception as e:
+        raise RuntimeError(f"Anthropic API call failed: {e}")
 
 # ---------------------------------------------------------------------------
 # Output handling
@@ -390,11 +400,15 @@ def main() -> None:
     full_date = today.strftime("%A, %B %d %Y").replace(" 0", " ")
 
     print(f"Gathering headlines for {date_str}...")
+    logging.info(f"Starting digest generation for {date_str}")
     context = gather_context()
     print(f"  Context size: {len(context):,} chars")
+    logging.info(f"Context gathered with {len(context):,} chars")
 
     print("Generating digest...")
+    logging.info("Calling Anthropic API...")  # <-- if script hangs, log stops here
     raw = generate_digest(date_str, context)
+    logging.info("Anthropic API call completed")  # <-- confirms API didn't hang
 
     print("Parsing output...")
     md, html = parse_output(raw)
@@ -403,10 +417,13 @@ def main() -> None:
     md_path, _ = save_files(date_str, md, html)
     print(f"  → digests/tech-digest-{date_str}.md")
     print(f"  → digests/tech-digest-{date_str}.html")
+    logging.info(f"Files saved for {date_str}")
 
     print("Sending email...")
+    logging.info(f"Sending email for {date_str}")
     send_email(date_str, full_date, html, md_path, app_password)
     print(f"Done. Digest sent for {date_str}.")
+    logging.info(f"Digest generation completed for {date_str}")
 
 
 if __name__ == "__main__":
