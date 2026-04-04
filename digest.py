@@ -1,5 +1,6 @@
 import os
 import re
+import json
 import datetime
 import smtplib
 from email.mime.multipart import MIMEMultipart
@@ -10,6 +11,7 @@ import anthropic
 import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
+from jinja2 import Environment, FileSystemLoader
 import logging
 
 # ---------------------------------------------------------------------------
@@ -72,17 +74,28 @@ doesn't have to. You have opinions — use them.
 Dry wit is welcome, but never forced. If a story is boring, say so
 briefly and move on.
 
-### 3. Write each entry
+**On technical depth:**
+When a story is highly technical, open WHY IT MATTERS with one sentence
+naming what the technology is — no deep explanation. Then pivot immediately
+to real-world impact: why a non-specialist should care, what changes for
+them, what is cool about it. Assume the reader will click the link to learn
+more. Use your words to make them want to, not to replace the article.
+Keep entries tight. One sharp sentence beats three explanatory ones.
+
+### 3. Write each entry (Markdown format)
 
 Use this adaptive format:
 
 ## [Topic Title] — [🤖 AI | 🛠️ Dev Tools | 💾 Hardware]
 
 **WHAT HAPPENED**
-1–2 sentences. Facts only, no hype.
+1–2 sentences. Facts only, no hype. When you reference a product or tool
+that has a URL in the provided headlines, linkify it inline:
+[tool name](https://...). Only use URLs from the provided headlines.
 
 **WHY IT MATTERS**
-1–2 sentences. What does this change for the reader specifically?
+1–2 sentences. What does this change for the reader specifically? Same
+inline link rule applies.
 
 **[TRY IT / THE TAKE]**
 - If actionable (new API, tool, command): minimal working example or
@@ -99,9 +112,9 @@ Choosing between TRY IT and THE TAKE:
 - Deprecation or breaking change → THE TAKE
 - Tool update with a new command → TRY IT
 
-### 4. Assemble the document
+### 4. Assemble the Markdown document
 
-# 🗞️ Daily Tech Digest — {Full date, e.g. Thursday, April 3 2026}
+# Daily Tech Digest — {Full date, e.g. Thursday, April 3 2026}
 
 > {1 sentence teaser referencing today's lead story, written with a point of view}
 
@@ -125,54 +138,54 @@ How to pick the lead:
 - Biggest shift in a space readers follow closely
 - If two tie — pick the one with the better TRY IT example
 
-### 5. HTML email format
-
-Generate a self-contained HTML file, all styles inline (no <style> blocks).
-Max width 600px. Structure:
-
-**Header:** background #0f0f0f, white title (22px, weight 600), muted date
-line (11px uppercase), teaser in lighter gray below a subtle divider.
-
-**Today's pick strip:** background #1a1a2e, 3px solid #534AB7 left border.
-Small purple label "TODAY'S PICK" (11px uppercase, color #AFA9EC), editorial
-note below in muted text (#c8c8d8, 13px).
-
-**Content area:** white background, 0.5px border, rounded bottom corners
-(10px). Stories separated by 0.5px horizontal rules.
-
-**Each story entry:**
-- Category badge: pill shape, inline with emoji
-  - AI: background #EEEDFE, color #3C3489
-  - Dev Tools: background #EAF3DE, color #27500A
-  - Hardware: background #FEF3C7, color #92400E
-- Title: 17px, font-weight 600
-- Field labels (WHAT HAPPENED, WHY IT MATTERS, TRY IT, THE TAKE):
-  12px, uppercase, letter-spacing 0.04em, muted color, own line above text
-- Code blocks: background #1e1e1e, color #d4d4d4, font-family Menlo/
-  Consolas/monospace, padding 14px, border-radius 8px
-- Source link: ↗ Source name, color matches category badge
-
-**Footer:** centered, 12px, muted — "Daily digest for developers. AI,
-dev tools, and the occasional hardware drop that actually matters."
-
-### 6. Constraints
-- 150–250 words per topic entry
+### 5. Constraints
+- 150–250 words per topic entry (aim for the lower end — concise wins)
 - Readable in under 5 minutes
 - Never fabricate news — only report what is in the provided headlines
 - If a category has no meaningful news today, skip it
+- Do not over-explain technical concepts — one orienting sentence maximum,
+  then focus on real-world impact. The reader has the link.
 
-### 7. Output format — IMPORTANT
+### 6. Output format — IMPORTANT
 
-At the very end of your response, output BOTH the Markdown and HTML versions
-using these exact delimiters (nothing after the closing HTML delimiter):
+At the very end of your response, output BOTH a structured JSON block and
+the Markdown version using these exact delimiters:
+
+<!-- BEGIN_JSON -->
+{
+  "teaser": "1-sentence teaser with point of view",
+  "todays_pick": "1-2 sentence editorial note on the lead story",
+  "stories": [
+    {
+      "title": "Story title",
+      "category": "AI",
+      "is_lead": true,
+      "what_happened": "Facts. Can contain [text](url) inline links using URLs from the headlines.",
+      "why_it_matters": "Impact. Can contain [text](url) inline links.",
+      "action_type": "TRY IT",
+      "action_is_code": true,
+      "action_content": "pip install something\n# minimal example here",
+      "source_name": "Source Name",
+      "source_url": "https://..."
+    }
+  ]
+}
+<!-- END_JSON -->
 
 <!-- BEGIN_MARKDOWN -->
 {full markdown content}
 <!-- END_MARKDOWN -->
 
-<!-- BEGIN_HTML -->
-{full self-contained HTML content}
-<!-- END_HTML -->
+JSON field rules:
+- "category": must be exactly "AI", "Dev Tools", or "Hardware"
+- "is_lead": true for exactly one story (the first/lead story), false for others
+- "action_type": exactly "TRY IT" or "THE TAKE"
+- "action_is_code": true if action_content is a code snippet, false if it is prose
+- "action_content": for TRY IT code, plain code text only (no markdown fences);
+  for THE TAKE, plain prose
+- Inline links in what_happened/why_it_matters use standard Markdown syntax:
+  [text](url) — only URLs actually present in the provided headlines
+- Output valid JSON (no trailing commas, no comments inside the JSON block)
 """.strip()
 
 # ---------------------------------------------------------------------------
@@ -331,19 +344,37 @@ def generate_digest(date_str: str, context: str) -> str:
 # Output handling
 # ---------------------------------------------------------------------------
 
-def parse_output(text: str) -> tuple[str, str]:
+_MD_LINK_RE = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
+
+def _md_links_to_html(text: str) -> str:
+    """Convert markdown inline links [text](url) to HTML anchor tags."""
+    return _MD_LINK_RE.sub(
+        lambda m: f'<a href="{m.group(2)}" style="color:inherit;text-decoration:underline;">{m.group(1)}</a>',
+        text,
+    )
+
+
+def render_html(data: dict, full_date: str) -> str:
+    env = Environment(loader=FileSystemLoader(str(Path(__file__).parent)))
+    env.filters["md_links"] = _md_links_to_html
+    template = env.get_template("template.html")
+    return template.render(full_date=full_date, **data)
+
+
+def parse_output(text: str) -> tuple[dict, str]:
     os.makedirs("digests", exist_ok=True)
     Path("digests/raw_response.txt").write_text(text, encoding="utf-8")
 
+    json_match = re.search(r"<!-- BEGIN_JSON -->(.*?)<!-- END_JSON -->", text, re.DOTALL)
     md_match   = re.search(r"<!-- BEGIN_MARKDOWN -->(.*?)<!-- END_MARKDOWN -->", text, re.DOTALL)
-    html_match = re.search(r"<!-- BEGIN_HTML -->(.*?)<!-- END_HTML -->", text, re.DOTALL)
 
+    if not json_match:
+        raise ValueError("Could not find <!-- BEGIN_JSON --> block. See digests/raw_response.txt.")
     if not md_match:
         raise ValueError("Could not find <!-- BEGIN_MARKDOWN --> block. See digests/raw_response.txt.")
-    if not html_match:
-        raise ValueError("Could not find <!-- BEGIN_HTML --> block. See digests/raw_response.txt.")
 
-    return md_match.group(1).strip(), html_match.group(1).strip()
+    data = json.loads(json_match.group(1).strip())
+    return data, md_match.group(1).strip()
 
 
 def save_files(date_str: str, md: str, html: str) -> tuple[Path, Path]:
@@ -358,7 +389,7 @@ def save_files(date_str: str, md: str, html: str) -> tuple[Path, Path]:
 def send_email(date_str: str, full_date: str, html: str, md_path: Path, app_password: str) -> None:
     from_email = os.environ["MAIL_FROM"]
     to_email   = os.environ["MAIL_TO"]
-    subject    = f"🗞️ Daily Tech Digest — {full_date}"
+    subject    = f"Daily Tech Digest — {full_date}"
 
     msg = MIMEMultipart("mixed")
     msg["From"]    = from_email
@@ -411,7 +442,10 @@ def main() -> None:
     logging.info("Anthropic API call completed")  # <-- confirms API didn't hang
 
     print("Parsing output...")
-    md, html = parse_output(raw)
+    data, md = parse_output(raw)
+
+    print("Rendering HTML...")
+    html = render_html(data, full_date)
 
     print("Saving files...")
     md_path, _ = save_files(date_str, md, html)

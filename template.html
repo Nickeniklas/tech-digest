@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Tech Digest — {{ full_date }}</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f4f5f7;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;">
+
+<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f5f7;padding:24px 0;">
+  <tr>
+    <td align="center">
+      <table width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;">
+
+        <!-- ── HEADER ── -->
+        <tr>
+          <td style="background-color:#1a2332;border-radius:10px 10px 0 0;padding:32px 36px 24px;">
+            <p style="margin:0 0 10px;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#8899aa;">{{ full_date }}</p>
+            <h1 style="margin:0 0 16px;font-size:24px;font-weight:700;color:#ffffff;line-height:1.2;letter-spacing:-0.01em;">Daily Tech Digest</h1>
+            <hr style="border:none;border-top:1px solid #2e3d52;margin:0 0 16px;">
+            <p style="margin:0;font-size:14px;color:#b0bec5;line-height:1.55;font-style:italic;">{{ teaser }}</p>
+          </td>
+        </tr>
+
+        <!-- ── TODAY'S PICK STRIP ── -->
+        <tr>
+          <td style="background-color:#1e2d40;border-left:3px solid #534AB7;padding:16px 32px 16px 29px;">
+            <p style="margin:0 0 6px;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#AFA9EC;">Today's pick</p>
+            <p style="margin:0;font-size:13px;color:#c8c8d8;line-height:1.6;">{{ todays_pick }}</p>
+          </td>
+        </tr>
+
+        <!-- ── STORIES ── -->
+        <tr>
+          <td style="background-color:#ffffff;border:0.5px solid #e5e7eb;border-radius:0 0 10px 10px;padding:0;">
+
+            {% for story in stories %}
+
+            {% if story.category == "AI" %}
+              {% set badge_bg = "#EEEDFE" %}
+              {% set badge_color = "#3C3489" %}
+              {% set badge_emoji = "🤖" %}
+              {% set link_color = "#3C3489" %}
+            {% elif story.category == "Dev Tools" %}
+              {% set badge_bg = "#EAF3DE" %}
+              {% set badge_color = "#27500A" %}
+              {% set badge_emoji = "🛠️" %}
+              {% set link_color = "#27500A" %}
+            {% else %}
+              {% set badge_bg = "#FEF3C7" %}
+              {% set badge_color = "#92400E" %}
+              {% set badge_emoji = "💾" %}
+              {% set link_color = "#92400E" %}
+            {% endif %}
+
+            {% if not loop.first %}
+            <hr style="border:none;border-top:0.5px solid #e5e7eb;margin:0;">
+            {% endif %}
+
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:{% if story.is_lead %}28px 32px{% else %}24px 32px{% endif %};">
+
+                  <!-- badge -->
+                  <p style="margin:0 0 12px;">
+                    <span style="display:inline-block;background-color:{{ badge_bg }};color:{{ badge_color }};font-size:11px;font-weight:700;letter-spacing:0.04em;padding:4px 10px;border-radius:20px;">{{ badge_emoji }} {{ story.category }}</span>
+                  </p>
+
+                  <!-- title -->
+                  <h2 style="margin:0 0 18px;font-size:17px;font-weight:700;color:#1c1c1c;line-height:1.3;">{{ story.title }}</h2>
+
+                  <!-- what happened -->
+                  <p style="margin:0 0 4px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#b45309;">What happened</p>
+                  <p style="margin:0 0 16px;font-size:16px;color:#1c1c1c;line-height:1.6;">{{ story.what_happened | md_links | safe }}</p>
+
+                  <!-- why it matters -->
+                  <p style="margin:0 0 4px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#b45309;">Why it matters</p>
+                  <p style="margin:0 0 16px;font-size:16px;color:#1c1c1c;line-height:1.6;">{{ story.why_it_matters | md_links | safe }}</p>
+
+                  <!-- action section -->
+                  <p style="margin:0 0 8px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#b45309;">{{ story.action_type }}</p>
+                  {% if story.action_is_code %}
+                  <pre style="margin:0 0 16px;background-color:#1e1e1e;color:#d4d4d4;font-family:Menlo,Consolas,'Courier New',monospace;font-size:13px;line-height:1.6;padding:14px 16px;border-radius:8px;white-space:pre-wrap;word-break:break-all;">{{ story.action_content }}</pre>
+                  {% else %}
+                  <p style="margin:0 0 16px;font-size:16px;color:#1c1c1c;line-height:1.6;">{{ story.action_content | md_links | safe }}</p>
+                  {% endif %}
+
+                  <!-- source link -->
+                  <p style="margin:0;">
+                    <a href="{{ story.source_url }}" style="font-size:13px;color:{{ link_color }};text-decoration:none;font-weight:600;">↗ {{ story.source_name }}</a>
+                  </p>
+
+                </td>
+              </tr>
+            </table>
+
+            {% endfor %}
+
+          </td>
+        </tr>
+
+        <!-- ── FOOTER ── -->
+        <tr>
+          <td style="padding:20px 0 8px;" align="center">
+            <p style="margin:0;font-size:12px;color:#6b7280;line-height:1.6;">Daily digest for developers. AI, dev tools, and the occasional hardware drop that actually matters.</p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
