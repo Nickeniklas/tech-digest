@@ -22,6 +22,7 @@ Required packages:
 - requests
 - beautifulsoup4
 - python-dotenv
+- jinja2
 
 Never use `pip install` without the venv being active.
 
@@ -73,21 +74,32 @@ body and HTML are discarded. Total context is hard-capped at 20,000 characters.
 
 **2. Generate digest (`generate_digest`)**
 Single Claude API call — no agentic loop, no tools. The curated headline context
-is embedded in the user message. `SYSTEM_PROMPT` (defined at the top of
-`digest.py`) contains the full writing instructions: story selection criteria,
-voice/tone rules, entry format, HTML email spec, and output delimiters.
+is embedded in the user message. `SYSTEM_PROMPT` contains writing instructions:
+story selection criteria, voice/tone rules, accessibility guidance, and output
+delimiters. Claude does NOT generate HTML — only content.
 
-Claude outputs both formats in one response, wrapped in:
+Claude outputs structured JSON + Markdown, wrapped in:
 ```
+<!-- BEGIN_JSON -->..<!-- END_JSON -->
 <!-- BEGIN_MARKDOWN -->..<!-- END_MARKDOWN -->
-<!-- BEGIN_HTML -->..<!-- END_HTML -->
 ```
 
-**3. Save files (`save_files`)**
+The JSON schema has: `teaser`, `todays_pick`, and a `stories` array. Each story
+has `title`, `category`, `is_lead`, `what_happened`, `why_it_matters`,
+`action_type` (TRY IT / THE TAKE), `action_is_code`, `action_content`,
+`source_name`, `source_url`.
+
+**3. Render HTML (`render_html`)**
+Python renders `template.html` (Jinja2) with the parsed JSON. All email styling
+lives in `template.html` — update styles there, not in the prompt. A Jinja2
+filter `md_links` converts `[text](url)` markdown links in story text to HTML
+anchors.
+
+**4. Save files (`save_files`)**
 Writes to `digests/tech-digest-{YYYY-MM-DD}.md` and `.html`.
 Also saves `digests/raw_response.txt` on every run — useful for debugging
 if the delimiter parsing fails.
 
-**4. Send email (`send_email`)**
+**5. Send email (`send_email`)**
 smtplib/STARTTLS. HTML file as email body, `.md` file as plain text attachment.
-Subject: `🗞️ Daily Tech Digest — {Full date}`.
+Subject: `Daily Tech Digest — {Full date}`.
