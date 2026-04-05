@@ -24,11 +24,11 @@ logging.basicConfig(
     format="%(asctime)s %(message)s"
 )
 
-MODEL     = "claude-sonnet-4-6"
+MODEL     = "claude-haiku-4-5-20251001"
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 587
 
-MAX_CONTEXT_CHARS = 20_000
+MAX_CONTEXT_CHARS = 12_000
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; tech-digest-bot/1.0)"}
 
@@ -60,96 +60,41 @@ doesn't have to. You have opinions — use them.
 **Do:**
 - Have a clear take on each story
 - Talk directly to the reader using "you"
-- Distinguish between shipped features and announcements/demos — call it
-  out explicitly
+- Distinguish between shipped features and announcements/demos
 - Be concise and confident — one strong sentence beats three hedging ones
 
 **Never use:**
-- Hype words: groundbreaking, revolutionary, exciting, game-changer,
-  thrilled, proud
+- Hype words: groundbreaking, revolutionary, exciting, game-changer
 - Passive corporate tone: "it has been announced that..."
-- Filler transitions: "In conclusion...", "It's worth noting that..."
-- Unnecessary hedging: "This could potentially possibly..."
+- Filler transitions or unnecessary hedging
 
-Dry wit is welcome, but never forced. If a story is boring, say so
-briefly and move on.
+When a story is technical, open WHY IT MATTERS with one sentence naming
+the technology, then pivot to real-world impact. Keep entries tight.
 
-**On technical depth:**
-When a story is highly technical, open WHY IT MATTERS with one sentence
-naming what the technology is — no deep explanation. Then pivot immediately
-to real-world impact: why a non-specialist should care, what changes for
-them, what is cool about it. Assume the reader will click the link to learn
-more. Use your words to make them want to, not to replace the article.
-Keep entries tight. One sharp sentence beats three explanatory ones.
+### 3. Per-story fields
 
-### 3. Write each entry (Markdown format)
+For each story write:
+- **what_happened**: 1–2 sentences, facts only. Linkify tool/product names
+  inline when a URL is available: [name](url). Only use provided URLs.
+- **why_it_matters**: 1–2 sentences. What changes for the reader?
+- **action_content**: If TRY IT — minimal working code (max 15 lines, plain
+  text, no markdown fences). If THE TAKE — 1–2 sentences of editorial opinion.
 
-Use this adaptive format:
+Choosing action_type:
+- New API/tool/command with docs → TRY IT (action_is_code: true)
+- Research paper, demo, or deprecation → THE TAKE (action_is_code: false)
 
-## [Topic Title] — [🤖 AI | 🛠️ Dev Tools | 💾 Hardware]
+Lead story: most actionable today, or biggest shift in a space readers follow.
+If two tie — pick the one with the better TRY IT example.
 
-**WHAT HAPPENED**
-1–2 sentences. Facts only, no hype. When you reference a product or tool
-that has a URL in the provided headlines, linkify it inline:
-[tool name](https://...). Only use URLs from the provided headlines.
-
-**WHY IT MATTERS**
-1–2 sentences. What does this change for the reader specifically? Same
-inline link rule applies.
-
-**[TRY IT / THE TAKE]**
-- If actionable (new API, tool, command): minimal working example or
-  exact command. Max 15 lines.
-- If conceptual or not yet usable: 1–2 sentences of actual editorial
-  opinion. What should the reader watch for?
-
-↗ [Source name](URL)
-
-Choosing between TRY IT and THE TAKE:
-- New API with docs → TRY IT
-- Model release accessible today → TRY IT
-- Research paper or demo only → THE TAKE
-- Deprecation or breaking change → THE TAKE
-- Tool update with a new command → TRY IT
-
-### 4. Assemble the Markdown document
-
-# Daily Tech Digest — {Full date, e.g. Thursday, April 3 2026}
-
-> {1 sentence teaser referencing today's lead story, written with a point of view}
-
-**Today's pick:** {1–2 sentences on why you chose today's lead. What
-makes it worth stopping for? Be direct — this is your editorial voice.}
-
----
-
-{Lead story — same format, can run up to 300 words if warranted}
-
----
-
-{Remaining 2–4 stories}
-
----
-*Daily digest for developers. AI, dev tools, and the occasional hardware
-drop that actually matters.*
-
-How to pick the lead:
-- Most actionable today
-- Biggest shift in a space readers follow closely
-- If two tie — pick the one with the better TRY IT example
-
-### 5. Constraints
-- 150–250 words per topic entry (aim for the lower end — concise wins)
-- Readable in under 5 minutes
+### 4. Constraints
+- 100–200 words per story entry
 - Never fabricate news — only report what is in the provided headlines
 - If a category has no meaningful news today, skip it
-- Do not over-explain technical concepts — one orienting sentence maximum,
-  then focus on real-world impact. The reader has the link.
 
-### 6. Output format — IMPORTANT
+### 5. Output format — IMPORTANT
 
-At the very end of your response, output BOTH a structured JSON block and
-the Markdown version using these exact delimiters:
+Output ONLY a JSON block using these exact delimiters:
 
 <!-- BEGIN_JSON -->
 {
@@ -160,7 +105,7 @@ the Markdown version using these exact delimiters:
       "title": "Story title",
       "category": "AI",
       "is_lead": true,
-      "what_happened": "Facts. Can contain [text](url) inline links using URLs from the headlines.",
+      "what_happened": "Facts. Can contain [text](url) inline links.",
       "why_it_matters": "Impact. Can contain [text](url) inline links.",
       "action_type": "TRY IT",
       "action_is_code": true,
@@ -172,20 +117,14 @@ the Markdown version using these exact delimiters:
 }
 <!-- END_JSON -->
 
-<!-- BEGIN_MARKDOWN -->
-{full markdown content}
-<!-- END_MARKDOWN -->
-
 JSON field rules:
-- "category": must be exactly "AI", "Dev Tools", or "Hardware"
-- "is_lead": true for exactly one story (the first/lead story), false for others
+- "category": exactly "AI", "Dev Tools", or "Hardware"
+- "is_lead": true for exactly one story, false for others
 - "action_type": exactly "TRY IT" or "THE TAKE"
-- "action_is_code": true if action_content is a code snippet, false if it is prose
-- "action_content": for TRY IT code, plain code text only (no markdown fences);
-  for THE TAKE, plain prose
-- Inline links in what_happened/why_it_matters use standard Markdown syntax:
-  [text](url) — only URLs actually present in the provided headlines
-- Output valid JSON (no trailing commas, no comments inside the JSON block)
+- "action_is_code": true if action_content is code, false if prose
+- "action_content": plain text only (no markdown fences)
+- Inline links use standard Markdown: [text](url) — only from provided headlines
+- Output valid JSON (no trailing commas, no comments)
 """.strip()
 
 # ---------------------------------------------------------------------------
@@ -324,7 +263,7 @@ def generate_digest(date_str: str, context: str) -> str:
     try:
         response = client.messages.create(
             model=MODEL,
-            max_tokens=8000,
+            max_tokens=3500,
             system=SYSTEM_PROMPT,
             messages=[{
                 "role": "user",
@@ -354,6 +293,33 @@ def _md_links_to_html(text: str) -> str:
     )
 
 
+CATEGORY_EMOJI = {"AI": "🤖", "Dev Tools": "🛠️", "Hardware": "💾"}
+
+
+def render_markdown(data: dict, full_date: str) -> str:
+    lines = [
+        f"# Daily Tech Digest — {full_date}", "",
+        f"> {data['teaser']}", "",
+        f"**Today's pick:** {data['todays_pick']}", "",
+        "---",
+    ]
+    for story in data["stories"]:
+        emoji = CATEGORY_EMOJI.get(story["category"], "")
+        lines += [
+            f"## {story['title']} — {emoji} {story['category']}", "",
+            "**WHAT HAPPENED**", story["what_happened"], "",
+            "**WHY IT MATTERS**", story["why_it_matters"], "",
+            f"**{story['action_type']}**",
+        ]
+        if story["action_is_code"]:
+            lines.append(f"```bash\n{story['action_content']}\n```")
+        else:
+            lines.append(story["action_content"])
+        lines += ["", f"↗ [{story['source_name']}]({story['source_url']})", "", "---"]
+    lines.append("*Daily digest for developers. AI, dev tools, and the occasional hardware drop that actually matters.*")
+    return "\n".join(lines)
+
+
 def render_html(data: dict, full_date: str) -> str:
     env = Environment(loader=FileSystemLoader(str(Path(__file__).parent)))
     env.filters["md_links"] = _md_links_to_html
@@ -361,20 +327,15 @@ def render_html(data: dict, full_date: str) -> str:
     return template.render(full_date=full_date, **data)
 
 
-def parse_output(text: str) -> tuple[dict, str]:
+def parse_output(text: str) -> dict:
     os.makedirs("digests", exist_ok=True)
     Path("digests/raw_response.txt").write_text(text, encoding="utf-8")
 
     json_match = re.search(r"<!-- BEGIN_JSON -->(.*?)<!-- END_JSON -->", text, re.DOTALL)
-    md_match   = re.search(r"<!-- BEGIN_MARKDOWN -->(.*?)<!-- END_MARKDOWN -->", text, re.DOTALL)
-
     if not json_match:
         raise ValueError("Could not find <!-- BEGIN_JSON --> block. See digests/raw_response.txt.")
-    if not md_match:
-        raise ValueError("Could not find <!-- BEGIN_MARKDOWN --> block. See digests/raw_response.txt.")
 
-    data = json.loads(json_match.group(1).strip())
-    return data, md_match.group(1).strip()
+    return json.loads(json_match.group(1).strip())
 
 
 def save_files(date_str: str, md: str, html: str) -> tuple[Path, Path]:
@@ -442,15 +403,16 @@ def main() -> None:
     logging.info("Anthropic API call completed")  # <-- confirms API didn't hang
 
     print("Parsing output...")
-    data, md = parse_output(raw)
+    data = parse_output(raw)
 
-    print("Rendering HTML...")
+    print("Rendering...")
+    md   = render_markdown(data, full_date)
     html = render_html(data, full_date)
 
     print("Saving files...")
     md_path, _ = save_files(date_str, md, html)
-    print(f"  → digests/tech-digest-{date_str}.md")
-    print(f"  → digests/tech-digest-{date_str}.html")
+    print(f"  -> digests/tech-digest-{date_str}.md")
+    print(f"  -> digests/tech-digest-{date_str}.html")
     logging.info(f"Files saved for {date_str}")
 
     print("Sending email...")
