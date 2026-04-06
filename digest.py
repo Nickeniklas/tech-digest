@@ -391,6 +391,12 @@ def main() -> None:
     date_str  = today.strftime("%Y-%m-%d")
     full_date = today.strftime("%A, %B %d %Y").replace(" 0", " ")
 
+    # Skip if today's digest already exists (to avoid duplicates on reruns)
+    if Path(f"digests/tech-digest-{date_str}.html").exists():
+        print(f"Digest for {date_str} already sent, skipping.")
+        logging.info(f"Digest for {date_str} already exists, skipping.")
+        return
+
     print(f"Gathering headlines for {date_str}...")
     logging.info(f"Starting digest generation for {date_str}")
     context = gather_context()
