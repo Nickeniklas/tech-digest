@@ -12,7 +12,7 @@ Daily tech news digest for developers. Fetches the latest AI and dev tools news 
 ## Requirements
 
 - Python 3.10+
-- An [Anthropic API key](https://console.anthropic.com) (uses `claude-sonnet-4-6`)
+- An [Anthropic API key](https://console.anthropic.com) (uses `claude-haiku-4-5`)
 - A Gmail account with [App Password](https://myaccount.google.com/apppasswords) enabled (requires 2FA)
 
 ## Setup
@@ -65,7 +65,9 @@ To run automatically every morning, set up a Windows Task Scheduler task:
 
 ## Cost
 
-Roughly **$0.10–0.15 per run** using `claude-sonnet-4-6` + web search. At daily usage that's ~$3–4/month.
+Roughly **$0.01–0.03 per run** using `claude-haiku-4-5`. At daily usage that's <$1/month.
+
+This is achieved by: self-fetching headlines (no web_search tool), outputting JSON only (Markdown is derived in Python), a trimmed context cap of 12k chars, and using Haiku instead of Sonnet.
 
 ## Project structure
 
