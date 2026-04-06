@@ -3,3 +3,4 @@
 venv/
 digests/
 digest.log
+seen_topics.json
