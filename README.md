@@ -43,13 +43,14 @@ MAIL_TO=you@gmail.com
 python digest.py
 ```
 
-Output files are saved to `digests/`:
+Output files are saved to `digests/`, and a topic index is maintained in the project root:
 
 ```
 digests/
 ├── tech-digest-2026-04-02.md
 ├── tech-digest-2026-04-02.html
 └── raw_response.txt        # Claude's raw output, useful for debugging
+seen_topics.json            # Rolling 7-day index of covered topics (auto-managed)
 ```
 
 ## Scheduling (Windows)
@@ -67,13 +68,15 @@ To run automatically every morning, set up a Windows Task Scheduler task:
 
 Roughly **$0.01–0.03 per run** using `claude-haiku-4-5`. At daily usage that's <$1/month.
 
-This is achieved by: self-fetching headlines (no web_search tool), outputting JSON only (Markdown is derived in Python), a trimmed context cap of 12k chars, and using Haiku instead of Sonnet.
+This is achieved by: self-fetching headlines (no web_search tool), outputting JSON only (Markdown is derived in Python), a trimmed context cap of 12k chars, using Haiku instead of Sonnet, and a rolling 7-day topic index that keeps the seen-topics context small (~2k tokens max).
 
 ## Project structure
 
 ```
 tech-digest/
 ├── digest.py          # Main script
+├── template.html      # Jinja2 email template
+├── seen_topics.json   # Rolling 7-day topic index (auto-created, do not commit)
 ├── CLAUDE.md          # Claude Code instructions
 ├── requirements.txt
 ├── .env               # API keys (never commit this)

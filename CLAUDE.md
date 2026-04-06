@@ -58,7 +58,12 @@ Windows Task Scheduler — runs daily at 07:00
 
 `digest.py` is the single entry point with four stages:
 
-**1. Fetch & extract (`gather_context`)**
+**1. Load seen topics (`load_seen_topics`)**
+Reads `seen_topics.json` from the project root. Prunes entries older than 7 days
+in-memory. Returns a list of `{date, title, summary, source_urls}` dicts. Returns
+`[]` if the file is missing or malformed — never crashes on a fresh install.
+
+**1.5. Fetch & extract (`gather_context`)**
 Uses `requests` + `BeautifulSoup` to fetch these sources directly:
 - Hacker News front page — top 30 story titles + URLs
 - GitHub Trending — repo name, URL, description
@@ -74,9 +79,9 @@ body and HTML are discarded. Total context is hard-capped at 12,000 characters.
 
 **2. Generate digest (`generate_digest`)**
 Single Claude API call — no agentic loop, no tools. The curated headline context
-is embedded in the user message. `SYSTEM_PROMPT` contains writing instructions:
-story selection criteria, voice/tone rules, accessibility guidance, and output
-delimiters. Claude does NOT generate HTML — only content.
+is embedded in the user message, preceded by the seen-topics block (see stage 1.5).
+`SYSTEM_PROMPT` contains writing instructions: story selection criteria, voice/tone
+rules, deduplication rules, and output delimiters. Claude does NOT generate HTML — only content.
 
 Claude outputs only a structured JSON block, wrapped in:
 ```
@@ -103,6 +108,25 @@ Writes to `digests/tech-digest-{YYYY-MM-DD}.md` and `.html`.
 Also saves `digests/raw_response.txt` on every run — useful for debugging
 if the delimiter parsing fails.
 
-**6. Send email (`send_email`)**
+**6. Update seen topics (`save_seen_topics`)**
+Called after `save_files` succeeds — never on error paths. Extracts the first
+sentence of each story's `what_happened` as a summary, merges with prior entries,
+re-prunes to 7 days, and writes `seen_topics.json`. The file accumulates at most
+~35 entries (5 stories × 7 days).
+
+**7. Send email (`send_email`)**
 smtplib/STARTTLS. HTML file as email body, `.md` file as plain text attachment.
 Subject: `Daily Tech Digest — {Full date}`.
+
+## Topic deduplication
+
+`seen_topics.json` in the project root is a JSON array of covered stories. It is:
+- Auto-created on first successful run
+- Pruned to a 7-day rolling window on every run
+- Passed to Claude as context so it can skip exact repeats or flag follow-ups
+- **Do not commit** this file (add to `.gitignore` if not already present)
+
+Deduplication rules (enforced via `SYSTEM_PROMPT`):
+- Skip a topic only if it is the exact same story with no meaningful new development
+- Follow-ups (new release, major update, reversal, significant new data) are always covered
+- When revisiting, Claude prefixes `what_happened` with "Previously covered on {date}: ..."
