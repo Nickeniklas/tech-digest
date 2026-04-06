@@ -125,6 +125,13 @@ JSON field rules:
 - "action_content": plain text only (no markdown fences)
 - Inline links use standard Markdown: [text](url) — only from provided headlines
 - Output valid JSON (no trailing commas, no comments)
+
+### 6. Deduplication (applies when previously-covered topics are listed in the user message)
+- Skip any story that is the exact same topic with no meaningful new development since it was last covered.
+- "Related" is not sufficient to skip — only skip if there is genuinely nothing new to say.
+- Meaningful new development includes: a new model release, major update, reversal, significant new data, or a follow-up announcement.
+- If a follow-up is warranted, begin `what_happened` with: "Previously covered on {date}: [brief recap]. Since then, ..."
+- Prioritise stories NOT seen in the past week.
 """.strip()
 
 # ---------------------------------------------------------------------------
@@ -255,25 +262,77 @@ def gather_context() -> str:
 
 
 # ---------------------------------------------------------------------------
+# Seen-topics deduplication
+# ---------------------------------------------------------------------------
+
+SEEN_TOPICS_PATH = Path(__file__).parent / "seen_topics.json"
+
+
+def load_seen_topics() -> list[dict]:
+    """Load seen_topics.json and prune entries older than 7 days."""
+    if not SEEN_TOPICS_PATH.exists():
+        return []
+    try:
+        entries = json.loads(SEEN_TOPICS_PATH.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return []
+    cutoff = (datetime.date.today() - datetime.timedelta(days=7)).isoformat()
+    return [e for e in entries if e.get("date", "") >= cutoff]
+
+
+def format_seen_topics_context(seen: list[dict]) -> str:
+    """Format seen topics into a context block for the Claude user message."""
+    if not seen:
+        return ""
+    lines = ["Previously covered topics (last 7 days — skip unless there is meaningful new development):"]
+    for e in seen:
+        urls = ", ".join(e.get("source_urls", []))
+        lines.append(f"{e['date']} | {e['title']} | {e['summary']} | {urls}")
+    return "\n".join(lines)
+
+
+def extract_seen_entries(stories: list[dict], date_str: str) -> list[dict]:
+    """Build seen_topics entries from today's generated stories."""
+    entries = []
+    for story in stories:
+        raw_summary = story.get("what_happened", "")
+        first_sentence = raw_summary.split(".")[0].strip()
+        summary = first_sentence + "." if first_sentence else raw_summary[:120]
+        entries.append({
+            "date": date_str,
+            "title": story["title"],
+            "summary": summary,
+            "source_urls": [story["source_url"]],
+        })
+    return entries
+
+
+def save_seen_topics(seen: list[dict], new_entries: list[dict]) -> None:
+    """Merge, re-prune, and write seen_topics.json."""
+    combined = seen + new_entries
+    cutoff = (datetime.date.today() - datetime.timedelta(days=7)).isoformat()
+    combined = [e for e in combined if e.get("date", "") >= cutoff]
+    SEEN_TOPICS_PATH.write_text(json.dumps(combined, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+# ---------------------------------------------------------------------------
 # Claude call
 # ---------------------------------------------------------------------------
 
-def generate_digest(date_str: str, context: str) -> str:
+def generate_digest(date_str: str, context: str, seen_topics: list[dict]) -> str:
+    seen_block = format_seen_topics_context(seen_topics)
+    user_msg = f"Today's date is {date_str}.\n\n"
+    if seen_block:
+        user_msg += seen_block + "\n\n"
+    user_msg += f"Here are today's headlines from key tech sources:\n\n{context}\n\nGenerate the digest."
+
     client = anthropic.Anthropic(timeout=120)
     try:
         response = client.messages.create(
             model=MODEL,
             max_tokens=3500,
             system=SYSTEM_PROMPT,
-            messages=[{
-                "role": "user",
-                "content": (
-                    f"Today's date is {date_str}.\n\n"
-                    f"Here are today's headlines from key tech sources:\n\n"
-                    f"{context}\n\n"
-                    "Generate the digest."
-                ),
-            }],
+            messages=[{"role": "user", "content": user_msg}],
         )
         return response.content[0].text
     except Exception as e:
@@ -397,6 +456,9 @@ def main() -> None:
         logging.info(f"Digest for {date_str} already exists, skipping.")
         return
 
+    seen_topics = load_seen_topics()
+    logging.info(f"Loaded {len(seen_topics)} seen topic(s) from last 7 days")
+
     print(f"Gathering headlines for {date_str}...")
     logging.info(f"Starting digest generation for {date_str}")
     context = gather_context()
@@ -405,7 +467,7 @@ def main() -> None:
 
     print("Generating digest...")
     logging.info("Calling Anthropic API...")  # <-- if script hangs, log stops here
-    raw = generate_digest(date_str, context)
+    raw = generate_digest(date_str, context, seen_topics)
     logging.info("Anthropic API call completed")  # <-- confirms API didn't hang
 
     print("Parsing output...")
@@ -420,6 +482,10 @@ def main() -> None:
     print(f"  -> digests/tech-digest-{date_str}.md")
     print(f"  -> digests/tech-digest-{date_str}.html")
     logging.info(f"Files saved for {date_str}")
+
+    new_entries = extract_seen_entries(data["stories"], date_str)
+    save_seen_topics(seen_topics, new_entries)
+    logging.info(f"seen_topics.json updated with {len(new_entries)} new entry(ies)")
 
     print("Sending email...")
     logging.info(f"Sending email for {date_str}")
