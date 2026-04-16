@@ -100,6 +100,7 @@ Output ONLY a JSON block using these exact delimiters:
 {
   "teaser": "1-sentence teaser with point of view",
   "todays_pick": "1-2 sentence editorial note on the lead story",
+  "fun_fact": "One punchy sentence — a tech joke, surprising dev stat, or absurd-but-true fact.",
   "stories": [
     {
       "title": "Story title",
@@ -123,6 +124,7 @@ JSON field rules:
 - "action_type": exactly "TRY IT" or "THE TAKE"
 - "action_is_code": true if action_content is code, false if prose
 - "action_content": plain text only (no markdown fences)
+- "fun_fact": one sentence, max 20 words, witty or surprising. No hashtags.
 - Inline links use standard Markdown: [text](url) — only from provided headlines
 - Output valid JSON (no trailing commas, no comments)
 
@@ -362,6 +364,8 @@ def render_markdown(data: dict, full_date: str) -> str:
         f"**Today's pick:** {data['todays_pick']}", "",
         "---",
     ]
+    if data.get("fun_fact"):
+        lines += [f"**Fun fact:** {data['fun_fact']}", "", "---"]
     for story in data["stories"]:
         emoji = CATEGORY_EMOJI.get(story["category"], "")
         lines += [
@@ -374,7 +378,7 @@ def render_markdown(data: dict, full_date: str) -> str:
             lines.append(f"```bash\n{story['action_content']}\n```")
         else:
             lines.append(story["action_content"])
-        lines += ["", f"↗ [{story['source_name']}]({story['source_url']})", "", "---"]
+        lines += ["", f"Source: [{story['source_name']} ↗]({story['source_url']})", "", "---"]
     lines.append("*Daily digest for developers. AI, dev tools, and the occasional hardware drop that actually matters.*")
     return "\n".join(lines)
 
