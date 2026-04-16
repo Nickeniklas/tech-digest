@@ -4,10 +4,12 @@ Daily tech news digest for developers. Fetches the latest AI and dev tools news 
 
 ## What it does
 
-1. Searches HackerNews, GitHub Trending, HuggingFace, and official changelogs for today's most relevant developer news
+1. Fetches HackerNews, GitHub Trending, HuggingFace, OpenAI, Anthropic, and GitHub Blog for today's most relevant developer news
 2. Selects the 3–5 most actionable stories and writes them up with an editorial voice
-3. Generates a polished HTML email and a Markdown file
+3. Generates a polished HTML email (green-on-white, responsive) and a Markdown file
 4. Sends the email via Gmail and saves both files locally
+
+The email includes a **Digest at a Glance** bar chart, full-width category section headers, a **Fun Fact** footer, and a **Today's Pick** editorial banner. Layout is optimised for desktop (680px) with a mobile fallback.
 
 ## Requirements
 
@@ -66,7 +68,7 @@ To run automatically every morning, set up a Windows Task Scheduler task:
 
 ## Cost
 
-Roughly **$0.01–0.03 per run** using `claude-haiku-4-5`. At daily usage that's <$1/month.
+Roughly **$0.01–0.03 per run** using `claude-haiku-4-5-20251001`. At daily usage that's <$1/month.
 
 This is achieved by: self-fetching headlines (no web_search tool), outputting JSON only (Markdown is derived in Python), a trimmed context cap of 12k chars, using Haiku instead of Sonnet, and a rolling 7-day topic index that keeps the seen-topics context small (~2k tokens max).
 

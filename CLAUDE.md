@@ -88,10 +88,13 @@ Claude outputs only a structured JSON block, wrapped in:
 <!-- BEGIN_JSON -->..<!-- END_JSON -->
 ```
 
-The JSON schema has: `teaser`, `todays_pick`, and a `stories` array. Each story
+The JSON schema has: `teaser`, `todays_pick`, `fun_fact`, and a `stories` array. Each story
 has `title`, `category`, `is_lead`, `what_happened`, `why_it_matters`,
 `action_type` (TRY IT / THE TAKE), `action_is_code`, `action_content`,
 `source_name`, `source_url`.
+
+`fun_fact` is a top-level one-liner — a punchy tech joke, surprising dev stat, or
+absurd-but-true fact. Max 20 words, witty, no hashtags.
 
 **3. Render Markdown (`render_markdown`)**
 Python derives the `.md` file deterministically from the JSON using `render_markdown()`.
@@ -102,6 +105,18 @@ Python renders `template.html` (Jinja2) with the parsed JSON. All email styling
 lives in `template.html` — update styles there, not in the prompt. A Jinja2
 filter `md_links` converts `[text](url)` markdown links in story text to HTML
 anchors.
+
+Template sections (top to bottom):
+- **Header** — dark green (`#1B4332`), date, title, teaser as a bold hero box
+- **Today's Pick** — green banner (`#2D6A4F`) with star glyph prefix
+- **Digest at a Glance** — Jinja2-computed bar chart (pure HTML table `bgcolor` cells); shows story count per category. Email-safe, no SVG.
+- **Stories** — white card; each story opens with a full-width coloured category divider row, then title/what_happened/why_it_matters/action/source
+- **Fun Fact** — dark green footer strip with the `fun_fact` field
+- **Footer** — plain tagline
+
+Max-width is 680px. Mobile media queries at `≤600px` reduce side padding via `.story-pad`, `.header-pad`, `.section-pad`, `.category-pad`, `.footer-pad` CSS classes.
+
+Source links use `"Source: Name ↗"` format — the "Source: " prefix is plain text, the name is an underlined green link.
 
 **5. Save files (`save_files`)**
 Writes to `digests/tech-digest-{YYYY-MM-DD}.md` and `.html`.
