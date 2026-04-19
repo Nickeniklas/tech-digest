@@ -1,7 +1,6 @@
 ## Security
 .env
 venv/
-digests/
 digest.log
 seen_topics.json
 __pycache__/

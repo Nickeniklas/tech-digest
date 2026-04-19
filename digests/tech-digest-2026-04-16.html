@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Tech Digest — Thursday, April 16 2026</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f4f5f7;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;">
+
+<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f5f7;padding:24px 0;">
+  <tr>
+    <td align="center">
+      <table width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;">
+
+        <!-- ── HEADER ── -->
+        <tr>
+          <td style="background-color:#1a2332;border-radius:10px 10px 0 0;padding:32px 36px 24px;">
+            <p style="margin:0 0 10px;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#8899aa;">Thursday, April 16 2026</p>
+            <h1 style="margin:0 0 16px;font-size:24px;font-weight:700;color:#ffffff;line-height:1.2;letter-spacing:-0.01em;">Daily Tech Digest</h1>
+            <hr style="border:none;border-top:1px solid #2e3d52;margin:0 0 16px;">
+            <p style="margin:0;font-size:14px;color:#b0bec5;line-height:1.55;font-style:italic;">Unrestricted Firebase keys are burning through Gemini API budgets, IPv6 crosses 50%, and the agent framework ecosystem keeps splitting into smaller, task-focused tools.</p>
+          </td>
+        </tr>
+
+        <!-- ── TODAY'S PICK STRIP ── -->
+        <tr>
+          <td style="background-color:#1e2d40;border-left:3px solid #534AB7;padding:16px 32px 16px 29px;">
+            <p style="margin:0 0 6px;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#AFA9EC;">Today's pick</p>
+            <p style="margin:0;font-size:13px;color:#c8c8d8;line-height:1.6;">The Firebase/Gemini billing spike is a wake-up call: browser keys without API restrictions are leaking cloud spend in hours, not days. If you're using Gemini APIs client-side, this is your immediate action item.</p>
+          </td>
+        </tr>
+
+        <!-- ── STORIES ── -->
+        <tr>
+          <td style="background-color:#ffffff;border:0.5px solid #e5e7eb;border-radius:0 0 10px 10px;padding:0;">
+
+            
+
+            
+              
+              
+              
+              
+            
+
+            
+
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:28px 32px;">
+
+                  <!-- badge -->
+                  <p style="margin:0 0 12px;">
+                    <span style="display:inline-block;background-color:#EAF3DE;color:#27500A;font-size:11px;font-weight:700;letter-spacing:0.04em;padding:4px 10px;border-radius:20px;">🛠️ Dev Tools</span>
+                  </p>
+
+                  <!-- title -->
+                  <h2 style="margin:0 0 18px;font-size:17px;font-weight:700;color:#1c1c1c;line-height:1.3;">€54k Firebase Billing Spike in 13 Hours: Unrestricted Gemini API Keys</h2>
+
+                  <!-- what happened -->
+                  <p style="margin:0 0 4px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#b45309;">What happened</p>
+                  <p style="margin:0 0 16px;font-size:16px;color:#1c1c1c;line-height:1.6;">A developer exposed an unrestricted Firebase browser API key, which was used to make Gemini API requests without rate limits or quota restrictions. The attacker burned €54,000 in credits in 13 hours. The issue was discovered on the Google AI developer forum.</p>
+
+                  <!-- why it matters -->
+                  <p style="margin:0 0 4px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#b45309;">Why it matters</p>
+                  <p style="margin:0 0 16px;font-size:16px;color:#1c1c1c;line-height:1.6;">If you're calling <a href="https://discuss.ai.google.dev/t/unexpected-54k-billing-spike-in-13-hours-firebase-browser-key-without-api-restrictions-used-for-gemini-requests/140262" style="color:inherit;text-decoration:underline;">Gemini APIs</a> from a browser or mobile app, an exposed API key with no restrictions is a financial time bomb. You need API restrictions (domain, IP, quota) and per-request rate limits active before shipping.</p>
+
+                  <!-- action section -->
+                  <p style="margin:0 0 8px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#b45309;">THE TAKE</p>
+                  
+                  <p style="margin:0 0 16px;font-size:16px;color:#1c1c1c;line-height:1.6;">Check your Firebase console NOW: go to APIs & Services → Credentials → Application Restrictions → HTTP Referrers + API Restrictions. Set explicit quotas. Never deploy a browser key without both.</p>
+                  
+
+                  <!-- source link -->
+                  <p style="margin:0;">
+                    <a href="https://discuss.ai.google.dev/t/unexpected-54k-billing-spike-in-13-hours-firebase-browser-key-without-api-restrictions-used-for-gemini-requests/140262" style="font-size:13px;color:#27500A;text-decoration:none;font-weight:600;">↗ Google AI Developer Forum</a>
+                  </p>
+
+                </td>
+              </tr>
+            </table>
+
+            
+
+            
+              
+              
+              
+              
+            
+
+            
+            <hr style="border:none;border-top:0.5px solid #e5e7eb;margin:0;">
+            
+
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:24px 32px;">
+
+                  <!-- badge -->
+                  <p style="margin:0 0 12px;">
+                    <span style="display:inline-block;background-color:#EAF3DE;color:#27500A;font-size:11px;font-weight:700;letter-spacing:0.04em;padding:4px 10px;border-radius:20px;">🛠️ Dev Tools</span>
+                  </p>
+
+                  <!-- title -->
+                  <h2 style="margin:0 0 18px;font-size:17px;font-weight:700;color:#1c1c1c;line-height:1.3;">IPv6 Traffic Exceeds 50% Globally</h2>
+
+                  <!-- what happened -->
+                  <p style="margin:0 0 4px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#b45309;">What happened</p>
+                  <p style="margin:0 0 16px;font-size:16px;color:#1c1c1c;line-height:1.6;"><a href="https://www.google.com/intl/en/ipv6/statistics.html?yzh=28197" style="color:inherit;text-decoration:underline;">IPv6 traffic has crossed the 50% threshold</a> according to Google's latest statistics, marking a major inflection point in global internet adoption.</p>
+
+                  <!-- why it matters -->
+                  <p style="margin:0 0 4px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#b45309;">Why it matters</p>
+                  <p style="margin:0 0 16px;font-size:16px;color:#1c1c1c;line-height:1.6;">This is no longer a "future-proofing" exercise. If your infrastructure, load balancers, or CDN isn't IPv6-ready, you're now siloing half your potential traffic. Dual-stack support is table stakes.</p>
+
+                  <!-- action section -->
+                  <p style="margin:0 0 8px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#b45309;">THE TAKE</p>
+                  
+                  <p style="margin:0 0 16px;font-size:16px;color:#1c1c1c;line-height:1.6;">Test your domain with `nslookup -type=AAAA yourdomain.com`. No AAAA record? Add one. No IPv6 listener on your app? This is the week to add it. Cloudflare, Vercel, and most CDNs handle it transparently if you enable it.</p>
+                  
+
+                  <!-- source link -->
+                  <p style="margin:0;">
+                    <a href="https://www.google.com/intl/en/ipv6/statistics.html?yzh=28197" style="font-size:13px;color:#27500A;text-decoration:none;font-weight:600;">↗ Google IPv6 Statistics</a>
+                  </p>
+
+                </td>
+              </tr>
+            </table>
+
+            
+
+            
+              
+              
+              
+              
+            
+
+            
+            <hr style="border:none;border-top:0.5px solid #e5e7eb;margin:0;">
+            
+
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:24px 32px;">
+
+                  <!-- badge -->
+                  <p style="margin:0 0 12px;">
+                    <span style="display:inline-block;background-color:#EEEDFE;color:#3C3489;font-size:11px;font-weight:700;letter-spacing:0.04em;padding:4px 10px;border-radius:20px;">🤖 AI</span>
+                  </p>
+
+                  <!-- title -->
+                  <h2 style="margin:0 0 18px;font-size:17px;font-weight:700;color:#1c1c1c;line-height:1.3;">OpenAI Agents Python Framework Released</h2>
+
+                  <!-- what happened -->
+                  <p style="margin:0 0 4px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#b45309;">What happened</p>
+                  <p style="margin:0 0 16px;font-size:16px;color:#1c1c1c;line-height:1.6;"><a href="https://github.com/openai/openai-agents-python" style="color:inherit;text-decoration:underline;">OpenAI released openai-agents-python</a>, a lightweight framework for building multi-agent workflows. It ships with built-in support for tool use, stateful agents, and composable task flows.</p>
+
+                  <!-- why it matters -->
+                  <p style="margin:0 0 4px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#b45309;">Why it matters</p>
+                  <p style="margin:0 0 16px;font-size:16px;color:#1c1c1c;line-height:1.6;">The agent framework space has fractured into specialized tools (Multica for task management, Hermes for autonomous work, Relvy for runbooks). OpenAI's entry is production-focused and integrates directly with their API—simpler than building with generic frameworks if you're already on GPT-4/o1.</p>
+
+                  <!-- action section -->
+                  <p style="margin:0 0 8px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#b45309;">TRY IT</p>
+                  
+                  <pre style="margin:0 0 16px;background-color:#1e1e1e;color:#d4d4d4;font-family:Menlo,Consolas,'Courier New',monospace;font-size:13px;line-height:1.6;padding:14px 16px;border-radius:8px;white-space:pre-wrap;word-break:break-all;">pip install openai
+
+from openai import OpenAI
+from openai.agents import Agent
+
+client = OpenAI()
+agent = Agent(
+    name="TaskAgent",
+    model="gpt-4o",
+    tools=[{"type": "function", "function": {...}}]
+)
+result = agent.run("execute task")
+print(result)</pre>
+                  
+
+                  <!-- source link -->
+                  <p style="margin:0;">
+                    <a href="https://github.com/openai/openai-agents-python" style="font-size:13px;color:#3C3489;text-decoration:none;font-weight:600;">↗ GitHub</a>
+                  </p>
+
+                </td>
+              </tr>
+            </table>
+
+            
+
+            
+              
+              
+              
+              
+            
+
+            
+            <hr style="border:none;border-top:0.5px solid #e5e7eb;margin:0;">
+            
+
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:24px 32px;">
+
+                  <!-- badge -->
+                  <p style="margin:0 0 12px;">
+                    <span style="display:inline-block;background-color:#EAF3DE;color:#27500A;font-size:11px;font-weight:700;letter-spacing:0.04em;padding:4px 10px;border-radius:20px;">🛠️ Dev Tools</span>
+                  </p>
+
+                  <!-- title -->
+                  <h2 style="margin:0 0 18px;font-size:17px;font-weight:700;color:#1c1c1c;line-height:1.3;">Google Magika: Fast AI-Powered File Type Detection</h2>
+
+                  <!-- what happened -->
+                  <p style="margin:0 0 4px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#b45309;">What happened</p>
+                  <p style="margin:0 0 16px;font-size:16px;color:#1c1c1c;line-height:1.6;"><a href="https://github.com/google/magika" style="color:inherit;text-decoration:underline;">Google released Magika</a>, an open-source tool that detects file content types using machine learning instead of magic bytes. It handles 350+ file types and is accurate even when file extensions are misleading or missing.</p>
+
+                  <!-- why it matters -->
+                  <p style="margin:0 0 4px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#b45309;">Why it matters</p>
+                  <p style="margin:0 0 16px;font-size:16px;color:#1c1c1c;line-height:1.6;">Replacing `file` command or MIME-sniffing logic with an ML model eliminates a class of bypasses (mislabeled uploads, polyglot files). It's especially useful for security scanning and file ingestion pipelines where you can't trust the extension.</p>
+
+                  <!-- action section -->
+                  <p style="margin:0 0 8px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#b45309;">TRY IT</p>
+                  
+                  <pre style="margin:0 0 16px;background-color:#1e1e1e;color:#d4d4d4;font-family:Menlo,Consolas,'Courier New',monospace;font-size:13px;line-height:1.6;padding:14px 16px;border-radius:8px;white-space:pre-wrap;word-break:break-all;">pip install magika
+
+from magika import Magika
+
+magika = Magika()
+result = magika.identify_path("file.bin")
+print(result.output.ct_label)  # Returns actual file type
+
+# Or analyze bytes directly
+with open("file.bin", "rb") as f:
+    result = magika.identify_bytes(f.read())</pre>
+                  
+
+                  <!-- source link -->
+                  <p style="margin:0;">
+                    <a href="https://github.com/google/magika" style="font-size:13px;color:#27500A;text-decoration:none;font-weight:600;">↗ GitHub</a>
+                  </p>
+
+                </td>
+              </tr>
+            </table>
+
+            
+
+          </td>
+        </tr>
+
+        <!-- ── FOOTER ── -->
+        <tr>
+          <td style="padding:20px 0 8px;" align="center">
+            <p style="margin:0;font-size:12px;color:#6b7280;line-height:1.6;">Daily digest for developers. AI, dev tools, and the occasional hardware drop that actually matters.</p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
