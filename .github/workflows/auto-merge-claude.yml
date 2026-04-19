@@ -1,19 +1,21 @@
-name: Auto-merge Claude PRs
+name: Auto-merge Claude branches
 
 on:
-  pull_request:
-    types: [opened, reopened]
+  push:
+    branches:
+      - 'claude/**'
 
 jobs:
   auto-merge:
-    if: startsWith(github.head_ref, 'claude/')
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
       contents: write
     steps:
-      - name: Enable auto-merge
-        run: gh pr merge --auto --squash "$PR_URL"
+      - uses: actions/checkout@v4
+      - name: Create and merge PR
+        run: |
+          gh pr create --fill --base main --head "${GITHUB_REF_NAME}"
+          gh pr merge --auto --squash "${GITHUB_REF_NAME}"
         env:
-          PR_URL: ${{ github.event.pull_request.html_url }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
