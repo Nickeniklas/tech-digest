@@ -1,56 +1,56 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "OpenAI ships a proper multi-agent Python framework, Thunderbird goes AI-native without the vendor lock-in trap, and WiFi signals become your next camera-free presence sensor.",
-  "todays_pick": "openai-agents-python is the cleanest path to multi-agent Python apps available today — lightweight, open-source, and usable right now without standing up a full platform.",
-  "fun_fact": "There are only two hard problems in computer science: cache invalidation, naming things, and off-by-one errors.",
+  "teaser": "OpenAI ships an official Python SDK for multi-agent workflows — and Thunderbird bets that privacy-first AI email is the next frontier.",
+  "todays_pick": "openai-agents-python is the cleanest official path to building production multi-agent systems in Python today. If you've been rolling your own agent loop, it's time to see what the mothership ships.",
+  "fun_fact": "WiFi signals can now estimate your yoga poses — surveillance cameras are officially overqualified.",
   "stories": [
     {
-      "title": "OpenAI Releases Lightweight Multi-Agent Python Framework",
+      "title": "OpenAI Releases Official Python SDK for Multi-Agent Workflows",
       "category": "AI",
       "is_lead": true,
-      "what_happened": "[openai-agents-python](https://github.com/openai/openai-agents-python) is OpenAI's official lightweight framework for building multi-agent workflows in Python, currently trending on GitHub.",
-      "why_it_matters": "Most multi-agent setups require heavy orchestration layers or proprietary platforms. This gives you a minimal, inspectable foundation for agent coordination that you can actually read and extend.",
+      "what_happened": "[openai-agents-python](https://github.com/openai/openai-agents-python) is OpenAI's official lightweight Python framework for building multi-agent workflows, now open-sourced on GitHub.",
+      "why_it_matters": "You now have a blessed, maintained abstraction for orchestrating agents — no more reinventing handoffs, tool routing, and state management from scratch.",
       "action_type": "TRY IT",
       "action_is_code": true,
-      "action_content": "pip install openai-agents\n\nfrom agents import Agent, Runner\n\nagent = Agent(\n    name=\"Assistant\",\n    instructions=\"You are a helpful assistant.\"\n)\nresult = Runner.run_sync(agent, \"Summarise today's top GitHub repos.\")\nprint(result.final_output)",
+      "action_content": "pip install openai-agents\n\nfrom agents import Agent, Runner\n\nagent = Agent(name=\"Assistant\", instructions=\"You are a helpful assistant.\")\nresult = Runner.run_sync(agent, \"Summarise today's top AI news.\")\nprint(result.final_output)",
       "source_name": "GitHub",
       "source_url": "https://github.com/openai/openai-agents-python"
     },
     {
-      "title": "Thunderbolt: Thunderbird Gets AI With Model Choice and Data Ownership",
-      "category": "Dev Tools",
+      "title": "Thunderbird Launches Privacy-First AI Email With Full Model Control",
+      "category": "AI",
       "is_lead": false,
-      "what_happened": "[Thunderbolt](https://github.com/thunderbird/thunderbolt) is a new Thunderbird project that adds AI features to the open-source email client — with a hard requirement that you choose your own models and own your data.",
-      "why_it_matters": "Almost every AI-integrated productivity tool defaults to vendor lock-in. A model-agnostic, local-first AI layer for email is the architecture that should exist everywhere but mostly doesn't.",
+      "what_happened": "[Thunderbird Thunderbolt](https://github.com/thunderbird/thunderbolt) brings AI directly into the open-source email client: you choose your models, own your data, and there is no vendor lock-in.",
+      "why_it_matters": "For developers who want AI assistance in email without sending data to a cloud provider, this is a rare locally-controlled option from a trusted open-source project.",
       "action_type": "THE TAKE",
       "action_is_code": false,
-      "action_content": "The project's stated goal — AI you control, with zero vendor lock-in — is exactly what the productivity software space needs. Whether the execution delivers is the open question, but the architecture is correct.",
+      "action_content": "Thunderbird pulling AI into a privacy-respecting client is the right template. The real test is whether they ship local model support that's usable without a dedicated GPU.",
       "source_name": "GitHub",
       "source_url": "https://github.com/thunderbird/thunderbolt"
     },
     {
-      "title": "RuView: Human Pose Estimation and Presence Detection via Commodity WiFi",
+      "title": "RuView: Real-Time Pose Estimation and Presence Detection Using Only WiFi",
       "category": "Hardware",
       "is_lead": false,
-      "what_happened": "[RuView](https://github.com/ruvnet/RuView) uses WiFi DensePose to perform real-time human pose estimation, vital sign monitoring, and presence detection — no cameras, no additional hardware beyond existing WiFi infrastructure.",
-      "why_it_matters": "Camera-free ambient sensing removes a significant privacy barrier for smart-home and workplace automation. If the accuracy holds under real-world conditions, this unlocks a new class of presence-aware applications on hardware you already own.",
+      "what_happened": "[RuView](https://github.com/ruvnet/RuView) uses WiFi DensePose to perform real-time human pose estimation, vital sign monitoring, and presence detection — no cameras required.",
+      "why_it_matters": "Privacy-preserving occupancy sensing and health monitoring that can't be blocked by pointing a camera the wrong way — directly relevant to smart home and healthcare tooling.",
       "action_type": "THE TAKE",
       "action_is_code": false,
-      "action_content": "WiFi-based sensing is genuinely interesting but historically oversold on accuracy. The multi-person tracking case is where these systems usually fall apart — that's the test worth watching.",
+      "action_content": "WiFi-based sensing is maturing fast. When pose estimation works without a camera, every router becomes a potential sensor — great for privacy advocates, interesting for security researchers.",
       "source_name": "GitHub",
       "source_url": "https://github.com/ruvnet/RuView"
     },
     {
-      "title": "Omi: Self-Hosted AI That Sees Your Screen and Hears Your Conversations",
+      "title": "Evolver: Self-Evolving AI Agent Engine via Genome Evolution Protocol",
       "category": "AI",
       "is_lead": false,
-      "what_happened": "[Omi by BasedHardware](https://github.com/BasedHardware/omi) is a self-hosted AI system that continuously monitors your screen and listens to conversations to provide proactive suggestions and task automation.",
-      "why_it_matters": "Always-on AI assistants are only tolerable if you control the data pipeline. The self-hosted model here is the important detail — it's the difference between a personal productivity tool and a surveillance product.",
+      "what_happened": "[Evolver](https://github.com/EvoMap/evolver) is a GEP-powered self-evolution engine where AI agents modify and improve their own behavior using a Genome Evolution Protocol.",
+      "why_it_matters": "Self-modifying agent architectures move the needle on long-running autonomous workflows — worth watching if you're building agents that need to adapt beyond static system prompts.",
       "action_type": "THE TAKE",
       "action_is_code": false,
-      "action_content": "The concept is sound if you trust your own infrastructure. Most users won't run this properly secured, which is the actual risk — not the AI, but the default configuration assumptions.",
+      "action_content": "Still research-flavored and early, but agents evolving their own workflows rather than being manually retrained is the trajectory agentic AI is on. Bookmark this one.",
       "source_name": "GitHub",
-      "source_url": "https://github.com/BasedHardware/omi"
+      "source_url": "https://github.com/EvoMap/evolver"
     }
   ]
 }
