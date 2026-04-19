@@ -2,11 +2,12 @@ name: Auto-merge Claude branches
 
 on:
   push:
-    branches:
-      - 'claude/**'
+    branches-ignore:
+      - 'main'
 
 jobs:
   auto-merge:
+    if: startsWith(github.ref_name, 'claude/')
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
@@ -17,7 +18,7 @@ jobs:
           fetch-depth: 0
       - name: Create and merge PR
         run: |
-          gh pr create --title "Daily digest" --body "Auto-merge" --base main --head "${GITHUB_REF_NAME}"
+          gh pr create --title "Daily digest" --body "Auto-merge" --base main --head "${GITHUB_REF_NAME}" || echo "PR may already exist"
           gh pr merge --auto --squash "${GITHUB_REF_NAME}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
