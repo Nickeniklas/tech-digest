@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tech Digest — {{ full_date }}</title>
+<title>Tech Digest — Tuesday, April 21, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -352,17 +352,17 @@
       <span class="masthead-wordmark">Tech Digest</span>
       <span class="masthead-sub">Daily Signal for Developers</span>
     </div>
-    <span class="masthead-date">{{ full_date }}</span>
+    <span class="masthead-date">Tuesday, April 21, 2026</span>
   </div>
 </header>
 
 <!-- Compute counts and split stories -->
-{% set lead_story = stories | selectattr("is_lead") | first | default(stories[0]) %}
-{% set other_stories = stories | rejectattr("is_lead") | list %}
-{% set ai_count = stories | selectattr("category","equalto","AI") | list | length %}
-{% set dev_count = stories | selectattr("category","equalto","Dev Tools") | list | length %}
-{% set hw_count = stories | selectattr("category","equalto","Hardware") | list | length %}
-{% set total = stories | length %}
+
+
+
+
+
+
 
 <!-- ── Hero ── -->
 <div class="hero-wrap">
@@ -372,36 +372,44 @@
     <div class="hero-overline">
       <span class="hero-overline-label">Today's Digest</span>
       <div class="hero-overline-rule"></div>
-      <span class="hero-overline-date">{{ full_date }}</span>
+      <span class="hero-overline-date">Tuesday, April 21, 2026</span>
     </div>
 
     <!-- Editorial teaser -->
-    <h1 class="hero-teaser">{{ teaser }}</h1>
+    <h1 class="hero-teaser">OpenAI ships a proper Python framework for multi-agent workflows, Thunderbird bets on privacy-first AI, and WiFi signals become human pose sensors.</h1>
 
     <!-- Hero grid: lead (2/3) + pick card (1/3) -->
     <div class="hero-grid">
 
       <!-- Lead story -->
       <article>
-        <div class="category-kicker">{{ lead_story.category }} · Lead story</div>
-        <h2 class="lead-title">{{ lead_story.title }}</h2>
-        <p class="lead-what">{{ lead_story.what_happened | md_links | safe }}</p>
+        <div class="category-kicker">AI · Lead story</div>
+        <h2 class="lead-title">OpenAI Releases openai-agents-python: A Lightweight Multi-Agent Framework</h2>
+        <p class="lead-what"><a href="https://github.com/openai/openai-agents-python">openai-agents-python</a> is now open-source — a lightweight Python framework purpose-built for orchestrating multi-agent workflows without the overhead of heavier orchestration libraries like LangChain or AutoGen.</p>
 
         <div class="why-callout">
           <div class="why-callout-label">Why it matters</div>
-          <p class="why-callout-text">{{ lead_story.why_it_matters | md_links | safe }}</p>
+          <p class="why-callout-text">If you've been duct-taping agent loops together or fighting framework bloat, this gives you a minimal, first-party abstraction with OpenAI's backing. It's designed to be composable and predictable, not a black box.</p>
         </div>
 
-        <div class="action-label">{{ lead_story.action_type }}</div>
-        {% if lead_story.action_is_code %}
-        <pre class="action-code">{{ lead_story.action_content }}</pre>
-        {% else %}
-        <p class="action-text">{{ lead_story.action_content | md_links | safe }}</p>
-        {% endif %}
+        <div class="action-label">TRY IT</div>
+        
+        <pre class="action-code">pip install openai-agents
+
+from agents import Agent, Runner
+
+agent = Agent(
+    name="Assistant",
+    instructions="You are a helpful assistant."
+)
+
+result = Runner.run_sync(agent, "Summarise the top AI news today.")
+print(result.final_output)</pre>
+        
 
         <div class="source-row">
           <span>Source</span>
-          <a href="{{ lead_story.source_url }}" class="source-link">{{ lead_story.source_name }} ↗</a>
+          <a href="https://github.com/openai/openai-agents-python" class="source-link">GitHub Trending ↗</a>
         </div>
       </article>
 
@@ -411,37 +419,37 @@
           <div class="pick-dot"></div>
           <span class="pick-label">Editor's Pick</span>
         </div>
-        <h3 class="pick-title">{{ todays_pick }}</h3>
+        <h3 class="pick-title">openai-agents-python is the most actionable story this week — a lightweight, first-party framework that lets you wire up real multi-agent pipelines without vendor lock-in gymnastics or heavyweight orchestration libraries.</h3>
 
         <div class="glance-section">
           <div class="glance-label">At a Glance</div>
-          {% if ai_count > 0 %}
+          
           <div class="glance-row">
             <span>AI</span>
             <div class="glance-bar-track">
-              <div class="glance-bar-fill" style="width:{{ (ai_count / total * 100)|int }}%"></div>
+              <div class="glance-bar-fill" style="width:50%"></div>
             </div>
-            <span class="glance-count">{{ ai_count }}</span>
+            <span class="glance-count">2</span>
           </div>
-          {% endif %}
-          {% if dev_count > 0 %}
+          
+          
           <div class="glance-row">
             <span>Dev Tools</span>
             <div class="glance-bar-track">
-              <div class="glance-bar-fill" style="width:{{ (dev_count / total * 100)|int }}%"></div>
+              <div class="glance-bar-fill" style="width:25%"></div>
             </div>
-            <span class="glance-count">{{ dev_count }}</span>
+            <span class="glance-count">1</span>
           </div>
-          {% endif %}
-          {% if hw_count > 0 %}
+          
+          
           <div class="glance-row">
             <span>Hardware</span>
             <div class="glance-bar-track">
-              <div class="glance-bar-fill" style="width:{{ (hw_count / total * 100)|int }}%"></div>
+              <div class="glance-bar-fill" style="width:25%"></div>
             </div>
-            <span class="glance-count">{{ hw_count }}</span>
+            <span class="glance-count">1</span>
           </div>
-          {% endif %}
+          
         </div>
       </aside>
 
@@ -450,50 +458,88 @@
 </div>
 
 <!-- ── Non-lead Stories ── -->
-{% if other_stories %}
+
 <div class="stories-wrap">
   <div class="stories-inner">
     <div class="section-kicker">Also in this issue</div>
     <h2 class="section-title">The rest of today's signal</h2>
 
     <div class="stories-grid">
-      {% for story in other_stories %}
+      
       <article class="story-card">
         <div class="story-card-meta">
-          <span class="category-kicker">{{ story.category }}</span>
+          <span class="category-kicker">Dev Tools</span>
         </div>
-        <h3 class="story-title">{{ story.title }}</h3>
-        <p class="story-what">{{ story.what_happened | md_links | safe }}</p>
+        <h3 class="story-title">Thunderbird Launches Thunderbolt: AI Email You Actually Control</h3>
+        <p class="story-what"><a href="https://github.com/thunderbird/thunderbolt">Thunderbolt</a> is Thunderbird's new AI-assisted email client built around one principle: you choose your models, own your data, and eliminate vendor lock-in entirely.</p>
 
         <div class="story-action-box">
-          <div class="story-action-label">{{ story.action_type }}</div>
-          {% if story.action_is_code %}
-          <pre class="story-action-code">{{ story.action_content }}</pre>
-          {% else %}
-          <p class="story-action-text">{{ story.action_content | md_links | safe }}</p>
-          {% endif %}
+          <div class="story-action-label">THE TAKE</div>
+          
+          <p class="story-action-text">Privacy-first AI tooling is becoming a differentiator, not just a checkbox. Thunderbolt signals that even veteran open-source projects understand that AI with zero data egress is a hard requirement for a significant chunk of the developer market.</p>
+          
         </div>
 
         <div class="story-source">
           <span>Via</span>
-          <a href="{{ story.source_url }}" class="story-source-link">{{ story.source_name }} ↗</a>
+          <a href="https://github.com/thunderbird/thunderbolt" class="story-source-link">GitHub Trending ↗</a>
         </div>
       </article>
-      {% endfor %}
+      
+      <article class="story-card">
+        <div class="story-card-meta">
+          <span class="category-kicker">Hardware</span>
+        </div>
+        <h3 class="story-title">RuView Turns Commodity WiFi Signals Into Real-Time Human Pose Estimation</h3>
+        <p class="story-what"><a href="https://github.com/ruvnet/RuView">RuView</a> uses WiFi DensePose to convert standard WiFi signals into real-time human pose estimation, vital sign monitoring, and presence detection — no cameras, no dedicated sensors required.</p>
+
+        <div class="story-action-box">
+          <div class="story-action-label">THE TAKE</div>
+          
+          <p class="story-action-text">WiFi sensing has been a research curiosity for years — RuView is a signal that it's becoming deployable tooling. The no-camera constraint is a feature, not a limitation, and any serious ambient-computing product should be paying attention.</p>
+          
+        </div>
+
+        <div class="story-source">
+          <span>Via</span>
+          <a href="https://github.com/ruvnet/RuView" class="story-source-link">GitHub Trending ↗</a>
+        </div>
+      </article>
+      
+      <article class="story-card">
+        <div class="story-card-meta">
+          <span class="category-kicker">AI</span>
+        </div>
+        <h3 class="story-title">Omi: Open-Source AI That Sees Your Screen and Hears Your Calls</h3>
+        <p class="story-what"><a href="https://github.com/BasedHardware/omi">Omi by BasedHardware</a> is an open-source ambient AI assistant that continuously sees your screen, listens to your conversations, and surfaces context-aware suggestions based on both streams simultaneously.</p>
+
+        <div class="story-action-box">
+          <div class="story-action-label">THE TAKE</div>
+          
+          <p class="story-action-text">An AI that watches your screen and listens to your calls had better be open-source and self-hosted. Omi gets that right. The hard engineering problem here isn't the AI — it's low-latency multimodal context fusion on consumer hardware.</p>
+          
+        </div>
+
+        <div class="story-source">
+          <span>Via</span>
+          <a href="https://github.com/BasedHardware/omi" class="story-source-link">GitHub Trending ↗</a>
+        </div>
+      </article>
+      
     </div>
   </div>
 </div>
-{% endif %}
+
 
 <!-- ── Fun Fact ── -->
-{% if fun_fact is defined and fun_fact %}
+
 <div class="funfact-wrap">
   <div class="funfact-inner">
     <div class="funfact-label">◇ Fun fact</div>
-    <p class="funfact-text">"{{ fun_fact }}"</p>
+    <p class="funfact-text">"The average developer reads documentation for 3 minutes before just running the example and hoping for the best."</p>
   </div>
 </div>
-{% endif %}
+
 
 <!-- ── Footer ── -->
 <footer class="footer-wrap">

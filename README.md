@@ -6,10 +6,10 @@ Daily tech news digest for developers. Fetches the latest AI and dev tools news 
 
 1. Fetches HackerNews, GitHub Trending, HuggingFace, OpenAI, Anthropic, and GitHub Blog for today's most relevant developer news
 2. Selects the 3–5 most actionable stories and writes them up with an editorial voice
-3. Generates a polished HTML email (green-on-white, responsive) and a Markdown file
-4. Sends the email via Gmail and saves both files locally
+3. Generates a polished HTML page (editorial broadsheet layout, responsive) and a Markdown file
+4. Sends the HTML as an email via Gmail and saves both files locally
 
-The email includes a **Digest at a Glance** bar chart, full-width category section headers, a **Fun Fact** footer, and a **Today's Pick** editorial banner. Layout is optimised for desktop (680px) with a mobile fallback.
+The HTML uses an editorial "broadsheet" layout: a large serif teaser, a hero section with the lead story and a sticky **Editor's Pick** card (including a category **At a Glance** bar chart), a 3-column story grid, and an **Fun Fact** strip. Typeset in Newsreader + IBM Plex. Max-width 1240px, responsive at 800px.
 
 ## Requirements
 

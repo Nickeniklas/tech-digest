@@ -103,22 +103,26 @@ Python derives the `.md` file deterministically from the JSON using `render_mark
 Claude no longer generates Markdown — this halves output tokens.
 
 **4. Render HTML (`render_html`)**
-Python renders `template.html` (Jinja2) with the parsed JSON. All email styling
+Python renders `template.html` (Jinja2) with the parsed JSON. All visual styling
 lives in `template.html` — update styles there, not in the prompt. A Jinja2
 filter `md_links` converts `[text](url)` markdown links in story text to HTML
 anchors.
 
+The template uses an editorial "broadsheet" layout with Google Fonts (Newsreader
+serif + IBM Plex Sans + IBM Plex Mono). CSS variables define the forest-green
+palette; all layout is CSS grid/flexbox.
+
 Template sections (top to bottom):
-- **Header** — dark green (`#1B4332`), date, title, teaser as a bold hero box
-- **Today's Pick** — green banner (`#2D6A4F`) with star glyph prefix
-- **Digest at a Glance** — Jinja2-computed bar chart (pure HTML table `bgcolor` cells); shows story count per category. Email-safe, no SVG.
-- **Stories** — white card; each story opens with a full-width coloured category divider row, then title/what_happened/why_it_matters/action/source
-- **Fun Fact** — dark green footer strip with the `fun_fact` field
-- **Footer** — plain tagline
+- **Masthead** — dark green (`#1B4332`) full-width bar; `TECH DIGEST` monospace wordmark + date
+- **Hero** — cream background; large Newsreader serif teaser as H1; 2/3 + 1/3 grid:
+  - *Lead story* (left): category kicker, title, `what_happened` in serif body, "Why it matters" left-border callout, action block (code or prose), source row
+  - *Editor's Pick card* (right, sticky): dark green card with `todays_pick`, plus "At a Glance" category bar chart (CSS divs, no SVG)
+- **Stories grid** — warm paper background; non-lead stories in a 3-column CSS grid; each card has category, title, body, action box, source
+- **Fun Fact** — dark ink (`#14201B`) full-width strip; italic serif quote
+- **Footer** — warm paper, monospace tagline
 
-Max-width is 680px. Mobile media queries at `≤600px` reduce side padding via `.story-pad`, `.header-pad`, `.section-pad`, `.category-pad`, `.footer-pad` CSS classes.
-
-Source links use `"Source: Name ↗"` format — the "Source: " prefix is plain text, the name is an underlined green link.
+Stories are split in Jinja2: the `is_lead` story goes into the hero, all others into the grid.
+Max-width is 1240px. Responsive breakpoint at `≤800px` collapses grid to single column.
 
 **5. Save files (`save_files`)**
 Writes to `digests/tech-digest-{YYYY-MM-DD}.md` and `.html`.
