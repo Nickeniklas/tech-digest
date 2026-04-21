@@ -52,7 +52,9 @@ pip freeze > requirements.txt
 ```
 
 ## Scheduling
-Windows Task Scheduler — runs daily at 07:00
+Claude Code remote trigger — runs daily at 09:00 Europe/Helsinki (06:00 UTC).
+Trigger ID: `trig_01H3NViVVFhGYrTXS4VyNu35`
+Manage at: https://claude.ai/code/scheduled
 
 ## Architecture
 

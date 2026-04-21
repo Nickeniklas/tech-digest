@@ -55,16 +55,15 @@ digests/
 seen_topics.json            # Rolling 7-day index of covered topics (auto-managed)
 ```
 
-## Scheduling (Windows)
+## Scheduling
 
-To run automatically every morning, set up a Windows Task Scheduler task:
+Runs daily at 09:00 Europe/Helsinki via a Claude Code remote trigger (CCR). The remote agent clones the repo, generates the digest, commits the output files, and pushes to `main`. Manage the trigger at https://claude.ai/code/scheduled.
 
-1. Open Task Scheduler → Create Basic Task
-2. Set trigger: Daily at your preferred time (e.g. 07:00)
-3. Action: Start a program
-   - Program: `C:\Users\<you>\projects\tech-digest\venv\Scripts\python.exe`
-   - Arguments: `digest.py`
-   - Start in: `C:\Users\<you>\projects\tech-digest`
+To run locally on demand:
+
+```bash
+python digest.py
+```
 
 ## Cost
 
@@ -78,8 +77,10 @@ This is achieved by: self-fetching headlines (no web_search tool), outputting JS
 tech-digest/
 ├── digest.py          # Main script
 ├── template.html      # Jinja2 email template
+├── index.html         # Redirects to latest digest (auto-updated by remote agent)
 ├── seen_topics.json   # Rolling 7-day topic index (auto-created, do not commit)
 ├── CLAUDE.md          # Claude Code instructions
+├── FUTURE.md          # Backlog / ideas
 ├── requirements.txt
 ├── .env               # API keys (never commit this)
 ├── .gitignore
