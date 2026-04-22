@@ -113,7 +113,7 @@ serif + IBM Plex Sans + IBM Plex Mono). CSS variables define the forest-green
 palette; all layout is CSS grid/flexbox.
 
 Template sections (top to bottom):
-- **Masthead** — dark green (`#1B4332`) full-width bar; `TECH DIGEST` monospace wordmark + date
+- **Masthead** — dark green (`#1B4332`) full-width bar; inline SVG two-square logo (greens `#2D6A4F` / `#74C69D`) + `TECH DIGEST` monospace wordmark + date; same SVG used as inline data-URI favicon
 - **Hero** — cream background; large Newsreader serif teaser as H1; 2/3 + 1/3 grid:
   - *Lead story* (left): category kicker, title, `what_happened` in serif body, "Why it matters" left-border callout, action block (code or prose), source row
   - *Editor's Pick card* (right, sticky): dark green card with `todays_pick`, plus "At a Glance" category bar chart (CSS divs, no SVG)
