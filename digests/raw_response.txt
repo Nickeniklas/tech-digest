@@ -1,56 +1,56 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Thunderbird ships a local-first AI client you actually own, a new MCP server gives Claude Code eyes on your whole codebase, and Microsoft drops a free 12-lesson agent curriculum.",
-  "todays_pick": "Thunderbolt's premise is disarmingly simple: your AI assistant should run on your hardware, talk to your chosen model, and never phone home uninvited. In a landscape of SaaS AI lock-in, that's a sharp differentiator.",
-  "fun_fact": "The average developer's codebase grows 40% per year, but their AI context window stays the same.",
+  "teaser": "Claude Code gets whole-codebase semantic search via MCP, Vercel ships open agent skills, and LLM observability standardizes on OpenTelemetry — peak AI tooling week.",
+  "todays_pick": "claude-context solves the biggest friction in AI-assisted coding: keeping the right files in context without manually curating what your agent sees. Point it at any repo and let the MCP handle retrieval.",
+  "fun_fact": "Developers spend 35% of their time navigating code they didn't write — now it's the AI agent's problem.",
   "stories": [
     {
-      "title": "Thunderbird's Thunderbolt: Local-First AI With Zero Vendor Lock-In",
-      "category": "AI",
-      "is_lead": true,
-      "what_happened": "[Thunderbird/thunderbolt](https://github.com/thunderbird/thunderbolt) is a new open-source AI assistant built on the principle that you choose your models, you own your data, and no vendor gets to change that. It's designed to plug into any OpenAI-compatible endpoint — local or remote.",
-      "why_it_matters": "Most AI tooling silently couples you to one provider's pricing and terms. Thunderbolt gives you a portable AI stack: swap models without rewriting integrations, and keep your context off someone else's servers.",
-      "action_type": "TRY IT",
-      "action_is_code": true,
-      "action_content": "git clone https://github.com/thunderbird/thunderbolt\ncd thunderbolt\n# Point at any OpenAI-compatible endpoint in config\n# Works with Ollama, LM Studio, or any hosted API",
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/thunderbird/thunderbolt"
-    },
-    {
-      "title": "claude-context: Semantic Codebase Search MCP for Claude Code",
+      "title": "claude-context: Semantic Whole-Repo Search as an MCP for Claude Code",
       "category": "Dev Tools",
-      "is_lead": false,
-      "what_happened": "[zilliztech/claude-context](https://github.com/zilliztech/claude-context) is a new MCP server that gives Claude Code semantic search over your entire repository — not just the files currently open in your editor.",
-      "why_it_matters": "Context window limits have always been Claude Code's ceiling on large projects. This punches through it by letting the agent pull exactly the right functions and files on demand rather than flooding the window with the wrong ones.",
+      "is_lead": true,
+      "what_happened": "[claude-context](https://github.com/zilliztech/claude-context) is a new MCP server from Zilliz that gives Claude Code agents semantic code search over your entire codebase — no manual file referencing or context stuffing required.",
+      "why_it_matters": "Context window management is the #1 friction point in AI-assisted coding today. An MCP that handles retrieval automatically means your agent can navigate large repos without you babysitting which files to include in every prompt.",
       "action_type": "TRY IT",
       "action_is_code": true,
-      "action_content": "npx @zilliz/claude-context@latest\n# Then add to your MCP config (e.g. .mcp.json):\n# {\n#   \"mcpServers\": {\n#     \"claude-context\": {\n#       \"command\": \"npx\",\n#       \"args\": [\"@zilliz/claude-context\"]\n#     }\n#   }\n# }",
-      "source_name": "GitHub Trending",
+      "action_content": "# Add to your Claude Code MCP config (claude_desktop_config.json or .claude/settings.json)\n{\n  \"mcpServers\": {\n    \"claude-context\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@zilliz/claude-context\"]\n    }\n  }\n}",
+      "source_name": "GitHub",
       "source_url": "https://github.com/zilliztech/claude-context"
     },
     {
-      "title": "RAG-Anything: One Pipeline for Text, Tables, Figures, and Code",
-      "category": "AI",
+      "title": "Vercel Labs Releases Open Agent Skills Tool",
+      "category": "Dev Tools",
       "is_lead": false,
-      "what_happened": "[HKUDS/RAG-Anything](https://github.com/HKUDS/RAG-Anything) is an open-source framework that ingests mixed-modality documents — text, tables, equations, figures, code — into a single retrieval pipeline without per-format shims.",
-      "why_it_matters": "Production RAG usually means stitching together five different loaders for PDFs, spreadsheets, and code files. RAG-Anything aims to replace that duct tape with one consistent interface, which cuts a real chunk of boilerplate from most RAG projects.",
+      "what_happened": "[vercel-labs/skills](https://github.com/vercel-labs/skills) is a new open-source project that exposes reusable agent capabilities via a simple `npx skills` CLI, aiming to standardize how AI agents discover and invoke shared skills.",
+      "why_it_matters": "Skill composition is the unsolved hard problem of agentic AI — if this gains adoption, you can plug verified third-party capabilities into your own agents without building each one from scratch.",
       "action_type": "TRY IT",
       "action_is_code": true,
-      "action_content": "pip install rag-anything\nfrom raganything import RAGAnything\nrag = RAGAnything()\nrag.insert_files([\"./docs\"])\nresult = rag.query(\"How does the auth flow work?\")\nprint(result)",
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/HKUDS/RAG-Anything"
+      "action_content": "npx skills\n# Lists available agent skills you can wire into your AI workflows",
+      "source_name": "GitHub",
+      "source_url": "https://github.com/vercel-labs/skills"
     },
     {
-      "title": "Microsoft Drops Free 12-Lesson AI Agents Curriculum on GitHub",
+      "title": "Langfuse Adds OpenTelemetry Integration for LLM Observability",
       "category": "AI",
       "is_lead": false,
-      "what_happened": "[microsoft/ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) is a free, open-source 12-lesson course covering the fundamentals of building AI agents — planning, memory, tool use, and multi-agent coordination — with hands-on code examples.",
-      "why_it_matters": "With agentic frameworks multiplying weekly, a structured curriculum that explains the underlying concepts before prescribing a specific library is genuinely useful for developers trying to reason about agents rather than just cargo-culting a starter template.",
+      "what_happened": "[Langfuse](https://github.com/langfuse/langfuse) is trending as one of the top open-source LLM engineering platforms, offering observability, evals, prompt management, and datasets — now with OpenTelemetry support for standardized tracing across your stack.",
+      "why_it_matters": "OpenTelemetry compatibility means LLM traces can live in the same observability pipeline as the rest of your infrastructure — no more siloed AI monitoring bolted on as an afterthought.",
+      "action_type": "TRY IT",
+      "action_is_code": true,
+      "action_content": "pip install langfuse\n\nfrom langfuse import Langfuse\nlangfuse = Langfuse()\n\ntrace = langfuse.trace(name=\"my-llm-call\")\nspan = trace.span(name=\"generation\")\n# wrap your LLM call here\nspan.end(output={\"result\": response})",
+      "source_name": "GitHub",
+      "source_url": "https://github.com/langfuse/langfuse"
+    },
+    {
+      "title": "Shannon Lite: Autonomous White-Box AI Pentester for APIs",
+      "category": "AI",
+      "is_lead": false,
+      "what_happened": "[Shannon Lite](https://github.com/KeygraphHQ/shannon) is an autonomous AI security tool that reads your source code directly, maps attack vectors, and generates exploit chains to test your own web applications and APIs.",
+      "why_it_matters": "Traditional pen testing happens infrequently and costs a lot. An AI that continuously red-teams your code as it ships is a meaningful shift — though treat it as a first pass, not a replacement for human security review.",
       "action_type": "THE TAKE",
       "action_is_code": false,
-      "action_content": "This hits the foundations most tutorials skip: when should an agent plan vs. react, and where does memory belong architecturally? Worth an afternoon if you're still fuzzy on why your LangChain agent keeps looping.",
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/microsoft/ai-agents-for-beginners"
+      "action_content": "White-box analysis is the right approach here — black-box fuzzing misses too much. The real question is whether teams use this as a continuous gate in CI or a one-off audit tool. The former is where this gets genuinely useful.",
+      "source_name": "GitHub",
+      "source_url": "https://github.com/KeygraphHQ/shannon"
     }
   ]
 }
