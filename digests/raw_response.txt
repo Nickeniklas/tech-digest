@@ -1,56 +1,56 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "HuggingFace ships an autonomous ML engineer while two tools promise to stop your AI coding agent from drowning in its own context.",
-  "todays_pick": "HuggingFace's ml-intern is the first open-source agent built to operate as a full ML engineer — reading papers, running experiments, and shipping models. If it works as advertised, it compresses months of repetitive ML boilerplate into a single loop.",
-  "fun_fact": "ML engineers built an agent to do their job so they could supervise the agent doing their job.",
+  "teaser": "HuggingFace ships an open-source ML engineer that reads papers and trains models — and you can run it today.",
+  "todays_pick": "ml-intern is the most direct challenge yet to the idea that ML pipelines require human oversight. It's early, it's rough, and you should absolutely try it.",
+  "fun_fact": "Your WiFi router can now detect your heartbeat through walls — and yes, it's open source.",
   "stories": [
     {
-      "title": "HuggingFace Open-Sources an Autonomous ML Engineer Agent",
+      "title": "HuggingFace Open-Sources an Autonomous ML Engineer",
       "category": "AI",
       "is_lead": true,
-      "what_happened": "[ml-intern](https://github.com/huggingface/ml-intern) is HuggingFace's new open-source agent that reads ML papers, trains models, and ships them — a full autonomous ML engineering loop in a single project.",
-      "why_it_matters": "This isn't a wrapper around a chat model — it's an agentic pipeline targeting the most repetitive parts of ML research. If you're building ML systems, this is worth watching as a template for autonomous experimentation workflows.",
+      "what_happened": "[huggingface/ml-intern](https://github.com/huggingface/ml-intern) is an open-source autonomous ML engineer that reads research papers, trains models, and ships ML artifacts — designed to run the full ML lifecycle without a human in the loop.",
+      "why_it_matters": "This isn't a code autocomplete tool — it's a shot at full ML pipeline automation. If it performs as described, you could feed it a paper and get a runnable trained model back.",
       "action_type": "TRY IT",
       "action_is_code": true,
-      "action_content": "git clone https://github.com/huggingface/ml-intern\ncd ml-intern\npip install -r requirements.txt\n# Configure your model backend and paper source per README",
-      "source_name": "GitHub Trending",
+      "action_content": "git clone https://github.com/huggingface/ml-intern\ncd ml-intern\npip install -e .\n# Assign a paper and let it run — check README for task config",
+      "source_name": "GitHub",
       "source_url": "https://github.com/huggingface/ml-intern"
     },
     {
-      "title": "claude-context: Semantic Codebase Search as an MCP for Coding Agents",
+      "title": "claude-context: Full Codebase Search as an MCP for Claude Code",
       "category": "Dev Tools",
       "is_lead": false,
-      "what_happened": "[claude-context](https://github.com/zilliztech/claude-context) by Zilliz is an MCP server that gives Claude Code (and other coding agents) retrieval-quality semantic search over your entire codebase — no brute-force context stuffing required.",
-      "why_it_matters": "Context window limits are the main bottleneck for coding agents on large repos. Swapping full-file inclusion for semantic retrieval means the agent gets relevant code, not all code — and you spend fewer tokens per session.",
+      "what_happened": "[zilliztech/claude-context](https://github.com/zilliztech/claude-context) is a new MCP server that indexes your entire codebase and exposes it as a search tool to Claude Code and other coding agents — bypassing context window limits for large repos.",
+      "why_it_matters": "Context window overflow is the number-one reason AI coding agents fail on large codebases. Retrieval-based context keeps token costs predictable and lets agents work on repos that would otherwise be too big to load.",
       "action_type": "TRY IT",
       "action_is_code": true,
-      "action_content": "git clone https://github.com/zilliztech/claude-context\ncd claude-context\npip install -r requirements.txt\n# Register as MCP server in your Claude Code config per README",
-      "source_name": "GitHub Trending",
+      "action_content": "npm install -g @zilliztech/claude-context\n# Add to your MCP config (e.g. .claude/mcp.json):\n# {\"claude-context\": {\"command\": \"claude-context\", \"args\": [\".\"]}}",
+      "source_name": "GitHub",
       "source_url": "https://github.com/zilliztech/claude-context"
     },
     {
-      "title": "context-mode Claims 98% Context Reduction for AI Coding Agents",
-      "category": "Dev Tools",
+      "title": "RuView: WiFi Signals as a Camera-Free Pose Estimation Sensor",
+      "category": "AI",
       "is_lead": false,
-      "what_happened": "[context-mode](https://github.com/mksglu/context-mode) sandboxes tool output for AI coding agents, claiming a 98% reduction in context window consumption across 12 platforms including Claude Code, Cursor, and Codex.",
-      "why_it_matters": "Bloated tool output is the silent tax in agentic coding sessions — it inflates costs and degrades response quality mid-session. A 98% reduction, if it holds up in practice, meaningfully extends what you can accomplish before hitting the wall.",
-      "action_type": "TRY IT",
-      "action_is_code": true,
-      "action_content": "git clone https://github.com/mksglu/context-mode\ncd context-mode\n# See README for platform-specific setup across Claude Code, Cursor, Codex, and others",
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/mksglu/context-mode"
-    },
-    {
-      "title": "RuView Turns Commodity WiFi Signals into a Human Pose Sensor",
-      "category": "Hardware",
-      "is_lead": false,
-      "what_happened": "[RuView](https://github.com/ruvnet/RuView) applies DensePose to WiFi channel signals, enabling real-time human pose estimation, vital sign monitoring, and presence detection — no camera, no wearable required.",
-      "why_it_matters": "Privacy-respecting sensing without optical hardware has been a research goal for a decade. WiFi-based pose estimation opens home automation, health monitoring, and occupancy detection use cases that cameras can't legally touch in many jurisdictions.",
+      "what_happened": "[ruvnet/RuView](https://github.com/ruvnet/RuView) uses commodity WiFi signals for real-time human pose estimation, vital sign monitoring, and presence detection — no cameras or wearables required.",
+      "why_it_matters": "Camera-free sensing removes the privacy and installation barriers that have blocked smart-home and health-monitoring use cases. An open-source implementation makes this tech accessible for experimentation outside of research labs for the first time.",
       "action_type": "THE TAKE",
       "action_is_code": false,
-      "action_content": "WiFi CSI-based motion detection is established research, but 'real-time pose estimation' is a strong claim. Check the hardware requirements and reported latency carefully before committing this to anything production-facing.",
-      "source_name": "GitHub Trending",
+      "action_content": "WiFi-based DensePose is genuinely novel in open source. Expect real-world accuracy to fall short of lab benchmarks — 802.11 multipath is messy. But this is worth watching for privacy-preserving presence detection use cases.",
+      "source_name": "GitHub",
       "source_url": "https://github.com/ruvnet/RuView"
+    },
+    {
+      "title": "context-mode Claims 98% Context Window Reduction for AI Coding Agents",
+      "category": "Dev Tools",
+      "is_lead": false,
+      "what_happened": "[mksglu/context-mode](https://github.com/mksglu/context-mode) is a context window optimizer for AI coding agents that sandboxes tool output to reduce context usage by up to 98%, with support for Claude Code, Cursor, Codex, and 9 other platforms.",
+      "why_it_matters": "Token costs scale with context size, and bloated tool output is a major culprit when running agents on long tasks. A reliable reduction here translates directly to lower API bills and fewer context-overflow failures.",
+      "action_type": "THE TAKE",
+      "action_is_code": false,
+      "action_content": "98% is almost certainly a best-case benchmark number. Your actual gains depend on how tool-heavy your agent tasks are. Still worth a trial run if you're paying for long coding sessions — even 50% savings would matter.",
+      "source_name": "GitHub",
+      "source_url": "https://github.com/mksglu/context-mode"
     }
   ]
 }
