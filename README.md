@@ -52,12 +52,18 @@ digests/
 ├── tech-digest-2026-04-02.md
 ├── tech-digest-2026-04-02.html
 └── raw_response.txt        # Claude's raw output, useful for debugging
-seen_topics.json            # Rolling 7-day index of covered topics (auto-managed)
+seen_topics.json            # Rolling 7-day index of covered topics (committed to git)
 ```
 
 ## Scheduling
 
-Runs daily at 09:00 Europe/Helsinki via a Claude Code remote trigger (CCR). The remote agent clones the repo, generates the digest, commits the output files, and pushes to `main`. Manage the trigger at https://claude.ai/code/scheduled.
+Runs daily at 09:00 Europe/Helsinki (06:00 UTC) via a Claude Code remote trigger. The flow:
+
+1. CCR creates a `claude/YYYYMMDD` branch and runs `digest.py`
+2. Generated files (`digests/`, `seen_topics.json`) are committed and pushed
+3. A GitHub Actions workflow (`.github/workflows/auto-merge-claude.yml`) opens a PR and squash-merges it into `main`, then deletes the branch
+
+Manage the trigger at https://claude.ai/code/scheduled.
 
 To run locally on demand:
 
@@ -78,7 +84,7 @@ tech-digest/
 ├── digest.py          # Main script
 ├── template.html      # Jinja2 email template
 ├── index.html         # Redirects to latest digest (auto-updated by remote agent)
-├── seen_topics.json   # Rolling 7-day topic index (auto-created, do not commit)
+├── seen_topics.json   # Rolling 7-day topic index (committed; gives each run topic memory)
 ├── CLAUDE.md          # Claude Code instructions
 ├── FUTURE.md          # Backlog / ideas
 ├── requirements.txt
