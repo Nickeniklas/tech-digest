@@ -1,56 +1,68 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "HuggingFace ships an open-source ML engineer that reads papers and trains models — and you can run it today.",
-  "todays_pick": "ml-intern is the most direct challenge yet to the idea that ML pipelines require human oversight. It's early, it's rough, and you should absolutely try it.",
-  "fun_fact": "Your WiFi router can now detect your heartbeat through walls — and yes, it's open source.",
+  "teaser": "Microsoft rewrites TypeScript in Go for native speed, HuggingFace ships an open-source ML intern agent, and two sharp dev-tools round out a week of practical releases.",
+  "todays_pick": "The TypeScript-Go port isn't a side project — Microsoft is serious about erasing compile-time pain from large codebases. If benchmarks hold in real monorepos, this reshapes how teams think about CI and build tooling for the next decade.",
+  "fun_fact": "The Go port of the TypeScript compiler is so fast it can type-check itself before most developers finish reading the changelog.",
   "stories": [
     {
-      "title": "HuggingFace Open-Sources an Autonomous ML Engineer",
-      "category": "AI",
+      "title": "Microsoft Ports the TypeScript Compiler to Go",
+      "category": "Dev Tools",
       "is_lead": true,
-      "what_happened": "[huggingface/ml-intern](https://github.com/huggingface/ml-intern) is an open-source autonomous ML engineer that reads research papers, trains models, and ships ML artifacts — designed to run the full ML lifecycle without a human in the loop.",
-      "why_it_matters": "This isn't a code autocomplete tool — it's a shot at full ML pipeline automation. If it performs as described, you could feed it a paper and get a runnable trained model back.",
+      "what_happened": "[microsoft/typescript-go](https://github.com/microsoft/typescript-go) is a native Go port of the TypeScript compiler. Early results show type-checking and compilation times dropping dramatically on large codebases — this is a staged repo, meaning Microsoft is building toward an official release.",
+      "why_it_matters": "TypeScript build time is the hidden tax on every large JS project. A native-compiled Go implementation sidesteps the V8 overhead that makes `tsc` slow at scale, which means faster CI, faster editor feedback, and less waiting in monorepos.",
       "action_type": "TRY IT",
       "action_is_code": true,
-      "action_content": "git clone https://github.com/huggingface/ml-intern\ncd ml-intern\npip install -e .\n# Assign a paper and let it run — check README for task config",
-      "source_name": "GitHub",
+      "action_content": "git clone https://github.com/microsoft/typescript-go\ncd typescript-go\ngit checkout main\ngo build ./...\n# Run the experimental compiler against your own project:\n./built/local/tsgo --project path/to/tsconfig.json",
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/microsoft/typescript-go"
+    },
+    {
+      "title": "HuggingFace Open-Sources an ML Engineer That Trains Its Own Models",
+      "category": "AI",
+      "is_lead": false,
+      "what_happened": "[huggingface/ml-intern](https://github.com/huggingface/ml-intern) is an open-source ML agent that reads research papers, spins up training runs, and publishes the resulting models — the full research-to-deployment loop automated.",
+      "why_it_matters": "Closing the loop between reading a paper and running the experiment has been a bottleneck for small ML teams. This is early, but it signals a shift toward agent-assisted research workflows that could dramatically compress iteration cycles.",
+      "action_type": "THE TAKE",
+      "action_is_code": false,
+      "action_content": "This is research infrastructure, not production tooling yet. Worth watching closely if you run ML pipelines — the underlying loop (plan → train → evaluate → publish) is exactly what teams wire together manually today.",
+      "source_name": "GitHub Trending",
       "source_url": "https://github.com/huggingface/ml-intern"
     },
     {
-      "title": "claude-context: Full Codebase Search as an MCP for Claude Code",
+      "title": "Google OSV-Scanner: One Tool for Vulnerability Scanning Across All Ecosystems",
       "category": "Dev Tools",
       "is_lead": false,
-      "what_happened": "[zilliztech/claude-context](https://github.com/zilliztech/claude-context) is a new MCP server that indexes your entire codebase and exposes it as a search tool to Claude Code and other coding agents — bypassing context window limits for large repos.",
-      "why_it_matters": "Context window overflow is the number-one reason AI coding agents fail on large codebases. Retrieval-based context keeps token costs predictable and lets agents work on repos that would otherwise be too big to load.",
+      "what_happened": "[google/osv-scanner](https://github.com/google/osv-scanner) is a Go-based vulnerability scanner that queries the [OSV database](https://osv.dev) to surface known CVEs across your project's lockfiles — covering Go, Python, Rust, npm, and more.",
+      "why_it_matters": "Most teams run separate scanners per language — `npm audit` here, `pip-audit` there. OSV-Scanner handles polyglot repos in a single pass, making it practical for monorepos that your current security tooling can't cover consistently.",
       "action_type": "TRY IT",
       "action_is_code": true,
-      "action_content": "npm install -g @zilliztech/claude-context\n# Add to your MCP config (e.g. .claude/mcp.json):\n# {\"claude-context\": {\"command\": \"claude-context\", \"args\": [\".\"]}}",
-      "source_name": "GitHub",
-      "source_url": "https://github.com/zilliztech/claude-context"
+      "action_content": "go install github.com/google/osv-scanner/cmd/osv-scanner@latest\n\n# Scan a specific lockfile\nosv-scanner --lockfile ./package-lock.json\nosv-scanner --lockfile ./requirements.txt\n\n# Recursive scan of an entire repo\nosv-scanner -r ./",
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/google/osv-scanner"
     },
     {
-      "title": "RuView: WiFi Signals as a Camera-Free Pose Estimation Sensor",
+      "title": "DeepSeek Releases DeepEP: Expert-Parallel Communication for MoE Models",
       "category": "AI",
       "is_lead": false,
-      "what_happened": "[ruvnet/RuView](https://github.com/ruvnet/RuView) uses commodity WiFi signals for real-time human pose estimation, vital sign monitoring, and presence detection — no cameras or wearables required.",
-      "why_it_matters": "Camera-free sensing removes the privacy and installation barriers that have blocked smart-home and health-monitoring use cases. An open-source implementation makes this tech accessible for experimentation outside of research labs for the first time.",
+      "what_happened": "[deepseek-ai/DeepEP](https://github.com/deepseek-ai/DeepEP) is an open-source communication library purpose-built for expert-parallel inference and training of Mixture-of-Experts models across multi-GPU and multi-node setups.",
+      "why_it_matters": "MoE architectures need efficient all-to-all communication that standard NCCL handles poorly at scale — DeepEP is the missing primitive. Infrastructure teams building or serving large MoE models now have a battle-tested starting point from the team that shipped DeepSeek.",
       "action_type": "THE TAKE",
       "action_is_code": false,
-      "action_content": "WiFi-based DensePose is genuinely novel in open source. Expect real-world accuracy to fall short of lab benchmarks — 802.11 multipath is messy. But this is worth watching for privacy-preserving presence detection use cases.",
-      "source_name": "GitHub",
-      "source_url": "https://github.com/ruvnet/RuView"
+      "action_content": "Application developers won't touch this directly, but providers who adopt it pass the efficiency gains downstream as lower inference costs. If you're building ML infra for MoE models, this is the first serious open-source baseline to benchmark against.",
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/deepseek-ai/DeepEP"
     },
     {
-      "title": "context-mode Claims 98% Context Window Reduction for AI Coding Agents",
+      "title": "Claude Context MCP Gives Claude Code Semantic Search Over Your Entire Codebase",
       "category": "Dev Tools",
       "is_lead": false,
-      "what_happened": "[mksglu/context-mode](https://github.com/mksglu/context-mode) is a context window optimizer for AI coding agents that sandboxes tool output to reduce context usage by up to 98%, with support for Claude Code, Cursor, Codex, and 9 other platforms.",
-      "why_it_matters": "Token costs scale with context size, and bloated tool output is a major culprit when running agents on long tasks. A reliable reduction here translates directly to lower API bills and fewer context-overflow failures.",
-      "action_type": "THE TAKE",
-      "action_is_code": false,
-      "action_content": "98% is almost certainly a best-case benchmark number. Your actual gains depend on how tool-heavy your agent tasks are. Still worth a trial run if you're paying for long coding sessions — even 50% savings would matter.",
-      "source_name": "GitHub",
-      "source_url": "https://github.com/mksglu/context-mode"
+      "what_happened": "[zilliztech/claude-context](https://github.com/zilliztech/claude-context) is an MCP server that indexes your codebase and exposes semantic code search to Claude Code, letting the agent find relevant files without you manually specifying paths.",
+      "why_it_matters": "Claude Code's context window is finite — in large repos you're constantly pre-selecting files to feed in. This MCP handles retrieval automatically, giving Claude Code genuine whole-repo awareness rather than the local slice you happened to open.",
+      "action_type": "TRY IT",
+      "action_is_code": true,
+      "action_content": "git clone https://github.com/zilliztech/claude-context\ncd claude-context && pip install -e .\n\n# Index your codebase\nclaude-context index /path/to/your/project\n\n# Add to .claude/mcp.json:\n# {\"mcpServers\": {\"claude-context\": {\"command\": \"claude-context\", \"args\": [\"serve\"]}}}\n# Then in Claude Code: ask about any file, function, or pattern",
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/zilliztech/claude-context"
     }
   ]
 }
