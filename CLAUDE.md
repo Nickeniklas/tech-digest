@@ -5,8 +5,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 # Tech Digest — Project Instructions
 
 ## What this project does
-Generates a daily tech news digest for developers, saves it as HTML and
-Markdown, then emails it via Gmail (smtplib + App Password).
+Generates a daily tech news digest for developers and saves it as HTML and
+Markdown files to `digests/`.
 
 ## Environment setup
 
@@ -30,10 +30,8 @@ Never use `pip install` without the venv being active.
 Always use `claude-haiku-4-5-20251001` for all API calls. Never use Sonnet or Opus —
 cost constraint. Haiku is ~5x cheaper than Sonnet for this structured generation task.
 
-## Email config
-- SMTP: smtp.gmail.com, port 587
-- All credentials and addresses stored in `.env` — never hardcode them
-- Required `.env` keys: `ANTHROPIC_API_KEY`, `GMAIL_APP_PASSWORD`, `MAIL_FROM`, `MAIL_TO`
+## Environment variables
+- Required `.env` key: `ANTHROPIC_API_KEY`
 
 ## Commands
 
@@ -58,7 +56,7 @@ Manage at: https://claude.ai/code/scheduled
 
 ## Architecture
 
-`digest.py` is the single entry point with four stages:
+`digest.py` is the single entry point with six stages:
 
 **1. Load seen topics (`load_seen_topics`)**
 Reads `seen_topics.json` from the project root. Prunes entries older than 7 days
@@ -134,10 +132,6 @@ Called after `save_files` succeeds — never on error paths. Extracts the first
 sentence of each story's `what_happened` as a summary, merges with prior entries,
 re-prunes to 7 days, and writes `seen_topics.json`. The file accumulates at most
 ~35 entries (5 stories × 7 days).
-
-**7. Send email (`send_email`)**
-smtplib/STARTTLS. HTML file as email body, `.md` file as plain text attachment.
-Subject: `Daily Tech Digest — {Full date}`.
 
 ## Topic deduplication
 

@@ -2,9 +2,6 @@ import os
 import re
 import json
 import datetime
-import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
 from pathlib import Path
 
 import anthropic
@@ -25,8 +22,6 @@ logging.basicConfig(
 )
 
 MODEL     = "claude-haiku-4-5-20251001"
-SMTP_HOST = "smtp.gmail.com"
-SMTP_PORT = 587
 
 MAX_CONTEXT_CHARS = 12_000
 
@@ -410,33 +405,6 @@ def save_files(date_str: str, md: str, html: str) -> tuple[Path, Path]:
     return md_path, html_path
 
 
-def send_email(date_str: str, full_date: str, html: str, md_path: Path, app_password: str) -> None:
-    from_email = os.environ["MAIL_FROM"]
-    to_email   = os.environ["MAIL_TO"]
-    subject    = f"Daily Tech Digest — {full_date}"
-
-    msg = MIMEMultipart("mixed")
-    msg["From"]    = from_email
-    msg["To"]      = to_email
-    msg["Subject"] = subject
-
-    msg.attach(MIMEText(html, "html", "utf-8"))
-
-    md_attachment = MIMEText(md_path.read_text(encoding="utf-8"), "plain", "utf-8")
-    md_attachment.add_header(
-        "Content-Disposition",
-        "attachment",
-        filename=f"tech-digest-{date_str}.md",
-    )
-    msg.attach(md_attachment)
-
-    with smtplib.SMTP(SMTP_HOST, SMTP_PORT) as smtp:
-        smtp.ehlo()
-        smtp.starttls()
-        smtp.login(from_email, app_password)
-        smtp.sendmail(from_email, to_email, msg.as_string())
-
-
 # ---------------------------------------------------------------------------
 # Entry point
 # ---------------------------------------------------------------------------
@@ -444,19 +412,13 @@ def send_email(date_str: str, full_date: str, html: str, md_path: Path, app_pass
 def main() -> None:
     load_dotenv()
 
-    app_password = os.environ.get("GMAIL_APP_PASSWORD")
-    if not app_password:
-        raise EnvironmentError("GMAIL_APP_PASSWORD not set in .env")
-    if not os.environ.get("MAIL_FROM") or not os.environ.get("MAIL_TO"):
-        raise EnvironmentError("MAIL_FROM and MAIL_TO must be set in .env")
-
     today     = datetime.date.today()
     date_str  = today.strftime("%Y-%m-%d")
     full_date = today.strftime("%A, %B %d %Y").replace(" 0", " ")
 
     # Skip if today's digest already exists (to avoid duplicates on reruns)
     if Path(f"digests/tech-digest-{date_str}.html").exists():
-        print(f"Digest for {date_str} already sent, skipping.")
+        print(f"Digest for {date_str} already generated, skipping.")
         logging.info(f"Digest for {date_str} already exists, skipping.")
         return
 
@@ -482,7 +444,7 @@ def main() -> None:
     html = render_html(data, full_date)
 
     print("Saving files...")
-    md_path, _ = save_files(date_str, md, html)
+    save_files(date_str, md, html)
     print(f"  -> digests/tech-digest-{date_str}.md")
     print(f"  -> digests/tech-digest-{date_str}.html")
     logging.info(f"Files saved for {date_str}")
@@ -491,10 +453,7 @@ def main() -> None:
     save_seen_topics(seen_topics, new_entries)
     logging.info(f"seen_topics.json updated with {len(new_entries)} new entry(ies)")
 
-    print("Sending email...")
-    logging.info(f"Sending email for {date_str}")
-    send_email(date_str, full_date, html, md_path, app_password)
-    print(f"Done. Digest sent for {date_str}.")
+    print(f"Done. Digest saved for {date_str}.")
     logging.info(f"Digest generation completed for {date_str}")
 
 

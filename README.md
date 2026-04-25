@@ -1,13 +1,13 @@
 # tech-digest
 
-Daily tech news digest for developers. Fetches the latest AI and dev tools news from high-signal sources, summarizes it with Claude, and emails a styled HTML newsletter to your inbox every morning.
+Daily tech news digest for developers. Fetches the latest AI and dev tools news from high-signal sources, summarizes it with Claude, and saves a styled HTML page and Markdown file to `digests/`.
 
 ## What it does
 
 1. Fetches HackerNews, GitHub Trending, HuggingFace, OpenAI, Anthropic, and GitHub Blog for today's most relevant developer news
 2. Selects the 3–5 most actionable stories and writes them up with an editorial voice
 3. Generates a polished HTML page (editorial broadsheet layout, responsive) and a Markdown file
-4. Sends the HTML as an email via Gmail and saves both files locally
+4. Saves both files to `digests/` and updates the rolling topic index
 
 The HTML uses an editorial "broadsheet" layout: a large serif teaser, a hero section with the lead story and a sticky **Editor's Pick** card (including a category **At a Glance** bar chart), a 3-column story grid, and an **Fun Fact** strip. Typeset in Newsreader + IBM Plex. Max-width 1240px, responsive at 800px.
 
@@ -15,7 +15,6 @@ The HTML uses an editorial "broadsheet" layout: a large serif teaser, a hero sec
 
 - Python 3.10+
 - An [Anthropic API key](https://console.anthropic.com) (uses `claude-haiku-4-5`)
-- A Gmail account with [App Password](https://myaccount.google.com/apppasswords) enabled (requires 2FA)
 
 ## Setup
 
@@ -34,9 +33,6 @@ Create a `.env` file in the project root:
 
 ```
 ANTHROPIC_API_KEY=sk-ant-...
-GMAIL_APP_PASSWORD=your16charpassword
-MAIL_FROM=you@gmail.com
-MAIL_TO=you@gmail.com
 ```
 
 ## Usage
@@ -82,7 +78,7 @@ This is achieved by: self-fetching headlines (no web_search tool), outputting JS
 ```
 tech-digest/
 ├── digest.py          # Main script
-├── template.html      # Jinja2 email template
+├── template.html      # Jinja2 HTML template
 ├── index.html         # Redirects to latest digest (auto-updated by remote agent)
 ├── seen_topics.json   # Rolling 7-day topic index (committed; gives each run topic memory)
 ├── CLAUDE.md          # Claude Code instructions
