@@ -145,7 +145,7 @@ Subject: `Daily Tech Digest — {Full date}`.
 - Auto-created on first successful run
 - Pruned to a 7-day rolling window on every run
 - Passed to Claude as context so it can skip exact repeats or flag follow-ups
-- **Do not commit** this file (add to `.gitignore` if not already present)
+- **Must be committed** to the repo — tracked in git so each run on a fresh checkout has topic history
 
 Deduplication rules (enforced via `SYSTEM_PROMPT`):
 - Skip a topic only if it is the exact same story with no meaningful new development

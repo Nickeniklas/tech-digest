@@ -2,6 +2,5 @@
 .env
 venv/
 digest.log
-seen_topics.json
 __pycache__/
 *.pyc
