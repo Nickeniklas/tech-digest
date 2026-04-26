@@ -103,17 +103,17 @@
   }
 
   /* ── Lead Story ── */
-  .category-kicker {
+  .lead-kicker {
     font-family: var(--font-mono); font-size: 11px; font-weight: 600;
     letter-spacing: 0.14em; text-transform: uppercase;
-    color: var(--accent-deep);
+    color: var(--accent-deep); margin-bottom: 12px;
   }
   .lead-title {
     font-family: var(--font-display);
     font-size: clamp(22px, 2.8vw, 36px);
     line-height: 1.12; letter-spacing: -0.015em;
     font-weight: 500; color: var(--ink);
-    margin: 12px 0 20px;
+    margin: 0 0 20px;
     text-wrap: balance;
   }
   .lead-what {
@@ -136,22 +136,6 @@
     font-family: var(--font-sans); font-size: 15px; line-height: 1.6;
     color: var(--ink-soft); margin: 0; max-width: 56ch;
   }
-  .action-label {
-    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
-    letter-spacing: 0.14em; text-transform: uppercase;
-    color: var(--accent-deep); margin-bottom: 10px;
-  }
-  .action-code {
-    font-family: var(--font-mono); font-size: 13px; line-height: 1.65;
-    background: var(--ink); color: #E4EDE7;
-    padding: 20px 24px; border-radius: 6px;
-    overflow-x: auto; white-space: pre;
-    margin: 0 0 24px;
-  }
-  .action-text {
-    font-family: var(--font-sans); font-size: 15px; line-height: 1.6;
-    color: var(--ink); margin: 0 0 24px; max-width: 56ch;
-  }
   .source-row {
     display: flex; align-items: center; gap: 12px;
     font-family: var(--font-mono); font-size: 11px;
@@ -165,60 +149,85 @@
     padding-bottom: 1px; font-weight: 600;
   }
 
-  /* ── Today's Pick Card ── */
-  .pick-card {
+  /* ── Quick Hits Sidebar ── */
+  .qh-sidebar {
     background: var(--accent-deep);
     color: var(--paper);
     padding: 32px 28px; border-radius: 6px;
     align-self: start; position: sticky; top: 28px;
   }
-  .pick-header { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
-  .pick-dot {
-    width: 8px; height: 8px; border-radius: 50%;
-    background: var(--accent-light); flex-shrink: 0;
-  }
-  .pick-label {
+  .qh-sidebar-label {
     font-family: var(--font-mono); font-size: 10px; font-weight: 600;
-    letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent-light);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--accent-light); margin-bottom: 16px;
   }
-  .pick-title {
-    font-family: var(--font-display);
-    font-size: 22px; line-height: 1.2;
-    letter-spacing: -0.01em; font-weight: 500;
-    margin: 0 0 14px; color: var(--paper);
+  .qh-preview-list {
+    list-style: none; margin: 0; padding: 0;
   }
-  .glance-section {
-    padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.12);
-    margin-top: 4px;
+  .qh-preview-item {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
   }
-  .glance-label {
-    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
-    letter-spacing: 0.14em; text-transform: uppercase;
-    color: var(--accent-light); margin-bottom: 14px;
+  .qh-preview-item:first-child { border-top: 1px solid rgba(255,255,255,0.12); }
+  .qh-preview-title {
+    font-family: var(--font-display); font-size: 15px;
+    line-height: 1.3; letter-spacing: -0.005em;
+    font-weight: 500; color: var(--paper); margin: 0 0 4px;
   }
-  .glance-row {
-    display: grid; grid-template-columns: 74px 1fr 20px;
-    align-items: center; gap: 10px;
-    font-family: var(--font-sans); font-size: 12px;
-    color: var(--paper); margin-bottom: 9px;
-  }
-  .glance-bar-track {
-    height: 5px; background: rgba(255,255,255,0.10);
-    border-radius: 999px; overflow: hidden;
-  }
-  .glance-bar-fill {
-    height: 100%; border-radius: 999px;
-    background: var(--accent-light);
-  }
-  .glance-count {
-    font-family: var(--font-mono); font-size: 11px;
-    color: rgba(255,255,255,0.55); text-align: right;
+  .qh-preview-source {
+    font-family: var(--font-mono); font-size: 10px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: rgba(255,255,255,0.50);
   }
 
-  /* ── Stories Grid ── */
-  .stories-wrap { background: var(--paper-warm); border-top: 1px solid var(--rule); }
-  .stories-inner { max-width: 1240px; margin: 0 auto; padding: 56px 40px; }
+  /* ── Visuals ── */
+  .visual-wrap { margin: 0 0 22px; }
+  .visual-img {
+    width: 100%; height: auto; border-radius: 4px; display: block;
+  }
+  .visual-chart { margin: 0; }
+  .chart-row {
+    display: grid;
+    grid-template-columns: 100px 1fr 48px;
+    align-items: center; gap: 10px;
+    font-family: var(--font-sans); font-size: 13px;
+    color: var(--ink); margin-bottom: 8px;
+  }
+  .chart-label { color: var(--ink-soft); }
+  .chart-bar-track {
+    height: 6px; background: var(--rule);
+    border-radius: 999px; overflow: hidden;
+  }
+  .chart-bar-fill {
+    height: 100%; border-radius: 999px;
+    background: var(--accent-mid);
+  }
+  .chart-value {
+    font-family: var(--font-mono); font-size: 12px;
+    color: var(--ink-dim); text-align: right;
+  }
+  .visual-table-wrap { overflow-x: auto; margin: 0 0 22px; }
+  .visual-table {
+    width: 100%; border-collapse: collapse;
+    font-family: var(--font-sans); font-size: 13px;
+    color: var(--ink);
+  }
+  .visual-table th {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--accent-deep);
+    padding: 8px 12px; border-bottom: 2px solid var(--rule-strong);
+    text-align: left;
+  }
+  .visual-table td {
+    padding: 8px 12px; border-bottom: 1px solid var(--rule);
+    color: var(--ink-soft);
+  }
+  .visual-table tr:last-child td { border-bottom: none; }
+
+  /* ── Quick Hits Grid ── */
+  .quick-hits-wrap { background: var(--paper-warm); border-top: 1px solid var(--rule); }
+  .quick-hits-inner { max-width: 1240px; margin: 0 auto; padding: 56px 40px; }
   .section-kicker {
     font-family: var(--font-mono); font-size: 11px; font-weight: 600;
     letter-spacing: 0.14em; text-transform: uppercase;
@@ -227,55 +236,45 @@
   .section-title {
     font-family: var(--font-display); font-size: 30px;
     line-height: 1.1; letter-spacing: -0.015em;
-    font-weight: 500; color: var(--ink); margin: 0;
+    font-weight: 500; color: var(--ink); margin: 0 0 28px;
   }
-  .stories-grid {
+  .qh-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0;
-    border-top: 1px solid var(--rule-strong);
-    margin-top: 28px;
   }
-  .story-card {
+  .qh-card {
     padding: 28px 26px 24px;
-    border-right: 1px solid var(--rule);
+    border-right: 1px solid rgba(0,0,0,0.08);
     display: flex; flex-direction: column;
   }
-  .story-card:last-child { border-right: none; }
-  .story-card-meta {
-    display: flex; align-items: center; gap: 10px;
-    margin-bottom: 16px;
-  }
-  .story-title {
+  .qh-card:last-child { border-right: none; }
+
+  /* Dark card — positions 1, 3, … */
+  .qh-card--dark { background: var(--accent-deep); border-right-color: rgba(255,255,255,0.08); }
+  .qh-card--dark .qh-card-title { color: var(--paper); }
+  .qh-card--dark .qh-card-summary { color: rgba(255,255,255,0.80); }
+  .qh-card--dark .qh-card-source { border-top-color: rgba(255,255,255,0.12); color: rgba(255,255,255,0.50); }
+  .qh-card--dark .qh-card-source-link { color: var(--accent-light); border-bottom-color: var(--accent-mid); }
+
+  /* Light card — positions 2, 4, … */
+  .qh-card--light { background: var(--accent-light); border-right-color: rgba(27,67,50,0.15); }
+  .qh-card--light .qh-card-title { color: var(--accent-deep); }
+  .qh-card--light .qh-card-summary { color: var(--accent-deep); }
+  .qh-card--light .qh-card-source { border-top-color: rgba(27,67,50,0.20); color: var(--accent-mid); }
+  .qh-card--light .qh-card-source-link { color: var(--accent-deep); border-bottom-color: var(--accent-mid); }
+
+  .qh-card-title {
     font-family: var(--font-display); font-size: 19px;
     line-height: 1.2; letter-spacing: -0.01em;
     font-weight: 500; color: var(--ink);
     margin: 0 0 14px; text-wrap: balance;
   }
-  .story-what {
-    font-family: var(--font-display); font-size: 14px; line-height: 1.6;
-    color: var(--ink-soft); margin: 0 0 16px; font-weight: 400;
+  .qh-card-summary {
+    font-family: var(--font-display); font-size: 16px; line-height: 1.6;
+    color: var(--ink-soft); margin: 0 0 16px; font-weight: 400; flex: 1;
   }
-  .story-action-box {
-    background: var(--paper); border: 1px solid var(--rule);
-    border-radius: 4px; padding: 14px 16px; margin-bottom: 14px;
-  }
-  .story-action-label {
-    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
-    letter-spacing: 0.14em; text-transform: uppercase;
-    color: var(--accent-deep); margin-bottom: 6px;
-  }
-  .story-action-text {
-    font-family: var(--font-sans); font-size: 13px;
-    line-height: 1.55; color: var(--ink); margin: 0;
-  }
-  .story-action-code {
-    font-family: var(--font-mono); font-size: 12px;
-    line-height: 1.6; color: #E4EDE7; background: var(--ink);
-    margin: 0; padding: 12px 14px; border-radius: 4px;
-    white-space: pre-wrap; word-break: break-all; display: block;
-  }
-  .story-source {
+  .qh-card-source {
     margin-top: auto; padding-top: 14px;
     border-top: 1px solid var(--rule);
     display: flex; align-items: center; gap: 8px;
@@ -283,9 +282,68 @@
     letter-spacing: 0.1em; text-transform: uppercase;
     color: var(--ink-dim);
   }
-  .story-source-link {
+  .qh-card-source-link {
     color: var(--ink-soft);
     border-bottom: 1px solid var(--rule-strong);
+    padding-bottom: 1px; font-weight: 600;
+  }
+
+  /* ── Under the Hood ── */
+  .hood-wrap { background: var(--paper); border-top: 1px solid var(--rule); }
+  .hood-inner { max-width: 1240px; margin: 0 auto; padding: 56px 40px; }
+  .hood-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 48px;
+    padding-top: 28px;
+    border-top: 1px solid var(--rule-strong);
+  }
+  .hood-label {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent-mid); margin-bottom: 10px;
+  }
+  .hood-title {
+    font-family: var(--font-display); font-size: 22px;
+    line-height: 1.15; letter-spacing: -0.01em;
+    font-weight: 500; color: var(--ink);
+    margin: 0 0 16px; text-wrap: balance;
+  }
+  .hood-what {
+    font-family: var(--font-display); font-size: 15px; line-height: 1.65;
+    color: var(--ink); margin: 0 0 18px; font-weight: 400;
+  }
+  .hood-why {
+    border-left: 2px solid var(--accent-mid);
+    padding: 2px 0 2px 16px;
+    margin: 0 0 20px;
+  }
+  .hood-why-label {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent-mid); margin-bottom: 6px;
+  }
+  .hood-why-text {
+    font-family: var(--font-sans); font-size: 14px; line-height: 1.6;
+    color: var(--ink-soft); margin: 0;
+  }
+  .hood-code {
+    font-family: var(--font-mono); font-size: 13px; line-height: 1.65;
+    background: var(--ink); color: #E4EDE7;
+    padding: 18px 20px; border-radius: 6px;
+    overflow-x: auto; white-space: pre;
+    margin: 0 0 20px; display: block;
+  }
+  .hood-source {
+    display: flex; align-items: center; gap: 8px;
+    font-family: var(--font-mono); font-size: 10px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--ink-dim);
+    padding-top: 14px; border-top: 1px solid var(--rule);
+  }
+  .hood-source-link {
+    color: var(--accent-deep);
+    border-bottom: 1px solid var(--accent-mid);
     padding-bottom: 1px; font-weight: 600;
   }
 
@@ -321,19 +379,22 @@
 
   /* ── Responsive ── */
   @media (max-width: 800px) {
-    .masthead-inner, .hero, .stories-inner,
-    .funfact-inner, .footer-inner {
+    .masthead-inner, .hero, .quick-hits-inner,
+    .hood-inner, .funfact-inner, .footer-inner {
       padding-left: 20px !important; padding-right: 20px !important;
     }
     .hero { padding-top: 32px !important; padding-bottom: 24px !important; }
     .hero-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
-    .pick-card { position: static !important; }
-    .stories-grid { grid-template-columns: 1fr !important; }
-    .story-card {
+    .qh-sidebar { position: static !important; }
+    .qh-grid { grid-template-columns: 1fr !important; }
+    .hood-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+    .qh-card {
       border-right: none !important;
-      border-bottom: 1px solid var(--rule) !important;
+      border-bottom: 1px solid rgba(0,0,0,0.08) !important;
     }
-    .story-card:last-child { border-bottom: none !important; }
+    .qh-card--dark { border-bottom-color: rgba(255,255,255,0.08) !important; }
+    .qh-card--light { border-bottom-color: rgba(27,67,50,0.15) !important; }
+    .qh-card:last-child { border-bottom: none !important; }
     .masthead-sub { display: none !important; }
     .funfact-inner { flex-direction: column !important; gap: 10px !important; }
     .footer-inner { flex-direction: column !important; gap: 6px !important; }
@@ -342,7 +403,6 @@
   @media (max-width: 600px) {
     .hero-teaser { font-size: 26px !important; }
     .lead-what { font-size: 16px !important; }
-    .action-code { font-size: 12px !important; }
   }
 </style>
 </head>
@@ -354,175 +414,179 @@
     <div class="masthead-brand">
       <div class="masthead-logo">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <!-- bottom-right square: accent-mid -->
           <rect x="8" y="8" width="18" height="18" rx="4" fill="#2D6A4F"/>
-          <!-- top-left square: accent-light, overlapping -->
           <rect x="2" y="2" width="18" height="18" rx="4" fill="#74C69D"/>
         </svg>
       </div>
       <span class="masthead-wordmark">Tech Digest</span>
-      <span class="masthead-sub">Daily Signal for Developers</span>
+      <span class="masthead-sub">Daily Signal for Professionals</span>
     </div>
     <span class="masthead-date">Sunday, April 26 2026</span>
   </div>
 </header>
 
-<!-- Compute counts and split stories -->
-
-
-
-
-
-
-
-<!-- ── Hero ── -->
+<!-- ── Hero (Lead Story) ── -->
 <div class="hero-wrap">
   <div class="hero">
 
-    <!-- Overline row -->
     <div class="hero-overline">
       <span class="hero-overline-label">Today's Digest</span>
       <div class="hero-overline-rule"></div>
       <span class="hero-overline-date">Sunday, April 26 2026</span>
     </div>
 
-    <!-- Editorial teaser -->
-    <h1 class="hero-teaser">Claude Code goes free for the terminal-savvy, HuggingFace ships an autonomous ML intern, and DeepSeek opens up expert-parallel infrastructure for anyone training MoE models.</h1>
+    <h1 class="hero-teaser">OpenAI says its coding benchmark no longer measures what it claims to—and it matters if you're evaluating AI coding tools.</h1>
 
-    <!-- Hero grid: lead (2/3) + pick card (1/3) -->
     <div class="hero-grid">
 
-      <!-- Lead story -->
+      <!-- Lead article -->
       <article>
-        <div class="category-kicker">Dev Tools · Lead story</div>
-        <h2 class="lead-title">free-claude-code: Full Claude Code in Your Terminal, No API Bill</h2>
-        <p class="lead-what"><a href="https://github.com/Alishahryar1/free-claude-code" style="color:inherit;text-decoration:underline;">free-claude-code</a> is an open-source project that lets you run Claude Code's agentic coding capabilities for free in the terminal, as a VSCode extension, or via Discord — no paid Anthropic API subscription required.</p>
+        <div class="lead-kicker">Lead Story</div>
+        <h2 class="lead-title">OpenAI Questions Its Own Coding Benchmark</h2>
+        <p class="lead-what">OpenAI published an analysis explaining why SWE-bench Verified—a widely-used test for measuring AI coding capabilities—no longer accurately reflects how well AI models can actually code. The benchmark has become easier as models improve, making it unreliable for comparing today's frontier tools.</p>
+
+        
 
         <div class="why-callout">
-          <div class="why-callout-label">Why it matters</div>
-          <p class="why-callout-text">If API costs have kept you off Claude Code, this removes that barrier entirely. Expect rate limits and potential instability, but for personal projects and experimentation it's a real unlock.</p>
+          <div class="why-callout-label">What this means</div>
+          <p class="why-callout-text">If you've been using SWE-bench scores to evaluate AI coding assistants for your team—whether you're a manager picking tools or a developer choosing what to trust—those numbers may be misleading you now. Benchmarks need to evolve as AI gets better, or they stop telling you anything useful. This is a rare moment of transparency: OpenAI is admitting one of the standard measures in the industry isn't working anymore.</p>
         </div>
-
-        <div class="action-label">TRY IT</div>
-        
-        <pre class="action-code">git clone https://github.com/Alishahryar1/free-claude-code
-cd free-claude-code
-# Follow the README for terminal, VSCode, or Discord setup</pre>
-        
 
         <div class="source-row">
           <span>Source</span>
-          <a href="https://github.com/Alishahryar1/free-claude-code" class="source-link">GitHub Trending ↗</a>
+          <a href="https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/" class="source-link">OpenAI ↗</a>
         </div>
       </article>
 
-      <!-- Editor's Pick card -->
-      <aside class="pick-card">
-        <div class="pick-header">
-          <div class="pick-dot"></div>
-          <span class="pick-label">Editor's Pick</span>
-        </div>
-        <h3 class="pick-title">free-claude-code is the most directly actionable project trending today — it brings Claude's full agentic terminal workflow to developers who've been sitting out due to API costs.</h3>
-
-        <div class="glance-section">
-          <div class="glance-label">At a Glance</div>
+      <!-- Quick Hits sidebar preview -->
+      
+      <aside class="qh-sidebar">
+        <div class="qh-sidebar-label">Quick Hits</div>
+        <ul class="qh-preview-list">
           
-          <div class="glance-row">
-            <span>AI</span>
-            <div class="glance-bar-track">
-              <div class="glance-bar-fill" style="width:50%"></div>
-            </div>
-            <span class="glance-count">2</span>
-          </div>
+          <li class="qh-preview-item">
+            <p class="qh-preview-title">Amateur Solves 60-Year-Old Math Problem Using ChatGPT</p>
+            <span class="qh-preview-source">Scientific American</span>
+          </li>
           
+          <li class="qh-preview-item">
+            <p class="qh-preview-title">Git 2.54 Released with Performance Improvements</p>
+            <span class="qh-preview-source">GitHub Blog</span>
+          </li>
           
-          <div class="glance-row">
-            <span>Dev Tools</span>
-            <div class="glance-bar-track">
-              <div class="glance-bar-fill" style="width:50%"></div>
-            </div>
-            <span class="glance-count">2</span>
-          </div>
+          <li class="qh-preview-item">
+            <p class="qh-preview-title">GitHub Improves Deployment Safety with eBPF</p>
+            <span class="qh-preview-source">GitHub Blog</span>
+          </li>
           
-          
-        </div>
+        </ul>
       </aside>
+      
 
     </div>
   </div>
 </div>
 
-<!-- ── Non-lead Stories ── -->
+<!-- ── Quick Hits ── -->
 
-<div class="stories-wrap">
-  <div class="stories-inner">
-    <div class="section-kicker">Also in this issue</div>
-    <h2 class="section-title">The rest of today's signal</h2>
+<div class="quick-hits-wrap">
+  <div class="quick-hits-inner">
+    <div class="section-kicker">Quick Hits</div>
+    <h2 class="section-title">What else happened today</h2>
 
-    <div class="stories-grid">
+    <div class="qh-grid">
       
-      <article class="story-card">
-        <div class="story-card-meta">
-          <span class="category-kicker">AI</span>
-        </div>
-        <h3 class="story-title">HuggingFace's ml-intern: An Open-Source AI That Trains Its Own Models</h3>
-        <p class="story-what"><a href="https://github.com/huggingface/ml-intern" style="color:inherit;text-decoration:underline;">ml-intern</a> is HuggingFace's new open-source autonomous ML engineer that reads research papers, trains models, and ships experiments without requiring a human in the loop.</p>
+      <article class="qh-card qh-card--dark">
+        <h3 class="qh-card-title">Amateur Solves 60-Year-Old Math Problem Using ChatGPT</h3>
+        <p class="qh-card-summary">A non-professional mathematician used ChatGPT to help solve an Erdős problem—a type of puzzle that has stumped professional researchers for decades. This is a tangible example of AI amplifying human problem-solving beyond what experts alone could do, though the mathematician still brought the core insight.</p>
 
-        <div class="story-action-box">
-          <div class="story-action-label">TRY IT</div>
-          
-          <pre class="story-action-code">git clone https://github.com/huggingface/ml-intern
-cd ml-intern
-pip install -r requirements.txt
-# See README to point it at a paper and let it run</pre>
-          
-        </div>
+        
 
-        <div class="story-source">
+        <div class="qh-card-source">
           <span>Via</span>
-          <a href="https://github.com/huggingface/ml-intern" class="story-source-link">GitHub Trending ↗</a>
+          <a href="https://www.scientificamerican.com/article/amateur-armed-with-chatgpt-vibe-maths-a-60-year-old-problem/" class="qh-card-source-link">Scientific American ↗</a>
         </div>
       </article>
       
-      <article class="story-card">
-        <div class="story-card-meta">
-          <span class="category-kicker">AI</span>
-        </div>
-        <h3 class="story-title">DeepSeek Open-Sources DeepEP: Expert-Parallel Communication at Scale</h3>
-        <p class="story-what"><a href="https://github.com/deepseek-ai/DeepEP" style="color:inherit;text-decoration:underline;">DeepEP</a> is an efficient expert-parallel communication library from DeepSeek AI, designed to reduce the communication overhead that bottlenecks mixture-of-experts (MoE) training and inference.</p>
+      <article class="qh-card qh-card--light">
+        <h3 class="qh-card-title">Git 2.54 Released with Performance Improvements</h3>
+        <p class="qh-card-summary">The open-source Git project released version 2.54 with notable features and performance improvements. GitHub highlighted the update for developers who want the latest version control capabilities.</p>
 
-        <div class="story-action-box">
-          <div class="story-action-label">THE TAKE</div>
-          
-          <p class="story-action-text">DeepSeek keeps shipping infrastructure that the rest of the field has been building privately. If you're running MoE models at scale, DeepEP belongs on your benchmarking list alongside NCCL.</p>
-          
+        
+        <div class="visual-wrap">
+          <img src="https://github.blog/wp-content/uploads/2026/04/git254.png" alt="Git 2.54 Released with Performance Improvements" class="visual-img">
         </div>
+        
 
-        <div class="story-source">
+        <div class="qh-card-source">
           <span>Via</span>
-          <a href="https://github.com/deepseek-ai/DeepEP" class="story-source-link">GitHub Trending ↗</a>
+          <a href="https://github.blog/open-source/git/highlights-from-git-2-54/" class="qh-card-source-link">GitHub Blog ↗</a>
         </div>
       </article>
       
-      <article class="story-card">
-        <div class="story-card-meta">
-          <span class="category-kicker">Dev Tools</span>
-        </div>
-        <h3 class="story-title">Roo Code: Multi-Agent AI Dev Team Built Into VS Code</h3>
-        <p class="story-what"><a href="https://github.com/RooCodeInc/Roo-Code" style="color:inherit;text-decoration:underline;">Roo Code</a> is an open-source VS Code extension that runs a full team of AI agents — for planning, coding, reviewing, and debugging — directly inside your editor.</p>
+      <article class="qh-card qh-card--dark">
+        <h3 class="qh-card-title">GitHub Improves Deployment Safety with eBPF</h3>
+        <p class="qh-card-summary">GitHub shared how it uses eBPF (extended Berkeley Packet Filter)—a low-level Linux technology—to detect and prevent circular dependencies in its deployment tooling. This is infrastructure work that makes GitHub itself more reliable when you push code.</p>
 
-        <div class="story-action-box">
-          <div class="story-action-label">TRY IT</div>
-          
-          <pre class="story-action-code"># Install from the VS Code marketplace
-code --install-extension RooCode.roo-code
-# Or search 'Roo Code' in the Extensions panel</pre>
-          
-        </div>
+        
 
-        <div class="story-source">
+        <div class="qh-card-source">
           <span>Via</span>
-          <a href="https://github.com/RooCodeInc/Roo-Code" class="story-source-link">GitHub Trending ↗</a>
+          <a href="https://github.blog/engineering/infrastructure/how-github-uses-ebpf-to-improve-deployment-safety/" class="qh-card-source-link">GitHub Blog ↗</a>
+        </div>
+      </article>
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- ── Under the Hood ── -->
+
+<div class="hood-wrap">
+  <div class="hood-inner">
+    <div class="section-kicker">Under the Hood</div>
+    <h2 class="section-title">For the technically curious</h2>
+
+    <div class="hood-grid">
+      
+      <article>
+        <div class="hood-label">Deep Dive</div>
+        <h3 class="hood-title">Microsoft Porting TypeScript to Go Natively</h3>
+        <p class="hood-what">Microsoft opened a staging repository for a native port of TypeScript written in Go instead of the current JavaScript/Node implementation. This is early-stage work, but it signals intent to rewrite one of the most widely-used programming languages in a faster, more manageable system language.</p>
+
+        
+
+        <div class="hood-why">
+          <div class="hood-why-label">Why it matters</div>
+          <p class="hood-why-text">TypeScript is used by millions of developers daily. A Go-based implementation could make the language significantly faster to run and easier to maintain, but the migration is a multi-year effort. This affects anyone who builds with TypeScript, though real-world impact is still years away.</p>
+        </div>
+
+        
+
+        <div class="hood-source">
+          <span>Source</span>
+          <a href="https://github.com/microsoft/typescript-go" class="hood-source-link">GitHub ↗</a>
+        </div>
+      </article>
+      
+      <article>
+        <div class="hood-label">Deep Dive</div>
+        <h3 class="hood-title">Open Infrastructure for AI Agents That Control Desktops</h3>
+        <p class="hood-what">A project called CUA released open-source infrastructure for building and training AI agents that can operate full desktop environments (Windows, macOS, Linux). The toolkit includes sandboxes, SDKs, and benchmarks so developers can train agents that interact with computers the way humans do—clicking, typing, navigating windows.</p>
+
+        
+
+        <div class="hood-why">
+          <div class="hood-why-label">Why it matters</div>
+          <p class="hood-why-text">Computer-use agents (AI that can take control of your desktop) are becoming a real research area. Open-source infrastructure lowers the barrier for developers and researchers to experiment with this capability. This is the foundation layer that could enable new kinds of automation, though safety and trust are still open questions.</p>
+        </div>
+
+        
+
+        <div class="hood-source">
+          <span>Source</span>
+          <a href="https://github.com/trycua/cua" class="hood-source-link">GitHub ↗</a>
         </div>
       </article>
       
@@ -536,7 +600,7 @@ code --install-extension RooCode.roo-code
 <div class="funfact-wrap">
   <div class="funfact-inner">
     <div class="funfact-label">◇ Fun fact</div>
-    <p class="funfact-text">"The average developer reads roughly 10 lines of code for every 1 they write, which is probably why we're all outsourcing the reading to AI now."</p>
+    <p class="funfact-text">"An amateur mathematician just solved a 60-year-old math puzzle with ChatGPT's help—the kind that stumped professionals for decades."</p>
   </div>
 </div>
 
@@ -544,7 +608,7 @@ code --install-extension RooCode.roo-code
 <!-- ── Footer ── -->
 <footer class="footer-wrap">
   <div class="footer-inner">
-    <span class="footer-text">Daily digest for developers · AI, dev tools, and hardware that matters.</span>
+    <span class="footer-text">Daily tech digest for curious professionals · AI news that affects your work.</span>
   </div>
 </footer>
 

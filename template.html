@@ -103,17 +103,17 @@
   }
 
   /* ── Lead Story ── */
-  .category-kicker {
+  .lead-kicker {
     font-family: var(--font-mono); font-size: 11px; font-weight: 600;
     letter-spacing: 0.14em; text-transform: uppercase;
-    color: var(--accent-deep);
+    color: var(--accent-deep); margin-bottom: 12px;
   }
   .lead-title {
     font-family: var(--font-display);
     font-size: clamp(22px, 2.8vw, 36px);
     line-height: 1.12; letter-spacing: -0.015em;
     font-weight: 500; color: var(--ink);
-    margin: 12px 0 20px;
+    margin: 0 0 20px;
     text-wrap: balance;
   }
   .lead-what {
@@ -136,22 +136,6 @@
     font-family: var(--font-sans); font-size: 15px; line-height: 1.6;
     color: var(--ink-soft); margin: 0; max-width: 56ch;
   }
-  .action-label {
-    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
-    letter-spacing: 0.14em; text-transform: uppercase;
-    color: var(--accent-deep); margin-bottom: 10px;
-  }
-  .action-code {
-    font-family: var(--font-mono); font-size: 13px; line-height: 1.65;
-    background: var(--ink); color: #E4EDE7;
-    padding: 20px 24px; border-radius: 6px;
-    overflow-x: auto; white-space: pre;
-    margin: 0 0 24px;
-  }
-  .action-text {
-    font-family: var(--font-sans); font-size: 15px; line-height: 1.6;
-    color: var(--ink); margin: 0 0 24px; max-width: 56ch;
-  }
   .source-row {
     display: flex; align-items: center; gap: 12px;
     font-family: var(--font-mono); font-size: 11px;
@@ -165,60 +149,85 @@
     padding-bottom: 1px; font-weight: 600;
   }
 
-  /* ── Today's Pick Card ── */
-  .pick-card {
+  /* ── Quick Hits Sidebar ── */
+  .qh-sidebar {
     background: var(--accent-deep);
     color: var(--paper);
     padding: 32px 28px; border-radius: 6px;
     align-self: start; position: sticky; top: 28px;
   }
-  .pick-header { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
-  .pick-dot {
-    width: 8px; height: 8px; border-radius: 50%;
-    background: var(--accent-light); flex-shrink: 0;
-  }
-  .pick-label {
+  .qh-sidebar-label {
     font-family: var(--font-mono); font-size: 10px; font-weight: 600;
-    letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent-light);
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--accent-light); margin-bottom: 16px;
   }
-  .pick-title {
-    font-family: var(--font-display);
-    font-size: 22px; line-height: 1.2;
-    letter-spacing: -0.01em; font-weight: 500;
-    margin: 0 0 14px; color: var(--paper);
+  .qh-preview-list {
+    list-style: none; margin: 0; padding: 0;
   }
-  .glance-section {
-    padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.12);
-    margin-top: 4px;
+  .qh-preview-item {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
   }
-  .glance-label {
-    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
-    letter-spacing: 0.14em; text-transform: uppercase;
-    color: var(--accent-light); margin-bottom: 14px;
+  .qh-preview-item:first-child { border-top: 1px solid rgba(255,255,255,0.12); }
+  .qh-preview-title {
+    font-family: var(--font-display); font-size: 15px;
+    line-height: 1.3; letter-spacing: -0.005em;
+    font-weight: 500; color: var(--paper); margin: 0 0 4px;
   }
-  .glance-row {
-    display: grid; grid-template-columns: 74px 1fr 20px;
-    align-items: center; gap: 10px;
-    font-family: var(--font-sans); font-size: 12px;
-    color: var(--paper); margin-bottom: 9px;
-  }
-  .glance-bar-track {
-    height: 5px; background: rgba(255,255,255,0.10);
-    border-radius: 999px; overflow: hidden;
-  }
-  .glance-bar-fill {
-    height: 100%; border-radius: 999px;
-    background: var(--accent-light);
-  }
-  .glance-count {
-    font-family: var(--font-mono); font-size: 11px;
-    color: rgba(255,255,255,0.55); text-align: right;
+  .qh-preview-source {
+    font-family: var(--font-mono); font-size: 10px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: rgba(255,255,255,0.50);
   }
 
-  /* ── Stories Grid ── */
-  .stories-wrap { background: var(--paper-warm); border-top: 1px solid var(--rule); }
-  .stories-inner { max-width: 1240px; margin: 0 auto; padding: 56px 40px; }
+  /* ── Visuals ── */
+  .visual-wrap { margin: 0 0 22px; }
+  .visual-img {
+    width: 100%; height: auto; border-radius: 4px; display: block;
+  }
+  .visual-chart { margin: 0; }
+  .chart-row {
+    display: grid;
+    grid-template-columns: 100px 1fr 48px;
+    align-items: center; gap: 10px;
+    font-family: var(--font-sans); font-size: 13px;
+    color: var(--ink); margin-bottom: 8px;
+  }
+  .chart-label { color: var(--ink-soft); }
+  .chart-bar-track {
+    height: 6px; background: var(--rule);
+    border-radius: 999px; overflow: hidden;
+  }
+  .chart-bar-fill {
+    height: 100%; border-radius: 999px;
+    background: var(--accent-mid);
+  }
+  .chart-value {
+    font-family: var(--font-mono); font-size: 12px;
+    color: var(--ink-dim); text-align: right;
+  }
+  .visual-table-wrap { overflow-x: auto; margin: 0 0 22px; }
+  .visual-table {
+    width: 100%; border-collapse: collapse;
+    font-family: var(--font-sans); font-size: 13px;
+    color: var(--ink);
+  }
+  .visual-table th {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--accent-deep);
+    padding: 8px 12px; border-bottom: 2px solid var(--rule-strong);
+    text-align: left;
+  }
+  .visual-table td {
+    padding: 8px 12px; border-bottom: 1px solid var(--rule);
+    color: var(--ink-soft);
+  }
+  .visual-table tr:last-child td { border-bottom: none; }
+
+  /* ── Quick Hits Grid ── */
+  .quick-hits-wrap { background: var(--paper-warm); border-top: 1px solid var(--rule); }
+  .quick-hits-inner { max-width: 1240px; margin: 0 auto; padding: 56px 40px; }
   .section-kicker {
     font-family: var(--font-mono); font-size: 11px; font-weight: 600;
     letter-spacing: 0.14em; text-transform: uppercase;
@@ -227,55 +236,45 @@
   .section-title {
     font-family: var(--font-display); font-size: 30px;
     line-height: 1.1; letter-spacing: -0.015em;
-    font-weight: 500; color: var(--ink); margin: 0;
+    font-weight: 500; color: var(--ink); margin: 0 0 28px;
   }
-  .stories-grid {
+  .qh-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0;
-    border-top: 1px solid var(--rule-strong);
-    margin-top: 28px;
   }
-  .story-card {
+  .qh-card {
     padding: 28px 26px 24px;
-    border-right: 1px solid var(--rule);
+    border-right: 1px solid rgba(0,0,0,0.08);
     display: flex; flex-direction: column;
   }
-  .story-card:last-child { border-right: none; }
-  .story-card-meta {
-    display: flex; align-items: center; gap: 10px;
-    margin-bottom: 16px;
-  }
-  .story-title {
+  .qh-card:last-child { border-right: none; }
+
+  /* Dark card — positions 1, 3, … */
+  .qh-card--dark { background: var(--accent-deep); border-right-color: rgba(255,255,255,0.08); }
+  .qh-card--dark .qh-card-title { color: var(--paper); }
+  .qh-card--dark .qh-card-summary { color: rgba(255,255,255,0.80); }
+  .qh-card--dark .qh-card-source { border-top-color: rgba(255,255,255,0.12); color: rgba(255,255,255,0.50); }
+  .qh-card--dark .qh-card-source-link { color: var(--accent-light); border-bottom-color: var(--accent-mid); }
+
+  /* Light card — positions 2, 4, … */
+  .qh-card--light { background: var(--accent-light); border-right-color: rgba(27,67,50,0.15); }
+  .qh-card--light .qh-card-title { color: var(--accent-deep); }
+  .qh-card--light .qh-card-summary { color: var(--accent-deep); }
+  .qh-card--light .qh-card-source { border-top-color: rgba(27,67,50,0.20); color: var(--accent-mid); }
+  .qh-card--light .qh-card-source-link { color: var(--accent-deep); border-bottom-color: var(--accent-mid); }
+
+  .qh-card-title {
     font-family: var(--font-display); font-size: 19px;
     line-height: 1.2; letter-spacing: -0.01em;
     font-weight: 500; color: var(--ink);
     margin: 0 0 14px; text-wrap: balance;
   }
-  .story-what {
-    font-family: var(--font-display); font-size: 14px; line-height: 1.6;
-    color: var(--ink-soft); margin: 0 0 16px; font-weight: 400;
+  .qh-card-summary {
+    font-family: var(--font-display); font-size: 16px; line-height: 1.6;
+    color: var(--ink-soft); margin: 0 0 16px; font-weight: 400; flex: 1;
   }
-  .story-action-box {
-    background: var(--paper); border: 1px solid var(--rule);
-    border-radius: 4px; padding: 14px 16px; margin-bottom: 14px;
-  }
-  .story-action-label {
-    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
-    letter-spacing: 0.14em; text-transform: uppercase;
-    color: var(--accent-deep); margin-bottom: 6px;
-  }
-  .story-action-text {
-    font-family: var(--font-sans); font-size: 13px;
-    line-height: 1.55; color: var(--ink); margin: 0;
-  }
-  .story-action-code {
-    font-family: var(--font-mono); font-size: 12px;
-    line-height: 1.6; color: #E4EDE7; background: var(--ink);
-    margin: 0; padding: 12px 14px; border-radius: 4px;
-    white-space: pre-wrap; word-break: break-all; display: block;
-  }
-  .story-source {
+  .qh-card-source {
     margin-top: auto; padding-top: 14px;
     border-top: 1px solid var(--rule);
     display: flex; align-items: center; gap: 8px;
@@ -283,9 +282,68 @@
     letter-spacing: 0.1em; text-transform: uppercase;
     color: var(--ink-dim);
   }
-  .story-source-link {
+  .qh-card-source-link {
     color: var(--ink-soft);
     border-bottom: 1px solid var(--rule-strong);
+    padding-bottom: 1px; font-weight: 600;
+  }
+
+  /* ── Under the Hood ── */
+  .hood-wrap { background: var(--paper); border-top: 1px solid var(--rule); }
+  .hood-inner { max-width: 1240px; margin: 0 auto; padding: 56px 40px; }
+  .hood-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 48px;
+    padding-top: 28px;
+    border-top: 1px solid var(--rule-strong);
+  }
+  .hood-label {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent-mid); margin-bottom: 10px;
+  }
+  .hood-title {
+    font-family: var(--font-display); font-size: 22px;
+    line-height: 1.15; letter-spacing: -0.01em;
+    font-weight: 500; color: var(--ink);
+    margin: 0 0 16px; text-wrap: balance;
+  }
+  .hood-what {
+    font-family: var(--font-display); font-size: 15px; line-height: 1.65;
+    color: var(--ink); margin: 0 0 18px; font-weight: 400;
+  }
+  .hood-why {
+    border-left: 2px solid var(--accent-mid);
+    padding: 2px 0 2px 16px;
+    margin: 0 0 20px;
+  }
+  .hood-why-label {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent-mid); margin-bottom: 6px;
+  }
+  .hood-why-text {
+    font-family: var(--font-sans); font-size: 14px; line-height: 1.6;
+    color: var(--ink-soft); margin: 0;
+  }
+  .hood-code {
+    font-family: var(--font-mono); font-size: 13px; line-height: 1.65;
+    background: var(--ink); color: #E4EDE7;
+    padding: 18px 20px; border-radius: 6px;
+    overflow-x: auto; white-space: pre;
+    margin: 0 0 20px; display: block;
+  }
+  .hood-source {
+    display: flex; align-items: center; gap: 8px;
+    font-family: var(--font-mono); font-size: 10px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--ink-dim);
+    padding-top: 14px; border-top: 1px solid var(--rule);
+  }
+  .hood-source-link {
+    color: var(--accent-deep);
+    border-bottom: 1px solid var(--accent-mid);
     padding-bottom: 1px; font-weight: 600;
   }
 
@@ -321,19 +379,22 @@
 
   /* ── Responsive ── */
   @media (max-width: 800px) {
-    .masthead-inner, .hero, .stories-inner,
-    .funfact-inner, .footer-inner {
+    .masthead-inner, .hero, .quick-hits-inner,
+    .hood-inner, .funfact-inner, .footer-inner {
       padding-left: 20px !important; padding-right: 20px !important;
     }
     .hero { padding-top: 32px !important; padding-bottom: 24px !important; }
     .hero-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
-    .pick-card { position: static !important; }
-    .stories-grid { grid-template-columns: 1fr !important; }
-    .story-card {
+    .qh-sidebar { position: static !important; }
+    .qh-grid { grid-template-columns: 1fr !important; }
+    .hood-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+    .qh-card {
       border-right: none !important;
-      border-bottom: 1px solid var(--rule) !important;
+      border-bottom: 1px solid rgba(0,0,0,0.08) !important;
     }
-    .story-card:last-child { border-bottom: none !important; }
+    .qh-card--dark { border-bottom-color: rgba(255,255,255,0.08) !important; }
+    .qh-card--light { border-bottom-color: rgba(27,67,50,0.15) !important; }
+    .qh-card:last-child { border-bottom: none !important; }
     .masthead-sub { display: none !important; }
     .funfact-inner { flex-direction: column !important; gap: 10px !important; }
     .footer-inner { flex-direction: column !important; gap: 6px !important; }
@@ -342,7 +403,6 @@
   @media (max-width: 600px) {
     .hero-teaser { font-size: 26px !important; }
     .lead-what { font-size: 16px !important; }
-    .action-code { font-size: 12px !important; }
   }
 </style>
 </head>
@@ -354,61 +414,66 @@
     <div class="masthead-brand">
       <div class="masthead-logo">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <!-- bottom-right square: accent-mid -->
           <rect x="8" y="8" width="18" height="18" rx="4" fill="#2D6A4F"/>
-          <!-- top-left square: accent-light, overlapping -->
           <rect x="2" y="2" width="18" height="18" rx="4" fill="#74C69D"/>
         </svg>
       </div>
       <span class="masthead-wordmark">Tech Digest</span>
-      <span class="masthead-sub">Daily Signal for Developers</span>
+      <span class="masthead-sub">Daily Signal for Professionals</span>
     </div>
     <span class="masthead-date">{{ full_date }}</span>
   </div>
 </header>
 
-<!-- Compute counts and split stories -->
-{% set lead_story = stories | selectattr("is_lead") | first | default(stories[0]) %}
-{% set other_stories = stories | rejectattr("is_lead") | list %}
-{% set ai_count = stories | selectattr("category","equalto","AI") | list | length %}
-{% set dev_count = stories | selectattr("category","equalto","Dev Tools") | list | length %}
-{% set hw_count = stories | selectattr("category","equalto","Hardware") | list | length %}
-{% set total = stories | length %}
-
-<!-- ── Hero ── -->
+<!-- ── Hero (Lead Story) ── -->
 <div class="hero-wrap">
   <div class="hero">
 
-    <!-- Overline row -->
     <div class="hero-overline">
       <span class="hero-overline-label">Today's Digest</span>
       <div class="hero-overline-rule"></div>
       <span class="hero-overline-date">{{ full_date }}</span>
     </div>
 
-    <!-- Editorial teaser -->
     <h1 class="hero-teaser">{{ teaser }}</h1>
 
-    <!-- Hero grid: lead (2/3) + pick card (1/3) -->
     <div class="hero-grid">
 
-      <!-- Lead story -->
+      <!-- Lead article -->
       <article>
-        <div class="category-kicker">{{ lead_story.category }} · Lead story</div>
+        <div class="lead-kicker">Lead Story</div>
         <h2 class="lead-title">{{ lead_story.title }}</h2>
         <p class="lead-what">{{ lead_story.what_happened | md_links | safe }}</p>
 
-        <div class="why-callout">
-          <div class="why-callout-label">Why it matters</div>
-          <p class="why-callout-text">{{ lead_story.why_it_matters | md_links | safe }}</p>
+        {% if lead_story.visual_type == "image" and lead_story.visual_url %}
+        <div class="visual-wrap">
+          <img src="{{ lead_story.visual_url }}" alt="{{ lead_story.title }}" class="visual-img">
         </div>
-
-        <div class="action-label">{{ lead_story.action_type }}</div>
-        {% if lead_story.action_is_code %}
-        <pre class="action-code">{{ lead_story.action_content }}</pre>
-        {% else %}
-        <p class="action-text">{{ lead_story.action_content | md_links | safe }}</p>
+        {% elif lead_story.visual_type == "chart" and lead_story.visual_data %}
+        <div class="visual-wrap">
+          <div class="visual-chart">
+            {% for bar in lead_story.visual_data | chart_bars %}
+            <div class="chart-row">
+              <span class="chart-label">{{ bar.label }}</span>
+              <div class="chart-bar-track"><div class="chart-bar-fill" style="width:{{ bar.pct }}%"></div></div>
+              <span class="chart-value">{{ bar.value }}</span>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% elif lead_story.visual_type == "table" and lead_story.visual_data %}
+        <div class="visual-wrap visual-table-wrap">
+          <table class="visual-table">
+            <thead><tr>{% for h in lead_story.visual_data.headers %}<th>{{ h }}</th>{% endfor %}</tr></thead>
+            <tbody>{% for row in lead_story.visual_data.rows %}<tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+          </table>
+        </div>
         {% endif %}
+
+        <div class="why-callout">
+          <div class="why-callout-label">What this means</div>
+          <p class="why-callout-text">{{ lead_story.what_this_means | md_links | safe }}</p>
+        </div>
 
         <div class="source-row">
           <span>Source</span>
@@ -416,78 +481,125 @@
         </div>
       </article>
 
-      <!-- Editor's Pick card -->
-      <aside class="pick-card">
-        <div class="pick-header">
-          <div class="pick-dot"></div>
-          <span class="pick-label">Editor's Pick</span>
-        </div>
-        <h3 class="pick-title">{{ todays_pick }}</h3>
-
-        <div class="glance-section">
-          <div class="glance-label">At a Glance</div>
-          {% if ai_count > 0 %}
-          <div class="glance-row">
-            <span>AI</span>
-            <div class="glance-bar-track">
-              <div class="glance-bar-fill" style="width:{{ (ai_count / total * 100)|int }}%"></div>
-            </div>
-            <span class="glance-count">{{ ai_count }}</span>
-          </div>
-          {% endif %}
-          {% if dev_count > 0 %}
-          <div class="glance-row">
-            <span>Dev Tools</span>
-            <div class="glance-bar-track">
-              <div class="glance-bar-fill" style="width:{{ (dev_count / total * 100)|int }}%"></div>
-            </div>
-            <span class="glance-count">{{ dev_count }}</span>
-          </div>
-          {% endif %}
-          {% if hw_count > 0 %}
-          <div class="glance-row">
-            <span>Hardware</span>
-            <div class="glance-bar-track">
-              <div class="glance-bar-fill" style="width:{{ (hw_count / total * 100)|int }}%"></div>
-            </div>
-            <span class="glance-count">{{ hw_count }}</span>
-          </div>
-          {% endif %}
-        </div>
+      <!-- Quick Hits sidebar preview -->
+      {% if quick_hits %}
+      <aside class="qh-sidebar">
+        <div class="qh-sidebar-label">Quick Hits</div>
+        <ul class="qh-preview-list">
+          {% for story in quick_hits %}
+          <li class="qh-preview-item">
+            <p class="qh-preview-title">{{ story.title }}</p>
+            <span class="qh-preview-source">{{ story.source_name }}</span>
+          </li>
+          {% endfor %}
+        </ul>
       </aside>
+      {% endif %}
 
     </div>
   </div>
 </div>
 
-<!-- ── Non-lead Stories ── -->
-{% if other_stories %}
-<div class="stories-wrap">
-  <div class="stories-inner">
-    <div class="section-kicker">Also in this issue</div>
-    <h2 class="section-title">The rest of today's signal</h2>
+<!-- ── Quick Hits ── -->
+{% if quick_hits %}
+<div class="quick-hits-wrap">
+  <div class="quick-hits-inner">
+    <div class="section-kicker">Quick Hits</div>
+    <h2 class="section-title">What else happened today</h2>
 
-    <div class="stories-grid">
-      {% for story in other_stories %}
-      <article class="story-card">
-        <div class="story-card-meta">
-          <span class="category-kicker">{{ story.category }}</span>
+    <div class="qh-grid">
+      {% for story in quick_hits %}
+      <article class="qh-card {% if loop.index % 2 == 1 %}qh-card--dark{% else %}qh-card--light{% endif %}">
+        <h3 class="qh-card-title">{{ story.title }}</h3>
+        <p class="qh-card-summary">{{ story.summary | md_links | safe }}</p>
+
+        {% if story.visual_type == "image" and story.visual_url %}
+        <div class="visual-wrap">
+          <img src="{{ story.visual_url }}" alt="{{ story.title }}" class="visual-img">
         </div>
-        <h3 class="story-title">{{ story.title }}</h3>
-        <p class="story-what">{{ story.what_happened | md_links | safe }}</p>
-
-        <div class="story-action-box">
-          <div class="story-action-label">{{ story.action_type }}</div>
-          {% if story.action_is_code %}
-          <pre class="story-action-code">{{ story.action_content }}</pre>
-          {% else %}
-          <p class="story-action-text">{{ story.action_content | md_links | safe }}</p>
-          {% endif %}
+        {% elif story.visual_type == "chart" and story.visual_data %}
+        <div class="visual-wrap">
+          <div class="visual-chart">
+            {% for bar in story.visual_data | chart_bars %}
+            <div class="chart-row">
+              <span class="chart-label">{{ bar.label }}</span>
+              <div class="chart-bar-track"><div class="chart-bar-fill" style="width:{{ bar.pct }}%"></div></div>
+              <span class="chart-value">{{ bar.value }}</span>
+            </div>
+            {% endfor %}
+          </div>
         </div>
+        {% elif story.visual_type == "table" and story.visual_data %}
+        <div class="visual-wrap visual-table-wrap">
+          <table class="visual-table">
+            <thead><tr>{% for h in story.visual_data.headers %}<th>{{ h }}</th>{% endfor %}</tr></thead>
+            <tbody>{% for row in story.visual_data.rows %}<tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+          </table>
+        </div>
+        {% endif %}
 
-        <div class="story-source">
+        <div class="qh-card-source">
           <span>Via</span>
-          <a href="{{ story.source_url }}" class="story-source-link">{{ story.source_name }} ↗</a>
+          <a href="{{ story.source_url }}" class="qh-card-source-link">{{ story.source_name }} ↗</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- ── Under the Hood ── -->
+{% if under_the_hood %}
+<div class="hood-wrap">
+  <div class="hood-inner">
+    <div class="section-kicker">Under the Hood</div>
+    <h2 class="section-title">For the technically curious</h2>
+
+    <div class="hood-grid">
+      {% for story in under_the_hood %}
+      <article>
+        <div class="hood-label">Deep Dive</div>
+        <h3 class="hood-title">{{ story.title }}</h3>
+        <p class="hood-what">{{ story.what_happened | md_links | safe }}</p>
+
+        {% if story.visual_type == "image" and story.visual_url %}
+        <div class="visual-wrap">
+          <img src="{{ story.visual_url }}" alt="{{ story.title }}" class="visual-img">
+        </div>
+        {% elif story.visual_type == "chart" and story.visual_data %}
+        <div class="visual-wrap">
+          <div class="visual-chart">
+            {% for bar in story.visual_data | chart_bars %}
+            <div class="chart-row">
+              <span class="chart-label">{{ bar.label }}</span>
+              <div class="chart-bar-track"><div class="chart-bar-fill" style="width:{{ bar.pct }}%"></div></div>
+              <span class="chart-value">{{ bar.value }}</span>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% elif story.visual_type == "table" and story.visual_data %}
+        <div class="visual-wrap visual-table-wrap">
+          <table class="visual-table">
+            <thead><tr>{% for h in story.visual_data.headers %}<th>{{ h }}</th>{% endfor %}</tr></thead>
+            <tbody>{% for row in story.visual_data.rows %}<tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+          </table>
+        </div>
+        {% endif %}
+
+        <div class="hood-why">
+          <div class="hood-why-label">Why it matters</div>
+          <p class="hood-why-text">{{ story.why_it_matters | md_links | safe }}</p>
+        </div>
+
+        {% if story.code_example %}
+        <pre class="hood-code">{{ story.code_example }}</pre>
+        {% endif %}
+
+        <div class="hood-source">
+          <span>Source</span>
+          <a href="{{ story.source_url }}" class="hood-source-link">{{ story.source_name }} ↗</a>
         </div>
       </article>
       {% endfor %}
@@ -497,7 +609,7 @@
 {% endif %}
 
 <!-- ── Fun Fact ── -->
-{% if fun_fact is defined and fun_fact %}
+{% if fun_fact %}
 <div class="funfact-wrap">
   <div class="funfact-inner">
     <div class="funfact-label">◇ Fun fact</div>
@@ -509,7 +621,7 @@
 <!-- ── Footer ── -->
 <footer class="footer-wrap">
   <div class="footer-inner">
-    <span class="footer-text">Daily digest for developers · AI, dev tools, and hardware that matters.</span>
+    <span class="footer-text">Daily tech digest for curious professionals · AI news that affects your work.</span>
   </div>
 </footer>
 

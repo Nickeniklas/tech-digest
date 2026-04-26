@@ -9,6 +9,7 @@ import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 from jinja2 import Environment, FileSystemLoader
+from concurrent.futures import ThreadPoolExecutor
 import logging
 
 # ---------------------------------------------------------------------------
@@ -23,7 +24,7 @@ logging.basicConfig(
 
 MODEL     = "claude-haiku-4-5-20251001"
 
-MAX_CONTEXT_CHARS = 12_000
+MAX_CONTEXT_CHARS = 16_000
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; tech-digest-bot/1.0)"}
 
@@ -32,80 +33,98 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; tech-digest-bot/1.0)"}
 # ---------------------------------------------------------------------------
 
 SYSTEM_PROMPT = """
-You are generating a daily tech digest for developers and AI-literate readers.
-You will be given a pre-curated list of today's headlines from key tech sources.
-Use ONLY the provided headlines — do not invent or assume additional stories.
+You are writing a daily AI and tech news digest for professionals who are curious about AI but don't have a technical background. Think: teachers, marketers, lawyers, designers, managers — people who use AI tools and want to stay informed, but don't write code for a living.
 
-### 1. Select the best 3–5 topics
+Your job is to make today's most important stories clear, relevant, and worth reading in under 5 minutes.
 
-Pick the most relevant, impactful, and practically useful stories.
-Prioritise:
-- Actionable updates (new APIs, features you can use today)
-- Breaking changes or deprecations
-- Genuinely new releases (not rumours or demos)
+## Reader brief
 
-Skip: funding rounds, corporate drama, vague announcements, anything
-older than 48 hours unless truly significant.
+The reader is smart and busy. They follow AI news because it affects their work, not because they love technology for its own sake. They don't need jargon explained at length — just one plain sentence, then move on. They want to know what happened and why it matters to them personally.
 
-### 2. Voice & tone
+## Voice & tone
 
-Write as a sharp, senior developer who reads everything so the reader
-doesn't have to. You have opinions — use them.
+Write like a calm, clear journalist who knows tech well. Confident but not opinionated. Informative but never dry.
 
-**Do:**
-- Have a clear take on each story
+- Never hype: no "groundbreaking", "revolutionary", "game-changer", "exciting"
+- No passive corporate tone: never "it has been announced that..."
+- No padding, no filler transitions, no hedging
+- When something is technical: one plain-language sentence, then move on
 - Talk directly to the reader using "you"
-- Distinguish between shipped features and announcements/demos
-- Be concise and confident — one strong sentence beats three hedging ones
+- Never make the reader feel behind for not knowing something
 
-**Never use:**
-- Hype words: groundbreaking, revolutionary, exciting, game-changer
-- Passive corporate tone: "it has been announced that..."
-- Filler transitions or unnecessary hedging
+## Structure
 
-When a story is technical, open WHY IT MATTERS with one sentence naming
-the technology, then pivot to real-world impact. Keep entries tight.
+Produce exactly three sections:
 
-### 3. Per-story fields
+### 1. lead_story
+The single most important or interesting AI/tech story today. Explain what happened in plain language. Include a "what_this_means" field written for a general professional audience. If the story has obvious relevance to specific professions (e.g. teachers, lawyers, marketers), mention them naturally — never force it. Max ~150 words total across all fields.
 
-For each story write:
-- **what_happened**: 1–2 sentences, facts only. Linkify tool/product names
-  inline when a URL is available: [name](url). Only use provided URLs.
-- **why_it_matters**: 1–2 sentences. What changes for the reader?
-- **action_content**: If TRY IT — minimal working code (max 15 lines, plain
-  text, no markdown fences). If THE TAKE — 1–2 sentences of editorial opinion.
+### 2. quick_hits
+3–4 shorter stories. Each one is 2–3 sentences max. No jargon. Just what happened and why it matters. These should be fast to read.
 
-Choosing action_type:
-- New API/tool/command with docs → TRY IT (action_is_code: true)
-- Research paper, demo, or deprecation → THE TAKE (action_is_code: false)
+### 3. under_the_hood
+1–2 more technical stories for readers who want to go deeper. Still written in plain language, but can include more detail. If there is a simple, runnable code example (max 10 lines of Python), include it. This section is clearly marked as the nerdy part — readers self-select into it.
 
-Lead story: most actionable today, or biggest shift in a space readers follow.
-If two tie — pick the one with the better TRY IT example.
+## Visuals
 
-### 4. Constraints
-- 100–200 words per story entry
-- Never fabricate news — only report what is in the provided headlines
-- If a category has no meaningful news today, skip it
+For each story, consider whether a visual would help:
+- If the story involves data, numbers, comparisons, or benchmarks → suggest a chart or table (set visual_type to "chart" or "table" and provide the data in visual_data)
+- If the story is about a product, tool, or announcement → provide an image URL if one is available in the source material (set visual_type to "image" and visual_url to the URL)
+- If no visual adds value → set visual_type to null
 
-### 5. Output format — IMPORTANT
+## Story selection
+
+Use ONLY the provided headlines — never invent or assume stories.
+
+Prioritise:
+- Real releases and shipped features over announcements and demos
+- Stories with clear real-world impact over purely technical ones
+- Freshness — skip anything older than 48 hours unless truly significant
+
+Skip: funding rounds, corporate drama, vague announcements, rumours.
+
+## Deduplication
+
+A list of recently covered topics may be provided. Skip any story that is the same topic with no meaningful new development. Meaningful new development includes: a new release, major update, reversal, significant new data, or a follow-up announcement. If a follow-up is warranted, begin what_happened with: "Previously covered on {date}: [brief recap]. Since then, ..."
+
+## Output format — IMPORTANT
 
 Output ONLY a JSON block using these exact delimiters:
 
 <!-- BEGIN_JSON -->
 {
-  "teaser": "1-sentence teaser with point of view",
-  "todays_pick": "1-2 sentence editorial note on the lead story",
-  "fun_fact": "One punchy sentence — a tech joke, surprising dev stat, or absurd-but-true fact.",
-  "stories": [
+  "teaser": "One sentence. What's the most interesting thing today — written for a curious non-technical reader.",
+  "fun_fact": null,
+  "lead_story": {
+    "title": "Story title",
+    "what_happened": "1–2 sentences. Plain language. What actually happened.",
+    "what_this_means": "1–2 sentences. Why does this matter? Generic professional audience. Include profession examples if obvious.",
+    "visual_type": "image | chart | table | null",
+    "visual_url": "https://... or null",
+    "visual_data": null,
+    "source_name": "Source Name",
+    "source_url": "https://..."
+  },
+  "quick_hits": [
     {
       "title": "Story title",
-      "category": "AI",
-      "is_lead": true,
-      "what_happened": "Facts. Can contain [text](url) inline links.",
-      "why_it_matters": "Impact. Can contain [text](url) inline links.",
-      "action_type": "TRY IT",
-      "action_is_code": true,
-      "action_content": "pip install something\n# minimal example here",
+      "summary": "2–3 sentences max. What happened and why it matters. No jargon.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "Source Name",
+      "source_url": "https://..."
+    }
+  ],
+  "under_the_hood": [
+    {
+      "title": "Story title",
+      "what_happened": "Plain language but more detail than quick hits.",
+      "why_it_matters": "Technical significance. Who this is for.",
+      "code_example": null,
+      "visual_type": "chart | table | null",
+      "visual_url": null,
+      "visual_data": null,
       "source_name": "Source Name",
       "source_url": "https://..."
     }
@@ -113,27 +132,28 @@ Output ONLY a JSON block using these exact delimiters:
 }
 <!-- END_JSON -->
 
-JSON field rules:
-- "category": exactly "AI", "Dev Tools", or "Hardware"
-- "is_lead": true for exactly one story, false for others
-- "action_type": exactly "TRY IT" or "THE TAKE"
-- "action_is_code": true if action_content is code, false if prose
-- "action_content": plain text only (no markdown fences)
-- "fun_fact": one sentence, max 20 words, witty or surprising. No hashtags.
-- Inline links use standard Markdown: [text](url) — only from provided headlines
-- Output valid JSON (no trailing commas, no comments)
-
-### 6. Deduplication (applies when previously-covered topics are listed in the user message)
-- Skip any story that is the exact same topic with no meaningful new development since it was last covered.
-- "Related" is not sufficient to skip — only skip if there is genuinely nothing new to say.
-- Meaningful new development includes: a new model release, major update, reversal, significant new data, or a follow-up announcement.
-- If a follow-up is warranted, begin `what_happened` with: "Previously covered on {date}: [brief recap]. Since then, ..."
-- Prioritise stories NOT seen in the past week.
+### Field rules
+- "fun_fact": one punchy sentence if genuinely interesting — otherwise null. Max 20 words.
+- "visual_type": exactly "image", "chart", "table", or null
+- "visual_url": only use URLs from provided source material — never fabricate
+- "visual_data": for charts/tables, provide a JSON object with keys "headers" and "rows"
+- "code_example": plain text only, no markdown fences, max 10 lines — under_the_hood only
+- "teaser": written for a non-technical reader, no jargon
+- Output valid JSON — no trailing commas, no comments
 """.strip()
 
 # ---------------------------------------------------------------------------
 # Web fetching & extraction
 # ---------------------------------------------------------------------------
+
+_PRIVATE_PREFIXES = (
+    "http://localhost", "https://localhost",
+    "http://127.", "https://127.",
+    "http://10.", "https://10.",
+    "http://192.168.", "https://192.168.",
+    "http://169.254.", "https://169.254.",
+)
+
 
 def fetch_page(url: str) -> str:
     try:
@@ -144,6 +164,51 @@ def fetch_page(url: str) -> str:
         print(f"  [warn] Could not fetch {url}: {e}")
         logging.info(f"  [warn] Could not fetch {url}: {e}")
         return ""
+
+
+def fetch_article_detail(url: str) -> dict:
+    """Fetch one article page and extract og:image URL + first real paragraph."""
+    if not url.startswith(("http://", "https://")):
+        return {}
+    if any(url.startswith(p) for p in _PRIVATE_PREFIXES):
+        return {}
+    try:
+        r = requests.get(url, timeout=8, headers=HEADERS)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "html.parser")
+
+        image_url = None
+        for prop in ("og:image", "twitter:image"):
+            tag = soup.find("meta", property=prop) or soup.find("meta", attrs={"name": prop})
+            if tag and tag.get("content", "").startswith("http"):
+                image_url = tag["content"]
+                break
+
+        body = ""
+        for p in soup.find_all("p"):
+            text = p.get_text(strip=True)
+            if len(text) >= 80:
+                body = text[:300]
+                break
+
+        return {"image_url": image_url, "body": body}
+    except Exception:
+        return {}
+
+
+def enrich_items(items: list[dict], source: str, n: int = 3) -> list[dict]:
+    """Fetch article detail for the first n items in parallel and merge results."""
+    targets = items[:n]
+    urls = [item["url"] for item in targets]
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        details = list(executor.map(fetch_article_detail, urls))
+    for item, detail in zip(targets, details):
+        item.update(detail)
+    n_img  = sum(1 for d in details if d.get("image_url"))
+    n_body = sum(1 for d in details if d.get("body"))
+    print(f"    {source}: {n_img} image(s), {n_body} body(s) from {len(targets)} articles")
+    logging.info(f"Enriched {source}: {n_img} images, {n_body} bodies")
+    return items
 
 
 def extract_hn(html: str) -> list[dict]:
@@ -167,7 +232,7 @@ def extract_github_trending(html: str) -> list[dict]:
         if h2:
             name = " ".join(h2.get_text().split())
             url  = "https://github.com" + h2.get("href", "")
-            desc = desc_el.get_text(strip=True)[:150] if desc_el else ""
+            desc = desc_el.get_text(strip=True)[:250] if desc_el else ""
             items.append({"title": name, "url": url, "description": desc})
     return items
 
@@ -199,7 +264,7 @@ def extract_generic(html: str, base_url: str = "") -> list[dict]:
             if parent:
                 p = parent.find("p")
                 if p:
-                    desc = p.get_text(strip=True)[:150]
+                    desc = p.get_text(strip=True)[:250]
             items.append({"title": title, "url": href, "description": desc})
             if len(items) >= 20:
                 break
@@ -217,6 +282,10 @@ def format_section(name: str, items: list[dict]) -> str:
         line = f"- {item['title']} — {item['url']}"
         if item.get("description"):
             line += f"\n  {item['description']}"
+        if item.get("body"):
+            line += f"\n  Body: {item['body']}"
+        if item.get("image_url"):
+            line += f"\n  Image: {item['image_url']}"
         lines.append(line)
     return "\n".join(lines)
 
@@ -232,20 +301,25 @@ def gather_context() -> str:
     print("  Fetching HuggingFace Blog...")
     hf_items = extract_generic(fetch_page("https://huggingface.co/blog"), "https://huggingface.co")
 
-    print("  Fetching OpenAI News...")
-    oai_items = extract_generic(fetch_page("https://openai.com/news"), "https://openai.com")
-
     print("  Fetching Anthropic News...")
     ant_items = extract_generic(fetch_page("https://anthropic.com/news"), "https://anthropic.com")
 
     print("  Fetching GitHub Blog...")
     ghb_items = extract_generic(fetch_page("https://github.blog"), "https://github.blog")
 
+    # Enrich top articles from trusted blog sources with og:image + first paragraph.
+    # HN and GitHub Trending are skipped: HN links arbitrary external sites (prompt
+    # injection risk), Trending links repo pages (no useful og:image or article body).
+    # OpenAI removed: their /news page returns 403 reliably; HN surfaces OpenAI news anyway.
+    print("  Enriching blog articles...")
+    enrich_items(hf_items,  "HuggingFace", n=3)
+    enrich_items(ant_items, "Anthropic",   n=3)
+    enrich_items(ghb_items, "GitHub Blog", n=3)
+
     sections = [
         format_section("Hacker News", hn_items),
         format_section("GitHub Trending", gh_items),
         format_section("HuggingFace Blog", hf_items),
-        format_section("OpenAI News", oai_items),
         format_section("Anthropic News", ant_items),
         format_section("GitHub Blog", ghb_items),
     ]
@@ -288,19 +362,25 @@ def format_seen_topics_context(seen: list[dict]) -> str:
     return "\n".join(lines)
 
 
-def extract_seen_entries(stories: list[dict], date_str: str) -> list[dict]:
-    """Build seen_topics entries from today's generated stories."""
+def extract_seen_entries(data: dict, date_str: str) -> list[dict]:
+    """Build seen_topics entries from today's generated digest."""
     entries = []
-    for story in stories:
-        raw_summary = story.get("what_happened", "")
-        first_sentence = raw_summary.split(".")[0].strip()
-        summary = first_sentence + "." if first_sentence else raw_summary[:120]
-        entries.append({
-            "date": date_str,
-            "title": story["title"],
-            "summary": summary,
-            "source_urls": [story["source_url"]],
-        })
+
+    def _entry(title: str, raw_text: str, source_url: str) -> dict:
+        first_sentence = raw_text.split(".")[0].strip()
+        summary = first_sentence + "." if first_sentence else raw_text[:120]
+        return {"date": date_str, "title": title, "summary": summary, "source_urls": [source_url]}
+
+    lead = data.get("lead_story", {})
+    if lead:
+        entries.append(_entry(lead["title"], lead.get("what_happened", ""), lead["source_url"]))
+
+    for story in data.get("quick_hits", []):
+        entries.append(_entry(story["title"], story.get("summary", ""), story["source_url"]))
+
+    for story in data.get("under_the_hood", []):
+        entries.append(_entry(story["title"], story.get("what_happened", ""), story["source_url"]))
+
     return entries
 
 
@@ -349,38 +429,76 @@ def _md_links_to_html(text: str) -> str:
     )
 
 
-CATEGORY_EMOJI = {"AI": "🤖", "Dev Tools": "🛠️", "Hardware": "💾"}
+def _chart_bars(visual_data: dict) -> list[dict]:
+    """Convert visual_data to {label, value, pct} dicts for bar chart rendering."""
+    if not visual_data or not visual_data.get("rows"):
+        return []
+    rows = visual_data["rows"]
+    try:
+        vals = [float(row[1]) for row in rows if len(row) > 1]
+        max_val = max(vals) if vals else 1
+        result = []
+        for row in rows:
+            val = float(row[1]) if len(row) > 1 else 0
+            pct = int(val / max_val * 100) if max_val else 0
+            result.append({"label": row[0], "value": row[1], "pct": pct})
+        return result
+    except (ValueError, TypeError):
+        return [{"label": row[0], "value": row[1] if len(row) > 1 else "", "pct": 50} for row in rows]
 
 
 def render_markdown(data: dict, full_date: str) -> str:
     lines = [
         f"# Daily Tech Digest — {full_date}", "",
         f"> {data['teaser']}", "",
-        f"**Today's pick:** {data['todays_pick']}", "",
         "---",
     ]
+
+    lead = data["lead_story"]
+    lines += [
+        f"## {lead['title']}", "",
+        "**What happened**", lead["what_happened"], "",
+        "**What this means**", lead["what_this_means"], "",
+        f"Source: [{lead['source_name']} ↗]({lead['source_url']})", "",
+        "---",
+    ]
+
+    quick_hits = data.get("quick_hits", [])
+    if quick_hits:
+        lines += ["## Quick Hits", ""]
+        for story in quick_hits:
+            lines += [
+                f"### {story['title']}", "",
+                story["summary"], "",
+                f"Source: [{story['source_name']} ↗]({story['source_url']})", "",
+            ]
+        lines.append("---")
+
+    under = data.get("under_the_hood", [])
+    if under:
+        lines += ["## Under the Hood", ""]
+        for story in under:
+            lines += [
+                f"### {story['title']}", "",
+                "**What happened**", story["what_happened"], "",
+                "**Why it matters**", story["why_it_matters"], "",
+            ]
+            if story.get("code_example"):
+                lines += [f"```python\n{story['code_example']}\n```", ""]
+            lines += [f"Source: [{story['source_name']} ↗]({story['source_url']})", ""]
+        lines.append("---")
+
     if data.get("fun_fact"):
-        lines += [f"**Fun fact:** {data['fun_fact']}", "", "---"]
-    for story in data["stories"]:
-        emoji = CATEGORY_EMOJI.get(story["category"], "")
-        lines += [
-            f"## {story['title']} — {emoji} {story['category']}", "",
-            "**WHAT HAPPENED**", story["what_happened"], "",
-            "**WHY IT MATTERS**", story["why_it_matters"], "",
-            f"**{story['action_type']}**",
-        ]
-        if story["action_is_code"]:
-            lines.append(f"```bash\n{story['action_content']}\n```")
-        else:
-            lines.append(story["action_content"])
-        lines += ["", f"Source: [{story['source_name']} ↗]({story['source_url']})", "", "---"]
-    lines.append("*Daily digest for developers. AI, dev tools, and the occasional hardware drop that actually matters.*")
+        lines += [f"**Fun fact:** {data['fun_fact']}", ""]
+
+    lines.append("*Daily tech digest for curious professionals. AI news that affects your work.*")
     return "\n".join(lines)
 
 
 def render_html(data: dict, full_date: str) -> str:
     env = Environment(loader=FileSystemLoader(str(Path(__file__).parent)))
     env.filters["md_links"] = _md_links_to_html
+    env.filters["chart_bars"] = _chart_bars
     template = env.get_template("template.html")
     return template.render(full_date=full_date, **data)
 
@@ -430,6 +548,8 @@ def main() -> None:
     context = gather_context()
     print(f"  Context size: {len(context):,} chars")
     logging.info(f"Context gathered with {len(context):,} chars")
+    os.makedirs("digests", exist_ok=True)
+    Path("digests/raw_context.txt").write_text(context, encoding="utf-8")
 
     print("Generating digest...")
     logging.info("Calling Anthropic API...")  # <-- if script hangs, log stops here
@@ -449,7 +569,7 @@ def main() -> None:
     print(f"  -> digests/tech-digest-{date_str}.html")
     logging.info(f"Files saved for {date_str}")
 
-    new_entries = extract_seen_entries(data["stories"], date_str)
+    new_entries = extract_seen_entries(data, date_str)
     save_seen_topics(seen_topics, new_entries)
     logging.info(f"seen_topics.json updated with {len(new_entries)} new entry(ies)")
 
