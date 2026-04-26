@@ -1,154 +1,34 @@
 [
   {
-    "date": "2026-04-09",
-    "title": "Relvy (YC F24): On-call runbooks, automated",
-    "summary": "[Relvy](https://www.",
+    "date": "2026-04-26",
+    "title": "free-claude-code: Full Claude Code in Your Terminal, No API Bill",
+    "summary": "[free-claude-code](https://github.",
     "source_urls": [
-      "https://www.relvy.ai"
+      "https://github.com/Alishahryar1/free-claude-code"
     ]
   },
   {
-    "date": "2026-04-09",
-    "title": "Hermes Agent: Agent framework climbing GitHub trending",
-    "summary": "[Hermes Agent](https://github.",
+    "date": "2026-04-26",
+    "title": "HuggingFace's ml-intern: An Open-Source AI That Trains Its Own Models",
+    "summary": "[ml-intern](https://github.",
     "source_urls": [
-      "https://github.com/NousResearch/hermes-agent"
+      "https://github.com/huggingface/ml-intern"
     ]
   },
   {
-    "date": "2026-04-09",
-    "title": "CSS Studio: Design by hand, code by agent",
-    "summary": "[CSS Studio](https://cssstudio.",
+    "date": "2026-04-26",
+    "title": "DeepSeek Open-Sources DeepEP: Expert-Parallel Communication at Scale",
+    "summary": "[DeepEP](https://github.",
     "source_urls": [
-      "https://cssstudio.ai"
+      "https://github.com/deepseek-ai/DeepEP"
     ]
   },
   {
-    "date": "2026-04-13",
-    "title": "Android now strips location data from shared photos automatically",
-    "summary": "[Android now automatically removes location metadata](https://shkspr.",
+    "date": "2026-04-26",
+    "title": "Roo Code: Multi-Agent AI Dev Team Built Into VS Code",
+    "summary": "[Roo Code](https://github.",
     "source_urls": [
-      "https://shkspr.mobi/blog/2026/04/android-now-stops-you-sharing-your-location-in-photos/"
-    ]
-  },
-  {
-    "date": "2026-04-13",
-    "title": "Microsoft releases MarkItDown: Convert files and Office documents to Markdown",
-    "summary": "[Microsoft MarkItDown](https://github.",
-    "source_urls": [
-      "https://github.com/microsoft/markitdown"
-    ]
-  },
-  {
-    "date": "2026-04-13",
-    "title": "Agent framework ecosystem splinters: Multica, Archon, Ralph, and others compete on task management",
-    "summary": "The agent framework space is fragmenting rapidly.",
-    "source_urls": [
-      "https://github.com/multica-ai/multica"
-    ]
-  },
-  {
-    "date": "2026-04-13",
-    "title": "GitHub Copilot CLI now has a beginner guide",
-    "summary": "GitHub published a [step-by-step Copilot CLI tutorial](https://github.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-getting-started-with-github-copilot-cli/"
-    ]
-  },
-  {
-    "date": "2026-04-14",
-    "title": "GitHub Stacked PRs now live",
-    "summary": "[GitHub Stacked PRs](https://github.",
-    "source_urls": [
-      "https://github.github.com/gh-stack/"
-    ]
-  },
-  {
-    "date": "2026-04-14",
-    "title": "WordPress supply chain breach: 30 plugins backdoored in bulk acquisition",
-    "summary": "An attacker purchased 30 WordPress plugins in bulk, installed a backdoor across all of them, and re-published.",
-    "source_urls": [
-      "https://anchor.host/someone-bought-30-wordpress-plugins-and-planted-a-backdoor-in-all-of-them/"
-    ]
-  },
-  {
-    "date": "2026-04-14",
-    "title": "DuckDB goes distributed with OpenDuck",
-    "summary": "[Distributed DuckDB Instance](https://github.",
-    "source_urls": [
-      "https://github.com/citguru/openduck"
-    ]
-  },
-  {
-    "date": "2026-04-14",
-    "title": "jj (Jujutsu) version control gaining clarity on what it replaces",
-    "summary": "[What is jj and why should I care?](https://steveklabnik.",
-    "source_urls": [
-      "https://steveklabnik.github.io/jujutsu-tutorial/introduction/what-is-jj-and-why-should-i-care.html"
-    ]
-  },
-  {
-    "date": "2026-04-15",
-    "title": "Google Gemma 4 Runs Natively on iPhone with Full Offline AI Inference",
-    "summary": "[Google Gemma 4](https://www.",
-    "source_urls": [
-      "https://www.gizmoweek.com/gemma-4-runs-iphone/"
-    ]
-  },
-  {
-    "date": "2026-04-15",
-    "title": "US Court Rules AI Chats Lack Attorney-Client Privilege",
-    "summary": "A US federal court ruling (US v.",
-    "source_urls": [
-      "https://www.reuters.com/legal/government/ai-ruling-prompts-warnings-us-lawyers-your-chats-could-be-used-against-you-2026-04-15/"
-    ]
-  },
-  {
-    "date": "2026-04-15",
-    "title": "GitHub Updates Copilot Data Usage Policy: Interaction Data Now Retained",
-    "summary": "[GitHub announced changes to Copilot interaction data usage](https://github.",
-    "source_urls": [
-      "https://github.blog/news-insights/company-news/updates-to-github-copilot-interaction-data-usage-policy/"
-    ]
-  },
-  {
-    "date": "2026-04-15",
-    "title": "GitHub Code Security Risk Assessment: Free Vulnerability Scan",
-    "summary": "[GitHub launched a free Code Security Risk Assessment](https://github.",
-    "source_urls": [
-      "https://github.blog/security/application-security/how-exposed-is-your-code-find-out-in-minutes-for-free/"
-    ]
-  },
-  {
-    "date": "2026-04-16",
-    "title": "€54k Firebase Billing Spike in 13 Hours: Unrestricted Gemini API Keys",
-    "summary": "A developer exposed an unrestricted Firebase browser API key, which was used to make Gemini API requests without rate limits or quota restrictions.",
-    "source_urls": [
-      "https://discuss.ai.google.dev/t/unexpected-54k-billing-spike-in-13-hours-firebase-browser-key-without-api-restrictions-used-for-gemini-requests/140262"
-    ]
-  },
-  {
-    "date": "2026-04-16",
-    "title": "IPv6 Traffic Exceeds 50% Globally",
-    "summary": "[IPv6 traffic has crossed the 50% threshold](https://www.",
-    "source_urls": [
-      "https://www.google.com/intl/en/ipv6/statistics.html?yzh=28197"
-    ]
-  },
-  {
-    "date": "2026-04-16",
-    "title": "OpenAI Agents Python Framework Released",
-    "summary": "[OpenAI released openai-agents-python](https://github.",
-    "source_urls": [
-      "https://github.com/openai/openai-agents-python"
-    ]
-  },
-  {
-    "date": "2026-04-16",
-    "title": "Google Magika: Fast AI-Powered File Type Detection",
-    "summary": "[Google released Magika](https://github.",
-    "source_urls": [
-      "https://github.com/google/magika"
+      "https://github.com/RooCodeInc/Roo-Code"
     ]
   }
 ]

@@ -1,68 +1,56 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Microsoft rewrites TypeScript in Go for native speed, HuggingFace ships an open-source ML intern agent, and two sharp dev-tools round out a week of practical releases.",
-  "todays_pick": "The TypeScript-Go port isn't a side project — Microsoft is serious about erasing compile-time pain from large codebases. If benchmarks hold in real monorepos, this reshapes how teams think about CI and build tooling for the next decade.",
-  "fun_fact": "The Go port of the TypeScript compiler is so fast it can type-check itself before most developers finish reading the changelog.",
+  "teaser": "Claude Code goes free for the terminal-savvy, HuggingFace ships an autonomous ML intern, and DeepSeek opens up expert-parallel infrastructure for anyone training MoE models.",
+  "todays_pick": "free-claude-code is the most directly actionable project trending today — it brings Claude's full agentic terminal workflow to developers who've been sitting out due to API costs.",
+  "fun_fact": "The average developer reads roughly 10 lines of code for every 1 they write, which is probably why we're all outsourcing the reading to AI now.",
   "stories": [
     {
-      "title": "Microsoft Ports the TypeScript Compiler to Go",
+      "title": "free-claude-code: Full Claude Code in Your Terminal, No API Bill",
       "category": "Dev Tools",
       "is_lead": true,
-      "what_happened": "[microsoft/typescript-go](https://github.com/microsoft/typescript-go) is a native Go port of the TypeScript compiler. Early results show type-checking and compilation times dropping dramatically on large codebases — this is a staged repo, meaning Microsoft is building toward an official release.",
-      "why_it_matters": "TypeScript build time is the hidden tax on every large JS project. A native-compiled Go implementation sidesteps the V8 overhead that makes `tsc` slow at scale, which means faster CI, faster editor feedback, and less waiting in monorepos.",
+      "what_happened": "[free-claude-code](https://github.com/Alishahryar1/free-claude-code) is an open-source project that lets you run Claude Code's agentic coding capabilities for free in the terminal, as a VSCode extension, or via Discord — no paid Anthropic API subscription required.",
+      "why_it_matters": "If API costs have kept you off Claude Code, this removes that barrier entirely. Expect rate limits and potential instability, but for personal projects and experimentation it's a real unlock.",
       "action_type": "TRY IT",
       "action_is_code": true,
-      "action_content": "git clone https://github.com/microsoft/typescript-go\ncd typescript-go\ngit checkout main\ngo build ./...\n# Run the experimental compiler against your own project:\n./built/local/tsgo --project path/to/tsconfig.json",
+      "action_content": "git clone https://github.com/Alishahryar1/free-claude-code\ncd free-claude-code\n# Follow the README for terminal, VSCode, or Discord setup",
       "source_name": "GitHub Trending",
-      "source_url": "https://github.com/microsoft/typescript-go"
+      "source_url": "https://github.com/Alishahryar1/free-claude-code"
     },
     {
-      "title": "HuggingFace Open-Sources an ML Engineer That Trains Its Own Models",
+      "title": "HuggingFace's ml-intern: An Open-Source AI That Trains Its Own Models",
       "category": "AI",
       "is_lead": false,
-      "what_happened": "[huggingface/ml-intern](https://github.com/huggingface/ml-intern) is an open-source ML agent that reads research papers, spins up training runs, and publishes the resulting models — the full research-to-deployment loop automated.",
-      "why_it_matters": "Closing the loop between reading a paper and running the experiment has been a bottleneck for small ML teams. This is early, but it signals a shift toward agent-assisted research workflows that could dramatically compress iteration cycles.",
-      "action_type": "THE TAKE",
-      "action_is_code": false,
-      "action_content": "This is research infrastructure, not production tooling yet. Worth watching closely if you run ML pipelines — the underlying loop (plan → train → evaluate → publish) is exactly what teams wire together manually today.",
+      "what_happened": "[ml-intern](https://github.com/huggingface/ml-intern) is HuggingFace's new open-source autonomous ML engineer that reads research papers, trains models, and ships experiments without requiring a human in the loop.",
+      "why_it_matters": "Going from arxiv paper to trained model autonomously has been the research lab dream for years — HuggingFace putting this in the open means the community can poke at its limitations and build on it immediately.",
+      "action_type": "TRY IT",
+      "action_is_code": true,
+      "action_content": "git clone https://github.com/huggingface/ml-intern\ncd ml-intern\npip install -r requirements.txt\n# See README to point it at a paper and let it run",
       "source_name": "GitHub Trending",
       "source_url": "https://github.com/huggingface/ml-intern"
     },
     {
-      "title": "Google OSV-Scanner: One Tool for Vulnerability Scanning Across All Ecosystems",
-      "category": "Dev Tools",
-      "is_lead": false,
-      "what_happened": "[google/osv-scanner](https://github.com/google/osv-scanner) is a Go-based vulnerability scanner that queries the [OSV database](https://osv.dev) to surface known CVEs across your project's lockfiles — covering Go, Python, Rust, npm, and more.",
-      "why_it_matters": "Most teams run separate scanners per language — `npm audit` here, `pip-audit` there. OSV-Scanner handles polyglot repos in a single pass, making it practical for monorepos that your current security tooling can't cover consistently.",
-      "action_type": "TRY IT",
-      "action_is_code": true,
-      "action_content": "go install github.com/google/osv-scanner/cmd/osv-scanner@latest\n\n# Scan a specific lockfile\nosv-scanner --lockfile ./package-lock.json\nosv-scanner --lockfile ./requirements.txt\n\n# Recursive scan of an entire repo\nosv-scanner -r ./",
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/google/osv-scanner"
-    },
-    {
-      "title": "DeepSeek Releases DeepEP: Expert-Parallel Communication for MoE Models",
+      "title": "DeepSeek Open-Sources DeepEP: Expert-Parallel Communication at Scale",
       "category": "AI",
       "is_lead": false,
-      "what_happened": "[deepseek-ai/DeepEP](https://github.com/deepseek-ai/DeepEP) is an open-source communication library purpose-built for expert-parallel inference and training of Mixture-of-Experts models across multi-GPU and multi-node setups.",
-      "why_it_matters": "MoE architectures need efficient all-to-all communication that standard NCCL handles poorly at scale — DeepEP is the missing primitive. Infrastructure teams building or serving large MoE models now have a battle-tested starting point from the team that shipped DeepSeek.",
+      "what_happened": "[DeepEP](https://github.com/deepseek-ai/DeepEP) is an efficient expert-parallel communication library from DeepSeek AI, designed to reduce the communication overhead that bottlenecks mixture-of-experts (MoE) training and inference.",
+      "why_it_matters": "MoE communication overhead is one of the main reasons large-scale training is expensive — open-sourcing a production-hardened library for this specific problem gives the broader ML community infrastructure that previously only existed inside a handful of labs.",
       "action_type": "THE TAKE",
       "action_is_code": false,
-      "action_content": "Application developers won't touch this directly, but providers who adopt it pass the efficiency gains downstream as lower inference costs. If you're building ML infra for MoE models, this is the first serious open-source baseline to benchmark against.",
+      "action_content": "DeepSeek keeps shipping infrastructure that the rest of the field has been building privately. If you're running MoE models at scale, DeepEP belongs on your benchmarking list alongside NCCL.",
       "source_name": "GitHub Trending",
       "source_url": "https://github.com/deepseek-ai/DeepEP"
     },
     {
-      "title": "Claude Context MCP Gives Claude Code Semantic Search Over Your Entire Codebase",
+      "title": "Roo Code: Multi-Agent AI Dev Team Built Into VS Code",
       "category": "Dev Tools",
       "is_lead": false,
-      "what_happened": "[zilliztech/claude-context](https://github.com/zilliztech/claude-context) is an MCP server that indexes your codebase and exposes semantic code search to Claude Code, letting the agent find relevant files without you manually specifying paths.",
-      "why_it_matters": "Claude Code's context window is finite — in large repos you're constantly pre-selecting files to feed in. This MCP handles retrieval automatically, giving Claude Code genuine whole-repo awareness rather than the local slice you happened to open.",
+      "what_happened": "[Roo Code](https://github.com/RooCodeInc/Roo-Code) is an open-source VS Code extension that runs a full team of AI agents — for planning, coding, reviewing, and debugging — directly inside your editor.",
+      "why_it_matters": "Single-agent coding assistants are hitting a ceiling on complex, multi-file tasks. Multi-agent coordination inside the editor is the natural next step, and Roo Code makes that pattern accessible without building your own orchestration layer.",
       "action_type": "TRY IT",
       "action_is_code": true,
-      "action_content": "git clone https://github.com/zilliztech/claude-context\ncd claude-context && pip install -e .\n\n# Index your codebase\nclaude-context index /path/to/your/project\n\n# Add to .claude/mcp.json:\n# {\"mcpServers\": {\"claude-context\": {\"command\": \"claude-context\", \"args\": [\"serve\"]}}}\n# Then in Claude Code: ask about any file, function, or pattern",
+      "action_content": "# Install from the VS Code marketplace\ncode --install-extension RooCode.roo-code\n# Or search 'Roo Code' in the Extensions panel",
       "source_name": "GitHub Trending",
-      "source_url": "https://github.com/zilliztech/claude-context"
+      "source_url": "https://github.com/RooCodeInc/Roo-Code"
     }
   ]
 }
