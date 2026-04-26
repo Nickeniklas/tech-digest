@@ -1,80 +1,63 @@
 # Daily Tech Digest — Sunday, April 26 2026
 
-> Claude Code goes free for the terminal-savvy, HuggingFace ships an autonomous ML intern, and DeepSeek opens up expert-parallel infrastructure for anyone training MoE models.
-
-**Today's pick:** free-claude-code is the most directly actionable project trending today — it brings Claude's full agentic terminal workflow to developers who've been sitting out due to API costs.
+> OpenAI says its coding benchmark no longer measures what it claims to—and it matters if you're evaluating AI coding tools.
 
 ---
-**Fun fact:** The average developer reads roughly 10 lines of code for every 1 they write, which is probably why we're all outsourcing the reading to AI now.
+## OpenAI Questions Its Own Coding Benchmark
+
+**What happened**
+OpenAI published an analysis explaining why SWE-bench Verified—a widely-used test for measuring AI coding capabilities—no longer accurately reflects how well AI models can actually code. The benchmark has become easier as models improve, making it unreliable for comparing today's frontier tools.
+
+**What this means**
+If you've been using SWE-bench scores to evaluate AI coding assistants for your team—whether you're a manager picking tools or a developer choosing what to trust—those numbers may be misleading you now. Benchmarks need to evolve as AI gets better, or they stop telling you anything useful. This is a rare moment of transparency: OpenAI is admitting one of the standard measures in the industry isn't working anymore.
+
+Source: [OpenAI ↗](https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/)
 
 ---
-## free-claude-code: Full Claude Code in Your Terminal, No API Bill — 🛠️ Dev Tools
+## Quick Hits
 
-**WHAT HAPPENED**
-[free-claude-code](https://github.com/Alishahryar1/free-claude-code) is an open-source project that lets you run Claude Code's agentic coding capabilities for free in the terminal, as a VSCode extension, or via Discord — no paid Anthropic API subscription required.
+### Amateur Solves 60-Year-Old Math Problem Using ChatGPT
 
-**WHY IT MATTERS**
-If API costs have kept you off Claude Code, this removes that barrier entirely. Expect rate limits and potential instability, but for personal projects and experimentation it's a real unlock.
+A non-professional mathematician used ChatGPT to help solve an Erdős problem—a type of puzzle that has stumped professional researchers for decades. This is a tangible example of AI amplifying human problem-solving beyond what experts alone could do, though the mathematician still brought the core insight.
 
-**TRY IT**
-```bash
-git clone https://github.com/Alishahryar1/free-claude-code
-cd free-claude-code
-# Follow the README for terminal, VSCode, or Discord setup
-```
+Source: [Scientific American ↗](https://www.scientificamerican.com/article/amateur-armed-with-chatgpt-vibe-maths-a-60-year-old-problem/)
 
-Source: [GitHub Trending ↗](https://github.com/Alishahryar1/free-claude-code)
+### Git 2.54 Released with Performance Improvements
 
----
-## HuggingFace's ml-intern: An Open-Source AI That Trains Its Own Models — 🤖 AI
+The open-source Git project released version 2.54 with notable features and performance improvements. GitHub highlighted the update for developers who want the latest version control capabilities.
 
-**WHAT HAPPENED**
-[ml-intern](https://github.com/huggingface/ml-intern) is HuggingFace's new open-source autonomous ML engineer that reads research papers, trains models, and ships experiments without requiring a human in the loop.
+Source: [GitHub Blog ↗](https://github.blog/open-source/git/highlights-from-git-2-54/)
 
-**WHY IT MATTERS**
-Going from arxiv paper to trained model autonomously has been the research lab dream for years — HuggingFace putting this in the open means the community can poke at its limitations and build on it immediately.
+### GitHub Improves Deployment Safety with eBPF
 
-**TRY IT**
-```bash
-git clone https://github.com/huggingface/ml-intern
-cd ml-intern
-pip install -r requirements.txt
-# See README to point it at a paper and let it run
-```
+GitHub shared how it uses eBPF (extended Berkeley Packet Filter)—a low-level Linux technology—to detect and prevent circular dependencies in its deployment tooling. This is infrastructure work that makes GitHub itself more reliable when you push code.
 
-Source: [GitHub Trending ↗](https://github.com/huggingface/ml-intern)
+Source: [GitHub Blog ↗](https://github.blog/engineering/infrastructure/how-github-uses-ebpf-to-improve-deployment-safety/)
 
 ---
-## DeepSeek Open-Sources DeepEP: Expert-Parallel Communication at Scale — 🤖 AI
+## Under the Hood
 
-**WHAT HAPPENED**
-[DeepEP](https://github.com/deepseek-ai/DeepEP) is an efficient expert-parallel communication library from DeepSeek AI, designed to reduce the communication overhead that bottlenecks mixture-of-experts (MoE) training and inference.
+### Microsoft Porting TypeScript to Go Natively
 
-**WHY IT MATTERS**
-MoE communication overhead is one of the main reasons large-scale training is expensive — open-sourcing a production-hardened library for this specific problem gives the broader ML community infrastructure that previously only existed inside a handful of labs.
+**What happened**
+Microsoft opened a staging repository for a native port of TypeScript written in Go instead of the current JavaScript/Node implementation. This is early-stage work, but it signals intent to rewrite one of the most widely-used programming languages in a faster, more manageable system language.
 
-**THE TAKE**
-DeepSeek keeps shipping infrastructure that the rest of the field has been building privately. If you're running MoE models at scale, DeepEP belongs on your benchmarking list alongside NCCL.
+**Why it matters**
+TypeScript is used by millions of developers daily. A Go-based implementation could make the language significantly faster to run and easier to maintain, but the migration is a multi-year effort. This affects anyone who builds with TypeScript, though real-world impact is still years away.
 
-Source: [GitHub Trending ↗](https://github.com/deepseek-ai/DeepEP)
+Source: [GitHub ↗](https://github.com/microsoft/typescript-go)
 
----
-## Roo Code: Multi-Agent AI Dev Team Built Into VS Code — 🛠️ Dev Tools
+### Open Infrastructure for AI Agents That Control Desktops
 
-**WHAT HAPPENED**
-[Roo Code](https://github.com/RooCodeInc/Roo-Code) is an open-source VS Code extension that runs a full team of AI agents — for planning, coding, reviewing, and debugging — directly inside your editor.
+**What happened**
+A project called CUA released open-source infrastructure for building and training AI agents that can operate full desktop environments (Windows, macOS, Linux). The toolkit includes sandboxes, SDKs, and benchmarks so developers can train agents that interact with computers the way humans do—clicking, typing, navigating windows.
 
-**WHY IT MATTERS**
-Single-agent coding assistants are hitting a ceiling on complex, multi-file tasks. Multi-agent coordination inside the editor is the natural next step, and Roo Code makes that pattern accessible without building your own orchestration layer.
+**Why it matters**
+Computer-use agents (AI that can take control of your desktop) are becoming a real research area. Open-source infrastructure lowers the barrier for developers and researchers to experiment with this capability. This is the foundation layer that could enable new kinds of automation, though safety and trust are still open questions.
 
-**TRY IT**
-```bash
-# Install from the VS Code marketplace
-code --install-extension RooCode.roo-code
-# Or search 'Roo Code' in the Extensions panel
-```
-
-Source: [GitHub Trending ↗](https://github.com/RooCodeInc/Roo-Code)
+Source: [GitHub ↗](https://github.com/trycua/cua)
 
 ---
-*Daily digest for developers. AI, dev tools, and the occasional hardware drop that actually matters.*
+**Fun fact:** An amateur mathematician just solved a 60-year-old math puzzle with ChatGPT's help—the kind that stumped professionals for decades.
+
+*Daily tech digest for curious professionals. AI news that affects your work.*
