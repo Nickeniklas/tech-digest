@@ -83,6 +83,8 @@ tech-digest/
 ├── template.html      # Jinja2 HTML template
 ├── index.html         # Redirects to latest digest (auto-updated by remote agent)
 ├── seen_topics.json   # Rolling 7-day topic index (committed; gives each run topic memory)
+├── assets/
+│   └── favicon.svg    # Site favicon (two-square logo, forest-green palette)
 ├── CLAUDE.md          # Claude Code instructions
 ├── FUTURE.md          # Backlog / ideas
 ├── requirements.txt
