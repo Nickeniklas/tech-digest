@@ -1,68 +1,68 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "OpenAI says its coding benchmark no longer measures what it claims to—and it matters if you're evaluating AI coding tools.",
-  "fun_fact": "An amateur mathematician just solved a 60-year-old math puzzle with ChatGPT's help—the kind that stumped professionals for decades.",
+  "teaser": "Developers are packaging their personal AI workflows and publishing them for anyone to use — and the most popular ones are spreading fast.",
+  "fun_fact": "A TypeScript educator's personal Claude AI folder became one of GitHub's most-starred repos this week.",
   "lead_story": {
-    "title": "OpenAI Questions Its Own Coding Benchmark",
-    "what_happened": "OpenAI published an analysis explaining why SWE-bench Verified—a widely-used test for measuring AI coding capabilities—no longer accurately reflects how well AI models can actually code. The benchmark has become easier as models improve, making it unreliable for comparing today's frontier tools.",
-    "what_this_means": "If you've been using SWE-bench scores to evaluate AI coding assistants for your team—whether you're a manager picking tools or a developer choosing what to trust—those numbers may be misleading you now. Benchmarks need to evolve as AI gets better, or they stop telling you anything useful. This is a rare moment of transparency: OpenAI is admitting one of the standard measures in the industry isn't working anymore.",
+    "title": "Developers Are Publishing Their Personal AI Agent Playbooks",
+    "what_happened": "Matt Pocock, a widely-followed TypeScript educator, published his personal collection of Claude AI agent skills — the custom instructions he relies on daily — as a free open-source project called 'skills'. It landed on GitHub Trending within days.",
+    "what_this_means": "AI tools are increasingly shaped not just by tech companies but by individual practitioners sharing what works in practice. If you use AI assistants in your work, expect to see more ready-made configurations you can apply without any technical setup.",
     "visual_type": null,
     "visual_url": null,
     "visual_data": null,
-    "source_name": "OpenAI",
-    "source_url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/"
+    "source_name": "GitHub Trending",
+    "source_url": "https://github.com/mattpocock/skills"
   },
   "quick_hits": [
     {
-      "title": "Amateur Solves 60-Year-Old Math Problem Using ChatGPT",
-      "summary": "A non-professional mathematician used ChatGPT to help solve an Erdős problem—a type of puzzle that has stumped professional researchers for decades. This is a tangible example of AI amplifying human problem-solving beyond what experts alone could do, though the mathematician still brought the core insight.",
+      "title": "AI Coding Assistants Are Getting Persistent Memory",
+      "summary": "A new open-source tool called Beads adds long-term memory to AI coding agents so they remember your preferences and past decisions across sessions. It addresses one of the most common frustrations with AI assistants: having to re-explain context every time you start a new conversation.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "Scientific American",
-      "source_url": "https://www.scientificamerican.com/article/amateur-armed-with-chatgpt-vibe-maths-a-60-year-old-problem/"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/gastownhall/beads"
     },
     {
-      "title": "Git 2.54 Released with Performance Improvements",
-      "summary": "The open-source Git project released version 2.54 with notable features and performance improvements. GitHub highlighted the update for developers who want the latest version control capabilities.",
-      "visual_type": "image",
-      "visual_url": "https://github.blog/wp-content/uploads/2026/04/git254.png",
-      "visual_data": null,
-      "source_name": "GitHub Blog",
-      "source_url": "https://github.blog/open-source/git/highlights-from-git-2-54/"
-    },
-    {
-      "title": "GitHub Improves Deployment Safety with eBPF",
-      "summary": "GitHub shared how it uses eBPF (extended Berkeley Packet Filter)—a low-level Linux technology—to detect and prevent circular dependencies in its deployment tooling. This is infrastructure work that makes GitHub itself more reliable when you push code.",
+      "title": "PostHog — an Open-Source Analytics Stack — Is Surging in Popularity",
+      "summary": "PostHog, an open-source platform that bundles product analytics, session replay, feature flags, and more, is trending heavily this week on GitHub. Unlike Google Analytics or Mixpanel, it can be self-hosted so your user data stays on your own servers — a growing concern for privacy-conscious teams.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Blog",
-      "source_url": "https://github.blog/engineering/infrastructure/how-github-uses-ebpf-to-improve-deployment-safety/"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/PostHog/posthog"
+    },
+    {
+      "title": "OpenClaw Wants to Be a Personal AI Assistant for Every Platform",
+      "summary": "A project called OpenClaw is positioning itself as a cross-platform personal AI assistant — open-source, running on any OS. It's part of a broader push to give individuals more control over their AI tools rather than depending on proprietary services.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/openclaw/openclaw"
     }
   ],
   "under_the_hood": [
     {
-      "title": "Microsoft Porting TypeScript to Go Natively",
-      "what_happened": "Microsoft opened a staging repository for a native port of TypeScript written in Go instead of the current JavaScript/Node implementation. This is early-stage work, but it signals intent to rewrite one of the most widely-used programming languages in a faster, more manageable system language.",
-      "why_it_matters": "TypeScript is used by millions of developers daily. A Go-based implementation could make the language significantly faster to run and easier to maintain, but the migration is a multi-year effort. This affects anyone who builds with TypeScript, though real-world impact is still years away.",
+      "title": "GitNexus Builds a Knowledge Graph of Any Codebase — Entirely in Your Browser",
+      "what_happened": "GitNexus is a new tool that generates an interactive knowledge graph from any GitHub repository or ZIP file, running completely client-side with no server required. It bundles a graph RAG agent so you can ask natural-language questions about an unfamiliar codebase directly in the browser.",
+      "why_it_matters": "Zero-server code intelligence means your source code never leaves your machine — a meaningful privacy improvement over cloud-based analysis tools. The RAG agent layer makes it practical for onboarding to new projects or auditing code without needing deep expertise.",
       "code_example": null,
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/microsoft/typescript-go"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/abhigyanpatwari/GitNexus"
     },
     {
-      "title": "Open Infrastructure for AI Agents That Control Desktops",
-      "what_happened": "A project called CUA released open-source infrastructure for building and training AI agents that can operate full desktop environments (Windows, macOS, Linux). The toolkit includes sandboxes, SDKs, and benchmarks so developers can train agents that interact with computers the way humans do—clicking, typing, navigating windows.",
-      "why_it_matters": "Computer-use agents (AI that can take control of your desktop) are becoming a real research area. Open-source infrastructure lowers the barrier for developers and researchers to experiment with this capability. This is the foundation layer that could enable new kinds of automation, though safety and trust are still open questions.",
+      "title": "A Community Toolkit for Automating Workflows with OpenAI's Codex CLI",
+      "what_happened": "Composio published a curated list of practical skills for OpenAI's Codex CLI — reusable automation recipes covering file management, API interactions, and code generation tasks that developers can drop into their projects.",
+      "why_it_matters": "As AI command-line tools gain traction, shared skill libraries are becoming a new form of team knowledge. Alongside similar collections emerging for Claude Code, this points to a broader pattern: the most productive teams will be those that build and share reusable AI workflows rather than reinventing them each time.",
       "code_example": null,
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/trycua/cua"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/ComposioHQ/awesome-codex-skills"
     }
   ]
 }

@@ -230,5 +230,53 @@
     "source_urls": [
       "https://github.com/trycua/cua"
     ]
+  },
+  {
+    "date": "2026-04-27",
+    "title": "Developers Are Publishing Their Personal AI Agent Playbooks",
+    "summary": "Matt Pocock, a widely-followed TypeScript educator, published his personal collection of Claude AI agent skills — the custom instructions he relies on daily — as a free open-source project called 'skills'.",
+    "source_urls": [
+      "https://github.com/mattpocock/skills"
+    ]
+  },
+  {
+    "date": "2026-04-27",
+    "title": "AI Coding Assistants Are Getting Persistent Memory",
+    "summary": "A new open-source tool called Beads adds long-term memory to AI coding agents so they remember your preferences and past decisions across sessions.",
+    "source_urls": [
+      "https://github.com/gastownhall/beads"
+    ]
+  },
+  {
+    "date": "2026-04-27",
+    "title": "PostHog — an Open-Source Analytics Stack — Is Surging in Popularity",
+    "summary": "PostHog, an open-source platform that bundles product analytics, session replay, feature flags, and more, is trending heavily this week on GitHub.",
+    "source_urls": [
+      "https://github.com/PostHog/posthog"
+    ]
+  },
+  {
+    "date": "2026-04-27",
+    "title": "OpenClaw Wants to Be a Personal AI Assistant for Every Platform",
+    "summary": "A project called OpenClaw is positioning itself as a cross-platform personal AI assistant — open-source, running on any OS.",
+    "source_urls": [
+      "https://github.com/openclaw/openclaw"
+    ]
+  },
+  {
+    "date": "2026-04-27",
+    "title": "GitNexus Builds a Knowledge Graph of Any Codebase — Entirely in Your Browser",
+    "summary": "GitNexus is a new tool that generates an interactive knowledge graph from any GitHub repository or ZIP file, running completely client-side with no server required.",
+    "source_urls": [
+      "https://github.com/abhigyanpatwari/GitNexus"
+    ]
+  },
+  {
+    "date": "2026-04-27",
+    "title": "A Community Toolkit for Automating Workflows with OpenAI's Codex CLI",
+    "summary": "Composio published a curated list of practical skills for OpenAI's Codex CLI — reusable automation recipes covering file management, API interactions, and code generation tasks that developers can drop into their projects.",
+    "source_urls": [
+      "https://github.com/ComposioHQ/awesome-codex-skills"
+    ]
   }
 ]
