@@ -1,68 +1,57 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Developers are packaging their personal AI workflows and publishing them for anyone to use — and the most popular ones are spreading fast.",
-  "fun_fact": "A TypeScript educator's personal Claude AI folder became one of GitHub's most-starred repos this week.",
+  "teaser": "Microsoft open-sourced a frontier voice AI platform this week, while a new multi-agent framework is making automated financial trading with LLMs more accessible than ever.",
+  "fun_fact": "Penpot saves designs as plain SVG files — meaning any tool can read your work, not just Penpot.",
   "lead_story": {
-    "title": "Developers Are Publishing Their Personal AI Agent Playbooks",
-    "what_happened": "Matt Pocock, a widely-followed TypeScript educator, published his personal collection of Claude AI agent skills — the custom instructions he relies on daily — as a free open-source project called 'skills'. It landed on GitHub Trending within days.",
-    "what_this_means": "AI tools are increasingly shaped not just by tech companies but by individual practitioners sharing what works in practice. If you use AI assistants in your work, expect to see more ready-made configurations you can apply without any technical setup.",
+    "title": "Microsoft Open-Sources VibeVoice, a Frontier Voice AI Platform",
+    "what_happened": "Microsoft published VibeVoice on GitHub, releasing an open-source voice AI platform it describes as 'frontier' grade. The code is freely available for developers and organizations to build upon, modify, and deploy.",
+    "what_this_means": "Voice interfaces are becoming serious infrastructure, not just novelty features. If your organization handles customer conversations, training content, accessibility tools, or any interaction where talking beats typing, this kind of open-source tooling means the barrier to building voice AI just got significantly lower.",
     "visual_type": null,
     "visual_url": null,
     "visual_data": null,
-    "source_name": "GitHub Trending",
-    "source_url": "https://github.com/mattpocock/skills"
+    "source_name": "GitHub",
+    "source_url": "https://github.com/microsoft/VibeVoice"
   },
   "quick_hits": [
     {
-      "title": "AI Coding Assistants Are Getting Persistent Memory",
-      "summary": "A new open-source tool called Beads adds long-term memory to AI coding agents so they remember your preferences and past decisions across sessions. It addresses one of the most common frustrations with AI assistants: having to re-explain context every time you start a new conversation.",
+      "title": "Penpot, the Open-Source Figma Alternative, Keeps Gaining Ground",
+      "summary": "Penpot is an open-source design tool built for teams who want design and code to work closely together. It's trending again this week on GitHub, a sign that more teams are exploring Figma alternatives — particularly ones they can self-host and control without vendor lock-in.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/gastownhall/beads"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/penpot/penpot"
     },
     {
-      "title": "PostHog — an Open-Source Analytics Stack — Is Surging in Popularity",
-      "summary": "PostHog, an open-source platform that bundles product analytics, session replay, feature flags, and more, is trending heavily this week on GitHub. Unlike Google Analytics or Mixpanel, it can be self-hosted so your user data stays on your own servers — a growing concern for privacy-conscious teams.",
+      "title": "AI Agents Are Now Being Used to Manage Financial Portfolios",
+      "summary": "TradingAgents is a new open-source framework that lets multiple AI agents collaborate to analyze markets and execute trades. It's aimed at researchers and developers, but it signals how quickly AI is entering domains that have historically required specialist human judgment.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/PostHog/posthog"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/TauricResearch/TradingAgents"
     },
     {
-      "title": "OpenClaw Wants to Be a Personal AI Assistant for Every Platform",
-      "summary": "A project called OpenClaw is positioning itself as a cross-platform personal AI assistant — open-source, running on any OS. It's part of a broader push to give individuals more control over their AI tools rather than depending on proprietary services.",
+      "title": "New Tool Lets You Plug DeepSeek Into Any Existing AI Workflow",
+      "summary": "A lightweight middleware called ds2api translates DeepSeek's AI models so they work with the same API format used by OpenAI, Google, and Claude. For teams already using AI in their products, this means switching to DeepSeek — a lower-cost option — without rewriting existing integrations.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/openclaw/openclaw"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/CJackHwang/ds2api"
     }
   ],
   "under_the_hood": [
     {
-      "title": "GitNexus Builds a Knowledge Graph of Any Codebase — Entirely in Your Browser",
-      "what_happened": "GitNexus is a new tool that generates an interactive knowledge graph from any GitHub repository or ZIP file, running completely client-side with no server required. It bundles a graph RAG agent so you can ask natural-language questions about an unfamiliar codebase directly in the browser.",
-      "why_it_matters": "Zero-server code intelligence means your source code never leaves your machine — a meaningful privacy improvement over cloud-based analysis tools. The RAG agent layer makes it practical for onboarding to new projects or auditing code without needing deep expertise.",
+      "title": "A Community CLI Tool Simplifies Claude Code Project Setup",
+      "what_happened": "A developer published claude-code-templates, a command-line tool that helps configure and monitor Claude Code — Anthropic's AI coding assistant — using pre-built project templates. It's trending on GitHub as Claude Code adoption grows among development teams.",
+      "why_it_matters": "As AI coding assistants become standard parts of developer workflows, community-built tooling is emerging to manage and configure them at scale. The speed at which the Claude Code ecosystem is forming reflects how quickly teams are making AI assistants a core part of how they ship software.",
       "code_example": null,
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/abhigyanpatwari/GitNexus"
-    },
-    {
-      "title": "A Community Toolkit for Automating Workflows with OpenAI's Codex CLI",
-      "what_happened": "Composio published a curated list of practical skills for OpenAI's Codex CLI — reusable automation recipes covering file management, API interactions, and code generation tasks that developers can drop into their projects.",
-      "why_it_matters": "As AI command-line tools gain traction, shared skill libraries are becoming a new form of team knowledge. Alongside similar collections emerging for Claude Code, this points to a broader pattern: the most productive teams will be those that build and share reusable AI workflows rather than reinventing them each time.",
-      "code_example": null,
-      "visual_type": null,
-      "visual_url": null,
-      "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/ComposioHQ/awesome-codex-skills"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/davila7/claude-code-templates"
     }
   ]
 }

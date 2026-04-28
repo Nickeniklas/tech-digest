@@ -278,5 +278,45 @@
     "source_urls": [
       "https://github.com/ComposioHQ/awesome-codex-skills"
     ]
+  },
+  {
+    "date": "2026-04-28",
+    "title": "Microsoft Open-Sources VibeVoice, a Frontier Voice AI Platform",
+    "summary": "Microsoft published VibeVoice on GitHub, releasing an open-source voice AI platform it describes as 'frontier' grade.",
+    "source_urls": [
+      "https://github.com/microsoft/VibeVoice"
+    ]
+  },
+  {
+    "date": "2026-04-28",
+    "title": "Penpot, the Open-Source Figma Alternative, Keeps Gaining Ground",
+    "summary": "Penpot is an open-source design tool built for teams who want design and code to work closely together.",
+    "source_urls": [
+      "https://github.com/penpot/penpot"
+    ]
+  },
+  {
+    "date": "2026-04-28",
+    "title": "AI Agents Are Now Being Used to Manage Financial Portfolios",
+    "summary": "TradingAgents is a new open-source framework that lets multiple AI agents collaborate to analyze markets and execute trades.",
+    "source_urls": [
+      "https://github.com/TauricResearch/TradingAgents"
+    ]
+  },
+  {
+    "date": "2026-04-28",
+    "title": "New Tool Lets You Plug DeepSeek Into Any Existing AI Workflow",
+    "summary": "A lightweight middleware called ds2api translates DeepSeek's AI models so they work with the same API format used by OpenAI, Google, and Claude.",
+    "source_urls": [
+      "https://github.com/CJackHwang/ds2api"
+    ]
+  },
+  {
+    "date": "2026-04-28",
+    "title": "A Community CLI Tool Simplifies Claude Code Project Setup",
+    "summary": "A developer published claude-code-templates, a command-line tool that helps configure and monitor Claude Code — Anthropic's AI coding assistant — using pre-built project templates.",
+    "source_urls": [
+      "https://github.com/davila7/claude-code-templates"
+    ]
   }
 ]
