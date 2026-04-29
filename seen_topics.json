@@ -318,5 +318,45 @@
     "source_urls": [
       "https://github.com/davila7/claude-code-templates"
     ]
+  },
+  {
+    "date": "2026-04-29",
+    "title": "Free AI Music Generation — Unlimited, Local, No Subscription",
+    "summary": "A new open-source app called ace-step-ui lets anyone generate music using the ACE-Step 1.",
+    "source_urls": [
+      "https://github.com/fspecii/ace-step-ui"
+    ]
+  },
+  {
+    "date": "2026-04-29",
+    "title": "A Giant Free API Directory Is Trending Again",
+    "summary": "The public-apis repository — a community-maintained list of hundreds of free, open data sources covering weather, finance, sports, trivia, and more — is surging on GitHub this week.",
+    "source_urls": [
+      "https://github.com/public-apis/public-apis"
+    ]
+  },
+  {
+    "date": "2026-04-29",
+    "title": "Free Programming Books Directory Is Popular Again",
+    "summary": "The EbookFoundation's free-programming-books project is trending on GitHub.",
+    "source_urls": [
+      "https://github.com/EbookFoundation/free-programming-books"
+    ]
+  },
+  {
+    "date": "2026-04-29",
+    "title": "System Design Primer Resurfaces as a Go-To Learning Resource",
+    "summary": "The system-design-primer — a widely-used guide to designing large-scale software systems — is trending on GitHub again.",
+    "source_urls": [
+      "https://github.com/donnemartin/system-design-primer"
+    ]
+  },
+  {
+    "date": "2026-04-29",
+    "title": "Quarkdown: Scripted Markdown That Compiles to Books, Websites, and Slides",
+    "summary": "Quarkdown is a new open-source Markdown dialect that adds functions, variables, conditionals, and layout directives.",
+    "source_urls": [
+      "https://github.com/iamgio/quarkdown"
+    ]
   }
 ]
