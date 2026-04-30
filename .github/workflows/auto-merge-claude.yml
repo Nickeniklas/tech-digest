@@ -12,13 +12,21 @@ jobs:
     permissions:
       pull-requests: write
       contents: write
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Create and merge PR
         run: |
-          gh pr create --title "Daily digest" --body "Auto-merge" --base main --head "${GITHUB_REF_NAME}" || echo "PR may already exist"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git fetch origin main
+          git merge origin/main --no-edit -X ours
+          git push origin "${GITHUB_REF_NAME}"
+          gh pr create --title "Daily digest" --body "Auto-merge" --base main --head "${GITHUB_REF_NAME}" 2>/dev/null || echo "PR already exists, continuing"
+          sleep 3
           gh pr merge --squash --delete-branch "${GITHUB_REF_NAME}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
