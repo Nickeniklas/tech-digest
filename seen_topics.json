@@ -230,5 +230,45 @@
     "source_urls": [
       "https://github.com/trycua/cua"
     ]
+  },
+  {
+    "date": "2026-04-30",
+    "title": "Microsoft Releases VibeVoice as Open-Source Frontier Voice AI",
+    "summary": "Microsoft published VibeVoice on GitHub as an open-source frontier voice AI project, giving developers and researchers access to advanced voice capabilities without relying on closed, pay-per-call APIs.",
+    "source_urls": [
+      "https://github.com/microsoft/VibeVoice"
+    ]
+  },
+  {
+    "date": "2026-04-30",
+    "title": "Warp Goes Open Source as a Full Agentic Dev Environment",
+    "summary": "Warp, the terminal app that reimagined the command line for developers, is now on GitHub as an open-source agentic development environment.",
+    "source_urls": [
+      "https://github.com/warpdotdev/warp"
+    ]
+  },
+  {
+    "date": "2026-04-30",
+    "title": "Community Publishes a Practical Skill Library for OpenAI Codex",
+    "summary": "ComposioHQ released an open-source collection of ready-made skills for OpenAI's Codex CLI, covering common automation tasks across APIs and workflows.",
+    "source_urls": [
+      "https://github.com/ComposioHQ/awesome-codex-skills"
+    ]
+  },
+  {
+    "date": "2026-04-30",
+    "title": "GitNexus Turns Any Codebase Into an Interactive Knowledge Graph — In Your Browser",
+    "summary": "GitNexus is a new open-source tool that takes a GitHub repo or ZIP file and generates an interactive knowledge graph of the code, entirely client-side with no server needed.",
+    "source_urls": [
+      "https://github.com/abhigyanpatwari/GitNexus"
+    ]
+  },
+  {
+    "date": "2026-04-30",
+    "title": "ds2api: A Thin Middleware Layer for Routing Between AI Providers",
+    "summary": "A developer released ds2api, a lightweight middleware that converts client-side protocol calls into a universal API format compatible with Google, Claude, and OpenAI backends.",
+    "source_urls": [
+      "https://github.com/CJackHwang/ds2api"
+    ]
   }
 ]
