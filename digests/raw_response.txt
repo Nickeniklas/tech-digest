@@ -1,57 +1,57 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Open-source AI music generation just became free and unlimited — and three of GitHub's most-bookmarked learning resources are surging in popularity again.",
-  "fun_fact": null,
+  "teaser": "Developer tools are going agentic — the classic terminal window is being rebuilt as an AI workspace that can plan and execute work on its own.",
+  "fun_fact": "Maigret, an open-source tool, can search a single username across more than 3,000 websites at once.",
   "lead_story": {
-    "title": "Free AI Music Generation — Unlimited, Local, No Subscription",
-    "what_happened": "A new open-source app called ace-step-ui lets anyone generate music using the ACE-Step 1.5 AI model — free, local, and with no usage limits. It's a direct alternative to Suno, the popular paid service that charges per generation.",
-    "what_this_means": "If you make videos, podcasts, or presentations and need background music, you can now generate it for free on your own computer without a subscription. Marketers, educators, and content creators gain a capable new tool at zero cost.",
+    "title": "Warp Reinvents the Terminal as an Agentic Development Environment",
+    "what_happened": "Warp, a popular developer terminal app, has repositioned itself as an agentic development environment — a workspace where AI agents can plan, write code, and execute tasks, not just a window where you type commands.",
+    "what_this_means": "For anyone working with software teams or commissioning development work, this is another step toward AI handling complete development cycles rather than just suggesting code. Faster delivery and fewer manual handoffs may follow for teams that adopt these tools.",
     "visual_type": null,
     "visual_url": null,
     "visual_data": null,
-    "source_name": "GitHub Trending",
-    "source_url": "https://github.com/fspecii/ace-step-ui"
+    "source_name": "GitHub",
+    "source_url": "https://github.com/warpdotdev/warp"
   },
   "quick_hits": [
     {
-      "title": "A Giant Free API Directory Is Trending Again",
-      "summary": "The public-apis repository — a community-maintained list of hundreds of free, open data sources covering weather, finance, sports, trivia, and more — is surging on GitHub this week. It's the go-to starting point for developers looking to add real-world data to any app without building data pipelines from scratch.",
+      "title": "Ghostty Terminal Gains Momentum as Developers Seek Modern Tools",
+      "summary": "Ghostty is a new cross-platform terminal emulator built for speed — it uses GPU acceleration and native platform UI rather than web technologies. It's trending on GitHub as developers look for faster, lighter alternatives to older terminal apps.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/public-apis/public-apis"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/ghostty-org/ghostty"
     },
     {
-      "title": "Free Programming Books Directory Is Popular Again",
-      "summary": "The EbookFoundation's free-programming-books project is trending on GitHub. It's a curated directory of thousands of freely available books and courses on programming and tech, organized by subject and language — a useful resource for anyone looking to learn new skills at no cost.",
+      "title": "One Username, 3,000+ Sites: What Maigret Reveals About Your Digital Footprint",
+      "summary": "An open-source OSINT tool called Maigret can take a single username and search for it across more than 3,000 websites, assembling a profile from public records. For professionals managing their online presence or handling client privacy, it's a vivid illustration of how much is already publicly traceable.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/EbookFoundation/free-programming-books"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/soxoj/maigret"
     },
     {
-      "title": "System Design Primer Resurfaces as a Go-To Learning Resource",
-      "summary": "The system-design-primer — a widely-used guide to designing large-scale software systems — is trending on GitHub again. It covers everything from database choices to load balancers in plain language, with interview-prep flashcards included.",
+      "title": "\"Superpowers\" Gives AI Coding Agents a Structured Development Methodology",
+      "summary": "A developer published an open-source framework called Superpowers that gives AI coding agents a structured approach to software development — rules and processes rather than improvising. It's part of a growing effort to make AI agents behave more reliably on complex, multi-step tasks.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/donnemartin/system-design-primer"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/obra/superpowers"
     }
   ],
   "under_the_hood": [
     {
-      "title": "Quarkdown: Scripted Markdown That Compiles to Books, Websites, and Slides",
-      "what_happened": "Quarkdown is a new open-source Markdown dialect that adds functions, variables, conditionals, and layout directives. A single source file compiles to HTML, PDF, or presentation formats — no separate build tooling required.",
-      "why_it_matters": "Most document tools lock you into one output format. Quarkdown treats your document as source code: write logic and content together, then publish to any format. It ships with a standard library for academic and technical writing, making it a practical option for technical writers and researchers who want one source of truth.",
+      "title": "Browserbase Adds Real-Time Web Browsing to Claude AI Agents",
+      "what_happened": "Browserbase published an open-source skills package for the Claude Agent SDK that gives AI agents the ability to browse and interact with live websites — clicking, reading, and navigating — in real time rather than only working from static context provided by the user.",
+      "why_it_matters": "Most AI assistants today operate on what you tell them directly. Browser-capable agents can look things up, fill in forms, and act on web pages autonomously. This skills package is a practical building block for developers building agents that operate across the open web — the same type of capability powering tools like Operator and similar autonomous agents.",
       "code_example": null,
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/iamgio/quarkdown"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/browserbase/skills"
     }
   ]
 }
