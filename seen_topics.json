@@ -358,5 +358,45 @@
     "source_urls": [
       "https://github.com/iamgio/quarkdown"
     ]
+  },
+  {
+    "date": "2026-05-01",
+    "title": "Warp Reinvents the Terminal as an Agentic Development Environment",
+    "summary": "Warp, a popular developer terminal app, has repositioned itself as an agentic development environment — a workspace where AI agents can plan, write code, and execute tasks, not just a window where you type commands.",
+    "source_urls": [
+      "https://github.com/warpdotdev/warp"
+    ]
+  },
+  {
+    "date": "2026-05-01",
+    "title": "Ghostty Terminal Gains Momentum as Developers Seek Modern Tools",
+    "summary": "Ghostty is a new cross-platform terminal emulator built for speed — it uses GPU acceleration and native platform UI rather than web technologies.",
+    "source_urls": [
+      "https://github.com/ghostty-org/ghostty"
+    ]
+  },
+  {
+    "date": "2026-05-01",
+    "title": "One Username, 3,000+ Sites: What Maigret Reveals About Your Digital Footprint",
+    "summary": "An open-source OSINT tool called Maigret can take a single username and search for it across more than 3,000 websites, assembling a profile from public records.",
+    "source_urls": [
+      "https://github.com/soxoj/maigret"
+    ]
+  },
+  {
+    "date": "2026-05-01",
+    "title": "\"Superpowers\" Gives AI Coding Agents a Structured Development Methodology",
+    "summary": "A developer published an open-source framework called Superpowers that gives AI coding agents a structured approach to software development — rules and processes rather than improvising.",
+    "source_urls": [
+      "https://github.com/obra/superpowers"
+    ]
+  },
+  {
+    "date": "2026-05-01",
+    "title": "Browserbase Adds Real-Time Web Browsing to Claude AI Agents",
+    "summary": "Browserbase published an open-source skills package for the Claude Agent SDK that gives AI agents the ability to browse and interact with live websites — clicking, reading, and navigating — in real time rather than only working from static context provided by the user.",
+    "source_urls": [
+      "https://github.com/browserbase/skills"
+    ]
   }
 ]
