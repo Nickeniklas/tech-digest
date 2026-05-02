@@ -398,5 +398,45 @@
     "source_urls": [
       "https://github.com/browserbase/skills"
     ]
+  },
+  {
+    "date": "2026-05-02",
+    "title": "Sim Wants to Be Mission Control for Your AI Workforce",
+    "summary": "A new open-source platform called Sim, from SimStudio, lets you build, deploy, and coordinate multiple AI agents from one place.",
+    "source_urls": [
+      "https://github.com/simstudioai/sim"
+    ]
+  },
+  {
+    "date": "2026-05-02",
+    "title": "jcode: A New Open-Source Harness for AI Coding Agents",
+    "summary": "A developer published jcode on GitHub — a coding agent harness that provides standardized scaffolding for running and testing AI coding agents consistently.",
+    "source_urls": [
+      "https://github.com/1jehuang/jcode"
+    ]
+  },
+  {
+    "date": "2026-05-02",
+    "title": "TradingAgents Climbs to #1 on GitHub Trending",
+    "summary": "Previously covered on 2026-04-28: TradingAgents is an open-source framework where multiple AI agents collaborate to analyze markets and execute trading strategies.",
+    "source_urls": [
+      "https://github.com/TauricResearch/TradingAgents"
+    ]
+  },
+  {
+    "date": "2026-05-02",
+    "title": "Open-Source Tool Surges for Users Facing Internet Restrictions",
+    "summary": "A tool called zapret-discord-youtube is trending globally on GitHub this week.",
+    "source_urls": [
+      "https://github.com/Flowseal/zapret-discord-youtube"
+    ]
+  },
+  {
+    "date": "2026-05-02",
+    "title": "How Sim Orchestrates Multiple AI Agents",
+    "summary": "Sim (by SimStudio) is an open-source agent orchestration platform designed to let developers and teams build workflows where multiple AI agents hand off tasks to each other.",
+    "source_urls": [
+      "https://github.com/simstudioai/sim"
+    ]
   }
 ]

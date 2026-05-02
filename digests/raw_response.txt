@@ -1,57 +1,57 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Developer tools are going agentic — the classic terminal window is being rebuilt as an AI workspace that can plan and execute work on its own.",
-  "fun_fact": "Maigret, an open-source tool, can search a single username across more than 3,000 websites at once.",
+  "teaser": "A new open-source platform called Sim wants to be the coordination layer that ties all your AI agents together — and it's trending hard this week.",
+  "fun_fact": "GitHub Trending's top spots this week are almost entirely AI agent tools — a shift from last year's AI model releases.",
   "lead_story": {
-    "title": "Warp Reinvents the Terminal as an Agentic Development Environment",
-    "what_happened": "Warp, a popular developer terminal app, has repositioned itself as an agentic development environment — a workspace where AI agents can plan, write code, and execute tasks, not just a window where you type commands.",
-    "what_this_means": "For anyone working with software teams or commissioning development work, this is another step toward AI handling complete development cycles rather than just suggesting code. Faster delivery and fewer manual handoffs may follow for teams that adopt these tools.",
+    "title": "Sim Wants to Be Mission Control for Your AI Workforce",
+    "what_happened": "A new open-source platform called Sim, from SimStudio, lets you build, deploy, and coordinate multiple AI agents from one place. Its creators describe it as 'the central intelligence layer for your AI workforce' — a single interface for running AI agents that handle research, writing, analysis, or customer interactions.",
+    "what_this_means": "Most people using AI today switch between different tools for different tasks. Sim represents a next step: instead of prompting one agent at a time, you'd set up a team of specialized agents and let them collaborate. For managers, marketers, and operations teams, this is the early version of delegating whole workflows to AI rather than individual tasks.",
     "visual_type": null,
     "visual_url": null,
     "visual_data": null,
-    "source_name": "GitHub",
-    "source_url": "https://github.com/warpdotdev/warp"
+    "source_name": "GitHub Trending",
+    "source_url": "https://github.com/simstudioai/sim"
   },
   "quick_hits": [
     {
-      "title": "Ghostty Terminal Gains Momentum as Developers Seek Modern Tools",
-      "summary": "Ghostty is a new cross-platform terminal emulator built for speed — it uses GPU acceleration and native platform UI rather than web technologies. It's trending on GitHub as developers look for faster, lighter alternatives to older terminal apps.",
+      "title": "jcode: A New Open-Source Harness for AI Coding Agents",
+      "summary": "A developer published jcode on GitHub — a coding agent harness that provides standardized scaffolding for running and testing AI coding agents consistently. Think of it as a repeatable wrapper that makes AI-powered dev tools more reliable and testable. It's new and trending, reflecting the broader surge in developers building their own AI coding infrastructure.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/ghostty-org/ghostty"
+      "source_url": "https://github.com/1jehuang/jcode"
     },
     {
-      "title": "One Username, 3,000+ Sites: What Maigret Reveals About Your Digital Footprint",
-      "summary": "An open-source OSINT tool called Maigret can take a single username and search for it across more than 3,000 websites, assembling a profile from public records. For professionals managing their online presence or handling client privacy, it's a vivid illustration of how much is already publicly traceable.",
+      "title": "TradingAgents Climbs to #1 on GitHub Trending",
+      "summary": "Previously covered on 2026-04-28: TradingAgents is an open-source framework where multiple AI agents collaborate to analyze markets and execute trading strategies. Since then, it has risen to the #1 spot on GitHub Trending — a strong signal that developers and fintech teams are actively experimenting with AI-driven financial tools, not just reading about them.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/soxoj/maigret"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/TauricResearch/TradingAgents"
     },
     {
-      "title": "\"Superpowers\" Gives AI Coding Agents a Structured Development Methodology",
-      "summary": "A developer published an open-source framework called Superpowers that gives AI coding agents a structured approach to software development — rules and processes rather than improvising. It's part of a growing effort to make AI agents behave more reliably on complex, multi-step tasks.",
+      "title": "Open-Source Tool Surges for Users Facing Internet Restrictions",
+      "summary": "A tool called zapret-discord-youtube is trending globally on GitHub this week. It helps users in countries where Discord and YouTube face government restrictions access those platforms through technical bypass methods. Its rapid rise suggests active adoption in regions experiencing new or tightening internet controls.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/obra/superpowers"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/Flowseal/zapret-discord-youtube"
     }
   ],
   "under_the_hood": [
     {
-      "title": "Browserbase Adds Real-Time Web Browsing to Claude AI Agents",
-      "what_happened": "Browserbase published an open-source skills package for the Claude Agent SDK that gives AI agents the ability to browse and interact with live websites — clicking, reading, and navigating — in real time rather than only working from static context provided by the user.",
-      "why_it_matters": "Most AI assistants today operate on what you tell them directly. Browser-capable agents can look things up, fill in forms, and act on web pages autonomously. This skills package is a practical building block for developers building agents that operate across the open web — the same type of capability powering tools like Operator and similar autonomous agents.",
+      "title": "How Sim Orchestrates Multiple AI Agents",
+      "what_happened": "Sim (by SimStudio) is an open-source agent orchestration platform designed to let developers and teams build workflows where multiple AI agents hand off tasks to each other. You define agents with specific roles — one might gather data, another analyze it, another draft a report — and Sim routes work between them automatically via an API layer and visual builder.",
+      "why_it_matters": "Orchestrating multiple agents is harder than it sounds: you need to manage state between steps, pass context reliably, handle failures gracefully, and log what each agent did. Sim aims to provide that infrastructure out of the box so teams skip building it from scratch. It's an early but significant piece of plumbing for anyone moving from single-agent experiments to production AI workflows.",
       "code_example": null,
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/browserbase/skills"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/simstudioai/sim"
     }
   ]
 }
