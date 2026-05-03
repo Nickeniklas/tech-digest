@@ -1,0 +1,53 @@
+# Daily Tech Digest — Sunday, May 3 2026
+
+> A new open-source platform lets you deploy fleets of AI agents that work together in parallel — and it was built specifically around Claude.
+
+---
+## Ruflo: An Orchestration Platform for Deploying Claude Agent Swarms
+
+**What happened**
+A developer published Ruflo on GitHub — an open-source platform designed to deploy and coordinate large numbers of Claude AI agents that divide complex tasks and run in parallel, with built-in knowledge-base search (RAG), enterprise-grade architecture, and a structured conversational layer on top.
+
+**What this means**
+Most teams using Claude today run one conversation at a time. Swarm orchestration lets you assign different subtasks to different agents simultaneously — useful if you're building AI-assisted research pipelines, document processing workflows, or multi-step automation. Ruflo packages the plumbing so you don't have to build it yourself.
+
+Source: [GitHub ↗](https://github.com/ruvnet/ruflo)
+
+---
+## Quick Hits
+
+### ShareX: A Completely Free Screen Capture and Recording Tool
+
+ShareX — a fully free, open-source Windows app for screenshots, screen recording, and uploading to dozens of destinations — is trending on GitHub this week. It supports annotations, scrolling captures, and workflow automation, and has been actively maintained for over a decade. If you're paying for a screen capture subscription, ShareX might replace it at zero cost.
+
+Source: [GitHub ↗](https://github.com/ShareX/ShareX)
+
+### TradingAgents Stays at the Top of GitHub for a Week
+
+Previously covered on 2026-04-28: TradingAgents is an open-source framework where multiple AI agents collaborate to analyze markets and execute trading strategies. It has now held a top spot on GitHub Trending for nearly a full week — a sign of sustained developer interest in applying multi-agent AI to financial automation.
+
+Source: [GitHub ↗](https://github.com/TauricResearch/TradingAgents)
+
+### The Free Self-Taught Computer Science Curriculum Is Trending Again
+
+Coding Interview University — a free, exhaustive study plan for becoming a software engineer, originally built by someone who taught themselves programming to land a job at Amazon — is back near the top of GitHub's trending list. It covers data structures, algorithms, and system design, and has been used by hundreds of thousands of career-changers. If someone you know is considering a move into tech, this is a solid starting point.
+
+Source: [GitHub ↗](https://github.com/jwasham/coding-interview-university)
+
+---
+## Under the Hood
+
+### How Ruflo Structures Multi-Agent Swarms on Top of Claude
+
+**What happened**
+Ruflo is built around Anthropic's Agent SDK and adds three layers on top: a swarm coordinator that distributes tasks across multiple Claude agents running in parallel, a RAG (retrieval-augmented generation) integration that lets agents query a knowledge base rather than relying solely on what's in context, and a distributed architecture designed to scale to enterprise workloads. The project describes itself as 'the leading agent orchestration platform for Claude.'
+
+**Why it matters**
+Single-agent Claude integrations hit limits fast: context windows fill up, complex tasks become unwieldy, and there's no way to parallelize work. Swarm architectures solve this by breaking a large task into pieces and assigning each to a separate agent. Ruflo is interesting to developers because it packages the coordination logic — agent routing, state management, result aggregation — that most teams would otherwise need to write and maintain themselves.
+
+Source: [GitHub ↗](https://github.com/ruvnet/ruflo)
+
+---
+**Fun fact:** ShareX, a beloved screen-capture tool, has been completely free and open-source for over a decade.
+
+*Daily tech digest for curious professionals. AI news that affects your work.*

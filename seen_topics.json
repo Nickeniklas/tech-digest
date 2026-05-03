@@ -438,5 +438,45 @@
     "source_urls": [
       "https://github.com/simstudioai/sim"
     ]
+  },
+  {
+    "date": "2026-05-03",
+    "title": "Ruflo: An Orchestration Platform for Deploying Claude Agent Swarms",
+    "summary": "A developer published Ruflo on GitHub — an open-source platform designed to deploy and coordinate large numbers of Claude AI agents that divide complex tasks and run in parallel, with built-in knowledge-base search (RAG), enterprise-grade architecture, and a structured conversational layer on top.",
+    "source_urls": [
+      "https://github.com/ruvnet/ruflo"
+    ]
+  },
+  {
+    "date": "2026-05-03",
+    "title": "ShareX: A Completely Free Screen Capture and Recording Tool",
+    "summary": "ShareX — a fully free, open-source Windows app for screenshots, screen recording, and uploading to dozens of destinations — is trending on GitHub this week.",
+    "source_urls": [
+      "https://github.com/ShareX/ShareX"
+    ]
+  },
+  {
+    "date": "2026-05-03",
+    "title": "TradingAgents Stays at the Top of GitHub for a Week",
+    "summary": "Previously covered on 2026-04-28: TradingAgents is an open-source framework where multiple AI agents collaborate to analyze markets and execute trading strategies.",
+    "source_urls": [
+      "https://github.com/TauricResearch/TradingAgents"
+    ]
+  },
+  {
+    "date": "2026-05-03",
+    "title": "The Free Self-Taught Computer Science Curriculum Is Trending Again",
+    "summary": "Coding Interview University — a free, exhaustive study plan for becoming a software engineer, originally built by someone who taught themselves programming to land a job at Amazon — is back near the top of GitHub's trending list.",
+    "source_urls": [
+      "https://github.com/jwasham/coding-interview-university"
+    ]
+  },
+  {
+    "date": "2026-05-03",
+    "title": "How Ruflo Structures Multi-Agent Swarms on Top of Claude",
+    "summary": "Ruflo is built around Anthropic's Agent SDK and adds three layers on top: a swarm coordinator that distributes tasks across multiple Claude agents running in parallel, a RAG (retrieval-augmented generation) integration that lets agents query a knowledge base rather than relying solely on what's in context, and a distributed architecture designed to scale to enterprise workloads.",
+    "source_urls": [
+      "https://github.com/ruvnet/ruflo"
+    ]
   }
 ]
