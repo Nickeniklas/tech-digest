@@ -1,57 +1,57 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "A new open-source platform called Sim wants to be the coordination layer that ties all your AI agents together — and it's trending hard this week.",
-  "fun_fact": "GitHub Trending's top spots this week are almost entirely AI agent tools — a shift from last year's AI model releases.",
+  "teaser": "A new open-source platform lets you deploy fleets of AI agents that work together in parallel — and it was built specifically around Claude.",
+  "fun_fact": "ShareX, a beloved screen-capture tool, has been completely free and open-source for over a decade.",
   "lead_story": {
-    "title": "Sim Wants to Be Mission Control for Your AI Workforce",
-    "what_happened": "A new open-source platform called Sim, from SimStudio, lets you build, deploy, and coordinate multiple AI agents from one place. Its creators describe it as 'the central intelligence layer for your AI workforce' — a single interface for running AI agents that handle research, writing, analysis, or customer interactions.",
-    "what_this_means": "Most people using AI today switch between different tools for different tasks. Sim represents a next step: instead of prompting one agent at a time, you'd set up a team of specialized agents and let them collaborate. For managers, marketers, and operations teams, this is the early version of delegating whole workflows to AI rather than individual tasks.",
+    "title": "Ruflo: An Orchestration Platform for Deploying Claude Agent Swarms",
+    "what_happened": "A developer published Ruflo on GitHub — an open-source platform designed to deploy and coordinate large numbers of Claude AI agents that divide complex tasks and run in parallel, with built-in knowledge-base search (RAG), enterprise-grade architecture, and a structured conversational layer on top.",
+    "what_this_means": "Most teams using Claude today run one conversation at a time. Swarm orchestration lets you assign different subtasks to different agents simultaneously — useful if you're building AI-assisted research pipelines, document processing workflows, or multi-step automation. Ruflo packages the plumbing so you don't have to build it yourself.",
     "visual_type": null,
     "visual_url": null,
     "visual_data": null,
-    "source_name": "GitHub Trending",
-    "source_url": "https://github.com/simstudioai/sim"
+    "source_name": "GitHub",
+    "source_url": "https://github.com/ruvnet/ruflo"
   },
   "quick_hits": [
     {
-      "title": "jcode: A New Open-Source Harness for AI Coding Agents",
-      "summary": "A developer published jcode on GitHub — a coding agent harness that provides standardized scaffolding for running and testing AI coding agents consistently. Think of it as a repeatable wrapper that makes AI-powered dev tools more reliable and testable. It's new and trending, reflecting the broader surge in developers building their own AI coding infrastructure.",
+      "title": "ShareX: A Completely Free Screen Capture and Recording Tool",
+      "summary": "ShareX — a fully free, open-source Windows app for screenshots, screen recording, and uploading to dozens of destinations — is trending on GitHub this week. It supports annotations, scrolling captures, and workflow automation, and has been actively maintained for over a decade. If you're paying for a screen capture subscription, ShareX might replace it at zero cost.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/1jehuang/jcode"
+      "source_url": "https://github.com/ShareX/ShareX"
     },
     {
-      "title": "TradingAgents Climbs to #1 on GitHub Trending",
-      "summary": "Previously covered on 2026-04-28: TradingAgents is an open-source framework where multiple AI agents collaborate to analyze markets and execute trading strategies. Since then, it has risen to the #1 spot on GitHub Trending — a strong signal that developers and fintech teams are actively experimenting with AI-driven financial tools, not just reading about them.",
+      "title": "TradingAgents Stays at the Top of GitHub for a Week",
+      "summary": "Previously covered on 2026-04-28: TradingAgents is an open-source framework where multiple AI agents collaborate to analyze markets and execute trading strategies. It has now held a top spot on GitHub Trending for nearly a full week — a sign of sustained developer interest in applying multi-agent AI to financial automation.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Trending",
+      "source_name": "GitHub",
       "source_url": "https://github.com/TauricResearch/TradingAgents"
     },
     {
-      "title": "Open-Source Tool Surges for Users Facing Internet Restrictions",
-      "summary": "A tool called zapret-discord-youtube is trending globally on GitHub this week. It helps users in countries where Discord and YouTube face government restrictions access those platforms through technical bypass methods. Its rapid rise suggests active adoption in regions experiencing new or tightening internet controls.",
+      "title": "The Free Self-Taught Computer Science Curriculum Is Trending Again",
+      "summary": "Coding Interview University — a free, exhaustive study plan for becoming a software engineer, originally built by someone who taught themselves programming to land a job at Amazon — is back near the top of GitHub's trending list. It covers data structures, algorithms, and system design, and has been used by hundreds of thousands of career-changers. If someone you know is considering a move into tech, this is a solid starting point.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/Flowseal/zapret-discord-youtube"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/jwasham/coding-interview-university"
     }
   ],
   "under_the_hood": [
     {
-      "title": "How Sim Orchestrates Multiple AI Agents",
-      "what_happened": "Sim (by SimStudio) is an open-source agent orchestration platform designed to let developers and teams build workflows where multiple AI agents hand off tasks to each other. You define agents with specific roles — one might gather data, another analyze it, another draft a report — and Sim routes work between them automatically via an API layer and visual builder.",
-      "why_it_matters": "Orchestrating multiple agents is harder than it sounds: you need to manage state between steps, pass context reliably, handle failures gracefully, and log what each agent did. Sim aims to provide that infrastructure out of the box so teams skip building it from scratch. It's an early but significant piece of plumbing for anyone moving from single-agent experiments to production AI workflows.",
+      "title": "How Ruflo Structures Multi-Agent Swarms on Top of Claude",
+      "what_happened": "Ruflo is built around Anthropic's Agent SDK and adds three layers on top: a swarm coordinator that distributes tasks across multiple Claude agents running in parallel, a RAG (retrieval-augmented generation) integration that lets agents query a knowledge base rather than relying solely on what's in context, and a distributed architecture designed to scale to enterprise workloads. The project describes itself as 'the leading agent orchestration platform for Claude.'",
+      "why_it_matters": "Single-agent Claude integrations hit limits fast: context windows fill up, complex tasks become unwieldy, and there's no way to parallelize work. Swarm architectures solve this by breaking a large task into pieces and assigning each to a separate agent. Ruflo is interesting to developers because it packages the coordination logic — agent routing, state management, result aggregation — that most teams would otherwise need to write and maintain themselves.",
       "code_example": null,
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/simstudioai/sim"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/ruvnet/ruflo"
     }
   ]
 }
