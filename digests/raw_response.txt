@@ -1,57 +1,57 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "A new open-source platform lets you deploy fleets of AI agents that work together in parallel — and it was built specifically around Claude.",
-  "fun_fact": "ShareX, a beloved screen-capture tool, has been completely free and open-source for over a decade.",
+  "teaser": "A new open-source tool can generate polished short videos automatically — no editing skills required.",
+  "fun_fact": null,
   "lead_story": {
-    "title": "Ruflo: An Orchestration Platform for Deploying Claude Agent Swarms",
-    "what_happened": "A developer published Ruflo on GitHub — an open-source platform designed to deploy and coordinate large numbers of Claude AI agents that divide complex tasks and run in parallel, with built-in knowledge-base search (RAG), enterprise-grade architecture, and a structured conversational layer on top.",
-    "what_this_means": "Most teams using Claude today run one conversation at a time. Swarm orchestration lets you assign different subtasks to different agents simultaneously — useful if you're building AI-assisted research pipelines, document processing workflows, or multi-step automation. Ruflo packages the plumbing so you don't have to build it yourself.",
+    "title": "AI Can Now Auto-Generate Short Videos From Scratch",
+    "what_happened": "AIDC-AI published Pixelle-Video on GitHub, a fully automated short-video engine that handles the entire production pipeline — from concept to finished clip — without manual editing. The tool is designed for anyone who needs video content quickly, without production expertise.",
+    "what_this_means": "If this works as described, it could significantly cut the time and cost of producing short-form video for social media, training materials, or marketing. Marketers, educators, and small-business owners could generate professional-looking clips without hiring a videographer or learning editing software.",
     "visual_type": null,
     "visual_url": null,
     "visual_data": null,
     "source_name": "GitHub",
-    "source_url": "https://github.com/ruvnet/ruflo"
+    "source_url": "https://github.com/AIDC-AI/Pixelle-Video"
   },
   "quick_hits": [
     {
-      "title": "ShareX: A Completely Free Screen Capture and Recording Tool",
-      "summary": "ShareX — a fully free, open-source Windows app for screenshots, screen recording, and uploading to dozens of destinations — is trending on GitHub this week. It supports annotations, scrolling captures, and workflow automation, and has been actively maintained for over a decade. If you're paying for a screen capture subscription, ShareX might replace it at zero cost.",
+      "title": "DeepSeek Gets a Terminal-Based Coding Agent",
+      "summary": "A new open-source tool called DeepSeek-TUI brings DeepSeek's AI directly into your terminal as a coding agent — no browser or desktop app needed. Developers can use it to write and debug code via DeepSeek models from the command line, as a lightweight alternative to cloud-based coding assistants.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/ShareX/ShareX"
+      "source_url": "https://github.com/Hmbown/DeepSeek-TUI"
     },
     {
-      "title": "TradingAgents Stays at the Top of GitHub for a Week",
-      "summary": "Previously covered on 2026-04-28: TradingAgents is an open-source framework where multiple AI agents collaborate to analyze markets and execute trading strategies. It has now held a top spot on GitHub Trending for nearly a full week — a sign of sustained developer interest in applying multi-agent AI to financial automation.",
+      "title": "Claude Can Now Build Your n8n Automation Workflows",
+      "summary": "A new MCP server called n8n-mcp gives Claude real-time access to n8n's node documentation, so it can design and configure automation workflows on your behalf. n8n is a popular workflow automation platform similar to Zapier — instead of figuring out the interface yourself, you describe what you want connected and Claude builds the workflow.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/TauricResearch/TradingAgents"
+      "source_url": "https://github.com/czlonkowski/n8n-mcp"
     },
     {
-      "title": "The Free Self-Taught Computer Science Curriculum Is Trending Again",
-      "summary": "Coding Interview University — a free, exhaustive study plan for becoming a software engineer, originally built by someone who taught themselves programming to land a job at Amazon — is back near the top of GitHub's trending list. It covers data structures, algorithms, and system design, and has been used by hundreds of thousands of career-changers. If someone you know is considering a move into tech, this is a solid starting point.",
+      "title": "Open-Source Router Firmware Stays Popular as Home Network Demands Rise",
+      "summary": "OpenWrt — the open-source firmware that replaces factory software on home and business routers — is trending on GitHub again. It gives users fine-grained control over network settings, traffic routing, and security that consumer routers typically lock away, making it a go-to for remote workers and small offices that need reliable, customisable connectivity.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/jwasham/coding-interview-university"
+      "source_url": "https://github.com/openwrt/openwrt"
     }
   ],
   "under_the_hood": [
     {
-      "title": "How Ruflo Structures Multi-Agent Swarms on Top of Claude",
-      "what_happened": "Ruflo is built around Anthropic's Agent SDK and adds three layers on top: a swarm coordinator that distributes tasks across multiple Claude agents running in parallel, a RAG (retrieval-augmented generation) integration that lets agents query a knowledge base rather than relying solely on what's in context, and a distributed architecture designed to scale to enterprise workloads. The project describes itself as 'the leading agent orchestration platform for Claude.'",
-      "why_it_matters": "Single-agent Claude integrations hit limits fast: context windows fill up, complex tasks become unwieldy, and there's no way to parallelize work. Swarm architectures solve this by breaking a large task into pieces and assigning each to a separate agent. Ruflo is interesting to developers because it packages the coordination logic — agent routing, state management, result aggregation — that most teams would otherwise need to write and maintain themselves.",
+      "title": "How n8n-mcp Lets Claude Build Automation Workflows Without Guessing",
+      "what_happened": "The n8n-mcp project creates a Model Context Protocol server that exposes n8n's full node library to Claude in real time. When you ask Claude to build a workflow — for example, 'send a Slack message whenever a new row is added to a Google Sheet' — Claude queries the MCP server for exact node parameters and generates a complete, valid n8n workflow configuration instead of improvising from training data.",
+      "why_it_matters": "This is a clean example of MCP making AI agents practically useful for technical tasks: rather than hallucinating API details, Claude queries live documentation. It works with Claude Desktop, Claude Code, Cursor, and Windsurf. For teams already using n8n, this means automation setup that previously required research and trial-and-error can now be delegated to the AI in a single prompt.",
       "code_example": null,
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/ruvnet/ruflo"
+      "source_url": "https://github.com/czlonkowski/n8n-mcp"
     }
   ]
 }

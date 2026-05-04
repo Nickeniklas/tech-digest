@@ -1,0 +1,51 @@
+# Daily Tech Digest — Monday, May 4 2026
+
+> A new open-source tool can generate polished short videos automatically — no editing skills required.
+
+---
+## AI Can Now Auto-Generate Short Videos From Scratch
+
+**What happened**
+AIDC-AI published Pixelle-Video on GitHub, a fully automated short-video engine that handles the entire production pipeline — from concept to finished clip — without manual editing. The tool is designed for anyone who needs video content quickly, without production expertise.
+
+**What this means**
+If this works as described, it could significantly cut the time and cost of producing short-form video for social media, training materials, or marketing. Marketers, educators, and small-business owners could generate professional-looking clips without hiring a videographer or learning editing software.
+
+Source: [GitHub ↗](https://github.com/AIDC-AI/Pixelle-Video)
+
+---
+## Quick Hits
+
+### DeepSeek Gets a Terminal-Based Coding Agent
+
+A new open-source tool called DeepSeek-TUI brings DeepSeek's AI directly into your terminal as a coding agent — no browser or desktop app needed. Developers can use it to write and debug code via DeepSeek models from the command line, as a lightweight alternative to cloud-based coding assistants.
+
+Source: [GitHub ↗](https://github.com/Hmbown/DeepSeek-TUI)
+
+### Claude Can Now Build Your n8n Automation Workflows
+
+A new MCP server called n8n-mcp gives Claude real-time access to n8n's node documentation, so it can design and configure automation workflows on your behalf. n8n is a popular workflow automation platform similar to Zapier — instead of figuring out the interface yourself, you describe what you want connected and Claude builds the workflow.
+
+Source: [GitHub ↗](https://github.com/czlonkowski/n8n-mcp)
+
+### Open-Source Router Firmware Stays Popular as Home Network Demands Rise
+
+OpenWrt — the open-source firmware that replaces factory software on home and business routers — is trending on GitHub again. It gives users fine-grained control over network settings, traffic routing, and security that consumer routers typically lock away, making it a go-to for remote workers and small offices that need reliable, customisable connectivity.
+
+Source: [GitHub ↗](https://github.com/openwrt/openwrt)
+
+---
+## Under the Hood
+
+### How n8n-mcp Lets Claude Build Automation Workflows Without Guessing
+
+**What happened**
+The n8n-mcp project creates a Model Context Protocol server that exposes n8n's full node library to Claude in real time. When you ask Claude to build a workflow — for example, 'send a Slack message whenever a new row is added to a Google Sheet' — Claude queries the MCP server for exact node parameters and generates a complete, valid n8n workflow configuration instead of improvising from training data.
+
+**Why it matters**
+This is a clean example of MCP making AI agents practically useful for technical tasks: rather than hallucinating API details, Claude queries live documentation. It works with Claude Desktop, Claude Code, Cursor, and Windsurf. For teams already using n8n, this means automation setup that previously required research and trial-and-error can now be delegated to the AI in a single prompt.
+
+Source: [GitHub ↗](https://github.com/czlonkowski/n8n-mcp)
+
+---
+*Daily tech digest for curious professionals. AI news that affects your work.*
