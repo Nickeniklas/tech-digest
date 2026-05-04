@@ -1,6 +1,6 @@
 # Future Features
 
-- [x] Add visuals — images (og:image), CSS bar charts, and tables are now rendered when Claude generates them; article enrichment fetches og:image + first paragraph from blog sources
+- [x] Add visuals — infrastructure complete (enrichment, template rendering for image/chart/table); prompt tuned May 2026 to mandate ≥2 visuals per digest, expose image URLs in a dedicated block at the top of the user message, and clarify that `visual_data` is Claude-synthesized from story numbers rather than waiting for data to appear in source material
 - [ ] Archive page listing all past digests
 - [ ] PWA support (add to home screen, offline reading)
 - [ ] Push notifications when new digest drops

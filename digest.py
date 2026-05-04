@@ -65,12 +65,12 @@ The single most important or interesting AI/tech story today. Explain what happe
 ### 3. under_the_hood
 1–2 more technical stories for readers who want to go deeper. Still written in plain language, but can include more detail. If there is a simple, runnable code example (max 10 lines of Python), include it. This section is clearly marked as the nerdy part — readers self-select into it.
 
-## Visuals
+## Visuals — include at least 2 visuals across the full digest
 
-For each story, consider whether a visual would help:
-- If the story involves data, numbers, comparisons, or benchmarks → suggest a chart or table (set visual_type to "chart" or "table" and provide the data in visual_data)
-- If the story is about a product, tool, or announcement → provide an image URL if one is available in the source material (set visual_type to "image" and visual_url to the URL)
-- If no visual adds value → set visual_type to null
+- lead_story: ALWAYS attempt a visual. Check the "Available image URLs" list in the user message — if one matches this story's source, use it (visual_type "image"). Otherwise, if the story mentions any numbers, benchmarks, or comparisons, synthesize a chart or table from them (visual_type "chart" or "table").
+- quick_hits: include a visual for any story that mentions numbers, percentages, rankings, or comparisons.
+- under_the_hood: default to a chart or table — these stories almost always have technical data worth visualising.
+- Set visual_type to null only when the story is purely qualitative and no matching image URL is available.
 
 ## Story selection
 
@@ -99,15 +99,24 @@ Output ONLY a JSON block using these exact delimiters:
     "title": "Story title",
     "what_happened": "1–2 sentences. Plain language. What actually happened.",
     "what_this_means": "1–2 sentences. Why does this matter? Generic professional audience. Include profession examples if obvious.",
-    "visual_type": "image | chart | table | null",
-    "visual_url": "https://... or null",
+    "visual_type": "image",
+    "visual_url": "https://example.com/image.png",
     "visual_data": null,
     "source_name": "Source Name",
     "source_url": "https://..."
   },
   "quick_hits": [
     {
-      "title": "Story title",
+      "title": "Story with numbers",
+      "summary": "2–3 sentences max. What happened and why it matters. No jargon.",
+      "visual_type": "chart",
+      "visual_url": null,
+      "visual_data": {"headers": ["Model", "Score"], "rows": [["GPT-4", "85"], ["Claude 3", "88"], ["Gemini", "82"]]},
+      "source_name": "Source Name",
+      "source_url": "https://..."
+    },
+    {
+      "title": "Story without numbers",
       "summary": "2–3 sentences max. What happened and why it matters. No jargon.",
       "visual_type": null,
       "visual_url": null,
@@ -122,9 +131,9 @@ Output ONLY a JSON block using these exact delimiters:
       "what_happened": "Plain language but more detail than quick hits.",
       "why_it_matters": "Technical significance. Who this is for.",
       "code_example": null,
-      "visual_type": "chart | table | null",
+      "visual_type": "table",
       "visual_url": null,
-      "visual_data": null,
+      "visual_data": {"headers": ["Feature", "Before", "After"], "rows": [["Speed", "120ms", "45ms"], ["Memory", "2GB", "800MB"]]},
       "source_name": "Source Name",
       "source_url": "https://..."
     }
@@ -135,8 +144,8 @@ Output ONLY a JSON block using these exact delimiters:
 ### Field rules
 - "fun_fact": one punchy sentence if genuinely interesting — otherwise null. Max 20 words.
 - "visual_type": exactly "image", "chart", "table", or null
-- "visual_url": only use URLs from provided source material — never fabricate
-- "visual_data": for charts/tables, provide a JSON object with keys "headers" and "rows"
+- "visual_url": ONLY use a URL that appears verbatim in the "Available image URLs" list in the user message. Never construct, guess, or fabricate a URL. If no matching image URL exists, use null and set visual_type to "chart" or "table" instead.
+- "visual_data": Claude-synthesized from numbers, benchmarks, or comparisons in the story text. Do NOT leave null when quantitative data exists. Format: {"headers": [...], "rows": [[...]]}
 - "code_example": plain text only, no markdown fences, max 10 lines — under_the_hood only
 - "teaser": written for a non-technical reader, no jargon
 - Output valid JSON — no trailing commas, no comments
@@ -290,8 +299,8 @@ def format_section(name: str, items: list[dict]) -> str:
     return "\n".join(lines)
 
 
-def gather_context() -> str:
-    """Fetch all sources and return a trimmed context string."""
+def gather_context() -> tuple[str, str]:
+    """Fetch all sources and return (context_string, image_refs_block)."""
     print("  Fetching Hacker News...")
     hn_items = extract_hn(fetch_page("https://news.ycombinator.com"))
 
@@ -329,7 +338,16 @@ def gather_context() -> str:
     if len(context) > MAX_CONTEXT_CHARS:
         context = context[:MAX_CONTEXT_CHARS] + "\n\n[truncated]"
 
-    return context
+    # Build a compact image reference block so Claude can easily match image URLs to stories.
+    image_lines = []
+    for item in hf_items + ant_items + ghb_items:
+        if item.get("image_url"):
+            image_lines.append(f'  - "{item["title"]}": {item["image_url"]}')
+    image_refs = ""
+    if image_lines:
+        image_refs = "Available image URLs (use these verbatim for matching stories — do not use any other URLs):\n" + "\n".join(image_lines)
+
+    return context, image_refs
 
 
 # ---------------------------------------------------------------------------
@@ -396,9 +414,11 @@ def save_seen_topics(seen: list[dict], new_entries: list[dict]) -> None:
 # Claude call
 # ---------------------------------------------------------------------------
 
-def generate_digest(date_str: str, context: str, seen_topics: list[dict]) -> str:
+def generate_digest(date_str: str, context: str, seen_topics: list[dict], image_refs: str = "") -> str:
     seen_block = format_seen_topics_context(seen_topics)
     user_msg = f"Today's date is {date_str}.\n\n"
+    if image_refs:
+        user_msg += image_refs + "\n\n"
     if seen_block:
         user_msg += seen_block + "\n\n"
     user_msg += f"Here are today's headlines from key tech sources:\n\n{context}\n\nGenerate the digest."
@@ -545,7 +565,7 @@ def main() -> None:
 
     print(f"Gathering headlines for {date_str}...")
     logging.info(f"Starting digest generation for {date_str}")
-    context = gather_context()
+    context, image_refs = gather_context()
     print(f"  Context size: {len(context):,} chars")
     logging.info(f"Context gathered with {len(context):,} chars")
     os.makedirs("digests", exist_ok=True)
@@ -553,7 +573,7 @@ def main() -> None:
 
     print("Generating digest...")
     logging.info("Calling Anthropic API...")  # <-- if script hangs, log stops here
-    raw = generate_digest(date_str, context, seen_topics)
+    raw = generate_digest(date_str, context, seen_topics, image_refs)
     logging.info("Anthropic API call completed")  # <-- confirms API didn't hang
 
     print("Parsing output...")

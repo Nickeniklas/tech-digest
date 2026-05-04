@@ -86,6 +86,17 @@ GitHub Blog) are **enriched** via `enrich_items()`:
 Total context hard-capped at 16,000 characters. The full context string is written to
 `digests/raw_context.txt` after each run for debugging.
 
+`gather_context()` returns a **tuple** `(context_str, image_refs_block)`. The
+`image_refs_block` is a compact string listing every `image_url` found across all
+enriched items, keyed to article title:
+```
+Available image URLs (use these verbatim for matching stories — do not use any other URLs):
+  - "Article title": https://...
+```
+This block is prepended to the Claude user message before the headlines so Claude
+can easily match image URLs to the stories it selects, rather than hunting through
+the full 16k-char context.
+
 > **Why self-fetch instead of using Anthropic's web_search tool:**
 > The server-side web_search tool passes raw fetched content directly into the
 > Claude context, which pushed input token costs over $0.50/run. Self-fetching
@@ -93,10 +104,15 @@ Total context hard-capped at 16,000 characters. The full context string is writt
 > enters the prompt.
 
 **2. Generate digest (`generate_digest`)**
-Single Claude API call — no agentic loop, no tools. The curated headline context
-is embedded in the user message, preceded by the seen-topics block. `SYSTEM_PROMPT`
-targets a non-technical professional audience with a calm, clear journalistic voice.
-Claude does NOT generate HTML or Markdown — only structured JSON.
+Single Claude API call — no agentic loop, no tools. The user message is assembled in
+this order:
+1. Today's date
+2. `image_refs_block` (if any image URLs were found — see step 1.5)
+3. Seen-topics block (if any)
+4. Full headline context
+
+`SYSTEM_PROMPT` targets a non-technical professional audience with a calm, clear
+journalistic voice. Claude does NOT generate HTML or Markdown — only structured JSON.
 
 Claude outputs only a structured JSON block, wrapped in:
 ```
@@ -147,9 +163,9 @@ The JSON schema:
 
 - `quick_hits`: 3–4 items; `under_the_hood`: 1–2 items
 - `visual_type`: exactly `"image"`, `"chart"`, `"table"`, or `null`
-- `visual_url`: only URLs from provided source material — Claude must never fabricate
-- `visual_data`: `{"headers": [...], "rows": [[...]]}` — populated only when numeric
-  data or image URLs were present in the enriched context
+- `visual_url`: ONLY a URL from the `image_refs_block` — never constructed or guessed; if no matching URL exists, use `null` and fall back to `"chart"` or `"table"`
+- `visual_data`: Claude-synthesized from numbers, benchmarks, or comparisons in the story text — do not leave `null` when quantitative data exists; format `{"headers": [...], "rows": [[...]]}`
+- The prompt mandates **at least 2 visuals** across the full digest; lead_story always attempts one
 
 **3. Render Markdown (`render_markdown`)**
 Python derives the `.md` file deterministically from the JSON:
