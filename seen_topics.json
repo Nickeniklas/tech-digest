@@ -1,237 +1,5 @@
 [
   {
-    "date": "2026-04-26",
-    "title": "free-claude-code: Full Claude Code in Your Terminal, No API Bill",
-    "summary": "[free-claude-code](https://github.",
-    "source_urls": [
-      "https://github.com/Alishahryar1/free-claude-code"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "HuggingFace's ml-intern: An Open-Source AI That Trains Its Own Models",
-    "summary": "[ml-intern](https://github.",
-    "source_urls": [
-      "https://github.com/huggingface/ml-intern"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "DeepSeek Open-Sources DeepEP: Expert-Parallel Communication at Scale",
-    "summary": "[DeepEP](https://github.",
-    "source_urls": [
-      "https://github.com/deepseek-ai/DeepEP"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "Roo Code: Multi-Agent AI Dev Team Built Into VS Code",
-    "summary": "[Roo Code](https://github.",
-    "source_urls": [
-      "https://github.com/RooCodeInc/Roo-Code"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "Amateur Solves 60-Year-Old Math Problem Using ChatGPT",
-    "summary": "A non-professional mathematician used ChatGPT to help solve an Erdős problem, a type of mathematical puzzle that has stumped researchers for decades.",
-    "source_urls": [
-      "https://www.scientificamerican.com/article/amateur-armed-with-chatgpt-vibe-maths-a-60-year-old-problem/"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "OpenAI Tightens Data Usage Rules for Copilot",
-    "summary": "Starting April 24, OpenAI will no longer use your Copilot inputs and outputs to train its models—a significant privacy shift.",
-    "source_urls": [
-      "https://github.blog/news-insights/company-news/updates-to-github-copilot-interaction-data-usage-policy/"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "GitHub Copilot Individual Plans Changing",
-    "summary": "GitHub is restructuring Copilot pricing and features for individual users.",
-    "source_urls": [
-      "https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "GnuPG Adds Post-Quantum Encryption Support",
-    "summary": "The privacy and encryption tool GnuPG is integrating post-quantum cryptography into its main codebase.",
-    "source_urls": [
-      "https://lists.gnupg.org/pipermail/gnupg-announce/2026q2/000504.html"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "Microsoft Porting TypeScript to Go Natively",
-    "summary": "Microsoft has opened a staging repository for a native port of TypeScript written in Go instead of the current JavaScript/Node.",
-    "source_urls": [
-      "https://github.com/microsoft/typescript-go"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "New Infrastructure for Training AI Agents That Control Desktops",
-    "summary": "A project called CUA released open-source infrastructure for building and training AI agents that can operate full desktop environments—sandboxes, SDKs, and benchmarks for agents that interact with computers the way humans do, clicking, typing, navigating windows.",
-    "source_urls": [
-      "https://github.com/trycua/cua"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "OpenAI Stops Using Copilot Code to Train Its Models",
-    "summary": "Starting April 24, OpenAI changed its policy so that everything you type into GitHub Copilot—your code, prompts, and outputs—will no longer be used to train future models.",
-    "source_urls": [
-      "https://github.blog/news-insights/company-news/updates-to-github-copilot-interaction-data-usage-policy/"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "Amateur Solves 60-Year-Old Math Problem Using ChatGPT",
-    "summary": "A non-professional mathematician used ChatGPT to help solve an Erdős problem—a type of mathematical puzzle that has stumped professional researchers for decades.",
-    "source_urls": [
-      "https://www.scientificamerican.com/article/amateur-armed-with-chatgpt-vibe-maths-a-60-year-old-problem/"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "GitHub Restructures Copilot Pricing for Individual Users",
-    "summary": "GitHub is changing how individual developers buy and use Copilot—shifting the plan structure to align with updated privacy and data policies.",
-    "source_urls": [
-      "https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "GnuPG Adds Post-Quantum Encryption Support",
-    "summary": "The privacy and encryption tool GnuPG is integrating post-quantum cryptography into its main codebase.",
-    "source_urls": [
-      "https://lists.gnupg.org/pipermail/gnupg-announce/2026q2/000504.html"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "Microsoft Porting TypeScript to Go Natively",
-    "summary": "Microsoft opened a staging repository for rewriting TypeScript in Go instead of JavaScript—a major undertaking that could make the language faster and easier to maintain.",
-    "source_urls": [
-      "https://github.com/microsoft/typescript-go"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "Open Infrastructure for Training AI Agents That Control Desktops",
-    "summary": "A project called CUA released open-source infrastructure for building and training AI agents that can operate full desktop environments.",
-    "source_urls": [
-      "https://github.com/trycua/cua"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "OpenAI Releases Privacy Filter for API Inputs",
-    "summary": "OpenAI introduced a privacy filter tool that can scrub sensitive information (like API keys, personal data, or credentials) from inputs before they go to the API.",
-    "source_urls": [
-      "https://openai.com/index/introducing-openai-privacy-filter/"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "OpenAI Stops Training Models on Your Copilot Code",
-    "summary": "Starting April 24, OpenAI changed its policy: everything you type into GitHub Copilot—your code, prompts, outputs—will no longer be used to train its models by default.",
-    "source_urls": [
-      "https://github.blog/news-insights/company-news/updates-to-github-copilot-interaction-data-usage-policy/"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "OpenAI Releases Privacy Filter for API",
-    "summary": "OpenAI released a tool that automatically scrubs sensitive information—API keys, passwords, personal data—from inputs before they reach the API.",
-    "source_urls": [
-      "https://openai.com/index/introducing-openai-privacy-filter/"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "GnuPG Adds Post-Quantum Encryption",
-    "summary": "The widely-used encryption tool GnuPG integrated post-quantum cryptography into its main codebase.",
-    "source_urls": [
-      "https://lists.gnupg.org/pipermail/gnupg-announce/2026q2/000504.html"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "GitHub Restructures Copilot Pricing for Individual Developers",
-    "summary": "GitHub is changing how individual developers buy Copilot plans, aligning pricing structure with the new privacy-by-default data policy.",
-    "source_urls": [
-      "https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "Microsoft Porting TypeScript to Go Natively",
-    "summary": "Microsoft opened a staging repository to rewrite TypeScript entirely in Go instead of the current JavaScript/Node implementation.",
-    "source_urls": [
-      "https://github.com/microsoft/typescript-go"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "Open Infrastructure for AI Agents That Control Desktops",
-    "summary": "A project called CUA released open-source infrastructure for building and training AI agents that can operate full desktop environments (Windows, macOS, Linux).",
-    "source_urls": [
-      "https://github.com/trycua/cua"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "OpenAI Questions Its Own Coding Benchmark",
-    "summary": "OpenAI published an analysis explaining why SWE-bench Verified—a widely-used test for measuring AI coding capabilities—no longer accurately reflects how well AI models can actually code.",
-    "source_urls": [
-      "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "Amateur Solves 60-Year-Old Math Problem Using ChatGPT",
-    "summary": "A non-professional mathematician used ChatGPT to help solve an Erdős problem—a type of puzzle that has stumped professional researchers for decades.",
-    "source_urls": [
-      "https://www.scientificamerican.com/article/amateur-armed-with-chatgpt-vibe-maths-a-60-year-old-problem/"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "Git 2.54 Released with Performance Improvements",
-    "summary": "The open-source Git project released version 2.",
-    "source_urls": [
-      "https://github.blog/open-source/git/highlights-from-git-2-54/"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "GitHub Improves Deployment Safety with eBPF",
-    "summary": "GitHub shared how it uses eBPF (extended Berkeley Packet Filter)—a low-level Linux technology—to detect and prevent circular dependencies in its deployment tooling.",
-    "source_urls": [
-      "https://github.blog/engineering/infrastructure/how-github-uses-ebpf-to-improve-deployment-safety/"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "Microsoft Porting TypeScript to Go Natively",
-    "summary": "Microsoft opened a staging repository for a native port of TypeScript written in Go instead of the current JavaScript/Node implementation.",
-    "source_urls": [
-      "https://github.com/microsoft/typescript-go"
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "title": "Open Infrastructure for AI Agents That Control Desktops",
-    "summary": "A project called CUA released open-source infrastructure for building and training AI agents that can operate full desktop environments (Windows, macOS, Linux).",
-    "source_urls": [
-      "https://github.com/trycua/cua"
-    ]
-  },
-  {
     "date": "2026-04-27",
     "title": "Developers Are Publishing Their Personal AI Agent Playbooks",
     "summary": "Matt Pocock, a widely-followed TypeScript educator, published his personal collection of Claude AI agent skills — the custom instructions he relies on daily — as a free open-source project called 'skills'.",
@@ -477,6 +245,46 @@
     "summary": "Ruflo is built around Anthropic's Agent SDK and adds three layers on top: a swarm coordinator that distributes tasks across multiple Claude agents running in parallel, a RAG (retrieval-augmented generation) integration that lets agents query a knowledge base rather than relying solely on what's in context, and a distributed architecture designed to scale to enterprise workloads.",
     "source_urls": [
       "https://github.com/ruvnet/ruflo"
+    ]
+  },
+  {
+    "date": "2026-05-04",
+    "title": "AI Can Now Auto-Generate Short Videos From Scratch",
+    "summary": "AIDC-AI published Pixelle-Video on GitHub, a fully automated short-video engine that handles the entire production pipeline — from concept to finished clip — without manual editing.",
+    "source_urls": [
+      "https://github.com/AIDC-AI/Pixelle-Video"
+    ]
+  },
+  {
+    "date": "2026-05-04",
+    "title": "DeepSeek Gets a Terminal-Based Coding Agent",
+    "summary": "A new open-source tool called DeepSeek-TUI brings DeepSeek's AI directly into your terminal as a coding agent — no browser or desktop app needed.",
+    "source_urls": [
+      "https://github.com/Hmbown/DeepSeek-TUI"
+    ]
+  },
+  {
+    "date": "2026-05-04",
+    "title": "Claude Can Now Build Your n8n Automation Workflows",
+    "summary": "A new MCP server called n8n-mcp gives Claude real-time access to n8n's node documentation, so it can design and configure automation workflows on your behalf.",
+    "source_urls": [
+      "https://github.com/czlonkowski/n8n-mcp"
+    ]
+  },
+  {
+    "date": "2026-05-04",
+    "title": "Open-Source Router Firmware Stays Popular as Home Network Demands Rise",
+    "summary": "OpenWrt — the open-source firmware that replaces factory software on home and business routers — is trending on GitHub again.",
+    "source_urls": [
+      "https://github.com/openwrt/openwrt"
+    ]
+  },
+  {
+    "date": "2026-05-04",
+    "title": "How n8n-mcp Lets Claude Build Automation Workflows Without Guessing",
+    "summary": "The n8n-mcp project creates a Model Context Protocol server that exposes n8n's full node library to Claude in real time.",
+    "source_urls": [
+      "https://github.com/czlonkowski/n8n-mcp"
     ]
   }
 ]
