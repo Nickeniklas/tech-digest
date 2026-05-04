@@ -15,7 +15,7 @@ The HTML uses an editorial layout: a serif teaser, a hero section with the lead 
 ## Requirements
 
 - Python 3.10+
-- An [Anthropic API key](https://console.anthropic.com) (uses `claude-haiku-4-5`)
+- An [Anthropic API key](https://console.anthropic.com) (uses `claude-haiku-4-5-20251001`)
 
 ## Setup
 
@@ -59,7 +59,7 @@ Runs daily at 09:00 Europe/Helsinki (06:00 UTC) via a Claude Code remote trigger
 
 1. CCR creates a `claude/YYYYMMDD` branch and runs `digest.py`
 2. Generated files (`digests/`, `seen_topics.json`) are committed and pushed
-3. A GitHub Actions workflow (`.github/workflows/auto-merge-claude.yml`) opens a PR and squash-merges it into `main`, then deletes the branch
+3. A GitHub Actions workflow (`.github/workflows/auto-merge-claude.yml`) merges `main` into the branch (resolving any conflicts in favour of the new digest), opens a PR, squash-merges it into `main`, then deletes the branch
 
 Manage the trigger at https://claude.ai/code/scheduled.
 
