@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-04-27",
-    "title": "Developers Are Publishing Their Personal AI Agent Playbooks",
-    "summary": "Matt Pocock, a widely-followed TypeScript educator, published his personal collection of Claude AI agent skills — the custom instructions he relies on daily — as a free open-source project called 'skills'.",
-    "source_urls": [
-      "https://github.com/mattpocock/skills"
-    ]
-  },
-  {
-    "date": "2026-04-27",
-    "title": "AI Coding Assistants Are Getting Persistent Memory",
-    "summary": "A new open-source tool called Beads adds long-term memory to AI coding agents so they remember your preferences and past decisions across sessions.",
-    "source_urls": [
-      "https://github.com/gastownhall/beads"
-    ]
-  },
-  {
-    "date": "2026-04-27",
-    "title": "PostHog — an Open-Source Analytics Stack — Is Surging in Popularity",
-    "summary": "PostHog, an open-source platform that bundles product analytics, session replay, feature flags, and more, is trending heavily this week on GitHub.",
-    "source_urls": [
-      "https://github.com/PostHog/posthog"
-    ]
-  },
-  {
-    "date": "2026-04-27",
-    "title": "OpenClaw Wants to Be a Personal AI Assistant for Every Platform",
-    "summary": "A project called OpenClaw is positioning itself as a cross-platform personal AI assistant — open-source, running on any OS.",
-    "source_urls": [
-      "https://github.com/openclaw/openclaw"
-    ]
-  },
-  {
-    "date": "2026-04-27",
-    "title": "GitNexus Builds a Knowledge Graph of Any Codebase — Entirely in Your Browser",
-    "summary": "GitNexus is a new tool that generates an interactive knowledge graph from any GitHub repository or ZIP file, running completely client-side with no server required.",
-    "source_urls": [
-      "https://github.com/abhigyanpatwari/GitNexus"
-    ]
-  },
-  {
-    "date": "2026-04-27",
-    "title": "A Community Toolkit for Automating Workflows with OpenAI's Codex CLI",
-    "summary": "Composio published a curated list of practical skills for OpenAI's Codex CLI — reusable automation recipes covering file management, API interactions, and code generation tasks that developers can drop into their projects.",
-    "source_urls": [
-      "https://github.com/ComposioHQ/awesome-codex-skills"
-    ]
-  },
-  {
     "date": "2026-04-28",
     "title": "Microsoft Open-Sources VibeVoice, a Frontier Voice AI Platform",
     "summary": "Microsoft published VibeVoice on GitHub, releasing an open-source voice AI platform it describes as 'frontier' grade.",
@@ -285,6 +237,62 @@
     "summary": "The n8n-mcp project creates a Model Context Protocol server that exposes n8n's full node library to Claude in real time.",
     "source_urls": [
       "https://github.com/czlonkowski/n8n-mcp"
+    ]
+  },
+  {
+    "date": "2026-05-05",
+    "title": "Google Chrome Installs AI Model Without Asking",
+    "summary": "Google Chrome is silently downloading and installing a 4GB AI model called Nano on users' devices without explicit consent.",
+    "source_urls": [
+      "https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/"
+    ]
+  },
+  {
+    "date": "2026-05-05",
+    "title": "Google, Microsoft, and xAI Will Share Early AI Models With U.S. Government",
+    "summary": "Three major AI companies have agreed to give the U.",
+    "source_urls": [
+      "https://www.wsj.com/tech/ai/google-microsoft-and-xai-agree-to-share-early-ai-models-with-u-s-f95a88d1"
+    ]
+  },
+  {
+    "date": "2026-05-05",
+    "title": "OpenAI Reveals How It Delivers Low-Latency Voice AI at Scale",
+    "summary": "OpenAI published technical details on its infrastructure for serving voice AI without lag—critical for real-time conversation.",
+    "source_urls": [
+      "https://openai.com/index/delivering-low-latency-voice-ai-at-scale/"
+    ]
+  },
+  {
+    "date": "2026-05-05",
+    "title": "GitHub Copilot Is Moving to Usage-Based Billing",
+    "summary": "Starting June 1, GitHub Copilot will charge based on how much you use it—measured in AI Credits—instead of flat monthly subscriptions.",
+    "source_urls": [
+      "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
+    ]
+  },
+  {
+    "date": "2026-05-05",
+    "title": "Context-Mode: 98% Reduction in AI Agent Output Size",
+    "summary": "A new tool called context-mode optimizes the amount of data that AI coding agents have to process by sandboxing and filtering tool output.",
+    "source_urls": [
+      "https://github.com/mksglu/context-mode"
+    ]
+  },
+  {
+    "date": "2026-05-05",
+    "title": "Dexter: Autonomous Agent for Deep Financial Research",
+    "summary": "A new open-source agent called Dexter automates financial research by gathering data, analyzing trends, and synthesizing findings across multiple sources.",
+    "source_urls": [
+      "https://github.com/virattt/dexter"
+    ]
+  },
+  {
+    "date": "2026-05-05",
+    "title": "Local Deep Research: 95% Accuracy on Factual Questions Without the Cloud",
+    "summary": "An open-source project called local-deep-research achieves 95% accuracy on SimpleQA (a benchmark of factual questions) using local LLMs like Qwen running on a single GPU.",
+    "source_urls": [
+      "https://github.com/LearningCircuit/local-deep-research"
     ]
   }
 ]

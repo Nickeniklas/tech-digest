@@ -1,57 +1,95 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "A new open-source tool can generate polished short videos automatically — no editing skills required.",
-  "fun_fact": null,
+  "teaser": "Chrome is quietly installing a 4GB AI model on your computer, and Google, Microsoft, and xAI are sharing early AI models with the U.S. government.",
+  "fun_fact": "GitHub is celebrating Maintainer Month—the people who keep open source running.",
   "lead_story": {
-    "title": "AI Can Now Auto-Generate Short Videos From Scratch",
-    "what_happened": "AIDC-AI published Pixelle-Video on GitHub, a fully automated short-video engine that handles the entire production pipeline — from concept to finished clip — without manual editing. The tool is designed for anyone who needs video content quickly, without production expertise.",
-    "what_this_means": "If this works as described, it could significantly cut the time and cost of producing short-form video for social media, training materials, or marketing. Marketers, educators, and small-business owners could generate professional-looking clips without hiring a videographer or learning editing software.",
-    "visual_type": null,
-    "visual_url": null,
+    "title": "Google Chrome Installs AI Model Without Asking",
+    "what_happened": "Google Chrome is silently downloading and installing a 4GB AI model called Nano on users' devices without explicit consent. The model runs locally and appears designed for on-device AI tasks, but users have no control over when it downloads or how much storage it uses.",
+    "what_this_means": "If you use Chrome, your device may be storing software you didn't knowingly install. For IT managers, this complicates device management and security audits. For privacy-conscious users, it raises questions about consent and data collection practices—Chrome already tracks your browsing, and now it's adding machine learning infrastructure to your machine.",
+    "visual_type": "image",
+    "visual_url": "https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/",
     "visual_data": null,
-    "source_name": "GitHub",
-    "source_url": "https://github.com/AIDC-AI/Pixelle-Video"
+    "source_name": "That Privacy Guy",
+    "source_url": "https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/"
   },
   "quick_hits": [
     {
-      "title": "DeepSeek Gets a Terminal-Based Coding Agent",
-      "summary": "A new open-source tool called DeepSeek-TUI brings DeepSeek's AI directly into your terminal as a coding agent — no browser or desktop app needed. Developers can use it to write and debug code via DeepSeek models from the command line, as a lightweight alternative to cloud-based coding assistants.",
+      "title": "Google, Microsoft, and xAI Will Share Early AI Models With U.S. Government",
+      "summary": "Three major AI companies have agreed to give the U.S. government early access to their upcoming AI models for security testing and evaluation. This is part of a voluntary commitment to responsible AI development and national security oversight.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/Hmbown/DeepSeek-TUI"
+      "source_name": "Wall Street Journal",
+      "source_url": "https://www.wsj.com/tech/ai/google-microsoft-and-xai-agree-to-share-early-ai-models-with-u-s-f95a88d1"
     },
     {
-      "title": "Claude Can Now Build Your n8n Automation Workflows",
-      "summary": "A new MCP server called n8n-mcp gives Claude real-time access to n8n's node documentation, so it can design and configure automation workflows on your behalf. n8n is a popular workflow automation platform similar to Zapier — instead of figuring out the interface yourself, you describe what you want connected and Claude builds the workflow.",
+      "title": "OpenAI Reveals How It Delivers Low-Latency Voice AI at Scale",
+      "summary": "OpenAI published technical details on its infrastructure for serving voice AI without lag—critical for real-time conversation. The post covers GPU optimization, request batching, and network design decisions that let millions of users get instant responses.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/czlonkowski/n8n-mcp"
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale/"
     },
     {
-      "title": "Open-Source Router Firmware Stays Popular as Home Network Demands Rise",
-      "summary": "OpenWrt — the open-source firmware that replaces factory software on home and business routers — is trending on GitHub again. It gives users fine-grained control over network settings, traffic routing, and security that consumer routers typically lock away, making it a go-to for remote workers and small offices that need reliable, customisable connectivity.",
+      "title": "GitHub Copilot Is Moving to Usage-Based Billing",
+      "summary": "Starting June 1, GitHub Copilot will charge based on how much you use it—measured in AI Credits—instead of flat monthly subscriptions. Existing Pro and Pro+ subscribers will see their plans change, and Free users' code will now be used to train GitHub's models unless they opt out.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/openwrt/openwrt"
+      "source_name": "GitHub Blog",
+      "source_url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
     }
   ],
   "under_the_hood": [
     {
-      "title": "How n8n-mcp Lets Claude Build Automation Workflows Without Guessing",
-      "what_happened": "The n8n-mcp project creates a Model Context Protocol server that exposes n8n's full node library to Claude in real time. When you ask Claude to build a workflow — for example, 'send a Slack message whenever a new row is added to a Google Sheet' — Claude queries the MCP server for exact node parameters and generates a complete, valid n8n workflow configuration instead of improvising from training data.",
-      "why_it_matters": "This is a clean example of MCP making AI agents practically useful for technical tasks: rather than hallucinating API details, Claude queries live documentation. It works with Claude Desktop, Claude Code, Cursor, and Windsurf. For teams already using n8n, this means automation setup that previously required research and trial-and-error can now be delegated to the AI in a single prompt.",
+      "title": "Context-Mode: 98% Reduction in AI Agent Output Size",
+      "what_happened": "A new tool called context-mode optimizes the amount of data that AI coding agents have to process by sandboxing and filtering tool output. By removing unnecessary information, it shrinks context window usage by 98% across 14 different platforms and coding agents.",
+      "why_it_matters": "Larger context windows mean slower, more expensive API calls. For developers building AI coding systems at scale, this tool directly cuts costs and latency. Engineers working with resource-constrained models or high-volume agent deployments should pay attention.",
+      "code_example": null,
+      "visual_type": "table",
+      "visual_url": null,
+      "visual_data": {
+        "headers": ["Metric", "Without context-mode", "With context-mode", "Improvement"],
+        "rows": [
+          ["Context size reduction", "100%", "2%", "98% smaller"],
+          ["Platforms supported", "14", "14", "Consistent across all"],
+          ["Use case", "Full tool output", "Sandboxed output", "Optimization layer"]
+        ]
+      },
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/mksglu/context-mode"
+    },
+    {
+      "title": "Dexter: Autonomous Agent for Deep Financial Research",
+      "what_happened": "A new open-source agent called Dexter automates financial research by gathering data, analyzing trends, and synthesizing findings across multiple sources. It operates autonomously without human intervention, mimicking the work a financial analyst would do manually.",
+      "why_it_matters": "Financial professionals—especially those in equity research, portfolio management, and investment banking—can now delegate time-consuming research tasks to an AI agent. The agent works continuously and can be integrated into larger workflows, freeing analysts to focus on decision-making rather than data collection.",
       "code_example": null,
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/czlonkowski/n8n-mcp"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/virattt/dexter"
+    },
+    {
+      "title": "Local Deep Research: 95% Accuracy on Factual Questions Without the Cloud",
+      "what_happened": "An open-source project called local-deep-research achieves 95% accuracy on SimpleQA (a benchmark of factual questions) using local LLMs like Qwen running on a single GPU. It integrates 10+ search engines—arXiv, PubMed, local documents—and keeps everything encrypted and on your machine.",
+      "why_it_matters": "Researchers, lawyers, and compliance teams who need to ground AI answers in real sources—and can't send data to cloud providers—now have a self-contained alternative. The accuracy rival cloud-based systems while keeping proprietary research private. This is especially valuable for enterprises handling sensitive information.",
+      "code_example": null,
+      "visual_type": "table",
+      "visual_url": null,
+      "visual_data": {
+        "headers": ["Feature", "Local-Deep-Research"],
+        "rows": [
+          ["SimpleQA Accuracy", "~95%"],
+          ["Search engines included", "10+"],
+          ["Data privacy", "100% local"],
+          ["GPU requirement", "3090 or equivalent"],
+          ["Supported LLMs", "llama.cpp, Ollama, cloud APIs"]
+        ]
+      },
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/LearningCircuit/local-deep-research"
     }
   ]
 }
