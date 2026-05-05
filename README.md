@@ -55,13 +55,14 @@ seen_topics.json         # Rolling 7-day index of covered topics (committed to g
 
 ## Scheduling
 
-Runs daily at 09:00 Europe/Helsinki (06:00 UTC) via a Claude Code remote trigger. The flow:
+Runs daily at 06:45 Europe/Helsinki (03:45 UTC) via a scheduled remote Claude Code agent. The flow:
 
-1. CCR creates a `claude/YYYYMMDD` branch and runs `digest.py`
-2. Generated files (`digests/`, `seen_topics.json`) are committed and pushed
-3. A GitHub Actions workflow (`.github/workflows/auto-merge-claude.yml`) merges `main` into the branch (resolving any conflicts in favour of the new digest), opens a PR, squash-merges it into `main`, then deletes the branch
+1. A remote Claude agent sets up the Python environment and calls `gather_context()` from `digest.py` to fetch headlines
+2. The agent itself generates the digest JSON — no separate Anthropic API call; the remote agent IS the AI
+3. Python renders HTML and Markdown via `digest.py`'s render functions; files are committed and pushed to a `claude/YYYYMMDD` branch
+4. A GitHub Actions workflow (`.github/workflows/auto-merge-claude.yml`) merges `main` into the branch (resolving conflicts in favour of the new digest), opens a PR, squash-merges into `main`, then deletes the branch
 
-Manage the trigger at https://claude.ai/code/scheduled.
+Manage the routine at https://claude.ai/code/routines.
 
 To run locally on demand:
 

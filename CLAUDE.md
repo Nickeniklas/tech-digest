@@ -52,9 +52,9 @@ pip freeze > requirements.txt
 ```
 
 ## Scheduling
-Claude Code remote trigger — runs daily at 09:00 Europe/Helsinki (06:00 UTC).
+Claude Code remote trigger — runs daily at 06:45 Europe/Helsinki (03:45 UTC).
 Trigger ID: `trig_01H3NViVVFhGYrTXS4VyNu35`
-Manage at: https://claude.ai/code/scheduled
+Manage at: https://claude.ai/code/routines
 
 ## Architecture
 
