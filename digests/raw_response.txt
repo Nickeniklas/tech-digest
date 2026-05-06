@@ -1,95 +1,68 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Chrome is quietly installing a 4GB AI model on your computer, and Google, Microsoft, and xAI are sharing early AI models with the U.S. government.",
-  "fun_fact": "GitHub is celebrating Maintainer Month—the people who keep open source running.",
+  "teaser": "A free, open-source alternative to DocuSign is this week's breakout hit — plus AI agents are getting specialist teams and a smarter way to handle long-running tasks.",
+  "fun_fact": "DocuSeal lets you host your own document-signing platform, so your contracts never touch a third-party server.",
   "lead_story": {
-    "title": "Google Chrome Installs AI Model Without Asking",
-    "what_happened": "Google Chrome is silently downloading and installing a 4GB AI model called Nano on users' devices without explicit consent. The model runs locally and appears designed for on-device AI tasks, but users have no control over when it downloads or how much storage it uses.",
-    "what_this_means": "If you use Chrome, your device may be storing software you didn't knowingly install. For IT managers, this complicates device management and security audits. For privacy-conscious users, it raises questions about consent and data collection practices—Chrome already tracks your browsing, and now it's adding machine learning infrastructure to your machine.",
-    "visual_type": "image",
-    "visual_url": "https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/",
-    "visual_data": null,
-    "source_name": "That Privacy Guy",
-    "source_url": "https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/"
+    "title": "Open-Source DocuSign Alternative Breaks Into GitHub's Top Charts",
+    "what_happened": "DocuSeal, a free and open-source alternative to DocuSign, is surging on GitHub. It lets anyone create fillable digital documents, collect signatures, and manage the entire signing flow — without a subscription or sending data to a third-party platform.",
+    "what_this_means": "For lawyers, HR teams, freelancers, and small businesses who rely on DocuSign for contracts and agreements, DocuSeal offers the same core workflow at no cost. You can run it on your own server for full control, or use a hosted version.",
+    "visual_type": "table",
+    "visual_url": null,
+    "visual_data": {"headers": ["Feature", "DocuSeal (free)", "DocuSign (paid)"], "rows": [["Monthly cost", "$0", "$25+"], ["Document signing", "Yes", "Yes"], ["Self-hosted option", "Yes", "No"], ["Cloud hosted", "Yes", "Yes"], ["Open source", "Yes", "No"]]},
+    "source_name": "GitHub",
+    "source_url": "https://github.com/docusealco/docuseal"
   },
   "quick_hits": [
     {
-      "title": "Google, Microsoft, and xAI Will Share Early AI Models With U.S. Government",
-      "summary": "Three major AI companies have agreed to give the U.S. government early access to their upcoming AI models for security testing and evaluation. This is part of a voluntary commitment to responsible AI development and national security oversight.",
+      "title": "AI Agency in a Box: A Team of Specialist Agents, Ready to Deploy",
+      "summary": "A developer published Agency Agents on GitHub — a set of AI agents each built for a distinct role: web design, social media, writing, and quality checking. Rather than one general assistant doing everything, each agent has its own defined process and expected output. It's an early look at what structured AI teams might look like in practice.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "Wall Street Journal",
-      "source_url": "https://www.wsj.com/tech/ai/google-microsoft-and-xai-agree-to-share-early-ai-models-with-u-s-f95a88d1"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/msitarzewski/agency-agents"
     },
     {
-      "title": "OpenAI Reveals How It Delivers Low-Latency Voice AI at Scale",
-      "summary": "OpenAI published technical details on its infrastructure for serving voice AI without lag—critical for real-time conversation. The post covers GPU optimization, request batching, and network design decisions that let millions of users get instant responses.",
+      "title": "CocoIndex Cuts AI Agent Workload by Processing Only What Changed",
+      "summary": "CocoIndex is a new open-source tool that helps AI agents handle long-running tasks more efficiently — instead of reprocessing everything from scratch each time, it tracks what has changed and only updates those parts. For teams running AI workflows over large, frequently-updated datasets, this could meaningfully reduce processing time and cost.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "OpenAI",
-      "source_url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale/"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/cocoindex-io/cocoindex"
     },
     {
-      "title": "GitHub Copilot Is Moving to Usage-Based Billing",
-      "summary": "Starting June 1, GitHub Copilot will charge based on how much you use it—measured in AI Credits—instead of flat monthly subscriptions. Existing Pro and Pro+ subscribers will see their plans change, and Free users' code will now be used to train GitHub's models unless they opt out.",
+      "title": "Curated Collection of Real-World AI Apps Gains Attention on GitHub",
+      "summary": "A GitHub repository called Awesome AI Apps is trending this week, gathering examples of actual AI projects — from document retrieval systems to multi-agent workflows. It's a practical reference for anyone who wants to see what teams are building with AI tools today, not just what's theoretically possible. Collections like this often serve as idea banks for professionals exploring AI in their own work.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Blog",
-      "source_url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/Arindam200/awesome-ai-apps"
     }
   ],
   "under_the_hood": [
     {
-      "title": "Context-Mode: 98% Reduction in AI Agent Output Size",
-      "what_happened": "A new tool called context-mode optimizes the amount of data that AI coding agents have to process by sandboxing and filtering tool output. By removing unnecessary information, it shrinks context window usage by 98% across 14 different platforms and coding agents.",
-      "why_it_matters": "Larger context windows mean slower, more expensive API calls. For developers building AI coding systems at scale, this tool directly cuts costs and latency. Engineers working with resource-constrained models or high-volume agent deployments should pay attention.",
+      "title": "TabPFN: A Foundation AI Model Built for Spreadsheet and Database Data",
+      "what_happened": "PriorLabs published TabPFN on GitHub — a pre-trained foundation model built specifically for tabular data, the structured rows-and-columns format used in spreadsheets, databases, and data exports. Unlike general language models, TabPFN is optimized for prediction and classification tasks on this kind of data, designed to work fast without extensive fine-tuning.",
+      "why_it_matters": "Most business data lives in tables — sales records, survey results, customer lists. Foundation models like TabPFN could make it significantly easier for non-data-scientists to run useful predictions on that data. The model is open-source and optimized for speed, making it accessible to smaller teams without dedicated machine learning infrastructure.",
       "code_example": null,
       "visual_type": "table",
       "visual_url": null,
-      "visual_data": {
-        "headers": ["Metric", "Without context-mode", "With context-mode", "Improvement"],
-        "rows": [
-          ["Context size reduction", "100%", "2%", "98% smaller"],
-          ["Platforms supported", "14", "14", "Consistent across all"],
-          ["Use case", "Full tool output", "Sandboxed output", "Optimization layer"]
-        ]
-      },
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/mksglu/context-mode"
+      "visual_data": {"headers": ["Task type", "Supported", "Typical use case"], "rows": [["Classification", "Yes", "Customer churn, fraud detection"], ["Regression", "Yes", "Sales forecasting, pricing"], ["Any structured dataset", "Yes", "Rows and columns from a database or CSV"], ["Text or image data", "No", "Use a language or vision model instead"]]},
+      "source_name": "GitHub",
+      "source_url": "https://github.com/PriorLabs/TabPFN"
     },
     {
-      "title": "Dexter: Autonomous Agent for Deep Financial Research",
-      "what_happened": "A new open-source agent called Dexter automates financial research by gathering data, analyzing trends, and synthesizing findings across multiple sources. It operates autonomously without human intervention, mimicking the work a financial analyst would do manually.",
-      "why_it_matters": "Financial professionals—especially those in equity research, portfolio management, and investment banking—can now delegate time-consuming research tasks to an AI agent. The agent works continuously and can be integrated into larger workflows, freeing analysts to focus on decision-making rather than data collection.",
+      "title": "Karpathy's AI Coding Pitfalls Distilled Into One Reusable Config File",
+      "what_happened": "A developer distilled AI researcher Andrej Karpathy's observations on common AI coding mistakes into a single CLAUDE.md configuration file, now published on GitHub. The file sets behavioral rules for Claude Code — steering it away from patterns that frequently produce errors or make code harder to maintain.",
+      "why_it_matters": "CLAUDE.md files are how developers customize how Claude Code approaches a project. A config built on Karpathy's documented insights gives teams a practical, battle-tested starting point for getting more reliable output from AI coding tools, without having to discover each pitfall themselves.",
       "code_example": null,
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/virattt/dexter"
-    },
-    {
-      "title": "Local Deep Research: 95% Accuracy on Factual Questions Without the Cloud",
-      "what_happened": "An open-source project called local-deep-research achieves 95% accuracy on SimpleQA (a benchmark of factual questions) using local LLMs like Qwen running on a single GPU. It integrates 10+ search engines—arXiv, PubMed, local documents—and keeps everything encrypted and on your machine.",
-      "why_it_matters": "Researchers, lawyers, and compliance teams who need to ground AI answers in real sources—and can't send data to cloud providers—now have a self-contained alternative. The accuracy rival cloud-based systems while keeping proprietary research private. This is especially valuable for enterprises handling sensitive information.",
-      "code_example": null,
-      "visual_type": "table",
-      "visual_url": null,
-      "visual_data": {
-        "headers": ["Feature", "Local-Deep-Research"],
-        "rows": [
-          ["SimpleQA Accuracy", "~95%"],
-          ["Search engines included", "10+"],
-          ["Data privacy", "100% local"],
-          ["GPU requirement", "3090 or equivalent"],
-          ["Supported LLMs", "llama.cpp, Ollama, cloud APIs"]
-        ]
-      },
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/LearningCircuit/local-deep-research"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/forrestchang/andrej-karpathy-skills"
     }
   ]
 }

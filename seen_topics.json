@@ -1,45 +1,5 @@
 [
   {
-    "date": "2026-04-28",
-    "title": "Microsoft Open-Sources VibeVoice, a Frontier Voice AI Platform",
-    "summary": "Microsoft published VibeVoice on GitHub, releasing an open-source voice AI platform it describes as 'frontier' grade.",
-    "source_urls": [
-      "https://github.com/microsoft/VibeVoice"
-    ]
-  },
-  {
-    "date": "2026-04-28",
-    "title": "Penpot, the Open-Source Figma Alternative, Keeps Gaining Ground",
-    "summary": "Penpot is an open-source design tool built for teams who want design and code to work closely together.",
-    "source_urls": [
-      "https://github.com/penpot/penpot"
-    ]
-  },
-  {
-    "date": "2026-04-28",
-    "title": "AI Agents Are Now Being Used to Manage Financial Portfolios",
-    "summary": "TradingAgents is a new open-source framework that lets multiple AI agents collaborate to analyze markets and execute trades.",
-    "source_urls": [
-      "https://github.com/TauricResearch/TradingAgents"
-    ]
-  },
-  {
-    "date": "2026-04-28",
-    "title": "New Tool Lets You Plug DeepSeek Into Any Existing AI Workflow",
-    "summary": "A lightweight middleware called ds2api translates DeepSeek's AI models so they work with the same API format used by OpenAI, Google, and Claude.",
-    "source_urls": [
-      "https://github.com/CJackHwang/ds2api"
-    ]
-  },
-  {
-    "date": "2026-04-28",
-    "title": "A Community CLI Tool Simplifies Claude Code Project Setup",
-    "summary": "A developer published claude-code-templates, a command-line tool that helps configure and monitor Claude Code — Anthropic's AI coding assistant — using pre-built project templates.",
-    "source_urls": [
-      "https://github.com/davila7/claude-code-templates"
-    ]
-  },
-  {
     "date": "2026-04-29",
     "title": "Free AI Music Generation — Unlimited, Local, No Subscription",
     "summary": "A new open-source app called ace-step-ui lets anyone generate music using the ACE-Step 1.",
@@ -293,6 +253,54 @@
     "summary": "An open-source project called local-deep-research achieves 95% accuracy on SimpleQA (a benchmark of factual questions) using local LLMs like Qwen running on a single GPU.",
     "source_urls": [
       "https://github.com/LearningCircuit/local-deep-research"
+    ]
+  },
+  {
+    "date": "2026-05-06",
+    "title": "Open-Source DocuSign Alternative Breaks Into GitHub's Top Charts",
+    "summary": "DocuSeal, a free and open-source alternative to DocuSign, is surging on GitHub.",
+    "source_urls": [
+      "https://github.com/docusealco/docuseal"
+    ]
+  },
+  {
+    "date": "2026-05-06",
+    "title": "AI Agency in a Box: A Team of Specialist Agents, Ready to Deploy",
+    "summary": "A developer published Agency Agents on GitHub — a set of AI agents each built for a distinct role: web design, social media, writing, and quality checking.",
+    "source_urls": [
+      "https://github.com/msitarzewski/agency-agents"
+    ]
+  },
+  {
+    "date": "2026-05-06",
+    "title": "CocoIndex Cuts AI Agent Workload by Processing Only What Changed",
+    "summary": "CocoIndex is a new open-source tool that helps AI agents handle long-running tasks more efficiently — instead of reprocessing everything from scratch each time, it tracks what has changed and only updates those parts.",
+    "source_urls": [
+      "https://github.com/cocoindex-io/cocoindex"
+    ]
+  },
+  {
+    "date": "2026-05-06",
+    "title": "Curated Collection of Real-World AI Apps Gains Attention on GitHub",
+    "summary": "A GitHub repository called Awesome AI Apps is trending this week, gathering examples of actual AI projects — from document retrieval systems to multi-agent workflows.",
+    "source_urls": [
+      "https://github.com/Arindam200/awesome-ai-apps"
+    ]
+  },
+  {
+    "date": "2026-05-06",
+    "title": "TabPFN: A Foundation AI Model Built for Spreadsheet and Database Data",
+    "summary": "PriorLabs published TabPFN on GitHub — a pre-trained foundation model built specifically for tabular data, the structured rows-and-columns format used in spreadsheets, databases, and data exports.",
+    "source_urls": [
+      "https://github.com/PriorLabs/TabPFN"
+    ]
+  },
+  {
+    "date": "2026-05-06",
+    "title": "Karpathy's AI Coding Pitfalls Distilled Into One Reusable Config File",
+    "summary": "A developer distilled AI researcher Andrej Karpathy's observations on common AI coding mistakes into a single CLAUDE.",
+    "source_urls": [
+      "https://github.com/forrestchang/andrej-karpathy-skills"
     ]
   }
 ]
