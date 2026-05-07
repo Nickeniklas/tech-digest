@@ -1,45 +1,5 @@
 [
   {
-    "date": "2026-04-29",
-    "title": "Free AI Music Generation — Unlimited, Local, No Subscription",
-    "summary": "A new open-source app called ace-step-ui lets anyone generate music using the ACE-Step 1.",
-    "source_urls": [
-      "https://github.com/fspecii/ace-step-ui"
-    ]
-  },
-  {
-    "date": "2026-04-29",
-    "title": "A Giant Free API Directory Is Trending Again",
-    "summary": "The public-apis repository — a community-maintained list of hundreds of free, open data sources covering weather, finance, sports, trivia, and more — is surging on GitHub this week.",
-    "source_urls": [
-      "https://github.com/public-apis/public-apis"
-    ]
-  },
-  {
-    "date": "2026-04-29",
-    "title": "Free Programming Books Directory Is Popular Again",
-    "summary": "The EbookFoundation's free-programming-books project is trending on GitHub.",
-    "source_urls": [
-      "https://github.com/EbookFoundation/free-programming-books"
-    ]
-  },
-  {
-    "date": "2026-04-29",
-    "title": "System Design Primer Resurfaces as a Go-To Learning Resource",
-    "summary": "The system-design-primer — a widely-used guide to designing large-scale software systems — is trending on GitHub again.",
-    "source_urls": [
-      "https://github.com/donnemartin/system-design-primer"
-    ]
-  },
-  {
-    "date": "2026-04-29",
-    "title": "Quarkdown: Scripted Markdown That Compiles to Books, Websites, and Slides",
-    "summary": "Quarkdown is a new open-source Markdown dialect that adds functions, variables, conditionals, and layout directives.",
-    "source_urls": [
-      "https://github.com/iamgio/quarkdown"
-    ]
-  },
-  {
     "date": "2026-05-01",
     "title": "Warp Reinvents the Terminal as an Agentic Development Environment",
     "summary": "Warp, a popular developer terminal app, has repositioned itself as an agentic development environment — a workspace where AI agents can plan, write code, and execute tasks, not just a window where you type commands.",
@@ -301,6 +261,62 @@
     "summary": "A developer distilled AI researcher Andrej Karpathy's observations on common AI coding mistakes into a single CLAUDE.",
     "source_urls": [
       "https://github.com/forrestchang/andrej-karpathy-skills"
+    ]
+  },
+  {
+    "date": "2026-05-07",
+    "title": "ByteDance Open-Sources an AI Agent That Works Independently for Hours",
+    "summary": "ByteDance, the company behind TikTok, published deer-flow on GitHub — an open-source AI agent designed to handle long, complex tasks on its own: researching topics, writing and running code, and producing content over a span of minutes to hours, with minimal human direction.",
+    "source_urls": [
+      "https://github.com/bytedance/deer-flow"
+    ]
+  },
+  {
+    "date": "2026-05-07",
+    "title": "Anthropic Published a Financial Services Repository on GitHub",
+    "summary": "Anthropic added a dedicated financial-services repository to its GitHub organization, signaling a push to make Claude easier to deploy in banking, insurance, and fintech.",
+    "source_urls": [
+      "https://github.com/anthropics/financial-services"
+    ]
+  },
+  {
+    "date": "2026-05-07",
+    "title": "A Senior Google Engineer Released a Toolkit for More Reliable AI Coding Agents",
+    "summary": "Addy Osmani, a well-known engineering leader at Google, published agent-skills on GitHub — a collection of production-ready behaviors for AI coding agents covering code review, testing, and documentation.",
+    "source_urls": [
+      "https://github.com/addyosmani/agent-skills"
+    ]
+  },
+  {
+    "date": "2026-05-07",
+    "title": "A Curated List of Free AI APIs Is Trending Among Developers",
+    "summary": "A GitHub repository called free-llm-api-resources is making the rounds this week, collecting free and no-cost ways to access AI language models via API — useful for anyone building or experimenting with AI tools without a large budget.",
+    "source_urls": [
+      "https://github.com/cheahjs/free-llm-api-resources"
+    ]
+  },
+  {
+    "date": "2026-05-07",
+    "title": "An Independent Web Browser Is Trending on GitHub Again",
+    "summary": "Ladybird is a web browser built entirely from scratch — no code borrowed from Chrome, Firefox, or Safari — and it is gaining attention on GitHub.",
+    "source_urls": [
+      "https://github.com/LadybirdBrowser/ladybird"
+    ]
+  },
+  {
+    "date": "2026-05-07",
+    "title": "Kronos: A Foundation Model Trained on the Raw Language of Financial Markets",
+    "summary": "Researchers published Kronos on GitHub — a large pre-trained model built specifically to understand financial market data: prices, trading volumes, order flows, and economic indicators.",
+    "source_urls": [
+      "https://github.com/shiyu-coder/Kronos"
+    ]
+  },
+  {
+    "date": "2026-05-07",
+    "title": "Scrapling: A Web Scraper That Adapts When Websites Change Layout",
+    "summary": "A developer released Scrapling — a Python web scraping framework that handles everything from simple HTTP requests to complex JavaScript-rendered pages through a single consistent API, without requiring the developer to switch tools depending on the site.",
+    "source_urls": [
+      "https://github.com/D4Vinci/Scrapling"
     ]
   }
 ]

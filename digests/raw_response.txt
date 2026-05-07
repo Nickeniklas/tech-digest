@@ -1,68 +1,101 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "A free, open-source alternative to DocuSign is this week's breakout hit — plus AI agents are getting specialist teams and a smarter way to handle long-running tasks.",
-  "fun_fact": "DocuSeal lets you host your own document-signing platform, so your contracts never touch a third-party server.",
+  "teaser": "ByteDance open-sourced an AI agent that works autonomously for hours on complex tasks — and Anthropic quietly published a new repository targeting the financial services industry.",
+  "fun_fact": null,
   "lead_story": {
-    "title": "Open-Source DocuSign Alternative Breaks Into GitHub's Top Charts",
-    "what_happened": "DocuSeal, a free and open-source alternative to DocuSign, is surging on GitHub. It lets anyone create fillable digital documents, collect signatures, and manage the entire signing flow — without a subscription or sending data to a third-party platform.",
-    "what_this_means": "For lawyers, HR teams, freelancers, and small businesses who rely on DocuSign for contracts and agreements, DocuSeal offers the same core workflow at no cost. You can run it on your own server for full control, or use a hosted version.",
+    "title": "ByteDance Open-Sources an AI Agent That Works Independently for Hours",
+    "what_happened": "ByteDance, the company behind TikTok, published deer-flow on GitHub — an open-source AI agent designed to handle long, complex tasks on its own: researching topics, writing and running code, and producing content over a span of minutes to hours, with minimal human direction.",
+    "what_this_means": "Autonomous AI agents that can plan and execute multi-step jobs without constant prompting are moving out of research labs and into free, open-source tools. If your work involves research, writing, or data gathering, this shift means more of those workflows can soon be handed off end-to-end — not just one question at a time.",
     "visual_type": "table",
     "visual_url": null,
-    "visual_data": {"headers": ["Feature", "DocuSeal (free)", "DocuSign (paid)"], "rows": [["Monthly cost", "$0", "$25+"], ["Document signing", "Yes", "Yes"], ["Self-hosted option", "Yes", "No"], ["Cloud hosted", "Yes", "Yes"], ["Open source", "Yes", "No"]]},
+    "visual_data": {
+      "headers": ["Capability", "Standard AI Chatbot", "deer-flow SuperAgent"],
+      "rows": [
+        ["Task length", "Single question", "Minutes to hours"],
+        ["Research", "Answers from training data", "Actively searches and gathers"],
+        ["Code execution", "Generates code only", "Runs code in a sandbox"],
+        ["Memory", "Within one conversation", "Persists across subtasks"],
+        ["Coordination", "Single model", "Multiple specialized subagents"]
+      ]
+    },
     "source_name": "GitHub",
-    "source_url": "https://github.com/docusealco/docuseal"
+    "source_url": "https://github.com/bytedance/deer-flow"
   },
   "quick_hits": [
     {
-      "title": "AI Agency in a Box: A Team of Specialist Agents, Ready to Deploy",
-      "summary": "A developer published Agency Agents on GitHub — a set of AI agents each built for a distinct role: web design, social media, writing, and quality checking. Rather than one general assistant doing everything, each agent has its own defined process and expected output. It's an early look at what structured AI teams might look like in practice.",
+      "title": "Anthropic Published a Financial Services Repository on GitHub",
+      "summary": "Anthropic added a dedicated financial-services repository to its GitHub organization, signaling a push to make Claude easier to deploy in banking, insurance, and fintech. Few details are public yet, but a dedicated repo from the company itself — not a third-party integrator — suggests Anthropic is moving more deliberately into regulated industries. Finance professionals watching the AI space should track how this develops.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/msitarzewski/agency-agents"
+      "source_url": "https://github.com/anthropics/financial-services"
     },
     {
-      "title": "CocoIndex Cuts AI Agent Workload by Processing Only What Changed",
-      "summary": "CocoIndex is a new open-source tool that helps AI agents handle long-running tasks more efficiently — instead of reprocessing everything from scratch each time, it tracks what has changed and only updates those parts. For teams running AI workflows over large, frequently-updated datasets, this could meaningfully reduce processing time and cost.",
+      "title": "A Senior Google Engineer Released a Toolkit for More Reliable AI Coding Agents",
+      "summary": "Addy Osmani, a well-known engineering leader at Google, published agent-skills on GitHub — a collection of production-ready behaviors for AI coding agents covering code review, testing, and documentation. The goal is giving AI agents consistent, reliable patterns rather than improvising each time. Reliability improvements like these tend to make their way into the AI coding tools that non-developers already use.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/cocoindex-io/cocoindex"
+      "source_url": "https://github.com/addyosmani/agent-skills"
     },
     {
-      "title": "Curated Collection of Real-World AI Apps Gains Attention on GitHub",
-      "summary": "A GitHub repository called Awesome AI Apps is trending this week, gathering examples of actual AI projects — from document retrieval systems to multi-agent workflows. It's a practical reference for anyone who wants to see what teams are building with AI tools today, not just what's theoretically possible. Collections like this often serve as idea banks for professionals exploring AI in their own work.",
+      "title": "A Curated List of Free AI APIs Is Trending Among Developers",
+      "summary": "A GitHub repository called free-llm-api-resources is making the rounds this week, collecting free and no-cost ways to access AI language models via API — useful for anyone building or experimenting with AI tools without a large budget. The list spans cloud providers with free tiers, open-weight model hosts, and local runners. For teams evaluating AI tools, it is a practical starting point before committing to paid plans.",
+      "visual_type": "table",
+      "visual_url": null,
+      "visual_data": {
+        "headers": ["Category", "What It Means", "Examples"],
+        "rows": [
+          ["Free-tier cloud APIs", "Pay nothing up to a monthly limit", "OpenAI, Anthropic, Gemini"],
+          ["Open-weight model hosts", "Run powerful models for free or low cost", "Groq, Together AI, Fireworks"],
+          ["Local model runners", "Run AI entirely on your own computer", "Ollama, LM Studio, llama.cpp"]
+        ]
+      },
+      "source_name": "GitHub",
+      "source_url": "https://github.com/cheahjs/free-llm-api-resources"
+    },
+    {
+      "title": "An Independent Web Browser Is Trending on GitHub Again",
+      "summary": "Ladybird is a web browser built entirely from scratch — no code borrowed from Chrome, Firefox, or Safari — and it is gaining attention on GitHub. Most browsers today share the same underlying engines, meaning a flaw in one affects nearly everyone. A genuinely independent browser adds real diversity to the web, which matters for privacy, competition, and long-term internet health.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/Arindam200/awesome-ai-apps"
+      "source_url": "https://github.com/LadybirdBrowser/ladybird"
     }
   ],
   "under_the_hood": [
     {
-      "title": "TabPFN: A Foundation AI Model Built for Spreadsheet and Database Data",
-      "what_happened": "PriorLabs published TabPFN on GitHub — a pre-trained foundation model built specifically for tabular data, the structured rows-and-columns format used in spreadsheets, databases, and data exports. Unlike general language models, TabPFN is optimized for prediction and classification tasks on this kind of data, designed to work fast without extensive fine-tuning.",
-      "why_it_matters": "Most business data lives in tables — sales records, survey results, customer lists. Foundation models like TabPFN could make it significantly easier for non-data-scientists to run useful predictions on that data. The model is open-source and optimized for speed, making it accessible to smaller teams without dedicated machine learning infrastructure.",
+      "title": "Kronos: A Foundation Model Trained on the Raw Language of Financial Markets",
+      "what_happened": "Researchers published Kronos on GitHub — a large pre-trained model built specifically to understand financial market data: prices, trading volumes, order flows, and economic indicators. Unlike most AI applied to finance, which are general text models fine-tuned on financial documents, Kronos was trained on the market data itself.",
+      "why_it_matters": "Training on market data rather than text about markets is a methodologically distinct approach that could yield more accurate pattern recognition for trading, risk assessment, and portfolio management. It is still research-stage, but it represents the kind of domain-specific foundation model that could eventually underpin fintech AI tools the same way BERT underpins most text-based applications today.",
       "code_example": null,
       "visual_type": "table",
       "visual_url": null,
-      "visual_data": {"headers": ["Task type", "Supported", "Typical use case"], "rows": [["Classification", "Yes", "Customer churn, fraud detection"], ["Regression", "Yes", "Sales forecasting, pricing"], ["Any structured dataset", "Yes", "Rows and columns from a database or CSV"], ["Text or image data", "No", "Use a language or vision model instead"]]},
+      "visual_data": {
+        "headers": ["Model Type", "Trained On", "Primary Use"],
+        "rows": [
+          ["General LLM (e.g. GPT, Claude)", "Text from the internet", "Q&A, summarisation, writing"],
+          ["Fine-tuned finance LLM", "Financial documents and reports", "Document analysis, Q&A"],
+          ["TabPFN (covered yesterday)", "Structured tabular datasets", "Spreadsheet / database prediction"],
+          ["Kronos (new)", "Raw market data — prices, volumes, flows", "Market pattern recognition"]
+        ]
+      },
       "source_name": "GitHub",
-      "source_url": "https://github.com/PriorLabs/TabPFN"
+      "source_url": "https://github.com/shiyu-coder/Kronos"
     },
     {
-      "title": "Karpathy's AI Coding Pitfalls Distilled Into One Reusable Config File",
-      "what_happened": "A developer distilled AI researcher Andrej Karpathy's observations on common AI coding mistakes into a single CLAUDE.md configuration file, now published on GitHub. The file sets behavioral rules for Claude Code — steering it away from patterns that frequently produce errors or make code harder to maintain.",
-      "why_it_matters": "CLAUDE.md files are how developers customize how Claude Code approaches a project. A config built on Karpathy's documented insights gives teams a practical, battle-tested starting point for getting more reliable output from AI coding tools, without having to discover each pitfall themselves.",
-      "code_example": null,
+      "title": "Scrapling: A Web Scraper That Adapts When Websites Change Layout",
+      "what_happened": "A developer released Scrapling — a Python web scraping framework that handles everything from simple HTTP requests to complex JavaScript-rendered pages through a single consistent API, without requiring the developer to switch tools depending on the site.",
+      "why_it_matters": "Most scrapers break when a website redesigns or moves to dynamic loading. Scrapling is designed to adapt across these scenarios under one interface, which significantly reduces maintenance overhead. For anyone building data pipelines, AI agents that read websites, or monitoring tools, having one framework that works reliably across simple and complex sites alike is a meaningful practical improvement.",
+      "code_example": "from scrapling import Scrapling\n\nscraper = Scrapling()\n\n# Works for static and JS-rendered pages\npage = scraper.fetch('https://example.com/products')\nprices = page.find_all('.price')\nfor p in prices:\n    print(p.text)",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/forrestchang/andrej-karpathy-skills"
+      "source_url": "https://github.com/D4Vinci/Scrapling"
     }
   ]
 }
