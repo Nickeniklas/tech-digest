@@ -318,5 +318,53 @@
     "source_urls": [
       "https://github.com/D4Vinci/Scrapling"
     ]
+  },
+  {
+    "date": "2026-05-08",
+    "title": "Vercel Publishes a Ready-Made Template for Cloud AI Agents",
+    "summary": "Vercel — the company whose platform hosts millions of websites and developer tools — released open-agents, a free open-source starting template for building AI agents that run entirely in the cloud.",
+    "source_urls": [
+      "https://github.com/vercel-labs/open-agents"
+    ]
+  },
+  {
+    "date": "2026-05-08",
+    "title": "A New Router Gives You Free Access to Claude, GPT, and Gemini With Automatic Failover",
+    "summary": "A developer released 9router, a proxy that connects AI coding tools — Claude Code, Cursor, GitHub Copilot, Cline — to free-tier AI models across 40+ providers.",
+    "source_urls": [
+      "https://github.com/decolua/9router"
+    ]
+  },
+  {
+    "date": "2026-05-08",
+    "title": "Goose Is an AI Agent That Doesn't Just Suggest Code — It Executes It",
+    "summary": "An open-source AI agent called Goose goes further than code-suggestion tools: it can install packages, run commands, edit files, and execute tests on its own.",
+    "source_urls": [
+      "https://github.com/aaif-goose/goose"
+    ]
+  },
+  {
+    "date": "2026-05-08",
+    "title": "PageIndex Finds Answers in Documents Using Reasoning — No Vector Database Required",
+    "summary": "VectifyAI published PageIndex, a document search tool that uses AI reasoning to find relevant information rather than the traditional vector-embedding approach.",
+    "source_urls": [
+      "https://github.com/VectifyAI/PageIndex"
+    ]
+  },
+  {
+    "date": "2026-05-08",
+    "title": "InsForge Bundles a Full App Backend With an AI Gateway Into One Platform",
+    "summary": "InsForge is a new open-source project that packages everything a modern application needs — database, authentication, file storage, hosting, and an AI model gateway — into a single Postgres-based platform built for AI coding agents.",
+    "source_urls": [
+      "https://github.com/InsForge/InsForge"
+    ]
+  },
+  {
+    "date": "2026-05-08",
+    "title": "DFlash: A New Technique That Generates AI Text in Parallel Rather Than One Token at a Time",
+    "summary": "Researchers at z-lab published DFlash, a method called Block Diffusion for Flash Speculative Decoding.",
+    "source_urls": [
+      "https://github.com/z-lab/dflash"
+    ]
   }
 ]

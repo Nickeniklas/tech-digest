@@ -1,101 +1,88 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "ByteDance open-sourced an AI agent that works autonomously for hours on complex tasks — and Anthropic quietly published a new repository targeting the financial services industry.",
-  "fun_fact": null,
+  "teaser": "Vercel — the platform behind millions of websites — released an open-source blueprint for building AI agents that run in the cloud, joining a wave of tools that make autonomous AI easier to deploy.",
+  "fun_fact": "DFlash generates text in parallel chunks — like solving a crossword grid instead of writing it one letter at a time.",
   "lead_story": {
-    "title": "ByteDance Open-Sources an AI Agent That Works Independently for Hours",
-    "what_happened": "ByteDance, the company behind TikTok, published deer-flow on GitHub — an open-source AI agent designed to handle long, complex tasks on its own: researching topics, writing and running code, and producing content over a span of minutes to hours, with minimal human direction.",
-    "what_this_means": "Autonomous AI agents that can plan and execute multi-step jobs without constant prompting are moving out of research labs and into free, open-source tools. If your work involves research, writing, or data gathering, this shift means more of those workflows can soon be handed off end-to-end — not just one question at a time.",
+    "title": "Vercel Publishes a Ready-Made Template for Cloud AI Agents",
+    "what_happened": "Vercel — the company whose platform hosts millions of websites and developer tools — released open-agents, a free open-source starting template for building AI agents that run entirely in the cloud. It gives developers a working foundation so they don't have to wire up the infrastructure themselves.",
+    "what_this_means": "As AI agents become the follow-on to chatbots, the companies behind popular developer tools are racing to define how they get built. If you work with software teams or manage digital products, expect agent-based features and the infrastructure requests that come with them to become more common this year.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["Capability", "Standard AI Chatbot", "deer-flow SuperAgent"],
+      "headers": ["Capability", "Traditional App", "Cloud Agent"],
       "rows": [
-        ["Task length", "Single question", "Minutes to hours"],
-        ["Research", "Answers from training data", "Actively searches and gathers"],
-        ["Code execution", "Generates code only", "Runs code in a sandbox"],
-        ["Memory", "Within one conversation", "Persists across subtasks"],
-        ["Coordination", "Single model", "Multiple specialized subagents"]
+        ["Triggers", "User clicks a button", "Events, schedules, or other agents"],
+        ["Actions", "Responds to input", "Autonomously executes multi-step tasks"],
+        ["Memory", "Session only", "Persistent across interactions"],
+        ["Hosting", "Always-on server", "Serverless / cloud-native"]
       ]
     },
-    "source_name": "GitHub",
-    "source_url": "https://github.com/bytedance/deer-flow"
+    "source_name": "GitHub (Vercel Labs)",
+    "source_url": "https://github.com/vercel-labs/open-agents"
   },
   "quick_hits": [
     {
-      "title": "Anthropic Published a Financial Services Repository on GitHub",
-      "summary": "Anthropic added a dedicated financial-services repository to its GitHub organization, signaling a push to make Claude easier to deploy in banking, insurance, and fintech. Few details are public yet, but a dedicated repo from the company itself — not a third-party integrator — suggests Anthropic is moving more deliberately into regulated industries. Finance professionals watching the AI space should track how this develops.",
-      "visual_type": null,
-      "visual_url": null,
-      "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/anthropics/financial-services"
-    },
-    {
-      "title": "A Senior Google Engineer Released a Toolkit for More Reliable AI Coding Agents",
-      "summary": "Addy Osmani, a well-known engineering leader at Google, published agent-skills on GitHub — a collection of production-ready behaviors for AI coding agents covering code review, testing, and documentation. The goal is giving AI agents consistent, reliable patterns rather than improvising each time. Reliability improvements like these tend to make their way into the AI coding tools that non-developers already use.",
-      "visual_type": null,
-      "visual_url": null,
-      "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/addyosmani/agent-skills"
-    },
-    {
-      "title": "A Curated List of Free AI APIs Is Trending Among Developers",
-      "summary": "A GitHub repository called free-llm-api-resources is making the rounds this week, collecting free and no-cost ways to access AI language models via API — useful for anyone building or experimenting with AI tools without a large budget. The list spans cloud providers with free tiers, open-weight model hosts, and local runners. For teams evaluating AI tools, it is a practical starting point before committing to paid plans.",
-      "visual_type": "table",
+      "title": "A New Router Gives You Free Access to Claude, GPT, and Gemini With Automatic Failover",
+      "summary": "A developer released 9router, a proxy that connects AI coding tools — Claude Code, Cursor, GitHub Copilot, Cline — to free-tier AI models across 40+ providers. If one provider hits its limit, it automatically switches to another. The project also claims a 40% reduction in token usage through smarter routing.",
+      "visual_type": "chart",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Category", "What It Means", "Examples"],
+        "headers": ["Metric", "Value"],
         "rows": [
-          ["Free-tier cloud APIs", "Pay nothing up to a monthly limit", "OpenAI, Anthropic, Gemini"],
-          ["Open-weight model hosts", "Run powerful models for free or low cost", "Groq, Together AI, Fireworks"],
-          ["Local model runners", "Run AI entirely on your own computer", "Ollama, LM Studio, llama.cpp"]
+          ["Supported providers", "40+"],
+          ["Claimed token reduction", "40%"],
+          ["Compatible tools", "4 (Claude Code, Cursor, Cline, Copilot)"]
         ]
       },
-      "source_name": "GitHub",
-      "source_url": "https://github.com/cheahjs/free-llm-api-resources"
+      "source_name": "GitHub (decolua)",
+      "source_url": "https://github.com/decolua/9router"
     },
     {
-      "title": "An Independent Web Browser Is Trending on GitHub Again",
-      "summary": "Ladybird is a web browser built entirely from scratch — no code borrowed from Chrome, Firefox, or Safari — and it is gaining attention on GitHub. Most browsers today share the same underlying engines, meaning a flaw in one affects nearly everyone. A genuinely independent browser adds real diversity to the web, which matters for privacy, competition, and long-term internet health.",
+      "title": "Goose Is an AI Agent That Doesn't Just Suggest Code — It Executes It",
+      "summary": "An open-source AI agent called Goose goes further than code-suggestion tools: it can install packages, run commands, edit files, and execute tests on its own. It works with any LLM, so you're not tied to one AI provider.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/LadybirdBrowser/ladybird"
+      "source_name": "GitHub (aaif-goose)",
+      "source_url": "https://github.com/aaif-goose/goose"
+    },
+    {
+      "title": "PageIndex Finds Answers in Documents Using Reasoning — No Vector Database Required",
+      "summary": "VectifyAI published PageIndex, a document search tool that uses AI reasoning to find relevant information rather than the traditional vector-embedding approach. For teams building document AI tools, this could cut the complexity of setup and ongoing maintenance significantly.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub (VectifyAI)",
+      "source_url": "https://github.com/VectifyAI/PageIndex"
+    },
+    {
+      "title": "InsForge Bundles a Full App Backend With an AI Gateway Into One Platform",
+      "summary": "InsForge is a new open-source project that packages everything a modern application needs — database, authentication, file storage, hosting, and an AI model gateway — into a single Postgres-based platform built for AI coding agents. It positions itself as a self-hosted alternative to services like Firebase or Supabase, designed for the AI-agent era.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub (InsForge)",
+      "source_url": "https://github.com/InsForge/InsForge"
     }
   ],
   "under_the_hood": [
     {
-      "title": "Kronos: A Foundation Model Trained on the Raw Language of Financial Markets",
-      "what_happened": "Researchers published Kronos on GitHub — a large pre-trained model built specifically to understand financial market data: prices, trading volumes, order flows, and economic indicators. Unlike most AI applied to finance, which are general text models fine-tuned on financial documents, Kronos was trained on the market data itself.",
-      "why_it_matters": "Training on market data rather than text about markets is a methodologically distinct approach that could yield more accurate pattern recognition for trading, risk assessment, and portfolio management. It is still research-stage, but it represents the kind of domain-specific foundation model that could eventually underpin fintech AI tools the same way BERT underpins most text-based applications today.",
+      "title": "DFlash: A New Technique That Generates AI Text in Parallel Rather Than One Token at a Time",
+      "what_happened": "Researchers at z-lab published DFlash, a method called Block Diffusion for Flash Speculative Decoding. Standard language models generate text one token at a time — DFlash instead predicts chunks of text in parallel using a diffusion-based process, then verifies them, reducing how long generation takes.",
+      "why_it_matters": "Faster token generation means lower latency for any AI-powered product — chat interfaces feel snappier, API calls complete sooner. If the approach proves out at scale, it could reduce the compute cost of running large models, which affects which AI features are economically viable to ship. The technique builds on speculative decoding, which has been gaining momentum as a practical inference optimization.",
       "code_example": null,
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Model Type", "Trained On", "Primary Use"],
+        "headers": ["Decoding Method", "How It Works", "Speed Profile"],
         "rows": [
-          ["General LLM (e.g. GPT, Claude)", "Text from the internet", "Q&A, summarisation, writing"],
-          ["Fine-tuned finance LLM", "Financial documents and reports", "Document analysis, Q&A"],
-          ["TabPFN (covered yesterday)", "Structured tabular datasets", "Spreadsheet / database prediction"],
-          ["Kronos (new)", "Raw market data — prices, volumes, flows", "Market pattern recognition"]
+          ["Standard autoregressive", "One token at a time, sequentially", "Baseline"],
+          ["Speculative decoding", "Draft tokens fast, verify in parallel", "Faster"],
+          ["DFlash (block diffusion)", "Parallel chunks via diffusion model", "Faster still"]
         ]
       },
-      "source_name": "GitHub",
-      "source_url": "https://github.com/shiyu-coder/Kronos"
-    },
-    {
-      "title": "Scrapling: A Web Scraper That Adapts When Websites Change Layout",
-      "what_happened": "A developer released Scrapling — a Python web scraping framework that handles everything from simple HTTP requests to complex JavaScript-rendered pages through a single consistent API, without requiring the developer to switch tools depending on the site.",
-      "why_it_matters": "Most scrapers break when a website redesigns or moves to dynamic loading. Scrapling is designed to adapt across these scenarios under one interface, which significantly reduces maintenance overhead. For anyone building data pipelines, AI agents that read websites, or monitoring tools, having one framework that works reliably across simple and complex sites alike is a meaningful practical improvement.",
-      "code_example": "from scrapling import Scrapling\n\nscraper = Scrapling()\n\n# Works for static and JS-rendered pages\npage = scraper.fetch('https://example.com/products')\nprices = page.find_all('.price')\nfor p in prices:\n    print(p.text)",
-      "visual_type": null,
-      "visual_url": null,
-      "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/D4Vinci/Scrapling"
+      "source_name": "GitHub (z-lab)",
+      "source_url": "https://github.com/z-lab/dflash"
     }
   ]
 }
