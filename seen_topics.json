@@ -1,45 +1,5 @@
 [
   {
-    "date": "2026-05-01",
-    "title": "Warp Reinvents the Terminal as an Agentic Development Environment",
-    "summary": "Warp, a popular developer terminal app, has repositioned itself as an agentic development environment — a workspace where AI agents can plan, write code, and execute tasks, not just a window where you type commands.",
-    "source_urls": [
-      "https://github.com/warpdotdev/warp"
-    ]
-  },
-  {
-    "date": "2026-05-01",
-    "title": "Ghostty Terminal Gains Momentum as Developers Seek Modern Tools",
-    "summary": "Ghostty is a new cross-platform terminal emulator built for speed — it uses GPU acceleration and native platform UI rather than web technologies.",
-    "source_urls": [
-      "https://github.com/ghostty-org/ghostty"
-    ]
-  },
-  {
-    "date": "2026-05-01",
-    "title": "One Username, 3,000+ Sites: What Maigret Reveals About Your Digital Footprint",
-    "summary": "An open-source OSINT tool called Maigret can take a single username and search for it across more than 3,000 websites, assembling a profile from public records.",
-    "source_urls": [
-      "https://github.com/soxoj/maigret"
-    ]
-  },
-  {
-    "date": "2026-05-01",
-    "title": "\"Superpowers\" Gives AI Coding Agents a Structured Development Methodology",
-    "summary": "A developer published an open-source framework called Superpowers that gives AI coding agents a structured approach to software development — rules and processes rather than improvising.",
-    "source_urls": [
-      "https://github.com/obra/superpowers"
-    ]
-  },
-  {
-    "date": "2026-05-01",
-    "title": "Browserbase Adds Real-Time Web Browsing to Claude AI Agents",
-    "summary": "Browserbase published an open-source skills package for the Claude Agent SDK that gives AI agents the ability to browse and interact with live websites — clicking, reading, and navigating — in real time rather than only working from static context provided by the user.",
-    "source_urls": [
-      "https://github.com/browserbase/skills"
-    ]
-  },
-  {
     "date": "2026-05-02",
     "title": "Sim Wants to Be Mission Control for Your AI Workforce",
     "summary": "A new open-source platform called Sim, from SimStudio, lets you build, deploy, and coordinate multiple AI agents from one place.",
@@ -365,6 +325,46 @@
     "summary": "Researchers at z-lab published DFlash, a method called Block Diffusion for Flash Speculative Decoding.",
     "source_urls": [
       "https://github.com/z-lab/dflash"
+    ]
+  },
+  {
+    "date": "2026-05-09",
+    "title": "A Fully Automated AI Trading Agent Is Now Open Source",
+    "summary": "Researchers at HKUDS published AI-Trader on GitHub — an AI agent that handles the entire trading cycle without human involvement: it analyzes markets, selects assets, and executes buy and sell orders autonomously.",
+    "source_urls": [
+      "https://github.com/HKUDS/AI-Trader"
+    ]
+  },
+  {
+    "date": "2026-05-09",
+    "title": "Amazon Published a Rulebook for How AI Coding Agents Should Work",
+    "summary": "AWS Labs released aidlc-workflows on GitHub — a set of adaptive steering rules that guide AI coding agents through the entire software development lifecycle, from planning through deployment.",
+    "source_urls": [
+      "https://github.com/awslabs/aidlc-workflows"
+    ]
+  },
+  {
+    "date": "2026-05-09",
+    "title": "A Modified Browser Passes Every Bot Detection Test on the Market",
+    "summary": "CloakBrowser is a custom build of Chrome designed to pass the bot-detection tools that websites use to block automated browsing — it passed 30 out of 30 tests from major detection services.",
+    "source_urls": [
+      "https://github.com/CloakHQ/CloakBrowser"
+    ]
+  },
+  {
+    "date": "2026-05-09",
+    "title": "A Platform for Collaborating With Teams of AI Agents Is Trending",
+    "summary": "Lobehub is gaining attention on GitHub with a platform designed around working alongside multiple AI agents as if they were team members.",
+    "source_urls": [
+      "https://github.com/lobehub/lobehub"
+    ]
+  },
+  {
+    "date": "2026-05-09",
+    "title": "How CloakBrowser Defeats Bot Detection at the Source Level",
+    "summary": "Most stealth browsers defeat bot detection by layering JavaScript overrides on top of standard Chrome — spoofing canvas fingerprints, WebGL renderer strings, and font metrics at runtime.",
+    "source_urls": [
+      "https://github.com/CloakHQ/CloakBrowser"
     ]
   }
 ]
