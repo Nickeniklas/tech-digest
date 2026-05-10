@@ -1,88 +1,82 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Vercel — the platform behind millions of websites — released an open-source blueprint for building AI agents that run in the cloud, joining a wave of tools that make autonomous AI easier to deploy.",
-  "fun_fact": "DFlash generates text in parallel chunks — like solving a crossword grid instead of writing it one letter at a time.",
+  "teaser": "Google's Chrome DevTools team built an official AI agent bridge for your browser — the same tools web developers have used for 15 years are now accessible to AI without a human in the loop.",
+  "fun_fact": "Chrome DevTools have existed since 2008; they're now getting their first-ever AI agent interface.",
   "lead_story": {
-    "title": "Vercel Publishes a Ready-Made Template for Cloud AI Agents",
-    "what_happened": "Vercel — the company whose platform hosts millions of websites and developer tools — released open-agents, a free open-source starting template for building AI agents that run entirely in the cloud. It gives developers a working foundation so they don't have to wire up the infrastructure themselves.",
-    "what_this_means": "As AI agents become the follow-on to chatbots, the companies behind popular developer tools are racing to define how they get built. If you work with software teams or manage digital products, expect agent-based features and the infrastructure requests that come with them to become more common this year.",
+    "title": "Google's Chrome DevTools Team Releases an Official AI Agent Bridge",
+    "what_happened": "The Chrome DevTools team at Google released an MCP (Model Context Protocol) server that gives AI coding agents direct access to Chrome's built-in developer tools. Agents can now inspect web pages, debug JavaScript errors, monitor network requests, and analyze performance — the same tasks a web developer performs manually today.",
+    "what_this_means": "When the engineers who build Chrome's core developer tooling create something specifically for AI agents, it signals that browser-based AI automation is moving from experimental to infrastructure. For marketers, designers, and managers overseeing web projects, it means the AI tools your developers use can now interact with websites as a human developer would.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["Capability", "Traditional App", "Cloud Agent"],
+      "headers": ["Task", "Status Before MCP", "Status With MCP"],
       "rows": [
-        ["Triggers", "User clicks a button", "Events, schedules, or other agents"],
-        ["Actions", "Responds to input", "Autonomously executes multi-step tasks"],
-        ["Memory", "Session only", "Persistent across interactions"],
-        ["Hosting", "Always-on server", "Serverless / cloud-native"]
+        ["Inspect page elements", "Human only", "AI agent"],
+        ["Debug JavaScript errors", "Human only", "AI agent"],
+        ["Monitor network requests", "Human only", "AI agent"],
+        ["Profile page performance", "Human only", "AI agent"]
       ]
     },
-    "source_name": "GitHub (Vercel Labs)",
-    "source_url": "https://github.com/vercel-labs/open-agents"
+    "source_name": "GitHub",
+    "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
   },
   "quick_hits": [
     {
-      "title": "A New Router Gives You Free Access to Claude, GPT, and Gemini With Automatic Failover",
-      "summary": "A developer released 9router, a proxy that connects AI coding tools — Claude Code, Cursor, GitHub Copilot, Cline — to free-tier AI models across 40+ providers. If one provider hits its limit, it automatically switches to another. The project also claims a 40% reduction in token usage through smarter routing.",
-      "visual_type": "chart",
-      "visual_url": null,
-      "visual_data": {
-        "headers": ["Metric", "Value"],
-        "rows": [
-          ["Supported providers", "40+"],
-          ["Claimed token reduction", "40%"],
-          ["Compatible tools", "4 (Claude Code, Cursor, Cline, Copilot)"]
-        ]
-      },
-      "source_name": "GitHub (decolua)",
-      "source_url": "https://github.com/decolua/9router"
-    },
-    {
-      "title": "Goose Is an AI Agent That Doesn't Just Suggest Code — It Executes It",
-      "summary": "An open-source AI agent called Goose goes further than code-suggestion tools: it can install packages, run commands, edit files, and execute tests on its own. It works with any LLM, so you're not tied to one AI provider.",
+      "title": "Open-Source AI Coworker With Memory Is Trending on GitHub",
+      "summary": "Rowboat is a free, open-source AI assistant designed to work like a team member — one that retains memory across conversations so it doesn't forget your project context, past decisions, or preferences. Most AI tools today start fresh every session; Rowboat holds onto what it's learned about your work. For professionals managing ongoing projects with AI, this kind of persistent memory could change how useful those tools feel day-to-day.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub (aaif-goose)",
-      "source_url": "https://github.com/aaif-goose/goose"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/rowboatlabs/rowboat"
     },
     {
-      "title": "PageIndex Finds Answers in Documents Using Reasoning — No Vector Database Required",
-      "summary": "VectifyAI published PageIndex, a document search tool that uses AI reasoning to find relevant information rather than the traditional vector-embedding approach. For teams building document AI tools, this could cut the complexity of setup and ongoing maintenance significantly.",
+      "title": "ByteDance Releases an Open Platform for Building Multi-Model AI Agents",
+      "summary": "ByteDance — the company behind TikTok — published UI-TARS-desktop on GitHub, a toolkit for connecting cutting-edge AI models and the infrastructure required to run AI agents. It's designed as a complete open-source stack for developers who want to build sophisticated AI applications without assembling all the pieces themselves. This is ByteDance's second major open-source AI release this week, reinforcing the company's push to become a key player in the AI tools ecosystem.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub (VectifyAI)",
-      "source_url": "https://github.com/VectifyAI/PageIndex"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/bytedance/UI-TARS-desktop"
     },
     {
-      "title": "InsForge Bundles a Full App Backend With an AI Gateway Into One Platform",
-      "summary": "InsForge is a new open-source project that packages everything a modern application needs — database, authentication, file storage, hosting, and an AI model gateway — into a single Postgres-based platform built for AI coding agents. It positions itself as a self-hosted alternative to services like Firebase or Supabase, designed for the AI-agent era.",
+      "title": "Oracle Launches an AI Developer Hub for Enterprise Applications",
+      "summary": "Oracle — whose database software underpins banking, healthcare, retail, and government systems worldwide — released an AI Developer Hub on GitHub with resources for building AI applications using Oracle's database and cloud infrastructure. For professionals at large organizations that run on Oracle systems, this signals that enterprise AI tools are now being officially integrated at the infrastructure level. Expect AI-powered features to accelerate in the business software that large teams use every day.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub (InsForge)",
-      "source_url": "https://github.com/InsForge/InsForge"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/oracle-devrel/oracle-ai-developer-hub"
+    },
+    {
+      "title": "A 2026 Programming Course Teaches Coding Through Conversation, Not Syntax",
+      "summary": "Easy-vibe is a new beginner programming course built around 'vibe coding' — describing what you want to build in plain language and letting AI generate the code. Rather than memorizing programming syntax, learners direct AI step by step through real projects. For non-coders who've wanted to build their own tools but felt blocked by the technical barrier, this approach lowers the floor significantly.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub",
+      "source_url": "https://github.com/datawhalechina/easy-vibe"
     }
   ],
   "under_the_hood": [
     {
-      "title": "DFlash: A New Technique That Generates AI Text in Parallel Rather Than One Token at a Time",
-      "what_happened": "Researchers at z-lab published DFlash, a method called Block Diffusion for Flash Speculative Decoding. Standard language models generate text one token at a time — DFlash instead predicts chunks of text in parallel using a diffusion-based process, then verifies them, reducing how long generation takes.",
-      "why_it_matters": "Faster token generation means lower latency for any AI-powered product — chat interfaces feel snappier, API calls complete sooner. If the approach proves out at scale, it could reduce the compute cost of running large models, which affects which AI features are economically viable to ship. The technique builds on speculative decoding, which has been gaining momentum as a practical inference optimization.",
-      "code_example": null,
+      "title": "AgentMemory Claims Top Benchmark Ranking for AI Coding Agent Memory",
+      "what_happened": "A GitHub project called agentmemory is making the rounds this week, claiming the #1 spot in real-world benchmarks for persistent memory systems used by AI coding agents. It provides a structured memory layer that AI coding tools — like Claude Code or Cursor — can use to remember project conventions, past decisions, and code context across multiple work sessions.",
+      "why_it_matters": "The absence of persistent memory is one of the biggest practical frustrations with current AI coding agents: every new session is a blank slate. A reliable, benchmark-tested memory layer would let agents work like a developer who's been on the project for months rather than one who just walked in. If the benchmark claims hold up, agentmemory could become a standard part of AI-powered development setups.",
+      "code_example": "from agentmemory import AgentMemory\n\nmem = AgentMemory()\n\n# Store project conventions\nmem.remember('We use Tailwind CSS, not Bootstrap.')\nmem.remember('All API routes are prefixed with /api/v2/')\n\n# Recall relevant context later\nresult = mem.search('CSS framework')\nprint(result)  # ['We use Tailwind CSS, not Bootstrap.']",
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Decoding Method", "How It Works", "Speed Profile"],
+        "headers": ["Without Memory", "With AgentMemory"],
         "rows": [
-          ["Standard autoregressive", "One token at a time, sequentially", "Baseline"],
-          ["Speculative decoding", "Draft tokens fast, verify in parallel", "Faster"],
-          ["DFlash (block diffusion)", "Parallel chunks via diffusion model", "Faster still"]
+          ["Forgets context between sessions", "Recalls project conventions"],
+          ["Re-explain setup every time", "Picks up where it left off"],
+          ["No decision history", "Searchable past decisions"],
+          ["Generic suggestions", "Project-aware responses"]
         ]
       },
-      "source_name": "GitHub (z-lab)",
-      "source_url": "https://github.com/z-lab/dflash"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/rohitg00/agentmemory"
     }
   ]
 }

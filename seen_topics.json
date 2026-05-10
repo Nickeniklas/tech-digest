@@ -1,45 +1,5 @@
 [
   {
-    "date": "2026-05-02",
-    "title": "Sim Wants to Be Mission Control for Your AI Workforce",
-    "summary": "A new open-source platform called Sim, from SimStudio, lets you build, deploy, and coordinate multiple AI agents from one place.",
-    "source_urls": [
-      "https://github.com/simstudioai/sim"
-    ]
-  },
-  {
-    "date": "2026-05-02",
-    "title": "jcode: A New Open-Source Harness for AI Coding Agents",
-    "summary": "A developer published jcode on GitHub — a coding agent harness that provides standardized scaffolding for running and testing AI coding agents consistently.",
-    "source_urls": [
-      "https://github.com/1jehuang/jcode"
-    ]
-  },
-  {
-    "date": "2026-05-02",
-    "title": "TradingAgents Climbs to #1 on GitHub Trending",
-    "summary": "Previously covered on 2026-04-28: TradingAgents is an open-source framework where multiple AI agents collaborate to analyze markets and execute trading strategies.",
-    "source_urls": [
-      "https://github.com/TauricResearch/TradingAgents"
-    ]
-  },
-  {
-    "date": "2026-05-02",
-    "title": "Open-Source Tool Surges for Users Facing Internet Restrictions",
-    "summary": "A tool called zapret-discord-youtube is trending globally on GitHub this week.",
-    "source_urls": [
-      "https://github.com/Flowseal/zapret-discord-youtube"
-    ]
-  },
-  {
-    "date": "2026-05-02",
-    "title": "How Sim Orchestrates Multiple AI Agents",
-    "summary": "Sim (by SimStudio) is an open-source agent orchestration platform designed to let developers and teams build workflows where multiple AI agents hand off tasks to each other.",
-    "source_urls": [
-      "https://github.com/simstudioai/sim"
-    ]
-  },
-  {
     "date": "2026-05-03",
     "title": "Ruflo: An Orchestration Platform for Deploying Claude Agent Swarms",
     "summary": "A developer published Ruflo on GitHub — an open-source platform designed to deploy and coordinate large numbers of Claude AI agents that divide complex tasks and run in parallel, with built-in knowledge-base search (RAG), enterprise-grade architecture, and a structured conversational layer on top.",
@@ -365,6 +325,54 @@
     "summary": "Most stealth browsers defeat bot detection by layering JavaScript overrides on top of standard Chrome — spoofing canvas fingerprints, WebGL renderer strings, and font metrics at runtime.",
     "source_urls": [
       "https://github.com/CloakHQ/CloakBrowser"
+    ]
+  },
+  {
+    "date": "2026-05-10",
+    "title": "Google's Chrome DevTools Team Releases an Official AI Agent Bridge",
+    "summary": "The Chrome DevTools team at Google released an MCP (Model Context Protocol) server that gives AI coding agents direct access to Chrome's built-in developer tools.",
+    "source_urls": [
+      "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+    ]
+  },
+  {
+    "date": "2026-05-10",
+    "title": "Open-Source AI Coworker With Memory Is Trending on GitHub",
+    "summary": "Rowboat is a free, open-source AI assistant designed to work like a team member — one that retains memory across conversations so it doesn't forget your project context, past decisions, or preferences.",
+    "source_urls": [
+      "https://github.com/rowboatlabs/rowboat"
+    ]
+  },
+  {
+    "date": "2026-05-10",
+    "title": "ByteDance Releases an Open Platform for Building Multi-Model AI Agents",
+    "summary": "ByteDance — the company behind TikTok — published UI-TARS-desktop on GitHub, a toolkit for connecting cutting-edge AI models and the infrastructure required to run AI agents.",
+    "source_urls": [
+      "https://github.com/bytedance/UI-TARS-desktop"
+    ]
+  },
+  {
+    "date": "2026-05-10",
+    "title": "Oracle Launches an AI Developer Hub for Enterprise Applications",
+    "summary": "Oracle — whose database software underpins banking, healthcare, retail, and government systems worldwide — released an AI Developer Hub on GitHub with resources for building AI applications using Oracle's database and cloud infrastructure.",
+    "source_urls": [
+      "https://github.com/oracle-devrel/oracle-ai-developer-hub"
+    ]
+  },
+  {
+    "date": "2026-05-10",
+    "title": "A 2026 Programming Course Teaches Coding Through Conversation, Not Syntax",
+    "summary": "Easy-vibe is a new beginner programming course built around 'vibe coding' — describing what you want to build in plain language and letting AI generate the code.",
+    "source_urls": [
+      "https://github.com/datawhalechina/easy-vibe"
+    ]
+  },
+  {
+    "date": "2026-05-10",
+    "title": "AgentMemory Claims Top Benchmark Ranking for AI Coding Agent Memory",
+    "summary": "A GitHub project called agentmemory is making the rounds this week, claiming the #1 spot in real-world benchmarks for persistent memory systems used by AI coding agents.",
+    "source_urls": [
+      "https://github.com/rohitg00/agentmemory"
     ]
   }
 ]
