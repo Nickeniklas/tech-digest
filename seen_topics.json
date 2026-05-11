@@ -1,45 +1,5 @@
 [
   {
-    "date": "2026-05-03",
-    "title": "Ruflo: An Orchestration Platform for Deploying Claude Agent Swarms",
-    "summary": "A developer published Ruflo on GitHub — an open-source platform designed to deploy and coordinate large numbers of Claude AI agents that divide complex tasks and run in parallel, with built-in knowledge-base search (RAG), enterprise-grade architecture, and a structured conversational layer on top.",
-    "source_urls": [
-      "https://github.com/ruvnet/ruflo"
-    ]
-  },
-  {
-    "date": "2026-05-03",
-    "title": "ShareX: A Completely Free Screen Capture and Recording Tool",
-    "summary": "ShareX — a fully free, open-source Windows app for screenshots, screen recording, and uploading to dozens of destinations — is trending on GitHub this week.",
-    "source_urls": [
-      "https://github.com/ShareX/ShareX"
-    ]
-  },
-  {
-    "date": "2026-05-03",
-    "title": "TradingAgents Stays at the Top of GitHub for a Week",
-    "summary": "Previously covered on 2026-04-28: TradingAgents is an open-source framework where multiple AI agents collaborate to analyze markets and execute trading strategies.",
-    "source_urls": [
-      "https://github.com/TauricResearch/TradingAgents"
-    ]
-  },
-  {
-    "date": "2026-05-03",
-    "title": "The Free Self-Taught Computer Science Curriculum Is Trending Again",
-    "summary": "Coding Interview University — a free, exhaustive study plan for becoming a software engineer, originally built by someone who taught themselves programming to land a job at Amazon — is back near the top of GitHub's trending list.",
-    "source_urls": [
-      "https://github.com/jwasham/coding-interview-university"
-    ]
-  },
-  {
-    "date": "2026-05-03",
-    "title": "How Ruflo Structures Multi-Agent Swarms on Top of Claude",
-    "summary": "Ruflo is built around Anthropic's Agent SDK and adds three layers on top: a swarm coordinator that distributes tasks across multiple Claude agents running in parallel, a RAG (retrieval-augmented generation) integration that lets agents query a knowledge base rather than relying solely on what's in context, and a distributed architecture designed to scale to enterprise workloads.",
-    "source_urls": [
-      "https://github.com/ruvnet/ruflo"
-    ]
-  },
-  {
     "date": "2026-05-04",
     "title": "AI Can Now Auto-Generate Short Videos From Scratch",
     "summary": "AIDC-AI published Pixelle-Video on GitHub, a fully automated short-video engine that handles the entire production pipeline — from concept to finished clip — without manual editing.",
@@ -373,6 +333,54 @@
     "summary": "A GitHub project called agentmemory is making the rounds this week, claiming the #1 spot in real-world benchmarks for persistent memory systems used by AI coding agents.",
     "source_urls": [
       "https://github.com/rohitg00/agentmemory"
+    ]
+  },
+  {
+    "date": "2026-05-11",
+    "title": "An AI Agent That Learns New Skills on Its Own Is Trending on GitHub",
+    "summary": "A developer published GenericAgent — an AI agent that begins with a small base of capabilities and autonomously builds out a 'skill tree,' adding new abilities as it encounters new tasks.",
+    "source_urls": [
+      "https://github.com/lsdefine/GenericAgent"
+    ]
+  },
+  {
+    "date": "2026-05-11",
+    "title": "Run AI Models Locally on a Mac From the Menu Bar",
+    "summary": "omlx is a new local LLM server built specifically for Apple Silicon Macs that you manage from the macOS menu bar.",
+    "source_urls": [
+      "https://github.com/jundot/omlx"
+    ]
+  },
+  {
+    "date": "2026-05-11",
+    "title": "A Browser-Based 3D Scene Editor Opens Up for AI-Captured Environments",
+    "summary": "PlayCanvas released SuperSplat, an open-source in-browser editor for 3D Gaussian Splats — a technique that turns photos or video into navigable 3D scenes.",
+    "source_urls": [
+      "https://github.com/playcanvas/supersplat"
+    ]
+  },
+  {
+    "date": "2026-05-11",
+    "title": "A Meta-Layer for AI Coding Agents Adds Memory and Security",
+    "summary": "A developer released everything-claude-code — a system designed to sit on top of AI coding tools like Claude Code, Cursor, and Codex, adding persistent memory, security guardrails, and smarter research-first behaviors.",
+    "source_urls": [
+      "https://github.com/affaan-m/everything-claude-code"
+    ]
+  },
+  {
+    "date": "2026-05-11",
+    "title": "A Free Course Teaches How to Build AI Agents From Scratch",
+    "summary": "Datawhalechina published hello-agents on GitHub — a step-by-step tutorial series that walks complete beginners through building AI agents from first principles.",
+    "source_urls": [
+      "https://github.com/datawhalechina/hello-agents"
+    ]
+  },
+  {
+    "date": "2026-05-11",
+    "title": "How omlx Uses SSD Offloading to Run Large Models on a MacBook",
+    "summary": "omlx is an inference server tuned for Apple Silicon — the chip in modern Macs — that addresses the core bottleneck of running large language models locally: not enough RAM.",
+    "source_urls": [
+      "https://github.com/jundot/omlx"
     ]
   }
 ]

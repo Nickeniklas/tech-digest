@@ -1,82 +1,81 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Google's Chrome DevTools team built an official AI agent bridge for your browser — the same tools web developers have used for 15 years are now accessible to AI without a human in the loop.",
-  "fun_fact": "Chrome DevTools have existed since 2008; they're now getting their first-ever AI agent interface.",
+  "teaser": "A self-evolving AI agent that teaches itself new skills — and uses six times fewer resources to do it — is turning heads on GitHub this week.",
+  "fun_fact": "GenericAgent starts from just 3,300 lines of code and grows its own capabilities from there.",
   "lead_story": {
-    "title": "Google's Chrome DevTools Team Releases an Official AI Agent Bridge",
-    "what_happened": "The Chrome DevTools team at Google released an MCP (Model Context Protocol) server that gives AI coding agents direct access to Chrome's built-in developer tools. Agents can now inspect web pages, debug JavaScript errors, monitor network requests, and analyze performance — the same tasks a web developer performs manually today.",
-    "what_this_means": "When the engineers who build Chrome's core developer tooling create something specifically for AI agents, it signals that browser-based AI automation is moving from experimental to infrastructure. For marketers, designers, and managers overseeing web projects, it means the AI tools your developers use can now interact with websites as a human developer would.",
+    "title": "An AI Agent That Learns New Skills on Its Own Is Trending on GitHub",
+    "what_happened": "A developer published GenericAgent — an AI agent that begins with a small base of capabilities and autonomously builds out a 'skill tree,' adding new abilities as it encounters new tasks. It claims to handle complex, full-system tasks while using six times fewer tokens than typical agents.",
+    "what_this_means": "Most AI tools require someone to configure exactly what they can do. An agent that expands its own abilities could take on increasingly varied work — scheduling, research, document drafting — without constant setup. That's a meaningful shift for anyone trying to offload repetitive cognitive tasks.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["Task", "Status Before MCP", "Status With MCP"],
+      "headers": ["Metric", "Typical Agent", "GenericAgent"],
       "rows": [
-        ["Inspect page elements", "Human only", "AI agent"],
-        ["Debug JavaScript errors", "Human only", "AI agent"],
-        ["Monitor network requests", "Human only", "AI agent"],
-        ["Profile page performance", "Human only", "AI agent"]
+        ["Token consumption", "Baseline (1×)", "6× less"],
+        ["Starting codebase size", "Large setup required", "3,300 lines"],
+        ["Skill acquisition", "Manual configuration", "Autonomous self-extension"]
       ]
     },
     "source_name": "GitHub",
-    "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+    "source_url": "https://github.com/lsdefine/GenericAgent"
   },
   "quick_hits": [
     {
-      "title": "Open-Source AI Coworker With Memory Is Trending on GitHub",
-      "summary": "Rowboat is a free, open-source AI assistant designed to work like a team member — one that retains memory across conversations so it doesn't forget your project context, past decisions, or preferences. Most AI tools today start fresh every session; Rowboat holds onto what it's learned about your work. For professionals managing ongoing projects with AI, this kind of persistent memory could change how useful those tools feel day-to-day.",
+      "title": "Run AI Models Locally on a Mac From the Menu Bar",
+      "summary": "omlx is a new local LLM server built specifically for Apple Silicon Macs that you manage from the macOS menu bar. It uses SSD offloading to run AI models larger than your available RAM and handles multiple requests at once. For Mac users who want to keep their AI work private and offline without paying per query, this removes a significant barrier.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/rowboatlabs/rowboat"
+      "source_url": "https://github.com/jundot/omlx"
     },
     {
-      "title": "ByteDance Releases an Open Platform for Building Multi-Model AI Agents",
-      "summary": "ByteDance — the company behind TikTok — published UI-TARS-desktop on GitHub, a toolkit for connecting cutting-edge AI models and the infrastructure required to run AI agents. It's designed as a complete open-source stack for developers who want to build sophisticated AI applications without assembling all the pieces themselves. This is ByteDance's second major open-source AI release this week, reinforcing the company's push to become a key player in the AI tools ecosystem.",
+      "title": "A Browser-Based 3D Scene Editor Opens Up for AI-Captured Environments",
+      "summary": "PlayCanvas released SuperSplat, an open-source in-browser editor for 3D Gaussian Splats — a technique that turns photos or video into navigable 3D scenes. It lets designers edit and refine these AI-generated captures directly in a browser, no software install needed. The technology is quietly becoming part of mainstream creative and visualization workflows.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/bytedance/UI-TARS-desktop"
+      "source_url": "https://github.com/playcanvas/supersplat"
     },
     {
-      "title": "Oracle Launches an AI Developer Hub for Enterprise Applications",
-      "summary": "Oracle — whose database software underpins banking, healthcare, retail, and government systems worldwide — released an AI Developer Hub on GitHub with resources for building AI applications using Oracle's database and cloud infrastructure. For professionals at large organizations that run on Oracle systems, this signals that enterprise AI tools are now being officially integrated at the infrastructure level. Expect AI-powered features to accelerate in the business software that large teams use every day.",
+      "title": "A Meta-Layer for AI Coding Agents Adds Memory and Security",
+      "summary": "A developer released everything-claude-code — a system designed to sit on top of AI coding tools like Claude Code, Cursor, and Codex, adding persistent memory, security guardrails, and smarter research-first behaviors. It works across multiple coding agents, not just one. As AI coding tools become standard in more workplaces, these orchestration layers will shape how safely and effectively they're used.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/oracle-devrel/oracle-ai-developer-hub"
+      "source_url": "https://github.com/affaan-m/everything-claude-code"
     },
     {
-      "title": "A 2026 Programming Course Teaches Coding Through Conversation, Not Syntax",
-      "summary": "Easy-vibe is a new beginner programming course built around 'vibe coding' — describing what you want to build in plain language and letting AI generate the code. Rather than memorizing programming syntax, learners direct AI step by step through real projects. For non-coders who've wanted to build their own tools but felt blocked by the technical barrier, this approach lowers the floor significantly.",
+      "title": "A Free Course Teaches How to Build AI Agents From Scratch",
+      "summary": "Datawhalechina published hello-agents on GitHub — a step-by-step tutorial series that walks complete beginners through building AI agents from first principles. It covers both the theory and the practice of agent design. As autonomous AI workflows become a practical skill for non-engineers, resources like this signal what the next wave of AI literacy will look like.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/datawhalechina/easy-vibe"
+      "source_url": "https://github.com/datawhalechina/hello-agents"
     }
   ],
   "under_the_hood": [
     {
-      "title": "AgentMemory Claims Top Benchmark Ranking for AI Coding Agent Memory",
-      "what_happened": "A GitHub project called agentmemory is making the rounds this week, claiming the #1 spot in real-world benchmarks for persistent memory systems used by AI coding agents. It provides a structured memory layer that AI coding tools — like Claude Code or Cursor — can use to remember project conventions, past decisions, and code context across multiple work sessions.",
-      "why_it_matters": "The absence of persistent memory is one of the biggest practical frustrations with current AI coding agents: every new session is a blank slate. A reliable, benchmark-tested memory layer would let agents work like a developer who's been on the project for months rather than one who just walked in. If the benchmark claims hold up, agentmemory could become a standard part of AI-powered development setups.",
-      "code_example": "from agentmemory import AgentMemory\n\nmem = AgentMemory()\n\n# Store project conventions\nmem.remember('We use Tailwind CSS, not Bootstrap.')\nmem.remember('All API routes are prefixed with /api/v2/')\n\n# Recall relevant context later\nresult = mem.search('CSS framework')\nprint(result)  # ['We use Tailwind CSS, not Bootstrap.']",
+      "title": "How omlx Uses SSD Offloading to Run Large Models on a MacBook",
+      "what_happened": "omlx is an inference server tuned for Apple Silicon — the chip in modern Macs — that addresses the core bottleneck of running large language models locally: not enough RAM. It offloads model weights to SSD storage when they exceed available memory, and uses continuous batching to serve multiple requests in parallel rather than processing them one at a time.",
+      "why_it_matters": "For developers building or testing local AI applications on a Mac, omlx effectively extends the size of model that's practical to run without expensive hardware upgrades. SSD offloading trades some latency for a much larger model ceiling; continuous batching keeps throughput reasonable even with that tradeoff.",
+      "code_example": null,
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Without Memory", "With AgentMemory"],
+        "headers": ["Feature", "Standard Local Inference", "omlx"],
         "rows": [
-          ["Forgets context between sessions", "Recalls project conventions"],
-          ["Re-explain setup every time", "Picks up where it left off"],
-          ["No decision history", "Searchable past decisions"],
-          ["Generic suggestions", "Project-aware responses"]
+          ["Memory limit", "RAM only", "RAM + SSD offload"],
+          ["Request handling", "Sequential", "Continuous batching"],
+          ["Platform optimization", "General purpose", "Apple Silicon specific"],
+          ["Management interface", "CLI or config file", "macOS menu bar"]
         ]
       },
       "source_name": "GitHub",
-      "source_url": "https://github.com/rohitg00/agentmemory"
+      "source_url": "https://github.com/jundot/omlx"
     }
   ]
 }
