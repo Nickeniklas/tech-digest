@@ -1,45 +1,5 @@
 [
   {
-    "date": "2026-05-04",
-    "title": "AI Can Now Auto-Generate Short Videos From Scratch",
-    "summary": "AIDC-AI published Pixelle-Video on GitHub, a fully automated short-video engine that handles the entire production pipeline — from concept to finished clip — without manual editing.",
-    "source_urls": [
-      "https://github.com/AIDC-AI/Pixelle-Video"
-    ]
-  },
-  {
-    "date": "2026-05-04",
-    "title": "DeepSeek Gets a Terminal-Based Coding Agent",
-    "summary": "A new open-source tool called DeepSeek-TUI brings DeepSeek's AI directly into your terminal as a coding agent — no browser or desktop app needed.",
-    "source_urls": [
-      "https://github.com/Hmbown/DeepSeek-TUI"
-    ]
-  },
-  {
-    "date": "2026-05-04",
-    "title": "Claude Can Now Build Your n8n Automation Workflows",
-    "summary": "A new MCP server called n8n-mcp gives Claude real-time access to n8n's node documentation, so it can design and configure automation workflows on your behalf.",
-    "source_urls": [
-      "https://github.com/czlonkowski/n8n-mcp"
-    ]
-  },
-  {
-    "date": "2026-05-04",
-    "title": "Open-Source Router Firmware Stays Popular as Home Network Demands Rise",
-    "summary": "OpenWrt — the open-source firmware that replaces factory software on home and business routers — is trending on GitHub again.",
-    "source_urls": [
-      "https://github.com/openwrt/openwrt"
-    ]
-  },
-  {
-    "date": "2026-05-04",
-    "title": "How n8n-mcp Lets Claude Build Automation Workflows Without Guessing",
-    "summary": "The n8n-mcp project creates a Model Context Protocol server that exposes n8n's full node library to Claude in real time.",
-    "source_urls": [
-      "https://github.com/czlonkowski/n8n-mcp"
-    ]
-  },
-  {
     "date": "2026-05-05",
     "title": "Google Chrome Installs AI Model Without Asking",
     "summary": "Google Chrome is silently downloading and installing a 4GB AI model called Nano on users' devices without explicit consent.",
@@ -381,6 +341,54 @@
     "summary": "omlx is an inference server tuned for Apple Silicon — the chip in modern Macs — that addresses the core bottleneck of running large language models locally: not enough RAM.",
     "source_urls": [
       "https://github.com/jundot/omlx"
+    ]
+  },
+  {
+    "date": "2026-05-12",
+    "title": "AI Agents Write Bad Code — This Tool Catches It",
+    "summary": "Million released React Doctor, a tool that reviews AI-generated React code and flags common mistakes — performance problems, memory leaks, and anti-patterns that AI coding agents introduce regularly.",
+    "source_urls": [
+      "https://github.com/millionco/react-doctor"
+    ]
+  },
+  {
+    "date": "2026-05-12",
+    "title": "A Private AI Assistant That Never Leaves Your Device",
+    "summary": "OpenHuman is a new open-source AI assistant designed to run entirely on your own computer — no data sent to any server.",
+    "source_urls": [
+      "https://github.com/tinyhumansai/openhuman"
+    ]
+  },
+  {
+    "date": "2026-05-12",
+    "title": "An AI Agent Designed to Grow With You Over Time",
+    "summary": "Nous Research — a company known for releasing open AI models — published Hermes Agent, built to adapt as you use it rather than starting fresh each session.",
+    "source_urls": [
+      "https://github.com/NousResearch/hermes-agent"
+    ]
+  },
+  {
+    "date": "2026-05-12",
+    "title": "Stable Diffusion's Free Image Tool Is Trending Again",
+    "summary": "AUTOMATIC1111's Stable Diffusion Web UI — the most widely used free interface for generating AI images on your own computer — is back on GitHub's trending list.",
+    "source_urls": [
+      "https://github.com/AUTOMATIC1111/stable-diffusion-webui"
+    ]
+  },
+  {
+    "date": "2026-05-12",
+    "title": "A New Platform for Earning Money With AI Is Gaining Traction",
+    "summary": "AiToEarn is a new open-source project aimed at helping people build income streams using AI tools and automations.",
+    "source_urls": [
+      "https://github.com/yikart/AiToEarn"
+    ]
+  },
+  {
+    "date": "2026-05-12",
+    "title": "Build a ChatGPT-Like Model From Scratch — A Practical Book Is Trending Again",
+    "summary": "Sebastian Raschka's 'LLMs from Scratch' — a step-by-step book that walks you through building a language model in Python using PyTorch — is back on GitHub's trending list.",
+    "source_urls": [
+      "https://github.com/rasbt/LLMs-from-scratch"
     ]
   }
 ]
