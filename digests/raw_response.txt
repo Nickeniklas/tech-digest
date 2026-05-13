@@ -1,81 +1,89 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "A self-evolving AI agent that teaches itself new skills — and uses six times fewer resources to do it — is turning heads on GitHub this week.",
-  "fun_fact": "GenericAgent starts from just 3,300 lines of code and grows its own capabilities from there.",
+  "teaser": "A leading TypeScript educator opens up his personal AI coding playbook — and a censorship-defeating proxy tool is climbing GitHub's charts.",
+  "fun_fact": "AI coding agents now run on shared instruction files — and developers are starting to publish their best ones like open-source software.",
   "lead_story": {
-    "title": "An AI Agent That Learns New Skills on Its Own Is Trending on GitHub",
-    "what_happened": "A developer published GenericAgent — an AI agent that begins with a small base of capabilities and autonomously builds out a 'skill tree,' adding new abilities as it encounters new tasks. It claims to handle complex, full-system tasks while using six times fewer tokens than typical agents.",
-    "what_this_means": "Most AI tools require someone to configure exactly what they can do. An agent that expands its own abilities could take on increasingly varied work — scheduling, research, document drafting — without constant setup. That's a meaningful shift for anyone trying to offload repetitive cognitive tasks.",
+    "title": "A Top Developer's Personal AI Coding Instructions Are Now Open Source",
+    "what_happened": "Matt Pocock — a well-known educator with a large following among TypeScript developers — published his personal set of skills and behavioral instructions for AI coding agents, drawn directly from his .claude directory. The collection, called 'Skills for Real Engineers,' is free to copy and adapt.",
+    "what_this_means": "If you use AI tools at work to build things or automate tasks, this is a practical shortcut: instead of figuring out through trial and error how to get better results from your AI assistant, you can start with a working setup from someone who depends on it professionally. It's aimed at engineers, but the approach is useful for anyone guiding AI tools.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["Metric", "Typical Agent", "GenericAgent"],
+      "headers": ["Skill area", "What the AI agent does"],
       "rows": [
-        ["Token consumption", "Baseline (1×)", "6× less"],
-        ["Starting codebase size", "Large setup required", "3,300 lines"],
-        ["Skill acquisition", "Manual configuration", "Autonomous self-extension"]
+        ["Code review", "Checks correctness, clarity, and edge cases"],
+        ["Testing", "Writes and runs tests automatically"],
+        ["Documentation", "Explains its work in plain language"],
+        ["Refactoring", "Avoids over-engineering simple solutions"]
       ]
     },
     "source_name": "GitHub",
-    "source_url": "https://github.com/lsdefine/GenericAgent"
+    "source_url": "https://github.com/mattpocock/skills"
   },
   "quick_hits": [
     {
-      "title": "Run AI Models Locally on a Mac From the Menu Bar",
-      "summary": "omlx is a new local LLM server built specifically for Apple Silicon Macs that you manage from the macOS menu bar. It uses SSD offloading to run AI models larger than your available RAM and handles multiple requests at once. For Mac users who want to keep their AI work private and offline without paying per query, this removes a significant barrier.",
+      "title": "Free Android App Records Video Quietly in the Background",
+      "summary": "FadCam is an open-source, ad-free Android app that keeps recording video while the screen is off or while you're using other apps. It also handles screen recording, live streaming, and remote camera control — all stored locally, with no data sent to external servers. It's built for people who need discreet, reliable recording without surrendering footage to a third party.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/jundot/omlx"
+      "source_url": "https://github.com/anonfaded/FadCam"
     },
     {
-      "title": "A Browser-Based 3D Scene Editor Opens Up for AI-Captured Environments",
-      "summary": "PlayCanvas released SuperSplat, an open-source in-browser editor for 3D Gaussian Splats — a technique that turns photos or video into navigable 3D scenes. It lets designers edit and refine these AI-generated captures directly in a browser, no software install needed. The technology is quietly becoming part of mainstream creative and visualization workflows.",
-      "visual_type": null,
+      "title": "This Proxy Is Built to Be Almost Impossible to Block",
+      "summary": "Hysteria is an open-source proxy that disguises internet traffic as ordinary HTTPS browsing using a protocol called QUIC — the same foundation that powers fast modern web connections. Because blocking it would also disrupt regular web browsing, most censorship and surveillance systems struggle to detect it. It's gaining renewed attention on GitHub from users in regions where standard VPNs are routinely identified and blocked.",
+      "visual_type": "chart",
       "visual_url": null,
-      "visual_data": null,
+      "visual_data": {
+        "headers": ["Protocol", "Detection risk", "Block difficulty"],
+        "rows": [
+          ["OpenVPN", "High", "Easy"],
+          ["WireGuard", "Medium", "Moderate"],
+          ["Shadowsocks", "Medium", "Moderate"],
+          ["Hysteria (QUIC)", "Low", "Hard"]
+        ]
+      },
       "source_name": "GitHub",
-      "source_url": "https://github.com/playcanvas/supersplat"
+      "source_url": "https://github.com/apernet/hysteria"
     },
     {
-      "title": "A Meta-Layer for AI Coding Agents Adds Memory and Security",
-      "summary": "A developer released everything-claude-code — a system designed to sit on top of AI coding tools like Claude Code, Cursor, and Codex, adding persistent memory, security guardrails, and smarter research-first behaviors. It works across multiple coding agents, not just one. As AI coding tools become standard in more workplaces, these orchestration layers will shape how safely and effectively they're used.",
-      "visual_type": null,
+      "title": "Fully Automated AI Trading Agent Stays on GitHub's Radar",
+      "summary": "Previously covered on 2026-05-09: AI-Trader from HKUDS is an open-source agent that handles market analysis, asset selection, and trade execution without human input. It remains on GitHub's trending list four days later, reflecting sustained developer interest in autonomous finance tools. This is research software, not a retail product — but it shows how far automated trading experiments have come.",
+      "visual_type": "table",
       "visual_url": null,
-      "visual_data": null,
+      "visual_data": {
+        "headers": ["Function", "Automated?"],
+        "rows": [
+          ["Market analysis", "Yes"],
+          ["Asset selection", "Yes"],
+          ["Trade execution", "Yes"],
+          ["Human oversight", "Not required"]
+        ]
+      },
       "source_name": "GitHub",
-      "source_url": "https://github.com/affaan-m/everything-claude-code"
-    },
-    {
-      "title": "A Free Course Teaches How to Build AI Agents From Scratch",
-      "summary": "Datawhalechina published hello-agents on GitHub — a step-by-step tutorial series that walks complete beginners through building AI agents from first principles. It covers both the theory and the practice of agent design. As autonomous AI workflows become a practical skill for non-engineers, resources like this signal what the next wave of AI literacy will look like.",
-      "visual_type": null,
-      "visual_url": null,
-      "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/datawhalechina/hello-agents"
+      "source_url": "https://github.com/HKUDS/AI-Trader"
     }
   ],
   "under_the_hood": [
     {
-      "title": "How omlx Uses SSD Offloading to Run Large Models on a MacBook",
-      "what_happened": "omlx is an inference server tuned for Apple Silicon — the chip in modern Macs — that addresses the core bottleneck of running large language models locally: not enough RAM. It offloads model weights to SSD storage when they exceed available memory, and uses continuous batching to serve multiple requests in parallel rather than processing them one at a time.",
-      "why_it_matters": "For developers building or testing local AI applications on a Mac, omlx effectively extends the size of model that's practical to run without expensive hardware upgrades. SSD offloading trades some latency for a much larger model ceiling; continuous batching keeps throughput reasonable even with that tradeoff.",
-      "code_example": null,
+      "title": "How Hysteria Hides Censorship-Busting Traffic in Plain Sight",
+      "what_happened": "Hysteria routes traffic through QUIC — the protocol behind HTTP/3 — rather than TCP, which most proxy-detection systems focus on. Its traffic uses port 443 and a standard TLS handshake, making it indistinguishable from regular HTTPS browsing. Unlike obfuscation layers bolted on top of older protocols, Hysteria's censorship resistance is architectural: blocking it would mean blocking a significant portion of modern web traffic.",
+      "why_it_matters": "For developers or IT teams operating in regions with heavy network filtering, Hysteria is technically more resilient than traditional VPNs. WireGuard and OpenVPN can be fingerprinted and blocked at the packet level; Hysteria's QUIC-based approach makes that much harder. It's actively maintained and designed as a drop-in tool for infrastructure teams who need reliable cross-border connectivity.",
+      "code_example": "# Install via Go\ngo install github.com/apernet/hysteria/app/cmd/hysteria@latest\n\n# Minimal client config (config.yaml)\nserver: your-server.com:443\nauth: your-secret\nbandwidth:\n  up: 20 mbps\n  down: 100 mbps",
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Feature", "Standard Local Inference", "omlx"],
+        "headers": ["Protocol", "Transport", "Detection risk", "Typical use"],
         "rows": [
-          ["Memory limit", "RAM only", "RAM + SSD offload"],
-          ["Request handling", "Sequential", "Continuous batching"],
-          ["Platform optimization", "General purpose", "Apple Silicon specific"],
-          ["Management interface", "CLI or config file", "macOS menu bar"]
+          ["OpenVPN", "TCP/UDP", "High", "Corporate VPN"],
+          ["WireGuard", "UDP", "Medium", "Fast personal VPN"],
+          ["Shadowsocks", "TCP", "Medium", "Censorship bypass"],
+          ["Hysteria", "QUIC (UDP)", "Low", "Censorship bypass, high speed"]
         ]
       },
       "source_name": "GitHub",
-      "source_url": "https://github.com/jundot/omlx"
+      "source_url": "https://github.com/apernet/hysteria"
     }
   ]
 }

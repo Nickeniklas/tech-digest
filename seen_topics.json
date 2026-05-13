@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-05-05",
-    "title": "Google Chrome Installs AI Model Without Asking",
-    "summary": "Google Chrome is silently downloading and installing a 4GB AI model called Nano on users' devices without explicit consent.",
-    "source_urls": [
-      "https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/"
-    ]
-  },
-  {
-    "date": "2026-05-05",
-    "title": "Google, Microsoft, and xAI Will Share Early AI Models With U.S. Government",
-    "summary": "Three major AI companies have agreed to give the U.",
-    "source_urls": [
-      "https://www.wsj.com/tech/ai/google-microsoft-and-xai-agree-to-share-early-ai-models-with-u-s-f95a88d1"
-    ]
-  },
-  {
-    "date": "2026-05-05",
-    "title": "OpenAI Reveals How It Delivers Low-Latency Voice AI at Scale",
-    "summary": "OpenAI published technical details on its infrastructure for serving voice AI without lag—critical for real-time conversation.",
-    "source_urls": [
-      "https://openai.com/index/delivering-low-latency-voice-ai-at-scale/"
-    ]
-  },
-  {
-    "date": "2026-05-05",
-    "title": "GitHub Copilot Is Moving to Usage-Based Billing",
-    "summary": "Starting June 1, GitHub Copilot will charge based on how much you use it—measured in AI Credits—instead of flat monthly subscriptions.",
-    "source_urls": [
-      "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
-    ]
-  },
-  {
-    "date": "2026-05-05",
-    "title": "Context-Mode: 98% Reduction in AI Agent Output Size",
-    "summary": "A new tool called context-mode optimizes the amount of data that AI coding agents have to process by sandboxing and filtering tool output.",
-    "source_urls": [
-      "https://github.com/mksglu/context-mode"
-    ]
-  },
-  {
-    "date": "2026-05-05",
-    "title": "Dexter: Autonomous Agent for Deep Financial Research",
-    "summary": "A new open-source agent called Dexter automates financial research by gathering data, analyzing trends, and synthesizing findings across multiple sources.",
-    "source_urls": [
-      "https://github.com/virattt/dexter"
-    ]
-  },
-  {
-    "date": "2026-05-05",
-    "title": "Local Deep Research: 95% Accuracy on Factual Questions Without the Cloud",
-    "summary": "An open-source project called local-deep-research achieves 95% accuracy on SimpleQA (a benchmark of factual questions) using local LLMs like Qwen running on a single GPU.",
-    "source_urls": [
-      "https://github.com/LearningCircuit/local-deep-research"
-    ]
-  },
-  {
     "date": "2026-05-06",
     "title": "Open-Source DocuSign Alternative Breaks Into GitHub's Top Charts",
     "summary": "DocuSeal, a free and open-source alternative to DocuSign, is surging on GitHub.",
@@ -389,6 +333,46 @@
     "summary": "Sebastian Raschka's 'LLMs from Scratch' — a step-by-step book that walks you through building a language model in Python using PyTorch — is back on GitHub's trending list.",
     "source_urls": [
       "https://github.com/rasbt/LLMs-from-scratch"
+    ]
+  },
+  {
+    "date": "2026-05-13",
+    "title": "A Top Developer's Personal AI Coding Instructions Are Now Open Source",
+    "summary": "Matt Pocock — a well-known educator with a large following among TypeScript developers — published his personal set of skills and behavioral instructions for AI coding agents, drawn directly from his.",
+    "source_urls": [
+      "https://github.com/mattpocock/skills"
+    ]
+  },
+  {
+    "date": "2026-05-13",
+    "title": "Free Android App Records Video Quietly in the Background",
+    "summary": "FadCam is an open-source, ad-free Android app that keeps recording video while the screen is off or while you're using other apps.",
+    "source_urls": [
+      "https://github.com/anonfaded/FadCam"
+    ]
+  },
+  {
+    "date": "2026-05-13",
+    "title": "This Proxy Is Built to Be Almost Impossible to Block",
+    "summary": "Hysteria is an open-source proxy that disguises internet traffic as ordinary HTTPS browsing using a protocol called QUIC — the same foundation that powers fast modern web connections.",
+    "source_urls": [
+      "https://github.com/apernet/hysteria"
+    ]
+  },
+  {
+    "date": "2026-05-13",
+    "title": "Fully Automated AI Trading Agent Stays on GitHub's Radar",
+    "summary": "Previously covered on 2026-05-09: AI-Trader from HKUDS is an open-source agent that handles market analysis, asset selection, and trade execution without human input.",
+    "source_urls": [
+      "https://github.com/HKUDS/AI-Trader"
+    ]
+  },
+  {
+    "date": "2026-05-13",
+    "title": "How Hysteria Hides Censorship-Busting Traffic in Plain Sight",
+    "summary": "Hysteria routes traffic through QUIC — the protocol behind HTTP/3 — rather than TCP, which most proxy-detection systems focus on.",
+    "source_urls": [
+      "https://github.com/apernet/hysteria"
     ]
   }
 ]
