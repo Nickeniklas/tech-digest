@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-05-06",
-    "title": "Open-Source DocuSign Alternative Breaks Into GitHub's Top Charts",
-    "summary": "DocuSeal, a free and open-source alternative to DocuSign, is surging on GitHub.",
-    "source_urls": [
-      "https://github.com/docusealco/docuseal"
-    ]
-  },
-  {
-    "date": "2026-05-06",
-    "title": "AI Agency in a Box: A Team of Specialist Agents, Ready to Deploy",
-    "summary": "A developer published Agency Agents on GitHub — a set of AI agents each built for a distinct role: web design, social media, writing, and quality checking.",
-    "source_urls": [
-      "https://github.com/msitarzewski/agency-agents"
-    ]
-  },
-  {
-    "date": "2026-05-06",
-    "title": "CocoIndex Cuts AI Agent Workload by Processing Only What Changed",
-    "summary": "CocoIndex is a new open-source tool that helps AI agents handle long-running tasks more efficiently — instead of reprocessing everything from scratch each time, it tracks what has changed and only updates those parts.",
-    "source_urls": [
-      "https://github.com/cocoindex-io/cocoindex"
-    ]
-  },
-  {
-    "date": "2026-05-06",
-    "title": "Curated Collection of Real-World AI Apps Gains Attention on GitHub",
-    "summary": "A GitHub repository called Awesome AI Apps is trending this week, gathering examples of actual AI projects — from document retrieval systems to multi-agent workflows.",
-    "source_urls": [
-      "https://github.com/Arindam200/awesome-ai-apps"
-    ]
-  },
-  {
-    "date": "2026-05-06",
-    "title": "TabPFN: A Foundation AI Model Built for Spreadsheet and Database Data",
-    "summary": "PriorLabs published TabPFN on GitHub — a pre-trained foundation model built specifically for tabular data, the structured rows-and-columns format used in spreadsheets, databases, and data exports.",
-    "source_urls": [
-      "https://github.com/PriorLabs/TabPFN"
-    ]
-  },
-  {
-    "date": "2026-05-06",
-    "title": "Karpathy's AI Coding Pitfalls Distilled Into One Reusable Config File",
-    "summary": "A developer distilled AI researcher Andrej Karpathy's observations on common AI coding mistakes into a single CLAUDE.",
-    "source_urls": [
-      "https://github.com/forrestchang/andrej-karpathy-skills"
-    ]
-  },
-  {
     "date": "2026-05-07",
     "title": "ByteDance Open-Sources an AI Agent That Works Independently for Hours",
     "summary": "ByteDance, the company behind TikTok, published deer-flow on GitHub — an open-source AI agent designed to handle long, complex tasks on its own: researching topics, writing and running code, and producing content over a span of minutes to hours, with minimal human direction.",
@@ -373,6 +325,62 @@
     "summary": "Hysteria routes traffic through QUIC — the protocol behind HTTP/3 — rather than TCP, which most proxy-detection systems focus on.",
     "source_urls": [
       "https://github.com/apernet/hysteria"
+    ]
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Open-Source Platform Lets AI Agents Take Control of Your Whole Computer",
+    "summary": "A project called cua launched on GitHub with sandboxes, development tools, and benchmarks for building AI agents that can operate full desktops — Windows, macOS, and Linux — as if they were a human user clicking through apps and software.",
+    "source_urls": [
+      "https://github.com/trycua/cua"
+    ]
+  },
+  {
+    "date": "2026-05-14",
+    "title": "GitHub Releases a Toolkit for Writing Specs Before Code",
+    "summary": "GitHub published spec-kit, a toolkit for Spec-Driven Development — a workflow where you write a clear specification before any code is written, so AI tools and developers build from the same plan.",
+    "source_urls": [
+      "https://github.com/github/spec-kit"
+    ]
+  },
+  {
+    "date": "2026-05-14",
+    "title": "A New AI Voice Tool Runs Fast, On Your Device, in Many Languages",
+    "summary": "Supertone released supertonic, a text-to-speech engine that runs natively on your device via ONNX — no cloud connection required, no data sent to a server.",
+    "source_urls": [
+      "https://github.com/supertone-inc/supertonic"
+    ]
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Ready-Made AI Agent Skills for Research, Finance, and Writing",
+    "summary": "K-Dense-AI published a collection of pre-built agent skills covering six professional domains: research, science, engineering, analysis, finance, and writing.",
+    "source_urls": [
+      "https://github.com/K-Dense-AI/scientific-agent-skills"
+    ]
+  },
+  {
+    "date": "2026-05-14",
+    "title": "A Security Researcher Built a Personal AI Stack to Amplify Human Work",
+    "summary": "Daniel Miessler — a well-known security researcher and writer — published Personal_AI_Infrastructure on GitHub, a modular setup for building a private AI environment that amplifies your own thinking and productivity.",
+    "source_urls": [
+      "https://github.com/danielmiessler/Personal_AI_Infrastructure"
+    ]
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Superpowers: An Agentic Framework That Includes a Working Methodology",
+    "summary": "A developer released Superpowers on GitHub — a framework that packages AI agent skills alongside a structured software development methodology.",
+    "source_urls": [
+      "https://github.com/obra/superpowers"
+    ]
+  },
+  {
+    "date": "2026-05-14",
+    "title": "3D Reconstruction for Everyone: Brush Brings Gaussian Splats to Any Platform",
+    "summary": "ArthurBrussee released Brush on GitHub — an open-source 3D reconstruction tool that turns photos or video into navigable 3D scenes using a technique called Gaussian Splatting.",
+    "source_urls": [
+      "https://github.com/ArthurBrussee/brush"
     ]
   }
 ]

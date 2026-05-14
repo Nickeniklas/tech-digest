@@ -1,89 +1,104 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "A leading TypeScript educator opens up his personal AI coding playbook — and a censorship-defeating proxy tool is climbing GitHub's charts.",
-  "fun_fact": "AI coding agents now run on shared instruction files — and developers are starting to publish their best ones like open-source software.",
+  "teaser": "AI agents can now control your entire desktop — open-source infrastructure just made that a real project anyone can build on.",
+  "fun_fact": "Supertonic runs voice synthesis entirely on your device in multiple languages — no internet connection needed.",
   "lead_story": {
-    "title": "A Top Developer's Personal AI Coding Instructions Are Now Open Source",
-    "what_happened": "Matt Pocock — a well-known educator with a large following among TypeScript developers — published his personal set of skills and behavioral instructions for AI coding agents, drawn directly from his .claude directory. The collection, called 'Skills for Real Engineers,' is free to copy and adapt.",
-    "what_this_means": "If you use AI tools at work to build things or automate tasks, this is a practical shortcut: instead of figuring out through trial and error how to get better results from your AI assistant, you can start with a working setup from someone who depends on it professionally. It's aimed at engineers, but the approach is useful for anyone guiding AI tools.",
+    "title": "Open-Source Platform Lets AI Agents Take Control of Your Whole Computer",
+    "what_happened": "A project called cua launched on GitHub with sandboxes, development tools, and benchmarks for building AI agents that can operate full desktops — Windows, macOS, and Linux — as if they were a human user clicking through apps and software.",
+    "what_this_means": "This is infrastructure for the next wave of AI assistants: ones that don't just answer questions but actually operate your software for you. If you spend time on repetitive computer tasks — data entry, report formatting, moving files between systems — this technology points directly at automating that work.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["Skill area", "What the AI agent does"],
+      "headers": ["Capability", "Status"],
       "rows": [
-        ["Code review", "Checks correctness, clarity, and edge cases"],
-        ["Testing", "Writes and runs tests automatically"],
-        ["Documentation", "Explains its work in plain language"],
-        ["Refactoring", "Avoids over-engineering simple solutions"]
+        ["Control macOS desktop", "Supported"],
+        ["Control Linux desktop", "Supported"],
+        ["Control Windows desktop", "Supported"],
+        ["Open and operate apps", "Supported"],
+        ["Standard benchmarks for evaluation", "Included"],
+        ["Open-source SDKs for developers", "Included"]
       ]
     },
-    "source_name": "GitHub",
-    "source_url": "https://github.com/mattpocock/skills"
+    "source_name": "GitHub (trycua/cua)",
+    "source_url": "https://github.com/trycua/cua"
   },
   "quick_hits": [
     {
-      "title": "Free Android App Records Video Quietly in the Background",
-      "summary": "FadCam is an open-source, ad-free Android app that keeps recording video while the screen is off or while you're using other apps. It also handles screen recording, live streaming, and remote camera control — all stored locally, with no data sent to external servers. It's built for people who need discreet, reliable recording without surrendering footage to a third party.",
+      "title": "GitHub Releases a Toolkit for Writing Specs Before Code",
+      "summary": "GitHub published spec-kit, a toolkit for Spec-Driven Development — a workflow where you write a clear specification before any code is written, so AI tools and developers build from the same plan. For teams that collaborate with developers or manage software projects, this signals a shift in how AI coding tools are being directed.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/anonfaded/FadCam"
+      "source_url": "https://github.com/github/spec-kit"
     },
     {
-      "title": "This Proxy Is Built to Be Almost Impossible to Block",
-      "summary": "Hysteria is an open-source proxy that disguises internet traffic as ordinary HTTPS browsing using a protocol called QUIC — the same foundation that powers fast modern web connections. Because blocking it would also disrupt regular web browsing, most censorship and surveillance systems struggle to detect it. It's gaining renewed attention on GitHub from users in regions where standard VPNs are routinely identified and blocked.",
-      "visual_type": "chart",
+      "title": "A New AI Voice Tool Runs Fast, On Your Device, in Many Languages",
+      "summary": "Supertone released supertonic, a text-to-speech engine that runs natively on your device via ONNX — no cloud connection required, no data sent to a server. It supports multiple languages and is built for speed. For anyone creating audio content, accessibility tools, or multilingual presentations, this is a private and fast alternative to cloud-based voice services.",
+      "visual_type": null,
       "visual_url": null,
-      "visual_data": {
-        "headers": ["Protocol", "Detection risk", "Block difficulty"],
-        "rows": [
-          ["OpenVPN", "High", "Easy"],
-          ["WireGuard", "Medium", "Moderate"],
-          ["Shadowsocks", "Medium", "Moderate"],
-          ["Hysteria (QUIC)", "Low", "Hard"]
-        ]
-      },
-      "source_name": "GitHub",
-      "source_url": "https://github.com/apernet/hysteria"
+      "visual_data": null,
+      "source_name": "GitHub (supertone-inc/supertonic)",
+      "source_url": "https://github.com/supertone-inc/supertonic"
     },
     {
-      "title": "Fully Automated AI Trading Agent Stays on GitHub's Radar",
-      "summary": "Previously covered on 2026-05-09: AI-Trader from HKUDS is an open-source agent that handles market analysis, asset selection, and trade execution without human input. It remains on GitHub's trending list four days later, reflecting sustained developer interest in autonomous finance tools. This is research software, not a retail product — but it shows how far automated trading experiments have come.",
-      "visual_type": "table",
+      "title": "Ready-Made AI Agent Skills for Research, Finance, and Writing",
+      "summary": "K-Dense-AI published a collection of pre-built agent skills covering six professional domains: research, science, engineering, analysis, finance, and writing. These are plug-in behaviors for AI coding agents that give them domain expertise out of the box — useful for organizations that want AI assistance tuned to professional work rather than generic chat.",
+      "visual_type": null,
       "visual_url": null,
-      "visual_data": {
-        "headers": ["Function", "Automated?"],
-        "rows": [
-          ["Market analysis", "Yes"],
-          ["Asset selection", "Yes"],
-          ["Trade execution", "Yes"],
-          ["Human oversight", "Not required"]
-        ]
-      },
-      "source_name": "GitHub",
-      "source_url": "https://github.com/HKUDS/AI-Trader"
+      "visual_data": null,
+      "source_name": "GitHub (K-Dense-AI)",
+      "source_url": "https://github.com/K-Dense-AI/scientific-agent-skills"
+    },
+    {
+      "title": "A Security Researcher Built a Personal AI Stack to Amplify Human Work",
+      "summary": "Daniel Miessler — a well-known security researcher and writer — published Personal_AI_Infrastructure on GitHub, a modular setup for building a private AI environment that amplifies your own thinking and productivity. It combines local and cloud AI tools with automation workflows, designed around the idea that AI should make you more capable, not replace you.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub (danielmiessler)",
+      "source_url": "https://github.com/danielmiessler/Personal_AI_Infrastructure"
     }
   ],
   "under_the_hood": [
     {
-      "title": "How Hysteria Hides Censorship-Busting Traffic in Plain Sight",
-      "what_happened": "Hysteria routes traffic through QUIC — the protocol behind HTTP/3 — rather than TCP, which most proxy-detection systems focus on. Its traffic uses port 443 and a standard TLS handshake, making it indistinguishable from regular HTTPS browsing. Unlike obfuscation layers bolted on top of older protocols, Hysteria's censorship resistance is architectural: blocking it would mean blocking a significant portion of modern web traffic.",
-      "why_it_matters": "For developers or IT teams operating in regions with heavy network filtering, Hysteria is technically more resilient than traditional VPNs. WireGuard and OpenVPN can be fingerprinted and blocked at the packet level; Hysteria's QUIC-based approach makes that much harder. It's actively maintained and designed as a drop-in tool for infrastructure teams who need reliable cross-border connectivity.",
-      "code_example": "# Install via Go\ngo install github.com/apernet/hysteria/app/cmd/hysteria@latest\n\n# Minimal client config (config.yaml)\nserver: your-server.com:443\nauth: your-secret\nbandwidth:\n  up: 20 mbps\n  down: 100 mbps",
+      "title": "Superpowers: An Agentic Framework That Includes a Working Methodology",
+      "what_happened": "A developer released Superpowers on GitHub — a framework that packages AI agent skills alongside a structured software development methodology. Unlike most toolkits that hand you building blocks, Superpowers tries to provide a complete, repeatable process for how AI agents should approach complex engineering tasks.",
+      "why_it_matters": "Most AI agent frameworks give developers raw capabilities; Superpowers adds a layer of structure — a set of principles for when and how the agent should act at each stage of a project. For teams trying to make AI coding agents more predictable and reliable, this approach is worth watching. It's similar in spirit to test-driven development: not a new tool, but a discipline layered on top of existing tools.",
+      "code_example": null,
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Protocol", "Transport", "Detection risk", "Typical use"],
+        "headers": ["Approach", "Raw Toolkit", "Superpowers"],
         "rows": [
-          ["OpenVPN", "TCP/UDP", "High", "Corporate VPN"],
-          ["WireGuard", "UDP", "Medium", "Fast personal VPN"],
-          ["Shadowsocks", "TCP", "Medium", "Censorship bypass"],
-          ["Hysteria", "QUIC (UDP)", "Low", "Censorship bypass, high speed"]
+          ["Agent skill library", "Yes", "Yes"],
+          ["Development methodology included", "No", "Yes"],
+          ["Structured multi-step process", "No", "Yes"],
+          ["Open source", "Varies", "Yes"]
         ]
       },
-      "source_name": "GitHub",
-      "source_url": "https://github.com/apernet/hysteria"
+      "source_name": "GitHub (obra/superpowers)",
+      "source_url": "https://github.com/obra/superpowers"
+    },
+    {
+      "title": "3D Reconstruction for Everyone: Brush Brings Gaussian Splats to Any Platform",
+      "what_happened": "ArthurBrussee released Brush on GitHub — an open-source 3D reconstruction tool that turns photos or video into navigable 3D scenes using a technique called Gaussian Splatting. It is designed to run on a wide range of hardware, not just high-end workstations.",
+      "why_it_matters": "Gaussian Splatting has been one of the fastest-growing techniques in 3D capture because it produces photorealistic results from ordinary camera footage. Making it accessible on more hardware means architects, designers, real-estate professionals, and educators can capture and share 3D environments without expensive equipment. Brush is the latest signal that this capability is moving from research labs to everyday tools.",
+      "code_example": null,
+      "visual_type": "table",
+      "visual_url": null,
+      "visual_data": {
+        "headers": ["Feature", "Brush"],
+        "rows": [
+          ["Input", "Photos or video"],
+          ["Output", "Navigable 3D scene"],
+          ["Technique", "Gaussian Splatting"],
+          ["Hardware requirement", "Broad compatibility"],
+          ["License", "Open source"]
+        ]
+      },
+      "source_name": "GitHub (ArthurBrussee/brush)",
+      "source_url": "https://github.com/ArthurBrussee/brush"
     }
   ]
 }
