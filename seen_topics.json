@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-05-07",
-    "title": "ByteDance Open-Sources an AI Agent That Works Independently for Hours",
-    "summary": "ByteDance, the company behind TikTok, published deer-flow on GitHub — an open-source AI agent designed to handle long, complex tasks on its own: researching topics, writing and running code, and producing content over a span of minutes to hours, with minimal human direction.",
-    "source_urls": [
-      "https://github.com/bytedance/deer-flow"
-    ]
-  },
-  {
-    "date": "2026-05-07",
-    "title": "Anthropic Published a Financial Services Repository on GitHub",
-    "summary": "Anthropic added a dedicated financial-services repository to its GitHub organization, signaling a push to make Claude easier to deploy in banking, insurance, and fintech.",
-    "source_urls": [
-      "https://github.com/anthropics/financial-services"
-    ]
-  },
-  {
-    "date": "2026-05-07",
-    "title": "A Senior Google Engineer Released a Toolkit for More Reliable AI Coding Agents",
-    "summary": "Addy Osmani, a well-known engineering leader at Google, published agent-skills on GitHub — a collection of production-ready behaviors for AI coding agents covering code review, testing, and documentation.",
-    "source_urls": [
-      "https://github.com/addyosmani/agent-skills"
-    ]
-  },
-  {
-    "date": "2026-05-07",
-    "title": "A Curated List of Free AI APIs Is Trending Among Developers",
-    "summary": "A GitHub repository called free-llm-api-resources is making the rounds this week, collecting free and no-cost ways to access AI language models via API — useful for anyone building or experimenting with AI tools without a large budget.",
-    "source_urls": [
-      "https://github.com/cheahjs/free-llm-api-resources"
-    ]
-  },
-  {
-    "date": "2026-05-07",
-    "title": "An Independent Web Browser Is Trending on GitHub Again",
-    "summary": "Ladybird is a web browser built entirely from scratch — no code borrowed from Chrome, Firefox, or Safari — and it is gaining attention on GitHub.",
-    "source_urls": [
-      "https://github.com/LadybirdBrowser/ladybird"
-    ]
-  },
-  {
-    "date": "2026-05-07",
-    "title": "Kronos: A Foundation Model Trained on the Raw Language of Financial Markets",
-    "summary": "Researchers published Kronos on GitHub — a large pre-trained model built specifically to understand financial market data: prices, trading volumes, order flows, and economic indicators.",
-    "source_urls": [
-      "https://github.com/shiyu-coder/Kronos"
-    ]
-  },
-  {
-    "date": "2026-05-07",
-    "title": "Scrapling: A Web Scraper That Adapts When Websites Change Layout",
-    "summary": "A developer released Scrapling — a Python web scraping framework that handles everything from simple HTTP requests to complex JavaScript-rendered pages through a single consistent API, without requiring the developer to switch tools depending on the site.",
-    "source_urls": [
-      "https://github.com/D4Vinci/Scrapling"
-    ]
-  },
-  {
     "date": "2026-05-08",
     "title": "Vercel Publishes a Ready-Made Template for Cloud AI Agents",
     "summary": "Vercel — the company whose platform hosts millions of websites and developer tools — released open-agents, a free open-source starting template for building AI agents that run entirely in the cloud.",
@@ -381,6 +325,46 @@
     "summary": "ArthurBrussee released Brush on GitHub — an open-source 3D reconstruction tool that turns photos or video into navigable 3D scenes using a technique called Gaussian Splatting.",
     "source_urls": [
       "https://github.com/ArthurBrussee/brush"
+    ]
+  },
+  {
+    "date": "2026-05-15",
+    "title": "WiFi Signals Can Now Monitor Vital Signs and Detect Presence — No Camera Required",
+    "summary": "A developer released RuView, a tool that converts ordinary WiFi router signals into a real-time sensor for detecting people's presence, monitoring vital signs, and mapping spatial movement — without any cameras, microphones, or dedicated hardware.",
+    "source_urls": [
+      "https://github.com/ruvnet/RuView"
+    ]
+  },
+  {
+    "date": "2026-05-15",
+    "title": "Y Combinator's CEO Published His Personal AI Coding Setup",
+    "summary": "Garry Tan — CEO of Y Combinator, the startup accelerator behind Airbnb, Dropbox, and Stripe — published his exact Claude Code configuration on GitHub.",
+    "source_urls": [
+      "https://github.com/garrytan/gstack"
+    ]
+  },
+  {
+    "date": "2026-05-15",
+    "title": "Kronos: An AI Model Trained on the Language of Financial Markets",
+    "summary": "Researchers published Kronos, a foundation model built specifically on financial market data — not just news, but the notation, patterns, and communication formats that traders and analysts use daily.",
+    "source_urls": [
+      "https://github.com/shiyu-coder/Kronos"
+    ]
+  },
+  {
+    "date": "2026-05-15",
+    "title": "NVIDIA Released AI Blueprints for Searching and Summarizing Video",
+    "summary": "NVIDIA published reference architectures for building AI systems that can automatically search through video content and generate summaries.",
+    "source_urls": [
+      "https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization"
+    ]
+  },
+  {
+    "date": "2026-05-15",
+    "title": "How Garry Tan's gstack Structures AI Into 23 Specialized Roles",
+    "summary": "The gstack repository packages 23 Claude Code skills — each a plain-text instruction file defining a professional persona with specific goals, constraints, and decision-making priorities.",
+    "source_urls": [
+      "https://github.com/garrytan/gstack"
     ]
   }
 ]

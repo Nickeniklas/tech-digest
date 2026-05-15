@@ -1,104 +1,84 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "AI agents can now control your entire desktop — open-source infrastructure just made that a real project anyone can build on.",
-  "fun_fact": "Supertonic runs voice synthesis entirely on your device in multiple languages — no internet connection needed.",
+  "teaser": "Your WiFi router can already detect your heartbeat — a new open-source tool makes that power accessible to anyone.",
+  "fun_fact": "Garry Tan's AI setup assigns Claude 23 job titles at once — including CEO, Designer, and QA.",
   "lead_story": {
-    "title": "Open-Source Platform Lets AI Agents Take Control of Your Whole Computer",
-    "what_happened": "A project called cua launched on GitHub with sandboxes, development tools, and benchmarks for building AI agents that can operate full desktops — Windows, macOS, and Linux — as if they were a human user clicking through apps and software.",
-    "what_this_means": "This is infrastructure for the next wave of AI assistants: ones that don't just answer questions but actually operate your software for you. If you spend time on repetitive computer tasks — data entry, report formatting, moving files between systems — this technology points directly at automating that work.",
+    "title": "WiFi Signals Can Now Monitor Vital Signs and Detect Presence — No Camera Required",
+    "what_happened": "A developer released RuView, a tool that converts ordinary WiFi router signals into a real-time sensor for detecting people's presence, monitoring vital signs, and mapping spatial movement — without any cameras, microphones, or dedicated hardware.",
+    "what_this_means": "Any room with a standard WiFi router could become a monitoring environment. For healthcare and elder care managers, this means tracking patient movement and breathing without intrusive cameras. For office and facilities teams, it means occupancy sensing that never captures video. The same capability also raises new privacy questions about what WiFi routers already know about the people around them.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["Capability", "Status"],
+      "headers": ["Capability", "What It Detects", "Example Use Case"],
       "rows": [
-        ["Control macOS desktop", "Supported"],
-        ["Control Linux desktop", "Supported"],
-        ["Control Windows desktop", "Supported"],
-        ["Open and operate apps", "Supported"],
-        ["Standard benchmarks for evaluation", "Included"],
-        ["Open-source SDKs for developers", "Included"]
+        ["Presence detection", "Whether someone is in a room", "Smart building occupancy"],
+        ["Vital sign monitoring", "Heart rate, breathing rate", "Healthcare, elder care"],
+        ["Movement tracking", "Location and motion patterns", "Security, accessibility"],
+        ["No video required", "Passive sensing only", "Privacy-sensitive spaces"]
       ]
     },
-    "source_name": "GitHub (trycua/cua)",
-    "source_url": "https://github.com/trycua/cua"
+    "source_name": "GitHub Trending",
+    "source_url": "https://github.com/ruvnet/RuView"
   },
   "quick_hits": [
     {
-      "title": "GitHub Releases a Toolkit for Writing Specs Before Code",
-      "summary": "GitHub published spec-kit, a toolkit for Spec-Driven Development — a workflow where you write a clear specification before any code is written, so AI tools and developers build from the same plan. For teams that collaborate with developers or manage software projects, this signals a shift in how AI coding tools are being directed.",
-      "visual_type": null,
+      "title": "Y Combinator's CEO Published His Personal AI Coding Setup",
+      "summary": "Garry Tan — CEO of Y Combinator, the startup accelerator behind Airbnb, Dropbox, and Stripe — published his exact Claude Code configuration on GitHub. The setup includes 23 pre-built AI tools, each assigned a specific professional role: CEO, Designer, Engineering Manager, Release Manager, and more. It's a ready-to-use template for anyone who wants structured, role-specific AI workflows instead of just prompting a generic assistant.",
+      "visual_type": "table",
       "visual_url": null,
-      "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/github/spec-kit"
+      "visual_data": {
+        "headers": ["AI Role", "Focus Area"],
+        "rows": [
+          ["CEO", "Strategy and priorities"],
+          ["Designer", "UX and visual decisions"],
+          ["Engineering Manager", "Code architecture"],
+          ["Release Manager", "Deployment and versioning"],
+          ["Doc Engineer", "Documentation"],
+          ["QA", "Testing and quality"]
+        ]
+      },
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/garrytan/gstack"
     },
     {
-      "title": "A New AI Voice Tool Runs Fast, On Your Device, in Many Languages",
-      "summary": "Supertone released supertonic, a text-to-speech engine that runs natively on your device via ONNX — no cloud connection required, no data sent to a server. It supports multiple languages and is built for speed. For anyone creating audio content, accessibility tools, or multilingual presentations, this is a private and fast alternative to cloud-based voice services.",
+      "title": "Kronos: An AI Model Trained on the Language of Financial Markets",
+      "summary": "Researchers published Kronos, a foundation model built specifically on financial market data — not just news, but the notation, patterns, and communication formats that traders and analysts use daily. General AI models handle finance as one topic among thousands; Kronos was designed from the ground up for market language. Finance professionals may find it more reliable than general-purpose models for market data, earnings reports, or financial modeling tasks.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub (supertone-inc/supertonic)",
-      "source_url": "https://github.com/supertone-inc/supertonic"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/shiyu-coder/Kronos"
     },
     {
-      "title": "Ready-Made AI Agent Skills for Research, Finance, and Writing",
-      "summary": "K-Dense-AI published a collection of pre-built agent skills covering six professional domains: research, science, engineering, analysis, finance, and writing. These are plug-in behaviors for AI coding agents that give them domain expertise out of the box — useful for organizations that want AI assistance tuned to professional work rather than generic chat.",
+      "title": "NVIDIA Released AI Blueprints for Searching and Summarizing Video",
+      "summary": "NVIDIA published reference architectures for building AI systems that can automatically search through video content and generate summaries. The blueprints target businesses that produce or manage large volumes of video — security teams, broadcasters, manufacturers, and retailers. Developers can use them as GPU-accelerated starting points rather than building video AI pipelines from scratch.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub (K-Dense-AI)",
-      "source_url": "https://github.com/K-Dense-AI/scientific-agent-skills"
-    },
-    {
-      "title": "A Security Researcher Built a Personal AI Stack to Amplify Human Work",
-      "summary": "Daniel Miessler — a well-known security researcher and writer — published Personal_AI_Infrastructure on GitHub, a modular setup for building a private AI environment that amplifies your own thinking and productivity. It combines local and cloud AI tools with automation workflows, designed around the idea that AI should make you more capable, not replace you.",
-      "visual_type": null,
-      "visual_url": null,
-      "visual_data": null,
-      "source_name": "GitHub (danielmiessler)",
-      "source_url": "https://github.com/danielmiessler/Personal_AI_Infrastructure"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization"
     }
   ],
   "under_the_hood": [
     {
-      "title": "Superpowers: An Agentic Framework That Includes a Working Methodology",
-      "what_happened": "A developer released Superpowers on GitHub — a framework that packages AI agent skills alongside a structured software development methodology. Unlike most toolkits that hand you building blocks, Superpowers tries to provide a complete, repeatable process for how AI agents should approach complex engineering tasks.",
-      "why_it_matters": "Most AI agent frameworks give developers raw capabilities; Superpowers adds a layer of structure — a set of principles for when and how the agent should act at each stage of a project. For teams trying to make AI coding agents more predictable and reliable, this approach is worth watching. It's similar in spirit to test-driven development: not a new tool, but a discipline layered on top of existing tools.",
+      "title": "How Garry Tan's gstack Structures AI Into 23 Specialized Roles",
+      "what_happened": "The gstack repository packages 23 Claude Code skills — each a plain-text instruction file defining a professional persona with specific goals, constraints, and decision-making priorities. When invoked, each tool loads its role definition as context so Claude responds from that perspective: the CEO tool focuses on trade-offs and strategy; the QA tool focuses on edge cases and breakage; the Doc Engineer focuses on accuracy and completeness.",
+      "why_it_matters": "The pattern separates concerns that generic AI prompting tends to muddle. When you ask a single AI assistant to write code and then review it, it tends to approve its own work. Giving each task its own role definition — with different success criteria — produces outputs that are less self-confirming. The approach is reproducible: you fork the repo, edit the plain-text role files, and the specialized behavior follows without any code changes.",
       "code_example": null,
-      "visual_type": "table",
+      "visual_type": "chart",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Approach", "Raw Toolkit", "Superpowers"],
+        "headers": ["Role Category", "Number of Tools"],
         "rows": [
-          ["Agent skill library", "Yes", "Yes"],
-          ["Development methodology included", "No", "Yes"],
-          ["Structured multi-step process", "No", "Yes"],
-          ["Open source", "Varies", "Yes"]
+          ["Engineering (Manager, QA, Release)", "3"],
+          ["Documentation and writing", "2"],
+          ["Design and UX", "1"],
+          ["Strategy and leadership", "1"],
+          ["Specialized domain tools", "16"]
         ]
       },
-      "source_name": "GitHub (obra/superpowers)",
-      "source_url": "https://github.com/obra/superpowers"
-    },
-    {
-      "title": "3D Reconstruction for Everyone: Brush Brings Gaussian Splats to Any Platform",
-      "what_happened": "ArthurBrussee released Brush on GitHub — an open-source 3D reconstruction tool that turns photos or video into navigable 3D scenes using a technique called Gaussian Splatting. It is designed to run on a wide range of hardware, not just high-end workstations.",
-      "why_it_matters": "Gaussian Splatting has been one of the fastest-growing techniques in 3D capture because it produces photorealistic results from ordinary camera footage. Making it accessible on more hardware means architects, designers, real-estate professionals, and educators can capture and share 3D environments without expensive equipment. Brush is the latest signal that this capability is moving from research labs to everyday tools.",
-      "code_example": null,
-      "visual_type": "table",
-      "visual_url": null,
-      "visual_data": {
-        "headers": ["Feature", "Brush"],
-        "rows": [
-          ["Input", "Photos or video"],
-          ["Output", "Navigable 3D scene"],
-          ["Technique", "Gaussian Splatting"],
-          ["Hardware requirement", "Broad compatibility"],
-          ["License", "Open source"]
-        ]
-      },
-      "source_name": "GitHub (ArthurBrussee/brush)",
-      "source_url": "https://github.com/ArthurBrussee/brush"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/garrytan/gstack"
     }
   ]
 }
