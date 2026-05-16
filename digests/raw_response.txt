@@ -1,84 +1,83 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Your WiFi router can already detect your heartbeat — a new open-source tool makes that power accessible to anyone.",
-  "fun_fact": "Garry Tan's AI setup assigns Claude 23 job titles at once — including CEO, Designer, and QA.",
+  "teaser": "Anthropic just made its official AI skills library public — and a new tool can turn any YouTube video, PDF, or webpage into a podcast, quiz, or mind map.",
+  "fun_fact": "The n8n automation platform connects over 400 apps — Claude can now build and trigger those workflows just from a chat prompt.",
   "lead_story": {
-    "title": "WiFi Signals Can Now Monitor Vital Signs and Detect Presence — No Camera Required",
-    "what_happened": "A developer released RuView, a tool that converts ordinary WiFi router signals into a real-time sensor for detecting people's presence, monitoring vital signs, and mapping spatial movement — without any cameras, microphones, or dedicated hardware.",
-    "what_this_means": "Any room with a standard WiFi router could become a monitoring environment. For healthcare and elder care managers, this means tracking patient movement and breathing without intrusive cameras. For office and facilities teams, it means occupancy sensing that never captures video. The same capability also raises new privacy questions about what WiFi routers already know about the people around them.",
+    "title": "Anthropic Opens Its Agent Skills Library to the Public",
+    "what_happened": "Anthropic published a public GitHub repository called 'skills' — an official, curated collection of reusable agent skills for Claude, the same kind used internally to teach Claude specialized behaviors.",
+    "what_this_means": "Anyone using Claude at work can now browse and apply pre-built skills to customize how Claude behaves — without writing instructions from scratch. This is particularly useful for teams in marketing, research, finance, and engineering who want Claude to follow consistent, professional workflows.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["Capability", "What It Detects", "Example Use Case"],
+      "headers": ["Skill category", "What it does"],
       "rows": [
-        ["Presence detection", "Whether someone is in a room", "Smart building occupancy"],
-        ["Vital sign monitoring", "Heart rate, breathing rate", "Healthcare, elder care"],
-        ["Movement tracking", "Location and motion patterns", "Security, accessibility"],
-        ["No video required", "Passive sensing only", "Privacy-sensitive spaces"]
+        ["Research", "Structured investigation and synthesis"],
+        ["Writing", "Drafting, editing, and formatting documents"],
+        ["Engineering", "Code review and technical documentation"],
+        ["Analysis", "Data interpretation and summarization"],
+        ["Finance", "Financial modeling and report generation"]
       ]
     },
-    "source_name": "GitHub Trending",
-    "source_url": "https://github.com/ruvnet/RuView"
+    "source_name": "GitHub",
+    "source_url": "https://github.com/anthropics/skills"
   },
   "quick_hits": [
     {
-      "title": "Y Combinator's CEO Published His Personal AI Coding Setup",
-      "summary": "Garry Tan — CEO of Y Combinator, the startup accelerator behind Airbnb, Dropbox, and Stripe — published his exact Claude Code configuration on GitHub. The setup includes 23 pre-built AI tools, each assigned a specific professional role: CEO, Designer, Engineering Manager, Release Manager, and more. It's a ready-to-use template for anyone who wants structured, role-specific AI workflows instead of just prompting a generic assistant.",
+      "title": "Claude Can Now Build Your Automation Workflows for You",
+      "summary": "A new open-source tool called n8n-mcp connects Claude, Cursor, and Windsurf directly to n8n — one of the most popular no-code automation platforms. Instead of designing a workflow yourself, you describe what you want and Claude builds it. It works with n8n's 400-plus app integrations, covering everything from Slack and Google Sheets to databases and email.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub",
+      "source_url": "https://github.com/czlonkowski/n8n-mcp"
+    },
+    {
+      "title": "Turn Any Webpage, Video, or PDF Into a Podcast, Quiz, or Mind Map",
+      "summary": "A new Claude skill converts almost any content — web articles, YouTube videos, PDFs, Markdown files, or search results — into formats that Google's NotebookLM can turn into podcasts, slide decks, mind maps, and quizzes. Teachers and researchers who already use NotebookLM get a much faster pipeline for feeding it material from across the web.",
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["AI Role", "Focus Area"],
+        "headers": ["Input", "Output format"],
         "rows": [
-          ["CEO", "Strategy and priorities"],
-          ["Designer", "UX and visual decisions"],
-          ["Engineering Manager", "Code architecture"],
-          ["Release Manager", "Deployment and versioning"],
-          ["Doc Engineer", "Documentation"],
-          ["QA", "Testing and quality"]
+          ["Web articles", "Podcast"],
+          ["YouTube videos", "Mind map"],
+          ["PDF files", "Quiz"],
+          ["Markdown", "Slide deck"],
+          ["Search queries", "Multiple formats"]
         ]
       },
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/garrytan/gstack"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/joeseesun/qiaomu-anything-to-notebooklm"
     },
     {
-      "title": "Kronos: An AI Model Trained on the Language of Financial Markets",
-      "summary": "Researchers published Kronos, a foundation model built specifically on financial market data — not just news, but the notation, patterns, and communication formats that traders and analysts use daily. General AI models handle finance as one topic among thousands; Kronos was designed from the ground up for market language. Finance professionals may find it more reliable than general-purpose models for market data, earnings reports, or financial modeling tasks.",
+      "title": "Bun, the All-in-One JavaScript Tool, Is Trending Again",
+      "summary": "Bun — a JavaScript runtime that replaces Node.js, plus a bundler, test runner, and package manager all in one download — is back on GitHub's trending list. It consistently runs JavaScript significantly faster than standard tools, and developers are increasingly adopting it to speed up web projects without changing their code.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/shiyu-coder/Kronos"
-    },
-    {
-      "title": "NVIDIA Released AI Blueprints for Searching and Summarizing Video",
-      "summary": "NVIDIA published reference architectures for building AI systems that can automatically search through video content and generate summaries. The blueprints target businesses that produce or manage large volumes of video — security teams, broadcasters, manufacturers, and retailers. Developers can use them as GPU-accelerated starting points rather than building video AI pipelines from scratch.",
-      "visual_type": null,
-      "visual_url": null,
-      "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/oven-sh/bun"
     }
   ],
   "under_the_hood": [
     {
-      "title": "How Garry Tan's gstack Structures AI Into 23 Specialized Roles",
-      "what_happened": "The gstack repository packages 23 Claude Code skills — each a plain-text instruction file defining a professional persona with specific goals, constraints, and decision-making priorities. When invoked, each tool loads its role definition as context so Claude responds from that perspective: the CEO tool focuses on trade-offs and strategy; the QA tool focuses on edge cases and breakage; the Doc Engineer focuses on accuracy and completeness.",
-      "why_it_matters": "The pattern separates concerns that generic AI prompting tends to muddle. When you ask a single AI assistant to write code and then review it, it tends to approve its own work. Giving each task its own role definition — with different success criteria — produces outputs that are less self-confirming. The approach is reproducible: you fork the repo, edit the plain-text role files, and the specialized behavior follows without any code changes.",
-      "code_example": null,
-      "visual_type": "chart",
+      "title": "How the n8n-MCP Bridge Actually Works",
+      "what_happened": "The n8n-mcp project is an MCP (Model Context Protocol) server — a standardized interface that gives AI tools like Claude, Windsurf, and Cursor the ability to interact with external systems as built-in features. Connected to n8n, Claude can read existing workflows, create new ones, modify individual nodes, and trigger automations mid-conversation.",
+      "why_it_matters": "MCP servers are quickly becoming the standard extension layer for AI coding assistants. This one matters because n8n sits on top of over 400 app integrations — so a properly configured setup means Claude can orchestrate complex cross-platform automations from a single prompt. For developers building AI-powered tooling, this is a useful pattern to understand.",
+      "code_example": "// Add to Claude Code's .claude/settings.json\n{\n  \"mcpServers\": {\n    \"n8n\": {\n      \"command\": \"npx\",\n      \"args\": [\"n8n-mcp\"],\n      \"env\": {\n        \"N8N_URL\": \"http://localhost:5678\",\n        \"N8N_API_KEY\": \"your-api-key\"\n      }\n    }\n  }\n}",
+      "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Role Category", "Number of Tools"],
+        "headers": ["AI client", "Supported"],
         "rows": [
-          ["Engineering (Manager, QA, Release)", "3"],
-          ["Documentation and writing", "2"],
-          ["Design and UX", "1"],
-          ["Strategy and leadership", "1"],
-          ["Specialized domain tools", "16"]
+          ["Claude Desktop", "Yes"],
+          ["Claude Code", "Yes"],
+          ["Windsurf", "Yes"],
+          ["Cursor", "Yes"]
         ]
       },
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/garrytan/gstack"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/czlonkowski/n8n-mcp"
     }
   ]
 }
