@@ -1,45 +1,5 @@
 [
   {
-    "date": "2026-05-09",
-    "title": "A Fully Automated AI Trading Agent Is Now Open Source",
-    "summary": "Researchers at HKUDS published AI-Trader on GitHub — an AI agent that handles the entire trading cycle without human involvement: it analyzes markets, selects assets, and executes buy and sell orders autonomously.",
-    "source_urls": [
-      "https://github.com/HKUDS/AI-Trader"
-    ]
-  },
-  {
-    "date": "2026-05-09",
-    "title": "Amazon Published a Rulebook for How AI Coding Agents Should Work",
-    "summary": "AWS Labs released aidlc-workflows on GitHub — a set of adaptive steering rules that guide AI coding agents through the entire software development lifecycle, from planning through deployment.",
-    "source_urls": [
-      "https://github.com/awslabs/aidlc-workflows"
-    ]
-  },
-  {
-    "date": "2026-05-09",
-    "title": "A Modified Browser Passes Every Bot Detection Test on the Market",
-    "summary": "CloakBrowser is a custom build of Chrome designed to pass the bot-detection tools that websites use to block automated browsing — it passed 30 out of 30 tests from major detection services.",
-    "source_urls": [
-      "https://github.com/CloakHQ/CloakBrowser"
-    ]
-  },
-  {
-    "date": "2026-05-09",
-    "title": "A Platform for Collaborating With Teams of AI Agents Is Trending",
-    "summary": "Lobehub is gaining attention on GitHub with a platform designed around working alongside multiple AI agents as if they were team members.",
-    "source_urls": [
-      "https://github.com/lobehub/lobehub"
-    ]
-  },
-  {
-    "date": "2026-05-09",
-    "title": "How CloakBrowser Defeats Bot Detection at the Source Level",
-    "summary": "Most stealth browsers defeat bot detection by layering JavaScript overrides on top of standard Chrome — spoofing canvas fingerprints, WebGL renderer strings, and font metrics at runtime.",
-    "source_urls": [
-      "https://github.com/CloakHQ/CloakBrowser"
-    ]
-  },
-  {
     "date": "2026-05-10",
     "title": "Google's Chrome DevTools Team Releases an Official AI Agent Bridge",
     "summary": "The Chrome DevTools team at Google released an MCP (Model Context Protocol) server that gives AI coding agents direct access to Chrome's built-in developer tools.",
@@ -357,6 +317,46 @@
     "summary": "The n8n-mcp project is an MCP (Model Context Protocol) server — a standardized interface that gives AI tools like Claude, Windsurf, and Cursor the ability to interact with external systems as built-in features.",
     "source_urls": [
       "https://github.com/czlonkowski/n8n-mcp"
+    ]
+  },
+  {
+    "date": "2026-05-17",
+    "title": "A Free, Self-Hosted AI Creative Studio Brings 200+ Models to Anyone With a Server",
+    "summary": "Open-Generative-AI launched on GitHub as an open-source, self-hosted alternative to commercial AI creative tools.",
+    "source_urls": [
+      "https://github.com/Anil-matcha/Open-Generative-AI"
+    ]
+  },
+  {
+    "date": "2026-05-17",
+    "title": "Private, On-Device AI Assistant Continues to Gain Traction on GitHub",
+    "summary": "Previously covered on 2026-05-12: OpenHuman — an AI assistant that runs entirely on your computer without sending data to a cloud — is still among GitHub's fastest-growing open-source projects days after launch.",
+    "source_urls": [
+      "https://github.com/tinyhumansai/openhuman"
+    ]
+  },
+  {
+    "date": "2026-05-17",
+    "title": "On-Device Multilingual Text-to-Speech Keeps Attracting Developers",
+    "summary": "Previously covered on 2026-05-14: Supertone's supertonic remains on GitHub's trending list — an on-device, multilingual text-to-speech tool with no internet requirement.",
+    "source_urls": [
+      "https://github.com/supertone-inc/supertonic"
+    ]
+  },
+  {
+    "date": "2026-05-17",
+    "title": "WiFi-Based Presence and Vital Sign Detection Remains a Trending Topic",
+    "summary": "Previously covered on 2026-05-15: RuView — the tool that converts standard WiFi router signals into a sensor for detecting people's presence, movement, and vital signs — remains in GitHub's trending section.",
+    "source_urls": [
+      "https://github.com/ruvnet/RuView"
+    ]
+  },
+  {
+    "date": "2026-05-17",
+    "title": "Codegraph: Pre-Indexing Your Codebase to Cut Claude Code's Token Overhead",
+    "summary": "Codegraph builds a structured knowledge graph from your project's source code before any AI session begins.",
+    "source_urls": [
+      "https://github.com/colbymchenry/codegraph"
     ]
   }
 ]

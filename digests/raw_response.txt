@@ -1,83 +1,73 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Anthropic just made its official AI skills library public — and a new tool can turn any YouTube video, PDF, or webpage into a podcast, quiz, or mind map.",
-  "fun_fact": "The n8n automation platform connects over 400 apps — Claude can now build and trigger those workflows just from a chat prompt.",
+  "teaser": "A free, open-source AI studio puts 200 models for generating images and video on your own server — no subscription, no data sharing.",
+  "fun_fact": "Two hundred AI models, one self-hosted install, zero monthly fees — if you're willing to run the server yourself.",
   "lead_story": {
-    "title": "Anthropic Opens Its Agent Skills Library to the Public",
-    "what_happened": "Anthropic published a public GitHub repository called 'skills' — an official, curated collection of reusable agent skills for Claude, the same kind used internally to teach Claude specialized behaviors.",
-    "what_this_means": "Anyone using Claude at work can now browse and apply pre-built skills to customize how Claude behaves — without writing instructions from scratch. This is particularly useful for teams in marketing, research, finance, and engineering who want Claude to follow consistent, professional workflows.",
+    "title": "A Free, Self-Hosted AI Creative Studio Brings 200+ Models to Anyone With a Server",
+    "what_happened": "Open-Generative-AI launched on GitHub as an open-source, self-hosted alternative to commercial AI creative tools. It bundles over 200 AI models for generating images and video — including alternatives to Midjourney, Sora, Kling, and Veo — in a browser-based studio with no content restrictions and an MIT license.",
+    "what_this_means": "If you produce visual content for work — presentations, marketing campaigns, social media, or client work — this gives you a free, private alternative to paid AI image services. Your prompts and generated content stay on your own server rather than passing through a third-party platform.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["Skill category", "What it does"],
+      "headers": ["Feature", "Detail"],
       "rows": [
-        ["Research", "Structured investigation and synthesis"],
-        ["Writing", "Drafting, editing, and formatting documents"],
-        ["Engineering", "Code review and technical documentation"],
-        ["Analysis", "Data interpretation and summarization"],
-        ["Finance", "Financial modeling and report generation"]
+        ["Total models", "200+"],
+        ["Image generation", "Flux, Midjourney-style"],
+        ["Video generation", "Sora-style, Kling-style, Veo-style"],
+        ["License", "MIT (open source, free)"],
+        ["Hosting", "Self-hosted (your server)"],
+        ["Content filters", "None"]
       ]
     },
     "source_name": "GitHub",
-    "source_url": "https://github.com/anthropics/skills"
+    "source_url": "https://github.com/Anil-matcha/Open-Generative-AI"
   },
   "quick_hits": [
     {
-      "title": "Claude Can Now Build Your Automation Workflows for You",
-      "summary": "A new open-source tool called n8n-mcp connects Claude, Cursor, and Windsurf directly to n8n — one of the most popular no-code automation platforms. Instead of designing a workflow yourself, you describe what you want and Claude builds it. It works with n8n's 400-plus app integrations, covering everything from Slack and Google Sheets to databases and email.",
+      "title": "Private, On-Device AI Assistant Continues to Gain Traction on GitHub",
+      "summary": "Previously covered on 2026-05-12: OpenHuman — an AI assistant that runs entirely on your computer without sending data to a cloud — is still among GitHub's fastest-growing open-source projects days after launch. The sustained attention signals that privacy-focused AI tools are filling a real gap, particularly for professionals handling sensitive work.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/czlonkowski/n8n-mcp"
+      "source_url": "https://github.com/tinyhumansai/openhuman"
     },
     {
-      "title": "Turn Any Webpage, Video, or PDF Into a Podcast, Quiz, or Mind Map",
-      "summary": "A new Claude skill converts almost any content — web articles, YouTube videos, PDFs, Markdown files, or search results — into formats that Google's NotebookLM can turn into podcasts, slide decks, mind maps, and quizzes. Teachers and researchers who already use NotebookLM get a much faster pipeline for feeding it material from across the web.",
-      "visual_type": "table",
-      "visual_url": null,
-      "visual_data": {
-        "headers": ["Input", "Output format"],
-        "rows": [
-          ["Web articles", "Podcast"],
-          ["YouTube videos", "Mind map"],
-          ["PDF files", "Quiz"],
-          ["Markdown", "Slide deck"],
-          ["Search queries", "Multiple formats"]
-        ]
-      },
-      "source_name": "GitHub",
-      "source_url": "https://github.com/joeseesun/qiaomu-anything-to-notebooklm"
-    },
-    {
-      "title": "Bun, the All-in-One JavaScript Tool, Is Trending Again",
-      "summary": "Bun — a JavaScript runtime that replaces Node.js, plus a bundler, test runner, and package manager all in one download — is back on GitHub's trending list. It consistently runs JavaScript significantly faster than standard tools, and developers are increasingly adopting it to speed up web projects without changing their code.",
+      "title": "On-Device Multilingual Text-to-Speech Keeps Attracting Developers",
+      "summary": "Previously covered on 2026-05-14: Supertone's supertonic remains on GitHub's trending list — an on-device, multilingual text-to-speech tool with no internet requirement. For educators recording lesson audio, podcast producers, or marketers localizing content, the combination of speed and language support continues to draw attention.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/oven-sh/bun"
+      "source_url": "https://github.com/supertone-inc/supertonic"
+    },
+    {
+      "title": "WiFi-Based Presence and Vital Sign Detection Remains a Trending Topic",
+      "summary": "Previously covered on 2026-05-15: RuView — the tool that converts standard WiFi router signals into a sensor for detecting people's presence, movement, and vital signs — remains in GitHub's trending section. It requires no cameras or dedicated hardware, which is attracting interest from building managers, healthcare researchers, and privacy advocates alike.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub",
+      "source_url": "https://github.com/ruvnet/RuView"
     }
   ],
   "under_the_hood": [
     {
-      "title": "How the n8n-MCP Bridge Actually Works",
-      "what_happened": "The n8n-mcp project is an MCP (Model Context Protocol) server — a standardized interface that gives AI tools like Claude, Windsurf, and Cursor the ability to interact with external systems as built-in features. Connected to n8n, Claude can read existing workflows, create new ones, modify individual nodes, and trigger automations mid-conversation.",
-      "why_it_matters": "MCP servers are quickly becoming the standard extension layer for AI coding assistants. This one matters because n8n sits on top of over 400 app integrations — so a properly configured setup means Claude can orchestrate complex cross-platform automations from a single prompt. For developers building AI-powered tooling, this is a useful pattern to understand.",
-      "code_example": "// Add to Claude Code's .claude/settings.json\n{\n  \"mcpServers\": {\n    \"n8n\": {\n      \"command\": \"npx\",\n      \"args\": [\"n8n-mcp\"],\n      \"env\": {\n        \"N8N_URL\": \"http://localhost:5678\",\n        \"N8N_API_KEY\": \"your-api-key\"\n      }\n    }\n  }\n}",
+      "title": "Codegraph: Pre-Indexing Your Codebase to Cut Claude Code's Token Overhead",
+      "what_happened": "Codegraph builds a structured knowledge graph from your project's source code before any AI session begins. When Claude Code needs to locate a function, trace an import, or understand a dependency, it queries the pre-built index in one step rather than reading through files sequentially.",
+      "why_it_matters": "Claude Code's file-reading operations each consume tokens. On larger codebases, exploratory reads — searching for class definitions, tracing call chains — can account for a significant share of a session's token budget. Codegraph turns many sequential reads into a single indexed lookup, which reduces both API cost and session latency. The index is built and stored entirely locally; no code is transmitted externally.",
+      "code_example": null,
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["AI client", "Supported"],
+        "headers": ["Approach", "File Reads per Task", "Token Overhead", "Setup"],
         "rows": [
-          ["Claude Desktop", "Yes"],
-          ["Claude Code", "Yes"],
-          ["Windsurf", "Yes"],
-          ["Cursor", "Yes"]
+          ["Without codegraph", "8–15", "High", "None"],
+          ["With codegraph", "1–3", "Low", "One-time index build"]
         ]
       },
       "source_name": "GitHub",
-      "source_url": "https://github.com/czlonkowski/n8n-mcp"
+      "source_url": "https://github.com/colbymchenry/codegraph"
     }
   ]
 }
