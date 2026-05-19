@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-05-11",
-    "title": "An AI Agent That Learns New Skills on Its Own Is Trending on GitHub",
-    "summary": "A developer published GenericAgent — an AI agent that begins with a small base of capabilities and autonomously builds out a 'skill tree,' adding new abilities as it encounters new tasks.",
-    "source_urls": [
-      "https://github.com/lsdefine/GenericAgent"
-    ]
-  },
-  {
-    "date": "2026-05-11",
-    "title": "Run AI Models Locally on a Mac From the Menu Bar",
-    "summary": "omlx is a new local LLM server built specifically for Apple Silicon Macs that you manage from the macOS menu bar.",
-    "source_urls": [
-      "https://github.com/jundot/omlx"
-    ]
-  },
-  {
-    "date": "2026-05-11",
-    "title": "A Browser-Based 3D Scene Editor Opens Up for AI-Captured Environments",
-    "summary": "PlayCanvas released SuperSplat, an open-source in-browser editor for 3D Gaussian Splats — a technique that turns photos or video into navigable 3D scenes.",
-    "source_urls": [
-      "https://github.com/playcanvas/supersplat"
-    ]
-  },
-  {
-    "date": "2026-05-11",
-    "title": "A Meta-Layer for AI Coding Agents Adds Memory and Security",
-    "summary": "A developer released everything-claude-code — a system designed to sit on top of AI coding tools like Claude Code, Cursor, and Codex, adding persistent memory, security guardrails, and smarter research-first behaviors.",
-    "source_urls": [
-      "https://github.com/affaan-m/everything-claude-code"
-    ]
-  },
-  {
-    "date": "2026-05-11",
-    "title": "A Free Course Teaches How to Build AI Agents From Scratch",
-    "summary": "Datawhalechina published hello-agents on GitHub — a step-by-step tutorial series that walks complete beginners through building AI agents from first principles.",
-    "source_urls": [
-      "https://github.com/datawhalechina/hello-agents"
-    ]
-  },
-  {
-    "date": "2026-05-11",
-    "title": "How omlx Uses SSD Offloading to Run Large Models on a MacBook",
-    "summary": "omlx is an inference server tuned for Apple Silicon — the chip in modern Macs — that addresses the core bottleneck of running large language models locally: not enough RAM.",
-    "source_urls": [
-      "https://github.com/jundot/omlx"
-    ]
-  },
-  {
     "date": "2026-05-12",
     "title": "AI Agents Write Bad Code — This Tool Catches It",
     "summary": "Million released React Doctor, a tool that reviews AI-generated React code and flags common mistakes — performance problems, memory leaks, and anti-patterns that AI coding agents introduce regularly.",
@@ -365,6 +317,54 @@
     "summary": "Keygraph released Shannon Lite, an autonomous AI security tool that reads a web application's source code, maps likely attack paths, and executes real exploits to confirm whether vulnerabilities exist — before they ever reach production.",
     "source_urls": [
       "https://github.com/KeygraphHQ/shannon"
+    ]
+  },
+  {
+    "date": "2026-05-19",
+    "title": "12 Principles Published for Building AI Agents That Work in the Real World",
+    "summary": "A framework called 12-Factor Agents was released on GitHub — 12 clear principles for building AI-powered software reliable enough to hand to real customers, not just demonstrate in a controlled environment.",
+    "source_urls": [
+      "https://github.com/humanlayer/12-factor-agents"
+    ]
+  },
+  {
+    "date": "2026-05-19",
+    "title": "A Chromium Browser That Passes Every Bot Detection Test",
+    "summary": "CloakBrowser is a new open-source browser built on Chromium that patches its own fingerprint at the source code level — making it indistinguishable from a real user to automated detection systems.",
+    "source_urls": [
+      "https://github.com/CloakHQ/CloakBrowser"
+    ]
+  },
+  {
+    "date": "2026-05-19",
+    "title": "NVIDIA's Research Lab Released a Faster High-Resolution Image Generator",
+    "summary": "NVIDIA NV Labs published Sana, an open-source image synthesis model that generates high-resolution images using an architecture called a Linear Diffusion Transformer — designed to be significantly faster and less computationally demanding than existing image generators.",
+    "source_urls": [
+      "https://github.com/NVlabs/Sana"
+    ]
+  },
+  {
+    "date": "2026-05-19",
+    "title": "Free AI Stock Analysis Runs Daily on Global Markets — No Subscription Needed",
+    "summary": "A developer published an automated stock analysis tool that uses a language model to review A-share, H-share, and US market data every day and push results directly to your device.",
+    "source_urls": [
+      "https://github.com/ZhuLinsen/daily_stock_analysis"
+    ]
+  },
+  {
+    "date": "2026-05-19",
+    "title": "Free Academic Research Skills Released for Claude Code",
+    "summary": "A new open-source collection of skills for Claude Code covers the full academic research cycle — from initial research and first draft through peer review, revision, and final submission.",
+    "source_urls": [
+      "https://github.com/Imbad0202/academic-research-skills"
+    ]
+  },
+  {
+    "date": "2026-05-19",
+    "title": "llama.cpp: The C++ Engine That Powers Most Local AI Tools",
+    "summary": "llama.",
+    "source_urls": [
+      "https://github.com/ggml-org/llama.cpp"
     ]
   }
 ]

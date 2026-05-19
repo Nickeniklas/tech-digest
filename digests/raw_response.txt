@@ -1,109 +1,66 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "AI agents are being handed the controls to any software you already use — a wave of open-source tools launched this week is pushing toward a world where no app is off-limits to automation.",
-  "fun_fact": "One new project this week literally claims to make 'ALL Software Agent-Native' — capital letters and all.",
+  "teaser": "A practical playbook for building AI agents that actually hold up when real people use them.",
+  "fun_fact": "CloakBrowser passed all 30 bot-detection tests by patching Chromium's C++ source — a layer most detection systems never inspect.",
   "lead_story": {
-    "title": "AI Agents Are Learning to Control Any Software You Already Use",
-    "what_happened": "A research lab released CLI-Anything, a platform that wraps any software's command-line interface in a standard format that AI agents can read and operate. It pairs with a public hub called CLI-Hub where agents can discover and control hundreds of tools end-to-end without a human in the loop.",
-    "what_this_means": "For most professionals, this narrows the gap between 'AI can help me think' and 'AI can do the work for me.' If your team relies on any specialized software — analytics tools, billing systems, data pipelines — CLI-Anything is designed to let an AI agent run them directly, removing the need for a technical expert to execute each step.",
-    "visual_type": "table",
+    "title": "12 Principles Published for Building AI Agents That Work in the Real World",
+    "what_happened": "A framework called 12-Factor Agents was released on GitHub — 12 clear principles for building AI-powered software reliable enough to hand to real customers, not just demonstrate in a controlled environment.",
+    "what_this_means": "Most AI agents work well in demos but fail unpredictably when real people use them under real conditions. This framework gives product teams, managers, and the people who commission AI projects a shared checklist for deciding whether an AI agent is genuinely ready to deploy.",
+    "visual_type": null,
     "visual_url": null,
-    "visual_data": {
-      "headers": ["Capability", "Before", "With CLI-Anything"],
-      "rows": [
-        ["Who operates the software", "Human expert", "AI agent"],
-        ["What's required", "Technical training", "Plain-language instructions"],
-        ["Execution speed", "Manual, step by step", "Automated, near-instant"],
-        ["Scale", "One task at a time", "Many tasks in parallel"]
-      ]
-    },
-    "source_name": "GitHub / HKUDS",
-    "source_url": "https://github.com/HKUDS/CLI-Anything"
+    "visual_data": null,
+    "source_name": "GitHub",
+    "source_url": "https://github.com/humanlayer/12-factor-agents"
   },
   "quick_hits": [
     {
-      "title": "A Free Dashboard Now Tracks Private Jets, Spy Satellites, and Seismic Events in One Place",
-      "summary": "Shadowbroker is a new open-source intelligence platform that pulls real-time data on private aircraft, orbiting satellites, and seismic activity into a single unified interface. You can connect an AI agent to automatically scan the data and surface patterns. Tools like this previously required expensive paid subscriptions or specialist analysts.",
-      "visual_type": null,
-      "visual_url": null,
-      "visual_data": null,
-      "source_name": "GitHub / BigBodyCobain",
-      "source_url": "https://github.com/BigBodyCobain/Shadowbroker"
-    },
-    {
-      "title": "Run AI on Your Own Computer — No Cloud Required, No Subscription",
-      "summary": "DreamServer is a new open-source platform that bundles AI chat, voice, image generation, agents, and workflow automation into a single package that runs entirely on your own machine. Nothing is sent to a server, there are no monthly fees, and it works offline. It's aimed at individuals and teams who want AI capabilities without privacy trade-offs or ongoing costs.",
+      "title": "A Chromium Browser That Passes Every Bot Detection Test",
+      "summary": "CloakBrowser is a new open-source browser built on Chromium that patches its own fingerprint at the source code level — making it indistinguishable from a real user to automated detection systems. It passed 30 out of 30 bot-detection tests and works as a direct drop-in replacement for Playwright, the popular browser automation library used by testers and developers.",
       "visual_type": "table",
       "visual_url": null,
-      "visual_data": {
-        "headers": ["Factor", "Cloud AI services", "DreamServer"],
-        "rows": [
-          ["Cost", "Monthly subscription", "Free"],
-          ["Data privacy", "Uploaded to provider", "Stays on your device"],
-          ["Internet required", "Yes", "No"],
-          ["Customisation", "Limited by provider", "Full control"]
-        ]
-      },
-      "source_name": "GitHub / Light-Heart-Labs",
-      "source_url": "https://github.com/Light-Heart-Labs/DreamServer"
+      "visual_data": {"headers": ["Capability", "Detail"], "rows": [["Bot detection tests passed", "30 / 30"], ["Playwright compatibility", "Drop-in replacement"], ["Fingerprint approach", "Source-level C++ patches"]]},
+      "source_name": "GitHub",
+      "source_url": "https://github.com/CloakHQ/CloakBrowser"
     },
     {
-      "title": "Open-Source Voice Agent Platform Launches for Anyone Who Wants to Build With Voice AI",
-      "summary": "Dograh launched as a free, open-source foundation for building voice-powered AI assistants and agents. Voice interfaces are spreading fast — across customer service, accessibility tools, and workplace apps — and an open platform means any team can now build one without relying on a commercial vendor's pricing or API terms.",
+      "title": "NVIDIA's Research Lab Released a Faster High-Resolution Image Generator",
+      "summary": "NVIDIA NV Labs published Sana, an open-source image synthesis model that generates high-resolution images using an architecture called a Linear Diffusion Transformer — designed to be significantly faster and less computationally demanding than existing image generators. It is aimed at researchers and developers who need high-quality output without expensive hardware.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub / dograh-hq",
-      "source_url": "https://github.com/dograh-hq/dograh"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/NVlabs/Sana"
     },
     {
-      "title": "Microsoft Publishes a Free 12-Lesson Course on Building AI Agents",
-      "summary": "Microsoft released a beginner-friendly, code-first course on GitHub covering how AI agents work and how to build them, across 12 structured lessons. It's aimed at anyone who wants to move beyond using AI tools to understanding how to deploy them — directly relevant for professionals who are evaluating or managing AI projects in their organisation.",
+      "title": "Free AI Stock Analysis Runs Daily on Global Markets — No Subscription Needed",
+      "summary": "A developer published an automated stock analysis tool that uses a language model to review A-share, H-share, and US market data every day and push results directly to your device. It is fully open-source and built to run without ongoing cloud costs, making institutional-style daily analysis accessible to individual investors.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub / Microsoft",
-      "source_url": "https://github.com/microsoft/ai-agents-for-beginners"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/ZhuLinsen/daily_stock_analysis"
+    },
+    {
+      "title": "Free Academic Research Skills Released for Claude Code",
+      "summary": "A new open-source collection of skills for Claude Code covers the full academic research cycle — from initial research and first draft through peer review, revision, and final submission. It is aimed at researchers, academics, and students who want AI support for structured, rigorous work rather than quick-and-rough answers.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub",
+      "source_url": "https://github.com/Imbad0202/academic-research-skills"
     }
   ],
   "under_the_hood": [
     {
-      "title": "A Verified Skill Registry Solves the Trust Problem for AI Coding Agents",
-      "what_happened": "Tech Leads Club launched agent-skills — a curated, security-reviewed GitHub registry of reusable skills for AI coding agents including Claude Code, Cursor, Copilot, and Antigravity. Skills are validated before publication, meaning teams can extend their agents with tested instruction sets rather than pulling in unreviewed files from anywhere on the internet.",
-      "why_it_matters": "As organisations deploy AI coding agents, the skills — instruction files that define agent behaviour — have quietly become a new security attack surface. A registry with a formal validation process addresses the supply-chain concern that enterprise security teams raise when permitting custom skills. Think of it as a curated app store, but for AI agent capabilities.",
-      "code_example": null,
+      "title": "llama.cpp: The C++ Engine That Powers Most Local AI Tools",
+      "what_happened": "llama.cpp — the open-source library for running large language models in C/C++ on ordinary hardware — continues to be one of GitHub's most active projects. It is the underlying runtime behind popular local AI applications including Ollama, LM Studio, and Jan.",
+      "why_it_matters": "llama.cpp strips away Python overhead and reduces GPU memory requirements, letting language models run on laptops, Apple Silicon Macs, and even some phones. Developers building private, on-device AI applications — tools that never send data to a cloud server — typically use llama.cpp as their foundation. Its GGUF model format has become the standard for distributing quantized models.",
+      "code_example": "# Install the Python bindings and run a local model\npip install llama-cpp-python\n\nfrom llama_cpp import Llama\n\nllm = Llama(model_path=\"./model.gguf\", n_ctx=2048)\noutput = llm(\"Summarize what AI agents do:\", max_tokens=120)\nprint(output[\"choices\"][0][\"text\"])",
       "visual_type": "table",
       "visual_url": null,
-      "visual_data": {
-        "headers": ["Concern", "Unvalidated skills", "agent-skills registry"],
-        "rows": [
-          ["Security review", "None", "Required before listing"],
-          ["Source", "Anywhere on the web", "Curated, community-maintained"],
-          ["Compatibility", "Unknown", "Tested across major agents"],
-          ["Trust model", "Caveat emptor", "Signed and verified"]
-        ]
-      },
-      "source_name": "GitHub / tech-leads-club",
-      "source_url": "https://github.com/tech-leads-club/agent-skills"
-    },
-    {
-      "title": "An AI Penetration Tester Now Reads Your Code and Attacks It — to Find Holes Before Attackers Do",
-      "what_happened": "Keygraph released Shannon Lite, an autonomous AI security tool that reads a web application's source code, maps likely attack paths, and executes real exploits to confirm whether vulnerabilities exist — before they ever reach production. It targets web apps and APIs specifically, and runs with full visibility into the codebase rather than probing from the outside.",
-      "why_it_matters": "Traditional penetration testing is expensive and infrequent — a specialist typically visits once a quarter, scopes a specific area, and files a report weeks later. An always-available open-source tool that can scan continuously changes the economics for smaller teams and agencies. It's a similar shift to what happened when automated linters replaced manual code style reviews.",
-      "code_example": null,
-      "visual_type": "table",
-      "visual_url": null,
-      "visual_data": {
-        "headers": ["Dimension", "Traditional pentest", "Shannon Lite"],
-        "rows": [
-          ["Cost", "High (specialist fees)", "Free / open source"],
-          ["Frequency", "Quarterly at best", "On demand, continuous"],
-          ["Speed to results", "Days to weeks", "Minutes to hours"],
-          ["Code coverage", "Scoped by contract", "Entire codebase"]
-        ]
-      },
-      "source_name": "GitHub / KeygraphHQ",
-      "source_url": "https://github.com/KeygraphHQ/shannon"
+      "visual_data": {"headers": ["Feature", "Detail"], "rows": [["Core language", "C/C++ with Python bindings"], ["Supported hardware", "CPU, Apple Silicon, NVIDIA GPU"], ["Model format", "GGUF"], ["Known users", "Ollama, LM Studio, Jan"], ["License", "MIT"]]},
+      "source_name": "GitHub",
+      "source_url": "https://github.com/ggml-org/llama.cpp"
     }
   ]
 }
