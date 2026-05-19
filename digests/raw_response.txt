@@ -1,95 +1,66 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Chrome is quietly installing a 4GB AI model on your computer, and Google, Microsoft, and xAI are sharing early AI models with the U.S. government.",
-  "fun_fact": "GitHub is celebrating Maintainer Month—the people who keep open source running.",
+  "teaser": "A practical playbook for building AI agents that actually hold up when real people use them.",
+  "fun_fact": "CloakBrowser passed all 30 bot-detection tests by patching Chromium's C++ source — a layer most detection systems never inspect.",
   "lead_story": {
-    "title": "Google Chrome Installs AI Model Without Asking",
-    "what_happened": "Google Chrome is silently downloading and installing a 4GB AI model called Nano on users' devices without explicit consent. The model runs locally and appears designed for on-device AI tasks, but users have no control over when it downloads or how much storage it uses.",
-    "what_this_means": "If you use Chrome, your device may be storing software you didn't knowingly install. For IT managers, this complicates device management and security audits. For privacy-conscious users, it raises questions about consent and data collection practices—Chrome already tracks your browsing, and now it's adding machine learning infrastructure to your machine.",
-    "visual_type": "image",
-    "visual_url": "https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/",
+    "title": "12 Principles Published for Building AI Agents That Work in the Real World",
+    "what_happened": "A framework called 12-Factor Agents was released on GitHub — 12 clear principles for building AI-powered software reliable enough to hand to real customers, not just demonstrate in a controlled environment.",
+    "what_this_means": "Most AI agents work well in demos but fail unpredictably when real people use them under real conditions. This framework gives product teams, managers, and the people who commission AI projects a shared checklist for deciding whether an AI agent is genuinely ready to deploy.",
+    "visual_type": null,
+    "visual_url": null,
     "visual_data": null,
-    "source_name": "That Privacy Guy",
-    "source_url": "https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/"
+    "source_name": "GitHub",
+    "source_url": "https://github.com/humanlayer/12-factor-agents"
   },
   "quick_hits": [
     {
-      "title": "Google, Microsoft, and xAI Will Share Early AI Models With U.S. Government",
-      "summary": "Three major AI companies have agreed to give the U.S. government early access to their upcoming AI models for security testing and evaluation. This is part of a voluntary commitment to responsible AI development and national security oversight.",
-      "visual_type": null,
+      "title": "A Chromium Browser That Passes Every Bot Detection Test",
+      "summary": "CloakBrowser is a new open-source browser built on Chromium that patches its own fingerprint at the source code level — making it indistinguishable from a real user to automated detection systems. It passed 30 out of 30 bot-detection tests and works as a direct drop-in replacement for Playwright, the popular browser automation library used by testers and developers.",
+      "visual_type": "table",
       "visual_url": null,
-      "visual_data": null,
-      "source_name": "Wall Street Journal",
-      "source_url": "https://www.wsj.com/tech/ai/google-microsoft-and-xai-agree-to-share-early-ai-models-with-u-s-f95a88d1"
+      "visual_data": {"headers": ["Capability", "Detail"], "rows": [["Bot detection tests passed", "30 / 30"], ["Playwright compatibility", "Drop-in replacement"], ["Fingerprint approach", "Source-level C++ patches"]]},
+      "source_name": "GitHub",
+      "source_url": "https://github.com/CloakHQ/CloakBrowser"
     },
     {
-      "title": "OpenAI Reveals How It Delivers Low-Latency Voice AI at Scale",
-      "summary": "OpenAI published technical details on its infrastructure for serving voice AI without lag—critical for real-time conversation. The post covers GPU optimization, request batching, and network design decisions that let millions of users get instant responses.",
+      "title": "NVIDIA's Research Lab Released a Faster High-Resolution Image Generator",
+      "summary": "NVIDIA NV Labs published Sana, an open-source image synthesis model that generates high-resolution images using an architecture called a Linear Diffusion Transformer — designed to be significantly faster and less computationally demanding than existing image generators. It is aimed at researchers and developers who need high-quality output without expensive hardware.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "OpenAI",
-      "source_url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale/"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/NVlabs/Sana"
     },
     {
-      "title": "GitHub Copilot Is Moving to Usage-Based Billing",
-      "summary": "Starting June 1, GitHub Copilot will charge based on how much you use it—measured in AI Credits—instead of flat monthly subscriptions. Existing Pro and Pro+ subscribers will see their plans change, and Free users' code will now be used to train GitHub's models unless they opt out.",
+      "title": "Free AI Stock Analysis Runs Daily on Global Markets — No Subscription Needed",
+      "summary": "A developer published an automated stock analysis tool that uses a language model to review A-share, H-share, and US market data every day and push results directly to your device. It is fully open-source and built to run without ongoing cloud costs, making institutional-style daily analysis accessible to individual investors.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Blog",
-      "source_url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/ZhuLinsen/daily_stock_analysis"
+    },
+    {
+      "title": "Free Academic Research Skills Released for Claude Code",
+      "summary": "A new open-source collection of skills for Claude Code covers the full academic research cycle — from initial research and first draft through peer review, revision, and final submission. It is aimed at researchers, academics, and students who want AI support for structured, rigorous work rather than quick-and-rough answers.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub",
+      "source_url": "https://github.com/Imbad0202/academic-research-skills"
     }
   ],
   "under_the_hood": [
     {
-      "title": "Context-Mode: 98% Reduction in AI Agent Output Size",
-      "what_happened": "A new tool called context-mode optimizes the amount of data that AI coding agents have to process by sandboxing and filtering tool output. By removing unnecessary information, it shrinks context window usage by 98% across 14 different platforms and coding agents.",
-      "why_it_matters": "Larger context windows mean slower, more expensive API calls. For developers building AI coding systems at scale, this tool directly cuts costs and latency. Engineers working with resource-constrained models or high-volume agent deployments should pay attention.",
-      "code_example": null,
+      "title": "llama.cpp: The C++ Engine That Powers Most Local AI Tools",
+      "what_happened": "llama.cpp — the open-source library for running large language models in C/C++ on ordinary hardware — continues to be one of GitHub's most active projects. It is the underlying runtime behind popular local AI applications including Ollama, LM Studio, and Jan.",
+      "why_it_matters": "llama.cpp strips away Python overhead and reduces GPU memory requirements, letting language models run on laptops, Apple Silicon Macs, and even some phones. Developers building private, on-device AI applications — tools that never send data to a cloud server — typically use llama.cpp as their foundation. Its GGUF model format has become the standard for distributing quantized models.",
+      "code_example": "# Install the Python bindings and run a local model\npip install llama-cpp-python\n\nfrom llama_cpp import Llama\n\nllm = Llama(model_path=\"./model.gguf\", n_ctx=2048)\noutput = llm(\"Summarize what AI agents do:\", max_tokens=120)\nprint(output[\"choices\"][0][\"text\"])",
       "visual_type": "table",
       "visual_url": null,
-      "visual_data": {
-        "headers": ["Metric", "Without context-mode", "With context-mode", "Improvement"],
-        "rows": [
-          ["Context size reduction", "100%", "2%", "98% smaller"],
-          ["Platforms supported", "14", "14", "Consistent across all"],
-          ["Use case", "Full tool output", "Sandboxed output", "Optimization layer"]
-        ]
-      },
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/mksglu/context-mode"
-    },
-    {
-      "title": "Dexter: Autonomous Agent for Deep Financial Research",
-      "what_happened": "A new open-source agent called Dexter automates financial research by gathering data, analyzing trends, and synthesizing findings across multiple sources. It operates autonomously without human intervention, mimicking the work a financial analyst would do manually.",
-      "why_it_matters": "Financial professionals—especially those in equity research, portfolio management, and investment banking—can now delegate time-consuming research tasks to an AI agent. The agent works continuously and can be integrated into larger workflows, freeing analysts to focus on decision-making rather than data collection.",
-      "code_example": null,
-      "visual_type": null,
-      "visual_url": null,
-      "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/virattt/dexter"
-    },
-    {
-      "title": "Local Deep Research: 95% Accuracy on Factual Questions Without the Cloud",
-      "what_happened": "An open-source project called local-deep-research achieves 95% accuracy on SimpleQA (a benchmark of factual questions) using local LLMs like Qwen running on a single GPU. It integrates 10+ search engines—arXiv, PubMed, local documents—and keeps everything encrypted and on your machine.",
-      "why_it_matters": "Researchers, lawyers, and compliance teams who need to ground AI answers in real sources—and can't send data to cloud providers—now have a self-contained alternative. The accuracy rival cloud-based systems while keeping proprietary research private. This is especially valuable for enterprises handling sensitive information.",
-      "code_example": null,
-      "visual_type": "table",
-      "visual_url": null,
-      "visual_data": {
-        "headers": ["Feature", "Local-Deep-Research"],
-        "rows": [
-          ["SimpleQA Accuracy", "~95%"],
-          ["Search engines included", "10+"],
-          ["Data privacy", "100% local"],
-          ["GPU requirement", "3090 or equivalent"],
-          ["Supported LLMs", "llama.cpp, Ollama, cloud APIs"]
-        ]
-      },
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/LearningCircuit/local-deep-research"
+      "visual_data": {"headers": ["Feature", "Detail"], "rows": [["Core language", "C/C++ with Python bindings"], ["Supported hardware", "CPU, Apple Silicon, NVIDIA GPU"], ["Model format", "GGUF"], ["Known users", "Ollama, LM Studio, Jan"], ["License", "MIT"]]},
+      "source_name": "GitHub",
+      "source_url": "https://github.com/ggml-org/llama.cpp"
     }
   ]
 }

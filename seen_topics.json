@@ -1,298 +1,370 @@
 [
   {
-    "date": "2026-04-28",
-    "title": "Microsoft Open-Sources VibeVoice, a Frontier Voice AI Platform",
-    "summary": "Microsoft published VibeVoice on GitHub, releasing an open-source voice AI platform it describes as 'frontier' grade.",
+    "date": "2026-05-12",
+    "title": "AI Agents Write Bad Code — This Tool Catches It",
+    "summary": "Million released React Doctor, a tool that reviews AI-generated React code and flags common mistakes — performance problems, memory leaks, and anti-patterns that AI coding agents introduce regularly.",
     "source_urls": [
-      "https://github.com/microsoft/VibeVoice"
+      "https://github.com/millionco/react-doctor"
     ]
   },
   {
-    "date": "2026-04-28",
-    "title": "Penpot, the Open-Source Figma Alternative, Keeps Gaining Ground",
-    "summary": "Penpot is an open-source design tool built for teams who want design and code to work closely together.",
+    "date": "2026-05-12",
+    "title": "A Private AI Assistant That Never Leaves Your Device",
+    "summary": "OpenHuman is a new open-source AI assistant designed to run entirely on your own computer — no data sent to any server.",
     "source_urls": [
-      "https://github.com/penpot/penpot"
+      "https://github.com/tinyhumansai/openhuman"
     ]
   },
   {
-    "date": "2026-04-28",
-    "title": "AI Agents Are Now Being Used to Manage Financial Portfolios",
-    "summary": "TradingAgents is a new open-source framework that lets multiple AI agents collaborate to analyze markets and execute trades.",
+    "date": "2026-05-12",
+    "title": "An AI Agent Designed to Grow With You Over Time",
+    "summary": "Nous Research — a company known for releasing open AI models — published Hermes Agent, built to adapt as you use it rather than starting fresh each session.",
     "source_urls": [
-      "https://github.com/TauricResearch/TradingAgents"
+      "https://github.com/NousResearch/hermes-agent"
     ]
   },
   {
-    "date": "2026-04-28",
-    "title": "New Tool Lets You Plug DeepSeek Into Any Existing AI Workflow",
-    "summary": "A lightweight middleware called ds2api translates DeepSeek's AI models so they work with the same API format used by OpenAI, Google, and Claude.",
+    "date": "2026-05-12",
+    "title": "Stable Diffusion's Free Image Tool Is Trending Again",
+    "summary": "AUTOMATIC1111's Stable Diffusion Web UI — the most widely used free interface for generating AI images on your own computer — is back on GitHub's trending list.",
     "source_urls": [
-      "https://github.com/CJackHwang/ds2api"
+      "https://github.com/AUTOMATIC1111/stable-diffusion-webui"
     ]
   },
   {
-    "date": "2026-04-28",
-    "title": "A Community CLI Tool Simplifies Claude Code Project Setup",
-    "summary": "A developer published claude-code-templates, a command-line tool that helps configure and monitor Claude Code — Anthropic's AI coding assistant — using pre-built project templates.",
+    "date": "2026-05-12",
+    "title": "A New Platform for Earning Money With AI Is Gaining Traction",
+    "summary": "AiToEarn is a new open-source project aimed at helping people build income streams using AI tools and automations.",
     "source_urls": [
-      "https://github.com/davila7/claude-code-templates"
+      "https://github.com/yikart/AiToEarn"
     ]
   },
   {
-    "date": "2026-04-29",
-    "title": "Free AI Music Generation — Unlimited, Local, No Subscription",
-    "summary": "A new open-source app called ace-step-ui lets anyone generate music using the ACE-Step 1.",
+    "date": "2026-05-12",
+    "title": "Build a ChatGPT-Like Model From Scratch — A Practical Book Is Trending Again",
+    "summary": "Sebastian Raschka's 'LLMs from Scratch' — a step-by-step book that walks you through building a language model in Python using PyTorch — is back on GitHub's trending list.",
     "source_urls": [
-      "https://github.com/fspecii/ace-step-ui"
+      "https://github.com/rasbt/LLMs-from-scratch"
     ]
   },
   {
-    "date": "2026-04-29",
-    "title": "A Giant Free API Directory Is Trending Again",
-    "summary": "The public-apis repository — a community-maintained list of hundreds of free, open data sources covering weather, finance, sports, trivia, and more — is surging on GitHub this week.",
+    "date": "2026-05-13",
+    "title": "A Top Developer's Personal AI Coding Instructions Are Now Open Source",
+    "summary": "Matt Pocock — a well-known educator with a large following among TypeScript developers — published his personal set of skills and behavioral instructions for AI coding agents, drawn directly from his.",
     "source_urls": [
-      "https://github.com/public-apis/public-apis"
+      "https://github.com/mattpocock/skills"
     ]
   },
   {
-    "date": "2026-04-29",
-    "title": "Free Programming Books Directory Is Popular Again",
-    "summary": "The EbookFoundation's free-programming-books project is trending on GitHub.",
+    "date": "2026-05-13",
+    "title": "Free Android App Records Video Quietly in the Background",
+    "summary": "FadCam is an open-source, ad-free Android app that keeps recording video while the screen is off or while you're using other apps.",
     "source_urls": [
-      "https://github.com/EbookFoundation/free-programming-books"
+      "https://github.com/anonfaded/FadCam"
     ]
   },
   {
-    "date": "2026-04-29",
-    "title": "System Design Primer Resurfaces as a Go-To Learning Resource",
-    "summary": "The system-design-primer — a widely-used guide to designing large-scale software systems — is trending on GitHub again.",
+    "date": "2026-05-13",
+    "title": "This Proxy Is Built to Be Almost Impossible to Block",
+    "summary": "Hysteria is an open-source proxy that disguises internet traffic as ordinary HTTPS browsing using a protocol called QUIC — the same foundation that powers fast modern web connections.",
     "source_urls": [
-      "https://github.com/donnemartin/system-design-primer"
+      "https://github.com/apernet/hysteria"
     ]
   },
   {
-    "date": "2026-04-29",
-    "title": "Quarkdown: Scripted Markdown That Compiles to Books, Websites, and Slides",
-    "summary": "Quarkdown is a new open-source Markdown dialect that adds functions, variables, conditionals, and layout directives.",
+    "date": "2026-05-13",
+    "title": "Fully Automated AI Trading Agent Stays on GitHub's Radar",
+    "summary": "Previously covered on 2026-05-09: AI-Trader from HKUDS is an open-source agent that handles market analysis, asset selection, and trade execution without human input.",
     "source_urls": [
-      "https://github.com/iamgio/quarkdown"
+      "https://github.com/HKUDS/AI-Trader"
     ]
   },
   {
-    "date": "2026-05-01",
-    "title": "Warp Reinvents the Terminal as an Agentic Development Environment",
-    "summary": "Warp, a popular developer terminal app, has repositioned itself as an agentic development environment — a workspace where AI agents can plan, write code, and execute tasks, not just a window where you type commands.",
+    "date": "2026-05-13",
+    "title": "How Hysteria Hides Censorship-Busting Traffic in Plain Sight",
+    "summary": "Hysteria routes traffic through QUIC — the protocol behind HTTP/3 — rather than TCP, which most proxy-detection systems focus on.",
     "source_urls": [
-      "https://github.com/warpdotdev/warp"
+      "https://github.com/apernet/hysteria"
     ]
   },
   {
-    "date": "2026-05-01",
-    "title": "Ghostty Terminal Gains Momentum as Developers Seek Modern Tools",
-    "summary": "Ghostty is a new cross-platform terminal emulator built for speed — it uses GPU acceleration and native platform UI rather than web technologies.",
+    "date": "2026-05-14",
+    "title": "Open-Source Platform Lets AI Agents Take Control of Your Whole Computer",
+    "summary": "A project called cua launched on GitHub with sandboxes, development tools, and benchmarks for building AI agents that can operate full desktops — Windows, macOS, and Linux — as if they were a human user clicking through apps and software.",
     "source_urls": [
-      "https://github.com/ghostty-org/ghostty"
+      "https://github.com/trycua/cua"
     ]
   },
   {
-    "date": "2026-05-01",
-    "title": "One Username, 3,000+ Sites: What Maigret Reveals About Your Digital Footprint",
-    "summary": "An open-source OSINT tool called Maigret can take a single username and search for it across more than 3,000 websites, assembling a profile from public records.",
+    "date": "2026-05-14",
+    "title": "GitHub Releases a Toolkit for Writing Specs Before Code",
+    "summary": "GitHub published spec-kit, a toolkit for Spec-Driven Development — a workflow where you write a clear specification before any code is written, so AI tools and developers build from the same plan.",
     "source_urls": [
-      "https://github.com/soxoj/maigret"
+      "https://github.com/github/spec-kit"
     ]
   },
   {
-    "date": "2026-05-01",
-    "title": "\"Superpowers\" Gives AI Coding Agents a Structured Development Methodology",
-    "summary": "A developer published an open-source framework called Superpowers that gives AI coding agents a structured approach to software development — rules and processes rather than improvising.",
+    "date": "2026-05-14",
+    "title": "A New AI Voice Tool Runs Fast, On Your Device, in Many Languages",
+    "summary": "Supertone released supertonic, a text-to-speech engine that runs natively on your device via ONNX — no cloud connection required, no data sent to a server.",
+    "source_urls": [
+      "https://github.com/supertone-inc/supertonic"
+    ]
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Ready-Made AI Agent Skills for Research, Finance, and Writing",
+    "summary": "K-Dense-AI published a collection of pre-built agent skills covering six professional domains: research, science, engineering, analysis, finance, and writing.",
+    "source_urls": [
+      "https://github.com/K-Dense-AI/scientific-agent-skills"
+    ]
+  },
+  {
+    "date": "2026-05-14",
+    "title": "A Security Researcher Built a Personal AI Stack to Amplify Human Work",
+    "summary": "Daniel Miessler — a well-known security researcher and writer — published Personal_AI_Infrastructure on GitHub, a modular setup for building a private AI environment that amplifies your own thinking and productivity.",
+    "source_urls": [
+      "https://github.com/danielmiessler/Personal_AI_Infrastructure"
+    ]
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Superpowers: An Agentic Framework That Includes a Working Methodology",
+    "summary": "A developer released Superpowers on GitHub — a framework that packages AI agent skills alongside a structured software development methodology.",
     "source_urls": [
       "https://github.com/obra/superpowers"
     ]
   },
   {
-    "date": "2026-05-01",
-    "title": "Browserbase Adds Real-Time Web Browsing to Claude AI Agents",
-    "summary": "Browserbase published an open-source skills package for the Claude Agent SDK that gives AI agents the ability to browse and interact with live websites — clicking, reading, and navigating — in real time rather than only working from static context provided by the user.",
+    "date": "2026-05-14",
+    "title": "3D Reconstruction for Everyone: Brush Brings Gaussian Splats to Any Platform",
+    "summary": "ArthurBrussee released Brush on GitHub — an open-source 3D reconstruction tool that turns photos or video into navigable 3D scenes using a technique called Gaussian Splatting.",
     "source_urls": [
-      "https://github.com/browserbase/skills"
+      "https://github.com/ArthurBrussee/brush"
     ]
   },
   {
-    "date": "2026-05-02",
-    "title": "Sim Wants to Be Mission Control for Your AI Workforce",
-    "summary": "A new open-source platform called Sim, from SimStudio, lets you build, deploy, and coordinate multiple AI agents from one place.",
+    "date": "2026-05-15",
+    "title": "WiFi Signals Can Now Monitor Vital Signs and Detect Presence — No Camera Required",
+    "summary": "A developer released RuView, a tool that converts ordinary WiFi router signals into a real-time sensor for detecting people's presence, monitoring vital signs, and mapping spatial movement — without any cameras, microphones, or dedicated hardware.",
     "source_urls": [
-      "https://github.com/simstudioai/sim"
+      "https://github.com/ruvnet/RuView"
     ]
   },
   {
-    "date": "2026-05-02",
-    "title": "jcode: A New Open-Source Harness for AI Coding Agents",
-    "summary": "A developer published jcode on GitHub — a coding agent harness that provides standardized scaffolding for running and testing AI coding agents consistently.",
+    "date": "2026-05-15",
+    "title": "Y Combinator's CEO Published His Personal AI Coding Setup",
+    "summary": "Garry Tan — CEO of Y Combinator, the startup accelerator behind Airbnb, Dropbox, and Stripe — published his exact Claude Code configuration on GitHub.",
     "source_urls": [
-      "https://github.com/1jehuang/jcode"
+      "https://github.com/garrytan/gstack"
     ]
   },
   {
-    "date": "2026-05-02",
-    "title": "TradingAgents Climbs to #1 on GitHub Trending",
-    "summary": "Previously covered on 2026-04-28: TradingAgents is an open-source framework where multiple AI agents collaborate to analyze markets and execute trading strategies.",
+    "date": "2026-05-15",
+    "title": "Kronos: An AI Model Trained on the Language of Financial Markets",
+    "summary": "Researchers published Kronos, a foundation model built specifically on financial market data — not just news, but the notation, patterns, and communication formats that traders and analysts use daily.",
     "source_urls": [
-      "https://github.com/TauricResearch/TradingAgents"
+      "https://github.com/shiyu-coder/Kronos"
     ]
   },
   {
-    "date": "2026-05-02",
-    "title": "Open-Source Tool Surges for Users Facing Internet Restrictions",
-    "summary": "A tool called zapret-discord-youtube is trending globally on GitHub this week.",
+    "date": "2026-05-15",
+    "title": "NVIDIA Released AI Blueprints for Searching and Summarizing Video",
+    "summary": "NVIDIA published reference architectures for building AI systems that can automatically search through video content and generate summaries.",
     "source_urls": [
-      "https://github.com/Flowseal/zapret-discord-youtube"
+      "https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization"
     ]
   },
   {
-    "date": "2026-05-02",
-    "title": "How Sim Orchestrates Multiple AI Agents",
-    "summary": "Sim (by SimStudio) is an open-source agent orchestration platform designed to let developers and teams build workflows where multiple AI agents hand off tasks to each other.",
+    "date": "2026-05-15",
+    "title": "How Garry Tan's gstack Structures AI Into 23 Specialized Roles",
+    "summary": "The gstack repository packages 23 Claude Code skills — each a plain-text instruction file defining a professional persona with specific goals, constraints, and decision-making priorities.",
     "source_urls": [
-      "https://github.com/simstudioai/sim"
+      "https://github.com/garrytan/gstack"
     ]
   },
   {
-    "date": "2026-05-03",
-    "title": "Ruflo: An Orchestration Platform for Deploying Claude Agent Swarms",
-    "summary": "A developer published Ruflo on GitHub — an open-source platform designed to deploy and coordinate large numbers of Claude AI agents that divide complex tasks and run in parallel, with built-in knowledge-base search (RAG), enterprise-grade architecture, and a structured conversational layer on top.",
+    "date": "2026-05-16",
+    "title": "Anthropic Opens Its Agent Skills Library to the Public",
+    "summary": "Anthropic published a public GitHub repository called 'skills' — an official, curated collection of reusable agent skills for Claude, the same kind used internally to teach Claude specialized behaviors.",
     "source_urls": [
-      "https://github.com/ruvnet/ruflo"
+      "https://github.com/anthropics/skills"
     ]
   },
   {
-    "date": "2026-05-03",
-    "title": "ShareX: A Completely Free Screen Capture and Recording Tool",
-    "summary": "ShareX — a fully free, open-source Windows app for screenshots, screen recording, and uploading to dozens of destinations — is trending on GitHub this week.",
-    "source_urls": [
-      "https://github.com/ShareX/ShareX"
-    ]
-  },
-  {
-    "date": "2026-05-03",
-    "title": "TradingAgents Stays at the Top of GitHub for a Week",
-    "summary": "Previously covered on 2026-04-28: TradingAgents is an open-source framework where multiple AI agents collaborate to analyze markets and execute trading strategies.",
-    "source_urls": [
-      "https://github.com/TauricResearch/TradingAgents"
-    ]
-  },
-  {
-    "date": "2026-05-03",
-    "title": "The Free Self-Taught Computer Science Curriculum Is Trending Again",
-    "summary": "Coding Interview University — a free, exhaustive study plan for becoming a software engineer, originally built by someone who taught themselves programming to land a job at Amazon — is back near the top of GitHub's trending list.",
-    "source_urls": [
-      "https://github.com/jwasham/coding-interview-university"
-    ]
-  },
-  {
-    "date": "2026-05-03",
-    "title": "How Ruflo Structures Multi-Agent Swarms on Top of Claude",
-    "summary": "Ruflo is built around Anthropic's Agent SDK and adds three layers on top: a swarm coordinator that distributes tasks across multiple Claude agents running in parallel, a RAG (retrieval-augmented generation) integration that lets agents query a knowledge base rather than relying solely on what's in context, and a distributed architecture designed to scale to enterprise workloads.",
-    "source_urls": [
-      "https://github.com/ruvnet/ruflo"
-    ]
-  },
-  {
-    "date": "2026-05-04",
-    "title": "AI Can Now Auto-Generate Short Videos From Scratch",
-    "summary": "AIDC-AI published Pixelle-Video on GitHub, a fully automated short-video engine that handles the entire production pipeline — from concept to finished clip — without manual editing.",
-    "source_urls": [
-      "https://github.com/AIDC-AI/Pixelle-Video"
-    ]
-  },
-  {
-    "date": "2026-05-04",
-    "title": "DeepSeek Gets a Terminal-Based Coding Agent",
-    "summary": "A new open-source tool called DeepSeek-TUI brings DeepSeek's AI directly into your terminal as a coding agent — no browser or desktop app needed.",
-    "source_urls": [
-      "https://github.com/Hmbown/DeepSeek-TUI"
-    ]
-  },
-  {
-    "date": "2026-05-04",
-    "title": "Claude Can Now Build Your n8n Automation Workflows",
-    "summary": "A new MCP server called n8n-mcp gives Claude real-time access to n8n's node documentation, so it can design and configure automation workflows on your behalf.",
+    "date": "2026-05-16",
+    "title": "Claude Can Now Build Your Automation Workflows for You",
+    "summary": "A new open-source tool called n8n-mcp connects Claude, Cursor, and Windsurf directly to n8n — one of the most popular no-code automation platforms.",
     "source_urls": [
       "https://github.com/czlonkowski/n8n-mcp"
     ]
   },
   {
-    "date": "2026-05-04",
-    "title": "Open-Source Router Firmware Stays Popular as Home Network Demands Rise",
-    "summary": "OpenWrt — the open-source firmware that replaces factory software on home and business routers — is trending on GitHub again.",
+    "date": "2026-05-16",
+    "title": "Turn Any Webpage, Video, or PDF Into a Podcast, Quiz, or Mind Map",
+    "summary": "A new Claude skill converts almost any content — web articles, YouTube videos, PDFs, Markdown files, or search results — into formats that Google's NotebookLM can turn into podcasts, slide decks, mind maps, and quizzes.",
     "source_urls": [
-      "https://github.com/openwrt/openwrt"
+      "https://github.com/joeseesun/qiaomu-anything-to-notebooklm"
     ]
   },
   {
-    "date": "2026-05-04",
-    "title": "How n8n-mcp Lets Claude Build Automation Workflows Without Guessing",
-    "summary": "The n8n-mcp project creates a Model Context Protocol server that exposes n8n's full node library to Claude in real time.",
+    "date": "2026-05-16",
+    "title": "Bun, the All-in-One JavaScript Tool, Is Trending Again",
+    "summary": "Bun — a JavaScript runtime that replaces Node.",
+    "source_urls": [
+      "https://github.com/oven-sh/bun"
+    ]
+  },
+  {
+    "date": "2026-05-16",
+    "title": "How the n8n-MCP Bridge Actually Works",
+    "summary": "The n8n-mcp project is an MCP (Model Context Protocol) server — a standardized interface that gives AI tools like Claude, Windsurf, and Cursor the ability to interact with external systems as built-in features.",
     "source_urls": [
       "https://github.com/czlonkowski/n8n-mcp"
     ]
   },
   {
-    "date": "2026-05-05",
-    "title": "Google Chrome Installs AI Model Without Asking",
-    "summary": "Google Chrome is silently downloading and installing a 4GB AI model called Nano on users' devices without explicit consent.",
+    "date": "2026-05-17",
+    "title": "A Free, Self-Hosted AI Creative Studio Brings 200+ Models to Anyone With a Server",
+    "summary": "Open-Generative-AI launched on GitHub as an open-source, self-hosted alternative to commercial AI creative tools.",
     "source_urls": [
-      "https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/"
+      "https://github.com/Anil-matcha/Open-Generative-AI"
     ]
   },
   {
-    "date": "2026-05-05",
-    "title": "Google, Microsoft, and xAI Will Share Early AI Models With U.S. Government",
-    "summary": "Three major AI companies have agreed to give the U.",
+    "date": "2026-05-17",
+    "title": "Private, On-Device AI Assistant Continues to Gain Traction on GitHub",
+    "summary": "Previously covered on 2026-05-12: OpenHuman — an AI assistant that runs entirely on your computer without sending data to a cloud — is still among GitHub's fastest-growing open-source projects days after launch.",
     "source_urls": [
-      "https://www.wsj.com/tech/ai/google-microsoft-and-xai-agree-to-share-early-ai-models-with-u-s-f95a88d1"
+      "https://github.com/tinyhumansai/openhuman"
     ]
   },
   {
-    "date": "2026-05-05",
-    "title": "OpenAI Reveals How It Delivers Low-Latency Voice AI at Scale",
-    "summary": "OpenAI published technical details on its infrastructure for serving voice AI without lag—critical for real-time conversation.",
+    "date": "2026-05-17",
+    "title": "On-Device Multilingual Text-to-Speech Keeps Attracting Developers",
+    "summary": "Previously covered on 2026-05-14: Supertone's supertonic remains on GitHub's trending list — an on-device, multilingual text-to-speech tool with no internet requirement.",
     "source_urls": [
-      "https://openai.com/index/delivering-low-latency-voice-ai-at-scale/"
+      "https://github.com/supertone-inc/supertonic"
     ]
   },
   {
-    "date": "2026-05-05",
-    "title": "GitHub Copilot Is Moving to Usage-Based Billing",
-    "summary": "Starting June 1, GitHub Copilot will charge based on how much you use it—measured in AI Credits—instead of flat monthly subscriptions.",
+    "date": "2026-05-17",
+    "title": "WiFi-Based Presence and Vital Sign Detection Remains a Trending Topic",
+    "summary": "Previously covered on 2026-05-15: RuView — the tool that converts standard WiFi router signals into a sensor for detecting people's presence, movement, and vital signs — remains in GitHub's trending section.",
     "source_urls": [
-      "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
+      "https://github.com/ruvnet/RuView"
     ]
   },
   {
-    "date": "2026-05-05",
-    "title": "Context-Mode: 98% Reduction in AI Agent Output Size",
-    "summary": "A new tool called context-mode optimizes the amount of data that AI coding agents have to process by sandboxing and filtering tool output.",
+    "date": "2026-05-17",
+    "title": "Codegraph: Pre-Indexing Your Codebase to Cut Claude Code's Token Overhead",
+    "summary": "Codegraph builds a structured knowledge graph from your project's source code before any AI session begins.",
     "source_urls": [
-      "https://github.com/mksglu/context-mode"
+      "https://github.com/colbymchenry/codegraph"
     ]
   },
   {
-    "date": "2026-05-05",
-    "title": "Dexter: Autonomous Agent for Deep Financial Research",
-    "summary": "A new open-source agent called Dexter automates financial research by gathering data, analyzing trends, and synthesizing findings across multiple sources.",
+    "date": "2026-05-18",
+    "title": "AI Agents Are Learning to Control Any Software You Already Use",
+    "summary": "A research lab released CLI-Anything, a platform that wraps any software's command-line interface in a standard format that AI agents can read and operate.",
     "source_urls": [
-      "https://github.com/virattt/dexter"
+      "https://github.com/HKUDS/CLI-Anything"
     ]
   },
   {
-    "date": "2026-05-05",
-    "title": "Local Deep Research: 95% Accuracy on Factual Questions Without the Cloud",
-    "summary": "An open-source project called local-deep-research achieves 95% accuracy on SimpleQA (a benchmark of factual questions) using local LLMs like Qwen running on a single GPU.",
+    "date": "2026-05-18",
+    "title": "A Free Dashboard Now Tracks Private Jets, Spy Satellites, and Seismic Events in One Place",
+    "summary": "Shadowbroker is a new open-source intelligence platform that pulls real-time data on private aircraft, orbiting satellites, and seismic activity into a single unified interface.",
     "source_urls": [
-      "https://github.com/LearningCircuit/local-deep-research"
+      "https://github.com/BigBodyCobain/Shadowbroker"
+    ]
+  },
+  {
+    "date": "2026-05-18",
+    "title": "Run AI on Your Own Computer — No Cloud Required, No Subscription",
+    "summary": "DreamServer is a new open-source platform that bundles AI chat, voice, image generation, agents, and workflow automation into a single package that runs entirely on your own machine.",
+    "source_urls": [
+      "https://github.com/Light-Heart-Labs/DreamServer"
+    ]
+  },
+  {
+    "date": "2026-05-18",
+    "title": "Open-Source Voice Agent Platform Launches for Anyone Who Wants to Build With Voice AI",
+    "summary": "Dograh launched as a free, open-source foundation for building voice-powered AI assistants and agents.",
+    "source_urls": [
+      "https://github.com/dograh-hq/dograh"
+    ]
+  },
+  {
+    "date": "2026-05-18",
+    "title": "Microsoft Publishes a Free 12-Lesson Course on Building AI Agents",
+    "summary": "Microsoft released a beginner-friendly, code-first course on GitHub covering how AI agents work and how to build them, across 12 structured lessons.",
+    "source_urls": [
+      "https://github.com/microsoft/ai-agents-for-beginners"
+    ]
+  },
+  {
+    "date": "2026-05-18",
+    "title": "A Verified Skill Registry Solves the Trust Problem for AI Coding Agents",
+    "summary": "Tech Leads Club launched agent-skills — a curated, security-reviewed GitHub registry of reusable skills for AI coding agents including Claude Code, Cursor, Copilot, and Antigravity.",
+    "source_urls": [
+      "https://github.com/tech-leads-club/agent-skills"
+    ]
+  },
+  {
+    "date": "2026-05-18",
+    "title": "An AI Penetration Tester Now Reads Your Code and Attacks It — to Find Holes Before Attackers Do",
+    "summary": "Keygraph released Shannon Lite, an autonomous AI security tool that reads a web application's source code, maps likely attack paths, and executes real exploits to confirm whether vulnerabilities exist — before they ever reach production.",
+    "source_urls": [
+      "https://github.com/KeygraphHQ/shannon"
+    ]
+  },
+  {
+    "date": "2026-05-19",
+    "title": "12 Principles Published for Building AI Agents That Work in the Real World",
+    "summary": "A framework called 12-Factor Agents was released on GitHub — 12 clear principles for building AI-powered software reliable enough to hand to real customers, not just demonstrate in a controlled environment.",
+    "source_urls": [
+      "https://github.com/humanlayer/12-factor-agents"
+    ]
+  },
+  {
+    "date": "2026-05-19",
+    "title": "A Chromium Browser That Passes Every Bot Detection Test",
+    "summary": "CloakBrowser is a new open-source browser built on Chromium that patches its own fingerprint at the source code level — making it indistinguishable from a real user to automated detection systems.",
+    "source_urls": [
+      "https://github.com/CloakHQ/CloakBrowser"
+    ]
+  },
+  {
+    "date": "2026-05-19",
+    "title": "NVIDIA's Research Lab Released a Faster High-Resolution Image Generator",
+    "summary": "NVIDIA NV Labs published Sana, an open-source image synthesis model that generates high-resolution images using an architecture called a Linear Diffusion Transformer — designed to be significantly faster and less computationally demanding than existing image generators.",
+    "source_urls": [
+      "https://github.com/NVlabs/Sana"
+    ]
+  },
+  {
+    "date": "2026-05-19",
+    "title": "Free AI Stock Analysis Runs Daily on Global Markets — No Subscription Needed",
+    "summary": "A developer published an automated stock analysis tool that uses a language model to review A-share, H-share, and US market data every day and push results directly to your device.",
+    "source_urls": [
+      "https://github.com/ZhuLinsen/daily_stock_analysis"
+    ]
+  },
+  {
+    "date": "2026-05-19",
+    "title": "Free Academic Research Skills Released for Claude Code",
+    "summary": "A new open-source collection of skills for Claude Code covers the full academic research cycle — from initial research and first draft through peer review, revision, and final submission.",
+    "source_urls": [
+      "https://github.com/Imbad0202/academic-research-skills"
+    ]
+  },
+  {
+    "date": "2026-05-19",
+    "title": "llama.cpp: The C++ Engine That Powers Most Local AI Tools",
+    "summary": "llama.",
+    "source_urls": [
+      "https://github.com/ggml-org/llama.cpp"
     ]
   }
 ]
