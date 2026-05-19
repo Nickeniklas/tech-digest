@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tech Digest — {{ full_date }}</title>
+<title>Tech Digest — Tuesday, May 19 2026</title>
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -412,7 +412,7 @@
       <span class="masthead-wordmark">Tech Digest</span>
       <span class="masthead-sub">Daily Signal for Professionals</span>
     </div>
-    <span class="masthead-date">{{ full_date }}</span>
+    <span class="masthead-date">Tuesday, May 19 2026</span>
   </div>
 </header>
 
@@ -423,196 +423,198 @@
     <div class="hero-overline">
       <span class="hero-overline-label">Today's Digest</span>
       <div class="hero-overline-rule"></div>
-      <span class="hero-overline-date">{{ full_date }}</span>
+      <span class="hero-overline-date">Tuesday, May 19 2026</span>
     </div>
 
-    <h1 class="hero-teaser">{{ teaser }}</h1>
+    <h1 class="hero-teaser">Test teaser.</h1>
 
     <div class="hero-grid">
 
       <!-- Lead article -->
       <article>
         <div class="lead-kicker">Lead Story</div>
-        <h2 class="lead-title">{{ lead_story.title }}</h2>
-        <p class="lead-what">{{ lead_story.what_happened | md_links | safe }}</p>
+        <h2 class="lead-title">Lead</h2>
+        <p class="lead-what">Happened.</p>
 
-        {% if lead_story.visual_type == "image" and lead_story.visual_url %}
-        <div class="visual-wrap">
-          <img src="{{ lead_story.visual_url }}" alt="{{ lead_story.title }}" class="visual-img">
-        </div>
-        {% elif lead_story.visual_type == "chart" and lead_story.visual_data %}
-        <div class="visual-wrap">
-          <div class="visual-chart">
-            {% for bar in lead_story.visual_data | chart_bars %}
-            <div class="chart-row">
-              <span class="chart-label">{{ bar.label }}</span>
-              <div class="chart-bar-track"><div class="chart-bar-fill" style="width:{{ bar.pct }}%"></div></div>
-              <span class="chart-value">{{ bar.value }}</span>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-        {% elif lead_story.visual_type == "table" and lead_story.visual_data %}
-        <div class="visual-wrap visual-table-wrap">
-          <table class="visual-table">
-            <thead><tr>{% for h in lead_story.visual_data.headers %}<th>{{ h }}</th>{% endfor %}</tr></thead>
-            <tbody>{% for row in lead_story.visual_data.rows %}<tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>{% endfor %}</tbody>
-          </table>
-        </div>
-        {% endif %}
+        
 
         <div class="why-callout">
           <div class="why-callout-label">What this means</div>
-          <p class="why-callout-text">{{ lead_story.what_this_means | md_links | safe }}</p>
+          <p class="why-callout-text">Means.</p>
         </div>
 
         <div class="source-row">
           <span>Source</span>
-          <a href="{{ lead_story.source_url }}" class="source-link">{{ lead_story.source_name }} ↗</a>
+          <a href="https://techcrunch.com" class="source-link">TC ↗</a>
         </div>
       </article>
 
       <!-- Quick Hits sidebar preview -->
-      {% if quick_hits %}
+      
       <aside class="qh-sidebar">
         <div class="qh-sidebar-label">Quick Hits</div>
         <ul class="qh-preview-list">
-          {% for story in quick_hits %}
+          
           <li class="qh-preview-item">
-            <p class="qh-preview-title">{{ story.title }}</p>
-            <span class="qh-preview-source">{{ story.source_name }}</span>
+            <p class="qh-preview-title">Hit One</p>
+            <span class="qh-preview-source">GitHub</span>
           </li>
-          {% endfor %}
+          
+          <li class="qh-preview-item">
+            <p class="qh-preview-title">Hit Two</p>
+            <span class="qh-preview-source">HN</span>
+          </li>
+          
+          <li class="qh-preview-item">
+            <p class="qh-preview-title">Hit Three</p>
+            <span class="qh-preview-source">Wired</span>
+          </li>
+          
+          <li class="qh-preview-item">
+            <p class="qh-preview-title">Hit Four orphan</p>
+            <span class="qh-preview-source">Ars</span>
+          </li>
+          
         </ul>
       </aside>
-      {% endif %}
+      
 
     </div>
   </div>
 </div>
 
 <!-- ── Quick Hits ── -->
-{% if quick_hits %}
+
 <div class="quick-hits-wrap">
   <div class="quick-hits-inner">
     <div class="section-kicker">Quick Hits</div>
     <h2 class="section-title">What else happened today</h2>
 
     <div class="qh-accordion">
-      {% for story in quick_hits %}
+      
       <details class="qh-item">
         <summary class="qh-item-header">
           <span class="qh-item-chevron">▸</span>
-          <span class="qh-item-title">{{ story.title }}</span>
-          <span class="qh-item-source-pill">{{ story.source_name }}</span>
+          <span class="qh-item-title">Hit One</span>
+          <span class="qh-item-source-pill">GitHub</span>
         </summary>
         <div class="qh-item-body">
-          <p class="qh-item-summary">{{ story.summary | md_links | safe }}</p>
+          <p class="qh-item-summary">Summary one.</p>
 
-          {% if story.visual_type == "image" and story.visual_url %}
-          <div class="visual-wrap">
-            <img src="{{ story.visual_url }}" alt="{{ story.title }}" class="visual-img">
-          </div>
-          {% elif story.visual_type == "chart" and story.visual_data %}
-          <div class="visual-wrap">
-            <div class="visual-chart">
-              {% for bar in story.visual_data | chart_bars %}
-              <div class="chart-row">
-                <span class="chart-label">{{ bar.label }}</span>
-                <div class="chart-bar-track"><div class="chart-bar-fill" style="width:{{ bar.pct }}%"></div></div>
-                <span class="chart-value">{{ bar.value }}</span>
-              </div>
-              {% endfor %}
-            </div>
-          </div>
-          {% elif story.visual_type == "table" and story.visual_data %}
+          
           <div class="visual-wrap visual-table-wrap">
             <table class="visual-table">
-              <thead><tr>{% for h in story.visual_data.headers %}<th>{{ h }}</th>{% endfor %}</tr></thead>
-              <tbody>{% for row in story.visual_data.rows %}<tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+              <thead><tr><th>Feature</th><th>Status</th></tr></thead>
+              <tbody><tr><td>Bot tests</td><td>30/30</td></tr><tr><td>Playwright</td><td>Drop-in</td></tr></tbody>
             </table>
           </div>
-          {% endif %}
+          
 
           <p class="qh-item-footer">
-            VIA <a href="{{ story.source_url }}" target="_blank" rel="noopener">{{ story.source_name }} ↗</a>
+            VIA <a href="https://github.com" target="_blank" rel="noopener">GitHub ↗</a>
           </p>
         </div>
       </details>
-      {% endfor %}
+      
+      <details class="qh-item">
+        <summary class="qh-item-header">
+          <span class="qh-item-chevron">▸</span>
+          <span class="qh-item-title">Hit Two</span>
+          <span class="qh-item-source-pill">HN</span>
+        </summary>
+        <div class="qh-item-body">
+          <p class="qh-item-summary">Summary two.</p>
+
+          
+
+          <p class="qh-item-footer">
+            VIA <a href="https://hn.com" target="_blank" rel="noopener">HN ↗</a>
+          </p>
+        </div>
+      </details>
+      
+      <details class="qh-item">
+        <summary class="qh-item-header">
+          <span class="qh-item-chevron">▸</span>
+          <span class="qh-item-title">Hit Three</span>
+          <span class="qh-item-source-pill">Wired</span>
+        </summary>
+        <div class="qh-item-body">
+          <p class="qh-item-summary">Summary three.</p>
+
+          
+
+          <p class="qh-item-footer">
+            VIA <a href="https://wired.com" target="_blank" rel="noopener">Wired ↗</a>
+          </p>
+        </div>
+      </details>
+      
+      <details class="qh-item">
+        <summary class="qh-item-header">
+          <span class="qh-item-chevron">▸</span>
+          <span class="qh-item-title">Hit Four orphan</span>
+          <span class="qh-item-source-pill">Ars</span>
+        </summary>
+        <div class="qh-item-body">
+          <p class="qh-item-summary">Summary four.</p>
+
+          
+
+          <p class="qh-item-footer">
+            VIA <a href="https://arstechnica.com" target="_blank" rel="noopener">Ars ↗</a>
+          </p>
+        </div>
+      </details>
+      
     </div>
   </div>
 </div>
-{% endif %}
+
 
 <!-- ── Under the Hood ── -->
-{% if under_the_hood %}
+
 <div class="hood-wrap">
   <div class="hood-inner">
     <div class="section-kicker">Under the Hood</div>
     <h2 class="section-title">For the technically curious</h2>
 
     <div class="hood-grid">
-      {% for story in under_the_hood %}
+      
       <article>
         <div class="hood-label">Deep Dive</div>
-        <h3 class="hood-title">{{ story.title }}</h3>
-        <p class="hood-what">{{ story.what_happened | md_links | safe }}</p>
+        <h3 class="hood-title">Hood</h3>
+        <p class="hood-what">Tech detail.</p>
 
-        {% if story.visual_type == "image" and story.visual_url %}
-        <div class="visual-wrap">
-          <img src="{{ story.visual_url }}" alt="{{ story.title }}" class="visual-img">
-        </div>
-        {% elif story.visual_type == "chart" and story.visual_data %}
-        <div class="visual-wrap">
-          <div class="visual-chart">
-            {% for bar in story.visual_data | chart_bars %}
-            <div class="chart-row">
-              <span class="chart-label">{{ bar.label }}</span>
-              <div class="chart-bar-track"><div class="chart-bar-fill" style="width:{{ bar.pct }}%"></div></div>
-              <span class="chart-value">{{ bar.value }}</span>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-        {% elif story.visual_type == "table" and story.visual_data %}
-        <div class="visual-wrap visual-table-wrap">
-          <table class="visual-table">
-            <thead><tr>{% for h in story.visual_data.headers %}<th>{{ h }}</th>{% endfor %}</tr></thead>
-            <tbody>{% for row in story.visual_data.rows %}<tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>{% endfor %}</tbody>
-          </table>
-        </div>
-        {% endif %}
+        
 
         <div class="hood-why">
           <div class="hood-why-label">Why it matters</div>
-          <p class="hood-why-text">{{ story.why_it_matters | md_links | safe }}</p>
+          <p class="hood-why-text">Matters.</p>
         </div>
 
-        {% if story.code_example %}
-        <pre class="hood-code">{{ story.code_example }}</pre>
-        {% endif %}
+        
 
         <div class="hood-source">
           <span>Source</span>
-          <a href="{{ story.source_url }}" class="hood-source-link">{{ story.source_name }} ↗</a>
+          <a href="https://anthropic.com" class="hood-source-link">Anthropic ↗</a>
         </div>
       </article>
-      {% endfor %}
+      
     </div>
   </div>
 </div>
-{% endif %}
+
 
 <!-- ── Fun Fact ── -->
-{% if fun_fact %}
+
 <div class="funfact-wrap">
   <div class="funfact-inner">
     <div class="funfact-label">◇ Fun fact</div>
-    <p class="funfact-text">"{{ fun_fact }}"</p>
+    <p class="funfact-text">"Fun fact."</p>
   </div>
 </div>
-{% endif %}
+
 
 <!-- ── Footer ── -->
 <footer class="footer-wrap">
