@@ -193,9 +193,10 @@ Template sections (top to bottom):
   - *Lead story* (left): title, `what_happened`, optional visual, "What this means"
     left-border callout, source row
   - *Quick Hits sidebar* (right, sticky): dark green card listing quick hit titles as a preview
-- **Quick Hits section** — warm paper background; 3-column CSS grid; cards alternate
-  dark green (`#1B4332`) / light green (`#74C69D`) / dark green using `loop.index % 2`.
-  Each card: title, `summary`, optional visual, source
+- **Quick Hits section** — warm paper background; vertical accordion using native
+  `<details>`/`<summary>` elements (no JS required). Each item collapses to title +
+  source pill (green pill, `#74C69D` background); expanding reveals `summary`, optional
+  visual, and source link. Chevron rotates 90° on open via `details[open]` CSS selector.
 - **Under the Hood section** — cream background; 2-column grid; each article: title,
   `what_happened`, "Why it matters" left-border callout, optional `code_example` pre
   block (dark terminal style), optional visual, source
