@@ -1,66 +1,88 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "A practical playbook for building AI agents that actually hold up when real people use them.",
-  "fun_fact": "CloakBrowser passed all 30 bot-detection tests by patching Chromium's C++ source — a layer most detection systems never inspect.",
+  "teaser": "Anthropic just published an official, vetted directory of Claude Code plugins — and a new open-source tool claims to cut your AI API costs by up to 90% by stripping unnecessary tokens before they reach the model.",
+  "fun_fact": "PhotoGIMP turns the world's oldest free image editor into a convincing Photoshop replacement — for zero dollars.",
   "lead_story": {
-    "title": "12 Principles Published for Building AI Agents That Work in the Real World",
-    "what_happened": "A framework called 12-Factor Agents was released on GitHub — 12 clear principles for building AI-powered software reliable enough to hand to real customers, not just demonstrate in a controlled environment.",
-    "what_this_means": "Most AI agents work well in demos but fail unpredictably when real people use them under real conditions. This framework gives product teams, managers, and the people who commission AI projects a shared checklist for deciding whether an AI agent is genuinely ready to deploy.",
-    "visual_type": null,
+    "title": "Anthropic Publishes an Official Directory of Claude Code Plugins",
+    "what_happened": "Anthropic released a new GitHub repository called claude-plugins-official — a curated, Anthropic-managed directory of high-quality plugins for Claude Code, the company's AI coding assistant.",
+    "what_this_means": "Until now, finding trustworthy Claude Code extensions meant searching GitHub and hoping for the best. This gives teams a vetted starting point — plugins reviewed and listed by Anthropic itself, not random developers. If your workplace uses Claude Code, this is now the first place to look before adding any new capability.",
+    "visual_type": "table",
     "visual_url": null,
-    "visual_data": null,
-    "source_name": "GitHub",
-    "source_url": "https://github.com/humanlayer/12-factor-agents"
+    "visual_data": {
+      "headers": ["Before the directory", "After the directory"],
+      "rows": [
+        ["Search GitHub and guess", "Browse an Anthropic-curated list"],
+        ["Unknown quality or safety", "Reviewed and approved by Anthropic"],
+        ["Manual discovery per team", "Shared, standardised starting point"]
+      ]
+    },
+    "source_name": "GitHub Trending",
+    "source_url": "https://github.com/anthropics/claude-plugins-official"
   },
   "quick_hits": [
     {
-      "title": "A Chromium Browser That Passes Every Bot Detection Test",
-      "summary": "CloakBrowser is a new open-source browser built on Chromium that patches its own fingerprint at the source code level — making it indistinguishable from a real user to automated detection systems. It passed 30 out of 30 bot-detection tests and works as a direct drop-in replacement for Playwright, the popular browser automation library used by testers and developers.",
-      "visual_type": "table",
+      "title": "New Tool Cuts AI API Token Usage by 60–90%",
+      "summary": "A developer released rtk — a lightweight CLI proxy written in Rust that sits between your terminal and an AI model, automatically stripping redundant tokens before they reach the API. The developer claims 60–90% reduction on common development commands, which translates directly into lower API bills. It installs as a single binary with no dependencies.",
+      "visual_type": "chart",
       "visual_url": null,
-      "visual_data": {"headers": ["Capability", "Detail"], "rows": [["Bot detection tests passed", "30 / 30"], ["Playwright compatibility", "Drop-in replacement"], ["Fingerprint approach", "Source-level C++ patches"]]},
-      "source_name": "GitHub",
-      "source_url": "https://github.com/CloakHQ/CloakBrowser"
+      "visual_data": {
+        "headers": ["Scenario", "Token Reduction"],
+        "rows": [
+          ["Conservative estimate", "60%"],
+          ["Typical dev commands", "75%"],
+          ["Best case", "90%"]
+        ]
+      },
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/rtk-ai/rtk"
     },
     {
-      "title": "NVIDIA's Research Lab Released a Faster High-Resolution Image Generator",
-      "summary": "NVIDIA NV Labs published Sana, an open-source image synthesis model that generates high-resolution images using an architecture called a Linear Diffusion Transformer — designed to be significantly faster and less computationally demanding than existing image generators. It is aimed at researchers and developers who need high-quality output without expensive hardware.",
+      "title": "AI Video Tool Combines Director, Writer, and Producer Into One Pipeline",
+      "summary": "HKUDS released ViMax, an open-source AI video generation system that handles the full creative pipeline — scripting, directing, producing, and rendering — in a single automated workflow rather than requiring separate tools stitched together. It's early research software rather than a polished product, but it shows how AI video creation is moving from single-step generation toward full-production automation.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/NVlabs/Sana"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/HKUDS/ViMax"
     },
     {
-      "title": "Free AI Stock Analysis Runs Daily on Global Markets — No Subscription Needed",
-      "summary": "A developer published an automated stock analysis tool that uses a language model to review A-share, H-share, and US market data every day and push results directly to your device. It is fully open-source and built to run without ongoing cloud costs, making institutional-style daily analysis accessible to individual investors.",
+      "title": "Free Patch Turns GIMP Into a Photoshop Lookalike",
+      "summary": "PhotoGIMP is an open-source patch for GIMP 3 that remaps the interface, keyboard shortcuts, and toolbar layout to match Adobe Photoshop. For designers, teachers, or marketers who know Photoshop but want to avoid a subscription, it significantly lowers the learning curve of switching. GIMP is free; this patch makes it feel familiar.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/ZhuLinsen/daily_stock_analysis"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/Diolinux/PhotoGIMP"
     },
     {
-      "title": "Free Academic Research Skills Released for Claude Code",
-      "summary": "A new open-source collection of skills for Claude Code covers the full academic research cycle — from initial research and first draft through peer review, revision, and final submission. It is aimed at researchers, academics, and students who want AI support for structured, rigorous work rather than quick-and-rough answers.",
+      "title": "Open-Source Project Lets You Run Claude Code for Free",
+      "summary": "A developer published free-claude-code, a project that routes Claude Code through alternative endpoints so it works without a paid Anthropic subscription — in the terminal, the VS Code extension, or Discord, with voice support included. This is a community workaround, not an official Anthropic product, and users should review terms of service implications before using it professionally.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/Imbad0202/academic-research-skills"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/Alishahryar1/free-claude-code"
     }
   ],
   "under_the_hood": [
     {
-      "title": "llama.cpp: The C++ Engine That Powers Most Local AI Tools",
-      "what_happened": "llama.cpp — the open-source library for running large language models in C/C++ on ordinary hardware — continues to be one of GitHub's most active projects. It is the underlying runtime behind popular local AI applications including Ollama, LM Studio, and Jan.",
-      "why_it_matters": "llama.cpp strips away Python overhead and reduces GPU memory requirements, letting language models run on laptops, Apple Silicon Macs, and even some phones. Developers building private, on-device AI applications — tools that never send data to a cloud server — typically use llama.cpp as their foundation. Its GGUF model format has become the standard for distributing quantized models.",
-      "code_example": "# Install the Python bindings and run a local model\npip install llama-cpp-python\n\nfrom llama_cpp import Llama\n\nllm = Llama(model_path=\"./model.gguf\", n_ctx=2048)\noutput = llm(\"Summarize what AI agents do:\", max_tokens=120)\nprint(output[\"choices\"][0][\"text\"])",
+      "title": "Andrej Karpathy's AI Coding Pitfalls, Distilled Into a Single Config File",
+      "what_happened": "A developer published a single CLAUDE.md file derived from Andrej Karpathy's — the AI researcher and former Tesla AI director — publicly documented observations about where language models reliably fail at coding tasks. The file is designed to drop into any project and immediately improve Claude Code's behaviour.",
+      "why_it_matters": "CLAUDE.md files act as standing instructions for AI coding agents — they shape how the model approaches a codebase before writing a single line. Rather than writing behavioural rules from scratch, developers get a peer-reviewed starting point built from one of the field's most respected researchers. The four recurring pitfalls Karpathy identified: overconfidence (not flagging uncertainty), context blindness (ignoring existing code patterns), hallucinated APIs (inventing function names), and scope creep (modifying more than asked).",
+      "code_example": "# Drop into your project root as CLAUDE.md\n# Derived from Andrej Karpathy's LLM coding pitfall observations\n# Source: github.com/multica-ai/andrej-karpathy-skills\n\n## Rules\n- Flag uncertainty explicitly before writing code\n- Read existing patterns before introducing new ones\n- Never invent API names — check docs first\n- Change only what was asked; nothing more",
       "visual_type": "table",
       "visual_url": null,
-      "visual_data": {"headers": ["Feature", "Detail"], "rows": [["Core language", "C/C++ with Python bindings"], ["Supported hardware", "CPU, Apple Silicon, NVIDIA GPU"], ["Model format", "GGUF"], ["Known users", "Ollama, LM Studio, Jan"], ["License", "MIT"]]},
-      "source_name": "GitHub",
-      "source_url": "https://github.com/ggml-org/llama.cpp"
+      "visual_data": {
+        "headers": ["Pitfall", "What the model does wrong", "Config rule fixes it"],
+        "rows": [
+          ["Overconfidence", "Writes code without flagging uncertainty", "Require explicit uncertainty flags"],
+          ["Context blindness", "Ignores existing codebase patterns", "Read before writing"],
+          ["Hallucinated APIs", "Invents non-existent function names", "Check docs first"],
+          ["Scope creep", "Changes more than instructed", "Modify only what was asked"]
+        ]
+      },
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/multica-ai/andrej-karpathy-skills"
     }
   ]
 }

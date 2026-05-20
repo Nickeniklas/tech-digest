@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-05-12",
-    "title": "AI Agents Write Bad Code — This Tool Catches It",
-    "summary": "Million released React Doctor, a tool that reviews AI-generated React code and flags common mistakes — performance problems, memory leaks, and anti-patterns that AI coding agents introduce regularly.",
-    "source_urls": [
-      "https://github.com/millionco/react-doctor"
-    ]
-  },
-  {
-    "date": "2026-05-12",
-    "title": "A Private AI Assistant That Never Leaves Your Device",
-    "summary": "OpenHuman is a new open-source AI assistant designed to run entirely on your own computer — no data sent to any server.",
-    "source_urls": [
-      "https://github.com/tinyhumansai/openhuman"
-    ]
-  },
-  {
-    "date": "2026-05-12",
-    "title": "An AI Agent Designed to Grow With You Over Time",
-    "summary": "Nous Research — a company known for releasing open AI models — published Hermes Agent, built to adapt as you use it rather than starting fresh each session.",
-    "source_urls": [
-      "https://github.com/NousResearch/hermes-agent"
-    ]
-  },
-  {
-    "date": "2026-05-12",
-    "title": "Stable Diffusion's Free Image Tool Is Trending Again",
-    "summary": "AUTOMATIC1111's Stable Diffusion Web UI — the most widely used free interface for generating AI images on your own computer — is back on GitHub's trending list.",
-    "source_urls": [
-      "https://github.com/AUTOMATIC1111/stable-diffusion-webui"
-    ]
-  },
-  {
-    "date": "2026-05-12",
-    "title": "A New Platform for Earning Money With AI Is Gaining Traction",
-    "summary": "AiToEarn is a new open-source project aimed at helping people build income streams using AI tools and automations.",
-    "source_urls": [
-      "https://github.com/yikart/AiToEarn"
-    ]
-  },
-  {
-    "date": "2026-05-12",
-    "title": "Build a ChatGPT-Like Model From Scratch — A Practical Book Is Trending Again",
-    "summary": "Sebastian Raschka's 'LLMs from Scratch' — a step-by-step book that walks you through building a language model in Python using PyTorch — is back on GitHub's trending list.",
-    "source_urls": [
-      "https://github.com/rasbt/LLMs-from-scratch"
-    ]
-  },
-  {
     "date": "2026-05-13",
     "title": "A Top Developer's Personal AI Coding Instructions Are Now Open Source",
     "summary": "Matt Pocock — a well-known educator with a large following among TypeScript developers — published his personal set of skills and behavioral instructions for AI coding agents, drawn directly from his.",
@@ -365,6 +317,54 @@
     "summary": "llama.",
     "source_urls": [
       "https://github.com/ggml-org/llama.cpp"
+    ]
+  },
+  {
+    "date": "2026-05-20",
+    "title": "Anthropic Publishes an Official Directory of Claude Code Plugins",
+    "summary": "Anthropic released a new GitHub repository called claude-plugins-official — a curated, Anthropic-managed directory of high-quality plugins for Claude Code, the company's AI coding assistant.",
+    "source_urls": [
+      "https://github.com/anthropics/claude-plugins-official"
+    ]
+  },
+  {
+    "date": "2026-05-20",
+    "title": "New Tool Cuts AI API Token Usage by 60–90%",
+    "summary": "A developer released rtk — a lightweight CLI proxy written in Rust that sits between your terminal and an AI model, automatically stripping redundant tokens before they reach the API.",
+    "source_urls": [
+      "https://github.com/rtk-ai/rtk"
+    ]
+  },
+  {
+    "date": "2026-05-20",
+    "title": "AI Video Tool Combines Director, Writer, and Producer Into One Pipeline",
+    "summary": "HKUDS released ViMax, an open-source AI video generation system that handles the full creative pipeline — scripting, directing, producing, and rendering — in a single automated workflow rather than requiring separate tools stitched together.",
+    "source_urls": [
+      "https://github.com/HKUDS/ViMax"
+    ]
+  },
+  {
+    "date": "2026-05-20",
+    "title": "Free Patch Turns GIMP Into a Photoshop Lookalike",
+    "summary": "PhotoGIMP is an open-source patch for GIMP 3 that remaps the interface, keyboard shortcuts, and toolbar layout to match Adobe Photoshop.",
+    "source_urls": [
+      "https://github.com/Diolinux/PhotoGIMP"
+    ]
+  },
+  {
+    "date": "2026-05-20",
+    "title": "Open-Source Project Lets You Run Claude Code for Free",
+    "summary": "A developer published free-claude-code, a project that routes Claude Code through alternative endpoints so it works without a paid Anthropic subscription — in the terminal, the VS Code extension, or Discord, with voice support included.",
+    "source_urls": [
+      "https://github.com/Alishahryar1/free-claude-code"
+    ]
+  },
+  {
+    "date": "2026-05-20",
+    "title": "Andrej Karpathy's AI Coding Pitfalls, Distilled Into a Single Config File",
+    "summary": "A developer published a single CLAUDE.",
+    "source_urls": [
+      "https://github.com/multica-ai/andrej-karpathy-skills"
     ]
   }
 ]
