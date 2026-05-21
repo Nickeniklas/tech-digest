@@ -1,88 +1,90 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Anthropic just published an official, vetted directory of Claude Code plugins — and a new open-source tool claims to cut your AI API costs by up to 90% by stripping unnecessary tokens before they reach the model.",
-  "fun_fact": "PhotoGIMP turns the world's oldest free image editor into a convincing Photoshop replacement — for zero dollars.",
+  "teaser": "A new GitHub project packs an entire team of specialized AI workers into one open-source toolkit — each agent playing a different professional role with its own workflow and deliverables.",
+  "fun_fact": "OpenToonz — the animation software behind Studio Ghibli films — is fully free and trending on GitHub today.",
   "lead_story": {
-    "title": "Anthropic Publishes an Official Directory of Claude Code Plugins",
-    "what_happened": "Anthropic released a new GitHub repository called claude-plugins-official — a curated, Anthropic-managed directory of high-quality plugins for Claude Code, the company's AI coding assistant.",
-    "what_this_means": "Until now, finding trustworthy Claude Code extensions meant searching GitHub and hoping for the best. This gives teams a vetted starting point — plugins reviewed and listed by Anthropic itself, not random developers. If your workplace uses Claude Code, this is now the first place to look before adding any new capability.",
+    "title": "One Toolkit, A Full AI Team: Each Agent Plays a Different Professional Role",
+    "what_happened": "A developer released agency-agents on GitHub — a collection of AI agents where each plays a distinct professional role: frontend developer, Reddit community manager, creative ideator, and fact-checker, each with its own defined personality, workflow, and expected deliverables.",
+    "what_this_means": "Rather than prompting one general AI to do every task, this lets you summon a specialist — a copy editor who thinks like a marketer, a project manager with its own checklists, a reality-checker for creative work. It's an early signal of how people are starting to organize AI into teams rather than single tools.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["Before the directory", "After the directory"],
+      "headers": ["Agent", "Specialty"],
       "rows": [
-        ["Search GitHub and guess", "Browse an Anthropic-curated list"],
-        ["Unknown quality or safety", "Reviewed and approved by Anthropic"],
-        ["Manual discovery per team", "Shared, standardised starting point"]
+        ["Frontend Wizard", "UI development & design"],
+        ["Reddit Ninja", "Community management"],
+        ["Whimsy Injector", "Creative ideation"],
+        ["Reality Checker", "Fact-checking & critique"]
       ]
     },
-    "source_name": "GitHub Trending",
-    "source_url": "https://github.com/anthropics/claude-plugins-official"
+    "source_name": "GitHub",
+    "source_url": "https://github.com/msitarzewski/agency-agents"
   },
   "quick_hits": [
     {
-      "title": "New Tool Cuts AI API Token Usage by 60–90%",
-      "summary": "A developer released rtk — a lightweight CLI proxy written in Rust that sits between your terminal and an AI model, automatically stripping redundant tokens before they reach the API. The developer claims 60–90% reduction on common development commands, which translates directly into lower API bills. It installs as a single binary with no dependencies.",
-      "visual_type": "chart",
+      "title": "Free, Self-Hosted WhatsApp Automation Is Now One Repository Away",
+      "summary": "OpenWA launched as a free, open-source WhatsApp API gateway you can run on your own server — no subscription, no per-message fees. For small businesses already living in WhatsApp, it means automating customer replies, appointment reminders, and order notifications without paying for the official Business API.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub",
+      "source_url": "https://github.com/rmyndharis/OpenWA"
+    },
+    {
+      "title": "AI Tools Can Now Remember Your Work Across Every Session",
+      "summary": "AgentMemory hit GitHub Trending as the self-described #1 persistent memory solution for AI coding agents, backed by real-world benchmarks. It gives tools like Claude Code or Cursor a way to remember your code context, past decisions, and project patterns — so you stop re-explaining your project from scratch every time you open a new session.",
+      "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Scenario", "Token Reduction"],
+        "headers": ["Memory Approach", "Persists After Session?", "Knows Past Decisions?"],
         "rows": [
-          ["Conservative estimate", "60%"],
-          ["Typical dev commands", "75%"],
-          ["Best case", "90%"]
+          ["No memory", "No", "No"],
+          ["Chat history only", "No", "This session only"],
+          ["AgentMemory", "Yes", "Yes"]
         ]
       },
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/rtk-ai/rtk"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/rohitg00/agentmemory"
     },
     {
-      "title": "AI Video Tool Combines Director, Writer, and Producer Into One Pipeline",
-      "summary": "HKUDS released ViMax, an open-source AI video generation system that handles the full creative pipeline — scripting, directing, producing, and rendering — in a single automated workflow rather than requiring separate tools stitched together. It's early research software rather than a polished product, but it shows how AI video creation is moving from single-step generation toward full-production automation.",
+      "title": "A Free, Ad-Free Desktop App for Streaming Any Movie or TV Show",
+      "summary": "Streambert is a new cross-platform desktop app that lets you stream or download movies, TV series, and anime with no ads, no tracking, and no subscription. It runs on Windows, Mac, and Linux.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/HKUDS/ViMax"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/truelockmc/streambert"
     },
     {
-      "title": "Free Patch Turns GIMP Into a Photoshop Lookalike",
-      "summary": "PhotoGIMP is an open-source patch for GIMP 3 that remaps the interface, keyboard shortcuts, and toolbar layout to match Adobe Photoshop. For designers, teachers, or marketers who know Photoshop but want to avoid a subscription, it significantly lowers the learning curve of switching. GIMP is free; this patch makes it feel familiar.",
+      "title": "A Minimal App Gives Your Private Writing Notes a Quiet Home",
+      "summary": "Files.md is a stripped-down desktop writing app for Markdown notes — designed as a private, distraction-free thinking space with no sync, no account, and no data leaving your device. It's aimed at writers, researchers, and knowledge workers who want a simple private journal without cloud exposure.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/Diolinux/PhotoGIMP"
-    },
-    {
-      "title": "Open-Source Project Lets You Run Claude Code for Free",
-      "summary": "A developer published free-claude-code, a project that routes Claude Code through alternative endpoints so it works without a paid Anthropic subscription — in the terminal, the VS Code extension, or Discord, with voice support included. This is a community workaround, not an official Anthropic product, and users should review terms of service implications before using it professionally.",
-      "visual_type": null,
-      "visual_url": null,
-      "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/Alishahryar1/free-claude-code"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/zakirullin/files.md"
     }
   ],
   "under_the_hood": [
     {
-      "title": "Andrej Karpathy's AI Coding Pitfalls, Distilled Into a Single Config File",
-      "what_happened": "A developer published a single CLAUDE.md file derived from Andrej Karpathy's — the AI researcher and former Tesla AI director — publicly documented observations about where language models reliably fail at coding tasks. The file is designed to drop into any project and immediately improve Claude Code's behaviour.",
-      "why_it_matters": "CLAUDE.md files act as standing instructions for AI coding agents — they shape how the model approaches a codebase before writing a single line. Rather than writing behavioural rules from scratch, developers get a peer-reviewed starting point built from one of the field's most respected researchers. The four recurring pitfalls Karpathy identified: overconfidence (not flagging uncertainty), context blindness (ignoring existing code patterns), hallucinated APIs (inventing function names), and scope creep (modifying more than asked).",
-      "code_example": "# Drop into your project root as CLAUDE.md\n# Derived from Andrej Karpathy's LLM coding pitfall observations\n# Source: github.com/multica-ai/andrej-karpathy-skills\n\n## Rules\n- Flag uncertainty explicitly before writing code\n- Read existing patterns before introducing new ones\n- Never invent API names — check docs first\n- Change only what was asked; nothing more",
+      "title": "Oh-My-Pi: A Terminal AI Agent With Hash-Anchored Edits, Browser Access, and Parallel Subagents",
+      "what_happened": "A developer released oh-my-pi, a terminal-based AI coding agent with an unusually deep feature set: hash-anchored edits (which tie each proposed code change to a specific file state, preventing misapplied patches), a built-in browser for reading live documentation, full LSP integration for language-aware code understanding, and native support for spawning parallel subagents to work on tasks simultaneously.",
+      "why_it_matters": "Most AI terminal agents apply edits sequentially with no safety mechanism and no awareness of live docs. Oh-my-pi's architecture treats the terminal as a proper development environment — it knows the exact state of your file before editing, can look things up without leaving the session, and can split work across multiple agents at once. Developers working on large codebases will find this closer to how senior engineers actually work.",
+      "code_example": null,
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Pitfall", "What the model does wrong", "Config rule fixes it"],
+        "headers": ["Feature", "oh-my-pi", "Typical terminal agent"],
         "rows": [
-          ["Overconfidence", "Writes code without flagging uncertainty", "Require explicit uncertainty flags"],
-          ["Context blindness", "Ignores existing codebase patterns", "Read before writing"],
-          ["Hallucinated APIs", "Invents non-existent function names", "Check docs first"],
-          ["Scope creep", "Changes more than instructed", "Modify only what was asked"]
+          ["Hash-anchored edits", "Yes", "No"],
+          ["Built-in browser", "Yes", "No"],
+          ["LSP integration", "Yes", "Rarely"],
+          ["Parallel subagents", "Yes", "No"],
+          ["Python support", "Yes", "Varies"]
         ]
       },
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/multica-ai/andrej-karpathy-skills"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/can1357/oh-my-pi"
     }
   ]
 }

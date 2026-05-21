@@ -1,45 +1,5 @@
 [
   {
-    "date": "2026-05-13",
-    "title": "A Top Developer's Personal AI Coding Instructions Are Now Open Source",
-    "summary": "Matt Pocock — a well-known educator with a large following among TypeScript developers — published his personal set of skills and behavioral instructions for AI coding agents, drawn directly from his.",
-    "source_urls": [
-      "https://github.com/mattpocock/skills"
-    ]
-  },
-  {
-    "date": "2026-05-13",
-    "title": "Free Android App Records Video Quietly in the Background",
-    "summary": "FadCam is an open-source, ad-free Android app that keeps recording video while the screen is off or while you're using other apps.",
-    "source_urls": [
-      "https://github.com/anonfaded/FadCam"
-    ]
-  },
-  {
-    "date": "2026-05-13",
-    "title": "This Proxy Is Built to Be Almost Impossible to Block",
-    "summary": "Hysteria is an open-source proxy that disguises internet traffic as ordinary HTTPS browsing using a protocol called QUIC — the same foundation that powers fast modern web connections.",
-    "source_urls": [
-      "https://github.com/apernet/hysteria"
-    ]
-  },
-  {
-    "date": "2026-05-13",
-    "title": "Fully Automated AI Trading Agent Stays on GitHub's Radar",
-    "summary": "Previously covered on 2026-05-09: AI-Trader from HKUDS is an open-source agent that handles market analysis, asset selection, and trade execution without human input.",
-    "source_urls": [
-      "https://github.com/HKUDS/AI-Trader"
-    ]
-  },
-  {
-    "date": "2026-05-13",
-    "title": "How Hysteria Hides Censorship-Busting Traffic in Plain Sight",
-    "summary": "Hysteria routes traffic through QUIC — the protocol behind HTTP/3 — rather than TCP, which most proxy-detection systems focus on.",
-    "source_urls": [
-      "https://github.com/apernet/hysteria"
-    ]
-  },
-  {
     "date": "2026-05-14",
     "title": "Open-Source Platform Lets AI Agents Take Control of Your Whole Computer",
     "summary": "A project called cua launched on GitHub with sandboxes, development tools, and benchmarks for building AI agents that can operate full desktops — Windows, macOS, and Linux — as if they were a human user clicking through apps and software.",
@@ -365,6 +325,54 @@
     "summary": "A developer published a single CLAUDE.",
     "source_urls": [
       "https://github.com/multica-ai/andrej-karpathy-skills"
+    ]
+  },
+  {
+    "date": "2026-05-21",
+    "title": "One Toolkit, A Full AI Team: Each Agent Plays a Different Professional Role",
+    "summary": "A developer released agency-agents on GitHub — a collection of AI agents where each plays a distinct professional role: frontend developer, Reddit community manager, creative ideator, and fact-checker, each with its own defined personality, workflow, and expected deliverables.",
+    "source_urls": [
+      "https://github.com/msitarzewski/agency-agents"
+    ]
+  },
+  {
+    "date": "2026-05-21",
+    "title": "Free, Self-Hosted WhatsApp Automation Is Now One Repository Away",
+    "summary": "OpenWA launched as a free, open-source WhatsApp API gateway you can run on your own server — no subscription, no per-message fees.",
+    "source_urls": [
+      "https://github.com/rmyndharis/OpenWA"
+    ]
+  },
+  {
+    "date": "2026-05-21",
+    "title": "AI Tools Can Now Remember Your Work Across Every Session",
+    "summary": "AgentMemory hit GitHub Trending as the self-described #1 persistent memory solution for AI coding agents, backed by real-world benchmarks.",
+    "source_urls": [
+      "https://github.com/rohitg00/agentmemory"
+    ]
+  },
+  {
+    "date": "2026-05-21",
+    "title": "A Free, Ad-Free Desktop App for Streaming Any Movie or TV Show",
+    "summary": "Streambert is a new cross-platform desktop app that lets you stream or download movies, TV series, and anime with no ads, no tracking, and no subscription.",
+    "source_urls": [
+      "https://github.com/truelockmc/streambert"
+    ]
+  },
+  {
+    "date": "2026-05-21",
+    "title": "A Minimal App Gives Your Private Writing Notes a Quiet Home",
+    "summary": "Files.",
+    "source_urls": [
+      "https://github.com/zakirullin/files.md"
+    ]
+  },
+  {
+    "date": "2026-05-21",
+    "title": "Oh-My-Pi: A Terminal AI Agent With Hash-Anchored Edits, Browser Access, and Parallel Subagents",
+    "summary": "A developer released oh-my-pi, a terminal-based AI coding agent with an unusually deep feature set: hash-anchored edits (which tie each proposed code change to a specific file state, preventing misapplied patches), a built-in browser for reading live documentation, full LSP integration for language-aware code understanding, and native support for spawning parallel subagents to work on tasks simultaneously.",
+    "source_urls": [
+      "https://github.com/can1357/oh-my-pi"
     ]
   }
 ]
