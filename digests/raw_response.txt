@@ -1,90 +1,83 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "A new GitHub project packs an entire team of specialized AI workers into one open-source toolkit — each agent playing a different professional role with its own workflow and deliverables.",
-  "fun_fact": "OpenToonz — the animation software behind Studio Ghibli films — is fully free and trending on GitHub today.",
+  "teaser": "Google's own Chrome DevTools team published an official AI agent plugin — your coding assistant can now see exactly what your browser sees when something breaks.",
+  "fun_fact": "The Chrome DevTools MCP server is the first official browser debugging tool designed from the ground up to be used by an AI agent, not a human.",
   "lead_story": {
-    "title": "One Toolkit, A Full AI Team: Each Agent Plays a Different Professional Role",
-    "what_happened": "A developer released agency-agents on GitHub — a collection of AI agents where each plays a distinct professional role: frontend developer, Reddit community manager, creative ideator, and fact-checker, each with its own defined personality, workflow, and expected deliverables.",
-    "what_this_means": "Rather than prompting one general AI to do every task, this lets you summon a specialist — a copy editor who thinks like a marketer, a project manager with its own checklists, a reality-checker for creative work. It's an early signal of how people are starting to organize AI into teams rather than single tools.",
+    "title": "Chrome DevTools Is Now an Official Tool for AI Coding Assistants",
+    "what_happened": "Google's Chrome DevTools team published an official MCP server — a standardized plugin that connects AI coding assistants like Claude Code directly to Chrome's browser debugger, console, network inspector, and performance profiler. Instead of manually copying error messages into a chat window, your AI assistant can now read live browser output directly.",
+    "what_this_means": "This closes a real gap: AI tools could read your code but couldn't observe what the browser was actually doing at runtime. If you build, maintain, or test websites — or work alongside someone who does — AI assistants just got meaningfully more capable at catching what's wrong without needing you to relay information back and forth.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["Agent", "Specialty"],
+      "headers": ["Chrome DevTools Capability", "Now Accessible to AI Agents"],
       "rows": [
-        ["Frontend Wizard", "UI development & design"],
-        ["Reddit Ninja", "Community management"],
-        ["Whimsy Injector", "Creative ideation"],
-        ["Reality Checker", "Fact-checking & critique"]
+        ["Console logs & errors", "Yes"],
+        ["Network requests & responses", "Yes"],
+        ["Performance profiler", "Yes"],
+        ["DOM inspector", "Yes"],
+        ["JavaScript debugger", "Yes"]
       ]
     },
-    "source_name": "GitHub",
-    "source_url": "https://github.com/msitarzewski/agency-agents"
+    "source_name": "GitHub / ChromeDevTools",
+    "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
   },
   "quick_hits": [
     {
-      "title": "Free, Self-Hosted WhatsApp Automation Is Now One Repository Away",
-      "summary": "OpenWA launched as a free, open-source WhatsApp API gateway you can run on your own server — no subscription, no per-message fees. For small businesses already living in WhatsApp, it means automating customer replies, appointment reminders, and order notifications without paying for the official Business API.",
+      "title": "An Open-Source Platform Wants to Make AI Agents Feel Like Real Teammates",
+      "summary": "Multica launched on GitHub as a free, open-source platform for managing AI coding agents like a team — assign them tasks, track their progress, and let them accumulate skills over time. The goal is to replace one-off AI chat sessions with something closer to a persistent, capable colleague you can delegate to. It supports Claude Code, Codex, and other agents out of the box.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/rmyndharis/OpenWA"
+      "source_name": "GitHub / multica-ai",
+      "source_url": "https://github.com/multica-ai/multica"
     },
     {
-      "title": "AI Tools Can Now Remember Your Work Across Every Session",
-      "summary": "AgentMemory hit GitHub Trending as the self-described #1 persistent memory solution for AI coding agents, backed by real-world benchmarks. It gives tools like Claude Code or Cursor a way to remember your code context, past decisions, and project patterns — so you stop re-explaining your project from scratch every time you open a new session.",
-      "visual_type": "table",
-      "visual_url": null,
-      "visual_data": {
-        "headers": ["Memory Approach", "Persists After Session?", "Knows Past Decisions?"],
-        "rows": [
-          ["No memory", "No", "No"],
-          ["Chat history only", "No", "This session only"],
-          ["AgentMemory", "Yes", "Yes"]
-        ]
-      },
-      "source_name": "GitHub",
-      "source_url": "https://github.com/rohitg00/agentmemory"
-    },
-    {
-      "title": "A Free, Ad-Free Desktop App for Streaming Any Movie or TV Show",
-      "summary": "Streambert is a new cross-platform desktop app that lets you stream or download movies, TV series, and anime with no ads, no tracking, and no subscription. It runs on Windows, Mac, and Linux.",
+      "title": "NotebookLM's Hidden Features Are Now Accessible via Python",
+      "summary": "A developer published an unofficial Python API for Google NotebookLM that unlocks capabilities the web interface doesn't expose — including automated notebook creation, source management, and programmatic audio generation. You can now build NotebookLM into larger workflows or automate tasks you'd otherwise have to do by hand in the browser.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/truelockmc/streambert"
+      "source_name": "GitHub / teng-lin",
+      "source_url": "https://github.com/teng-lin/notebooklm-py"
     },
     {
-      "title": "A Minimal App Gives Your Private Writing Notes a Quiet Home",
-      "summary": "Files.md is a stripped-down desktop writing app for Markdown notes — designed as a private, distraction-free thinking space with no sync, no account, and no data leaving your device. It's aimed at writers, researchers, and knowledge workers who want a simple private journal without cloud exposure.",
+      "title": "A New Tool Turns Any Codebase Into an Interactive Map You Can Explore and Query",
+      "summary": "Understand-Anything generates a navigable knowledge graph from any codebase — you can search it, explore relationships between components, and ask it questions directly. It connects to Claude Code, Cursor, Copilot, and Gemini CLI. For anyone who's ever inherited an unfamiliar project and had no idea where to start, this is the kind of tool that makes that situation much less overwhelming.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/zakirullin/files.md"
+      "source_name": "GitHub / Lum1104",
+      "source_url": "https://github.com/Lum1104/Understand-Anything"
+    },
+    {
+      "title": "Microsoft's .NET Team Published Official AI Agent Skills for C# Developers",
+      "summary": "Microsoft's .NET team released a public skills repository designed to help AI coding agents work correctly with .NET and C# projects. These instruction files teach AI tools the conventions, idioms, and quirks of the .NET ecosystem — and having them come from the language's own maintainers gives them an authority that community-built versions can't match.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub / dotnet",
+      "source_url": "https://github.com/dotnet/skills"
     }
   ],
   "under_the_hood": [
     {
-      "title": "Oh-My-Pi: A Terminal AI Agent With Hash-Anchored Edits, Browser Access, and Parallel Subagents",
-      "what_happened": "A developer released oh-my-pi, a terminal-based AI coding agent with an unusually deep feature set: hash-anchored edits (which tie each proposed code change to a specific file state, preventing misapplied patches), a built-in browser for reading live documentation, full LSP integration for language-aware code understanding, and native support for spawning parallel subagents to work on tasks simultaneously.",
-      "why_it_matters": "Most AI terminal agents apply edits sequentially with no safety mechanism and no awareness of live docs. Oh-my-pi's architecture treats the terminal as a proper development environment — it knows the exact state of your file before editing, can look things up without leaving the session, and can split work across multiple agents at once. Developers working on large codebases will find this closer to how senior engineers actually work.",
+      "title": "Forge: A Minimal Python Framework for Self-Hosted AI Workflows",
+      "what_happened": "Forge is a new Python framework for building multi-step AI workflows and tool-calling pipelines that run on your own infrastructure rather than through a managed cloud service. It handles chains of LLM calls and agent loops while staying deliberately lightweight — the whole framework is designed around the idea that simpler architecture is easier to debug and control.",
+      "why_it_matters": "Most agentic frameworks (LangChain, AutoGen, CrewAI) have grown complex enough that debugging a broken workflow can be harder than writing one from scratch. Forge bets on minimalism: less magic, more transparency. For teams building production AI pipelines who've hit the limits of heavier frameworks, it's worth evaluating against your specific use case.",
       "code_example": null,
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Feature", "oh-my-pi", "Typical terminal agent"],
+        "headers": ["Framework", "Self-Hosted", "Complexity", "Design Goal"],
         "rows": [
-          ["Hash-anchored edits", "Yes", "No"],
-          ["Built-in browser", "Yes", "No"],
-          ["LSP integration", "Yes", "Rarely"],
-          ["Parallel subagents", "Yes", "No"],
-          ["Python support", "Yes", "Varies"]
+          ["Forge", "Yes", "Low", "Minimal footprint"],
+          ["LangChain", "Yes", "High", "Maximum flexibility"],
+          ["AutoGen", "Yes", "Medium", "Multi-agent coordination"],
+          ["CrewAI", "Yes", "Medium", "Role-based agents"]
         ]
       },
-      "source_name": "GitHub",
-      "source_url": "https://github.com/can1357/oh-my-pi"
+      "source_name": "GitHub / antoinezambelli",
+      "source_url": "https://github.com/antoinezambelli/forge"
     }
   ]
 }
