@@ -1,45 +1,5 @@
 [
   {
-    "date": "2026-05-15",
-    "title": "WiFi Signals Can Now Monitor Vital Signs and Detect Presence — No Camera Required",
-    "summary": "A developer released RuView, a tool that converts ordinary WiFi router signals into a real-time sensor for detecting people's presence, monitoring vital signs, and mapping spatial movement — without any cameras, microphones, or dedicated hardware.",
-    "source_urls": [
-      "https://github.com/ruvnet/RuView"
-    ]
-  },
-  {
-    "date": "2026-05-15",
-    "title": "Y Combinator's CEO Published His Personal AI Coding Setup",
-    "summary": "Garry Tan — CEO of Y Combinator, the startup accelerator behind Airbnb, Dropbox, and Stripe — published his exact Claude Code configuration on GitHub.",
-    "source_urls": [
-      "https://github.com/garrytan/gstack"
-    ]
-  },
-  {
-    "date": "2026-05-15",
-    "title": "Kronos: An AI Model Trained on the Language of Financial Markets",
-    "summary": "Researchers published Kronos, a foundation model built specifically on financial market data — not just news, but the notation, patterns, and communication formats that traders and analysts use daily.",
-    "source_urls": [
-      "https://github.com/shiyu-coder/Kronos"
-    ]
-  },
-  {
-    "date": "2026-05-15",
-    "title": "NVIDIA Released AI Blueprints for Searching and Summarizing Video",
-    "summary": "NVIDIA published reference architectures for building AI systems that can automatically search through video content and generate summaries.",
-    "source_urls": [
-      "https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization"
-    ]
-  },
-  {
-    "date": "2026-05-15",
-    "title": "How Garry Tan's gstack Structures AI Into 23 Specialized Roles",
-    "summary": "The gstack repository packages 23 Claude Code skills — each a plain-text instruction file defining a professional persona with specific goals, constraints, and decision-making priorities.",
-    "source_urls": [
-      "https://github.com/garrytan/gstack"
-    ]
-  },
-  {
     "date": "2026-05-16",
     "title": "Anthropic Opens Its Agent Skills Library to the Public",
     "summary": "Anthropic published a public GitHub repository called 'skills' — an official, curated collection of reusable agent skills for Claude, the same kind used internally to teach Claude specialized behaviors.",
@@ -365,6 +325,54 @@
     "summary": "Forge is a new Python framework for building multi-step AI workflows and tool-calling pipelines that run on your own infrastructure rather than through a managed cloud service.",
     "source_urls": [
       "https://github.com/antoinezambelli/forge"
+    ]
+  },
+  {
+    "date": "2026-05-23",
+    "title": "A Free Finance Terminal Is Giving Anyone Access to Institutional-Grade Market Research",
+    "summary": "FinceptTerminal, an open-source financial analytics application, is trending on GitHub this week.",
+    "source_urls": [
+      "https://github.com/Fincept-Corporation/FinceptTerminal"
+    ]
+  },
+  {
+    "date": "2026-05-23",
+    "title": "A New 'AI Engineering From Scratch' Course Is Trending on GitHub",
+    "summary": "A learning repository called 'ai-engineering-from-scratch' is gaining traction on GitHub with a straightforward premise: learn it, build it, ship it.",
+    "source_urls": [
+      "https://github.com/rohitg00/ai-engineering-from-scratch"
+    ]
+  },
+  {
+    "date": "2026-05-23",
+    "title": "Andrej Karpathy's Neural Networks Course Is Finding a New Wave of Readers",
+    "summary": "The 'Neural Networks: Zero to Hero' repository by Andrej Karpathy — former Tesla AI director and one of AI's most respected educators — has returned to GitHub's trending list.",
+    "source_urls": [
+      "https://github.com/karpathy/nn-zero-to-hero"
+    ]
+  },
+  {
+    "date": "2026-05-23",
+    "title": "Odoo Reminds Businesses That Open-Source Can Replace Most Office Software",
+    "summary": "Odoo, a comprehensive open-source suite covering CRM, accounting, HR, inventory, and more, is trending on GitHub this week.",
+    "source_urls": [
+      "https://github.com/odoo/odoo"
+    ]
+  },
+  {
+    "date": "2026-05-23",
+    "title": "'The Book of Secret Knowledge' Is Back on Trending — A Practical Tech Resource Worth Bookmarking",
+    "summary": "A long-running GitHub repository called 'the-book-of-secret-knowledge' has returned to trending.",
+    "source_urls": [
+      "https://github.com/trimstray/the-book-of-secret-knowledge"
+    ]
+  },
+  {
+    "date": "2026-05-23",
+    "title": "yt-dlp: The Video Downloader That Powers Most Serious Media Archives",
+    "summary": "yt-dlp — a command-line tool for downloading video and audio from YouTube, Vimeo, and hundreds of other platforms — is on GitHub's trending list this week.",
+    "source_urls": [
+      "https://github.com/yt-dlp/yt-dlp"
     ]
   }
 ]
