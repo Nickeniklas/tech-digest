@@ -1,90 +1,82 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Open-source tools are quietly replacing expensive professional software — from institutional-grade finance terminals to AI learning paths — and today's GitHub trending list shows the tools gaining the most ground.",
-  "fun_fact": "yt-dlp supports over 1,800 video sites — more than any competing download tool — and adds new ones almost weekly.",
+  "teaser": "A free, open-source AI presentation tool just arrived to challenge paid favorites like Gamma — and NVIDIA dropped infrastructure for long AI-generated video.",
+  "fun_fact": "Jane Street, Wall Street's most engineering-obsessed trading firm, built magic-trace to debug nanosecond trading code.",
   "lead_story": {
-    "title": "A Free Finance Terminal Is Giving Anyone Access to Institutional-Grade Market Research",
-    "what_happened": "FinceptTerminal, an open-source financial analytics application, is trending on GitHub this week. It offers advanced market analytics, investment research tools, and interactive economic data exploration — the kind of tooling typically locked behind expensive professional terminal subscriptions.",
-    "what_this_means": "Finance professionals, lawyers reviewing deals, and marketers tracking industry trends now have a self-hosted, free alternative to tools like Bloomberg or Reuters that cost tens of thousands of dollars per year. If your work involves following markets, this is worth a look.",
+    "title": "A Free, Open-Source AI Presentation Generator Challenges Gamma and Beautiful.ai",
+    "what_happened": "Presenton launched on GitHub as a free, self-hostable alternative to paid AI presentation tools like Gamma, Beautiful.ai, and Decktopus. It includes an API, meaning it can be integrated into existing workflows or internal tools.",
+    "what_this_means": "If your team pays a monthly subscription for an AI slide tool, Presenton offers a no-cost alternative you can run on your own server. For marketers, teachers, and consultants who regularly produce presentations — especially in organizations with data privacy requirements — a self-hosted option is worth a serious look.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["Tool", "Annual Cost", "Open Source"],
+      "headers": ["Tool", "Open Source", "Self-Hosted", "API Included"],
       "rows": [
-        ["Bloomberg Terminal", "~$24,000/seat", "No"],
-        ["Reuters/LSEG Workspace", "~$22,000/seat", "No"],
-        ["FinceptTerminal", "Free", "Yes"]
+        ["Presenton", "Yes", "Yes", "Yes"],
+        ["Gamma", "No", "No", "Limited"],
+        ["Beautiful.ai", "No", "No", "No"],
+        ["Decktopus", "No", "No", "Limited"]
       ]
     },
     "source_name": "GitHub",
-    "source_url": "https://github.com/Fincept-Corporation/FinceptTerminal"
+    "source_url": "https://github.com/presenton/presenton"
   },
   "quick_hits": [
     {
-      "title": "A New 'AI Engineering From Scratch' Course Is Trending on GitHub",
-      "summary": "A learning repository called 'ai-engineering-from-scratch' is gaining traction on GitHub with a straightforward premise: learn it, build it, ship it. It positions itself as a structured path from AI concepts to real deployments. If you've been wanting a practical starting point for AI skills, this is worth bookmarking.",
-      "visual_type": null,
-      "visual_url": null,
-      "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/rohitg00/ai-engineering-from-scratch"
-    },
-    {
-      "title": "Andrej Karpathy's Neural Networks Course Is Finding a New Wave of Readers",
-      "summary": "The 'Neural Networks: Zero to Hero' repository by Andrej Karpathy — former Tesla AI director and one of AI's most respected educators — has returned to GitHub's trending list. The free course teaches how neural networks actually work from first principles, with no prerequisites beyond basic math. Its recurring popularity suggests people are serious about understanding AI, not just using it.",
-      "visual_type": null,
-      "visual_url": null,
-      "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/karpathy/nn-zero-to-hero"
-    },
-    {
-      "title": "Odoo Reminds Businesses That Open-Source Can Replace Most Office Software",
-      "summary": "Odoo, a comprehensive open-source suite covering CRM, accounting, HR, inventory, and more, is trending on GitHub this week. It's a reminder that businesses of almost any size can run core operations on free, self-hosted software rather than paying separate SaaS subscription fees for every function.",
+      "title": "754 Cybersecurity Skills Released for AI Coding Assistants",
+      "summary": "A developer published a library of 754 structured cybersecurity skills for AI coding agents, mapped to five major frameworks including MITRE ATT&CK and NIST. The skills work with Claude Code, GitHub Copilot, Cursor, Gemini CLI, and 20 other platforms. Security and IT teams who use AI assistants can now give those assistants a structured, framework-aligned security vocabulary out of the box.",
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Business Function", "Typical Paid Tool", "Odoo Module"],
+        "headers": ["Framework", "Focus Area"],
         "rows": [
-          ["CRM", "Salesforce", "CRM"],
-          ["Accounting", "QuickBooks", "Accounting"],
-          ["HR", "BambooHR", "Employees"],
-          ["Inventory", "Fishbowl", "Inventory"]
+          ["MITRE ATT&CK", "Offensive tactics and techniques"],
+          ["NIST CSF 2.0", "Cybersecurity risk management"],
+          ["MITRE ATLAS", "AI-specific threats"],
+          ["D3FEND", "Defensive countermeasures"],
+          ["NIST AI RMF", "AI risk management"]
         ]
       },
       "source_name": "GitHub",
-      "source_url": "https://github.com/odoo/odoo"
+      "source_url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
     },
     {
-      "title": "'The Book of Secret Knowledge' Is Back on Trending — A Practical Tech Resource Worth Bookmarking",
-      "summary": "A long-running GitHub repository called 'the-book-of-secret-knowledge' has returned to trending. It's a curated, community-maintained collection of practical tech resources — cheatsheets, command-line tools, security references, and useful guides. Non-technical professionals often find its reference materials as useful as developers do.",
+      "title": "NVIDIA's Research Lab Published Infrastructure for Long AI-Generated Video",
+      "summary": "NVIDIA NV Labs released LongLive 2.0, an open-source infrastructure package for generating extended, coherent AI video — the kind of long-form output current tools consistently struggle to produce. The release suggests the technical barriers to long AI video are falling quickly, which will matter for teams in marketing, education, and media production.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/trimstray/the-book-of-secret-knowledge"
+      "source_url": "https://github.com/NVlabs/LongLive"
+    },
+    {
+      "title": "The Interactive Code Map Tool Now Works With Every Major AI Coding Assistant",
+      "summary": "Previously covered on 2026-05-22: Understand-Anything turns any codebase into a navigable knowledge graph you can search and ask questions about. Since then, the project updated to explicitly support Claude Code, Codex, Cursor, GitHub Copilot, and Gemini CLI — meaning it now slots into whichever AI coding assistant your team already uses.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub",
+      "source_url": "https://github.com/Lum1104/Understand-Anything"
     }
   ],
   "under_the_hood": [
     {
-      "title": "yt-dlp: The Video Downloader That Powers Most Serious Media Archives",
-      "what_happened": "yt-dlp — a command-line tool for downloading video and audio from YouTube, Vimeo, and hundreds of other platforms — is on GitHub's trending list this week. It began as a fork of the original youtube-dl project, but has since become its clear successor: actively maintained, significantly faster, and supporting far more platforms.",
-      "why_it_matters": "yt-dlp is the backbone of media archiving workflows used by educators saving lectures, journalists preserving sources, and researchers building video datasets. Its renewed trending status likely reflects growing interest in offline media access as streaming libraries continue to contract and platforms remove content without notice.",
-      "code_example": "# Download a video in best quality\nyt-dlp https://www.youtube.com/watch?v=example\n\n# Extract audio only as MP3\nyt-dlp -x --audio-format mp3 https://www.youtube.com/watch?v=example\n\n# Download an entire playlist\nyt-dlp https://www.youtube.com/playlist?list=PLexample",
+      "title": "Jane Street Open-Sourced a Tool That Records Every Function Call Your Program Makes",
+      "what_happened": "Jane Street, the quantitative trading firm known for its rigorous engineering culture, released magic-trace — a tool that uses Intel's hardware tracing capability to capture a complete, high-resolution recording of every function a program calls. You attach it to any running process and get a full execution timeline you can replay and explore.",
+      "why_it_matters": "Most debugging tools tell you a program crashed or slowed down. magic-trace tells you exactly what it was doing in the microseconds before — using CPU-level hardware tracing rather than slower software instrumentation. For developers chasing intermittent bugs or performance regressions, it turns a day-long investigation into a five-minute replay. The fact that Jane Street uses this internally for latency-sensitive trading code is a meaningful quality signal.",
+      "code_example": "# Attach to a running process by PID\nmagic-trace attach -pid 12345\n\n# Trace a command from the start\nmagic-trace run ./my-server -- --port 8080\n\n# Result opens automatically in Perfetto trace viewer",
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Capability", "youtube-dl", "yt-dlp"],
+        "headers": ["Approach", "Resolution", "Overhead", "Code Change Needed"],
         "rows": [
-          ["Last active", "2021", "2025"],
-          ["Supported sites", "~1,000", "~1,800+"],
-          ["Download speed", "Baseline", "Up to 4x faster"],
-          ["SponsorBlock skip", "No", "Yes"],
-          ["Active development", "Stalled", "Active"]
+          ["magic-trace (Intel PT)", "Nanosecond", "Low", "No"],
+          ["strace / ltrace", "Microsecond", "High", "No"],
+          ["perf sampling", "Millisecond", "Low", "No"],
+          ["printf debugging", "Manual", "None", "Yes"]
         ]
       },
       "source_name": "GitHub",
-      "source_url": "https://github.com/yt-dlp/yt-dlp"
+      "source_url": "https://github.com/janestreet/magic-trace"
     }
   ]
 }

@@ -1,45 +1,5 @@
 [
   {
-    "date": "2026-05-16",
-    "title": "Anthropic Opens Its Agent Skills Library to the Public",
-    "summary": "Anthropic published a public GitHub repository called 'skills' — an official, curated collection of reusable agent skills for Claude, the same kind used internally to teach Claude specialized behaviors.",
-    "source_urls": [
-      "https://github.com/anthropics/skills"
-    ]
-  },
-  {
-    "date": "2026-05-16",
-    "title": "Claude Can Now Build Your Automation Workflows for You",
-    "summary": "A new open-source tool called n8n-mcp connects Claude, Cursor, and Windsurf directly to n8n — one of the most popular no-code automation platforms.",
-    "source_urls": [
-      "https://github.com/czlonkowski/n8n-mcp"
-    ]
-  },
-  {
-    "date": "2026-05-16",
-    "title": "Turn Any Webpage, Video, or PDF Into a Podcast, Quiz, or Mind Map",
-    "summary": "A new Claude skill converts almost any content — web articles, YouTube videos, PDFs, Markdown files, or search results — into formats that Google's NotebookLM can turn into podcasts, slide decks, mind maps, and quizzes.",
-    "source_urls": [
-      "https://github.com/joeseesun/qiaomu-anything-to-notebooklm"
-    ]
-  },
-  {
-    "date": "2026-05-16",
-    "title": "Bun, the All-in-One JavaScript Tool, Is Trending Again",
-    "summary": "Bun — a JavaScript runtime that replaces Node.",
-    "source_urls": [
-      "https://github.com/oven-sh/bun"
-    ]
-  },
-  {
-    "date": "2026-05-16",
-    "title": "How the n8n-MCP Bridge Actually Works",
-    "summary": "The n8n-mcp project is an MCP (Model Context Protocol) server — a standardized interface that gives AI tools like Claude, Windsurf, and Cursor the ability to interact with external systems as built-in features.",
-    "source_urls": [
-      "https://github.com/czlonkowski/n8n-mcp"
-    ]
-  },
-  {
     "date": "2026-05-17",
     "title": "A Free, Self-Hosted AI Creative Studio Brings 200+ Models to Anyone With a Server",
     "summary": "Open-Generative-AI launched on GitHub as an open-source, self-hosted alternative to commercial AI creative tools.",
@@ -373,6 +333,46 @@
     "summary": "yt-dlp — a command-line tool for downloading video and audio from YouTube, Vimeo, and hundreds of other platforms — is on GitHub's trending list this week.",
     "source_urls": [
       "https://github.com/yt-dlp/yt-dlp"
+    ]
+  },
+  {
+    "date": "2026-05-24",
+    "title": "A Free, Open-Source AI Presentation Generator Challenges Gamma and Beautiful.ai",
+    "summary": "Presenton launched on GitHub as a free, self-hostable alternative to paid AI presentation tools like Gamma, Beautiful.",
+    "source_urls": [
+      "https://github.com/presenton/presenton"
+    ]
+  },
+  {
+    "date": "2026-05-24",
+    "title": "754 Cybersecurity Skills Released for AI Coding Assistants",
+    "summary": "A developer published a library of 754 structured cybersecurity skills for AI coding agents, mapped to five major frameworks including MITRE ATT&CK and NIST.",
+    "source_urls": [
+      "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+    ]
+  },
+  {
+    "date": "2026-05-24",
+    "title": "NVIDIA's Research Lab Published Infrastructure for Long AI-Generated Video",
+    "summary": "NVIDIA NV Labs released LongLive 2.",
+    "source_urls": [
+      "https://github.com/NVlabs/LongLive"
+    ]
+  },
+  {
+    "date": "2026-05-24",
+    "title": "The Interactive Code Map Tool Now Works With Every Major AI Coding Assistant",
+    "summary": "Previously covered on 2026-05-22: Understand-Anything turns any codebase into a navigable knowledge graph you can search and ask questions about.",
+    "source_urls": [
+      "https://github.com/Lum1104/Understand-Anything"
+    ]
+  },
+  {
+    "date": "2026-05-24",
+    "title": "Jane Street Open-Sourced a Tool That Records Every Function Call Your Program Makes",
+    "summary": "Jane Street, the quantitative trading firm known for its rigorous engineering culture, released magic-trace — a tool that uses Intel's hardware tracing capability to capture a complete, high-resolution recording of every function a program calls.",
+    "source_urls": [
+      "https://github.com/janestreet/magic-trace"
     ]
   }
 ]
