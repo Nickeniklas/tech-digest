@@ -1,45 +1,5 @@
 [
   {
-    "date": "2026-05-17",
-    "title": "A Free, Self-Hosted AI Creative Studio Brings 200+ Models to Anyone With a Server",
-    "summary": "Open-Generative-AI launched on GitHub as an open-source, self-hosted alternative to commercial AI creative tools.",
-    "source_urls": [
-      "https://github.com/Anil-matcha/Open-Generative-AI"
-    ]
-  },
-  {
-    "date": "2026-05-17",
-    "title": "Private, On-Device AI Assistant Continues to Gain Traction on GitHub",
-    "summary": "Previously covered on 2026-05-12: OpenHuman — an AI assistant that runs entirely on your computer without sending data to a cloud — is still among GitHub's fastest-growing open-source projects days after launch.",
-    "source_urls": [
-      "https://github.com/tinyhumansai/openhuman"
-    ]
-  },
-  {
-    "date": "2026-05-17",
-    "title": "On-Device Multilingual Text-to-Speech Keeps Attracting Developers",
-    "summary": "Previously covered on 2026-05-14: Supertone's supertonic remains on GitHub's trending list — an on-device, multilingual text-to-speech tool with no internet requirement.",
-    "source_urls": [
-      "https://github.com/supertone-inc/supertonic"
-    ]
-  },
-  {
-    "date": "2026-05-17",
-    "title": "WiFi-Based Presence and Vital Sign Detection Remains a Trending Topic",
-    "summary": "Previously covered on 2026-05-15: RuView — the tool that converts standard WiFi router signals into a sensor for detecting people's presence, movement, and vital signs — remains in GitHub's trending section.",
-    "source_urls": [
-      "https://github.com/ruvnet/RuView"
-    ]
-  },
-  {
-    "date": "2026-05-17",
-    "title": "Codegraph: Pre-Indexing Your Codebase to Cut Claude Code's Token Overhead",
-    "summary": "Codegraph builds a structured knowledge graph from your project's source code before any AI session begins.",
-    "source_urls": [
-      "https://github.com/colbymchenry/codegraph"
-    ]
-  },
-  {
     "date": "2026-05-18",
     "title": "AI Agents Are Learning to Control Any Software You Already Use",
     "summary": "A research lab released CLI-Anything, a platform that wraps any software's command-line interface in a standard format that AI agents can read and operate.",
@@ -373,6 +333,46 @@
     "summary": "Jane Street, the quantitative trading firm known for its rigorous engineering culture, released magic-trace — a tool that uses Intel's hardware tracing capability to capture a complete, high-resolution recording of every function a program calls.",
     "source_urls": [
       "https://github.com/janestreet/magic-trace"
+    ]
+  },
+  {
+    "date": "2026-05-25",
+    "title": "Anthropic Published an Official Plugin Library Built for Knowledge Workers",
+    "summary": "Anthropic released a new open-source repository called knowledge-work-plugins — an officially managed collection of Claude plugins designed specifically for non-technical professionals: teachers, marketers, lawyers, designers, and managers who use AI in their daily work.",
+    "source_urls": [
+      "https://github.com/anthropics/knowledge-work-plugins"
+    ]
+  },
+  {
+    "date": "2026-05-25",
+    "title": "A New AI Model Was Built to Understand Financial Markets — Not Just Text About Them",
+    "summary": "Researchers released Kronos, a foundation model trained specifically on financial market data rather than general language.",
+    "source_urls": [
+      "https://github.com/shiyu-coder/Kronos"
+    ]
+  },
+  {
+    "date": "2026-05-25",
+    "title": "A New Tool Cuts AI Coding Assistant Token Usage — and Keeps Your Code Off the Cloud",
+    "summary": "CodeGraph is a pre-indexed knowledge graph for your codebase that works with Claude Code, Cursor, GitHub Copilot, and others.",
+    "source_urls": [
+      "https://github.com/colbymchenry/codegraph"
+    ]
+  },
+  {
+    "date": "2026-05-25",
+    "title": "A Free, Self-Hosted Home Security System Runs AI Directly on Your Own Hardware",
+    "summary": "Frigate is an open-source network video recorder that performs real-time object detection on your home hardware — no cloud subscription, no footage leaving your network.",
+    "source_urls": [
+      "https://github.com/blakeblackshear/frigate"
+    ]
+  },
+  {
+    "date": "2026-05-25",
+    "title": "pi: One Open-Source Toolkit Bundles a Coding Agent, Slack Bot, Web UI, and Local Model Support",
+    "summary": "A new open-source project called pi packages multiple AI agent components into a single repository: a coding agent CLI, a unified API layer that works across multiple LLM providers, both terminal and web interfaces, a Slack bot integration, and support for running open-source models locally via vLLM.",
+    "source_urls": [
+      "https://github.com/earendil-works/pi"
     ]
   }
 ]

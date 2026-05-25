@@ -1,82 +1,82 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "A free, open-source AI presentation tool just arrived to challenge paid favorites like Gamma — and NVIDIA dropped infrastructure for long AI-generated video.",
-  "fun_fact": "Jane Street, Wall Street's most engineering-obsessed trading firm, built magic-trace to debug nanosecond trading code.",
+  "teaser": "Anthropic just published a free plugin library built specifically for teachers, marketers, lawyers, and managers — not developers — and a new AI model arrived that speaks the language of financial markets.",
+  "fun_fact": null,
   "lead_story": {
-    "title": "A Free, Open-Source AI Presentation Generator Challenges Gamma and Beautiful.ai",
-    "what_happened": "Presenton launched on GitHub as a free, self-hostable alternative to paid AI presentation tools like Gamma, Beautiful.ai, and Decktopus. It includes an API, meaning it can be integrated into existing workflows or internal tools.",
-    "what_this_means": "If your team pays a monthly subscription for an AI slide tool, Presenton offers a no-cost alternative you can run on your own server. For marketers, teachers, and consultants who regularly produce presentations — especially in organizations with data privacy requirements — a self-hosted option is worth a serious look.",
+    "title": "Anthropic Published an Official Plugin Library Built for Knowledge Workers",
+    "what_happened": "Anthropic released a new open-source repository called knowledge-work-plugins — an officially managed collection of Claude plugins designed specifically for non-technical professionals: teachers, marketers, lawyers, designers, and managers who use AI in their daily work. It is separate from the developer-focused plugin directory and is publicly available on GitHub.",
+    "what_this_means": "If you use Claude at work, this is a direct signal from Anthropic that your use case matters as much as a software engineer's. Rather than adapting tools built for coders, you now have a curated, officially supported starting point built around the work you actually do.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["Tool", "Open Source", "Self-Hosted", "API Included"],
+      "headers": ["Profession", "Examples of what Claude can help with"],
       "rows": [
-        ["Presenton", "Yes", "Yes", "Yes"],
-        ["Gamma", "No", "No", "Limited"],
-        ["Beautiful.ai", "No", "No", "No"],
-        ["Decktopus", "No", "No", "Limited"]
+        ["Teachers", "Lesson planning, grading rubrics, student feedback drafts"],
+        ["Marketers", "Campaign briefs, copy drafts, audience segmentation research"],
+        ["Lawyers", "Contract review, clause comparison, research summaries"],
+        ["Designers", "Creative briefs, client feedback, project documentation"],
+        ["Managers", "Meeting summaries, status reports, project tracking"]
       ]
     },
-    "source_name": "GitHub",
-    "source_url": "https://github.com/presenton/presenton"
+    "source_name": "GitHub — anthropics/knowledge-work-plugins",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins"
   },
   "quick_hits": [
     {
-      "title": "754 Cybersecurity Skills Released for AI Coding Assistants",
-      "summary": "A developer published a library of 754 structured cybersecurity skills for AI coding agents, mapped to five major frameworks including MITRE ATT&CK and NIST. The skills work with Claude Code, GitHub Copilot, Cursor, Gemini CLI, and 20 other platforms. Security and IT teams who use AI assistants can now give those assistants a structured, framework-aligned security vocabulary out of the box.",
+      "title": "A New AI Model Was Built to Understand Financial Markets — Not Just Text About Them",
+      "summary": "Researchers released Kronos, a foundation model trained specifically on financial market data rather than general language. It is designed to recognize the patterns and signals that move prices — a different architecture from asking ChatGPT to summarize a chart. Financial analysts and investment professionals are the likely early users.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub — shiyu-coder/Kronos",
+      "source_url": "https://github.com/shiyu-coder/Kronos"
+    },
+    {
+      "title": "A New Tool Cuts AI Coding Assistant Token Usage — and Keeps Your Code Off the Cloud",
+      "summary": "CodeGraph is a pre-indexed knowledge graph for your codebase that works with Claude Code, Cursor, GitHub Copilot, and others. Instead of sending large chunks of your code to the AI on every query, it answers from a local index — using fewer tokens and fewer round trips. Everything stays on your machine, which matters when the code is sensitive.",
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Framework", "Focus Area"],
+        "headers": ["Aspect", "Without CodeGraph", "With CodeGraph"],
         "rows": [
-          ["MITRE ATT&CK", "Offensive tactics and techniques"],
-          ["NIST CSF 2.0", "Cybersecurity risk management"],
-          ["MITRE ATLAS", "AI-specific threats"],
-          ["D3FEND", "Defensive countermeasures"],
-          ["NIST AI RMF", "AI risk management"]
+          ["Token usage per query", "High (full codebase sent)", "Reduced (indexed lookups)"],
+          ["Data leaves your machine", "Yes (cloud API)", "No (100% local)"],
+          ["Compatible AI tools", "Varies by tool", "Claude Code, Cursor, Copilot, Codex"]
         ]
       },
-      "source_name": "GitHub",
-      "source_url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+      "source_name": "GitHub — colbymchenry/codegraph",
+      "source_url": "https://github.com/colbymchenry/codegraph"
     },
     {
-      "title": "NVIDIA's Research Lab Published Infrastructure for Long AI-Generated Video",
-      "summary": "NVIDIA NV Labs released LongLive 2.0, an open-source infrastructure package for generating extended, coherent AI video — the kind of long-form output current tools consistently struggle to produce. The release suggests the technical barriers to long AI video are falling quickly, which will matter for teams in marketing, education, and media production.",
+      "title": "A Free, Self-Hosted Home Security System Runs AI Directly on Your Own Hardware",
+      "summary": "Frigate is an open-source network video recorder that performs real-time object detection on your home hardware — no cloud subscription, no footage leaving your network. It works with standard IP cameras and can distinguish people, cars, and animals in real time. For anyone concerned about smart home privacy, it is a self-hosted alternative to Ring or Google Nest.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/NVlabs/LongLive"
-    },
-    {
-      "title": "The Interactive Code Map Tool Now Works With Every Major AI Coding Assistant",
-      "summary": "Previously covered on 2026-05-22: Understand-Anything turns any codebase into a navigable knowledge graph you can search and ask questions about. Since then, the project updated to explicitly support Claude Code, Codex, Cursor, GitHub Copilot, and Gemini CLI — meaning it now slots into whichever AI coding assistant your team already uses.",
-      "visual_type": null,
-      "visual_url": null,
-      "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/Lum1104/Understand-Anything"
+      "source_name": "GitHub — blakeblackshear/frigate",
+      "source_url": "https://github.com/blakeblackshear/frigate"
     }
   ],
   "under_the_hood": [
     {
-      "title": "Jane Street Open-Sourced a Tool That Records Every Function Call Your Program Makes",
-      "what_happened": "Jane Street, the quantitative trading firm known for its rigorous engineering culture, released magic-trace — a tool that uses Intel's hardware tracing capability to capture a complete, high-resolution recording of every function a program calls. You attach it to any running process and get a full execution timeline you can replay and explore.",
-      "why_it_matters": "Most debugging tools tell you a program crashed or slowed down. magic-trace tells you exactly what it was doing in the microseconds before — using CPU-level hardware tracing rather than slower software instrumentation. For developers chasing intermittent bugs or performance regressions, it turns a day-long investigation into a five-minute replay. The fact that Jane Street uses this internally for latency-sensitive trading code is a meaningful quality signal.",
-      "code_example": "# Attach to a running process by PID\nmagic-trace attach -pid 12345\n\n# Trace a command from the start\nmagic-trace run ./my-server -- --port 8080\n\n# Result opens automatically in Perfetto trace viewer",
+      "title": "pi: One Open-Source Toolkit Bundles a Coding Agent, Slack Bot, Web UI, and Local Model Support",
+      "what_happened": "A new open-source project called pi packages multiple AI agent components into a single repository: a coding agent CLI, a unified API layer that works across multiple LLM providers, both terminal and web interfaces, a Slack bot integration, and support for running open-source models locally via vLLM. It is designed for developers who want one coherent stack rather than assembling disparate libraries.",
+      "why_it_matters": "Building internal AI agent infrastructure usually means stitching together five or six different libraries. pi consolidates that into one codebase — useful for teams experimenting with deploying AI agents inside a company workflow or product, especially if you want to support both cloud models and self-hosted open-source ones from the same interface.",
+      "code_example": null,
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Approach", "Resolution", "Overhead", "Code Change Needed"],
+        "headers": ["Component", "What it does"],
         "rows": [
-          ["magic-trace (Intel PT)", "Nanosecond", "Low", "No"],
-          ["strace / ltrace", "Microsecond", "High", "No"],
-          ["perf sampling", "Millisecond", "Low", "No"],
-          ["printf debugging", "Manual", "None", "Yes"]
+          ["Coding agent CLI", "Terminal-based AI coding assistant"],
+          ["Unified LLM API", "Single interface across OpenAI, Claude, Gemini, and local models"],
+          ["TUI & Web UI", "Both terminal and browser interfaces included out of the box"],
+          ["Slack bot", "Deploys the agent directly into your team's Slack workspace"],
+          ["vLLM pods", "Run open-source models on your own GPU infrastructure"]
         ]
       },
-      "source_name": "GitHub",
-      "source_url": "https://github.com/janestreet/magic-trace"
+      "source_name": "GitHub — earendil-works/pi",
+      "source_url": "https://github.com/earendil-works/pi"
     }
   ]
 }
