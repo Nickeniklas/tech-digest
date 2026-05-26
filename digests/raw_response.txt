@@ -1,82 +1,95 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Anthropic just published a free plugin library built specifically for teachers, marketers, lawyers, and managers — not developers — and a new AI model arrived that speaks the language of financial markets.",
-  "fun_fact": null,
+  "teaser": "Garry Tan's personal AI setup is now public — and it runs like a whole business team, not a single assistant.",
+  "fun_fact": "A new tool targets the handful of phrases that make nearly all AI-generated writing sound identical.",
   "lead_story": {
-    "title": "Anthropic Published an Official Plugin Library Built for Knowledge Workers",
-    "what_happened": "Anthropic released a new open-source repository called knowledge-work-plugins — an officially managed collection of Claude plugins designed specifically for non-technical professionals: teachers, marketers, lawyers, designers, and managers who use AI in their daily work. It is separate from the developer-focused plugin directory and is publicly available on GitHub.",
-    "what_this_means": "If you use Claude at work, this is a direct signal from Anthropic that your use case matters as much as a software engineer's. Rather than adapting tools built for coders, you now have a curated, officially supported starting point built around the work you actually do.",
+    "title": "Garry Tan's Personal Claude Code Setup Is Now Public",
+    "what_happened": "Y Combinator president Garry Tan published gstack, his full Claude Code configuration, on GitHub. It includes 23 specialized tools, each assigned a distinct professional role: CEO, Designer, Engineering Manager, Release Manager, Documentation Engineer, and QA tester.",
+    "what_this_means": "This offers a direct look at how a prominent Silicon Valley executive structures AI assistance — treating it not as one generalist helper but as a coordinated team of specialists. For professionals using AI tools, the pattern of assigning distinct roles to different AI configurations is likely to influence how non-coding platforms are designed next.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["Profession", "Examples of what Claude can help with"],
+      "headers": ["Role", "Responsibility"],
       "rows": [
-        ["Teachers", "Lesson planning, grading rubrics, student feedback drafts"],
-        ["Marketers", "Campaign briefs, copy drafts, audience segmentation research"],
-        ["Lawyers", "Contract review, clause comparison, research summaries"],
-        ["Designers", "Creative briefs, client feedback, project documentation"],
-        ["Managers", "Meeting summaries, status reports, project tracking"]
+        ["CEO", "Strategic decisions and priorities"],
+        ["Designer", "UX, interface, and visual choices"],
+        ["Eng Manager", "Development coordination"],
+        ["Release Manager", "Deployment and versioning"],
+        ["Doc Engineer", "Documentation and technical writing"],
+        ["QA", "Quality assurance and testing"]
       ]
     },
-    "source_name": "GitHub — anthropics/knowledge-work-plugins",
-    "source_url": "https://github.com/anthropics/knowledge-work-plugins"
+    "source_name": "GitHub",
+    "source_url": "https://github.com/garrytan/gstack"
   },
   "quick_hits": [
     {
-      "title": "A New AI Model Was Built to Understand Financial Markets — Not Just Text About Them",
-      "summary": "Researchers released Kronos, a foundation model trained specifically on financial market data rather than general language. It is designed to recognize the patterns and signals that move prices — a different architecture from asking ChatGPT to summarize a chart. Financial analysts and investment professionals are the likely early users.",
+      "title": "A New Tool Removes AI Tells from Your Writing",
+      "summary": "Developer Hardik Pandya published stop-slop, a skill file for AI writing assistants that strips out the phrases and patterns that make AI-generated prose immediately recognizable. If you use AI to help draft emails, reports, or content, it rewrites the output to sound more naturally human — without manual editing on your part. It works with Claude Code and similar tools.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub — shiyu-coder/Kronos",
-      "source_url": "https://github.com/shiyu-coder/Kronos"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/hardikpandya/stop-slop"
     },
     {
-      "title": "A New Tool Cuts AI Coding Assistant Token Usage — and Keeps Your Code Off the Cloud",
-      "summary": "CodeGraph is a pre-indexed knowledge graph for your codebase that works with Claude Code, Cursor, GitHub Copilot, and others. Instead of sending large chunks of your code to the AI on every query, it answers from a local index — using fewer tokens and fewer round trips. Everything stays on your machine, which matters when the code is sensitive.",
-      "visual_type": "table",
-      "visual_url": null,
-      "visual_data": {
-        "headers": ["Aspect", "Without CodeGraph", "With CodeGraph"],
-        "rows": [
-          ["Token usage per query", "High (full codebase sent)", "Reduced (indexed lookups)"],
-          ["Data leaves your machine", "Yes (cloud API)", "No (100% local)"],
-          ["Compatible AI tools", "Varies by tool", "Claude Code, Cursor, Copilot, Codex"]
-        ]
-      },
-      "source_name": "GitHub — colbymchenry/codegraph",
-      "source_url": "https://github.com/colbymchenry/codegraph"
-    },
-    {
-      "title": "A Free, Self-Hosted Home Security System Runs AI Directly on Your Own Hardware",
-      "summary": "Frigate is an open-source network video recorder that performs real-time object detection on your home hardware — no cloud subscription, no footage leaving your network. It works with standard IP cameras and can distinguish people, cars, and animals in real time. For anyone concerned about smart home privacy, it is a self-hosted alternative to Ring or Google Nest.",
+      "title": "Give Your AI Assistant Better Aesthetic Judgment",
+      "summary": "Taste-Skill is a new configuration file for AI assistants that pushes them toward more refined, specific outputs rather than generic, template-looking results. The project targets a familiar frustration: AI tools often produce technically correct but creatively flat work — marketing copy that sounds like every other AI draft, or layouts that look like a default theme. Works with Claude Code, Cursor, and similar tools.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub — blakeblackshear/frigate",
-      "source_url": "https://github.com/blakeblackshear/frigate"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/Leonxlnx/taste-skill"
+    },
+    {
+      "title": "The Open-Source Document Manager That Replaces Your Filing Cabinet",
+      "summary": "Paperless-ngx — a free, self-hosted document management system — is trending on GitHub this week. It lets you scan, index, and search all your documents from one interface, stored entirely on your own hardware. It's a practical option for professionals who want to cut cloud storage costs or keep sensitive documents off third-party servers.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub",
+      "source_url": "https://github.com/paperless-ngx/paperless-ngx"
+    },
+    {
+      "title": "A Self-Hosted AI Companion Can Now Chat, Remember You, and Play Games",
+      "summary": "Airi is an open-source AI companion system you can run entirely on your own hardware. It supports real-time voice conversations, can play Minecraft and Factorio autonomously, and runs on web, macOS, and Windows. Unlike cloud AI assistants, all data stays local — and it's designed to feel like a persistent, personalizable presence rather than a stateless chat interface.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub",
+      "source_url": "https://github.com/moeru-ai/airi"
     }
   ],
   "under_the_hood": [
     {
-      "title": "pi: One Open-Source Toolkit Bundles a Coding Agent, Slack Bot, Web UI, and Local Model Support",
-      "what_happened": "A new open-source project called pi packages multiple AI agent components into a single repository: a coding agent CLI, a unified API layer that works across multiple LLM providers, both terminal and web interfaces, a Slack bot integration, and support for running open-source models locally via vLLM. It is designed for developers who want one coherent stack rather than assembling disparate libraries.",
-      "why_it_matters": "Building internal AI agent infrastructure usually means stitching together five or six different libraries. pi consolidates that into one codebase — useful for teams experimenting with deploying AI agents inside a company workflow or product, especially if you want to support both cloud models and self-hosted open-source ones from the same interface.",
+      "title": "ECC: An Agent Harness That Adds Memory, Security, and Specialization to AI Coding Tools",
+      "what_happened": "A developer published ECC — a performance optimization layer for AI coding agents including Claude Code, GitHub Copilot, and Cursor. It adds persistent memory across sessions, security guardrails, task-specific 'instincts,' and a research-first mode that gathers context before taking action.",
+      "why_it_matters": "Most AI coding agents reset context every session, have no built-in security constraints, and treat every task the same way regardless of domain. ECC layers all three capabilities onto existing agents without replacing them — making their behavior more consistent and predictable for teams that rely on them in production workflows.",
       "code_example": null,
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Component", "What it does"],
+        "headers": ["Capability", "Standard Agent", "With ECC"],
         "rows": [
-          ["Coding agent CLI", "Terminal-based AI coding assistant"],
-          ["Unified LLM API", "Single interface across OpenAI, Claude, Gemini, and local models"],
-          ["TUI & Web UI", "Both terminal and browser interfaces included out of the box"],
-          ["Slack bot", "Deploys the agent directly into your team's Slack workspace"],
-          ["vLLM pods", "Run open-source models on your own GPU infrastructure"]
+          ["Memory", "Session only", "Persistent across sessions"],
+          ["Security", "None built-in", "Research-first guardrails"],
+          ["Specialization", "General purpose", "Task-specific instincts"],
+          ["Context gathering", "Reactive", "Proactive research mode"]
         ]
       },
-      "source_name": "GitHub — earendil-works/pi",
-      "source_url": "https://github.com/earendil-works/pi"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/affaan-m/ECC"
+    },
+    {
+      "title": "cmux: A Dedicated macOS Terminal Built for Running Multiple AI Agents at Once",
+      "what_happened": "manaflow-ai released cmux, a macOS terminal built on the Ghostty engine with vertical tabs and real-time notification support designed specifically for AI coding agents. It's aimed at developers managing several AI agents running in parallel, each handling a different task.",
+      "why_it_matters": "Standard terminals weren't built for monitoring multiple concurrent AI agents — they get cluttered fast when each agent is producing its own output stream. cmux treats AI agents as first-class workflow citizens, with dedicated UI affordances that general-purpose terminals don't offer. It's macOS-only for now, but it signals a broader shift: as AI agents multiply, so will the tools for managing them.",
+      "code_example": null,
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub",
+      "source_url": "https://github.com/manaflow-ai/cmux"
     }
   ]
 }

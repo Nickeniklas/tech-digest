@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-05-18",
-    "title": "AI Agents Are Learning to Control Any Software You Already Use",
-    "summary": "A research lab released CLI-Anything, a platform that wraps any software's command-line interface in a standard format that AI agents can read and operate.",
-    "source_urls": [
-      "https://github.com/HKUDS/CLI-Anything"
-    ]
-  },
-  {
-    "date": "2026-05-18",
-    "title": "A Free Dashboard Now Tracks Private Jets, Spy Satellites, and Seismic Events in One Place",
-    "summary": "Shadowbroker is a new open-source intelligence platform that pulls real-time data on private aircraft, orbiting satellites, and seismic activity into a single unified interface.",
-    "source_urls": [
-      "https://github.com/BigBodyCobain/Shadowbroker"
-    ]
-  },
-  {
-    "date": "2026-05-18",
-    "title": "Run AI on Your Own Computer — No Cloud Required, No Subscription",
-    "summary": "DreamServer is a new open-source platform that bundles AI chat, voice, image generation, agents, and workflow automation into a single package that runs entirely on your own machine.",
-    "source_urls": [
-      "https://github.com/Light-Heart-Labs/DreamServer"
-    ]
-  },
-  {
-    "date": "2026-05-18",
-    "title": "Open-Source Voice Agent Platform Launches for Anyone Who Wants to Build With Voice AI",
-    "summary": "Dograh launched as a free, open-source foundation for building voice-powered AI assistants and agents.",
-    "source_urls": [
-      "https://github.com/dograh-hq/dograh"
-    ]
-  },
-  {
-    "date": "2026-05-18",
-    "title": "Microsoft Publishes a Free 12-Lesson Course on Building AI Agents",
-    "summary": "Microsoft released a beginner-friendly, code-first course on GitHub covering how AI agents work and how to build them, across 12 structured lessons.",
-    "source_urls": [
-      "https://github.com/microsoft/ai-agents-for-beginners"
-    ]
-  },
-  {
-    "date": "2026-05-18",
-    "title": "A Verified Skill Registry Solves the Trust Problem for AI Coding Agents",
-    "summary": "Tech Leads Club launched agent-skills — a curated, security-reviewed GitHub registry of reusable skills for AI coding agents including Claude Code, Cursor, Copilot, and Antigravity.",
-    "source_urls": [
-      "https://github.com/tech-leads-club/agent-skills"
-    ]
-  },
-  {
-    "date": "2026-05-18",
-    "title": "An AI Penetration Tester Now Reads Your Code and Attacks It — to Find Holes Before Attackers Do",
-    "summary": "Keygraph released Shannon Lite, an autonomous AI security tool that reads a web application's source code, maps likely attack paths, and executes real exploits to confirm whether vulnerabilities exist — before they ever reach production.",
-    "source_urls": [
-      "https://github.com/KeygraphHQ/shannon"
-    ]
-  },
-  {
     "date": "2026-05-19",
     "title": "12 Principles Published for Building AI Agents That Work in the Real World",
     "summary": "A framework called 12-Factor Agents was released on GitHub — 12 clear principles for building AI-powered software reliable enough to hand to real customers, not just demonstrate in a controlled environment.",
@@ -373,6 +317,62 @@
     "summary": "A new open-source project called pi packages multiple AI agent components into a single repository: a coding agent CLI, a unified API layer that works across multiple LLM providers, both terminal and web interfaces, a Slack bot integration, and support for running open-source models locally via vLLM.",
     "source_urls": [
       "https://github.com/earendil-works/pi"
+    ]
+  },
+  {
+    "date": "2026-05-26",
+    "title": "Garry Tan's Personal Claude Code Setup Is Now Public",
+    "summary": "Y Combinator president Garry Tan published gstack, his full Claude Code configuration, on GitHub.",
+    "source_urls": [
+      "https://github.com/garrytan/gstack"
+    ]
+  },
+  {
+    "date": "2026-05-26",
+    "title": "A New Tool Removes AI Tells from Your Writing",
+    "summary": "Developer Hardik Pandya published stop-slop, a skill file for AI writing assistants that strips out the phrases and patterns that make AI-generated prose immediately recognizable.",
+    "source_urls": [
+      "https://github.com/hardikpandya/stop-slop"
+    ]
+  },
+  {
+    "date": "2026-05-26",
+    "title": "Give Your AI Assistant Better Aesthetic Judgment",
+    "summary": "Taste-Skill is a new configuration file for AI assistants that pushes them toward more refined, specific outputs rather than generic, template-looking results.",
+    "source_urls": [
+      "https://github.com/Leonxlnx/taste-skill"
+    ]
+  },
+  {
+    "date": "2026-05-26",
+    "title": "The Open-Source Document Manager That Replaces Your Filing Cabinet",
+    "summary": "Paperless-ngx — a free, self-hosted document management system — is trending on GitHub this week.",
+    "source_urls": [
+      "https://github.com/paperless-ngx/paperless-ngx"
+    ]
+  },
+  {
+    "date": "2026-05-26",
+    "title": "A Self-Hosted AI Companion Can Now Chat, Remember You, and Play Games",
+    "summary": "Airi is an open-source AI companion system you can run entirely on your own hardware.",
+    "source_urls": [
+      "https://github.com/moeru-ai/airi"
+    ]
+  },
+  {
+    "date": "2026-05-26",
+    "title": "ECC: An Agent Harness That Adds Memory, Security, and Specialization to AI Coding Tools",
+    "summary": "A developer published ECC — a performance optimization layer for AI coding agents including Claude Code, GitHub Copilot, and Cursor.",
+    "source_urls": [
+      "https://github.com/affaan-m/ECC"
+    ]
+  },
+  {
+    "date": "2026-05-26",
+    "title": "cmux: A Dedicated macOS Terminal Built for Running Multiple AI Agents at Once",
+    "summary": "manaflow-ai released cmux, a macOS terminal built on the Ghostty engine with vertical tabs and real-time notification support designed specifically for AI coding agents.",
+    "source_urls": [
+      "https://github.com/manaflow-ai/cmux"
     ]
   }
 ]
