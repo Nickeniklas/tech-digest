@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-05-19",
-    "title": "12 Principles Published for Building AI Agents That Work in the Real World",
-    "summary": "A framework called 12-Factor Agents was released on GitHub — 12 clear principles for building AI-powered software reliable enough to hand to real customers, not just demonstrate in a controlled environment.",
-    "source_urls": [
-      "https://github.com/humanlayer/12-factor-agents"
-    ]
-  },
-  {
-    "date": "2026-05-19",
-    "title": "A Chromium Browser That Passes Every Bot Detection Test",
-    "summary": "CloakBrowser is a new open-source browser built on Chromium that patches its own fingerprint at the source code level — making it indistinguishable from a real user to automated detection systems.",
-    "source_urls": [
-      "https://github.com/CloakHQ/CloakBrowser"
-    ]
-  },
-  {
-    "date": "2026-05-19",
-    "title": "NVIDIA's Research Lab Released a Faster High-Resolution Image Generator",
-    "summary": "NVIDIA NV Labs published Sana, an open-source image synthesis model that generates high-resolution images using an architecture called a Linear Diffusion Transformer — designed to be significantly faster and less computationally demanding than existing image generators.",
-    "source_urls": [
-      "https://github.com/NVlabs/Sana"
-    ]
-  },
-  {
-    "date": "2026-05-19",
-    "title": "Free AI Stock Analysis Runs Daily on Global Markets — No Subscription Needed",
-    "summary": "A developer published an automated stock analysis tool that uses a language model to review A-share, H-share, and US market data every day and push results directly to your device.",
-    "source_urls": [
-      "https://github.com/ZhuLinsen/daily_stock_analysis"
-    ]
-  },
-  {
-    "date": "2026-05-19",
-    "title": "Free Academic Research Skills Released for Claude Code",
-    "summary": "A new open-source collection of skills for Claude Code covers the full academic research cycle — from initial research and first draft through peer review, revision, and final submission.",
-    "source_urls": [
-      "https://github.com/Imbad0202/academic-research-skills"
-    ]
-  },
-  {
-    "date": "2026-05-19",
-    "title": "llama.cpp: The C++ Engine That Powers Most Local AI Tools",
-    "summary": "llama.",
-    "source_urls": [
-      "https://github.com/ggml-org/llama.cpp"
-    ]
-  },
-  {
     "date": "2026-05-20",
     "title": "Anthropic Publishes an Official Directory of Claude Code Plugins",
     "summary": "Anthropic released a new GitHub repository called claude-plugins-official — a curated, Anthropic-managed directory of high-quality plugins for Claude Code, the company's AI coding assistant.",
@@ -373,6 +325,54 @@
     "summary": "manaflow-ai released cmux, a macOS terminal built on the Ghostty engine with vertical tabs and real-time notification support designed specifically for AI coding agents.",
     "source_urls": [
       "https://github.com/manaflow-ai/cmux"
+    ]
+  },
+  {
+    "date": "2026-05-27",
+    "title": "Your AI Assistant Can Now Remember Yesterday's Work",
+    "summary": "A developer published claude-mem, a free tool that captures everything an AI agent does during a session, compresses it, and automatically injects the relevant context the next time you open a conversation.",
+    "source_urls": [
+      "https://github.com/thedotmack/claude-mem"
+    ]
+  },
+  {
+    "date": "2026-05-27",
+    "title": "An Open-Source CRM Built for the AI Era Is Gaining Traction",
+    "summary": "Twenty is a free, open-source alternative to Salesforce redesigned from the ground up with AI in mind — full contact management, pipelines, notes, and tasks, no enterprise price tag.",
+    "source_urls": [
+      "https://github.com/twentyhq/twenty"
+    ]
+  },
+  {
+    "date": "2026-05-27",
+    "title": "Free Web Domains — No Catch, No Subscription",
+    "summary": "DigitalPlat FreeDomain gives anyone a free web domain with no strings attached.",
+    "source_urls": [
+      "https://github.com/DigitalPlatDev/FreeDomain"
+    ]
+  },
+  {
+    "date": "2026-05-27",
+    "title": "A Community Directory of the Best Free Apps Is Trending on GitHub",
+    "summary": "Awesome Free Apps is a curated, community-maintained list of the best no-cost software for PC and mobile, organized by category.",
+    "source_urls": [
+      "https://github.com/Axorax/awesome-free-apps"
+    ]
+  },
+  {
+    "date": "2026-05-27",
+    "title": "A Free Stock Tracker Offers Real-Time Market Data Without a Subscription",
+    "summary": "OpenStock is an open-source platform with real-time prices, personalized alerts, and detailed company profiles — permanently free.",
+    "source_urls": [
+      "https://github.com/Open-Dev-Society/OpenStock"
+    ]
+  },
+  {
+    "date": "2026-05-27",
+    "title": "A Japanese Tech Firm Open-Sourced a Physics Solver for 3D Simulations",
+    "summary": "ST Technology released ppf-contact-solver, an open-source library for simulating how 3D objects physically interact — cloth folding without clipping, solids compressing and bouncing, ropes bending and tangling.",
+    "source_urls": [
+      "https://github.com/st-tech/ppf-contact-solver"
     ]
   }
 ]

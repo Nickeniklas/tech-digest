@@ -1,95 +1,81 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Garry Tan's personal AI setup is now public — and it runs like a whole business team, not a single assistant.",
-  "fun_fact": "A new tool targets the handful of phrases that make nearly all AI-generated writing sound identical.",
+  "teaser": "A new open-source tool lets your AI assistant remember everything from previous sessions — so it picks up right where you left off, every time.",
+  "fun_fact": "The tool compresses your session history with AI and injects only the relevant parts back in — no bloated context, no forgotten projects.",
   "lead_story": {
-    "title": "Garry Tan's Personal Claude Code Setup Is Now Public",
-    "what_happened": "Y Combinator president Garry Tan published gstack, his full Claude Code configuration, on GitHub. It includes 23 specialized tools, each assigned a distinct professional role: CEO, Designer, Engineering Manager, Release Manager, Documentation Engineer, and QA tester.",
-    "what_this_means": "This offers a direct look at how a prominent Silicon Valley executive structures AI assistance — treating it not as one generalist helper but as a coordinated team of specialists. For professionals using AI tools, the pattern of assigning distinct roles to different AI configurations is likely to influence how non-coding platforms are designed next.",
+    "title": "Your AI Assistant Can Now Remember Yesterday's Work",
+    "what_happened": "A developer published claude-mem, a free tool that captures everything an AI agent does during a session, compresses it, and automatically injects the relevant context the next time you open a conversation. It works with Claude Code, GitHub Copilot, Codex, Gemini, and more.",
+    "what_this_means": "Most AI assistants start fresh every session — you have to re-explain your project, your preferences, and where you left off. With persistent memory like this, a teacher could return to a half-built lesson plan, a marketer could pick up a campaign brief, or a lawyer could continue drafting a document without re-briefing the tool from scratch.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["Role", "Responsibility"],
+      "headers": ["Scenario", "Without Memory", "With claude-mem"],
       "rows": [
-        ["CEO", "Strategic decisions and priorities"],
-        ["Designer", "UX, interface, and visual choices"],
-        ["Eng Manager", "Development coordination"],
-        ["Release Manager", "Deployment and versioning"],
-        ["Doc Engineer", "Documentation and technical writing"],
-        ["QA", "Quality assurance and testing"]
+        ["New session start", "Blank slate — full re-briefing needed", "Picks up where you left off"],
+        ["Long-running project", "Context lost every day", "History compressed and preserved"],
+        ["Multiple AI tools", "Each tool starts fresh", "Works across 6+ AI tools"],
+        ["Team handoffs", "Manual notes required", "Session logs auto-captured"]
       ]
     },
     "source_name": "GitHub",
-    "source_url": "https://github.com/garrytan/gstack"
+    "source_url": "https://github.com/thedotmack/claude-mem"
   },
   "quick_hits": [
     {
-      "title": "A New Tool Removes AI Tells from Your Writing",
-      "summary": "Developer Hardik Pandya published stop-slop, a skill file for AI writing assistants that strips out the phrases and patterns that make AI-generated prose immediately recognizable. If you use AI to help draft emails, reports, or content, it rewrites the output to sound more naturally human — without manual editing on your part. It works with Claude Code and similar tools.",
+      "title": "An Open-Source CRM Built for the AI Era Is Gaining Traction",
+      "summary": "Twenty is a free, open-source alternative to Salesforce redesigned from the ground up with AI in mind — full contact management, pipelines, notes, and tasks, no enterprise price tag. If your team has outgrown spreadsheets but can't justify Salesforce, it's worth a look.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/hardikpandya/stop-slop"
+      "source_url": "https://github.com/twentyhq/twenty"
     },
     {
-      "title": "Give Your AI Assistant Better Aesthetic Judgment",
-      "summary": "Taste-Skill is a new configuration file for AI assistants that pushes them toward more refined, specific outputs rather than generic, template-looking results. The project targets a familiar frustration: AI tools often produce technically correct but creatively flat work — marketing copy that sounds like every other AI draft, or layouts that look like a default theme. Works with Claude Code, Cursor, and similar tools.",
+      "title": "Free Web Domains — No Catch, No Subscription",
+      "summary": "DigitalPlat FreeDomain gives anyone a free web domain with no strings attached. For teachers building classroom sites, designers hosting portfolios, or marketers running small campaigns, domain registration costs have always been a small but real barrier — this project removes it entirely.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/Leonxlnx/taste-skill"
+      "source_url": "https://github.com/DigitalPlatDev/FreeDomain"
     },
     {
-      "title": "The Open-Source Document Manager That Replaces Your Filing Cabinet",
-      "summary": "Paperless-ngx — a free, self-hosted document management system — is trending on GitHub this week. It lets you scan, index, and search all your documents from one interface, stored entirely on your own hardware. It's a practical option for professionals who want to cut cloud storage costs or keep sensitive documents off third-party servers.",
+      "title": "A Community Directory of the Best Free Apps Is Trending on GitHub",
+      "summary": "Awesome Free Apps is a curated, community-maintained list of the best no-cost software for PC and mobile, organized by category. It's a practical shortcut for anyone looking to replace expensive tools without spending hours comparing alternatives.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/paperless-ngx/paperless-ngx"
+      "source_url": "https://github.com/Axorax/awesome-free-apps"
     },
     {
-      "title": "A Self-Hosted AI Companion Can Now Chat, Remember You, and Play Games",
-      "summary": "Airi is an open-source AI companion system you can run entirely on your own hardware. It supports real-time voice conversations, can play Minecraft and Factorio autonomously, and runs on web, macOS, and Windows. Unlike cloud AI assistants, all data stays local — and it's designed to feel like a persistent, personalizable presence rather than a stateless chat interface.",
+      "title": "A Free Stock Tracker Offers Real-Time Market Data Without a Subscription",
+      "summary": "OpenStock is an open-source platform with real-time prices, personalized alerts, and detailed company profiles — permanently free. It's aimed at investors and financial professionals who want serious market data without paying Bloomberg-level prices.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/moeru-ai/airi"
+      "source_url": "https://github.com/Open-Dev-Society/OpenStock"
     }
   ],
   "under_the_hood": [
     {
-      "title": "ECC: An Agent Harness That Adds Memory, Security, and Specialization to AI Coding Tools",
-      "what_happened": "A developer published ECC — a performance optimization layer for AI coding agents including Claude Code, GitHub Copilot, and Cursor. It adds persistent memory across sessions, security guardrails, task-specific 'instincts,' and a research-first mode that gathers context before taking action.",
-      "why_it_matters": "Most AI coding agents reset context every session, have no built-in security constraints, and treat every task the same way regardless of domain. ECC layers all three capabilities onto existing agents without replacing them — making their behavior more consistent and predictable for teams that rely on them in production workflows.",
+      "title": "A Japanese Tech Firm Open-Sourced a Physics Solver for 3D Simulations",
+      "what_happened": "ST Technology released ppf-contact-solver, an open-source library for simulating how 3D objects physically interact — cloth folding without clipping, solids compressing and bouncing, ropes bending and tangling. This kind of code normally lives inside expensive proprietary game engines or university research software.",
+      "why_it_matters": "Accurate physics simulation has historically required either costly licensed software or years of specialization to build. An open-source, well-engineered contact solver lowers the barrier for developers building games, visual effects tools, robotics environments, and medical training simulations. ST Technology is a firm with a reputation for rigorous engineering — an open license from them carries weight.",
       "code_example": null,
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Capability", "Standard Agent", "With ECC"],
+        "headers": ["Object Type", "Physical Behaviour Simulated", "Supported"],
         "rows": [
-          ["Memory", "Session only", "Persistent across sessions"],
-          ["Security", "None built-in", "Research-first guardrails"],
-          ["Specialization", "General purpose", "Task-specific instincts"],
-          ["Context gathering", "Reactive", "Proactive research mode"]
+          ["Shells (cloth, fabric)", "Folding and wrinkling without clipping", "Yes"],
+          ["Solids (rigid and soft bodies)", "Collision and compression", "Yes"],
+          ["Rods (cables, ropes)", "Bending and contact", "Yes"]
         ]
       },
       "source_name": "GitHub",
-      "source_url": "https://github.com/affaan-m/ECC"
-    },
-    {
-      "title": "cmux: A Dedicated macOS Terminal Built for Running Multiple AI Agents at Once",
-      "what_happened": "manaflow-ai released cmux, a macOS terminal built on the Ghostty engine with vertical tabs and real-time notification support designed specifically for AI coding agents. It's aimed at developers managing several AI agents running in parallel, each handling a different task.",
-      "why_it_matters": "Standard terminals weren't built for monitoring multiple concurrent AI agents — they get cluttered fast when each agent is producing its own output stream. cmux treats AI agents as first-class workflow citizens, with dedicated UI affordances that general-purpose terminals don't offer. It's macOS-only for now, but it signals a broader shift: as AI agents multiply, so will the tools for managing them.",
-      "code_example": null,
-      "visual_type": null,
-      "visual_url": null,
-      "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/manaflow-ai/cmux"
+      "source_url": "https://github.com/st-tech/ppf-contact-solver"
     }
   ]
 }
