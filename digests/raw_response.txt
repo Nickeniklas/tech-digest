@@ -1,81 +1,73 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "A new open-source tool lets your AI assistant remember everything from previous sessions — so it picks up right where you left off, every time.",
-  "fun_fact": "The tool compresses your session history with AI and injects only the relevant parts back in — no bloated context, no forgotten projects.",
+  "teaser": "A free tool now turns a text prompt into a polished short video — no editing skills required.",
+  "fun_fact": "MoneyPrinterTurbo is named after the 'money printer go brrr' meme — but it prints videos.",
   "lead_story": {
-    "title": "Your AI Assistant Can Now Remember Yesterday's Work",
-    "what_happened": "A developer published claude-mem, a free tool that captures everything an AI agent does during a session, compresses it, and automatically injects the relevant context the next time you open a conversation. It works with Claude Code, GitHub Copilot, Codex, Gemini, and more.",
-    "what_this_means": "Most AI assistants start fresh every session — you have to re-explain your project, your preferences, and where you left off. With persistent memory like this, a teacher could return to a half-built lesson plan, a marketer could pick up a campaign brief, or a lawyer could continue drafting a document without re-briefing the tool from scratch.",
+    "title": "A Free Tool Can Build a Complete Short Video From a Single Text Prompt",
+    "what_happened": "MoneyPrinterTurbo is an open-source project that uses AI to convert a text idea into a finished short-form video — with narration, subtitles, and visuals — automatically. It runs on your own machine and works with most major AI providers.",
+    "what_this_means": "For marketers, educators, and content creators, this compresses what used to take hours of editing into a single prompt. If you produce social media clips, course videos, or explainer content, this is worth a look.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["Scenario", "Without Memory", "With claude-mem"],
+      "headers": ["Step", "Traditional workflow", "With MoneyPrinterTurbo"],
       "rows": [
-        ["New session start", "Blank slate — full re-briefing needed", "Picks up where you left off"],
-        ["Long-running project", "Context lost every day", "History compressed and preserved"],
-        ["Multiple AI tools", "Each tool starts fresh", "Works across 6+ AI tools"],
-        ["Team handoffs", "Manual notes required", "Session logs auto-captured"]
+        ["Script", "30–60 min manual writing", "Generated from your prompt"],
+        ["Voiceover", "15–30 min recording or outsourcing", "AI-generated automatically"],
+        ["Subtitles", "20–40 min manual sync", "Generated and synced automatically"],
+        ["Assembly", "1–2 hours in a video editor", "Fully automated"]
       ]
     },
-    "source_name": "GitHub",
-    "source_url": "https://github.com/thedotmack/claude-mem"
+    "source_name": "GitHub Trending",
+    "source_url": "https://github.com/harry0703/MoneyPrinterTurbo"
   },
   "quick_hits": [
     {
-      "title": "An Open-Source CRM Built for the AI Era Is Gaining Traction",
-      "summary": "Twenty is a free, open-source alternative to Salesforce redesigned from the ground up with AI in mind — full contact management, pipelines, notes, and tasks, no enterprise price tag. If your team has outgrown spreadsheets but can't justify Salesforce, it's worth a look.",
+      "title": "A New Tool Removes Content Restrictions from AI Models Automatically",
+      "summary": "A developer released Heretic, an open-source tool that strips content filters from AI language models without requiring any technical knowledge or model modification. It works fully automatically. This signals how difficult it is to enforce hard limits on open-source AI systems — and will likely reignite the debate about what AI should and shouldn't do.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/twentyhq/twenty"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/p-e-w/heretic"
     },
     {
-      "title": "Free Web Domains — No Catch, No Subscription",
-      "summary": "DigitalPlat FreeDomain gives anyone a free web domain with no strings attached. For teachers building classroom sites, designers hosting portfolios, or marketers running small campaigns, domain registration costs have always been a small but real barrier — this project removes it entirely.",
+      "title": "A Skills Framework Gives AI Coding Agents a Structured Development Methodology",
+      "summary": "Superpowers is a new open-source project that packages a structured set of skills and workflows for AI coding agents. Rather than figuring out how to tackle each task from scratch, agents draw from a defined playbook. It is designed to work alongside tools like Claude Code and Cursor.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/DigitalPlatDev/FreeDomain"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/obra/superpowers"
     },
     {
-      "title": "A Community Directory of the Best Free Apps Is Trending on GitHub",
-      "summary": "Awesome Free Apps is a curated, community-maintained list of the best no-cost software for PC and mobile, organized by category. It's a practical shortcut for anyone looking to replace expensive tools without spending hours comparing alternatives.",
+      "title": "iii Promises Real-Time Visibility Into Every Service in Your System",
+      "summary": "A project called iii appeared on GitHub Trending, offering the ability to compose, extend, and observe software services in real time. For developers running complex systems with many moving parts, live observability — knowing exactly what is happening and where — is a persistent challenge. iii aims to make that problem more manageable.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/Axorax/awesome-free-apps"
-    },
-    {
-      "title": "A Free Stock Tracker Offers Real-Time Market Data Without a Subscription",
-      "summary": "OpenStock is an open-source platform with real-time prices, personalized alerts, and detailed company profiles — permanently free. It's aimed at investors and financial professionals who want serious market data without paying Bloomberg-level prices.",
-      "visual_type": null,
-      "visual_url": null,
-      "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/Open-Dev-Society/OpenStock"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/iii-hq/iii"
     }
   ],
   "under_the_hood": [
     {
-      "title": "A Japanese Tech Firm Open-Sourced a Physics Solver for 3D Simulations",
-      "what_happened": "ST Technology released ppf-contact-solver, an open-source library for simulating how 3D objects physically interact — cloth folding without clipping, solids compressing and bouncing, ropes bending and tangling. This kind of code normally lives inside expensive proprietary game engines or university research software.",
-      "why_it_matters": "Accurate physics simulation has historically required either costly licensed software or years of specialization to build. An open-source, well-engineered contact solver lowers the barrier for developers building games, visual effects tools, robotics environments, and medical training simulations. ST Technology is a firm with a reputation for rigorous engineering — an open license from them carries weight.",
+      "title": "Claude Code Harness Runs an Autonomous Plan→Work→Review Loop",
+      "what_happened": "Claude Code Harness is a new development tool that wraps the Claude Code AI coding assistant in an autonomous cycle: the AI plans a task, executes it, then reviews its own output — looping until the result meets defined quality standards.",
+      "why_it_matters": "Most AI coding assistants are reactive — they respond to prompts but do not self-correct. This harness adds a feedback loop that makes the AI more autonomous: it keeps working until the plan's acceptance criteria are met. For teams experimenting with AI-driven development, it represents a step toward more hands-off code generation.",
       "code_example": null,
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Object Type", "Physical Behaviour Simulated", "Supported"],
+        "headers": ["Stage", "What the AI does"],
         "rows": [
-          ["Shells (cloth, fabric)", "Folding and wrinkling without clipping", "Yes"],
-          ["Solids (rigid and soft bodies)", "Collision and compression", "Yes"],
-          ["Rods (cables, ropes)", "Bending and contact", "Yes"]
+          ["Plan", "Breaks down the task and defines what done looks like"],
+          ["Work", "Writes or edits code to complete the task"],
+          ["Review", "Checks its own output against the original plan"],
+          ["Repeat", "Loops back if quality standards are not met"]
         ]
       },
-      "source_name": "GitHub",
-      "source_url": "https://github.com/st-tech/ppf-contact-solver"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/Chachamaru127/claude-code-harness"
     }
   ]
 }

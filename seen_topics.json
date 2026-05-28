@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-05-20",
-    "title": "Anthropic Publishes an Official Directory of Claude Code Plugins",
-    "summary": "Anthropic released a new GitHub repository called claude-plugins-official — a curated, Anthropic-managed directory of high-quality plugins for Claude Code, the company's AI coding assistant.",
-    "source_urls": [
-      "https://github.com/anthropics/claude-plugins-official"
-    ]
-  },
-  {
-    "date": "2026-05-20",
-    "title": "New Tool Cuts AI API Token Usage by 60–90%",
-    "summary": "A developer released rtk — a lightweight CLI proxy written in Rust that sits between your terminal and an AI model, automatically stripping redundant tokens before they reach the API.",
-    "source_urls": [
-      "https://github.com/rtk-ai/rtk"
-    ]
-  },
-  {
-    "date": "2026-05-20",
-    "title": "AI Video Tool Combines Director, Writer, and Producer Into One Pipeline",
-    "summary": "HKUDS released ViMax, an open-source AI video generation system that handles the full creative pipeline — scripting, directing, producing, and rendering — in a single automated workflow rather than requiring separate tools stitched together.",
-    "source_urls": [
-      "https://github.com/HKUDS/ViMax"
-    ]
-  },
-  {
-    "date": "2026-05-20",
-    "title": "Free Patch Turns GIMP Into a Photoshop Lookalike",
-    "summary": "PhotoGIMP is an open-source patch for GIMP 3 that remaps the interface, keyboard shortcuts, and toolbar layout to match Adobe Photoshop.",
-    "source_urls": [
-      "https://github.com/Diolinux/PhotoGIMP"
-    ]
-  },
-  {
-    "date": "2026-05-20",
-    "title": "Open-Source Project Lets You Run Claude Code for Free",
-    "summary": "A developer published free-claude-code, a project that routes Claude Code through alternative endpoints so it works without a paid Anthropic subscription — in the terminal, the VS Code extension, or Discord, with voice support included.",
-    "source_urls": [
-      "https://github.com/Alishahryar1/free-claude-code"
-    ]
-  },
-  {
-    "date": "2026-05-20",
-    "title": "Andrej Karpathy's AI Coding Pitfalls, Distilled Into a Single Config File",
-    "summary": "A developer published a single CLAUDE.",
-    "source_urls": [
-      "https://github.com/multica-ai/andrej-karpathy-skills"
-    ]
-  },
-  {
     "date": "2026-05-21",
     "title": "One Toolkit, A Full AI Team: Each Agent Plays a Different Professional Role",
     "summary": "A developer released agency-agents on GitHub — a collection of AI agents where each plays a distinct professional role: frontend developer, Reddit community manager, creative ideator, and fact-checker, each with its own defined personality, workflow, and expected deliverables.",
@@ -373,6 +325,46 @@
     "summary": "ST Technology released ppf-contact-solver, an open-source library for simulating how 3D objects physically interact — cloth folding without clipping, solids compressing and bouncing, ropes bending and tangling.",
     "source_urls": [
       "https://github.com/st-tech/ppf-contact-solver"
+    ]
+  },
+  {
+    "date": "2026-05-28",
+    "title": "A Free Tool Can Build a Complete Short Video From a Single Text Prompt",
+    "summary": "MoneyPrinterTurbo is an open-source project that uses AI to convert a text idea into a finished short-form video — with narration, subtitles, and visuals — automatically.",
+    "source_urls": [
+      "https://github.com/harry0703/MoneyPrinterTurbo"
+    ]
+  },
+  {
+    "date": "2026-05-28",
+    "title": "A New Tool Removes Content Restrictions from AI Models Automatically",
+    "summary": "A developer released Heretic, an open-source tool that strips content filters from AI language models without requiring any technical knowledge or model modification.",
+    "source_urls": [
+      "https://github.com/p-e-w/heretic"
+    ]
+  },
+  {
+    "date": "2026-05-28",
+    "title": "A Skills Framework Gives AI Coding Agents a Structured Development Methodology",
+    "summary": "Superpowers is a new open-source project that packages a structured set of skills and workflows for AI coding agents.",
+    "source_urls": [
+      "https://github.com/obra/superpowers"
+    ]
+  },
+  {
+    "date": "2026-05-28",
+    "title": "iii Promises Real-Time Visibility Into Every Service in Your System",
+    "summary": "A project called iii appeared on GitHub Trending, offering the ability to compose, extend, and observe software services in real time.",
+    "source_urls": [
+      "https://github.com/iii-hq/iii"
+    ]
+  },
+  {
+    "date": "2026-05-28",
+    "title": "Claude Code Harness Runs an Autonomous Plan→Work→Review Loop",
+    "summary": "Claude Code Harness is a new development tool that wraps the Claude Code AI coding assistant in an autonomous cycle: the AI plans a task, executes it, then reviews its own output — looping until the result meets defined quality standards.",
+    "source_urls": [
+      "https://github.com/Chachamaru127/claude-code-harness"
     ]
   }
 ]

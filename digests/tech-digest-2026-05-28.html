@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Digest — Thursday, May 28 2026</title>
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper:        #F8F7F4;
+    --paper-warm:   #F2EFE6;
+    --ink:          #14201B;
+    --ink-soft:     #384A42;
+    --ink-dim:      #73857C;
+    --rule:         #E2E8E4;
+    --rule-strong:  #C5D3CB;
+    --accent-deep:  #1B4332;
+    --accent-mid:   #2D6A4F;
+    --accent-light: #74C69D;
+    --accent-soft:  #95D5B2;
+    --font-display: "Newsreader", "Cambria", Georgia, serif;
+    --font-sans:    "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-mono:    "IBM Plex Mono", "SF Mono", "Courier New", monospace;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  body {
+    margin: 0; padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--accent-soft); color: var(--accent-deep); }
+
+  /* ── Masthead ── */
+  .masthead { background: var(--accent-deep); }
+  .masthead-inner {
+    max-width: 1240px; margin: 0 auto;
+    padding: 18px 40px;
+    display: flex; align-items: center; justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .masthead-brand { display: flex; align-items: center; gap: 14px; }
+  .masthead-logo { flex-shrink: 0; width: 28px; height: 28px; position: relative; }
+  .masthead-logo svg { display: block; }
+  .masthead-wordmark {
+    font-family: var(--font-mono); font-size: 14px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent-light);
+  }
+  .masthead-sub {
+    font-family: var(--font-sans); font-size: 12px;
+    color: rgba(255,255,255,0.40); letter-spacing: 0.02em;
+  }
+  .masthead-date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: rgba(255,255,255,0.40);
+  }
+
+  /* ── Hero ── */
+  .hero-wrap { background: var(--paper); }
+  .hero {
+    max-width: 1240px; margin: 0 auto;
+    padding: 52px 40px 40px;
+  }
+  .hero-overline {
+    display: flex; align-items: center; gap: 14px;
+    margin-bottom: 28px;
+  }
+  .hero-overline-label {
+    font-family: var(--font-mono); font-size: 11px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent-deep); white-space: nowrap;
+  }
+  .hero-overline-rule { flex: 1; height: 1px; background: var(--rule); }
+  .hero-overline-date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--ink-dim); white-space: nowrap;
+  }
+  .hero-teaser {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 4vw, 56px);
+    line-height: 1.07; letter-spacing: -0.02em;
+    font-weight: 500; color: var(--ink);
+    margin: 0 0 36px; max-width: 22ch;
+    text-wrap: balance;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 52px;
+    padding-top: 40px;
+    border-top: 1px solid var(--rule-strong);
+  }
+
+  /* ── Lead Story ── */
+  .lead-kicker {
+    font-family: var(--font-mono); font-size: 11px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent-deep); margin-bottom: 12px;
+  }
+  .lead-title {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 2.8vw, 36px);
+    line-height: 1.12; letter-spacing: -0.015em;
+    font-weight: 500; color: var(--ink);
+    margin: 0 0 20px;
+    text-wrap: balance;
+  }
+  .lead-what {
+    font-family: var(--font-display);
+    font-size: 18px; line-height: 1.6;
+    color: var(--ink); margin: 0 0 22px;
+    max-width: 56ch; font-weight: 400;
+  }
+  .why-callout {
+    border-left: 2px solid var(--accent-deep);
+    padding: 2px 0 2px 18px;
+    margin: 0 0 24px;
+  }
+  .why-callout-label {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent-deep); margin-bottom: 6px;
+  }
+  .why-callout-text {
+    font-family: var(--font-sans); font-size: 15px; line-height: 1.6;
+    color: var(--ink-soft); margin: 0; max-width: 56ch;
+  }
+  .source-row {
+    display: flex; align-items: center; gap: 12px;
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--ink-dim);
+    padding-top: 16px; border-top: 1px solid var(--rule);
+  }
+  .source-link {
+    color: var(--accent-deep);
+    border-bottom: 1px solid var(--accent-mid);
+    padding-bottom: 1px; font-weight: 600;
+  }
+
+  /* ── Quick Hits Sidebar ── */
+  .qh-sidebar {
+    background: var(--accent-deep);
+    color: var(--paper);
+    padding: 32px 28px; border-radius: 6px;
+    align-self: start; position: sticky; top: 28px;
+  }
+  .qh-sidebar-label {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--accent-light); margin-bottom: 16px;
+  }
+  .qh-preview-list {
+    list-style: none; margin: 0; padding: 0;
+  }
+  .qh-preview-item {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+  .qh-preview-item:first-child { border-top: 1px solid rgba(255,255,255,0.12); }
+  .qh-preview-title {
+    font-family: var(--font-display); font-size: 15px;
+    line-height: 1.3; letter-spacing: -0.005em;
+    font-weight: 500; color: var(--paper); margin: 0 0 4px;
+  }
+  .qh-preview-source {
+    font-family: var(--font-mono); font-size: 10px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: rgba(255,255,255,0.50);
+  }
+
+  /* ── Visuals ── */
+  .visual-wrap { margin: 0 0 22px; }
+  .visual-img {
+    width: 100%; height: auto; border-radius: 4px; display: block;
+  }
+  .visual-chart { margin: 0; }
+  .chart-row {
+    display: grid;
+    grid-template-columns: 100px 1fr 48px;
+    align-items: center; gap: 10px;
+    font-family: var(--font-sans); font-size: 13px;
+    color: var(--ink); margin-bottom: 8px;
+  }
+  .chart-label { color: var(--ink-soft); }
+  .chart-bar-track {
+    height: 6px; background: var(--rule);
+    border-radius: 999px; overflow: hidden;
+  }
+  .chart-bar-fill {
+    height: 100%; border-radius: 999px;
+    background: var(--accent-mid);
+  }
+  .chart-value {
+    font-family: var(--font-mono); font-size: 12px;
+    color: var(--ink-dim); text-align: right;
+  }
+  .visual-table-wrap { overflow-x: auto; margin: 0 0 22px; }
+  .visual-table {
+    width: 100%; border-collapse: collapse;
+    font-family: var(--font-sans); font-size: 13px;
+    color: var(--ink);
+  }
+  .visual-table th {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--accent-deep);
+    padding: 8px 12px; border-bottom: 2px solid var(--rule-strong);
+    text-align: left;
+  }
+  .visual-table td {
+    padding: 8px 12px; border-bottom: 1px solid var(--rule);
+    color: var(--ink-soft);
+  }
+  .visual-table tr:last-child td { border-bottom: none; }
+
+  /* ── Quick Hits Grid ── */
+  .quick-hits-wrap { background: var(--paper-warm); border-top: 1px solid var(--rule); }
+  .quick-hits-inner { max-width: 1240px; margin: 0 auto; padding: 56px 40px; }
+  .section-kicker {
+    font-family: var(--font-mono); font-size: 11px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent-deep); margin-bottom: 8px;
+  }
+  .section-title {
+    font-family: var(--font-display); font-size: 30px;
+    line-height: 1.1; letter-spacing: -0.015em;
+    font-weight: 500; color: var(--ink); margin: 0 0 28px;
+  }
+  /* ── Quick Hits Accordion ── */
+  .qh-accordion { border-top: 2px solid var(--accent-deep); }
+  .qh-item { }
+  .qh-item-header {
+    display: flex; align-items: center; gap: 16px;
+    padding: 18px 0; border-bottom: 1px solid var(--rule);
+    cursor: pointer; list-style: none; user-select: none;
+  }
+  .qh-item-header::-webkit-details-marker { display: none; }
+  .qh-item-header::marker { display: none; }
+  .qh-item-chevron {
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--accent-mid); flex-shrink: 0;
+    transition: transform 0.18s ease;
+    display: inline-block;
+  }
+  details[open] > .qh-item-header .qh-item-chevron { transform: rotate(90deg); }
+  .qh-item-title {
+    font-family: var(--font-display); font-size: 19px;
+    line-height: 1.25; letter-spacing: -0.01em;
+    font-weight: 500; color: var(--ink); flex: 1;
+    text-wrap: balance;
+  }
+  .qh-item-source-pill {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--accent-deep); background: var(--accent-light);
+    padding: 3px 9px; border-radius: 3px; flex-shrink: 0;
+  }
+  .qh-item-body {
+    padding: 20px 0 28px 27px;
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  .qh-item-summary {
+    font-family: var(--font-display); font-size: 16px;
+    line-height: 1.65; color: var(--ink-soft);
+    margin: 0 0 18px; max-width: 68ch;
+  }
+  .qh-item-footer {
+    font-family: var(--font-mono); font-size: 10px;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+  .qh-item-footer a {
+    color: var(--accent-deep); font-weight: 600;
+    border-bottom: 1px solid var(--rule-strong); padding-bottom: 1px;
+  }
+
+  /* ── Under the Hood ── */
+  .hood-wrap { background: var(--paper); border-top: 1px solid var(--rule); }
+  .hood-inner { max-width: 1240px; margin: 0 auto; padding: 56px 40px; }
+  .hood-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 48px;
+    padding-top: 28px;
+    border-top: 1px solid var(--rule-strong);
+  }
+  .hood-label {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent-mid); margin-bottom: 10px;
+  }
+  .hood-title {
+    font-family: var(--font-display); font-size: 22px;
+    line-height: 1.15; letter-spacing: -0.01em;
+    font-weight: 500; color: var(--ink);
+    margin: 0 0 16px; text-wrap: balance;
+  }
+  .hood-what {
+    font-family: var(--font-display); font-size: 15px; line-height: 1.65;
+    color: var(--ink); margin: 0 0 18px; font-weight: 400;
+  }
+  .hood-why {
+    border-left: 2px solid var(--accent-mid);
+    padding: 2px 0 2px 16px;
+    margin: 0 0 20px;
+  }
+  .hood-why-label {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent-mid); margin-bottom: 6px;
+  }
+  .hood-why-text {
+    font-family: var(--font-sans); font-size: 14px; line-height: 1.6;
+    color: var(--ink-soft); margin: 0;
+  }
+  .hood-code {
+    font-family: var(--font-mono); font-size: 13px; line-height: 1.65;
+    background: var(--ink); color: #E4EDE7;
+    padding: 18px 20px; border-radius: 6px;
+    overflow-x: auto; white-space: pre;
+    margin: 0 0 20px; display: block;
+  }
+  .hood-source {
+    display: flex; align-items: center; gap: 8px;
+    font-family: var(--font-mono); font-size: 10px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--ink-dim);
+    padding-top: 14px; border-top: 1px solid var(--rule);
+  }
+  .hood-source-link {
+    color: var(--accent-deep);
+    border-bottom: 1px solid var(--accent-mid);
+    padding-bottom: 1px; font-weight: 600;
+  }
+
+  /* ── Fun Fact ── */
+  .funfact-wrap { background: var(--ink); }
+  .funfact-inner {
+    max-width: 1240px; margin: 0 auto;
+    padding: 32px 40px;
+    display: flex; align-items: center; gap: 32px;
+  }
+  .funfact-label {
+    font-family: var(--font-mono); font-size: 11px; font-weight: 600;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--accent-light); flex-shrink: 0; white-space: nowrap;
+  }
+  .funfact-text {
+    font-family: var(--font-display); font-style: italic;
+    font-size: clamp(16px, 2vw, 22px); line-height: 1.4;
+    color: var(--paper); margin: 0; font-weight: 400;
+  }
+
+  /* ── Footer ── */
+  .footer-wrap { background: var(--paper-warm); border-top: 1px solid var(--rule); }
+  .footer-inner {
+    max-width: 1240px; margin: 0 auto;
+    padding: 20px 40px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .footer-text {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.07em; color: var(--ink-dim);
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 800px) {
+    .masthead-inner, .hero, .quick-hits-inner,
+    .hood-inner, .funfact-inner, .footer-inner {
+      padding-left: 20px !important; padding-right: 20px !important;
+    }
+    .hero { padding-top: 32px !important; padding-bottom: 24px !important; }
+    .hero-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+    .qh-sidebar { position: static !important; }
+    .hood-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+    .qh-item-body { padding-left: 0 !important; }
+    .masthead-sub { display: none !important; }
+    .funfact-inner { flex-direction: column !important; gap: 10px !important; }
+    .footer-inner { flex-direction: column !important; gap: 6px !important; }
+  }
+
+  @media (max-width: 600px) {
+    .hero-teaser { font-size: 26px !important; }
+    .lead-what { font-size: 16px !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── Masthead ── -->
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-brand">
+      <div class="masthead-logo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="8" y="8" width="18" height="18" rx="4" fill="#2D6A4F"/>
+          <rect x="2" y="2" width="18" height="18" rx="4" fill="#74C69D"/>
+        </svg>
+      </div>
+      <span class="masthead-wordmark">Tech Digest</span>
+      <span class="masthead-sub">Daily Signal for Professionals</span>
+    </div>
+    <span class="masthead-date">Thursday, May 28 2026</span>
+  </div>
+</header>
+
+<!-- ── Hero (Lead Story) ── -->
+<div class="hero-wrap">
+  <div class="hero">
+
+    <div class="hero-overline">
+      <span class="hero-overline-label">Today's Digest</span>
+      <div class="hero-overline-rule"></div>
+      <span class="hero-overline-date">Thursday, May 28 2026</span>
+    </div>
+
+    <h1 class="hero-teaser">A free tool now turns a text prompt into a polished short video — no editing skills required.</h1>
+
+    <div class="hero-grid">
+
+      <!-- Lead article -->
+      <article>
+        <div class="lead-kicker">Lead Story</div>
+        <h2 class="lead-title">A Free Tool Can Build a Complete Short Video From a Single Text Prompt</h2>
+        <p class="lead-what">MoneyPrinterTurbo is an open-source project that uses AI to convert a text idea into a finished short-form video — with narration, subtitles, and visuals — automatically. It runs on your own machine and works with most major AI providers.</p>
+
+        
+        <div class="visual-wrap visual-table-wrap">
+          <table class="visual-table">
+            <thead><tr><th>Step</th><th>Traditional workflow</th><th>With MoneyPrinterTurbo</th></tr></thead>
+            <tbody><tr><td>Script</td><td>30–60 min manual writing</td><td>Generated from your prompt</td></tr><tr><td>Voiceover</td><td>15–30 min recording or outsourcing</td><td>AI-generated automatically</td></tr><tr><td>Subtitles</td><td>20–40 min manual sync</td><td>Generated and synced automatically</td></tr><tr><td>Assembly</td><td>1–2 hours in a video editor</td><td>Fully automated</td></tr></tbody>
+          </table>
+        </div>
+        
+
+        <div class="why-callout">
+          <div class="why-callout-label">What this means</div>
+          <p class="why-callout-text">For marketers, educators, and content creators, this compresses what used to take hours of editing into a single prompt. If you produce social media clips, course videos, or explainer content, this is worth a look.</p>
+        </div>
+
+        <div class="source-row">
+          <span>Source</span>
+          <a href="https://github.com/harry0703/MoneyPrinterTurbo" class="source-link">GitHub Trending ↗</a>
+        </div>
+      </article>
+
+      <!-- Quick Hits sidebar preview -->
+      
+      <aside class="qh-sidebar">
+        <div class="qh-sidebar-label">Quick Hits</div>
+        <ul class="qh-preview-list">
+          
+          <li class="qh-preview-item">
+            <p class="qh-preview-title">A New Tool Removes Content Restrictions from AI Models Automatically</p>
+            <span class="qh-preview-source">GitHub Trending</span>
+          </li>
+          
+          <li class="qh-preview-item">
+            <p class="qh-preview-title">A Skills Framework Gives AI Coding Agents a Structured Development Methodology</p>
+            <span class="qh-preview-source">GitHub Trending</span>
+          </li>
+          
+          <li class="qh-preview-item">
+            <p class="qh-preview-title">iii Promises Real-Time Visibility Into Every Service in Your System</p>
+            <span class="qh-preview-source">GitHub Trending</span>
+          </li>
+          
+        </ul>
+      </aside>
+      
+
+    </div>
+  </div>
+</div>
+
+<!-- ── Quick Hits ── -->
+
+<div class="quick-hits-wrap">
+  <div class="quick-hits-inner">
+    <div class="section-kicker">Quick Hits</div>
+    <h2 class="section-title">What else happened today</h2>
+
+    <div class="qh-accordion">
+      
+      <details class="qh-item">
+        <summary class="qh-item-header">
+          <span class="qh-item-chevron">▸</span>
+          <span class="qh-item-title">A New Tool Removes Content Restrictions from AI Models Automatically</span>
+          <span class="qh-item-source-pill">GitHub Trending</span>
+        </summary>
+        <div class="qh-item-body">
+          <p class="qh-item-summary">A developer released Heretic, an open-source tool that strips content filters from AI language models without requiring any technical knowledge or model modification. It works fully automatically. This signals how difficult it is to enforce hard limits on open-source AI systems — and will likely reignite the debate about what AI should and shouldn't do.</p>
+
+          
+
+          <p class="qh-item-footer">
+            VIA <a href="https://github.com/p-e-w/heretic" target="_blank" rel="noopener">GitHub Trending ↗</a>
+          </p>
+        </div>
+      </details>
+      
+      <details class="qh-item">
+        <summary class="qh-item-header">
+          <span class="qh-item-chevron">▸</span>
+          <span class="qh-item-title">A Skills Framework Gives AI Coding Agents a Structured Development Methodology</span>
+          <span class="qh-item-source-pill">GitHub Trending</span>
+        </summary>
+        <div class="qh-item-body">
+          <p class="qh-item-summary">Superpowers is a new open-source project that packages a structured set of skills and workflows for AI coding agents. Rather than figuring out how to tackle each task from scratch, agents draw from a defined playbook. It is designed to work alongside tools like Claude Code and Cursor.</p>
+
+          
+
+          <p class="qh-item-footer">
+            VIA <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">GitHub Trending ↗</a>
+          </p>
+        </div>
+      </details>
+      
+      <details class="qh-item">
+        <summary class="qh-item-header">
+          <span class="qh-item-chevron">▸</span>
+          <span class="qh-item-title">iii Promises Real-Time Visibility Into Every Service in Your System</span>
+          <span class="qh-item-source-pill">GitHub Trending</span>
+        </summary>
+        <div class="qh-item-body">
+          <p class="qh-item-summary">A project called iii appeared on GitHub Trending, offering the ability to compose, extend, and observe software services in real time. For developers running complex systems with many moving parts, live observability — knowing exactly what is happening and where — is a persistent challenge. iii aims to make that problem more manageable.</p>
+
+          
+
+          <p class="qh-item-footer">
+            VIA <a href="https://github.com/iii-hq/iii" target="_blank" rel="noopener">GitHub Trending ↗</a>
+          </p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- ── Under the Hood ── -->
+
+<div class="hood-wrap">
+  <div class="hood-inner">
+    <div class="section-kicker">Under the Hood</div>
+    <h2 class="section-title">For the technically curious</h2>
+
+    <div class="hood-grid">
+      
+      <article>
+        <div class="hood-label">Deep Dive</div>
+        <h3 class="hood-title">Claude Code Harness Runs an Autonomous Plan→Work→Review Loop</h3>
+        <p class="hood-what">Claude Code Harness is a new development tool that wraps the Claude Code AI coding assistant in an autonomous cycle: the AI plans a task, executes it, then reviews its own output — looping until the result meets defined quality standards.</p>
+
+        
+        <div class="visual-wrap visual-table-wrap">
+          <table class="visual-table">
+            <thead><tr><th>Stage</th><th>What the AI does</th></tr></thead>
+            <tbody><tr><td>Plan</td><td>Breaks down the task and defines what done looks like</td></tr><tr><td>Work</td><td>Writes or edits code to complete the task</td></tr><tr><td>Review</td><td>Checks its own output against the original plan</td></tr><tr><td>Repeat</td><td>Loops back if quality standards are not met</td></tr></tbody>
+          </table>
+        </div>
+        
+
+        <div class="hood-why">
+          <div class="hood-why-label">Why it matters</div>
+          <p class="hood-why-text">Most AI coding assistants are reactive — they respond to prompts but do not self-correct. This harness adds a feedback loop that makes the AI more autonomous: it keeps working until the plan's acceptance criteria are met. For teams experimenting with AI-driven development, it represents a step toward more hands-off code generation.</p>
+        </div>
+
+        
+
+        <div class="hood-source">
+          <span>Source</span>
+          <a href="https://github.com/Chachamaru127/claude-code-harness" class="hood-source-link">GitHub Trending ↗</a>
+        </div>
+      </article>
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- ── Fun Fact ── -->
+
+<div class="funfact-wrap">
+  <div class="funfact-inner">
+    <div class="funfact-label">◇ Fun fact</div>
+    <p class="funfact-text">"MoneyPrinterTurbo is named after the 'money printer go brrr' meme — but it prints videos."</p>
+  </div>
+</div>
+
+
+<!-- ── Footer ── -->
+<footer class="footer-wrap">
+  <div class="footer-inner">
+    <span class="footer-text">Daily tech digest for curious professionals · AI news that affects your work.</span>
+  </div>
+</footer>
+
+</body>
+</html>
