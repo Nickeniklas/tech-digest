@@ -1,73 +1,83 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "A free tool now turns a text prompt into a polished short video — no editing skills required.",
-  "fun_fact": "MoneyPrinterTurbo is named after the 'money printer go brrr' meme — but it prints videos.",
+  "teaser": "Microsoft open-sourced a tool that converts any Office document or PDF to Markdown — making your files instantly usable in AI workflows.",
+  "fun_fact": "markitdown converts Word, Excel, PowerPoint, PDFs, images, and audio files into AI-ready plain text.",
   "lead_story": {
-    "title": "A Free Tool Can Build a Complete Short Video From a Single Text Prompt",
-    "what_happened": "MoneyPrinterTurbo is an open-source project that uses AI to convert a text idea into a finished short-form video — with narration, subtitles, and visuals — automatically. It runs on your own machine and works with most major AI providers.",
-    "what_this_means": "For marketers, educators, and content creators, this compresses what used to take hours of editing into a single prompt. If you produce social media clips, course videos, or explainer content, this is worth a look.",
+    "title": "Microsoft's Document Converter Makes Your Files AI-Ready",
+    "what_happened": "Microsoft released markitdown, a free Python tool that converts virtually any file format — Word documents, PowerPoint presentations, Excel spreadsheets, PDFs, and more — into Markdown. Markdown is the plain-text format that AI assistants handle best.",
+    "what_this_means": "If you regularly paste documents into AI tools and find the formatting gets garbled, markitdown solves that. Teachers uploading lesson plans, lawyers working with contracts, marketers editing briefs — anyone who feeds files into AI assistants can now do it cleanly.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["Step", "Traditional workflow", "With MoneyPrinterTurbo"],
+      "headers": ["File Type", "Converts To"],
       "rows": [
-        ["Script", "30–60 min manual writing", "Generated from your prompt"],
-        ["Voiceover", "15–30 min recording or outsourcing", "AI-generated automatically"],
-        ["Subtitles", "20–40 min manual sync", "Generated and synced automatically"],
-        ["Assembly", "1–2 hours in a video editor", "Fully automated"]
+        ["Word (.docx)", "Markdown"],
+        ["PowerPoint (.pptx)", "Markdown"],
+        ["Excel (.xlsx)", "Markdown"],
+        ["PDF", "Markdown"],
+        ["Images (with OCR)", "Markdown"],
+        ["Audio (with transcript)", "Markdown"]
       ]
     },
-    "source_name": "GitHub Trending",
-    "source_url": "https://github.com/harry0703/MoneyPrinterTurbo"
+    "source_name": "GitHub",
+    "source_url": "https://github.com/microsoft/markitdown"
   },
   "quick_hits": [
     {
-      "title": "A New Tool Removes Content Restrictions from AI Models Automatically",
-      "summary": "A developer released Heretic, an open-source tool that strips content filters from AI language models without requiring any technical knowledge or model modification. It works fully automatically. This signals how difficult it is to enforce hard limits on open-source AI systems — and will likely reignite the debate about what AI should and shouldn't do.",
+      "title": "Anthropic Published a Public Skills Library for AI Agents",
+      "summary": "Anthropic opened a public GitHub repository called 'skills' — a collection of reusable capabilities that AI agents like Claude can use to perform structured tasks. Think of it as a shared toolbox that developers can draw from when building AI-powered tools, rather than reinventing common capabilities from scratch.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/p-e-w/heretic"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/anthropics/skills"
     },
     {
-      "title": "A Skills Framework Gives AI Coding Agents a Structured Development Methodology",
-      "summary": "Superpowers is a new open-source project that packages a structured set of skills and workflows for AI coding agents. Rather than figuring out how to tackle each task from scratch, agents draw from a defined playbook. It is designed to work alongside tools like Claude Code and Cursor.",
+      "title": "An Open-Source Speech Model Aims for Studio-Quality Voice Generation",
+      "summary": "The OpenMOSS team released MOSS-TTS, a free family of models for generating realistic speech and sound. It's designed for long-form narration, multiple speakers in one audio, and complex real-world scenarios — all without a cloud subscription or per-minute fees.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/obra/superpowers"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/OpenMOSS/MOSS-TTS"
     },
     {
-      "title": "iii Promises Real-Time Visibility Into Every Service in Your System",
-      "summary": "A project called iii appeared on GitHub Trending, offering the ability to compose, extend, and observe software services in real time. For developers running complex systems with many moving parts, live observability — knowing exactly what is happening and where — is a persistent challenge. iii aims to make that problem more manageable.",
+      "title": "A Web Crawler Built for AI Projects Is Trending",
+      "summary": "Crawl4AI is an open-source web crawler that delivers website content in a format AI tools can actually use, rather than messy raw HTML. It's become a popular starting point for developers building AI research, monitoring, or content-processing tools.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/iii-hq/iii"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/unclecode/crawl4ai"
+    },
+    {
+      "title": "A New Plugin Brings Compound Engineering to Every Major AI Coding Tool",
+      "summary": "Every Inc. released an official plugin for an approach called compound engineering, built to work across Claude Code, GitHub Copilot, Cursor, and Codex. The idea: chain multiple AI reasoning steps into a coordinated task rather than relying on one-shot prompts, so each step builds on the last.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub",
+      "source_url": "https://github.com/EveryInc/compound-engineering-plugin"
     }
   ],
   "under_the_hood": [
     {
-      "title": "Claude Code Harness Runs an Autonomous Plan→Work→Review Loop",
-      "what_happened": "Claude Code Harness is a new development tool that wraps the Claude Code AI coding assistant in an autonomous cycle: the AI plans a task, executes it, then reviews its own output — looping until the result meets defined quality standards.",
-      "why_it_matters": "Most AI coding assistants are reactive — they respond to prompts but do not self-correct. This harness adds a feedback loop that makes the AI more autonomous: it keeps working until the plan's acceptance criteria are met. For teams experimenting with AI-driven development, it represents a step toward more hands-off code generation.",
-      "code_example": null,
+      "title": "A Meta-Skill Designs Entire AI Agent Teams Automatically",
+      "what_happened": "A developer published 'harness' — a meta-skill for AI coding agents that takes a domain description and generates a full team of specialized sub-agents, each with defined roles and skill sets. Instead of prompting a single AI to do everything, you get purpose-built agents for each part of the workflow.",
+      "why_it_matters": "This reflects a broader shift in AI tooling toward multi-agent systems where specialized AIs handle distinct parts of a task. Harness automates the hardest part — designing the team structure itself — which previously required significant manual prompt engineering and iteration.",
+      "code_example": "# Describe your domain, get a purpose-built agent team\nharness.design(\n  domain=\"legal document review\",\n  tasks=[\"clause extraction\", \"risk flagging\", \"summary\"]\n)\n# Returns 3 specialized agents with defined skill sets",
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Stage", "What the AI does"],
+        "headers": ["Approach", "Setup Time", "Specialization"],
         "rows": [
-          ["Plan", "Breaks down the task and defines what done looks like"],
-          ["Work", "Writes or edits code to complete the task"],
-          ["Review", "Checks its own output against the original plan"],
-          ["Repeat", "Loops back if quality standards are not met"]
+          ["Single AI prompt", "Minutes", "Generalist"],
+          ["Manual multi-agent design", "Hours", "Specialized"],
+          ["Harness meta-skill", "Minutes", "Specialized"]
         ]
       },
-      "source_name": "GitHub Trending",
-      "source_url": "https://github.com/Chachamaru127/claude-code-harness"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/revfactory/harness"
     }
   ]
 }

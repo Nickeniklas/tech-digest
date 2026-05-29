@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-05-21",
-    "title": "One Toolkit, A Full AI Team: Each Agent Plays a Different Professional Role",
-    "summary": "A developer released agency-agents on GitHub — a collection of AI agents where each plays a distinct professional role: frontend developer, Reddit community manager, creative ideator, and fact-checker, each with its own defined personality, workflow, and expected deliverables.",
-    "source_urls": [
-      "https://github.com/msitarzewski/agency-agents"
-    ]
-  },
-  {
-    "date": "2026-05-21",
-    "title": "Free, Self-Hosted WhatsApp Automation Is Now One Repository Away",
-    "summary": "OpenWA launched as a free, open-source WhatsApp API gateway you can run on your own server — no subscription, no per-message fees.",
-    "source_urls": [
-      "https://github.com/rmyndharis/OpenWA"
-    ]
-  },
-  {
-    "date": "2026-05-21",
-    "title": "AI Tools Can Now Remember Your Work Across Every Session",
-    "summary": "AgentMemory hit GitHub Trending as the self-described #1 persistent memory solution for AI coding agents, backed by real-world benchmarks.",
-    "source_urls": [
-      "https://github.com/rohitg00/agentmemory"
-    ]
-  },
-  {
-    "date": "2026-05-21",
-    "title": "A Free, Ad-Free Desktop App for Streaming Any Movie or TV Show",
-    "summary": "Streambert is a new cross-platform desktop app that lets you stream or download movies, TV series, and anime with no ads, no tracking, and no subscription.",
-    "source_urls": [
-      "https://github.com/truelockmc/streambert"
-    ]
-  },
-  {
-    "date": "2026-05-21",
-    "title": "A Minimal App Gives Your Private Writing Notes a Quiet Home",
-    "summary": "Files.",
-    "source_urls": [
-      "https://github.com/zakirullin/files.md"
-    ]
-  },
-  {
-    "date": "2026-05-21",
-    "title": "Oh-My-Pi: A Terminal AI Agent With Hash-Anchored Edits, Browser Access, and Parallel Subagents",
-    "summary": "A developer released oh-my-pi, a terminal-based AI coding agent with an unusually deep feature set: hash-anchored edits (which tie each proposed code change to a specific file state, preventing misapplied patches), a built-in browser for reading live documentation, full LSP integration for language-aware code understanding, and native support for spawning parallel subagents to work on tasks simultaneously.",
-    "source_urls": [
-      "https://github.com/can1357/oh-my-pi"
-    ]
-  },
-  {
     "date": "2026-05-22",
     "title": "Chrome DevTools Is Now an Official Tool for AI Coding Assistants",
     "summary": "Google's Chrome DevTools team published an official MCP server — a standardized plugin that connects AI coding assistants like Claude Code directly to Chrome's browser debugger, console, network inspector, and performance profiler.",
@@ -365,6 +317,54 @@
     "summary": "Claude Code Harness is a new development tool that wraps the Claude Code AI coding assistant in an autonomous cycle: the AI plans a task, executes it, then reviews its own output — looping until the result meets defined quality standards.",
     "source_urls": [
       "https://github.com/Chachamaru127/claude-code-harness"
+    ]
+  },
+  {
+    "date": "2026-05-29",
+    "title": "Microsoft's Document Converter Makes Your Files AI-Ready",
+    "summary": "Microsoft released markitdown, a free Python tool that converts virtually any file format — Word documents, PowerPoint presentations, Excel spreadsheets, PDFs, and more — into Markdown.",
+    "source_urls": [
+      "https://github.com/microsoft/markitdown"
+    ]
+  },
+  {
+    "date": "2026-05-29",
+    "title": "Anthropic Published a Public Skills Library for AI Agents",
+    "summary": "Anthropic opened a public GitHub repository called 'skills' — a collection of reusable capabilities that AI agents like Claude can use to perform structured tasks.",
+    "source_urls": [
+      "https://github.com/anthropics/skills"
+    ]
+  },
+  {
+    "date": "2026-05-29",
+    "title": "An Open-Source Speech Model Aims for Studio-Quality Voice Generation",
+    "summary": "The OpenMOSS team released MOSS-TTS, a free family of models for generating realistic speech and sound.",
+    "source_urls": [
+      "https://github.com/OpenMOSS/MOSS-TTS"
+    ]
+  },
+  {
+    "date": "2026-05-29",
+    "title": "A Web Crawler Built for AI Projects Is Trending",
+    "summary": "Crawl4AI is an open-source web crawler that delivers website content in a format AI tools can actually use, rather than messy raw HTML.",
+    "source_urls": [
+      "https://github.com/unclecode/crawl4ai"
+    ]
+  },
+  {
+    "date": "2026-05-29",
+    "title": "A New Plugin Brings Compound Engineering to Every Major AI Coding Tool",
+    "summary": "Every Inc.",
+    "source_urls": [
+      "https://github.com/EveryInc/compound-engineering-plugin"
+    ]
+  },
+  {
+    "date": "2026-05-29",
+    "title": "A Meta-Skill Designs Entire AI Agent Teams Automatically",
+    "summary": "A developer published 'harness' — a meta-skill for AI coding agents that takes a domain description and generates a full team of specialized sub-agents, each with defined roles and skill sets.",
+    "source_urls": [
+      "https://github.com/revfactory/harness"
     ]
   }
 ]
