@@ -1,83 +1,110 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Microsoft open-sourced a tool that converts any Office document or PDF to Markdown — making your files instantly usable in AI workflows.",
-  "fun_fact": "markitdown converts Word, Excel, PowerPoint, PDFs, images, and audio files into AI-ready plain text.",
+  "teaser": "Cursor just opened its AI coding editor to third-party plugins — and it could change how your whole team connects AI to the tools you already use.",
+  "fun_fact": "The 'build-your-own-x' GitHub repo has over 340,000 stars — more than most commercial software projects combined.",
   "lead_story": {
-    "title": "Microsoft's Document Converter Makes Your Files AI-Ready",
-    "what_happened": "Microsoft released markitdown, a free Python tool that converts virtually any file format — Word documents, PowerPoint presentations, Excel spreadsheets, PDFs, and more — into Markdown. Markdown is the plain-text format that AI assistants handle best.",
-    "what_this_means": "If you regularly paste documents into AI tools and find the formatting gets garbled, markitdown solves that. Teachers uploading lesson plans, lawyers working with contracts, marketers editing briefs — anyone who feeds files into AI assistants can now do it cleanly.",
+    "title": "Cursor Opens Its AI Coding Editor to Third-Party Plugins",
+    "what_happened": "Cursor, one of the most widely used AI coding editors, published its official plugin specification on GitHub along with a set of official plugins. This creates a standardized way to extend Cursor with new capabilities — similar to how browsers and code editors have long had extension stores.",
+    "what_this_means": "An official plugin system means your team's AI coding tool can now connect reliably to project management software, documentation systems, and data sources — rather than ad hoc workarounds. For teams adopting AI tools, this makes Cursor a more credible long-term platform.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["File Type", "Converts To"],
+      "headers": ["Plugin Type", "What It Enables"],
       "rows": [
-        ["Word (.docx)", "Markdown"],
-        ["PowerPoint (.pptx)", "Markdown"],
-        ["Excel (.xlsx)", "Markdown"],
-        ["PDF", "Markdown"],
-        ["Images (with OCR)", "Markdown"],
-        ["Audio (with transcript)", "Markdown"]
+        ["Document readers", "Feed PDFs, wikis, and docs directly into AI context"],
+        ["API connectors", "Pull live data from external services while coding"],
+        ["Linters and formatters", "Enforce code quality rules automatically"],
+        ["Test runners", "Auto-run tests as you write and edit code"]
       ]
     },
     "source_name": "GitHub",
-    "source_url": "https://github.com/microsoft/markitdown"
+    "source_url": "https://github.com/cursor/plugins"
   },
   "quick_hits": [
     {
-      "title": "Anthropic Published a Public Skills Library for AI Agents",
-      "summary": "Anthropic opened a public GitHub repository called 'skills' — a collection of reusable capabilities that AI agents like Claude can use to perform structured tasks. Think of it as a shared toolbox that developers can draw from when building AI-powered tools, rather than reinventing common capabilities from scratch.",
+      "title": "A Fast Open-Source Document Parser From the Team Behind LlamaIndex",
+      "summary": "The team behind LlamaIndex released LiteParse, a free open-source tool for converting documents into clean text that AI can actually use. It runs locally without sending your files to a third-party server, and the team says it's faster than their previous paid parser. For professionals using AI to process contracts, reports, or research files, this is a practical alternative to paid parsing services.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/anthropics/skills"
+      "source_url": "https://github.com/run-llama/liteparse"
     },
     {
-      "title": "An Open-Source Speech Model Aims for Studio-Quality Voice Generation",
-      "summary": "The OpenMOSS team released MOSS-TTS, a free family of models for generating realistic speech and sound. It's designed for long-form narration, multiple speakers in one audio, and complex real-world scenarios — all without a cloud subscription or per-minute fees.",
+      "title": "Project NOMAD: An Offline AI Companion That Works Without the Internet",
+      "summary": "A developer published Project NOMAD, a self-contained offline computer that runs AI models locally alongside a curated library of critical knowledge — medical guides, maps, engineering references. It's designed for situations where internet infrastructure is unavailable. For professionals in emergency management, field research, or humanitarian work, it's a concrete example of AI deployed outside the cloud.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/OpenMOSS/MOSS-TTS"
+      "source_url": "https://github.com/Crosstalk-Solutions/project-nomad"
     },
     {
-      "title": "A Web Crawler Built for AI Projects Is Trending",
-      "summary": "Crawl4AI is an open-source web crawler that delivers website content in a format AI tools can actually use, rather than messy raw HTML. It's become a popular starting point for developers building AI research, monitoring, or content-processing tools.",
+      "title": "Anthropic's Claude Code Reaches GitHub Trending",
+      "summary": "Claude Code — Anthropic's AI coding tool that runs in a terminal and can read your codebase, make changes, run tests, and handle git workflows — appeared on GitHub's trending list this week. It's designed to work as a fully autonomous agent rather than just a suggestion engine. The trend signal suggests it's moving from early adopters toward mainstream developer use.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/unclecode/crawl4ai"
+      "source_url": "https://github.com/anthropics/claude-code"
     },
     {
-      "title": "A New Plugin Brings Compound Engineering to Every Major AI Coding Tool",
-      "summary": "Every Inc. released an official plugin for an approach called compound engineering, built to work across Claude Code, GitHub Copilot, Cursor, and Codex. The idea: chain multiple AI reasoning steps into a coordinated task rather than relying on one-shot prompts, so each step builds on the last.",
-      "visual_type": null,
+      "title": "The Most-Starred Learn-By-Doing Programming Resource Is Back on Trending",
+      "summary": "The 'build-your-own-x' GitHub repository has returned to trending. It teaches programming by walking you through recreating real tools — search engines, databases, browsers — from scratch. With over 340,000 GitHub stars, it's one of the most-saved learning resources in software, and its return suggests a continuing appetite for fundamentals over shortcuts.",
+      "visual_type": "chart",
       "visual_url": null,
-      "visual_data": null,
+      "visual_data": {
+        "headers": ["Repository", "GitHub Stars (thousands)"],
+        "rows": [
+          ["build-your-own-x", "340"],
+          ["freeCodeCamp", "415"],
+          ["coding-interview-university", "310"],
+          ["developer-roadmap", "310"],
+          ["awesome", "350"]
+        ]
+      },
       "source_name": "GitHub",
-      "source_url": "https://github.com/EveryInc/compound-engineering-plugin"
+      "source_url": "https://github.com/codecrafters-io/build-your-own-x"
     }
   ],
   "under_the_hood": [
     {
-      "title": "A Meta-Skill Designs Entire AI Agent Teams Automatically",
-      "what_happened": "A developer published 'harness' — a meta-skill for AI coding agents that takes a domain description and generates a full team of specialized sub-agents, each with defined roles and skill sets. Instead of prompting a single AI to do everything, you get purpose-built agents for each part of the workflow.",
-      "why_it_matters": "This reflects a broader shift in AI tooling toward multi-agent systems where specialized AIs handle distinct parts of a task. Harness automates the hardest part — designing the team structure itself — which previously required significant manual prompt engineering and iteration.",
-      "code_example": "# Describe your domain, get a purpose-built agent team\nharness.design(\n  domain=\"legal document review\",\n  tasks=[\"clause extraction\", \"risk flagging\", \"summary\"]\n)\n# Returns 3 specialized agents with defined skill sets",
+      "title": "A New Platform for Evaluating AI 'World Models' Focuses on Reproducibility",
+      "what_happened": "Galilai Group published Stable Worldmodel, an open platform for building and comparing AI world models — systems that simulate how environments change over time. Unlike previous research, the platform emphasizes reproducibility: researchers publish experiments others can verify with the identical setup. It covers physics simulations, digital environments, and scientific modeling domains.",
+      "why_it_matters": "Reproducibility has been a chronic weakness in AI research — results that can't be independently verified don't hold up in practice. A shared evaluation platform for world models could shift how this field validates progress, which matters for anyone tracking what AI systems can actually do versus what they claim.",
+      "code_example": null,
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Approach", "Setup Time", "Specialization"],
+        "headers": ["Domain", "Example Task"],
         "rows": [
-          ["Single AI prompt", "Minutes", "Generalist"],
-          ["Manual multi-agent design", "Hours", "Specialized"],
-          ["Harness meta-skill", "Minutes", "Specialized"]
+          ["Physics simulation", "Predict how objects move and collide"],
+          ["Digital environments", "Navigate and plan in game-like virtual spaces"],
+          ["Scientific modeling", "Simulate climate or molecular dynamics"],
+          ["Autonomous systems", "Model vehicle or robot behavior"]
         ]
       },
       "source_name": "GitHub",
-      "source_url": "https://github.com/revfactory/harness"
+      "source_url": "https://github.com/galilai-group/stable-worldmodel"
+    },
+    {
+      "title": "Meta's Protein AI Models Move to CZ Biohub for Long-Term Stewardship",
+      "what_happened": "The ESM (Evolutionary Scale Modeling) repository — Meta's family of AI models that predict protein structure and function from biological sequences — has moved to the Chan Zuckerberg Biohub on GitHub. ESM models read protein sequences the way language models read text, predicting how proteins fold and what they do in the body. CZ Biohub is a research nonprofit backed by Priscilla Chan and Mark Zuckerberg.",
+      "why_it_matters": "ESM has driven real drug discovery and disease research since Meta first released it. Transferring stewardship to a research nonprofit signals a longer-term, science-first approach rather than a commercial one — likely meaning more stable access and faster iteration on capabilities that matter to biology and medicine.",
+      "code_example": "from esm.models.esm3 import ESM3\nfrom esm.sdk.api import ESMProtein\n\n# Load the open-weights ESM3 model\nmodel = ESM3.from_pretrained(\"esm3-small-open\")\n\n# Encode a protein sequence for downstream analysis\nprotein = ESMProtein(sequence=\"MKTAYIAKQRQISFVK...\")\noutput = model.encode(protein)",
+      "visual_type": "table",
+      "visual_url": null,
+      "visual_data": {
+        "headers": ["ESM Capability", "Real-World Application"],
+        "rows": [
+          ["Structure prediction", "Identify drug binding sites"],
+          ["Mutation scoring", "Predict disease-causing variants"],
+          ["Protein generation", "Design new therapeutic proteins"],
+          ["Evolutionary analysis", "Study how life evolved at molecular level"]
+        ]
+      },
+      "source_name": "GitHub",
+      "source_url": "https://github.com/Biohub/esm"
     }
   ]
 }
