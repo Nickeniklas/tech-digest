@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-05-23",
-    "title": "A Free Finance Terminal Is Giving Anyone Access to Institutional-Grade Market Research",
-    "summary": "FinceptTerminal, an open-source financial analytics application, is trending on GitHub this week.",
-    "source_urls": [
-      "https://github.com/Fincept-Corporation/FinceptTerminal"
-    ]
-  },
-  {
-    "date": "2026-05-23",
-    "title": "A New 'AI Engineering From Scratch' Course Is Trending on GitHub",
-    "summary": "A learning repository called 'ai-engineering-from-scratch' is gaining traction on GitHub with a straightforward premise: learn it, build it, ship it.",
-    "source_urls": [
-      "https://github.com/rohitg00/ai-engineering-from-scratch"
-    ]
-  },
-  {
-    "date": "2026-05-23",
-    "title": "Andrej Karpathy's Neural Networks Course Is Finding a New Wave of Readers",
-    "summary": "The 'Neural Networks: Zero to Hero' repository by Andrej Karpathy — former Tesla AI director and one of AI's most respected educators — has returned to GitHub's trending list.",
-    "source_urls": [
-      "https://github.com/karpathy/nn-zero-to-hero"
-    ]
-  },
-  {
-    "date": "2026-05-23",
-    "title": "Odoo Reminds Businesses That Open-Source Can Replace Most Office Software",
-    "summary": "Odoo, a comprehensive open-source suite covering CRM, accounting, HR, inventory, and more, is trending on GitHub this week.",
-    "source_urls": [
-      "https://github.com/odoo/odoo"
-    ]
-  },
-  {
-    "date": "2026-05-23",
-    "title": "'The Book of Secret Knowledge' Is Back on Trending — A Practical Tech Resource Worth Bookmarking",
-    "summary": "A long-running GitHub repository called 'the-book-of-secret-knowledge' has returned to trending.",
-    "source_urls": [
-      "https://github.com/trimstray/the-book-of-secret-knowledge"
-    ]
-  },
-  {
-    "date": "2026-05-23",
-    "title": "yt-dlp: The Video Downloader That Powers Most Serious Media Archives",
-    "summary": "yt-dlp — a command-line tool for downloading video and audio from YouTube, Vimeo, and hundreds of other platforms — is on GitHub's trending list this week.",
-    "source_urls": [
-      "https://github.com/yt-dlp/yt-dlp"
-    ]
-  },
-  {
     "date": "2026-05-24",
     "title": "A Free, Open-Source AI Presentation Generator Challenges Gamma and Beautiful.ai",
     "summary": "Presenton launched on GitHub as a free, self-hostable alternative to paid AI presentation tools like Gamma, Beautiful.",
@@ -373,6 +325,54 @@
     "summary": "The ESM (Evolutionary Scale Modeling) repository — Meta's family of AI models that predict protein structure and function from biological sequences — has moved to the Chan Zuckerberg Biohub on GitHub.",
     "source_urls": [
       "https://github.com/Biohub/esm"
+    ]
+  },
+  {
+    "date": "2026-05-31",
+    "title": "Your WiFi Router Can Now Monitor Rooms Without Any Cameras",
+    "summary": "A developer published RuView, a free open-source tool that converts standard WiFi signals into real-time spatial intelligence — detecting people's presence, movement, and vital signs like breathing patterns, all without installing a single camera or sensor.",
+    "source_urls": [
+      "https://github.com/ruvnet/RuView"
+    ]
+  },
+  {
+    "date": "2026-05-31",
+    "title": "A New Open-Source Voice Model Generates Realistic Speech in Any Language",
+    "summary": "OpenBMB released VoxCPM2, a free speech model built for high-fidelity multilingual voice generation, voice cloning, and long narrations with multiple speakers.",
+    "source_urls": [
+      "https://github.com/OpenBMB/VoxCPM"
+    ]
+  },
+  {
+    "date": "2026-05-31",
+    "title": "A Free Tool Automates Video Uploads to TikTok, YouTube, and More",
+    "summary": "A developer released social-auto-upload, an open-source tool that posts videos to multiple platforms — TikTok, YouTube, Bilibili, and others — automatically from a single workflow.",
+    "source_urls": [
+      "https://github.com/dreammis/social-auto-upload"
+    ]
+  },
+  {
+    "date": "2026-05-31",
+    "title": "A Free 9-Week Data Engineering Course Is Available to Anyone Right Now",
+    "summary": "DataTalksClub published a complete, self-paced course on building production-ready data pipelines — the infrastructure behind dashboards, reports, and analytics systems.",
+    "source_urls": [
+      "https://github.com/DataTalksClub/data-engineering-zoomcamp"
+    ]
+  },
+  {
+    "date": "2026-05-31",
+    "title": "A Step-by-Step Guide to Building Your Own Language Model Is Trending",
+    "summary": "A new GitHub project walks through the full process of training a language model from scratch — from sourcing data to generating text — in a deliberately plain, accessible way.",
+    "source_urls": [
+      "https://github.com/FareedKhan-dev/train-llm-from-scratch"
+    ]
+  },
+  {
+    "date": "2026-05-31",
+    "title": "VoxCPM2: What 'Tokenizer-Free' Actually Means for Voice AI",
+    "summary": "The OpenBMB team released VoxCPM2, a speech synthesis model that removes the tokenizer — the step where most voice AI systems convert audio into discrete chunks before processing.",
+    "source_urls": [
+      "https://github.com/OpenBMB/VoxCPM"
     ]
   }
 ]

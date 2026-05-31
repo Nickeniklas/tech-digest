@@ -1,110 +1,82 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Cursor just opened its AI coding editor to third-party plugins — and it could change how your whole team connects AI to the tools you already use.",
-  "fun_fact": "The 'build-your-own-x' GitHub repo has over 340,000 stars — more than most commercial software projects combined.",
+  "teaser": "A free tool turns your existing WiFi router into a room monitor that tracks presence and vital signs — no cameras, no microphones, no new hardware.",
+  "fun_fact": "RuView detects breathing through walls using the same WiFi signal your laptop uses for email.",
   "lead_story": {
-    "title": "Cursor Opens Its AI Coding Editor to Third-Party Plugins",
-    "what_happened": "Cursor, one of the most widely used AI coding editors, published its official plugin specification on GitHub along with a set of official plugins. This creates a standardized way to extend Cursor with new capabilities — similar to how browsers and code editors have long had extension stores.",
-    "what_this_means": "An official plugin system means your team's AI coding tool can now connect reliably to project management software, documentation systems, and data sources — rather than ad hoc workarounds. For teams adopting AI tools, this makes Cursor a more credible long-term platform.",
+    "title": "Your WiFi Router Can Now Monitor Rooms Without Any Cameras",
+    "what_happened": "A developer published RuView, a free open-source tool that converts standard WiFi signals into real-time spatial intelligence — detecting people's presence, movement, and vital signs like breathing patterns, all without installing a single camera or sensor.",
+    "what_this_means": "For facilities managers and HR teams, this creates possibilities for occupancy tracking and workplace safety monitoring without video surveillance infrastructure. For everyone else, it's a striking reminder that physical privacy may depend less on cameras than on the wireless signals already filling your home or office.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["Plugin Type", "What It Enables"],
+      "headers": ["Capability", "Hardware Required", "What It Captures"],
       "rows": [
-        ["Document readers", "Feed PDFs, wikis, and docs directly into AI context"],
-        ["API connectors", "Pull live data from external services while coding"],
-        ["Linters and formatters", "Enforce code quality rules automatically"],
-        ["Test runners", "Auto-run tests as you write and edit code"]
+        ["Presence detection", "Existing WiFi router", "Signal reflections only — no video"],
+        ["Vital sign monitoring", "Existing WiFi router", "Breathing patterns — no audio"],
+        ["Spatial mapping", "Existing WiFi router", "Movement paths — no visual data"]
       ]
     },
     "source_name": "GitHub",
-    "source_url": "https://github.com/cursor/plugins"
+    "source_url": "https://github.com/ruvnet/RuView"
   },
   "quick_hits": [
     {
-      "title": "A Fast Open-Source Document Parser From the Team Behind LlamaIndex",
-      "summary": "The team behind LlamaIndex released LiteParse, a free open-source tool for converting documents into clean text that AI can actually use. It runs locally without sending your files to a third-party server, and the team says it's faster than their previous paid parser. For professionals using AI to process contracts, reports, or research files, this is a practical alternative to paid parsing services.",
+      "title": "A New Open-Source Voice Model Generates Realistic Speech in Any Language",
+      "summary": "OpenBMB released VoxCPM2, a free speech model built for high-fidelity multilingual voice generation, voice cloning, and long narrations with multiple speakers. It skips the tokenization step that limits most multilingual voice tools, producing more natural results. Content creators, educators, and podcasters working across languages now have a self-hostable option.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/run-llama/liteparse"
+      "source_url": "https://github.com/OpenBMB/VoxCPM"
     },
     {
-      "title": "Project NOMAD: An Offline AI Companion That Works Without the Internet",
-      "summary": "A developer published Project NOMAD, a self-contained offline computer that runs AI models locally alongside a curated library of critical knowledge — medical guides, maps, engineering references. It's designed for situations where internet infrastructure is unavailable. For professionals in emergency management, field research, or humanitarian work, it's a concrete example of AI deployed outside the cloud.",
+      "title": "A Free Tool Automates Video Uploads to TikTok, YouTube, and More",
+      "summary": "A developer released social-auto-upload, an open-source tool that posts videos to multiple platforms — TikTok, YouTube, Bilibili, and others — automatically from a single workflow. For marketing teams managing multi-platform content, it removes the repetitive manual upload step.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/Crosstalk-Solutions/project-nomad"
+      "source_url": "https://github.com/dreammis/social-auto-upload"
     },
     {
-      "title": "Anthropic's Claude Code Reaches GitHub Trending",
-      "summary": "Claude Code — Anthropic's AI coding tool that runs in a terminal and can read your codebase, make changes, run tests, and handle git workflows — appeared on GitHub's trending list this week. It's designed to work as a fully autonomous agent rather than just a suggestion engine. The trend signal suggests it's moving from early adopters toward mainstream developer use.",
+      "title": "A Free 9-Week Data Engineering Course Is Available to Anyone Right Now",
+      "summary": "DataTalksClub published a complete, self-paced course on building production-ready data pipelines — the infrastructure behind dashboards, reports, and analytics systems. No tuition, no subscription. The next formal cohort begins January 2026, but all materials are publicly available now.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/anthropics/claude-code"
+      "source_url": "https://github.com/DataTalksClub/data-engineering-zoomcamp"
     },
     {
-      "title": "The Most-Starred Learn-By-Doing Programming Resource Is Back on Trending",
-      "summary": "The 'build-your-own-x' GitHub repository has returned to trending. It teaches programming by walking you through recreating real tools — search engines, databases, browsers — from scratch. With over 340,000 GitHub stars, it's one of the most-saved learning resources in software, and its return suggests a continuing appetite for fundamentals over shortcuts.",
-      "visual_type": "chart",
+      "title": "A Step-by-Step Guide to Building Your Own Language Model Is Trending",
+      "summary": "A new GitHub project walks through the full process of training a language model from scratch — from sourcing data to generating text — in a deliberately plain, accessible way. It's aimed at curious learners who want to understand how models like GPT actually work, not just use them.",
+      "visual_type": null,
       "visual_url": null,
-      "visual_data": {
-        "headers": ["Repository", "GitHub Stars (thousands)"],
-        "rows": [
-          ["build-your-own-x", "340"],
-          ["freeCodeCamp", "415"],
-          ["coding-interview-university", "310"],
-          ["developer-roadmap", "310"],
-          ["awesome", "350"]
-        ]
-      },
+      "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/codecrafters-io/build-your-own-x"
+      "source_url": "https://github.com/FareedKhan-dev/train-llm-from-scratch"
     }
   ],
   "under_the_hood": [
     {
-      "title": "A New Platform for Evaluating AI 'World Models' Focuses on Reproducibility",
-      "what_happened": "Galilai Group published Stable Worldmodel, an open platform for building and comparing AI world models — systems that simulate how environments change over time. Unlike previous research, the platform emphasizes reproducibility: researchers publish experiments others can verify with the identical setup. It covers physics simulations, digital environments, and scientific modeling domains.",
-      "why_it_matters": "Reproducibility has been a chronic weakness in AI research — results that can't be independently verified don't hold up in practice. A shared evaluation platform for world models could shift how this field validates progress, which matters for anyone tracking what AI systems can actually do versus what they claim.",
+      "title": "VoxCPM2: What 'Tokenizer-Free' Actually Means for Voice AI",
+      "what_happened": "The OpenBMB team released VoxCPM2, a speech synthesis model that removes the tokenizer — the step where most voice AI systems convert audio into discrete chunks before processing. Eliminating that step lets the model handle multilingual speech more naturally, clone voices with higher fidelity, and sustain quality across long narrations without the audio artifacts tokenized systems typically introduce.",
+      "why_it_matters": "Traditional TTS models train separate per-language systems or sacrifice quality when switching languages mid-sentence. A token-free architecture processes audio as a continuous signal, which is closer to how human hearing works. This matters for audiobook production, real-time translation, and multi-speaker podcast generation. It's fully open-source and self-hostable — no API costs.",
       "code_example": null,
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Domain", "Example Task"],
+        "headers": ["Feature", "Traditional TTS", "VoxCPM2"],
         "rows": [
-          ["Physics simulation", "Predict how objects move and collide"],
-          ["Digital environments", "Navigate and plan in game-like virtual spaces"],
-          ["Scientific modeling", "Simulate climate or molecular dynamics"],
-          ["Autonomous systems", "Model vehicle or robot behavior"]
+          ["Architecture", "Tokenizer-based", "Tokenizer-free"],
+          ["Multilingual", "Separate per-language models", "Native multilingual"],
+          ["Voice cloning", "Requires many samples", "True-to-life cloning"],
+          ["Long-form quality", "Degrades over time", "Stable throughout"],
+          ["Deployment", "Cloud API or complex setup", "Open-source, self-hostable"]
         ]
       },
       "source_name": "GitHub",
-      "source_url": "https://github.com/galilai-group/stable-worldmodel"
-    },
-    {
-      "title": "Meta's Protein AI Models Move to CZ Biohub for Long-Term Stewardship",
-      "what_happened": "The ESM (Evolutionary Scale Modeling) repository — Meta's family of AI models that predict protein structure and function from biological sequences — has moved to the Chan Zuckerberg Biohub on GitHub. ESM models read protein sequences the way language models read text, predicting how proteins fold and what they do in the body. CZ Biohub is a research nonprofit backed by Priscilla Chan and Mark Zuckerberg.",
-      "why_it_matters": "ESM has driven real drug discovery and disease research since Meta first released it. Transferring stewardship to a research nonprofit signals a longer-term, science-first approach rather than a commercial one — likely meaning more stable access and faster iteration on capabilities that matter to biology and medicine.",
-      "code_example": "from esm.models.esm3 import ESM3\nfrom esm.sdk.api import ESMProtein\n\n# Load the open-weights ESM3 model\nmodel = ESM3.from_pretrained(\"esm3-small-open\")\n\n# Encode a protein sequence for downstream analysis\nprotein = ESMProtein(sequence=\"MKTAYIAKQRQISFVK...\")\noutput = model.encode(protein)",
-      "visual_type": "table",
-      "visual_url": null,
-      "visual_data": {
-        "headers": ["ESM Capability", "Real-World Application"],
-        "rows": [
-          ["Structure prediction", "Identify drug binding sites"],
-          ["Mutation scoring", "Predict disease-causing variants"],
-          ["Protein generation", "Design new therapeutic proteins"],
-          ["Evolutionary analysis", "Study how life evolved at molecular level"]
-        ]
-      },
-      "source_name": "GitHub",
-      "source_url": "https://github.com/Biohub/esm"
+      "source_url": "https://github.com/OpenBMB/VoxCPM"
     }
   ]
 }
