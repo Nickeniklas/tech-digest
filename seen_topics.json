@@ -1,45 +1,5 @@
 [
   {
-    "date": "2026-05-24",
-    "title": "A Free, Open-Source AI Presentation Generator Challenges Gamma and Beautiful.ai",
-    "summary": "Presenton launched on GitHub as a free, self-hostable alternative to paid AI presentation tools like Gamma, Beautiful.",
-    "source_urls": [
-      "https://github.com/presenton/presenton"
-    ]
-  },
-  {
-    "date": "2026-05-24",
-    "title": "754 Cybersecurity Skills Released for AI Coding Assistants",
-    "summary": "A developer published a library of 754 structured cybersecurity skills for AI coding agents, mapped to five major frameworks including MITRE ATT&CK and NIST.",
-    "source_urls": [
-      "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
-    ]
-  },
-  {
-    "date": "2026-05-24",
-    "title": "NVIDIA's Research Lab Published Infrastructure for Long AI-Generated Video",
-    "summary": "NVIDIA NV Labs released LongLive 2.",
-    "source_urls": [
-      "https://github.com/NVlabs/LongLive"
-    ]
-  },
-  {
-    "date": "2026-05-24",
-    "title": "The Interactive Code Map Tool Now Works With Every Major AI Coding Assistant",
-    "summary": "Previously covered on 2026-05-22: Understand-Anything turns any codebase into a navigable knowledge graph you can search and ask questions about.",
-    "source_urls": [
-      "https://github.com/Lum1104/Understand-Anything"
-    ]
-  },
-  {
-    "date": "2026-05-24",
-    "title": "Jane Street Open-Sourced a Tool That Records Every Function Call Your Program Makes",
-    "summary": "Jane Street, the quantitative trading firm known for its rigorous engineering culture, released magic-trace — a tool that uses Intel's hardware tracing capability to capture a complete, high-resolution recording of every function a program calls.",
-    "source_urls": [
-      "https://github.com/janestreet/magic-trace"
-    ]
-  },
-  {
     "date": "2026-05-25",
     "title": "Anthropic Published an Official Plugin Library Built for Knowledge Workers",
     "summary": "Anthropic released a new open-source repository called knowledge-work-plugins — an officially managed collection of Claude plugins designed specifically for non-technical professionals: teachers, marketers, lawyers, designers, and managers who use AI in their daily work.",
@@ -373,6 +333,46 @@
     "summary": "The OpenBMB team released VoxCPM2, a speech synthesis model that removes the tokenizer — the step where most voice AI systems convert audio into discrete chunks before processing.",
     "source_urls": [
       "https://github.com/OpenBMB/VoxCPM"
+    ]
+  },
+  {
+    "date": "2026-06-01",
+    "title": "A New Memory Engine Promises to Give Every AI App Reliable, Instant Recall",
+    "summary": "Supermemory — billed as 'the Memory API for the AI era' — is trending on GitHub.",
+    "source_urls": [
+      "https://github.com/supermemoryai/supermemory"
+    ]
+  },
+  {
+    "date": "2026-06-01",
+    "title": "Hermes AI Agent Gets a Web Interface You Can Use From Your Phone",
+    "summary": "Hermes WebUI is a new open-source project that gives the Hermes AI agent a proper web interface, accessible from any browser including your phone.",
+    "source_urls": [
+      "https://github.com/nesquena/hermes-webui"
+    ]
+  },
+  {
+    "date": "2026-06-01",
+    "title": "A Web Scraper That Fixes Itself When Sites Change Their Layout",
+    "summary": "Scrapling is a new Python library for pulling data from websites that adapts automatically when a site redesigns — something traditional scrapers can't do.",
+    "source_urls": [
+      "https://github.com/D4Vinci/Scrapling"
+    ]
+  },
+  {
+    "date": "2026-06-01",
+    "title": "Pi AI Agent Framework Gets Parallel Task Delegation",
+    "summary": "Previously covered on 2026-05-25: Pi is an open-source AI agent toolkit with a CLI, web UI, and multi-provider support.",
+    "source_urls": [
+      "https://github.com/nicobailon/pi-subagents"
+    ]
+  },
+  {
+    "date": "2026-06-01",
+    "title": "How Adaptive Web Scraping Works — and Why It Matters Beyond Developers",
+    "summary": "Scrapling uses AI-backed element matching to locate data on web pages by meaning rather than by rigid CSS selectors or XPath rules.",
+    "source_urls": [
+      "https://github.com/D4Vinci/Scrapling"
     ]
   }
 ]
