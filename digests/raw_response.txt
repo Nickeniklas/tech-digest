@@ -1,72 +1,93 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "AI tools are getting better at remembering your work — and a new open-source memory engine is making that infrastructure available to any app.",
-  "fun_fact": "Every time you start a new AI chat, the AI is meeting you for the first time — again.",
+  "teaser": "AI agents are now making stock trades, a free design language helps AI tools think like a designer, and a zero-cost game engine is surging again.",
+  "fun_fact": "The Godot game engine has zero licensing fees — not now, not ever.",
   "lead_story": {
-    "title": "A New Memory Engine Promises to Give Every AI App Reliable, Instant Recall",
-    "what_happened": "Supermemory — billed as 'the Memory API for the AI era' — is trending on GitHub. It's a fast, scalable memory layer that developers can drop into any AI application, giving it the ability to store and search information across sessions, users, and conversations.",
-    "what_this_means": "Most AI tools today forget everything the moment you close a tab. Supermemory is the infrastructure that fixes that — meaning the AI apps you use at work could soon reliably remember your past conversations, preferences, and context without any extra effort on your part.",
+    "title": "A Multi-Agent AI System for Financial Trading Is Trending on GitHub",
+    "what_happened": "TauricResearch published TradingAgents, an open-source framework that deploys multiple AI agents simultaneously — one tracking price charts, another reading financial news, another evaluating risk — and coordinates them to drive trading decisions. It is built to connect to real market data feeds.",
+    "what_this_means": "AI-powered trading has long existed inside major hedge funds, but open-source frameworks like this lower the barrier for smaller firms and fintech developers to experiment with multi-agent strategies. Financial advisors and investment analysts will want to watch this space.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["Capability", "What it means for you"],
+      "headers": ["Agent Role", "What It Does"],
       "rows": [
-        ["Stores memories from AI conversations", "No more re-explaining your context every session"],
-        ["Retrieves relevant memories instantly", "AI responses stay grounded in your actual situation"],
-        ["Scales across many users", "Works for solo tools and company-wide platforms alike"],
-        ["Open-source and self-hostable", "You control where your data lives"]
+        ["Analyst Agent", "Reads price charts and technical indicators"],
+        ["News Agent", "Processes financial news and market sentiment"],
+        ["Risk Agent", "Evaluates position sizing and downside exposure"],
+        ["Coordinator", "Aggregates all signals and places orders"]
       ]
     },
-    "source_name": "GitHub",
-    "source_url": "https://github.com/supermemoryai/supermemory"
+    "source_name": "GitHub (TauricResearch)",
+    "source_url": "https://github.com/TauricResearch/TradingAgents"
   },
   "quick_hits": [
     {
-      "title": "Hermes AI Agent Gets a Web Interface You Can Use From Your Phone",
-      "summary": "Hermes WebUI is a new open-source project that gives the Hermes AI agent a proper web interface, accessible from any browser including your phone. Until now, Hermes required a terminal to use. This lowers the bar for anyone who wants a capable AI agent without any technical setup.",
+      "title": "A New Design Language Teaches AI Tools to Think Like a Designer",
+      "summary": "Developer pbakaus released impeccable, a design language specification you drop into any AI coding tool to give it a stronger sense of visual style. Instead of defaulting to generic, template-looking results, the AI is guided toward more deliberate layout and aesthetic choices. Designers and marketers who use AI for creative work can use it to get less cookie-cutter outputs.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/nesquena/hermes-webui"
+      "source_name": "GitHub (pbakaus)",
+      "source_url": "https://github.com/pbakaus/impeccable"
     },
     {
-      "title": "A Web Scraper That Fixes Itself When Sites Change Their Layout",
-      "summary": "Scrapling is a new Python library for pulling data from websites that adapts automatically when a site redesigns — something traditional scrapers can't do. For anyone running reports or monitoring pipelines that pull from public sites, this means far fewer manual fixes when a site updates.",
+      "title": "Godot, the Free Game Engine, Is Surging in Popularity Again",
+      "summary": "Godot, a fully open-source 2D and 3D game engine, is back on GitHub Trending. Beyond games, developers use it for interactive training simulations, educational apps, and architectural walkthroughs — all at no cost. Its momentum has accelerated as more creators look for tools with no licensing fees.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/D4Vinci/Scrapling"
+      "source_name": "GitHub (godotengine)",
+      "source_url": "https://github.com/godotengine/godot"
     },
     {
-      "title": "Pi AI Agent Framework Gets Parallel Task Delegation",
-      "summary": "Previously covered on 2026-05-25: Pi is an open-source AI agent toolkit with a CLI, web UI, and multi-provider support. Since then, a new extension called pi-subagents adds the ability to hand off tasks to multiple specialized agents running simultaneously — so complex jobs can be split up and handled in parallel rather than one step at a time.",
+      "title": "A New AI Terminal Agent Adds Browser Control and Parallel Subagents",
+      "summary": "Developer can1357 published oh-my-pi, an AI coding agent for the terminal that goes beyond editing code — it can control a browser, read live documentation via language server protocol, and spin up subagents to run tasks in parallel. It uses hash-anchored edits, a technique that prevents the accidental overwrites common in other AI coding tools.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/nicobailon/pi-subagents"
+      "source_name": "GitHub (can1357)",
+      "source_url": "https://github.com/can1357/oh-my-pi"
     }
   ],
   "under_the_hood": [
     {
-      "title": "How Adaptive Web Scraping Works — and Why It Matters Beyond Developers",
-      "what_happened": "Scrapling uses AI-backed element matching to locate data on web pages by meaning rather than by rigid CSS selectors or XPath rules. When a site redesigns, traditional scrapers break immediately because they rely on exact structural addresses. Scrapling re-locates the same data using contextual signals — element text, relationships, and page structure — so data pipelines keep working without manual repairs.",
-      "why_it_matters": "Most automated data pipelines that pull from websites are fragile: one site update can break months of work. Scrapling is an early example of AI making data infrastructure genuinely resilient rather than just faster. The pattern here — using AI for structural reasoning, not just content generation — is the direction most tooling is heading.",
-      "code_example": "from scrapling import Scrapling\n\nscraper = Scrapling()\npage = scraper.fetch('https://example.com/products')\n\n# Finds elements by meaning, not rigid selectors\nitems = page.find_all('product name')\nprices = page.find_all('price')\n\nfor name, price in zip(items, prices):\n    print(f'{name.text}: {price.text}')",
+      "title": "A Complete Machine Learning for Trading Course Is Trending on GitHub",
+      "what_happened": "Stefan Jansen's open repository for his book Machine Learning for Algorithmic Trading (2nd edition) is trending. It includes complete Python code for applying ML to financial data — building trading signals from price history, running backtests, and evaluating portfolio performance across classical models and deep learning approaches.",
+      "why_it_matters": "For developers and quantitative analysts in finance, it is one of the most thorough public resources available, covering the full pipeline from raw data to live strategy — practical and code-first throughout.",
+      "code_example": null,
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Approach", "Breaks on redesign?", "Ongoing maintenance"],
+        "headers": ["Section", "Techniques Covered"],
         "rows": [
-          ["CSS selectors (traditional)", "Yes — immediately", "Manual fix every time"],
-          ["XPath (traditional)", "Yes — immediately", "Manual fix every time"],
-          ["Scrapling (AI-backed)", "No — adapts automatically", "Minimal to none"]
+          ["Alpha Factors", "Feature engineering from price and volume"],
+          ["ML Signals", "Linear models, decision trees, gradient boosting"],
+          ["NLP for Finance", "Sentiment from earnings calls and news feeds"],
+          ["Deep Learning", "LSTMs and CNNs for time series forecasting"],
+          ["Reinforcement Learning", "Portfolio optimization via RL agents"]
         ]
       },
-      "source_name": "GitHub",
-      "source_url": "https://github.com/D4Vinci/Scrapling"
+      "source_name": "GitHub (stefan-jansen)",
+      "source_url": "https://github.com/stefan-jansen/machine-learning-for-trading"
+    },
+    {
+      "title": "fff: The Fastest File Search Toolkit Built for AI Agents",
+      "what_happened": "Developer dmtrKovalenko released fff, a file search toolkit designed specifically for AI agents, Neovim, and native code. It prioritizes accuracy first — returning the most relevant file paths — then raw speed, running indexing and queries faster than general-purpose tools for this targeted use case.",
+      "why_it_matters": "AI coding agents spend significant time locating the right files before they can act. Faster and more accurate file lookup directly reduces the tokens agents burn navigating large codebases, cutting both latency and cost per task for anyone building or running AI development tools.",
+      "code_example": "# Query a project directory for relevant files\nfff search --query 'auth middleware' --root ./src\n\n# Index a repo for faster repeated queries\nfff index --root ./myproject",
+      "visual_type": "table",
+      "visual_url": null,
+      "visual_data": {
+        "headers": ["Tool", "Primary Use Case"],
+        "rows": [
+          ["fff", "AI agents and editors — accuracy-first file lookup"],
+          ["fd", "General-purpose fast file find"],
+          ["ripgrep", "Content search inside files"],
+          ["find", "POSIX standard, no index"]
+        ]
+      },
+      "source_name": "GitHub (dmtrKovalenko)",
+      "source_url": "https://github.com/dmtrKovalenko/fff"
     }
   ]
 }

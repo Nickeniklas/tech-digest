@@ -1,45 +1,5 @@
 [
   {
-    "date": "2026-05-25",
-    "title": "Anthropic Published an Official Plugin Library Built for Knowledge Workers",
-    "summary": "Anthropic released a new open-source repository called knowledge-work-plugins — an officially managed collection of Claude plugins designed specifically for non-technical professionals: teachers, marketers, lawyers, designers, and managers who use AI in their daily work.",
-    "source_urls": [
-      "https://github.com/anthropics/knowledge-work-plugins"
-    ]
-  },
-  {
-    "date": "2026-05-25",
-    "title": "A New AI Model Was Built to Understand Financial Markets — Not Just Text About Them",
-    "summary": "Researchers released Kronos, a foundation model trained specifically on financial market data rather than general language.",
-    "source_urls": [
-      "https://github.com/shiyu-coder/Kronos"
-    ]
-  },
-  {
-    "date": "2026-05-25",
-    "title": "A New Tool Cuts AI Coding Assistant Token Usage — and Keeps Your Code Off the Cloud",
-    "summary": "CodeGraph is a pre-indexed knowledge graph for your codebase that works with Claude Code, Cursor, GitHub Copilot, and others.",
-    "source_urls": [
-      "https://github.com/colbymchenry/codegraph"
-    ]
-  },
-  {
-    "date": "2026-05-25",
-    "title": "A Free, Self-Hosted Home Security System Runs AI Directly on Your Own Hardware",
-    "summary": "Frigate is an open-source network video recorder that performs real-time object detection on your home hardware — no cloud subscription, no footage leaving your network.",
-    "source_urls": [
-      "https://github.com/blakeblackshear/frigate"
-    ]
-  },
-  {
-    "date": "2026-05-25",
-    "title": "pi: One Open-Source Toolkit Bundles a Coding Agent, Slack Bot, Web UI, and Local Model Support",
-    "summary": "A new open-source project called pi packages multiple AI agent components into a single repository: a coding agent CLI, a unified API layer that works across multiple LLM providers, both terminal and web interfaces, a Slack bot integration, and support for running open-source models locally via vLLM.",
-    "source_urls": [
-      "https://github.com/earendil-works/pi"
-    ]
-  },
-  {
     "date": "2026-05-26",
     "title": "Garry Tan's Personal Claude Code Setup Is Now Public",
     "summary": "Y Combinator president Garry Tan published gstack, his full Claude Code configuration, on GitHub.",
@@ -373,6 +333,54 @@
     "summary": "Scrapling uses AI-backed element matching to locate data on web pages by meaning rather than by rigid CSS selectors or XPath rules.",
     "source_urls": [
       "https://github.com/D4Vinci/Scrapling"
+    ]
+  },
+  {
+    "date": "2026-06-02",
+    "title": "A Multi-Agent AI System for Financial Trading Is Trending on GitHub",
+    "summary": "TauricResearch published TradingAgents, an open-source framework that deploys multiple AI agents simultaneously — one tracking price charts, another reading financial news, another evaluating risk — and coordinates them to drive trading decisions.",
+    "source_urls": [
+      "https://github.com/TauricResearch/TradingAgents"
+    ]
+  },
+  {
+    "date": "2026-06-02",
+    "title": "A New Design Language Teaches AI Tools to Think Like a Designer",
+    "summary": "Developer pbakaus released impeccable, a design language specification you drop into any AI coding tool to give it a stronger sense of visual style.",
+    "source_urls": [
+      "https://github.com/pbakaus/impeccable"
+    ]
+  },
+  {
+    "date": "2026-06-02",
+    "title": "Godot, the Free Game Engine, Is Surging in Popularity Again",
+    "summary": "Godot, a fully open-source 2D and 3D game engine, is back on GitHub Trending.",
+    "source_urls": [
+      "https://github.com/godotengine/godot"
+    ]
+  },
+  {
+    "date": "2026-06-02",
+    "title": "A New AI Terminal Agent Adds Browser Control and Parallel Subagents",
+    "summary": "Developer can1357 published oh-my-pi, an AI coding agent for the terminal that goes beyond editing code — it can control a browser, read live documentation via language server protocol, and spin up subagents to run tasks in parallel.",
+    "source_urls": [
+      "https://github.com/can1357/oh-my-pi"
+    ]
+  },
+  {
+    "date": "2026-06-02",
+    "title": "A Complete Machine Learning for Trading Course Is Trending on GitHub",
+    "summary": "Stefan Jansen's open repository for his book Machine Learning for Algorithmic Trading (2nd edition) is trending.",
+    "source_urls": [
+      "https://github.com/stefan-jansen/machine-learning-for-trading"
+    ]
+  },
+  {
+    "date": "2026-06-02",
+    "title": "fff: The Fastest File Search Toolkit Built for AI Agents",
+    "summary": "Developer dmtrKovalenko released fff, a file search toolkit designed specifically for AI agents, Neovim, and native code.",
+    "source_urls": [
+      "https://github.com/dmtrKovalenko/fff"
     ]
   }
 ]
