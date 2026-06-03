@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-05-26",
-    "title": "Garry Tan's Personal Claude Code Setup Is Now Public",
-    "summary": "Y Combinator president Garry Tan published gstack, his full Claude Code configuration, on GitHub.",
-    "source_urls": [
-      "https://github.com/garrytan/gstack"
-    ]
-  },
-  {
-    "date": "2026-05-26",
-    "title": "A New Tool Removes AI Tells from Your Writing",
-    "summary": "Developer Hardik Pandya published stop-slop, a skill file for AI writing assistants that strips out the phrases and patterns that make AI-generated prose immediately recognizable.",
-    "source_urls": [
-      "https://github.com/hardikpandya/stop-slop"
-    ]
-  },
-  {
-    "date": "2026-05-26",
-    "title": "Give Your AI Assistant Better Aesthetic Judgment",
-    "summary": "Taste-Skill is a new configuration file for AI assistants that pushes them toward more refined, specific outputs rather than generic, template-looking results.",
-    "source_urls": [
-      "https://github.com/Leonxlnx/taste-skill"
-    ]
-  },
-  {
-    "date": "2026-05-26",
-    "title": "The Open-Source Document Manager That Replaces Your Filing Cabinet",
-    "summary": "Paperless-ngx — a free, self-hosted document management system — is trending on GitHub this week.",
-    "source_urls": [
-      "https://github.com/paperless-ngx/paperless-ngx"
-    ]
-  },
-  {
-    "date": "2026-05-26",
-    "title": "A Self-Hosted AI Companion Can Now Chat, Remember You, and Play Games",
-    "summary": "Airi is an open-source AI companion system you can run entirely on your own hardware.",
-    "source_urls": [
-      "https://github.com/moeru-ai/airi"
-    ]
-  },
-  {
-    "date": "2026-05-26",
-    "title": "ECC: An Agent Harness That Adds Memory, Security, and Specialization to AI Coding Tools",
-    "summary": "A developer published ECC — a performance optimization layer for AI coding agents including Claude Code, GitHub Copilot, and Cursor.",
-    "source_urls": [
-      "https://github.com/affaan-m/ECC"
-    ]
-  },
-  {
-    "date": "2026-05-26",
-    "title": "cmux: A Dedicated macOS Terminal Built for Running Multiple AI Agents at Once",
-    "summary": "manaflow-ai released cmux, a macOS terminal built on the Ghostty engine with vertical tabs and real-time notification support designed specifically for AI coding agents.",
-    "source_urls": [
-      "https://github.com/manaflow-ai/cmux"
-    ]
-  },
-  {
     "date": "2026-05-27",
     "title": "Your AI Assistant Can Now Remember Yesterday's Work",
     "summary": "A developer published claude-mem, a free tool that captures everything an AI agent does during a session, compresses it, and automatically injects the relevant context the next time you open a conversation.",
@@ -381,6 +325,46 @@
     "summary": "Developer dmtrKovalenko released fff, a file search toolkit designed specifically for AI agents, Neovim, and native code.",
     "source_urls": [
       "https://github.com/dmtrKovalenko/fff"
+    ]
+  },
+  {
+    "date": "2026-06-03",
+    "title": "A New Tool Cuts AI Token Costs by Up to 95%",
+    "summary": "An open-source project called Headroom compresses tool outputs, logs, files, and other content before they reach an AI model — reducing the token count by 60–95% while preserving the information the AI needs to answer correctly.",
+    "source_urls": [
+      "https://github.com/chopratejas/headroom"
+    ]
+  },
+  {
+    "date": "2026-06-03",
+    "title": "Talk to Any AI Model With Just Your Voice — No Typing, No Cloud",
+    "summary": "Open-LLM-VTuber is a free, locally-run app that gives you hands-free voice conversations with any AI model, including the ability to interrupt the AI mid-sentence — the way you would in a real conversation.",
+    "source_urls": [
+      "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber"
+    ]
+  },
+  {
+    "date": "2026-06-03",
+    "title": "A Free Course Teaches You to Build AI Search Systems That Actually Work in Production",
+    "summary": "A new GitHub course covers 'agentic RAG' — the technique behind AI tools that search, retrieve, and reason over large document collections, rather than just answering from memory.",
+    "source_urls": [
+      "https://github.com/jamwithai/production-agentic-rag-course"
+    ]
+  },
+  {
+    "date": "2026-06-03",
+    "title": "A Visual Investigation Tool for Analysts and Researchers Is Gaining Traction",
+    "summary": "Flowsint is an open-source platform that maps relationships between people, organizations, and events on an interactive visual graph — the kind of view used to untangle complex fraud cases, competitive research, or due diligence.",
+    "source_urls": [
+      "https://github.com/reconurge/flowsint"
+    ]
+  },
+  {
+    "date": "2026-06-03",
+    "title": "A New System Adds Memory, Security, and Research Skills to AI Coding Agents",
+    "summary": "ECC (agent harness performance optimization system) is an open-source framework that extends AI coding agents — including Claude Code, Codex, Cursor, and Opencode — with persistent memory across sessions, security checks, instinct-driven decision-making, and a research-first mode that looks for existing solutions before generating new code.",
+    "source_urls": [
+      "https://github.com/affaan-m/ECC"
     ]
   }
 ]

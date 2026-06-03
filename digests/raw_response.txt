@@ -1,93 +1,57 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "AI agents are now making stock trades, a free design language helps AI tools think like a designer, and a zero-cost game engine is surging again.",
-  "fun_fact": "The Godot game engine has zero licensing fees — not now, not ever.",
+  "teaser": "A new open-source tool cuts the cost of running AI apps by up to 95% — without changing the AI model or the answers it gives.",
+  "fun_fact": "A 60–95% drop in token usage means the same AI task could cost 20x less to run.",
   "lead_story": {
-    "title": "A Multi-Agent AI System for Financial Trading Is Trending on GitHub",
-    "what_happened": "TauricResearch published TradingAgents, an open-source framework that deploys multiple AI agents simultaneously — one tracking price charts, another reading financial news, another evaluating risk — and coordinates them to drive trading decisions. It is built to connect to real market data feeds.",
-    "what_this_means": "AI-powered trading has long existed inside major hedge funds, but open-source frameworks like this lower the barrier for smaller firms and fintech developers to experiment with multi-agent strategies. Financial advisors and investment analysts will want to watch this space.",
-    "visual_type": "table",
+    "title": "A New Tool Cuts AI Token Costs by Up to 95%",
+    "what_happened": "An open-source project called Headroom compresses tool outputs, logs, files, and other content before they reach an AI model — reducing the token count by 60–95% while preserving the information the AI needs to answer correctly. It works as a library, a proxy, or an MCP server.",
+    "what_this_means": "If you build AI features into products or use AI tools that bill by the word, Headroom could dramatically cut your costs without changing the quality of answers. For marketers running content pipelines, developers building AI apps, or anyone paying for AI by the token, that's a meaningful difference.",
+    "visual_type": "chart",
     "visual_url": null,
-    "visual_data": {
-      "headers": ["Agent Role", "What It Does"],
-      "rows": [
-        ["Analyst Agent", "Reads price charts and technical indicators"],
-        ["News Agent", "Processes financial news and market sentiment"],
-        ["Risk Agent", "Evaluates position sizing and downside exposure"],
-        ["Coordinator", "Aggregates all signals and places orders"]
-      ]
-    },
-    "source_name": "GitHub (TauricResearch)",
-    "source_url": "https://github.com/TauricResearch/TradingAgents"
+    "visual_data": {"headers": ["Content Type", "Typical Token Reduction"], "rows": [["Logs & traces", "~90%"], ["Tool outputs", "~85%"], ["RAG / document chunks", "~75%"], ["General files", "~60%"]]},
+    "source_name": "GitHub",
+    "source_url": "https://github.com/chopratejas/headroom"
   },
   "quick_hits": [
     {
-      "title": "A New Design Language Teaches AI Tools to Think Like a Designer",
-      "summary": "Developer pbakaus released impeccable, a design language specification you drop into any AI coding tool to give it a stronger sense of visual style. Instead of defaulting to generic, template-looking results, the AI is guided toward more deliberate layout and aesthetic choices. Designers and marketers who use AI for creative work can use it to get less cookie-cutter outputs.",
+      "title": "Talk to Any AI Model With Just Your Voice — No Typing, No Cloud",
+      "summary": "Open-LLM-VTuber is a free, locally-run app that gives you hands-free voice conversations with any AI model, including the ability to interrupt the AI mid-sentence — the way you would in a real conversation. It runs entirely on your own computer, with no data sent to any external service, and optionally shows an animated on-screen avatar.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub (pbakaus)",
-      "source_url": "https://github.com/pbakaus/impeccable"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber"
     },
     {
-      "title": "Godot, the Free Game Engine, Is Surging in Popularity Again",
-      "summary": "Godot, a fully open-source 2D and 3D game engine, is back on GitHub Trending. Beyond games, developers use it for interactive training simulations, educational apps, and architectural walkthroughs — all at no cost. Its momentum has accelerated as more creators look for tools with no licensing fees.",
+      "title": "A Free Course Teaches You to Build AI Search Systems That Actually Work in Production",
+      "summary": "A new GitHub course covers 'agentic RAG' — the technique behind AI tools that search, retrieve, and reason over large document collections, rather than just answering from memory. The course focuses on building systems that hold up in real-world production environments, not just demos.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub (godotengine)",
-      "source_url": "https://github.com/godotengine/godot"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/jamwithai/production-agentic-rag-course"
     },
     {
-      "title": "A New AI Terminal Agent Adds Browser Control and Parallel Subagents",
-      "summary": "Developer can1357 published oh-my-pi, an AI coding agent for the terminal that goes beyond editing code — it can control a browser, read live documentation via language server protocol, and spin up subagents to run tasks in parallel. It uses hash-anchored edits, a technique that prevents the accidental overwrites common in other AI coding tools.",
+      "title": "A Visual Investigation Tool for Analysts and Researchers Is Gaining Traction",
+      "summary": "Flowsint is an open-source platform that maps relationships between people, organizations, and events on an interactive visual graph — the kind of view used to untangle complex fraud cases, competitive research, or due diligence. It's built to be extensible, so teams can plug in their own data sources.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub (can1357)",
-      "source_url": "https://github.com/can1357/oh-my-pi"
+      "source_name": "GitHub",
+      "source_url": "https://github.com/reconurge/flowsint"
     }
   ],
   "under_the_hood": [
     {
-      "title": "A Complete Machine Learning for Trading Course Is Trending on GitHub",
-      "what_happened": "Stefan Jansen's open repository for his book Machine Learning for Algorithmic Trading (2nd edition) is trending. It includes complete Python code for applying ML to financial data — building trading signals from price history, running backtests, and evaluating portfolio performance across classical models and deep learning approaches.",
-      "why_it_matters": "For developers and quantitative analysts in finance, it is one of the most thorough public resources available, covering the full pipeline from raw data to live strategy — practical and code-first throughout.",
-      "code_example": null,
+      "title": "A New System Adds Memory, Security, and Research Skills to AI Coding Agents",
+      "what_happened": "ECC (agent harness performance optimization system) is an open-source framework that extends AI coding agents — including Claude Code, Codex, Cursor, and Opencode — with persistent memory across sessions, security checks, instinct-driven decision-making, and a research-first mode that looks for existing solutions before generating new code.",
+      "why_it_matters": "Most AI coding tools start fresh every session with no awareness of past decisions or security context. ECC gives them a form of institutional memory and judgment, which is the key missing ingredient for AI agents on long-running or security-sensitive projects. If it works as advertised, it brings AI coding closer to the consistency of a human engineer who's been on a project for months.",
+      "code_example": "# ECC augments your AI agent with structured memory\n# Place the skills directory in your project root\n# The agent automatically loads context on each session:\n#\n# Memory: 'Session 4: chose SQLite (single-user app)'\n# Instinct: 'Prefer existing utils over new abstractions'\n# Security: 'Flag any eval() or shell injection patterns'\n# Research: 'Check PyPI before writing a new parser'",
       "visual_type": "table",
       "visual_url": null,
-      "visual_data": {
-        "headers": ["Section", "Techniques Covered"],
-        "rows": [
-          ["Alpha Factors", "Feature engineering from price and volume"],
-          ["ML Signals", "Linear models, decision trees, gradient boosting"],
-          ["NLP for Finance", "Sentiment from earnings calls and news feeds"],
-          ["Deep Learning", "LSTMs and CNNs for time series forecasting"],
-          ["Reinforcement Learning", "Portfolio optimization via RL agents"]
-        ]
-      },
-      "source_name": "GitHub (stefan-jansen)",
-      "source_url": "https://github.com/stefan-jansen/machine-learning-for-trading"
-    },
-    {
-      "title": "fff: The Fastest File Search Toolkit Built for AI Agents",
-      "what_happened": "Developer dmtrKovalenko released fff, a file search toolkit designed specifically for AI agents, Neovim, and native code. It prioritizes accuracy first — returning the most relevant file paths — then raw speed, running indexing and queries faster than general-purpose tools for this targeted use case.",
-      "why_it_matters": "AI coding agents spend significant time locating the right files before they can act. Faster and more accurate file lookup directly reduces the tokens agents burn navigating large codebases, cutting both latency and cost per task for anyone building or running AI development tools.",
-      "code_example": "# Query a project directory for relevant files\nfff search --query 'auth middleware' --root ./src\n\n# Index a repo for faster repeated queries\nfff index --root ./myproject",
-      "visual_type": "table",
-      "visual_url": null,
-      "visual_data": {
-        "headers": ["Tool", "Primary Use Case"],
-        "rows": [
-          ["fff", "AI agents and editors — accuracy-first file lookup"],
-          ["fd", "General-purpose fast file find"],
-          ["ripgrep", "Content search inside files"],
-          ["find", "POSIX standard, no index"]
-        ]
-      },
-      "source_name": "GitHub (dmtrKovalenko)",
-      "source_url": "https://github.com/dmtrKovalenko/fff"
+      "visual_data": {"headers": ["ECC Capability", "What It Does"], "rows": [["Memory", "Retains key decisions and context across sessions"], ["Instincts", "Steers the agent toward proven patterns"], ["Security", "Flags risky code before it gets committed"], ["Research-first", "Checks for existing solutions before writing new code"]]},
+      "source_name": "GitHub",
+      "source_url": "https://github.com/affaan-m/ECC"
     }
   ]
 }
