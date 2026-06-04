@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-05-27",
-    "title": "Your AI Assistant Can Now Remember Yesterday's Work",
-    "summary": "A developer published claude-mem, a free tool that captures everything an AI agent does during a session, compresses it, and automatically injects the relevant context the next time you open a conversation.",
-    "source_urls": [
-      "https://github.com/thedotmack/claude-mem"
-    ]
-  },
-  {
-    "date": "2026-05-27",
-    "title": "An Open-Source CRM Built for the AI Era Is Gaining Traction",
-    "summary": "Twenty is a free, open-source alternative to Salesforce redesigned from the ground up with AI in mind — full contact management, pipelines, notes, and tasks, no enterprise price tag.",
-    "source_urls": [
-      "https://github.com/twentyhq/twenty"
-    ]
-  },
-  {
-    "date": "2026-05-27",
-    "title": "Free Web Domains — No Catch, No Subscription",
-    "summary": "DigitalPlat FreeDomain gives anyone a free web domain with no strings attached.",
-    "source_urls": [
-      "https://github.com/DigitalPlatDev/FreeDomain"
-    ]
-  },
-  {
-    "date": "2026-05-27",
-    "title": "A Community Directory of the Best Free Apps Is Trending on GitHub",
-    "summary": "Awesome Free Apps is a curated, community-maintained list of the best no-cost software for PC and mobile, organized by category.",
-    "source_urls": [
-      "https://github.com/Axorax/awesome-free-apps"
-    ]
-  },
-  {
-    "date": "2026-05-27",
-    "title": "A Free Stock Tracker Offers Real-Time Market Data Without a Subscription",
-    "summary": "OpenStock is an open-source platform with real-time prices, personalized alerts, and detailed company profiles — permanently free.",
-    "source_urls": [
-      "https://github.com/Open-Dev-Society/OpenStock"
-    ]
-  },
-  {
-    "date": "2026-05-27",
-    "title": "A Japanese Tech Firm Open-Sourced a Physics Solver for 3D Simulations",
-    "summary": "ST Technology released ppf-contact-solver, an open-source library for simulating how 3D objects physically interact — cloth folding without clipping, solids compressing and bouncing, ropes bending and tangling.",
-    "source_urls": [
-      "https://github.com/st-tech/ppf-contact-solver"
-    ]
-  },
-  {
     "date": "2026-05-28",
     "title": "A Free Tool Can Build a Complete Short Video From a Single Text Prompt",
     "summary": "MoneyPrinterTurbo is an open-source project that uses AI to convert a text idea into a finished short-form video — with narration, subtitles, and visuals — automatically.",
@@ -365,6 +317,54 @@
     "summary": "ECC (agent harness performance optimization system) is an open-source framework that extends AI coding agents — including Claude Code, Codex, Cursor, and Opencode — with persistent memory across sessions, security checks, instinct-driven decision-making, and a research-first mode that looks for existing solutions before generating new code.",
     "source_urls": [
       "https://github.com/affaan-m/ECC"
+    ]
+  },
+  {
+    "date": "2026-06-04",
+    "title": "Powerful AI Models Now Run on Everyday Hardware",
+    "summary": "AirLLM, a free Python library by developer lyogavin, lets you run 70-billion-parameter AI models on a single consumer GPU with just 4GB of memory — by loading one layer of the model at a time rather than all at once.",
+    "source_urls": [
+      "https://github.com/lyogavin/airllm"
+    ]
+  },
+  {
+    "date": "2026-06-04",
+    "title": "NousResearch Releases an AI Agent Designed to Grow With You",
+    "summary": "NousResearch — a team known for producing well-regarded open-source AI models — released Hermes Agent on GitHub, positioning it as a personal AI agent that adapts over time rather than starting fresh with every session.",
+    "source_urls": [
+      "https://github.com/NousResearch/hermes-agent"
+    ]
+  },
+  {
+    "date": "2026-06-04",
+    "title": "A New Open-Source Tool Makes PDFs Readable by AI Systems",
+    "summary": "OpenDataLoader PDF is a free tool that converts PDF files into clean, structured text that AI tools can actually process, including automating accessibility for scanned documents.",
+    "source_urls": [
+      "https://github.com/opendataloader-project/opendataloader-pdf"
+    ]
+  },
+  {
+    "date": "2026-06-04",
+    "title": "A Personal AI Trading Agent Is Trending on GitHub",
+    "summary": "HKUDS (a Hong Kong University data science team) released Vibe-Trading, an open-source personal AI trading agent.",
+    "source_urls": [
+      "https://github.com/HKUDS/Vibe-Trading"
+    ]
+  },
+  {
+    "date": "2026-06-04",
+    "title": "Trivy: The Security Scanner That Checks Your Entire Infrastructure at Once",
+    "summary": "Aqua Security's Trivy is trending again on GitHub.",
+    "source_urls": [
+      "https://github.com/aquasecurity/trivy"
+    ]
+  },
+  {
+    "date": "2026-06-04",
+    "title": "How AirLLM Fits a 70B Model in 4GB of Memory",
+    "summary": "AirLLM achieves its memory reduction by loading a neural network one layer at a time from disk, running that layer's computation on the GPU, then discarding it before loading the next.",
+    "source_urls": [
+      "https://github.com/lyogavin/airllm"
     ]
   }
 ]

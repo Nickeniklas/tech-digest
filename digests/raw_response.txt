@@ -1,57 +1,66 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "A new open-source tool cuts the cost of running AI apps by up to 95% — without changing the AI model or the answers it gives.",
-  "fun_fact": "A 60–95% drop in token usage means the same AI task could cost 20x less to run.",
+  "teaser": "A free Python library now lets you run a 70-billion-parameter AI model on the same GPU found in a mid-range gaming computer — no cloud server required.",
+  "fun_fact": "Most powerful AI models need 140GB of GPU memory — AirLLM fits one in 4GB.",
   "lead_story": {
-    "title": "A New Tool Cuts AI Token Costs by Up to 95%",
-    "what_happened": "An open-source project called Headroom compresses tool outputs, logs, files, and other content before they reach an AI model — reducing the token count by 60–95% while preserving the information the AI needs to answer correctly. It works as a library, a proxy, or an MCP server.",
-    "what_this_means": "If you build AI features into products or use AI tools that bill by the word, Headroom could dramatically cut your costs without changing the quality of answers. For marketers running content pipelines, developers building AI apps, or anyone paying for AI by the token, that's a meaningful difference.",
+    "title": "Powerful AI Models Now Run on Everyday Hardware",
+    "what_happened": "AirLLM, a free Python library by developer lyogavin, lets you run 70-billion-parameter AI models on a single consumer GPU with just 4GB of memory — by loading one layer of the model at a time rather than all at once. Models this size previously required specialist server hardware costing tens of thousands of dollars.",
+    "what_this_means": "For lawyers, healthcare workers, HR professionals, and anyone handling sensitive documents, this makes it practical to run powerful AI entirely on your own hardware with no data leaving your computer. That matters for client confidentiality, regulatory compliance, and cutting cloud API costs.",
     "visual_type": "chart",
     "visual_url": null,
-    "visual_data": {"headers": ["Content Type", "Typical Token Reduction"], "rows": [["Logs & traces", "~90%"], ["Tool outputs", "~85%"], ["RAG / document chunks", "~75%"], ["General files", "~60%"]]},
-    "source_name": "GitHub",
-    "source_url": "https://github.com/chopratejas/headroom"
+    "visual_data": {"headers": ["Setup", "GPU Memory Required"], "rows": [["Standard 70B model", "140GB+"], ["AirLLM 70B (layer-by-layer)", "4GB"]]},
+    "source_name": "GitHub Trending",
+    "source_url": "https://github.com/lyogavin/airllm"
   },
   "quick_hits": [
     {
-      "title": "Talk to Any AI Model With Just Your Voice — No Typing, No Cloud",
-      "summary": "Open-LLM-VTuber is a free, locally-run app that gives you hands-free voice conversations with any AI model, including the ability to interrupt the AI mid-sentence — the way you would in a real conversation. It runs entirely on your own computer, with no data sent to any external service, and optionally shows an animated on-screen avatar.",
+      "title": "NousResearch Releases an AI Agent Designed to Grow With You",
+      "summary": "NousResearch — a team known for producing well-regarded open-source AI models — released Hermes Agent on GitHub, positioning it as a personal AI agent that adapts over time rather than starting fresh with every session. For professionals who want an AI assistant that learns their preferences and context, this is an early project worth tracking.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/NousResearch/hermes-agent"
     },
     {
-      "title": "A Free Course Teaches You to Build AI Search Systems That Actually Work in Production",
-      "summary": "A new GitHub course covers 'agentic RAG' — the technique behind AI tools that search, retrieve, and reason over large document collections, rather than just answering from memory. The course focuses on building systems that hold up in real-world production environments, not just demos.",
+      "title": "A New Open-Source Tool Makes PDFs Readable by AI Systems",
+      "summary": "OpenDataLoader PDF is a free tool that converts PDF files into clean, structured text that AI tools can actually process, including automating accessibility for scanned documents. For anyone whose work involves extracting, summarising, or searching large PDF archives — contracts, research papers, reports — this removes significant manual effort.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/jamwithai/production-agentic-rag-course"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/opendataloader-project/opendataloader-pdf"
     },
     {
-      "title": "A Visual Investigation Tool for Analysts and Researchers Is Gaining Traction",
-      "summary": "Flowsint is an open-source platform that maps relationships between people, organizations, and events on an interactive visual graph — the kind of view used to untangle complex fraud cases, competitive research, or due diligence. It's built to be extensible, so teams can plug in their own data sources.",
+      "title": "A Personal AI Trading Agent Is Trending on GitHub",
+      "summary": "HKUDS (a Hong Kong University data science team) released Vibe-Trading, an open-source personal AI trading agent. Unlike last week's TradingAgents — a multi-agent framework aimed at institutional-style coordination — Vibe-Trading targets individual investors, packaging AI-driven market analysis into a single personal assistant.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/reconurge/flowsint"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/HKUDS/Vibe-Trading"
+    },
+    {
+      "title": "Trivy: The Security Scanner That Checks Your Entire Infrastructure at Once",
+      "summary": "Aqua Security's Trivy is trending again on GitHub. It scans containers, Kubernetes clusters, code repositories, and cloud environments for vulnerabilities, leaked secrets, misconfigurations, and software inventory — all in a single tool. For organisations that regularly ship software, replacing five point-solutions with one scanner has real operational appeal.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/aquasecurity/trivy"
     }
   ],
   "under_the_hood": [
     {
-      "title": "A New System Adds Memory, Security, and Research Skills to AI Coding Agents",
-      "what_happened": "ECC (agent harness performance optimization system) is an open-source framework that extends AI coding agents — including Claude Code, Codex, Cursor, and Opencode — with persistent memory across sessions, security checks, instinct-driven decision-making, and a research-first mode that looks for existing solutions before generating new code.",
-      "why_it_matters": "Most AI coding tools start fresh every session with no awareness of past decisions or security context. ECC gives them a form of institutional memory and judgment, which is the key missing ingredient for AI agents on long-running or security-sensitive projects. If it works as advertised, it brings AI coding closer to the consistency of a human engineer who's been on a project for months.",
-      "code_example": "# ECC augments your AI agent with structured memory\n# Place the skills directory in your project root\n# The agent automatically loads context on each session:\n#\n# Memory: 'Session 4: chose SQLite (single-user app)'\n# Instinct: 'Prefer existing utils over new abstractions'\n# Security: 'Flag any eval() or shell injection patterns'\n# Research: 'Check PyPI before writing a new parser'",
+      "title": "How AirLLM Fits a 70B Model in 4GB of Memory",
+      "what_happened": "AirLLM achieves its memory reduction by loading a neural network one layer at a time from disk, running that layer's computation on the GPU, then discarding it before loading the next. A 70-billion-parameter model has roughly 80 transformer layers; instead of requiring 140GB of GPU memory to hold them all simultaneously, AirLLM streams each layer through a 4GB window.",
+      "why_it_matters": "This technique — layer-wise offloading — has existed in research papers, but AirLLM packages it into a simple Python API compatible with any model on HuggingFace. The tradeoff is inference speed: generating text is slower than on a fully-loaded model. For interactive chat that is a real limitation, but for batch tasks — processing documents overnight, summarising archives — the speed penalty is often acceptable in exchange for running locally at zero API cost.",
+      "code_example": "from airllm import AutoModel\n\nmodel = AutoModel.from_pretrained(\"meta-llama/Llama-2-70b-hf\")\n\ninput_text = [\"Summarise this contract clause:\"]\ntokens = model.tokenizer(input_text, return_tensors=\"pt\", padding=True)\noutput = model.generate(**tokens, max_new_tokens=200)\nprint(model.tokenizer.decode(output[0]))",
       "visual_type": "table",
       "visual_url": null,
-      "visual_data": {"headers": ["ECC Capability", "What It Does"], "rows": [["Memory", "Retains key decisions and context across sessions"], ["Instincts", "Steers the agent toward proven patterns"], ["Security", "Flags risky code before it gets committed"], ["Research-first", "Checks for existing solutions before writing new code"]]},
-      "source_name": "GitHub",
-      "source_url": "https://github.com/affaan-m/ECC"
+      "visual_data": {"headers": ["Model Size", "Standard GPU RAM", "AirLLM GPU RAM", "Speed Impact"], "rows": [["7B", "14GB", "4GB", "Minimal"], ["13B", "26GB", "4GB", "Moderate"], ["70B", "140GB+", "4GB", "Slower"]]},
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/lyogavin/airllm"
     }
   ]
 }
