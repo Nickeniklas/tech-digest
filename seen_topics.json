@@ -1,45 +1,5 @@
 [
   {
-    "date": "2026-05-28",
-    "title": "A Free Tool Can Build a Complete Short Video From a Single Text Prompt",
-    "summary": "MoneyPrinterTurbo is an open-source project that uses AI to convert a text idea into a finished short-form video — with narration, subtitles, and visuals — automatically.",
-    "source_urls": [
-      "https://github.com/harry0703/MoneyPrinterTurbo"
-    ]
-  },
-  {
-    "date": "2026-05-28",
-    "title": "A New Tool Removes Content Restrictions from AI Models Automatically",
-    "summary": "A developer released Heretic, an open-source tool that strips content filters from AI language models without requiring any technical knowledge or model modification.",
-    "source_urls": [
-      "https://github.com/p-e-w/heretic"
-    ]
-  },
-  {
-    "date": "2026-05-28",
-    "title": "A Skills Framework Gives AI Coding Agents a Structured Development Methodology",
-    "summary": "Superpowers is a new open-source project that packages a structured set of skills and workflows for AI coding agents.",
-    "source_urls": [
-      "https://github.com/obra/superpowers"
-    ]
-  },
-  {
-    "date": "2026-05-28",
-    "title": "iii Promises Real-Time Visibility Into Every Service in Your System",
-    "summary": "A project called iii appeared on GitHub Trending, offering the ability to compose, extend, and observe software services in real time.",
-    "source_urls": [
-      "https://github.com/iii-hq/iii"
-    ]
-  },
-  {
-    "date": "2026-05-28",
-    "title": "Claude Code Harness Runs an Autonomous Plan→Work→Review Loop",
-    "summary": "Claude Code Harness is a new development tool that wraps the Claude Code AI coding assistant in an autonomous cycle: the AI plans a task, executes it, then reviews its own output — looping until the result meets defined quality standards.",
-    "source_urls": [
-      "https://github.com/Chachamaru127/claude-code-harness"
-    ]
-  },
-  {
     "date": "2026-05-29",
     "title": "Microsoft's Document Converter Makes Your Files AI-Ready",
     "summary": "Microsoft released markitdown, a free Python tool that converts virtually any file format — Word documents, PowerPoint presentations, Excel spreadsheets, PDFs, and more — into Markdown.",
@@ -365,6 +325,54 @@
     "summary": "AirLLM achieves its memory reduction by loading a neural network one layer at a time from disk, running that layer's computation on the GPU, then discarding it before loading the next.",
     "source_urls": [
       "https://github.com/lyogavin/airllm"
+    ]
+  },
+  {
+    "date": "2026-06-05",
+    "title": "NVIDIA Open-Sources Its Platform for Building Physical AI",
+    "summary": "NVIDIA published Cosmos, a free open platform containing world models, datasets, and tools for building AI that operates in the physical world — robots, self-driving vehicles, and smart infrastructure.",
+    "source_urls": [
+      "https://github.com/NVIDIA/cosmos"
+    ]
+  },
+  {
+    "date": "2026-06-05",
+    "title": "A Free Self-Hosted Alternative to Google's NotebookLM Is Now Available",
+    "summary": "Open-Notebook replicates what Google NotebookLM does — letting you chat with your own documents and generate audio overviews — but runs entirely on your own hardware with no data sent to Google.",
+    "source_urls": [
+      "https://github.com/lfnovo/open-notebook"
+    ]
+  },
+  {
+    "date": "2026-06-05",
+    "title": "GitHub Releases an Official SDK for Embedding Copilot Into Any App",
+    "summary": "GitHub published a multi-platform SDK that lets developers integrate Copilot Agent — its AI coding assistant — directly into third-party tools and services.",
+    "source_urls": [
+      "https://github.com/github/copilot-sdk"
+    ]
+  },
+  {
+    "date": "2026-06-05",
+    "title": "A Powerful Free OCR Tool Now Feeds Documents Directly Into AI",
+    "summary": "PaddleOCR converts PDFs, scanned pages, and images into structured text that AI systems can process — supporting over 100 languages.",
+    "source_urls": [
+      "https://github.com/PaddlePaddle/PaddleOCR"
+    ]
+  },
+  {
+    "date": "2026-06-05",
+    "title": "GitHub Releases a Toolkit for Writing Better Specs Before You Build",
+    "summary": "GitHub published spec-kit to help teams practice Spec-Driven Development — the approach of writing a clear specification before any code is written.",
+    "source_urls": [
+      "https://github.com/github/spec-kit"
+    ]
+  },
+  {
+    "date": "2026-06-05",
+    "title": "A New AI Research Skill Searches Six Platforms in Parallel",
+    "summary": "Developer mvanhorn published last30days-skill, a reusable skill for AI agent frameworks that takes any topic, searches Reddit, X, YouTube, Hacker News, Polymarket, and the general web simultaneously, then synthesizes results into a single grounded summary with contradictions flagged across sources.",
+    "source_urls": [
+      "https://github.com/mvanhorn/last30days-skill"
     ]
   }
 ]
