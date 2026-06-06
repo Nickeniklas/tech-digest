@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-05-29",
-    "title": "Microsoft's Document Converter Makes Your Files AI-Ready",
-    "summary": "Microsoft released markitdown, a free Python tool that converts virtually any file format — Word documents, PowerPoint presentations, Excel spreadsheets, PDFs, and more — into Markdown.",
-    "source_urls": [
-      "https://github.com/microsoft/markitdown"
-    ]
-  },
-  {
-    "date": "2026-05-29",
-    "title": "Anthropic Published a Public Skills Library for AI Agents",
-    "summary": "Anthropic opened a public GitHub repository called 'skills' — a collection of reusable capabilities that AI agents like Claude can use to perform structured tasks.",
-    "source_urls": [
-      "https://github.com/anthropics/skills"
-    ]
-  },
-  {
-    "date": "2026-05-29",
-    "title": "An Open-Source Speech Model Aims for Studio-Quality Voice Generation",
-    "summary": "The OpenMOSS team released MOSS-TTS, a free family of models for generating realistic speech and sound.",
-    "source_urls": [
-      "https://github.com/OpenMOSS/MOSS-TTS"
-    ]
-  },
-  {
-    "date": "2026-05-29",
-    "title": "A Web Crawler Built for AI Projects Is Trending",
-    "summary": "Crawl4AI is an open-source web crawler that delivers website content in a format AI tools can actually use, rather than messy raw HTML.",
-    "source_urls": [
-      "https://github.com/unclecode/crawl4ai"
-    ]
-  },
-  {
-    "date": "2026-05-29",
-    "title": "A New Plugin Brings Compound Engineering to Every Major AI Coding Tool",
-    "summary": "Every Inc.",
-    "source_urls": [
-      "https://github.com/EveryInc/compound-engineering-plugin"
-    ]
-  },
-  {
-    "date": "2026-05-29",
-    "title": "A Meta-Skill Designs Entire AI Agent Teams Automatically",
-    "summary": "A developer published 'harness' — a meta-skill for AI coding agents that takes a domain description and generates a full team of specialized sub-agents, each with defined roles and skill sets.",
-    "source_urls": [
-      "https://github.com/revfactory/harness"
-    ]
-  },
-  {
     "date": "2026-05-30",
     "title": "Cursor Opens Its AI Coding Editor to Third-Party Plugins",
     "summary": "Cursor, one of the most widely used AI coding editors, published its official plugin specification on GitHub along with a set of official plugins.",
@@ -373,6 +325,54 @@
     "summary": "Developer mvanhorn published last30days-skill, a reusable skill for AI agent frameworks that takes any topic, searches Reddit, X, YouTube, Hacker News, Polymarket, and the general web simultaneously, then synthesizes results into a single grounded summary with contradictions flagged across sources.",
     "source_urls": [
       "https://github.com/mvanhorn/last30days-skill"
+    ]
+  },
+  {
+    "date": "2026-06-06",
+    "title": "Your AI Agent Can Now Search Six Platforms — With Zero API Fees",
+    "summary": "Agent-Reach, a new open-source command-line tool, gives AI agents the ability to read and search Twitter, Reddit, YouTube, GitHub, Bilibili, and XiaoHongShu from a single interface — no platform API subscriptions required.",
+    "source_urls": [
+      "https://github.com/Panniantong/Agent-Reach"
+    ]
+  },
+  {
+    "date": "2026-06-06",
+    "title": "OpenAI Publishes an Official Plugins Repository on GitHub",
+    "summary": "OpenAI released an official plugins repository on GitHub, joining Cursor and GitHub Copilot in publishing formal specifications for third-party integrations.",
+    "source_urls": [
+      "https://github.com/openai/plugins"
+    ]
+  },
+  {
+    "date": "2026-06-06",
+    "title": "The Top-Ranked Open-Source AI Memory System Is Now Free",
+    "summary": "MemPalace, which claims the best benchmark results among open-source AI memory systems, is available at no cost.",
+    "source_urls": [
+      "https://github.com/MemPalace/mempalace"
+    ]
+  },
+  {
+    "date": "2026-06-06",
+    "title": "A Universal Prediction Engine Uses Swarm Intelligence to Forecast Anything",
+    "summary": "MiroFish is a new open-source engine that applies swarm intelligence — modeled on how bird flocks or ant colonies make collective decisions — to prediction tasks across any domain.",
+    "source_urls": [
+      "https://github.com/666ghj/MiroFish"
+    ]
+  },
+  {
+    "date": "2026-06-06",
+    "title": "Astro Releases a Sandbox Framework for Running AI Agents Safely",
+    "summary": "Flue, from the team behind the Astro web framework, is a sandboxed environment for running AI agents in isolation so they cannot accidentally affect systems they should not touch.",
+    "source_urls": [
+      "https://github.com/withastro/flue"
+    ]
+  },
+  {
+    "date": "2026-06-06",
+    "title": "CopilotKit Proposes a Universal Protocol for AI Agent Interfaces",
+    "summary": "CopilotKit — a React and Angular library for building AI-powered interfaces — launched the AG-UI Protocol, a proposed standard defining how AI agents communicate with front-end applications.",
+    "source_urls": [
+      "https://github.com/CopilotKit/CopilotKit"
     ]
   }
 ]
