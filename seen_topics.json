@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-05-30",
-    "title": "Cursor Opens Its AI Coding Editor to Third-Party Plugins",
-    "summary": "Cursor, one of the most widely used AI coding editors, published its official plugin specification on GitHub along with a set of official plugins.",
-    "source_urls": [
-      "https://github.com/cursor/plugins"
-    ]
-  },
-  {
-    "date": "2026-05-30",
-    "title": "A Fast Open-Source Document Parser From the Team Behind LlamaIndex",
-    "summary": "The team behind LlamaIndex released LiteParse, a free open-source tool for converting documents into clean text that AI can actually use.",
-    "source_urls": [
-      "https://github.com/run-llama/liteparse"
-    ]
-  },
-  {
-    "date": "2026-05-30",
-    "title": "Project NOMAD: An Offline AI Companion That Works Without the Internet",
-    "summary": "A developer published Project NOMAD, a self-contained offline computer that runs AI models locally alongside a curated library of critical knowledge — medical guides, maps, engineering references.",
-    "source_urls": [
-      "https://github.com/Crosstalk-Solutions/project-nomad"
-    ]
-  },
-  {
-    "date": "2026-05-30",
-    "title": "Anthropic's Claude Code Reaches GitHub Trending",
-    "summary": "Claude Code — Anthropic's AI coding tool that runs in a terminal and can read your codebase, make changes, run tests, and handle git workflows — appeared on GitHub's trending list this week.",
-    "source_urls": [
-      "https://github.com/anthropics/claude-code"
-    ]
-  },
-  {
-    "date": "2026-05-30",
-    "title": "The Most-Starred Learn-By-Doing Programming Resource Is Back on Trending",
-    "summary": "The 'build-your-own-x' GitHub repository has returned to trending.",
-    "source_urls": [
-      "https://github.com/codecrafters-io/build-your-own-x"
-    ]
-  },
-  {
-    "date": "2026-05-30",
-    "title": "A New Platform for Evaluating AI 'World Models' Focuses on Reproducibility",
-    "summary": "Galilai Group published Stable Worldmodel, an open platform for building and comparing AI world models — systems that simulate how environments change over time.",
-    "source_urls": [
-      "https://github.com/galilai-group/stable-worldmodel"
-    ]
-  },
-  {
-    "date": "2026-05-30",
-    "title": "Meta's Protein AI Models Move to CZ Biohub for Long-Term Stewardship",
-    "summary": "The ESM (Evolutionary Scale Modeling) repository — Meta's family of AI models that predict protein structure and function from biological sequences — has moved to the Chan Zuckerberg Biohub on GitHub.",
-    "source_urls": [
-      "https://github.com/Biohub/esm"
-    ]
-  },
-  {
     "date": "2026-05-31",
     "title": "Your WiFi Router Can Now Monitor Rooms Without Any Cameras",
     "summary": "A developer published RuView, a free open-source tool that converts standard WiFi signals into real-time spatial intelligence — detecting people's presence, movement, and vital signs like breathing patterns, all without installing a single camera or sensor.",
@@ -373,6 +317,46 @@
     "summary": "CopilotKit — a React and Angular library for building AI-powered interfaces — launched the AG-UI Protocol, a proposed standard defining how AI agents communicate with front-end applications.",
     "source_urls": [
       "https://github.com/CopilotKit/CopilotKit"
+    ]
+  },
+  {
+    "date": "2026-06-07",
+    "title": "Microsoft Open-Sources a Frontier Voice AI Model",
+    "summary": "Microsoft released VibeVoice on GitHub — a free, open-source voice AI model built to generate natural-sounding speech at a quality level usually reserved for paid, closed systems.",
+    "source_urls": [
+      "https://github.com/microsoft/VibeVoice"
+    ]
+  },
+  {
+    "date": "2026-06-07",
+    "title": "A Free Blueprint for Running Your Own Personal AI Setup",
+    "summary": "Developer danielmiessler released Personal AI Infrastructure, an open-source framework for organizing AI agents and tools around your own life and work instead of a single company's app.",
+    "source_urls": [
+      "https://github.com/danielmiessler/Personal_AI_Infrastructure"
+    ]
+  },
+  {
+    "date": "2026-06-07",
+    "title": "A Free AI System Automates Your Entire Job Search",
+    "summary": "Developer santifer released Career Ops, a free tool built on Claude Code that handles tasks like tailoring resumes, generating PDFs, and tracking applications through a visual dashboard — all powered by 14 specialized AI skill modules.",
+    "source_urls": [
+      "https://github.com/santifer/career-ops"
+    ]
+  },
+  {
+    "date": "2026-06-07",
+    "title": "A New Framework Teaches AI Coding Agents Better Work Habits",
+    "summary": "Developer obra published Superpowers, a free framework that packages proven software development practices into reusable 'skills' that AI coding agents can follow.",
+    "source_urls": [
+      "https://github.com/obra/superpowers"
+    ]
+  },
+  {
+    "date": "2026-06-07",
+    "title": "Microsoft Builds a Stronger Sandbox for Running AI Agents",
+    "summary": "Microsoft released mxc, an open-source system that isolates and contains software — including AI agents — using layered, policy-based rules that define exactly what each program is allowed to touch.",
+    "source_urls": [
+      "https://github.com/microsoft/mxc"
     ]
   }
 ]
