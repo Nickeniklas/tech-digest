@@ -1,72 +1,77 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Microsoft just open-sourced a frontier voice AI model — part of a wave of new free tools landing today, from job-search automation to safer sandboxes for AI agents.",
-  "fun_fact": "Three major open-source voice AI models have launched in just the past week.",
+  "teaser": "Today's most interesting release is a computer built to keep working when the internet doesn't — plus a tool that teaches AI bots better taste.",
+  "fun_fact": "Yes, you can now download 'good taste' for your AI assistant — as a GitHub repository.",
   "lead_story": {
-    "title": "Microsoft Open-Sources a Frontier Voice AI Model",
-    "what_happened": "Microsoft released VibeVoice on GitHub — a free, open-source voice AI model built to generate natural-sounding speech at a quality level usually reserved for paid, closed systems.",
-    "what_this_means": "If you make podcasts, training videos, audiobooks, or accessibility tools, this means high-quality voice generation no longer requires an expensive subscription — you can run it yourself, for free, and shape it around your own needs.",
+    "title": "A New Offline AI Computer Wants to Keep You Informed When the Internet Doesn't",
+    "what_happened": "A developer released Project N.O.M.A.D, a self-contained, portable device that bundles offline reference tools, survival knowledge, and AI assistance into one box — built to keep working without any internet connection.",
+    "what_this_means": "Most AI tools you use every day depend on a constant link to a company's servers. This project is part of a small but growing push toward AI that runs entirely on your own hardware — handy for fieldwork, travel, remote teams, or anyone who'd simply rather keep their data off someone else's cloud.",
     "visual_type": "table",
     "visual_url": null,
-    "visual_data": {
-      "headers": ["Project", "What it offers"],
-      "rows": [
-        ["VibeVoice (Microsoft)", "Open-source, frontier-quality voice generation"],
-        ["VoxCPM2 (OpenBMB)", "Tokenizer-free multilingual speech synthesis"],
-        ["Open-LLM-VTuber", "Hands-free local voice conversations with any AI"]
-      ]
-    },
+    "visual_data": {"headers": ["", "Cloud-based AI", "Self-contained AI device"], "rows": [["Needs an internet connection?", "Yes", "No"], ["Where your data goes", "Company servers", "Stays on the device"], ["Works during an outage", "No", "Yes"]]},
     "source_name": "GitHub",
-    "source_url": "https://github.com/microsoft/VibeVoice"
+    "source_url": "https://github.com/Crosstalk-Solutions/project-nomad"
   },
   "quick_hits": [
     {
-      "title": "A Free Blueprint for Running Your Own Personal AI Setup",
-      "summary": "Developer danielmiessler released Personal AI Infrastructure, an open-source framework for organizing AI agents and tools around your own life and work instead of a single company's app. It's built for anyone who wants their AI tools working for them directly, rather than being locked into one vendor's ecosystem.",
+      "title": "An AI Skill That Teaches Other AI Tools 'Good Taste'",
+      "summary": "A developer released Taste-Skill, a small add-on you can drop into AI coding tools to stop them from churning out bland, generic-looking results. It works by giving the AI a clearer sense of design sensibility before it starts generating anything.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/danielmiessler/Personal_AI_Infrastructure"
+      "source_url": "https://github.com/Leonxlnx/taste-skill"
     },
     {
-      "title": "A Free AI System Automates Your Entire Job Search",
-      "summary": "Developer santifer released Career Ops, a free tool built on Claude Code that handles tasks like tailoring resumes, generating PDFs, and tracking applications through a visual dashboard — all powered by 14 specialized AI skill modules. It's designed for anyone who'd rather systemize a job hunt than manage it by hand.",
-      "visual_type": "table",
-      "visual_url": null,
-      "visual_data": {
-        "headers": ["Feature", "What it does"],
-        "rows": [
-          ["14 skill modules", "Specialized tasks like resume tailoring and outreach"],
-          ["Go dashboard", "Tracks applications and progress visually"],
-          ["PDF generation", "Creates polished resumes and cover letters"],
-          ["Batch processing", "Handles many applications at once"]
-        ]
-      },
-      "source_name": "GitHub",
-      "source_url": "https://github.com/santifer/career-ops"
-    },
-    {
-      "title": "A New Framework Teaches AI Coding Agents Better Work Habits",
-      "summary": "Developer obra published Superpowers, a free framework that packages proven software development practices into reusable 'skills' that AI coding agents can follow. The goal is to make agents more consistent and dependable on real projects, not just impressive in quick demos.",
+      "title": "The Quiet Engine Behind Most Local AI Chatbots Is Trending Again",
+      "summary": "llama.cpp, the open-source software that lets AI language models run directly on your laptop or phone instead of in the cloud, is back near the top of GitHub's trending list. It's the engine quietly powering many of the privacy-focused AI apps you may already be using.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/obra/superpowers"
+      "source_url": "https://github.com/ggml-org/llama.cpp"
+    },
+    {
+      "title": "A New Desktop App Turns Your Notes Into a Personal Knowledge Base",
+      "summary": "Tolaria is a new desktop application for organizing markdown notes into a connected knowledge base — the kind of system researchers and writers use to link related ideas together over time. It's free and open-source.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub",
+      "source_url": "https://github.com/refactoringhq/tolaria"
+    },
+    {
+      "title": "A Free Tool Shows How Much a Phone Number Can Reveal About You",
+      "summary": "GhostTrack is an open-source tool that demonstrates how publicly available information can be pieced together to trace a phone number or general location. It's built for researchers and security professionals, but it's also a useful reminder of how much can be learned from small digital traces.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub",
+      "source_url": "https://github.com/HunxByts/GhostTrack"
     }
   ],
   "under_the_hood": [
     {
-      "title": "Microsoft Builds a Stronger Sandbox for Running AI Agents",
-      "what_happened": "Microsoft released mxc, an open-source system that isolates and contains software — including AI agents — using layered, policy-based rules that define exactly what each program is allowed to touch.",
-      "why_it_matters": "As AI agents get more autonomy to act on your computer or accounts, tools like this matter for containing mistakes before they cause real damage. It's the kind of safety layer that lets organizations experiment with agentic AI without betting the whole system on it behaving perfectly every time.",
+      "title": "Microsoft Builds Durable Workflows Directly Into PostgreSQL",
+      "what_happened": "Microsoft published pg_durable, an open-source extension that lets the popular PostgreSQL database track long-running workflows on its own — so if a process is interrupted partway through, it can pick up exactly where it left off instead of restarting from scratch or losing data.",
+      "why_it_matters": "Plenty of behind-the-scenes business processes — order processing, approval chains, scheduled jobs — depend on this kind of reliability. Normally, teams bolt on a separate workflow service to get it; folding that capability into a database many companies already run can mean less complexity and fewer moving parts to maintain.",
+      "code_example": null,
+      "visual_type": "table",
+      "visual_url": null,
+      "visual_data": {"headers": ["", "Traditional setup", "With pg_durable"], "rows": [["Where workflow state lives", "A separate service", "Inside the database"], ["If a step fails midway", "May restart from scratch", "Resumes where it stopped"], ["Extra infrastructure needed", "Yes", "No"]]},
+      "source_name": "GitHub",
+      "source_url": "https://github.com/microsoft/pg_durable"
+    },
+    {
+      "title": "A New Rust-Based Search Index Aims to Make AI Search Faster",
+      "what_happened": "Developer Ryan Codrai released Turbovec, an open-source vector index — the kind of system AI search tools use to quickly find related pieces of information — built in Rust on top of a project called TurboQuant, with ready-to-use Python bindings.",
+      "why_it_matters": "Vector search underpins everything from AI chatbots that search your documents to recommendation engines. A leaner, faster index like this could let smaller teams build those features without heavyweight infrastructure — useful for developers building in-house AI search tools.",
       "code_example": null,
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/microsoft/mxc"
+      "source_url": "https://github.com/RyanCodrai/turbovec"
     }
   ]
 }
