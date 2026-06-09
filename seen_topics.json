@@ -1,45 +1,5 @@
 [
   {
-    "date": "2026-06-01",
-    "title": "A New Memory Engine Promises to Give Every AI App Reliable, Instant Recall",
-    "summary": "Supermemory — billed as 'the Memory API for the AI era' — is trending on GitHub.",
-    "source_urls": [
-      "https://github.com/supermemoryai/supermemory"
-    ]
-  },
-  {
-    "date": "2026-06-01",
-    "title": "Hermes AI Agent Gets a Web Interface You Can Use From Your Phone",
-    "summary": "Hermes WebUI is a new open-source project that gives the Hermes AI agent a proper web interface, accessible from any browser including your phone.",
-    "source_urls": [
-      "https://github.com/nesquena/hermes-webui"
-    ]
-  },
-  {
-    "date": "2026-06-01",
-    "title": "A Web Scraper That Fixes Itself When Sites Change Their Layout",
-    "summary": "Scrapling is a new Python library for pulling data from websites that adapts automatically when a site redesigns — something traditional scrapers can't do.",
-    "source_urls": [
-      "https://github.com/D4Vinci/Scrapling"
-    ]
-  },
-  {
-    "date": "2026-06-01",
-    "title": "Pi AI Agent Framework Gets Parallel Task Delegation",
-    "summary": "Previously covered on 2026-05-25: Pi is an open-source AI agent toolkit with a CLI, web UI, and multi-provider support.",
-    "source_urls": [
-      "https://github.com/nicobailon/pi-subagents"
-    ]
-  },
-  {
-    "date": "2026-06-01",
-    "title": "How Adaptive Web Scraping Works — and Why It Matters Beyond Developers",
-    "summary": "Scrapling uses AI-backed element matching to locate data on web pages by meaning rather than by rigid CSS selectors or XPath rules.",
-    "source_urls": [
-      "https://github.com/D4Vinci/Scrapling"
-    ]
-  },
-  {
     "date": "2026-06-02",
     "title": "A Multi-Agent AI System for Financial Trading Is Trending on GitHub",
     "summary": "TauricResearch published TradingAgents, an open-source framework that deploys multiple AI agents simultaneously — one tracking price charts, another reading financial news, another evaluating risk — and coordinates them to drive trading decisions.",
@@ -365,6 +325,54 @@
     "summary": "Developer Ryan Codrai released Turbovec, an open-source vector index — the kind of system AI search tools use to quickly find related pieces of information — built in Rust on top of a project called TurboQuant, with ready-to-use Python bindings.",
     "source_urls": [
       "https://github.com/RyanCodrai/turbovec"
+    ]
+  },
+  {
+    "date": "2026-06-09",
+    "title": "Google Publishes Official AI Agent Skills for Its Own Products",
+    "summary": "Google released a public repository of agent skills — pre-built instructions that let AI agents understand and work with Google products like Docs, Sheets, Gmail, and Drive without custom setup.",
+    "source_urls": [
+      "https://github.com/google/skills"
+    ]
+  },
+  {
+    "date": "2026-06-09",
+    "title": "100+ AI Skills for Product Managers, Free to Download",
+    "summary": "A new open-source collection called PM Skills packs over 100 reusable AI instructions for every phase of product work — from early discovery through launch and growth.",
+    "source_urls": [
+      "https://github.com/phuryn/pm-skills"
+    ]
+  },
+  {
+    "date": "2026-06-09",
+    "title": "A Free Tool Tells You Which AI Model Runs Best on Your Hardware",
+    "summary": "A command-line tool called whichllm benchmarks local AI models against your actual hardware and ranks them by real performance — not just model size.",
+    "source_urls": [
+      "https://github.com/Andyyyy64/whichllm"
+    ]
+  },
+  {
+    "date": "2026-06-09",
+    "title": "Goose: An Open-Source AI Agent That Can Actually Run Your Computer",
+    "summary": "Goose is a free AI agent that goes well beyond suggesting code — it can install software, run tests, edit files, and execute tasks on your machine, all from a single interface.",
+    "source_urls": [
+      "https://github.com/aaif-goose/goose"
+    ]
+  },
+  {
+    "date": "2026-06-09",
+    "title": "A Visual Guide to Claude Code With Copy-Paste Templates",
+    "summary": "Developer luongnv89 published claude-howto, a free repository of visual examples and ready-to-use templates for Claude Code — Anthropic's AI coding assistant.",
+    "source_urls": [
+      "https://github.com/luongnv89/claude-howto"
+    ]
+  },
+  {
+    "date": "2026-06-09",
+    "title": "Roboflow Supervision: A Free Reusable Toolkit for AI Computer Vision",
+    "summary": "Roboflow's supervision library — a free, reusable set of computer vision building blocks — is trending again on GitHub.",
+    "source_urls": [
+      "https://github.com/roboflow/supervision"
     ]
   }
 ]

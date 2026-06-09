@@ -1,77 +1,109 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Today's most interesting release is a computer built to keep working when the internet doesn't — plus a tool that teaches AI bots better taste.",
-  "fun_fact": "Yes, you can now download 'good taste' for your AI assistant — as a GitHub repository.",
+  "teaser": "Google just published an official library of AI agent skills for its own products — meaning AI tools can now operate Google Docs, Gmail, and Sheets on your behalf, out of the box.",
+  "fun_fact": "Three separate AI 'skills' libraries are trending on GitHub today — from Google, product managers, and an independent developer.",
   "lead_story": {
-    "title": "A New Offline AI Computer Wants to Keep You Informed When the Internet Doesn't",
-    "what_happened": "A developer released Project N.O.M.A.D, a self-contained, portable device that bundles offline reference tools, survival knowledge, and AI assistance into one box — built to keep working without any internet connection.",
-    "what_this_means": "Most AI tools you use every day depend on a constant link to a company's servers. This project is part of a small but growing push toward AI that runs entirely on your own hardware — handy for fieldwork, travel, remote teams, or anyone who'd simply rather keep their data off someone else's cloud.",
+    "title": "Google Publishes Official AI Agent Skills for Its Own Products",
+    "what_happened": "Google released a public repository of agent skills — pre-built instructions that let AI agents understand and work with Google products like Docs, Sheets, Gmail, and Drive without custom setup. Any AI tool that supports agent skills can now pull these in directly.",
+    "what_this_means": "If you use AI tools at work, this means they'll soon be able to handle Google Workspace tasks — drafting in Docs, crunching numbers in Sheets, replying in Gmail — with far less setup. Teachers, marketers, and lawyers who rely on Google's tools daily are the obvious first beneficiaries.",
     "visual_type": "table",
     "visual_url": null,
-    "visual_data": {"headers": ["", "Cloud-based AI", "Self-contained AI device"], "rows": [["Needs an internet connection?", "Yes", "No"], ["Where your data goes", "Company servers", "Stays on the device"], ["Works during an outage", "No", "Yes"]]},
+    "visual_data": {
+      "headers": ["Google Product", "What an AI Agent Can Do"],
+      "rows": [
+        ["Google Docs", "Draft, edit, and summarize documents"],
+        ["Google Sheets", "Analyze data and generate formulas"],
+        ["Gmail", "Write, sort, and respond to emails"],
+        ["Google Drive", "Find, organize, and share files"],
+        ["Google Calendar", "Schedule meetings and manage reminders"]
+      ]
+    },
     "source_name": "GitHub",
-    "source_url": "https://github.com/Crosstalk-Solutions/project-nomad"
+    "source_url": "https://github.com/google/skills"
   },
   "quick_hits": [
     {
-      "title": "An AI Skill That Teaches Other AI Tools 'Good Taste'",
-      "summary": "A developer released Taste-Skill, a small add-on you can drop into AI coding tools to stop them from churning out bland, generic-looking results. It works by giving the AI a clearer sense of design sensibility before it starts generating anything.",
-      "visual_type": null,
+      "title": "100+ AI Skills for Product Managers, Free to Download",
+      "summary": "A new open-source collection called PM Skills packs over 100 reusable AI instructions for every phase of product work — from early discovery through launch and growth. Drop them into any AI coding tool and they guide it through PM-specific tasks. It's a sign that curated skill packs are becoming the fastest way to get useful AI assistance without starting from scratch.",
+      "visual_type": "table",
       "visual_url": null,
-      "visual_data": null,
+      "visual_data": {
+        "headers": ["Phase", "Skill Examples"],
+        "rows": [
+          ["Discovery", "User research, competitive analysis"],
+          ["Strategy", "Roadmapping, prioritization, OKRs"],
+          ["Execution", "Sprint planning, backlog grooming"],
+          ["Launch", "Go-to-market, release notes"],
+          ["Growth", "Metrics tracking, A/B test design"]
+        ]
+      },
       "source_name": "GitHub",
-      "source_url": "https://github.com/Leonxlnx/taste-skill"
+      "source_url": "https://github.com/phuryn/pm-skills"
     },
     {
-      "title": "The Quiet Engine Behind Most Local AI Chatbots Is Trending Again",
-      "summary": "llama.cpp, the open-source software that lets AI language models run directly on your laptop or phone instead of in the cloud, is back near the top of GitHub's trending list. It's the engine quietly powering many of the privacy-focused AI apps you may already be using.",
-      "visual_type": null,
+      "title": "A Free Tool Tells You Which AI Model Runs Best on Your Hardware",
+      "summary": "A command-line tool called whichllm benchmarks local AI models against your actual hardware and ranks them by real performance — not just model size. Run one command and it tells you which open-source model will run fastest on your machine. This is useful for anyone who wants to run AI privately without sending data to the cloud.",
+      "visual_type": "table",
       "visual_url": null,
-      "visual_data": null,
+      "visual_data": {
+        "headers": ["What It Evaluates", "Why It Matters"],
+        "rows": [
+          ["Hardware fit", "Avoids models that won't fit your GPU memory"],
+          ["Real benchmark scores", "Ranks by actual task performance, not parameter count"],
+          ["Recency weighting", "Newer benchmarks count more than older ones"],
+          ["Single command", "No manual research or comparison spreadsheets needed"]
+        ]
+      },
       "source_name": "GitHub",
-      "source_url": "https://github.com/ggml-org/llama.cpp"
+      "source_url": "https://github.com/Andyyyy64/whichllm"
     },
     {
-      "title": "A New Desktop App Turns Your Notes Into a Personal Knowledge Base",
-      "summary": "Tolaria is a new desktop application for organizing markdown notes into a connected knowledge base — the kind of system researchers and writers use to link related ideas together over time. It's free and open-source.",
+      "title": "Goose: An Open-Source AI Agent That Can Actually Run Your Computer",
+      "summary": "Goose is a free AI agent that goes well beyond suggesting code — it can install software, run tests, edit files, and execute tasks on your machine, all from a single interface. It works with any large language model, so you're not locked into one provider. Think of it as a capable AI assistant that acts on your computer instead of just answering questions.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/refactoringhq/tolaria"
-    },
-    {
-      "title": "A Free Tool Shows How Much a Phone Number Can Reveal About You",
-      "summary": "GhostTrack is an open-source tool that demonstrates how publicly available information can be pieced together to trace a phone number or general location. It's built for researchers and security professionals, but it's also a useful reminder of how much can be learned from small digital traces.",
-      "visual_type": null,
-      "visual_url": null,
-      "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/HunxByts/GhostTrack"
+      "source_url": "https://github.com/aaif-goose/goose"
     }
   ],
   "under_the_hood": [
     {
-      "title": "Microsoft Builds Durable Workflows Directly Into PostgreSQL",
-      "what_happened": "Microsoft published pg_durable, an open-source extension that lets the popular PostgreSQL database track long-running workflows on its own — so if a process is interrupted partway through, it can pick up exactly where it left off instead of restarting from scratch or losing data.",
-      "why_it_matters": "Plenty of behind-the-scenes business processes — order processing, approval chains, scheduled jobs — depend on this kind of reliability. Normally, teams bolt on a separate workflow service to get it; folding that capability into a database many companies already run can mean less complexity and fewer moving parts to maintain.",
-      "code_example": null,
+      "title": "A Visual Guide to Claude Code With Copy-Paste Templates",
+      "what_happened": "Developer luongnv89 published claude-howto, a free repository of visual examples and ready-to-use templates for Claude Code — Anthropic's AI coding assistant. It covers basic concepts through advanced multi-agent setups, with practical templates organized by concept rather than documentation pages.",
+      "why_it_matters": "For developers ramping up on Claude Code, this is a shortcut through the learning curve. Instead of reading docs linearly, you get working templates at every level — from simple file tasks to coordinating multiple AI agents. It's the kind of resource that turns hours of experimentation into minutes.",
+      "code_example": "# Summarize a file\nclaude \"Read main.py and write a 2-sentence summary\"\n\n# Code review\nclaude \"Review utils.py for potential bugs and suggest fixes\"\n\n# Multi-step agent task\nclaude --agent \"Review all .py files and list any functions over 50 lines\"",
       "visual_type": "table",
       "visual_url": null,
-      "visual_data": {"headers": ["", "Traditional setup", "With pg_durable"], "rows": [["Where workflow state lives", "A separate service", "Inside the database"], ["If a step fails midway", "May restart from scratch", "Resumes where it stopped"], ["Extra infrastructure needed", "Yes", "No"]]},
+      "visual_data": {
+        "headers": ["Level", "What the Templates Cover"],
+        "rows": [
+          ["Basic", "File reading, summarization, Q&A"],
+          ["Intermediate", "Code review, refactoring, test writing"],
+          ["Advanced", "Multi-agent pipelines, tool use, MCP servers"]
+        ]
+      },
       "source_name": "GitHub",
-      "source_url": "https://github.com/microsoft/pg_durable"
+      "source_url": "https://github.com/luongnv89/claude-howto"
     },
     {
-      "title": "A New Rust-Based Search Index Aims to Make AI Search Faster",
-      "what_happened": "Developer Ryan Codrai released Turbovec, an open-source vector index — the kind of system AI search tools use to quickly find related pieces of information — built in Rust on top of a project called TurboQuant, with ready-to-use Python bindings.",
-      "why_it_matters": "Vector search underpins everything from AI chatbots that search your documents to recommendation engines. A leaner, faster index like this could let smaller teams build those features without heavyweight infrastructure — useful for developers building in-house AI search tools.",
-      "code_example": null,
-      "visual_type": null,
+      "title": "Roboflow Supervision: A Free Reusable Toolkit for AI Computer Vision",
+      "what_happened": "Roboflow's supervision library — a free, reusable set of computer vision building blocks — is trending again on GitHub. It handles object detection, tracking across video frames, annotation drawing, and dataset management so developers don't rebuild these pieces every time. It works alongside major models including YOLO and SAM.",
+      "why_it_matters": "Computer vision is the technology behind security cameras, retail analytics, document scanning, and medical imaging. Supervision lowers the barrier for developers who don't specialize in vision, making it easier to build products that can see and interpret the physical world without starting from scratch each time.",
+      "code_example": "import supervision as sv\nfrom ultralytics import YOLO\n\nmodel = YOLO(\"yolov8n.pt\")\nresults = model(\"image.jpg\")[0]\ndetections = sv.Detections.from_ultralytics(results)\nannotator = sv.BoxAnnotator()\nannotated = annotator.annotate(scene=image, detections=detections)",
+      "visual_type": "table",
       "visual_url": null,
-      "visual_data": null,
+      "visual_data": {
+        "headers": ["Capability", "What It Does"],
+        "rows": [
+          ["Detection", "Identify objects in images and video"],
+          ["Tracking", "Follow objects across video frames"],
+          ["Annotation", "Draw bounding boxes and labels"],
+          ["Dataset tools", "Prepare and manage vision training data"]
+        ]
+      },
       "source_name": "GitHub",
-      "source_url": "https://github.com/RyanCodrai/turbovec"
+      "source_url": "https://github.com/roboflow/supervision"
     }
   ]
 }
