@@ -1,109 +1,79 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Google just published an official library of AI agent skills for its own products — meaning AI tools can now operate Google Docs, Gmail, and Sheets on your behalf, out of the box.",
-  "fun_fact": "Three separate AI 'skills' libraries are trending on GitHub today — from Google, product managers, and an independent developer.",
+  "teaser": "A new GitHub repository pulls back the curtain on the hidden instructions that shape how your favorite AI tools actually behave.",
+  "fun_fact": "OpenCV, which still powers much of today's AI image recognition, was first released by Intel back in 1999 — before smartphones existed.",
   "lead_story": {
-    "title": "Google Publishes Official AI Agent Skills for Its Own Products",
-    "what_happened": "Google released a public repository of agent skills — pre-built instructions that let AI agents understand and work with Google products like Docs, Sheets, Gmail, and Drive without custom setup. Any AI tool that supports agent skills can now pull these in directly.",
-    "what_this_means": "If you use AI tools at work, this means they'll soon be able to handle Google Workspace tasks — drafting in Docs, crunching numbers in Sheets, replying in Gmail — with far less setup. Teachers, marketers, and lawyers who rely on Google's tools daily are the obvious first beneficiaries.",
+    "title": "A GitHub Repository Reveals the Hidden Instructions Behind Today's Top AI Tools",
+    "what_happened": "A widely shared GitHub repository has compiled the internal 'system prompts' — the detailed instructions that control tone, behavior, and limits — for more than 20 popular AI tools, including Cursor, Replit, Lovable, Devin AI, Windsurf, and Claude Code. These are the hidden rulebooks that shape how each assistant responds to you.",
+    "what_this_means": "If you use any AI coding or writing assistant at work, this collection shows just how much deliberate engineering goes into making a tool feel reliable, on-brand, and safe to use. For managers comparing AI tools, it's a rare look at the guardrails vendors build in behind the scenes.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["Google Product", "What an AI Agent Can Do"],
+      "headers": ["Category of AI Tool", "Examples in the Collection"],
       "rows": [
-        ["Google Docs", "Draft, edit, and summarize documents"],
-        ["Google Sheets", "Analyze data and generate formulas"],
-        ["Gmail", "Write, sort, and respond to emails"],
-        ["Google Drive", "Find, organize, and share files"],
-        ["Google Calendar", "Schedule meetings and manage reminders"]
+        ["Coding agents", "Claude Code, Devin AI, Cursor, Windsurf"],
+        ["No-code app builders", "Lovable, Replit, Leap.new, Manus"],
+        ["Browser & search assistants", "Comet, Perplexity, Poke"],
+        ["Writing & note tools", "NotionAI, Orchids.app"]
       ]
     },
     "source_name": "GitHub",
-    "source_url": "https://github.com/google/skills"
+    "source_url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"
   },
   "quick_hits": [
     {
-      "title": "100+ AI Skills for Product Managers, Free to Download",
-      "summary": "A new open-source collection called PM Skills packs over 100 reusable AI instructions for every phase of product work — from early discovery through launch and growth. Drop them into any AI coding tool and they guide it through PM-specific tasks. It's a sign that curated skill packs are becoming the fastest way to get useful AI assistance without starting from scratch.",
-      "visual_type": "table",
-      "visual_url": null,
-      "visual_data": {
-        "headers": ["Phase", "Skill Examples"],
-        "rows": [
-          ["Discovery", "User research, competitive analysis"],
-          ["Strategy", "Roadmapping, prioritization, OKRs"],
-          ["Execution", "Sprint planning, backlog grooming"],
-          ["Launch", "Go-to-market, release notes"],
-          ["Growth", "Metrics tracking, A/B test design"]
-        ]
-      },
-      "source_name": "GitHub",
-      "source_url": "https://github.com/phuryn/pm-skills"
-    },
-    {
-      "title": "A Free Tool Tells You Which AI Model Runs Best on Your Hardware",
-      "summary": "A command-line tool called whichllm benchmarks local AI models against your actual hardware and ranks them by real performance — not just model size. Run one command and it tells you which open-source model will run fastest on your machine. This is useful for anyone who wants to run AI privately without sending data to the cloud.",
-      "visual_type": "table",
-      "visual_url": null,
-      "visual_data": {
-        "headers": ["What It Evaluates", "Why It Matters"],
-        "rows": [
-          ["Hardware fit", "Avoids models that won't fit your GPU memory"],
-          ["Real benchmark scores", "Ranks by actual task performance, not parameter count"],
-          ["Recency weighting", "Newer benchmarks count more than older ones"],
-          ["Single command", "No manual research or comparison spreadsheets needed"]
-        ]
-      },
-      "source_name": "GitHub",
-      "source_url": "https://github.com/Andyyyy64/whichllm"
-    },
-    {
-      "title": "Goose: An Open-Source AI Agent That Can Actually Run Your Computer",
-      "summary": "Goose is a free AI agent that goes well beyond suggesting code — it can install software, run tests, edit files, and execute tasks on your machine, all from a single interface. It works with any large language model, so you're not locked into one provider. Think of it as a capable AI assistant that acts on your computer instead of just answering questions.",
+      "title": "A Google Engineer Releases a Free Library of 'Skills' for AI Coding Agents",
+      "summary": "Addy Osmani, a well-known voice on web development at Google, published a free collection of production-grade 'skills' — reusable instruction sets that teach AI coding agents established engineering practices. It's aimed at developers who want their AI assistants to follow proven habits instead of generating ad hoc code.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/aaif-goose/goose"
+      "source_url": "https://github.com/addyosmani/agent-skills"
+    },
+    {
+      "title": "An Open-Source AI Toolkit for Healthcare Is Trending on GitHub",
+      "summary": "OpenMed is a free, open-source project focused on applying AI to healthcare tasks. It's climbing GitHub's trending list as developers look for ways to bring AI into clinical and medical research settings without relying on paid platforms.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub",
+      "source_url": "https://github.com/maziyarpanahi/openmed"
+    },
+    {
+      "title": "A New Open-Source Tool Turns Your Wi-Fi Signal Into a Motion Detector",
+      "summary": "ESPectre is a free tool that detects movement in a room by analyzing subtle changes in your Wi-Fi signal — a technique called CSI, or channel state information — and connects directly to Home Assistant, the popular smart-home platform. No camera or extra sensor needed, just the Wi-Fi you already have.",
+      "visual_type": "table",
+      "visual_url": null,
+      "visual_data": {
+        "headers": ["Motion Detection Method", "Extra Hardware Needed"],
+        "rows": [
+          ["Camera", "Camera plus storage"],
+          ["PIR motion sensor", "Dedicated sensor"],
+          ["Wi-Fi CSI (ESPectre)", "None - uses existing Wi-Fi"]
+        ]
+      },
+      "source_name": "GitHub",
+      "source_url": "https://github.com/francescopace/espectre"
     }
   ],
   "under_the_hood": [
     {
-      "title": "A Visual Guide to Claude Code With Copy-Paste Templates",
-      "what_happened": "Developer luongnv89 published claude-howto, a free repository of visual examples and ready-to-use templates for Claude Code — Anthropic's AI coding assistant. It covers basic concepts through advanced multi-agent setups, with practical templates organized by concept rather than documentation pages.",
-      "why_it_matters": "For developers ramping up on Claude Code, this is a shortcut through the learning curve. Instead of reading docs linearly, you get working templates at every level — from simple file tasks to coordinating multiple AI agents. It's the kind of resource that turns hours of experimentation into minutes.",
-      "code_example": "# Summarize a file\nclaude \"Read main.py and write a 2-sentence summary\"\n\n# Code review\nclaude \"Review utils.py for potential bugs and suggest fixes\"\n\n# Multi-step agent task\nclaude --agent \"Review all .py files and list any functions over 50 lines\"",
+      "title": "OpenCV, the Library Behind Most AI Vision Tools, Is Trending Again",
+      "what_happened": "OpenCV — a free, open-source library for computer vision that's been a foundation of image and video processing since 1999 — is back on GitHub's trending list. It provides the building blocks that countless AI tools use to detect objects, recognize faces, and track movement in images and video.",
+      "why_it_matters": "Almost every AI vision feature you've used — from photo apps that sort pictures by face to security cameras that flag people walking by — is likely built on OpenCV somewhere in its stack. Renewed attention to it often points to a fresh wave of vision-based AI projects using it as a starting point.",
+      "code_example": "import cv2\n\nimage = cv2.imread(\"photo.jpg\")\ngray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)\nface_finder = cv2.CascadeClassifier(\n    cv2.data.haarcascades + \"haarcascade_frontalface_default.xml\"\n)\nfaces = face_finder.detectMultiScale(gray)\nprint(f\"Found {len(faces)} face(s)\")",
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Level", "What the Templates Cover"],
+        "headers": ["Task", "What OpenCV Provides"],
         "rows": [
-          ["Basic", "File reading, summarization, Q&A"],
-          ["Intermediate", "Code review, refactoring, test writing"],
-          ["Advanced", "Multi-agent pipelines, tool use, MCP servers"]
+          ["Object detection", "Pre-built models to find items in images"],
+          ["Face recognition", "Tools to identify faces in photos or video"],
+          ["Motion tracking", "Frame-by-frame analysis to follow movement"]
         ]
       },
       "source_name": "GitHub",
-      "source_url": "https://github.com/luongnv89/claude-howto"
-    },
-    {
-      "title": "Roboflow Supervision: A Free Reusable Toolkit for AI Computer Vision",
-      "what_happened": "Roboflow's supervision library — a free, reusable set of computer vision building blocks — is trending again on GitHub. It handles object detection, tracking across video frames, annotation drawing, and dataset management so developers don't rebuild these pieces every time. It works alongside major models including YOLO and SAM.",
-      "why_it_matters": "Computer vision is the technology behind security cameras, retail analytics, document scanning, and medical imaging. Supervision lowers the barrier for developers who don't specialize in vision, making it easier to build products that can see and interpret the physical world without starting from scratch each time.",
-      "code_example": "import supervision as sv\nfrom ultralytics import YOLO\n\nmodel = YOLO(\"yolov8n.pt\")\nresults = model(\"image.jpg\")[0]\ndetections = sv.Detections.from_ultralytics(results)\nannotator = sv.BoxAnnotator()\nannotated = annotator.annotate(scene=image, detections=detections)",
-      "visual_type": "table",
-      "visual_url": null,
-      "visual_data": {
-        "headers": ["Capability", "What It Does"],
-        "rows": [
-          ["Detection", "Identify objects in images and video"],
-          ["Tracking", "Follow objects across video frames"],
-          ["Annotation", "Draw bounding boxes and labels"],
-          ["Dataset tools", "Prepare and manage vision training data"]
-        ]
-      },
-      "source_name": "GitHub",
-      "source_url": "https://github.com/roboflow/supervision"
+      "source_url": "https://github.com/opencv/opencv"
     }
   ]
 }

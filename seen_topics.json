@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-06-02",
-    "title": "A Multi-Agent AI System for Financial Trading Is Trending on GitHub",
-    "summary": "TauricResearch published TradingAgents, an open-source framework that deploys multiple AI agents simultaneously — one tracking price charts, another reading financial news, another evaluating risk — and coordinates them to drive trading decisions.",
-    "source_urls": [
-      "https://github.com/TauricResearch/TradingAgents"
-    ]
-  },
-  {
-    "date": "2026-06-02",
-    "title": "A New Design Language Teaches AI Tools to Think Like a Designer",
-    "summary": "Developer pbakaus released impeccable, a design language specification you drop into any AI coding tool to give it a stronger sense of visual style.",
-    "source_urls": [
-      "https://github.com/pbakaus/impeccable"
-    ]
-  },
-  {
-    "date": "2026-06-02",
-    "title": "Godot, the Free Game Engine, Is Surging in Popularity Again",
-    "summary": "Godot, a fully open-source 2D and 3D game engine, is back on GitHub Trending.",
-    "source_urls": [
-      "https://github.com/godotengine/godot"
-    ]
-  },
-  {
-    "date": "2026-06-02",
-    "title": "A New AI Terminal Agent Adds Browser Control and Parallel Subagents",
-    "summary": "Developer can1357 published oh-my-pi, an AI coding agent for the terminal that goes beyond editing code — it can control a browser, read live documentation via language server protocol, and spin up subagents to run tasks in parallel.",
-    "source_urls": [
-      "https://github.com/can1357/oh-my-pi"
-    ]
-  },
-  {
-    "date": "2026-06-02",
-    "title": "A Complete Machine Learning for Trading Course Is Trending on GitHub",
-    "summary": "Stefan Jansen's open repository for his book Machine Learning for Algorithmic Trading (2nd edition) is trending.",
-    "source_urls": [
-      "https://github.com/stefan-jansen/machine-learning-for-trading"
-    ]
-  },
-  {
-    "date": "2026-06-02",
-    "title": "fff: The Fastest File Search Toolkit Built for AI Agents",
-    "summary": "Developer dmtrKovalenko released fff, a file search toolkit designed specifically for AI agents, Neovim, and native code.",
-    "source_urls": [
-      "https://github.com/dmtrKovalenko/fff"
-    ]
-  },
-  {
     "date": "2026-06-03",
     "title": "A New Tool Cuts AI Token Costs by Up to 95%",
     "summary": "An open-source project called Headroom compresses tool outputs, logs, files, and other content before they reach an AI model — reducing the token count by 60–95% while preserving the information the AI needs to answer correctly.",
@@ -373,6 +325,46 @@
     "summary": "Roboflow's supervision library — a free, reusable set of computer vision building blocks — is trending again on GitHub.",
     "source_urls": [
       "https://github.com/roboflow/supervision"
+    ]
+  },
+  {
+    "date": "2026-06-10",
+    "title": "A GitHub Repository Reveals the Hidden Instructions Behind Today's Top AI Tools",
+    "summary": "A widely shared GitHub repository has compiled the internal 'system prompts' — the detailed instructions that control tone, behavior, and limits — for more than 20 popular AI tools, including Cursor, Replit, Lovable, Devin AI, Windsurf, and Claude Code.",
+    "source_urls": [
+      "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"
+    ]
+  },
+  {
+    "date": "2026-06-10",
+    "title": "A Google Engineer Releases a Free Library of 'Skills' for AI Coding Agents",
+    "summary": "Addy Osmani, a well-known voice on web development at Google, published a free collection of production-grade 'skills' — reusable instruction sets that teach AI coding agents established engineering practices.",
+    "source_urls": [
+      "https://github.com/addyosmani/agent-skills"
+    ]
+  },
+  {
+    "date": "2026-06-10",
+    "title": "An Open-Source AI Toolkit for Healthcare Is Trending on GitHub",
+    "summary": "OpenMed is a free, open-source project focused on applying AI to healthcare tasks.",
+    "source_urls": [
+      "https://github.com/maziyarpanahi/openmed"
+    ]
+  },
+  {
+    "date": "2026-06-10",
+    "title": "A New Open-Source Tool Turns Your Wi-Fi Signal Into a Motion Detector",
+    "summary": "ESPectre is a free tool that detects movement in a room by analyzing subtle changes in your Wi-Fi signal — a technique called CSI, or channel state information — and connects directly to Home Assistant, the popular smart-home platform.",
+    "source_urls": [
+      "https://github.com/francescopace/espectre"
+    ]
+  },
+  {
+    "date": "2026-06-10",
+    "title": "OpenCV, the Library Behind Most AI Vision Tools, Is Trending Again",
+    "summary": "OpenCV — a free, open-source library for computer vision that's been a foundation of image and video processing since 1999 — is back on GitHub's trending list.",
+    "source_urls": [
+      "https://github.com/opencv/opencv"
     ]
   }
 ]
