@@ -51,6 +51,21 @@ pip install <package>
 pip freeze > requirements.txt
 ```
 
+### Testing template/HTML changes without an API call
+
+`python digest.py` skips generation if `digests/tech-digest-{today}.html` already
+exists, and a real run costs a (small) API call. To preview `template.html` edits
+against today's real content for free, re-render from the saved raw response:
+
+```python
+from digest import parse_output, render_html
+from pathlib import Path
+data = parse_output(Path("digests/raw_response.txt").read_text(encoding="utf-8"))
+html = render_html(data, "Thursday, June 11 2026")  # full_date string
+Path("digests/tech-digest-2026-06-11.html").write_text(html, encoding="utf-8")
+```
+Then open the `.html` file directly in a browser.
+
 ## Scheduling
 Claude Code remote trigger — runs daily at 06:45 Europe/Helsinki (03:45 UTC).
 Trigger ID: `trig_01H3NViVVFhGYrTXS4VyNu35`
@@ -179,8 +194,12 @@ Python derives the `.md` file deterministically from the JSON:
 **4. Render HTML (`render_html`)**
 Python renders `template.html` (Jinja2) with the parsed JSON. All visual styling
 lives in `template.html`. Custom Jinja2 filters:
-- `md_links`: converts `[text](url)` markdown links to HTML anchors
+- `md_links`: converts `[text](url)` markdown links to HTML anchors (with `target="_blank" rel="noopener"`)
 - `chart_bars`: converts `visual_data` to `{label, value, pct}` dicts for CSS bar chart rendering
+
+All outbound source links (lead story, quick hits, under the hood) and inline
+`md_links` anchors open in a new tab via `target="_blank" rel="noopener"`, so
+readers never navigate away from the digest itself.
 
 The template uses an editorial layout with Google Fonts (Newsreader serif + IBM Plex
 Sans + IBM Plex Mono). CSS variables define the forest-green palette; all layout is
@@ -192,11 +211,16 @@ Template sections (top to bottom):
 - **Hero** — cream background; large Newsreader serif teaser as H1; 2/3 + 1/3 grid:
   - *Lead story* (left): title, `what_happened`, optional visual, "What this means"
     left-border callout, source row
-  - *Quick Hits sidebar* (right, sticky): dark green card listing quick hit titles as a preview
+  - *Quick Hits sidebar* (right, sticky): dark green card listing quick hit titles as a
+    preview; each title is a link (`#qh-item-N`) to the matching accordion item below
 - **Quick Hits section** — warm paper background; vertical accordion using native
-  `<details>`/`<summary>` elements (no JS required). Each item collapses to title +
+  `<details>`/`<summary>` elements. Each item collapses to title +
   source pill (green pill, `#74C69D` background); expanding reveals `summary`, optional
   visual, and source link. Chevron rotates 90° on open via `details[open]` CSS selector.
+  Each `<details id="qh-item-N">` matches a sidebar link. A small inline `<script>`
+  (end of `<body>`) sets `details.open = true` on click and on initial hash navigation
+  so the browser scrolls to an already-expanded item; `.qh-item` has
+  `scroll-margin-top` so the expanded item isn't flush against the viewport edge.
 - **Under the Hood section** — cream background; 2-column grid; each article: title,
   `what_happened`, "Why it matters" left-border callout, optional `code_example` pre
   block (dark terminal style), optional visual, source

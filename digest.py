@@ -444,7 +444,7 @@ _MD_LINK_RE = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
 def _md_links_to_html(text: str) -> str:
     """Convert markdown inline links [text](url) to HTML anchor tags."""
     return _MD_LINK_RE.sub(
-        lambda m: f'<a href="{m.group(2)}" style="color:inherit;text-decoration:underline;">{m.group(1)}</a>',
+        lambda m: f'<a href="{m.group(2)}" style="color:inherit;text-decoration:underline;" target="_blank" rel="noopener">{m.group(1)}</a>',
         text,
     )
 

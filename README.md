@@ -10,7 +10,10 @@ Daily tech news digest for busy professionals. Fetches the latest AI and dev too
 4. Renders a polished HTML page and a Markdown file, both saved to `digests/`
 5. Updates a rolling 7-day topic index so stories aren't repeated
 
-The HTML uses an editorial layout: a serif teaser, a hero section with the lead story and a sticky **Quick Hits** sidebar preview, a **Quick Hits accordion** (each item collapses to title + source pill; click to expand full summary and any visual — built on native `<details>`/`<summary>`, no JS), a 2-column **Under the Hood** section with optional code blocks and data visuals (images, CSS bar charts, tables), and a **Fun Fact** strip. Typeset in Newsreader + IBM Plex. Max-width 1240px, responsive at 800px.
+The HTML uses an editorial layout: a serif teaser, a hero section with the lead story and a sticky **Quick Hits** sidebar preview, a **Quick Hits accordion** (each item collapses to title + source pill; click to expand full summary and any visual — built on native `<details>`/`<summary>`), a 2-column **Under the Hood** section with optional code blocks and data visuals (images, CSS bar charts, tables), and a **Fun Fact** strip. Typeset in Newsreader + IBM Plex. Max-width 1240px, responsive at 800px.
+
+Clicking a title in the Quick Hits sidebar jumps to and expands the matching accordion
+item below (a small inline script). All outbound source links open in a new tab.
 
 ## Requirements
 
