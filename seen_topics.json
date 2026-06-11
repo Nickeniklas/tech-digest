@@ -1,45 +1,5 @@
 [
   {
-    "date": "2026-06-03",
-    "title": "A New Tool Cuts AI Token Costs by Up to 95%",
-    "summary": "An open-source project called Headroom compresses tool outputs, logs, files, and other content before they reach an AI model — reducing the token count by 60–95% while preserving the information the AI needs to answer correctly.",
-    "source_urls": [
-      "https://github.com/chopratejas/headroom"
-    ]
-  },
-  {
-    "date": "2026-06-03",
-    "title": "Talk to Any AI Model With Just Your Voice — No Typing, No Cloud",
-    "summary": "Open-LLM-VTuber is a free, locally-run app that gives you hands-free voice conversations with any AI model, including the ability to interrupt the AI mid-sentence — the way you would in a real conversation.",
-    "source_urls": [
-      "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber"
-    ]
-  },
-  {
-    "date": "2026-06-03",
-    "title": "A Free Course Teaches You to Build AI Search Systems That Actually Work in Production",
-    "summary": "A new GitHub course covers 'agentic RAG' — the technique behind AI tools that search, retrieve, and reason over large document collections, rather than just answering from memory.",
-    "source_urls": [
-      "https://github.com/jamwithai/production-agentic-rag-course"
-    ]
-  },
-  {
-    "date": "2026-06-03",
-    "title": "A Visual Investigation Tool for Analysts and Researchers Is Gaining Traction",
-    "summary": "Flowsint is an open-source platform that maps relationships between people, organizations, and events on an interactive visual graph — the kind of view used to untangle complex fraud cases, competitive research, or due diligence.",
-    "source_urls": [
-      "https://github.com/reconurge/flowsint"
-    ]
-  },
-  {
-    "date": "2026-06-03",
-    "title": "A New System Adds Memory, Security, and Research Skills to AI Coding Agents",
-    "summary": "ECC (agent harness performance optimization system) is an open-source framework that extends AI coding agents — including Claude Code, Codex, Cursor, and Opencode — with persistent memory across sessions, security checks, instinct-driven decision-making, and a research-first mode that looks for existing solutions before generating new code.",
-    "source_urls": [
-      "https://github.com/affaan-m/ECC"
-    ]
-  },
-  {
     "date": "2026-06-04",
     "title": "Powerful AI Models Now Run on Everyday Hardware",
     "summary": "AirLLM, a free Python library by developer lyogavin, lets you run 70-billion-parameter AI models on a single consumer GPU with just 4GB of memory — by loading one layer of the model at a time rather than all at once.",
@@ -365,6 +325,54 @@
     "summary": "OpenCV — a free, open-source library for computer vision that's been a foundation of image and video processing since 1999 — is back on GitHub's trending list.",
     "source_urls": [
       "https://github.com/opencv/opencv"
+    ]
+  },
+  {
+    "date": "2026-06-11",
+    "title": "A Free Tool Can Search 3,000+ Websites for Your Username in Seconds",
+    "summary": "Maigret, a free open-source tool, searches more than 3,000 websites for a single username and compiles everything it finds — social media accounts, forum profiles, old projects — into one report.",
+    "source_urls": [
+      "https://github.com/soxoj/maigret"
+    ]
+  },
+  {
+    "date": "2026-06-11",
+    "title": "Apple Releases Its Own Tool for Running Linux Software on a Mac",
+    "summary": "Apple published Container, a free open-source tool that lets Mac users run Linux-based software in lightweight virtual machines, built specifically for Apple Silicon chips.",
+    "source_urls": [
+      "https://github.com/apple/container"
+    ]
+  },
+  {
+    "date": "2026-06-11",
+    "title": "A New Project Wants to Give All Your AI Agents One Shared Memory",
+    "summary": "Hivemind, described by its creators as 'one brain for all your agents,' is a new open-source project aimed at letting multiple AI agents share context and memory instead of each starting from scratch.",
+    "source_urls": [
+      "https://github.com/activeloopai/hivemind"
+    ]
+  },
+  {
+    "date": "2026-06-11",
+    "title": "Your Wi-Fi Router Could Soon Watch Over a Room — Without a Camera",
+    "summary": "RuView is an open-source project that turns ordinary Wi-Fi signals into a way to detect movement, monitor vital signs, and sense who's in a room — all without recording video.",
+    "source_urls": [
+      "https://github.com/ruvnet/RuView"
+    ]
+  },
+  {
+    "date": "2026-06-11",
+    "title": "A Popular Tool for Mass-Producing AI Videos Is Trending Again",
+    "summary": "MoneyPrinterTurbo, an open-source tool that turns a topic or script into a finished short video — voiceover, visuals, and captions included — is back on GitHub's trending list.",
+    "source_urls": [
+      "https://github.com/harry0703/MoneyPrinterTurbo"
+    ]
+  },
+  {
+    "date": "2026-06-11",
+    "title": "A Free Step-by-Step Guide to Building an AI Model From Scratch",
+    "summary": "Developer Fareed Khan published a free, open-source guide that walks through every stage of training a large language model — the kind of technology behind tools like Claude and ChatGPT — from gathering and cleaning training data to generating text.",
+    "source_urls": [
+      "https://github.com/FareedKhan-dev/train-llm-from-scratch"
     ]
   }
 ]

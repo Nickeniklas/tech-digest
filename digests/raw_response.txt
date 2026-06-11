@@ -1,79 +1,89 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "A new GitHub repository pulls back the curtain on the hidden instructions that shape how your favorite AI tools actually behave.",
-  "fun_fact": "OpenCV, which still powers much of today's AI image recognition, was first released by Intel back in 1999 — before smartphones existed.",
+  "teaser": "A free tool that can scan 3,000+ websites for your username shows just how much of your online life is hiding in plain sight.",
+  "fun_fact": "OSINT, the technique behind tools like Maigret, was coined by intelligence agencies decades before becoming a free download.",
   "lead_story": {
-    "title": "A GitHub Repository Reveals the Hidden Instructions Behind Today's Top AI Tools",
-    "what_happened": "A widely shared GitHub repository has compiled the internal 'system prompts' — the detailed instructions that control tone, behavior, and limits — for more than 20 popular AI tools, including Cursor, Replit, Lovable, Devin AI, Windsurf, and Claude Code. These are the hidden rulebooks that shape how each assistant responds to you.",
-    "what_this_means": "If you use any AI coding or writing assistant at work, this collection shows just how much deliberate engineering goes into making a tool feel reliable, on-brand, and safe to use. For managers comparing AI tools, it's a rare look at the guardrails vendors build in behind the scenes.",
+    "title": "A Free Tool Can Search 3,000+ Websites for Your Username in Seconds",
+    "what_happened": "Maigret, a free open-source tool, searches more than 3,000 websites for a single username and compiles everything it finds — social media accounts, forum profiles, old projects — into one report.",
+    "what_this_means": "It's a useful reminder of how much of your online footprint is searchable with almost no effort. For HR teams running background checks, journalists verifying sources, or anyone curious what a quick search turns up about them, it shows exactly how connected your accounts really are.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["Category of AI Tool", "Examples in the Collection"],
+      "headers": ["What It Searches", "What It Can Surface"],
       "rows": [
-        ["Coding agents", "Claude Code, Devin AI, Cursor, Windsurf"],
-        ["No-code app builders", "Lovable, Replit, Leap.new, Manus"],
-        ["Browser & search assistants", "Comet, Perplexity, Poke"],
-        ["Writing & note tools", "NotionAI, Orchids.app"]
+        ["Social networks", "Active and abandoned profiles"],
+        ["Forums & communities", "Old posts and usernames"],
+        ["Developer platforms", "Code repositories and contributions"],
+        ["Cross-platform links", "Other accounts tied to the same handle"]
       ]
     },
     "source_name": "GitHub",
-    "source_url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"
+    "source_url": "https://github.com/soxoj/maigret"
   },
   "quick_hits": [
     {
-      "title": "A Google Engineer Releases a Free Library of 'Skills' for AI Coding Agents",
-      "summary": "Addy Osmani, a well-known voice on web development at Google, published a free collection of production-grade 'skills' — reusable instruction sets that teach AI coding agents established engineering practices. It's aimed at developers who want their AI assistants to follow proven habits instead of generating ad hoc code.",
+      "title": "Apple Releases Its Own Tool for Running Linux Software on a Mac",
+      "summary": "Apple published Container, a free open-source tool that lets Mac users run Linux-based software in lightweight virtual machines, built specifically for Apple Silicon chips. It gives Mac users — including designers and creatives running developer tools — a native alternative to existing virtualization software.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/addyosmani/agent-skills"
+      "source_url": "https://github.com/apple/container"
     },
     {
-      "title": "An Open-Source AI Toolkit for Healthcare Is Trending on GitHub",
-      "summary": "OpenMed is a free, open-source project focused on applying AI to healthcare tasks. It's climbing GitHub's trending list as developers look for ways to bring AI into clinical and medical research settings without relying on paid platforms.",
+      "title": "A New Project Wants to Give All Your AI Agents One Shared Memory",
+      "summary": "Hivemind, described by its creators as 'one brain for all your agents,' is a new open-source project aimed at letting multiple AI agents share context and memory instead of each starting from scratch. It reflects a growing push to make AI agents work as a coordinated team rather than as isolated tools.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/maziyarpanahi/openmed"
+      "source_url": "https://github.com/activeloopai/hivemind"
     },
     {
-      "title": "A New Open-Source Tool Turns Your Wi-Fi Signal Into a Motion Detector",
-      "summary": "ESPectre is a free tool that detects movement in a room by analyzing subtle changes in your Wi-Fi signal — a technique called CSI, or channel state information — and connects directly to Home Assistant, the popular smart-home platform. No camera or extra sensor needed, just the Wi-Fi you already have.",
+      "title": "Your Wi-Fi Router Could Soon Watch Over a Room — Without a Camera",
+      "summary": "RuView is an open-source project that turns ordinary Wi-Fi signals into a way to detect movement, monitor vital signs, and sense who's in a room — all without recording video. It points toward a future where 'sensing' technology, not cameras, handles things like eldercare monitoring or smart-home automation.",
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Motion Detection Method", "Extra Hardware Needed"],
+        "headers": ["", "Camera-Based Monitoring", "Wi-Fi Sensing (RuView)"],
         "rows": [
-          ["Camera", "Camera plus storage"],
-          ["PIR motion sensor", "Dedicated sensor"],
-          ["Wi-Fi CSI (ESPectre)", "None - uses existing Wi-Fi"]
+          ["Records video", "Yes", "No"],
+          ["Works in the dark or through walls", "No", "Yes"],
+          ["Extra hardware needed", "Camera plus storage", "Just a Wi-Fi router"]
         ]
       },
       "source_name": "GitHub",
-      "source_url": "https://github.com/francescopace/espectre"
+      "source_url": "https://github.com/ruvnet/RuView"
+    },
+    {
+      "title": "A Popular Tool for Mass-Producing AI Videos Is Trending Again",
+      "summary": "MoneyPrinterTurbo, an open-source tool that turns a topic or script into a finished short video — voiceover, visuals, and captions included — is back on GitHub's trending list. For marketers and content creators, it's another sign of how quickly automated video production is maturing.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub",
+      "source_url": "https://github.com/harry0703/MoneyPrinterTurbo"
     }
   ],
   "under_the_hood": [
     {
-      "title": "OpenCV, the Library Behind Most AI Vision Tools, Is Trending Again",
-      "what_happened": "OpenCV — a free, open-source library for computer vision that's been a foundation of image and video processing since 1999 — is back on GitHub's trending list. It provides the building blocks that countless AI tools use to detect objects, recognize faces, and track movement in images and video.",
-      "why_it_matters": "Almost every AI vision feature you've used — from photo apps that sort pictures by face to security cameras that flag people walking by — is likely built on OpenCV somewhere in its stack. Renewed attention to it often points to a fresh wave of vision-based AI projects using it as a starting point.",
-      "code_example": "import cv2\n\nimage = cv2.imread(\"photo.jpg\")\ngray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)\nface_finder = cv2.CascadeClassifier(\n    cv2.data.haarcascades + \"haarcascade_frontalface_default.xml\"\n)\nfaces = face_finder.detectMultiScale(gray)\nprint(f\"Found {len(faces)} face(s)\")",
+      "title": "A Free Step-by-Step Guide to Building an AI Model From Scratch",
+      "what_happened": "Developer Fareed Khan published a free, open-source guide that walks through every stage of training a large language model — the kind of technology behind tools like Claude and ChatGPT — from gathering and cleaning training data to generating text.",
+      "why_it_matters": "You don't need to train your own AI model to benefit from understanding how one is built. For technically curious readers, this kind of guide demystifies what 'training an AI' actually involves, stage by stage, and shows how accessible the process has become for individuals and small teams.",
+      "code_example": "from transformers import AutoTokenizer, AutoModelForCausalLM\n\ntokenizer = AutoTokenizer.from_pretrained(\"gpt2\")\nmodel = AutoModelForCausalLM.from_pretrained(\"gpt2\")\n\ninputs = tokenizer(\"The future of AI is\", return_tensors=\"pt\")\noutputs = model(**inputs, labels=inputs[\"input_ids\"])\nloss = outputs.loss\nloss.backward()\nprint(f\"Training loss: {loss.item():.3f}\")",
       "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Task", "What OpenCV Provides"],
+        "headers": ["Stage", "What Happens"],
         "rows": [
-          ["Object detection", "Pre-built models to find items in images"],
-          ["Face recognition", "Tools to identify faces in photos or video"],
-          ["Motion tracking", "Frame-by-frame analysis to follow movement"]
+          ["1. Collect data", "Gather large amounts of text from books, websites, code"],
+          ["2. Tokenize", "Break text into small chunks the model can process"],
+          ["3. Pre-train", "Model learns language patterns by predicting the next word"],
+          ["4. Fine-tune", "Model is refined for specific tasks or behaviors"]
         ]
       },
       "source_name": "GitHub",
-      "source_url": "https://github.com/opencv/opencv"
+      "source_url": "https://github.com/FareedKhan-dev/train-llm-from-scratch"
     }
   ]
 }
