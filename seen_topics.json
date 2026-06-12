@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-06-04",
-    "title": "Powerful AI Models Now Run on Everyday Hardware",
-    "summary": "AirLLM, a free Python library by developer lyogavin, lets you run 70-billion-parameter AI models on a single consumer GPU with just 4GB of memory — by loading one layer of the model at a time rather than all at once.",
-    "source_urls": [
-      "https://github.com/lyogavin/airllm"
-    ]
-  },
-  {
-    "date": "2026-06-04",
-    "title": "NousResearch Releases an AI Agent Designed to Grow With You",
-    "summary": "NousResearch — a team known for producing well-regarded open-source AI models — released Hermes Agent on GitHub, positioning it as a personal AI agent that adapts over time rather than starting fresh with every session.",
-    "source_urls": [
-      "https://github.com/NousResearch/hermes-agent"
-    ]
-  },
-  {
-    "date": "2026-06-04",
-    "title": "A New Open-Source Tool Makes PDFs Readable by AI Systems",
-    "summary": "OpenDataLoader PDF is a free tool that converts PDF files into clean, structured text that AI tools can actually process, including automating accessibility for scanned documents.",
-    "source_urls": [
-      "https://github.com/opendataloader-project/opendataloader-pdf"
-    ]
-  },
-  {
-    "date": "2026-06-04",
-    "title": "A Personal AI Trading Agent Is Trending on GitHub",
-    "summary": "HKUDS (a Hong Kong University data science team) released Vibe-Trading, an open-source personal AI trading agent.",
-    "source_urls": [
-      "https://github.com/HKUDS/Vibe-Trading"
-    ]
-  },
-  {
-    "date": "2026-06-04",
-    "title": "Trivy: The Security Scanner That Checks Your Entire Infrastructure at Once",
-    "summary": "Aqua Security's Trivy is trending again on GitHub.",
-    "source_urls": [
-      "https://github.com/aquasecurity/trivy"
-    ]
-  },
-  {
-    "date": "2026-06-04",
-    "title": "How AirLLM Fits a 70B Model in 4GB of Memory",
-    "summary": "AirLLM achieves its memory reduction by loading a neural network one layer at a time from disk, running that layer's computation on the GPU, then discarding it before loading the next.",
-    "source_urls": [
-      "https://github.com/lyogavin/airllm"
-    ]
-  },
-  {
     "date": "2026-06-05",
     "title": "NVIDIA Open-Sources Its Platform for Building Physical AI",
     "summary": "NVIDIA published Cosmos, a free open platform containing world models, datasets, and tools for building AI that operates in the physical world — robots, self-driving vehicles, and smart infrastructure.",
@@ -373,6 +325,54 @@
     "summary": "Developer Fareed Khan published a free, open-source guide that walks through every stage of training a large language model — the kind of technology behind tools like Claude and ChatGPT — from gathering and cleaning training data to generating text.",
     "source_urls": [
       "https://github.com/FareedKhan-dev/train-llm-from-scratch"
+    ]
+  },
+  {
+    "date": "2026-06-12",
+    "title": "NVIDIA Releases a Security Scanner for AI Agent 'Skills'",
+    "summary": "NVIDIA published SkillSpector, a free open-source scanner that checks the add-on 'skills' people are increasingly installing into AI agents and coding assistants — looking for malicious code, security vulnerabilities, and requests for more access than a skill should need.",
+    "source_urls": [
+      "https://github.com/NVIDIA/SkillSpector"
+    ]
+  },
+  {
+    "date": "2026-06-12",
+    "title": "A Free Bundle of AI 'Employees' Covers an Entire Small Business",
+    "summary": "Agency Agents is a free, open-source collection of AI assistants, each tuned for a specific role — from writing website code to running social media accounts.",
+    "source_urls": [
+      "https://github.com/msitarzewski/agency-agents"
+    ]
+  },
+  {
+    "date": "2026-06-12",
+    "title": "A Long-Trusted Backup Tool Is Trending on GitHub Again",
+    "summary": "Restic, a free open-source backup program, is back on GitHub's trending list.",
+    "source_urls": [
+      "https://github.com/restic/restic"
+    ]
+  },
+  {
+    "date": "2026-06-12",
+    "title": "A Free Alternative to Zendesk and Intercom Is Trending on GitHub",
+    "summary": "Chatwoot is an open-source customer support platform that combines live chat, email, and other messaging channels into one inbox.",
+    "source_urls": [
+      "https://github.com/chatwoot/chatwoot"
+    ]
+  },
+  {
+    "date": "2026-06-12",
+    "title": "An Open-Source Framework Lets AI Systems Improve Themselves Over Time",
+    "summary": "SIA (Self Improving AI) is a free framework that lets an AI model or agent automatically refine how it performs a task, without someone manually retraining it.",
+    "source_urls": [
+      "https://github.com/hexo-ai/sia"
+    ]
+  },
+  {
+    "date": "2026-06-12",
+    "title": "A New Dashboard Tracks What Your AI Coding Agents Are Actually Doing",
+    "summary": "AgentsView is a free, local-first analytics tool that records and visualizes sessions from AI coding agents — including Claude Code, Codex, and more than 20 others — so you can see what each one did, how long it took, and what it cost.",
+    "source_urls": [
+      "https://github.com/kenn-io/agentsview"
     ]
   }
 ]
