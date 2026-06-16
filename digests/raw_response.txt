@@ -1,85 +1,74 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Today's GitHub trends are all about checking AI's homework: a new scanner audits the 'skills' people install into AI agents, and a dashboard audits what those agents actually did.",
-  "fun_fact": "Even GitHub's trending page is now full of tools whose entire job is watching other AI tools.",
+  "teaser": "A free tool now lets your AI agent search Twitter, Reddit, YouTube, and GitHub all at once — no API fees, no sign-ups.",
+  "fun_fact": "Today's GitHub trending is half AI agents, half Windows cleanup — somehow that sums up 2026.",
   "lead_story": {
-    "title": "NVIDIA Releases a Security Scanner for AI Agent 'Skills'",
-    "what_happened": "NVIDIA published SkillSpector, a free open-source scanner that checks the add-on 'skills' people are increasingly installing into AI agents and coding assistants — looking for malicious code, security vulnerabilities, and requests for more access than a skill should need.",
-    "what_this_means": "We've covered a wave of these downloadable AI 'skills' this week — instruction packs that extend tools like Claude Code and GitHub Copilot. SkillSpector gives anyone installing one a way to check it first, the same way you'd scan a file before opening it. If your team uses AI coding tools with plugins or add-ons, it's worth running a check like this before installing anything from an unfamiliar source.",
+    "title": "A Free Tool Gives Your AI Agent Eyes Across Six Major Platforms",
+    "what_happened": "Agent-Reach, a new open-source command-line tool, lets AI agents read and search across Twitter, Reddit, YouTube, GitHub, Bilibili, and XiaoHongShu — all from one interface, with no API fees. It's designed to give AI agents real-time access to live online content rather than relying on static training data.",
+    "what_this_means": "If you use AI tools for research, competitive analysis, or content creation, this kind of tool changes what's practical: your AI can now actively look things up across social media and developer communities instead of guessing from what it learned months ago. Marketers, journalists, and researchers stand to gain the most.",
     "visual_type": "table",
     "visual_url": null,
     "visual_data": {
-      "headers": ["What SkillSpector Flags", "Why It Matters"],
+      "headers": ["Platform", "What the agent can access"],
       "rows": [
-        ["Malicious or hidden code", "Stops a skill from quietly running harmful commands"],
-        ["Excessive permission requests", "Flags skills asking for more access than they need"],
-        ["Known vulnerability patterns", "Matches against a database of risky code patterns"]
+        ["Twitter / X", "Posts, threads, profiles"],
+        ["Reddit", "Posts, comments, subreddits"],
+        ["YouTube", "Video titles, descriptions"],
+        ["GitHub", "Repos, issues, code"],
+        ["Bilibili", "Video content (Chinese platform)"],
+        ["XiaoHongShu", "Posts (Chinese platform)"]
       ]
     },
     "source_name": "GitHub",
-    "source_url": "https://github.com/NVIDIA/SkillSpector"
+    "source_url": "https://github.com/Panniantong/Agent-Reach"
   },
   "quick_hits": [
     {
-      "title": "A Free Bundle of AI 'Employees' Covers an Entire Small Business",
-      "summary": "Agency Agents is a free, open-source collection of AI assistants, each tuned for a specific role — from writing website code to running social media accounts. It's aimed at small teams who want a ready-made set of specialists without hiring for each job.",
+      "title": "Open-Source AI Can Now Operate a Full Desktop — Mac, Windows, or Linux",
+      "summary": "A project called CUA (Computer-Use Agents) is trending on GitHub. It offers free infrastructure for AI agents that can control a full computer — clicking, typing, and navigating apps — on macOS, Linux, or Windows. It includes sandboxed test environments and benchmarks to measure how reliably the agents perform real tasks.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/msitarzewski/agency-agents"
+      "source_url": "https://github.com/trycua/cua"
     },
     {
-      "title": "A Long-Trusted Backup Tool Is Trending on GitHub Again",
-      "summary": "Restic, a free open-source backup program, is back on GitHub's trending list. It encrypts your files before sending them to cloud storage like S3, Backblaze, or Google Drive — a solid option if 'set up a real backup' has been on your to-do list for a while.",
+      "title": "A Free Script Strips the Clutter That Slows Down Windows 11",
+      "summary": "Win11Debloat is a lightweight PowerShell script that removes pre-installed apps, disables telemetry, and cleans up default settings on Windows 10 and 11. It's trending on GitHub again, suggesting widespread frustration with what ships on new Windows machines by default.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/restic/restic"
+      "source_url": "https://github.com/Raphire/Win11Debloat"
     },
     {
-      "title": "A Free Alternative to Zendesk and Intercom Is Trending on GitHub",
-      "summary": "Chatwoot is an open-source customer support platform that combines live chat, email, and other messaging channels into one inbox. For small businesses, it's a no-subscription way to get the kind of support tools that usually come with a monthly bill per seat.",
-      "visual_type": "table",
-      "visual_url": null,
-      "visual_data": {
-        "headers": ["Option", "Typical Cost"],
-        "rows": [
-          ["Chatwoot (self-hosted)", "Free"],
-          ["Intercom / Zendesk", "Monthly subscription per seat"]
-        ]
-      },
-      "source_name": "GitHub",
-      "source_url": "https://github.com/chatwoot/chatwoot"
-    },
-    {
-      "title": "An Open-Source Framework Lets AI Systems Improve Themselves Over Time",
-      "summary": "SIA (Self Improving AI) is a free framework that lets an AI model or agent automatically refine how it performs a task, without someone manually retraining it. It's an early building block toward AI tools that get better the more they're used.",
+      "title": "A Deep Free Guide to Running Your Own Software Without Big Tech",
+      "summary": "The Self-Hosting Guide on GitHub covers everything from running your own AI models and cloud storage to setting up home networking and automation with tools like Home Assistant and WireGuard. It's trending this week, reflecting growing interest in controlling your own data rather than depending on third-party services.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub",
-      "source_url": "https://github.com/hexo-ai/sia"
+      "source_url": "https://github.com/mikeroyal/Self-Hosting-Guide"
     }
   ],
   "under_the_hood": [
     {
-      "title": "A New Dashboard Tracks What Your AI Coding Agents Are Actually Doing",
-      "what_happened": "AgentsView is a free, local-first analytics tool that records and visualizes sessions from AI coding agents — including Claude Code, Codex, and more than 20 others — so you can see what each one did, how long it took, and what it cost.",
-      "why_it_matters": "It bills itself as a '100x faster replacement for ccusage', a widely used Claude Code usage-tracker. For teams running several AI coding tools side by side, having one dashboard to review activity and spending makes it much easier to spot waste or unexpected behavior before it becomes a habit.",
+      "title": "Kronos: An AI Foundation Model Built Specifically for Financial Market Language",
+      "what_happened": "Kronos is a new open-source foundation model designed from the ground up to understand the language of financial markets — earnings calls, trading signals, price commentary, and economic reports. Unlike general models fine-tuned on finance data after the fact, Kronos was pre-trained on financial market text as its primary corpus.",
+      "why_it_matters": "General-purpose language models handle finance adequately but weren't trained to parse the specific vocabulary and reasoning patterns of market analysis. A dedicated foundation model can outperform a fine-tuned GPT-4 or Claude on tasks like interpreting economic indicators or summarizing market movements — which matters if you're building financial tools, working in investment, or evaluating AI for regulated professional contexts.",
       "code_example": null,
-      "visual_type": "chart",
+      "visual_type": "table",
       "visual_url": null,
       "visual_data": {
-        "headers": ["Tool", "Relative Speed"],
+        "headers": ["Approach", "Trained on", "Best suited for"],
         "rows": [
-          ["ccusage", "1"],
-          ["AgentsView", "100"]
+          ["General LLM (e.g. GPT-4)", "Broad internet text", "General tasks"],
+          ["Fine-tuned finance model", "General data + finance docs", "Finance Q&A"],
+          ["Kronos (foundation model)", "Financial market language", "Market analysis, signals, reports"]
         ]
       },
       "source_name": "GitHub",
-      "source_url": "https://github.com/kenn-io/agentsview"
+      "source_url": "https://github.com/shiyu-coder/Kronos"
     }
   ]
 }

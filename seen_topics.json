@@ -1,197 +1,5 @@
 [
   {
-    "date": "2026-06-05",
-    "title": "NVIDIA Open-Sources Its Platform for Building Physical AI",
-    "summary": "NVIDIA published Cosmos, a free open platform containing world models, datasets, and tools for building AI that operates in the physical world — robots, self-driving vehicles, and smart infrastructure.",
-    "source_urls": [
-      "https://github.com/NVIDIA/cosmos"
-    ]
-  },
-  {
-    "date": "2026-06-05",
-    "title": "A Free Self-Hosted Alternative to Google's NotebookLM Is Now Available",
-    "summary": "Open-Notebook replicates what Google NotebookLM does — letting you chat with your own documents and generate audio overviews — but runs entirely on your own hardware with no data sent to Google.",
-    "source_urls": [
-      "https://github.com/lfnovo/open-notebook"
-    ]
-  },
-  {
-    "date": "2026-06-05",
-    "title": "GitHub Releases an Official SDK for Embedding Copilot Into Any App",
-    "summary": "GitHub published a multi-platform SDK that lets developers integrate Copilot Agent — its AI coding assistant — directly into third-party tools and services.",
-    "source_urls": [
-      "https://github.com/github/copilot-sdk"
-    ]
-  },
-  {
-    "date": "2026-06-05",
-    "title": "A Powerful Free OCR Tool Now Feeds Documents Directly Into AI",
-    "summary": "PaddleOCR converts PDFs, scanned pages, and images into structured text that AI systems can process — supporting over 100 languages.",
-    "source_urls": [
-      "https://github.com/PaddlePaddle/PaddleOCR"
-    ]
-  },
-  {
-    "date": "2026-06-05",
-    "title": "GitHub Releases a Toolkit for Writing Better Specs Before You Build",
-    "summary": "GitHub published spec-kit to help teams practice Spec-Driven Development — the approach of writing a clear specification before any code is written.",
-    "source_urls": [
-      "https://github.com/github/spec-kit"
-    ]
-  },
-  {
-    "date": "2026-06-05",
-    "title": "A New AI Research Skill Searches Six Platforms in Parallel",
-    "summary": "Developer mvanhorn published last30days-skill, a reusable skill for AI agent frameworks that takes any topic, searches Reddit, X, YouTube, Hacker News, Polymarket, and the general web simultaneously, then synthesizes results into a single grounded summary with contradictions flagged across sources.",
-    "source_urls": [
-      "https://github.com/mvanhorn/last30days-skill"
-    ]
-  },
-  {
-    "date": "2026-06-06",
-    "title": "Your AI Agent Can Now Search Six Platforms — With Zero API Fees",
-    "summary": "Agent-Reach, a new open-source command-line tool, gives AI agents the ability to read and search Twitter, Reddit, YouTube, GitHub, Bilibili, and XiaoHongShu from a single interface — no platform API subscriptions required.",
-    "source_urls": [
-      "https://github.com/Panniantong/Agent-Reach"
-    ]
-  },
-  {
-    "date": "2026-06-06",
-    "title": "OpenAI Publishes an Official Plugins Repository on GitHub",
-    "summary": "OpenAI released an official plugins repository on GitHub, joining Cursor and GitHub Copilot in publishing formal specifications for third-party integrations.",
-    "source_urls": [
-      "https://github.com/openai/plugins"
-    ]
-  },
-  {
-    "date": "2026-06-06",
-    "title": "The Top-Ranked Open-Source AI Memory System Is Now Free",
-    "summary": "MemPalace, which claims the best benchmark results among open-source AI memory systems, is available at no cost.",
-    "source_urls": [
-      "https://github.com/MemPalace/mempalace"
-    ]
-  },
-  {
-    "date": "2026-06-06",
-    "title": "A Universal Prediction Engine Uses Swarm Intelligence to Forecast Anything",
-    "summary": "MiroFish is a new open-source engine that applies swarm intelligence — modeled on how bird flocks or ant colonies make collective decisions — to prediction tasks across any domain.",
-    "source_urls": [
-      "https://github.com/666ghj/MiroFish"
-    ]
-  },
-  {
-    "date": "2026-06-06",
-    "title": "Astro Releases a Sandbox Framework for Running AI Agents Safely",
-    "summary": "Flue, from the team behind the Astro web framework, is a sandboxed environment for running AI agents in isolation so they cannot accidentally affect systems they should not touch.",
-    "source_urls": [
-      "https://github.com/withastro/flue"
-    ]
-  },
-  {
-    "date": "2026-06-06",
-    "title": "CopilotKit Proposes a Universal Protocol for AI Agent Interfaces",
-    "summary": "CopilotKit — a React and Angular library for building AI-powered interfaces — launched the AG-UI Protocol, a proposed standard defining how AI agents communicate with front-end applications.",
-    "source_urls": [
-      "https://github.com/CopilotKit/CopilotKit"
-    ]
-  },
-  {
-    "date": "2026-06-07",
-    "title": "Microsoft Open-Sources a Frontier Voice AI Model",
-    "summary": "Microsoft released VibeVoice on GitHub — a free, open-source voice AI model built to generate natural-sounding speech at a quality level usually reserved for paid, closed systems.",
-    "source_urls": [
-      "https://github.com/microsoft/VibeVoice"
-    ]
-  },
-  {
-    "date": "2026-06-07",
-    "title": "A Free Blueprint for Running Your Own Personal AI Setup",
-    "summary": "Developer danielmiessler released Personal AI Infrastructure, an open-source framework for organizing AI agents and tools around your own life and work instead of a single company's app.",
-    "source_urls": [
-      "https://github.com/danielmiessler/Personal_AI_Infrastructure"
-    ]
-  },
-  {
-    "date": "2026-06-07",
-    "title": "A Free AI System Automates Your Entire Job Search",
-    "summary": "Developer santifer released Career Ops, a free tool built on Claude Code that handles tasks like tailoring resumes, generating PDFs, and tracking applications through a visual dashboard — all powered by 14 specialized AI skill modules.",
-    "source_urls": [
-      "https://github.com/santifer/career-ops"
-    ]
-  },
-  {
-    "date": "2026-06-07",
-    "title": "A New Framework Teaches AI Coding Agents Better Work Habits",
-    "summary": "Developer obra published Superpowers, a free framework that packages proven software development practices into reusable 'skills' that AI coding agents can follow.",
-    "source_urls": [
-      "https://github.com/obra/superpowers"
-    ]
-  },
-  {
-    "date": "2026-06-07",
-    "title": "Microsoft Builds a Stronger Sandbox for Running AI Agents",
-    "summary": "Microsoft released mxc, an open-source system that isolates and contains software — including AI agents — using layered, policy-based rules that define exactly what each program is allowed to touch.",
-    "source_urls": [
-      "https://github.com/microsoft/mxc"
-    ]
-  },
-  {
-    "date": "2026-06-08",
-    "title": "A New Offline AI Computer Wants to Keep You Informed When the Internet Doesn't",
-    "summary": "A developer released Project N.",
-    "source_urls": [
-      "https://github.com/Crosstalk-Solutions/project-nomad"
-    ]
-  },
-  {
-    "date": "2026-06-08",
-    "title": "An AI Skill That Teaches Other AI Tools 'Good Taste'",
-    "summary": "A developer released Taste-Skill, a small add-on you can drop into AI coding tools to stop them from churning out bland, generic-looking results.",
-    "source_urls": [
-      "https://github.com/Leonxlnx/taste-skill"
-    ]
-  },
-  {
-    "date": "2026-06-08",
-    "title": "The Quiet Engine Behind Most Local AI Chatbots Is Trending Again",
-    "summary": "llama.",
-    "source_urls": [
-      "https://github.com/ggml-org/llama.cpp"
-    ]
-  },
-  {
-    "date": "2026-06-08",
-    "title": "A New Desktop App Turns Your Notes Into a Personal Knowledge Base",
-    "summary": "Tolaria is a new desktop application for organizing markdown notes into a connected knowledge base — the kind of system researchers and writers use to link related ideas together over time.",
-    "source_urls": [
-      "https://github.com/refactoringhq/tolaria"
-    ]
-  },
-  {
-    "date": "2026-06-08",
-    "title": "A Free Tool Shows How Much a Phone Number Can Reveal About You",
-    "summary": "GhostTrack is an open-source tool that demonstrates how publicly available information can be pieced together to trace a phone number or general location.",
-    "source_urls": [
-      "https://github.com/HunxByts/GhostTrack"
-    ]
-  },
-  {
-    "date": "2026-06-08",
-    "title": "Microsoft Builds Durable Workflows Directly Into PostgreSQL",
-    "summary": "Microsoft published pg_durable, an open-source extension that lets the popular PostgreSQL database track long-running workflows on its own — so if a process is interrupted partway through, it can pick up exactly where it left off instead of restarting from scratch or losing data.",
-    "source_urls": [
-      "https://github.com/microsoft/pg_durable"
-    ]
-  },
-  {
-    "date": "2026-06-08",
-    "title": "A New Rust-Based Search Index Aims to Make AI Search Faster",
-    "summary": "Developer Ryan Codrai released Turbovec, an open-source vector index — the kind of system AI search tools use to quickly find related pieces of information — built in Rust on top of a project called TurboQuant, with ready-to-use Python bindings.",
-    "source_urls": [
-      "https://github.com/RyanCodrai/turbovec"
-    ]
-  },
-  {
     "date": "2026-06-09",
     "title": "Google Publishes Official AI Agent Skills for Its Own Products",
     "summary": "Google released a public repository of agent skills — pre-built instructions that let AI agents understand and work with Google products like Docs, Sheets, Gmail, and Drive without custom setup.",
@@ -373,6 +181,46 @@
     "summary": "AgentsView is a free, local-first analytics tool that records and visualizes sessions from AI coding agents — including Claude Code, Codex, and more than 20 others — so you can see what each one did, how long it took, and what it cost.",
     "source_urls": [
       "https://github.com/kenn-io/agentsview"
+    ]
+  },
+  {
+    "date": "2026-06-16",
+    "title": "A Free Tool Gives Your AI Agent Eyes Across Six Major Platforms",
+    "summary": "Agent-Reach, a new open-source command-line tool, lets AI agents read and search across Twitter, Reddit, YouTube, GitHub, Bilibili, and XiaoHongShu — all from one interface, with no API fees.",
+    "source_urls": [
+      "https://github.com/Panniantong/Agent-Reach"
+    ]
+  },
+  {
+    "date": "2026-06-16",
+    "title": "Open-Source AI Can Now Operate a Full Desktop — Mac, Windows, or Linux",
+    "summary": "A project called CUA (Computer-Use Agents) is trending on GitHub.",
+    "source_urls": [
+      "https://github.com/trycua/cua"
+    ]
+  },
+  {
+    "date": "2026-06-16",
+    "title": "A Free Script Strips the Clutter That Slows Down Windows 11",
+    "summary": "Win11Debloat is a lightweight PowerShell script that removes pre-installed apps, disables telemetry, and cleans up default settings on Windows 10 and 11.",
+    "source_urls": [
+      "https://github.com/Raphire/Win11Debloat"
+    ]
+  },
+  {
+    "date": "2026-06-16",
+    "title": "A Deep Free Guide to Running Your Own Software Without Big Tech",
+    "summary": "The Self-Hosting Guide on GitHub covers everything from running your own AI models and cloud storage to setting up home networking and automation with tools like Home Assistant and WireGuard.",
+    "source_urls": [
+      "https://github.com/mikeroyal/Self-Hosting-Guide"
+    ]
+  },
+  {
+    "date": "2026-06-16",
+    "title": "Kronos: An AI Foundation Model Built Specifically for Financial Market Language",
+    "summary": "Kronos is a new open-source foundation model designed from the ground up to understand the language of financial markets — earnings calls, trading signals, price commentary, and economic reports.",
+    "source_urls": [
+      "https://github.com/shiyu-coder/Kronos"
     ]
   }
 ]
