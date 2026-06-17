@@ -1,74 +1,77 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "A free tool now lets your AI agent search Twitter, Reddit, YouTube, and GitHub all at once — no API fees, no sign-ups.",
-  "fun_fact": "Today's GitHub trending is half AI agents, half Windows cleanup — somehow that sums up 2026.",
+  "teaser": "Today's tech news comes almost entirely from GitHub's trending list: a new AI voice-cloning tool, a self-hosted WhatsApp gateway, and a handful of privacy and infrastructure projects worth knowing about.",
+  "fun_fact": "One of today's trending tools turns Wi-Fi-style networking on its head: instead of dialing an IP address, you dial a cryptographic key.",
   "lead_story": {
-    "title": "A Free Tool Gives Your AI Agent Eyes Across Six Major Platforms",
-    "what_happened": "Agent-Reach, a new open-source command-line tool, lets AI agents read and search across Twitter, Reddit, YouTube, GitHub, Bilibili, and XiaoHongShu — all from one interface, with no API fees. It's designed to give AI agents real-time access to live online content rather than relying on static training data.",
-    "what_this_means": "If you use AI tools for research, competitive analysis, or content creation, this kind of tool changes what's practical: your AI can now actively look things up across social media and developer communities instead of guessing from what it learned months ago. Marketers, journalists, and researchers stand to gain the most.",
-    "visual_type": "table",
+    "title": "A New Open-Source Tool Can Clone Any Voice — In Any Language",
+    "what_happened": "VoxCPM2, a new open-source AI model from OpenBMB, generates speech in multiple languages and can clone a person's voice from a short sample, without needing the usual step-by-step text breakdown other speech tools rely on.",
+    "what_this_means": "Tools like this make professional-sounding voiceovers and multilingual narration possible without hiring a studio — useful for marketers producing ads, trainers building e-learning content, or anyone publishing video. It also raises the same impersonation concerns as other voice-cloning tools: a convincing fake of someone's voice now takes minutes, not expertise.",
+    "visual_type": null,
     "visual_url": null,
-    "visual_data": {
-      "headers": ["Platform", "What the agent can access"],
-      "rows": [
-        ["Twitter / X", "Posts, threads, profiles"],
-        ["Reddit", "Posts, comments, subreddits"],
-        ["YouTube", "Video titles, descriptions"],
-        ["GitHub", "Repos, issues, code"],
-        ["Bilibili", "Video content (Chinese platform)"],
-        ["XiaoHongShu", "Posts (Chinese platform)"]
-      ]
-    },
-    "source_name": "GitHub",
-    "source_url": "https://github.com/Panniantong/Agent-Reach"
+    "visual_data": null,
+    "source_name": "GitHub Trending",
+    "source_url": "https://github.com/OpenBMB/VoxCPM"
   },
   "quick_hits": [
     {
-      "title": "Open-Source AI Can Now Operate a Full Desktop — Mac, Windows, or Linux",
-      "summary": "A project called CUA (Computer-Use Agents) is trending on GitHub. It offers free infrastructure for AI agents that can control a full computer — clicking, typing, and navigating apps — on macOS, Linux, or Windows. It includes sandboxed test environments and benchmarks to measure how reliably the agents perform real tasks.",
+      "title": "A Free Tool Lets Businesses Run Their Own WhatsApp Bot",
+      "summary": "OpenWA is a free, self-hosted gateway that lets a business connect its own systems to WhatsApp — for order updates, support replies, or reminders — without paying for WhatsApp's official business API. The trade-off is that you run and maintain the server yourself.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/trycua/cua"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/rmyndharis/OpenWA"
     },
     {
-      "title": "A Free Script Strips the Clutter That Slows Down Windows 11",
-      "summary": "Win11Debloat is a lightweight PowerShell script that removes pre-installed apps, disables telemetry, and cleans up default settings on Windows 10 and 11. It's trending on GitHub again, suggesting widespread frustration with what ships on new Windows machines by default.",
+      "title": "A Privacy Tool Strips Pre-Installed Bloatware From Android Phones",
+      "summary": "Universal Android Debloater is a free tool that removes manufacturer and carrier apps from non-rooted Android phones to improve privacy, security, and battery life. It works over a USB connection and doesn't require rooting the device.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/Raphire/Win11Debloat"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"
     },
     {
-      "title": "A Deep Free Guide to Running Your Own Software Without Big Tech",
-      "summary": "The Self-Hosting Guide on GitHub covers everything from running your own AI models and cloud storage to setting up home networking and automation with tools like Home Assistant and WireGuard. It's trending this week, reflecting growing interest in controlling your own data rather than depending on third-party services.",
+      "title": "An Open-Source Tool Logs Everything Your Tesla Does",
+      "summary": "TeslaMate is a self-hosted logger that tracks a Tesla's trips, charging sessions, and battery health over time, giving owners a private dashboard instead of relying on Tesla's own app and data.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
-      "source_name": "GitHub",
-      "source_url": "https://github.com/mikeroyal/Self-Hosting-Guide"
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/teslamate-org/teslamate"
+    },
+    {
+      "title": "A Self-Hosted Alternative to Spotify Connect Is Trending Again",
+      "summary": "Music Assistant is a free media-library manager that connects your own music files and streaming accounts to a wide range of smart speakers, acting as a private alternative to relying on a single streaming app's ecosystem.",
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/music-assistant/server"
     }
   ],
   "under_the_hood": [
     {
-      "title": "Kronos: An AI Foundation Model Built Specifically for Financial Market Language",
-      "what_happened": "Kronos is a new open-source foundation model designed from the ground up to understand the language of financial markets — earnings calls, trading signals, price commentary, and economic reports. Unlike general models fine-tuned on finance data after the fact, Kronos was pre-trained on financial market text as its primary corpus.",
-      "why_it_matters": "General-purpose language models handle finance adequately but weren't trained to parse the specific vocabulary and reasoning patterns of market analysis. A dedicated foundation model can outperform a fine-tuned GPT-4 or Claude on tasks like interpreting economic indicators or summarizing market movements — which matters if you're building financial tools, working in investment, or evaluating AI for regulated professional contexts.",
+      "title": "A Lightweight Vector Database Built for AI Search",
+      "what_happened": "Alibaba released zvec, a free, lightweight vector database designed to run in-process rather than as a separate server. Vector databases store the numerical representations AI systems use to find similar text, images, or documents.",
+      "why_it_matters": "Vector search is the backbone of most 'AI search your own documents' tools (the technique behind retrieval-augmented generation, or RAG). A lightweight, embeddable option lowers the bar for developers who want to add that capability without standing up a separate database server.",
       "code_example": null,
-      "visual_type": "table",
+      "visual_type": null,
       "visual_url": null,
-      "visual_data": {
-        "headers": ["Approach", "Trained on", "Best suited for"],
-        "rows": [
-          ["General LLM (e.g. GPT-4)", "Broad internet text", "General tasks"],
-          ["Fine-tuned finance model", "General data + finance docs", "Finance Q&A"],
-          ["Kronos (foundation model)", "Financial market language", "Market analysis, signals, reports"]
-        ]
-      },
-      "source_name": "GitHub",
-      "source_url": "https://github.com/shiyu-coder/Kronos"
+      "visual_data": null,
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/alibaba/zvec"
+    },
+    {
+      "title": "A New Networking Stack Replaces IP Addresses With Cryptographic Keys",
+      "what_happened": "Iroh is an open-source, modular networking library in Rust built around connecting to a cryptographic key instead of an IP address, so a connection can survive a device changing networks or its address breaking.",
+      "why_it_matters": "Most peer-to-peer and self-hosted apps struggle when a device's network address changes — think a laptop moving from home Wi-Fi to a coffee shop. A key-based connection model is aimed squarely at developers building resilient local-first or P2P software.",
+      "code_example": null,
+      "visual_type": null,
+      "visual_url": null,
+      "visual_data": null,
+      "source_name": "GitHub Trending",
+      "source_url": "https://github.com/n0-computer/iroh"
     }
   ]
 }

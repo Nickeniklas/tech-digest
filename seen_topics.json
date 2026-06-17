@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-06-09",
-    "title": "Google Publishes Official AI Agent Skills for Its Own Products",
-    "summary": "Google released a public repository of agent skills — pre-built instructions that let AI agents understand and work with Google products like Docs, Sheets, Gmail, and Drive without custom setup.",
-    "source_urls": [
-      "https://github.com/google/skills"
-    ]
-  },
-  {
-    "date": "2026-06-09",
-    "title": "100+ AI Skills for Product Managers, Free to Download",
-    "summary": "A new open-source collection called PM Skills packs over 100 reusable AI instructions for every phase of product work — from early discovery through launch and growth.",
-    "source_urls": [
-      "https://github.com/phuryn/pm-skills"
-    ]
-  },
-  {
-    "date": "2026-06-09",
-    "title": "A Free Tool Tells You Which AI Model Runs Best on Your Hardware",
-    "summary": "A command-line tool called whichllm benchmarks local AI models against your actual hardware and ranks them by real performance — not just model size.",
-    "source_urls": [
-      "https://github.com/Andyyyy64/whichllm"
-    ]
-  },
-  {
-    "date": "2026-06-09",
-    "title": "Goose: An Open-Source AI Agent That Can Actually Run Your Computer",
-    "summary": "Goose is a free AI agent that goes well beyond suggesting code — it can install software, run tests, edit files, and execute tasks on your machine, all from a single interface.",
-    "source_urls": [
-      "https://github.com/aaif-goose/goose"
-    ]
-  },
-  {
-    "date": "2026-06-09",
-    "title": "A Visual Guide to Claude Code With Copy-Paste Templates",
-    "summary": "Developer luongnv89 published claude-howto, a free repository of visual examples and ready-to-use templates for Claude Code — Anthropic's AI coding assistant.",
-    "source_urls": [
-      "https://github.com/luongnv89/claude-howto"
-    ]
-  },
-  {
-    "date": "2026-06-09",
-    "title": "Roboflow Supervision: A Free Reusable Toolkit for AI Computer Vision",
-    "summary": "Roboflow's supervision library — a free, reusable set of computer vision building blocks — is trending again on GitHub.",
-    "source_urls": [
-      "https://github.com/roboflow/supervision"
-    ]
-  },
-  {
     "date": "2026-06-10",
     "title": "A GitHub Repository Reveals the Hidden Instructions Behind Today's Top AI Tools",
     "summary": "A widely shared GitHub repository has compiled the internal 'system prompts' — the detailed instructions that control tone, behavior, and limits — for more than 20 popular AI tools, including Cursor, Replit, Lovable, Devin AI, Windsurf, and Claude Code.",
@@ -221,6 +173,62 @@
     "summary": "Kronos is a new open-source foundation model designed from the ground up to understand the language of financial markets — earnings calls, trading signals, price commentary, and economic reports.",
     "source_urls": [
       "https://github.com/shiyu-coder/Kronos"
+    ]
+  },
+  {
+    "date": "2026-06-17",
+    "title": "A New Open-Source Tool Can Clone Any Voice — In Any Language",
+    "summary": "VoxCPM2, a new open-source AI model from OpenBMB, generates speech in multiple languages and can clone a person's voice from a short sample, without needing the usual step-by-step text breakdown other speech tools rely on.",
+    "source_urls": [
+      "https://github.com/OpenBMB/VoxCPM"
+    ]
+  },
+  {
+    "date": "2026-06-17",
+    "title": "A Free Tool Lets Businesses Run Their Own WhatsApp Bot",
+    "summary": "OpenWA is a free, self-hosted gateway that lets a business connect its own systems to WhatsApp — for order updates, support replies, or reminders — without paying for WhatsApp's official business API.",
+    "source_urls": [
+      "https://github.com/rmyndharis/OpenWA"
+    ]
+  },
+  {
+    "date": "2026-06-17",
+    "title": "A Privacy Tool Strips Pre-Installed Bloatware From Android Phones",
+    "summary": "Universal Android Debloater is a free tool that removes manufacturer and carrier apps from non-rooted Android phones to improve privacy, security, and battery life.",
+    "source_urls": [
+      "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"
+    ]
+  },
+  {
+    "date": "2026-06-17",
+    "title": "An Open-Source Tool Logs Everything Your Tesla Does",
+    "summary": "TeslaMate is a self-hosted logger that tracks a Tesla's trips, charging sessions, and battery health over time, giving owners a private dashboard instead of relying on Tesla's own app and data.",
+    "source_urls": [
+      "https://github.com/teslamate-org/teslamate"
+    ]
+  },
+  {
+    "date": "2026-06-17",
+    "title": "A Self-Hosted Alternative to Spotify Connect Is Trending Again",
+    "summary": "Music Assistant is a free media-library manager that connects your own music files and streaming accounts to a wide range of smart speakers, acting as a private alternative to relying on a single streaming app's ecosystem.",
+    "source_urls": [
+      "https://github.com/music-assistant/server"
+    ]
+  },
+  {
+    "date": "2026-06-17",
+    "title": "A Lightweight Vector Database Built for AI Search",
+    "summary": "Alibaba released zvec, a free, lightweight vector database designed to run in-process rather than as a separate server.",
+    "source_urls": [
+      "https://github.com/alibaba/zvec"
+    ]
+  },
+  {
+    "date": "2026-06-17",
+    "title": "A New Networking Stack Replaces IP Addresses With Cryptographic Keys",
+    "summary": "Iroh is an open-source, modular networking library in Rust built around connecting to a cryptographic key instead of an IP address, so a connection can survive a device changing networks or its address breaking.",
+    "source_urls": [
+      "https://github.com/n0-computer/iroh"
     ]
   }
 ]
