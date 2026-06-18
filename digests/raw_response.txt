@@ -1,77 +1,77 @@
 <!-- BEGIN_JSON -->
 {
-  "teaser": "Today's tech news comes almost entirely from GitHub's trending list: a new AI voice-cloning tool, a self-hosted WhatsApp gateway, and a handful of privacy and infrastructure projects worth knowing about.",
-  "fun_fact": "One of today's trending tools turns Wi-Fi-style networking on its head: instead of dialing an IP address, you dial a cryptographic key.",
+  "teaser": "Today's trending projects turn an AI coding agent into a full video studio, put a computer under an agent's direct control, and give Google's forecasting model away for free.",
+  "fun_fact": "One open-source video toolkit now ships 500+ AI skills — more than most marketing departments have staff.",
   "lead_story": {
-    "title": "A New Open-Source Tool Can Clone Any Voice — In Any Language",
-    "what_happened": "VoxCPM2, a new open-source AI model from OpenBMB, generates speech in multiple languages and can clone a person's voice from a short sample, without needing the usual step-by-step text breakdown other speech tools rely on.",
-    "what_this_means": "Tools like this make professional-sounding voiceovers and multilingual narration possible without hiring a studio — useful for marketers producing ads, trainers building e-learning content, or anyone publishing video. It also raises the same impersonation concerns as other voice-cloning tools: a convincing fake of someone's voice now takes minutes, not expertise.",
-    "visual_type": null,
+    "title": "An Open-Source Project Turns Your AI Coding Assistant Into a Video Production Studio",
+    "what_happened": "OpenMontage, a new open-source toolkit, gives AI coding agents over 500 video-editing skills and 52 specialized tools spanning 12 production pipelines — covering everything from scripting to final cut.",
+    "what_this_means": "Marketers, educators, and small teams that can't justify a dedicated video editor can now hand an AI agent the cuts, captions, and pacing instead. It won't replace a skilled editor's judgment, but it lowers the cost of routine video work.",
+    "visual_type": "table",
     "visual_url": null,
-    "visual_data": null,
+    "visual_data": {"headers": ["Component", "Count"], "rows": [["Production pipelines", "12"], ["Specialized tools", "52"], ["Agent skills", "500+"]]},
     "source_name": "GitHub Trending",
-    "source_url": "https://github.com/OpenBMB/VoxCPM"
+    "source_url": "https://github.com/calesthio/OpenMontage"
   },
   "quick_hits": [
     {
-      "title": "A Free Tool Lets Businesses Run Their Own WhatsApp Bot",
-      "summary": "OpenWA is a free, self-hosted gateway that lets a business connect its own systems to WhatsApp — for order updates, support replies, or reminders — without paying for WhatsApp's official business API. The trade-off is that you run and maintain the server yourself.",
+      "title": "A Free, Open-Source Alternative to Figma Keeps Climbing GitHub's Trending List",
+      "summary": "Penpot is an open-source design tool that lets designers and developers work directly on the same files — no proprietary format, no per-seat licensing. You can self-host it or use Penpot's own hosted version for free.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub Trending",
-      "source_url": "https://github.com/rmyndharis/OpenWA"
+      "source_url": "https://github.com/penpot/penpot"
     },
     {
-      "title": "A Privacy Tool Strips Pre-Installed Bloatware From Android Phones",
-      "summary": "Universal Android Debloater is a free tool that removes manufacturer and carrier apps from non-rooted Android phones to improve privacy, security, and battery life. It works over a USB connection and doesn't require rooting the device.",
+      "title": "Google Researchers Release a Foundation Model Built Just for Forecasting",
+      "summary": "TimesFM is a pretrained model from Google Research designed specifically to forecast time-series data — sales figures, web traffic, demand curves — without retraining it on your own data first. That's a shortcut for managers and analysts who need a quick forecast without building a custom model from scratch.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub Trending",
-      "source_url": "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"
+      "source_url": "https://github.com/google-research/timesfm"
     },
     {
-      "title": "An Open-Source Tool Logs Everything Your Tesla Does",
-      "summary": "TeslaMate is a self-hosted logger that tracks a Tesla's trips, charging sessions, and battery health over time, giving owners a private dashboard instead of relying on Tesla's own app and data.",
+      "title": "An Open-Source Communications Platform Pitches Itself for 'Mission-Critical' Teams",
+      "summary": "Rocket.Chat, a longstanding open-source alternative to Slack and Teams, is trending again with a renewed focus on secure, self-hosted communication for regulated industries. The pitch: keep every message on your own servers instead of a vendor's cloud.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub Trending",
-      "source_url": "https://github.com/teslamate-org/teslamate"
+      "source_url": "https://github.com/RocketChat/Rocket.Chat"
     },
     {
-      "title": "A Self-Hosted Alternative to Spotify Connect Is Trending Again",
-      "summary": "Music Assistant is a free media-library manager that connects your own music files and streaming accounts to a wide range of smart speakers, acting as a private alternative to relying on a single streaming app's ecosystem.",
+      "title": "An Open-Source AI Agent Can Now Click, Type, and Navigate Your Whole Desktop",
+      "summary": "UI-TARS-desktop, from ByteDance, is an open-source AI agent stack that can see your screen and operate your computer directly — opening apps, filling forms, navigating menus — instead of just answering questions in a chat window. It's part of a fast-growing category of 'computer-use' agents aimed at automating repetitive desktop work.",
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub Trending",
-      "source_url": "https://github.com/music-assistant/server"
+      "source_url": "https://github.com/bytedance/UI-TARS-desktop"
     }
   ],
   "under_the_hood": [
     {
-      "title": "A Lightweight Vector Database Built for AI Search",
-      "what_happened": "Alibaba released zvec, a free, lightweight vector database designed to run in-process rather than as a separate server. Vector databases store the numerical representations AI systems use to find similar text, images, or documents.",
-      "why_it_matters": "Vector search is the backbone of most 'AI search your own documents' tools (the technique behind retrieval-augmented generation, or RAG). A lightweight, embeddable option lowers the bar for developers who want to add that capability without standing up a separate database server.",
+      "title": "A New Framework Tries to Standardize How AI Coding Agents Learn 'Skills'",
+      "what_happened": "Superpowers is an open-source framework and methodology for packaging reusable capabilities — 'skills' — that AI coding agents like Claude Code can load on demand, rather than re-explaining how to do a task every time.",
+      "why_it_matters": "As AI agents take on more complex, multi-step work, the industry is converging on shared patterns for packaging skills instead of every tool inventing its own. For technical teams adopting AI coding agents, frameworks like this make it easier to build and share reusable agent capabilities across projects.",
       "code_example": null,
       "visual_type": null,
       "visual_url": null,
       "visual_data": null,
       "source_name": "GitHub Trending",
-      "source_url": "https://github.com/alibaba/zvec"
+      "source_url": "https://github.com/obra/superpowers"
     },
     {
-      "title": "A New Networking Stack Replaces IP Addresses With Cryptographic Keys",
-      "what_happened": "Iroh is an open-source, modular networking library in Rust built around connecting to a cryptographic key instead of an IP address, so a connection can survive a device changing networks or its address breaking.",
-      "why_it_matters": "Most peer-to-peer and self-hosted apps struggle when a device's network address changes — think a laptop moving from home Wi-Fi to a coffee shop. A key-based connection model is aimed squarely at developers building resilient local-first or P2P software.",
+      "title": "An MCP Server Promises Near-Instant Code Search Across 158 Languages",
+      "what_happened": "Codebase Memory MCP indexes an entire codebase into a persistent knowledge graph, then answers questions about it in milliseconds rather than re-reading files every time. It ships as a single static binary with no external dependencies.",
+      "why_it_matters": "MCP (Model Context Protocol) servers let AI coding assistants pull in outside information on demand. A fast, dependency-free code-search server like this could meaningfully cut the token cost and latency of AI coding tools working in large codebases — the project claims roughly 99% fewer tokens used per query.",
       "code_example": null,
-      "visual_type": null,
+      "visual_type": "table",
       "visual_url": null,
-      "visual_data": null,
+      "visual_data": {"headers": ["Metric", "Value"], "rows": [["Languages supported", "158"], ["Query latency", "Sub-millisecond"], ["Token reduction", "~99%"]]},
       "source_name": "GitHub Trending",
-      "source_url": "https://github.com/n0-computer/iroh"
+      "source_url": "https://github.com/DeusData/codebase-memory-mcp"
     }
   ]
 }

@@ -1,45 +1,5 @@
 [
   {
-    "date": "2026-06-10",
-    "title": "A GitHub Repository Reveals the Hidden Instructions Behind Today's Top AI Tools",
-    "summary": "A widely shared GitHub repository has compiled the internal 'system prompts' — the detailed instructions that control tone, behavior, and limits — for more than 20 popular AI tools, including Cursor, Replit, Lovable, Devin AI, Windsurf, and Claude Code.",
-    "source_urls": [
-      "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"
-    ]
-  },
-  {
-    "date": "2026-06-10",
-    "title": "A Google Engineer Releases a Free Library of 'Skills' for AI Coding Agents",
-    "summary": "Addy Osmani, a well-known voice on web development at Google, published a free collection of production-grade 'skills' — reusable instruction sets that teach AI coding agents established engineering practices.",
-    "source_urls": [
-      "https://github.com/addyosmani/agent-skills"
-    ]
-  },
-  {
-    "date": "2026-06-10",
-    "title": "An Open-Source AI Toolkit for Healthcare Is Trending on GitHub",
-    "summary": "OpenMed is a free, open-source project focused on applying AI to healthcare tasks.",
-    "source_urls": [
-      "https://github.com/maziyarpanahi/openmed"
-    ]
-  },
-  {
-    "date": "2026-06-10",
-    "title": "A New Open-Source Tool Turns Your Wi-Fi Signal Into a Motion Detector",
-    "summary": "ESPectre is a free tool that detects movement in a room by analyzing subtle changes in your Wi-Fi signal — a technique called CSI, or channel state information — and connects directly to Home Assistant, the popular smart-home platform.",
-    "source_urls": [
-      "https://github.com/francescopace/espectre"
-    ]
-  },
-  {
-    "date": "2026-06-10",
-    "title": "OpenCV, the Library Behind Most AI Vision Tools, Is Trending Again",
-    "summary": "OpenCV — a free, open-source library for computer vision that's been a foundation of image and video processing since 1999 — is back on GitHub's trending list.",
-    "source_urls": [
-      "https://github.com/opencv/opencv"
-    ]
-  },
-  {
     "date": "2026-06-11",
     "title": "A Free Tool Can Search 3,000+ Websites for Your Username in Seconds",
     "summary": "Maigret, a free open-source tool, searches more than 3,000 websites for a single username and compiles everything it finds — social media accounts, forum profiles, old projects — into one report.",
@@ -229,6 +189,62 @@
     "summary": "Iroh is an open-source, modular networking library in Rust built around connecting to a cryptographic key instead of an IP address, so a connection can survive a device changing networks or its address breaking.",
     "source_urls": [
       "https://github.com/n0-computer/iroh"
+    ]
+  },
+  {
+    "date": "2026-06-18",
+    "title": "An Open-Source Project Turns Your AI Coding Assistant Into a Video Production Studio",
+    "summary": "OpenMontage, a new open-source toolkit, gives AI coding agents over 500 video-editing skills and 52 specialized tools spanning 12 production pipelines — covering everything from scripting to final cut.",
+    "source_urls": [
+      "https://github.com/calesthio/OpenMontage"
+    ]
+  },
+  {
+    "date": "2026-06-18",
+    "title": "A Free, Open-Source Alternative to Figma Keeps Climbing GitHub's Trending List",
+    "summary": "Penpot is an open-source design tool that lets designers and developers work directly on the same files — no proprietary format, no per-seat licensing.",
+    "source_urls": [
+      "https://github.com/penpot/penpot"
+    ]
+  },
+  {
+    "date": "2026-06-18",
+    "title": "Google Researchers Release a Foundation Model Built Just for Forecasting",
+    "summary": "TimesFM is a pretrained model from Google Research designed specifically to forecast time-series data — sales figures, web traffic, demand curves — without retraining it on your own data first.",
+    "source_urls": [
+      "https://github.com/google-research/timesfm"
+    ]
+  },
+  {
+    "date": "2026-06-18",
+    "title": "An Open-Source Communications Platform Pitches Itself for 'Mission-Critical' Teams",
+    "summary": "Rocket.",
+    "source_urls": [
+      "https://github.com/RocketChat/Rocket.Chat"
+    ]
+  },
+  {
+    "date": "2026-06-18",
+    "title": "An Open-Source AI Agent Can Now Click, Type, and Navigate Your Whole Desktop",
+    "summary": "UI-TARS-desktop, from ByteDance, is an open-source AI agent stack that can see your screen and operate your computer directly — opening apps, filling forms, navigating menus — instead of just answering questions in a chat window.",
+    "source_urls": [
+      "https://github.com/bytedance/UI-TARS-desktop"
+    ]
+  },
+  {
+    "date": "2026-06-18",
+    "title": "A New Framework Tries to Standardize How AI Coding Agents Learn 'Skills'",
+    "summary": "Superpowers is an open-source framework and methodology for packaging reusable capabilities — 'skills' — that AI coding agents like Claude Code can load on demand, rather than re-explaining how to do a task every time.",
+    "source_urls": [
+      "https://github.com/obra/superpowers"
+    ]
+  },
+  {
+    "date": "2026-06-18",
+    "title": "An MCP Server Promises Near-Instant Code Search Across 158 Languages",
+    "summary": "Codebase Memory MCP indexes an entire codebase into a persistent knowledge graph, then answers questions about it in milliseconds rather than re-reading files every time.",
+    "source_urls": [
+      "https://github.com/DeusData/codebase-memory-mcp"
     ]
   }
 ]
