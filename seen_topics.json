@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-06-11",
-    "title": "A Free Tool Can Search 3,000+ Websites for Your Username in Seconds",
-    "summary": "Maigret, a free open-source tool, searches more than 3,000 websites for a single username and compiles everything it finds — social media accounts, forum profiles, old projects — into one report.",
-    "source_urls": [
-      "https://github.com/soxoj/maigret"
-    ]
-  },
-  {
-    "date": "2026-06-11",
-    "title": "Apple Releases Its Own Tool for Running Linux Software on a Mac",
-    "summary": "Apple published Container, a free open-source tool that lets Mac users run Linux-based software in lightweight virtual machines, built specifically for Apple Silicon chips.",
-    "source_urls": [
-      "https://github.com/apple/container"
-    ]
-  },
-  {
-    "date": "2026-06-11",
-    "title": "A New Project Wants to Give All Your AI Agents One Shared Memory",
-    "summary": "Hivemind, described by its creators as 'one brain for all your agents,' is a new open-source project aimed at letting multiple AI agents share context and memory instead of each starting from scratch.",
-    "source_urls": [
-      "https://github.com/activeloopai/hivemind"
-    ]
-  },
-  {
-    "date": "2026-06-11",
-    "title": "Your Wi-Fi Router Could Soon Watch Over a Room — Without a Camera",
-    "summary": "RuView is an open-source project that turns ordinary Wi-Fi signals into a way to detect movement, monitor vital signs, and sense who's in a room — all without recording video.",
-    "source_urls": [
-      "https://github.com/ruvnet/RuView"
-    ]
-  },
-  {
-    "date": "2026-06-11",
-    "title": "A Popular Tool for Mass-Producing AI Videos Is Trending Again",
-    "summary": "MoneyPrinterTurbo, an open-source tool that turns a topic or script into a finished short video — voiceover, visuals, and captions included — is back on GitHub's trending list.",
-    "source_urls": [
-      "https://github.com/harry0703/MoneyPrinterTurbo"
-    ]
-  },
-  {
-    "date": "2026-06-11",
-    "title": "A Free Step-by-Step Guide to Building an AI Model From Scratch",
-    "summary": "Developer Fareed Khan published a free, open-source guide that walks through every stage of training a large language model — the kind of technology behind tools like Claude and ChatGPT — from gathering and cleaning training data to generating text.",
-    "source_urls": [
-      "https://github.com/FareedKhan-dev/train-llm-from-scratch"
-    ]
-  },
-  {
     "date": "2026-06-12",
     "title": "NVIDIA Releases a Security Scanner for AI Agent 'Skills'",
     "summary": "NVIDIA published SkillSpector, a free open-source scanner that checks the add-on 'skills' people are increasingly installing into AI agents and coding assistants — looking for malicious code, security vulnerabilities, and requests for more access than a skill should need.",
@@ -245,6 +197,46 @@
     "summary": "Codebase Memory MCP indexes an entire codebase into a persistent knowledge graph, then answers questions about it in milliseconds rather than re-reading files every time.",
     "source_urls": [
       "https://github.com/DeusData/codebase-memory-mcp"
+    ]
+  },
+  {
+    "date": "2026-06-19",
+    "title": "A New Open AI Model, GLM-5, Aims to Replace 'Vibe Coding' With Real Engineering",
+    "summary": "Z.",
+    "source_urls": [
+      "https://github.com/zai-org/GLM-5"
+    ]
+  },
+  {
+    "date": "2026-06-19",
+    "title": "A New AI Model Generates Matching Video and Audio Together",
+    "summary": "Lightricks released LTX-2, an open-source AI model that creates video and matching audio from a single prompt, plus tools to fine-tune it for specific styles.",
+    "source_urls": [
+      "https://github.com/Lightricks/LTX-2"
+    ]
+  },
+  {
+    "date": "2026-06-19",
+    "title": "An All-in-One Platform for AI Coding Agents Is Trending on GitHub",
+    "summary": "Kilo Code bills itself as an all-in-one platform for building and running AI coding agents, bundling several tools developers currently juggle separately into one workflow.",
+    "source_urls": [
+      "https://github.com/Kilo-Org/kilocode"
+    ]
+  },
+  {
+    "date": "2026-06-19",
+    "title": "A New Tool Turns Messy Documents Into Searchable Knowledge Maps",
+    "summary": "Hyper-Extract is a free tool that uses AI to convert unstructured text, like contracts, reports, or research papers, into structured graphs and timelines with a single command.",
+    "source_urls": [
+      "https://github.com/yifanfeng97/Hyper-Extract"
+    ]
+  },
+  {
+    "date": "2026-06-19",
+    "title": "The Team Behind Astro Is Building a 'Sandbox' Framework for AI Agents",
+    "summary": "Flue, from the makers of the popular Astro web framework, is a new open-source framework for running AI agents inside sandboxes — isolated environments where an agent's actions can't affect the rest of your system.",
+    "source_urls": [
+      "https://github.com/withastro/flue"
     ]
   }
 ]
