@@ -4,3 +4,7 @@ venv/
 digest.log
 __pycache__/
 *.pyc
+
+## Debug artifacts (regenerated every run, not history worth keeping)
+digests/raw_response.txt
+digests/raw_context.txt
