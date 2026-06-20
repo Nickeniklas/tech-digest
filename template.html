@@ -471,7 +471,11 @@
 
         <div class="source-row">
           <span>Source</span>
+          {%- if lead_story.source_url %}
           <a href="{{ lead_story.source_url }}" class="source-link" target="_blank" rel="noopener">{{ lead_story.source_name }} ↗</a>
+          {%- else %}
+          <span class="source-link">{{ lead_story.source_name }}</span>
+          {%- endif %}
         </div>
       </article>
 
@@ -538,7 +542,11 @@
           {% endif %}
 
           <p class="qh-item-footer">
+            {%- if story.source_url %}
             VIA <a href="{{ story.source_url }}" target="_blank" rel="noopener">{{ story.source_name }} ↗</a>
+            {%- else %}
+            VIA {{ story.source_name }}
+            {%- endif %}
           </p>
         </div>
       </details>
@@ -598,7 +606,11 @@
 
         <div class="hood-source">
           <span>Source</span>
+          {%- if story.source_url %}
           <a href="{{ story.source_url }}" class="hood-source-link" target="_blank" rel="noopener">{{ story.source_name }} ↗</a>
+          {%- else %}
+          <span class="hood-source-link">{{ story.source_name }}</span>
+          {%- endif %}
         </div>
       </article>
       {% endfor %}

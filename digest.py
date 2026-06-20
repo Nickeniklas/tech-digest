@@ -2,6 +2,7 @@ import os
 import re
 import json
 import datetime
+from html import escape
 from pathlib import Path
 
 import anthropic
@@ -299,8 +300,8 @@ def format_section(name: str, items: list[dict]) -> str:
     return "\n".join(lines)
 
 
-def gather_context() -> tuple[str, str]:
-    """Fetch all sources and return (context_string, image_refs_block)."""
+def gather_context() -> tuple[str, str, set[str]]:
+    """Fetch all sources and return (context_string, image_refs_block, known_urls)."""
     print("  Fetching Hacker News...")
     hn_items = extract_hn(fetch_page("https://news.ycombinator.com"))
 
@@ -347,7 +348,18 @@ def gather_context() -> tuple[str, str]:
     if image_lines:
         image_refs = "Available image URLs (use these verbatim for matching stories — do not use any other URLs):\n" + "\n".join(image_lines)
 
-    return context, image_refs
+    # URLs we actually fetched ourselves — the only ones trusted as source_url/visual_url.
+    # Claude's output is checked against this set before rendering, since the scraped
+    # content it summarizes could otherwise be used to smuggle in an attacker-chosen URL.
+    known_urls = set()
+    for items in (hn_items, gh_items, hf_items, ant_items, ghb_items):
+        for item in items:
+            if item.get("url"):
+                known_urls.add(item["url"])
+            if item.get("image_url"):
+                known_urls.add(item["image_url"])
+
+    return context, image_refs, known_urls
 
 
 # ---------------------------------------------------------------------------
@@ -442,11 +454,28 @@ def generate_digest(date_str: str, context: str, seen_topics: list[dict], image_
 _MD_LINK_RE = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
 
 def _md_links_to_html(text: str) -> str:
-    """Convert markdown inline links [text](url) to HTML anchor tags."""
-    return _MD_LINK_RE.sub(
-        lambda m: f'<a href="{m.group(2)}" style="color:inherit;text-decoration:underline;" target="_blank" rel="noopener">{m.group(1)}</a>',
-        text,
-    )
+    """Convert markdown inline links [text](url) to HTML anchor tags.
+
+    The output of this function is rendered with the Jinja `| safe` filter, so it
+    must do its own escaping. Only http(s) URLs become real links — anything else
+    (e.g. a javascript: URI from a manipulated story) degrades to plain text.
+    """
+    parts = []
+    last_end = 0
+    for m in _MD_LINK_RE.finditer(text):
+        parts.append(escape(text[last_end:m.start()]))
+        link_text = escape(m.group(1))
+        url = m.group(2)
+        if url.startswith(("http://", "https://")):
+            parts.append(
+                f'<a href="{escape(url)}" style="color:inherit;text-decoration:underline;" '
+                f'target="_blank" rel="noopener">{link_text}</a>'
+            )
+        else:
+            parts.append(link_text)
+        last_end = m.end()
+    parts.append(escape(text[last_end:]))
+    return "".join(parts)
 
 
 def _chart_bars(visual_data: dict) -> list[dict]:
@@ -467,6 +496,12 @@ def _chart_bars(visual_data: dict) -> list[dict]:
         return [{"label": row[0], "value": row[1] if len(row) > 1 else "", "pct": 50} for row in rows]
 
 
+def _source_line(story: dict) -> str:
+    if story.get("source_url"):
+        return f"Source: [{story['source_name']} ↗]({story['source_url']})"
+    return f"Source: {story['source_name']}"
+
+
 def render_markdown(data: dict, full_date: str) -> str:
     lines = [
         f"# Daily Tech Digest — {full_date}", "",
@@ -479,7 +514,7 @@ def render_markdown(data: dict, full_date: str) -> str:
         f"## {lead['title']}", "",
         "**What happened**", lead["what_happened"], "",
         "**What this means**", lead["what_this_means"], "",
-        f"Source: [{lead['source_name']} ↗]({lead['source_url']})", "",
+        _source_line(lead), "",
         "---",
     ]
 
@@ -490,7 +525,7 @@ def render_markdown(data: dict, full_date: str) -> str:
             lines += [
                 f"### {story['title']}", "",
                 story["summary"], "",
-                f"Source: [{story['source_name']} ↗]({story['source_url']})", "",
+                _source_line(story), "",
             ]
         lines.append("---")
 
@@ -505,7 +540,7 @@ def render_markdown(data: dict, full_date: str) -> str:
             ]
             if story.get("code_example"):
                 lines += [f"```python\n{story['code_example']}\n```", ""]
-            lines += [f"Source: [{story['source_name']} ↗]({story['source_url']})", ""]
+            lines += [_source_line(story), ""]
         lines.append("---")
 
     if data.get("fun_fact"):
@@ -516,7 +551,7 @@ def render_markdown(data: dict, full_date: str) -> str:
 
 
 def render_html(data: dict, full_date: str) -> str:
-    env = Environment(loader=FileSystemLoader(str(Path(__file__).parent)))
+    env = Environment(loader=FileSystemLoader(str(Path(__file__).parent)), autoescape=True)
     env.filters["md_links"] = _md_links_to_html
     env.filters["chart_bars"] = _chart_bars
     template = env.get_template("template.html")
@@ -552,7 +587,7 @@ def build_archive_entries() -> list[dict]:
 
 
 def render_archive(entries: list[dict]) -> str:
-    env = Environment(loader=FileSystemLoader(str(Path(__file__).parent)))
+    env = Environment(loader=FileSystemLoader(str(Path(__file__).parent)), autoescape=True)
     template = env.get_template("archive_template.html")
     return template.render(entries=entries)
 
@@ -566,6 +601,30 @@ def parse_output(text: str) -> dict:
         raise ValueError("Could not find <!-- BEGIN_JSON --> block. See digests/raw_response.txt.")
 
     return json.loads(json_match.group(1).strip())
+
+
+def _is_trusted_url(url: str | None, known_urls: set[str]) -> bool:
+    return bool(url) and url.startswith(("http://", "https://")) and url in known_urls
+
+
+def sanitize_story_urls(data: dict, known_urls: set[str]) -> dict:
+    """Drop any source_url/visual_url Claude returned that isn't one of the URLs we
+    actually fetched. The system prompt instructs Claude to only use verbatim URLs
+    from the supplied context, but that's a prompt instruction, not a safety
+    boundary — scraped content could contain text designed to override it. This is
+    the actual enforcement, checked before anything is ever rendered into HTML.
+    """
+    stories = [data.get("lead_story"), *data.get("quick_hits", []), *data.get("under_the_hood", [])]
+    for story in stories:
+        if not isinstance(story, dict):
+            continue
+        if story.get("source_url") and not _is_trusted_url(story["source_url"], known_urls):
+            logging.warning(f"Dropping unverified source_url: {story['source_url']!r}")
+            story["source_url"] = None
+        if story.get("visual_url") and not _is_trusted_url(story["visual_url"], known_urls):
+            logging.warning(f"Dropping unverified visual_url: {story['visual_url']!r}")
+            story["visual_url"] = None
+    return data
 
 
 def save_files(date_str: str, md: str, html: str) -> tuple[Path, Path]:
@@ -599,7 +658,7 @@ def main() -> None:
 
     print(f"Gathering headlines for {date_str}...")
     logging.info(f"Starting digest generation for {date_str}")
-    context, image_refs = gather_context()
+    context, image_refs, known_urls = gather_context()
     print(f"  Context size: {len(context):,} chars")
     logging.info(f"Context gathered with {len(context):,} chars")
     os.makedirs("digests", exist_ok=True)
@@ -612,6 +671,7 @@ def main() -> None:
 
     print("Parsing output...")
     data = parse_output(raw)
+    data = sanitize_story_urls(data, known_urls)
 
     print("Rendering...")
     md   = render_markdown(data, full_date)
