@@ -523,6 +523,40 @@ def render_html(data: dict, full_date: str) -> str:
     return template.render(full_date=full_date, **data)
 
 
+def build_archive_entries() -> list[dict]:
+    entries = []
+    for html_path in Path("digests").glob("tech-digest-*.html"):
+        date_str = html_path.stem.removeprefix("tech-digest-")
+        try:
+            date = datetime.datetime.strptime(date_str, "%Y-%m-%d").date()
+        except ValueError:
+            continue
+
+        teaser = ""
+        md_path = html_path.with_suffix(".md")
+        if md_path.exists():
+            for line in md_path.read_text(encoding="utf-8").splitlines():
+                if line.startswith("> "):
+                    teaser = line[2:].strip()
+                    break
+
+        entries.append({
+            "date": date_str,
+            "full_date": date.strftime("%d %b %Y"),
+            "teaser": teaser,
+            "html_path": f"digests/{html_path.name}",
+        })
+
+    entries.sort(key=lambda e: e["date"], reverse=True)
+    return entries
+
+
+def render_archive(entries: list[dict]) -> str:
+    env = Environment(loader=FileSystemLoader(str(Path(__file__).parent)))
+    template = env.get_template("archive_template.html")
+    return template.render(entries=entries)
+
+
 def parse_output(text: str) -> dict:
     os.makedirs("digests", exist_ok=True)
     Path("digests/raw_response.txt").write_text(text, encoding="utf-8")
@@ -592,6 +626,11 @@ def main() -> None:
     new_entries = extract_seen_entries(data, date_str)
     save_seen_topics(seen_topics, new_entries)
     logging.info(f"seen_topics.json updated with {len(new_entries)} new entry(ies)")
+
+    archive_entries = build_archive_entries()
+    Path("archive.html").write_text(render_archive(archive_entries), encoding="utf-8")
+    print(f"  -> archive.html ({len(archive_entries)} issues)")
+    logging.info(f"archive.html regenerated with {len(archive_entries)} entries")
 
     print(f"Done. Digest saved for {date_str}.")
     logging.info(f"Digest generation completed for {date_str}")

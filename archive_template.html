@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Digest — Archive</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper:        #F8F7F4;
+    --paper-warm:   #F2EFE6;
+    --ink:          #14201B;
+    --ink-soft:     #384A42;
+    --ink-dim:      #73857C;
+    --rule:         #E2E8E4;
+    --rule-strong:  #C5D3CB;
+    --accent-deep:  #1B4332;
+    --accent-mid:   #2D6A4F;
+    --accent-light: #74C69D;
+    --accent-soft:  #95D5B2;
+    --font-display: "Newsreader", "Cambria", Georgia, serif;
+    --font-sans:    "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-mono:    "IBM Plex Mono", "SF Mono", "Courier New", monospace;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  body {
+    margin: 0; padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--accent-soft); color: var(--accent-deep); }
+
+  /* ── Masthead ── */
+  .masthead { background: var(--accent-deep); }
+  .masthead-inner {
+    max-width: 900px; margin: 0 auto;
+    padding: 18px 40px;
+    display: flex; align-items: center; justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .masthead-brand { display: flex; align-items: center; gap: 14px; }
+  .masthead-logo { flex-shrink: 0; width: 28px; height: 28px; position: relative; }
+  .masthead-logo svg { display: block; }
+  .masthead-wordmark {
+    font-family: var(--font-mono); font-size: 14px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent-light);
+  }
+  .masthead-sub {
+    font-family: var(--font-sans); font-size: 12px;
+    color: rgba(255,255,255,0.40); letter-spacing: 0.02em;
+  }
+
+  /* ── Archive list ── */
+  .archive-wrap { max-width: 900px; margin: 0 auto; padding: 48px 40px 80px; }
+  .archive-title {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 32px; margin: 0 0 8px;
+  }
+  .archive-count {
+    font-family: var(--font-mono); font-size: 12px;
+    color: var(--ink-dim); letter-spacing: 0.05em;
+    margin: 0 0 36px;
+  }
+  .archive-list { list-style: none; margin: 0; padding: 0; }
+  .archive-item {
+    border-bottom: 1px solid var(--rule);
+    padding: 18px 0;
+    display: flex; gap: 24px; align-items: baseline;
+  }
+  .archive-item:first-child { border-top: 1px solid var(--rule); }
+  .archive-date {
+    font-family: var(--font-mono); font-size: 12px;
+    color: var(--ink-dim); letter-spacing: 0.04em;
+    white-space: nowrap; flex-shrink: 0; width: 110px;
+  }
+  .archive-link {
+    font-family: var(--font-display); font-size: 17px;
+    color: var(--ink); transition: color 0.15s;
+  }
+  .archive-item a.archive-link:hover { color: var(--accent-mid); }
+
+  @media (max-width: 600px) {
+    .masthead-inner, .archive-wrap { padding-left: 20px !important; padding-right: 20px !important; }
+    .archive-item { flex-direction: column !important; gap: 4px !important; }
+    .archive-date { width: auto !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-brand">
+      <div class="masthead-logo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="8" y="8" width="18" height="18" rx="4" fill="#2D6A4F"/>
+          <rect x="2" y="2" width="18" height="18" rx="4" fill="#74C69D"/>
+        </svg>
+      </div>
+      <span class="masthead-wordmark">Tech Digest</span>
+      <span class="masthead-sub">Archive</span>
+    </div>
+  </div>
+</header>
+
+<div class="archive-wrap">
+  <h1 class="archive-title">All digests</h1>
+  <p class="archive-count">{{ entries|length }} issue{{ 's' if entries|length != 1 else '' }}</p>
+  <ul class="archive-list">
+    {% for entry in entries %}
+    <li class="archive-item">
+      <span class="archive-date">{{ entry.full_date }}</span>
+      <a class="archive-link" href="{{ entry.html_path }}">{{ entry.teaser or entry.date }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+</body>
+</html>

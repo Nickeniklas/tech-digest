@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Digest — Archive</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper:        #F8F7F4;
+    --paper-warm:   #F2EFE6;
+    --ink:          #14201B;
+    --ink-soft:     #384A42;
+    --ink-dim:      #73857C;
+    --rule:         #E2E8E4;
+    --rule-strong:  #C5D3CB;
+    --accent-deep:  #1B4332;
+    --accent-mid:   #2D6A4F;
+    --accent-light: #74C69D;
+    --accent-soft:  #95D5B2;
+    --font-display: "Newsreader", "Cambria", Georgia, serif;
+    --font-sans:    "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-mono:    "IBM Plex Mono", "SF Mono", "Courier New", monospace;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  body {
+    margin: 0; padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--accent-soft); color: var(--accent-deep); }
+
+  /* ── Masthead ── */
+  .masthead { background: var(--accent-deep); }
+  .masthead-inner {
+    max-width: 900px; margin: 0 auto;
+    padding: 18px 40px;
+    display: flex; align-items: center; justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .masthead-brand { display: flex; align-items: center; gap: 14px; }
+  .masthead-logo { flex-shrink: 0; width: 28px; height: 28px; position: relative; }
+  .masthead-logo svg { display: block; }
+  .masthead-wordmark {
+    font-family: var(--font-mono); font-size: 14px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent-light);
+  }
+  .masthead-sub {
+    font-family: var(--font-sans); font-size: 12px;
+    color: rgba(255,255,255,0.40); letter-spacing: 0.02em;
+  }
+
+  /* ── Archive list ── */
+  .archive-wrap { max-width: 900px; margin: 0 auto; padding: 48px 40px 80px; }
+  .archive-title {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 32px; margin: 0 0 8px;
+  }
+  .archive-count {
+    font-family: var(--font-mono); font-size: 12px;
+    color: var(--ink-dim); letter-spacing: 0.05em;
+    margin: 0 0 36px;
+  }
+  .archive-list { list-style: none; margin: 0; padding: 0; }
+  .archive-item {
+    border-bottom: 1px solid var(--rule);
+    padding: 18px 0;
+    display: flex; gap: 24px; align-items: baseline;
+  }
+  .archive-item:first-child { border-top: 1px solid var(--rule); }
+  .archive-date {
+    font-family: var(--font-mono); font-size: 12px;
+    color: var(--ink-dim); letter-spacing: 0.04em;
+    white-space: nowrap; flex-shrink: 0; width: 110px;
+  }
+  .archive-link {
+    font-family: var(--font-display); font-size: 17px;
+    color: var(--ink); transition: color 0.15s;
+  }
+  .archive-item a.archive-link:hover { color: var(--accent-mid); }
+
+  @media (max-width: 600px) {
+    .masthead-inner, .archive-wrap { padding-left: 20px !important; padding-right: 20px !important; }
+    .archive-item { flex-direction: column !important; gap: 4px !important; }
+    .archive-date { width: auto !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-brand">
+      <div class="masthead-logo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="8" y="8" width="18" height="18" rx="4" fill="#2D6A4F"/>
+          <rect x="2" y="2" width="18" height="18" rx="4" fill="#74C69D"/>
+        </svg>
+      </div>
+      <span class="masthead-wordmark">Tech Digest</span>
+      <span class="masthead-sub">Archive</span>
+    </div>
+  </div>
+</header>
+
+<div class="archive-wrap">
+  <h1 class="archive-title">All digests</h1>
+  <p class="archive-count">58 issues</p>
+  <ul class="archive-list">
+    
+    <li class="archive-item">
+      <span class="archive-date">19 Jun 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-06-19.html">A major new open AI model wants to move teams past 'vibe coding,' and a wave of fresh open-source tools landed alongside it — from AI video generation to safer sandboxes for autonomous agents.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">18 Jun 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-06-18.html">Today's trending projects turn an AI coding agent into a full video studio, put a computer under an agent's direct control, and give Google's forecasting model away for free.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">17 Jun 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-06-17.html">Today's tech news comes almost entirely from GitHub's trending list: a new AI voice-cloning tool, a self-hosted WhatsApp gateway, and a handful of privacy and infrastructure projects worth knowing about.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">16 Jun 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-06-16.html">A free tool now lets your AI agent search Twitter, Reddit, YouTube, and GitHub all at once — no API fees, no sign-ups.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">12 Jun 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-06-12.html">Today's GitHub trends are all about checking AI's homework: a new scanner audits the 'skills' people install into AI agents, and a dashboard audits what those agents actually did.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">11 Jun 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-06-11.html">A free tool that can scan 3,000+ websites for your username shows just how much of your online life is hiding in plain sight.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">10 Jun 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-06-10.html">A new GitHub repository pulls back the curtain on the hidden instructions that shape how your favorite AI tools actually behave.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">09 Jun 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-06-09.html">Google just published an official library of AI agent skills for its own products — meaning AI tools can now operate Google Docs, Gmail, and Sheets on your behalf, out of the box.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">08 Jun 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-06-08.html">Today's most interesting release is a computer built to keep working when the internet doesn't — plus a tool that teaches AI bots better taste.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">07 Jun 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-06-07.html">Microsoft just open-sourced a frontier voice AI model — part of a wave of new free tools landing today, from job-search automation to safer sandboxes for AI agents.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">06 Jun 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-06-06.html">A new free tool gives AI agents the ability to search Twitter, Reddit, YouTube, and more — with no API fees, so your AI can now research the entire internet on your behalf.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">05 Jun 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-06-05.html">NVIDIA just open-sourced the building blocks for robots and self-driving cars — and Google's NotebookLM now has a free, self-hosted alternative you can run yourself.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">04 Jun 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-06-04.html">A free Python library now lets you run a 70-billion-parameter AI model on the same GPU found in a mid-range gaming computer — no cloud server required.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">03 Jun 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-06-03.html">A new open-source tool cuts the cost of running AI apps by up to 95% — without changing the AI model or the answers it gives.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">02 Jun 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-06-02.html">AI agents are now making stock trades, a free design language helps AI tools think like a designer, and a zero-cost game engine is surging again.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">01 Jun 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-06-01.html">AI tools are getting better at remembering your work — and a new open-source memory engine is making that infrastructure available to any app.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">31 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-31.html">A free tool turns your existing WiFi router into a room monitor that tracks presence and vital signs — no cameras, no microphones, no new hardware.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">30 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-30.html">Cursor just opened its AI coding editor to third-party plugins — and it could change how your whole team connects AI to the tools you already use.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">29 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-29.html">Microsoft open-sourced a tool that converts any Office document or PDF to Markdown — making your files instantly usable in AI workflows.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">28 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-28.html">A free tool now turns a text prompt into a polished short video — no editing skills required.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">27 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-27.html">A new open-source tool lets your AI assistant remember everything from previous sessions — so it picks up right where you left off, every time.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">26 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-26.html">Garry Tan's personal AI setup is now public — and it runs like a whole business team, not a single assistant.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">25 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-25.html">Anthropic just published a free plugin library built specifically for teachers, marketers, lawyers, and managers — not developers — and a new AI model arrived that speaks the language of financial markets.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">24 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-24.html">A free, open-source AI presentation tool just arrived to challenge paid favorites like Gamma — and NVIDIA dropped infrastructure for long AI-generated video.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">23 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-23.html">Open-source tools are quietly replacing expensive professional software — from institutional-grade finance terminals to AI learning paths — and today's GitHub trending list shows the tools gaining the most ground.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">22 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-22.html">Google's own Chrome DevTools team published an official AI agent plugin — your coding assistant can now see exactly what your browser sees when something breaks.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">21 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-21.html">A new GitHub project packs an entire team of specialized AI workers into one open-source toolkit — each agent playing a different professional role with its own workflow and deliverables.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">20 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-20.html">Anthropic just published an official, vetted directory of Claude Code plugins — and a new open-source tool claims to cut your AI API costs by up to 90% by stripping unnecessary tokens before they reach the model.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">19 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-19.html">A practical playbook for building AI agents that actually hold up when real people use them.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">18 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-18.html">AI agents are being handed the controls to any software you already use — a wave of open-source tools launched this week is pushing toward a world where no app is off-limits to automation.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">17 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-17.html">A free, open-source AI studio puts 200 models for generating images and video on your own server — no subscription, no data sharing.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">16 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-16.html">Anthropic just made its official AI skills library public — and a new tool can turn any YouTube video, PDF, or webpage into a podcast, quiz, or mind map.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">15 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-15.html">Your WiFi router can already detect your heartbeat — a new open-source tool makes that power accessible to anyone.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">14 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-14.html">AI agents can now control your entire desktop — open-source infrastructure just made that a real project anyone can build on.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">13 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-13.html">A leading TypeScript educator opens up his personal AI coding playbook — and a censorship-defeating proxy tool is climbing GitHub's charts.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">12 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-12.html">A new tool catches the sloppy code that AI agents write — and it's a sign the industry is starting to quality-check its own AI output.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">11 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-11.html">A self-evolving AI agent that teaches itself new skills — and uses six times fewer resources to do it — is turning heads on GitHub this week.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">10 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-10.html">Google's Chrome DevTools team built an official AI agent bridge for your browser — the same tools web developers have used for 15 years are now accessible to AI without a human in the loop.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">09 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-09.html">An open-source AI agent that trades stocks entirely on its own is now available to anyone — and Amazon published a structured rulebook for how AI coding agents should handle complex software projects.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">08 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-08.html">Vercel — the platform behind millions of websites — released an open-source blueprint for building AI agents that run in the cloud, joining a wave of tools that make autonomous AI easier to deploy.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">07 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-07.html">ByteDance open-sourced an AI agent that works autonomously for hours on complex tasks — and Anthropic quietly published a new repository targeting the financial services industry.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">06 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-06.html">A free, open-source alternative to DocuSign is this week's breakout hit — plus AI agents are getting specialist teams and a smarter way to handle long-running tasks.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">05 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-05.html">Chrome is quietly installing a 4GB AI model on your computer, and Google, Microsoft, and xAI are sharing early AI models with the U.S. government.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">04 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-04.html">A new open-source tool can generate polished short videos automatically — no editing skills required.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">03 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-03.html">A new open-source platform lets you deploy fleets of AI agents that work together in parallel — and it was built specifically around Claude.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">02 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-02.html">A new open-source platform called Sim wants to be the coordination layer that ties all your AI agents together — and it's trending hard this week.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">01 May 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-05-01.html">Developer tools are going agentic — the classic terminal window is being rebuilt as an AI workspace that can plan and execute work on its own.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">29 Apr 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-04-29.html">Open-source AI music generation just became free and unlimited — and three of GitHub's most-bookmarked learning resources are surging in popularity again.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">28 Apr 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-04-28.html">Microsoft open-sourced a frontier voice AI platform this week, while a new multi-agent framework is making automated financial trading with LLMs more accessible than ever.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">27 Apr 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-04-27.html">Developers are packaging their personal AI workflows and publishing them for anyone to use — and the most popular ones are spreading fast.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">26 Apr 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-04-26.html">OpenAI says its coding benchmark no longer measures what it claims to—and it matters if you're evaluating AI coding tools.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">25 Apr 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-04-25.html">Microsoft rewrites TypeScript in Go for native speed, HuggingFace ships an open-source ML intern agent, and two sharp dev-tools round out a week of practical releases.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">24 Apr 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-04-24.html">HuggingFace ships an open-source ML engineer that reads papers and trains models — and you can run it today.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">23 Apr 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-04-23.html">HuggingFace ships an autonomous ML engineer while two tools promise to stop your AI coding agent from drowning in its own context.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">22 Apr 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-04-22.html">Thunderbird ships a local-first AI client you actually own, a new MCP server gives Claude Code eyes on your whole codebase, and Microsoft drops a free 12-lesson agent curriculum.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">20 Apr 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-04-20.html">OpenAI ships a proper Python framework for multi-agent workflows, Thunderbird bets on privacy-first AI, and WiFi signals become human pose sensors.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">19 Apr 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-04-19.html">Multi-agent frameworks go mainstream, privacy-first AI email arrives, and your WiFi router quietly becomes a body scanner.</a>
+    </li>
+    
+    <li class="archive-item">
+      <span class="archive-date">16 Apr 2026</span>
+      <a class="archive-link" href="digests/tech-digest-2026-04-16.html">Unrestricted Firebase keys are burning through Gemini API budgets, IPv6 crosses 50%, and the agent framework ecosystem keeps splitting into smaller, task-focused tools.</a>
+    </li>
+    
+  </ul>
+</div>
+
+</body>
+</html>
