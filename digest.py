@@ -326,14 +326,33 @@ def gather_context() -> tuple[str, str, set[str]]:
     enrich_items(ant_items, "Anthropic",   n=3)
     enrich_items(ghb_items, "GitHub Blog", n=3)
 
-    sections = [
-        format_section("Hacker News", hn_items),
-        format_section("GitHub Trending", gh_items),
-        format_section("HuggingFace Blog", hf_items),
-        format_section("Anthropic News", ant_items),
-        format_section("GitHub Blog", ghb_items),
+    # Fail-loud guardrail: count how many sources returned usable content.
+    # A 403/empty fetch yields an empty item list, so an empty list == failure.
+    # We refuse to build a digest from partial data rather than emit a hollow one.
+    sources = [
+        ("Hacker News", hn_items),
+        ("GitHub Trending", gh_items),
+        ("HuggingFace Blog", hf_items),
+        ("Anthropic News", ant_items),
+        ("GitHub Blog", ghb_items),
     ]
+    succeeded = [name for name, items in sources if items]
+    failed    = [name for name, items in sources if not items]
+    for name in failed:
+        print(f"  [warn] {name} returned no usable content (403 / empty / parse failure)")
+        logging.warning(f"{name} returned no usable content (403 / empty / parse failure)")
 
+    MIN_SOURCES = 3
+    if len(succeeded) < MIN_SOURCES:
+        msg = (
+            f"Only {len(succeeded)}/{len(sources)} sources returned content "
+            f"(failed: {', '.join(failed) or 'none'}) — aborting; refusing to "
+            f"build a digest from partial data."
+        )
+        logging.error(msg)
+        raise RuntimeError(msg)
+
+    sections = [format_section(name, items) for name, items in sources]
     context = "\n".join(s for s in sections if s)
 
     if len(context) > MAX_CONTEXT_CHARS:

@@ -84,6 +84,12 @@ Claude Code remote trigger — runs daily at 06:45 Europe/Helsinki (03:45 UTC).
 Trigger ID: `trig_01H3NViVVFhGYrTXS4VyNu35`
 Manage at: https://claude.ai/code/routines
 
+**The scheduled run does NOT call `main()`** — it reimplements the pipeline as
+inline `python -c` scripts stored in the trigger config (Step 3 gather, Step 5
+parse/sanitize/render/save). So any `digest.py` signature change or new pipeline
+stage must be mirrored there too. Edit via the `RemoteTrigger` tool (`get`/`update`),
+not a repo file.
+
 ## Architecture
 
 `digest.py` is the single entry point with six stages:
