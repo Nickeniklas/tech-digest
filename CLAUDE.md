@@ -66,6 +66,19 @@ Path("digests/tech-digest-2026-06-11.html").write_text(html, encoding="utf-8")
 ```
 Then open the `.html` file directly in a browser.
 
+### Testing digest.py logic with no dependencies installed
+
+`import digest` fails without `anthropic`/`requests`/`bs4`/`dotenv` installed, even
+when testing logic that needs none of them. Stub them first:
+```python
+import sys, types
+for name in ("anthropic", "requests", "bs4", "dotenv"):
+    sys.modules[name] = types.ModuleType(name)
+sys.modules["anthropic"].Anthropic = object
+sys.modules["bs4"].BeautifulSoup = object
+sys.modules["dotenv"].load_dotenv = lambda *a, **k: None
+```
+
 ## Scheduling
 Claude Code remote trigger — runs daily at 06:45 Europe/Helsinki (03:45 UTC).
 Trigger ID: `trig_01H3NViVVFhGYrTXS4VyNu35`
@@ -101,7 +114,9 @@ GitHub Blog) are **enriched** via `enrich_items()`:
 Total context hard-capped at 16,000 characters. The full context string is written to
 `digests/raw_context.txt` after each run for debugging.
 
-`gather_context()` returns a **tuple** `(context_str, image_refs_block)`. The
+`gather_context()` returns a **tuple** `(context_str, image_refs_block, known_urls)`.
+`known_urls` is every URL actually fetched — used after generation to validate
+Claude's output (see stage 2.5 below). The
 `image_refs_block` is a compact string listing every `image_url` found across all
 enriched items, keyed to article title:
 ```
@@ -182,6 +197,11 @@ The JSON schema:
 - `visual_data`: Claude-synthesized from numbers, benchmarks, or comparisons in the story text — do not leave `null` when quantitative data exists; format `{"headers": [...], "rows": [[...]]}`
 - The prompt mandates **at least 2 visuals** across the full digest; lead_story always attempts one
 
+**2.5. Sanitize URLs (`sanitize_story_urls`)**
+Called in `main()` right after `parse_output`. Drops any `source_url`/`visual_url`
+not in `known_urls` — the real enforcement, since the prompt instruction alone
+isn't a safety boundary against scraped content designed to override it.
+
 **3. Render Markdown (`render_markdown`)**
 Python derives the `.md` file deterministically from the JSON:
 - Header + teaser
@@ -196,6 +216,10 @@ Python renders `template.html` (Jinja2) with the parsed JSON. All visual styling
 lives in `template.html`. Custom Jinja2 filters:
 - `md_links`: converts `[text](url)` markdown links to HTML anchors (with `target="_blank" rel="noopener"`)
 - `chart_bars`: converts `visual_data` to `{label, value, pct}` dicts for CSS bar chart rendering
+
+Both Jinja `Environment`s (`render_html`, `render_archive`) use `autoescape=True`.
+`_md_links_to_html` is the only filter rendered with `| safe` — it does its own
+escaping and only allows `http(s)://` links through. Don't add `| safe` elsewhere.
 
 All outbound source links (lead story, quick hits, under the hood) and inline
 `md_links` anchors open in a new tab via `target="_blank" rel="noopener"`, so
@@ -247,6 +271,11 @@ collects entries from all three sections: lead_story and under_the_hood use `wha
 quick_hits uses `summary`. Extracts the first sentence as a summary, merges with prior
 entries, re-prunes to 7 days, and writes `seen_topics.json`. Accumulates at most ~42
 entries (6–7 stories × 7 days).
+
+**7. Regenerate archive (`build_archive_entries`, `render_archive`)**
+Runs at the end of every `main()` call. Rewrites `archive.html` (via
+`archive_template.html`) listing every past digest. Not linked from `index.html` —
+v0.1, reachable only by typing `/archive.html` directly.
 
 ## Topic deduplication
 
