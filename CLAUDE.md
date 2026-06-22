@@ -66,6 +66,16 @@ Path("digests/tech-digest-2026-06-11.html").write_text(html, encoding="utf-8")
 ```
 Then open the `.html` file directly in a browser.
 
+### Regenerating archive.html without an API call
+
+If `archive.html` goes stale (e.g. a run committed a digest but not the archive),
+rebuild it from the existing `digests/` folder — no API call, no new digest:
+```python
+from digest import build_archive_entries, render_archive
+from pathlib import Path
+Path("archive.html").write_text(render_archive(build_archive_entries()), encoding="utf-8")
+```
+
 ### Testing digest.py logic with no dependencies installed
 
 `import digest` fails without `anthropic`/`requests`/`bs4`/`dotenv` installed, even
