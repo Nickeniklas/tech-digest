@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-06-12",
-    "title": "NVIDIA Releases a Security Scanner for AI Agent 'Skills'",
-    "summary": "NVIDIA published SkillSpector, a free open-source scanner that checks the add-on 'skills' people are increasingly installing into AI agents and coding assistants — looking for malicious code, security vulnerabilities, and requests for more access than a skill should need.",
-    "source_urls": [
-      "https://github.com/NVIDIA/SkillSpector"
-    ]
-  },
-  {
-    "date": "2026-06-12",
-    "title": "A Free Bundle of AI 'Employees' Covers an Entire Small Business",
-    "summary": "Agency Agents is a free, open-source collection of AI assistants, each tuned for a specific role — from writing website code to running social media accounts.",
-    "source_urls": [
-      "https://github.com/msitarzewski/agency-agents"
-    ]
-  },
-  {
-    "date": "2026-06-12",
-    "title": "A Long-Trusted Backup Tool Is Trending on GitHub Again",
-    "summary": "Restic, a free open-source backup program, is back on GitHub's trending list.",
-    "source_urls": [
-      "https://github.com/restic/restic"
-    ]
-  },
-  {
-    "date": "2026-06-12",
-    "title": "A Free Alternative to Zendesk and Intercom Is Trending on GitHub",
-    "summary": "Chatwoot is an open-source customer support platform that combines live chat, email, and other messaging channels into one inbox.",
-    "source_urls": [
-      "https://github.com/chatwoot/chatwoot"
-    ]
-  },
-  {
-    "date": "2026-06-12",
-    "title": "An Open-Source Framework Lets AI Systems Improve Themselves Over Time",
-    "summary": "SIA (Self Improving AI) is a free framework that lets an AI model or agent automatically refine how it performs a task, without someone manually retraining it.",
-    "source_urls": [
-      "https://github.com/hexo-ai/sia"
-    ]
-  },
-  {
-    "date": "2026-06-12",
-    "title": "A New Dashboard Tracks What Your AI Coding Agents Are Actually Doing",
-    "summary": "AgentsView is a free, local-first analytics tool that records and visualizes sessions from AI coding agents — including Claude Code, Codex, and more than 20 others — so you can see what each one did, how long it took, and what it cost.",
-    "source_urls": [
-      "https://github.com/kenn-io/agentsview"
-    ]
-  },
-  {
     "date": "2026-06-16",
     "title": "A Free Tool Gives Your AI Agent Eyes Across Six Major Platforms",
     "summary": "Agent-Reach, a new open-source command-line tool, lets AI agents read and search across Twitter, Reddit, YouTube, GitHub, Bilibili, and XiaoHongShu — all from one interface, with no API fees.",
@@ -237,6 +189,62 @@
     "summary": "Flue, from the makers of the popular Astro web framework, is a new open-source framework for running AI agents inside sandboxes — isolated environments where an agent's actions can't affect the rest of your system.",
     "source_urls": [
       "https://github.com/withastro/flue"
+    ]
+  },
+  {
+    "date": "2026-06-22",
+    "title": "GitHub Built an AI That Lets Any Employee Query Company Data in Plain English",
+    "summary": "GitHub described how it built Qubot, an internal assistant that lets any employee ask questions about company data in plain English and get an answer back — instead of waiting on a data team to write the database query.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/"
+    ]
+  },
+  {
+    "date": "2026-06-22",
+    "title": "A Fully Open AI Model Pitches 'Sovereign AI' for Anyone Who Wants Control",
+    "summary": "A new foundation model called Apertus has been released with fully open weights, aimed at \"sovereign AI\" — countries and organisations running capable models they own and control rather than renting access from a handful of US firms.",
+    "source_urls": [
+      "https://apertvs.ai/"
+    ]
+  },
+  {
+    "date": "2026-06-22",
+    "title": "GitHub Copilot Switches to Pay-As-You-Go Pricing",
+    "summary": "GitHub is moving Copilot, its widely used AI coding assistant, to usage-based billing: your activity now draws down \"GitHub AI Credits\" instead of a flat monthly fee.",
+    "source_urls": [
+      "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
+    ]
+  },
+  {
+    "date": "2026-06-22",
+    "title": "A Free Dashboard Tries to Replace Doomscrolling With One Calm Screen",
+    "summary": "WorldMonitor, a free open-source project, pulls global news, geopolitical events, and infrastructure status into a single real-time dashboard and uses AI to summarise and flag what actually matters.",
+    "source_urls": [
+      "https://github.com/koala73/worldmonitor"
+    ]
+  },
+  {
+    "date": "2026-06-22",
+    "title": "An Open Tool Gives AI Assistants a Long-Term Memory",
+    "summary": "Cognee is an open-source tool that gives AI assistants memory across sessions, so they remember earlier context instead of starting from scratch every conversation.",
+    "source_urls": [
+      "https://github.com/topoteretes/cognee"
+    ]
+  },
+  {
+    "date": "2026-06-22",
+    "title": "A Tool That Squeezes 60–95% of the Cost Out of AI Requests",
+    "summary": "Headroom sits between your application and a large language model and compresses what gets sent in — tool outputs, logs, files, and retrieved document chunks — reporting 60 to 95 percent fewer tokens while keeping the same answers.",
+    "source_urls": [
+      "https://github.com/chopratejas/headroom"
+    ]
+  },
+  {
+    "date": "2026-06-22",
+    "title": "A Modern Rewrite of SQLite, the Database Hiding in Your Phone",
+    "summary": "Turso is an in-process SQL database compatible with SQLite — it runs inside your app rather than as a separate server — but it's being rebuilt from scratch in Rust to add features SQLite has long lacked, such as better handling of simultaneous writes and built-in syncing.",
+    "source_urls": [
+      "https://github.com/tursodatabase/turso"
     ]
   }
 ]
