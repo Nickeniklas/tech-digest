@@ -86,9 +86,14 @@ Manage at: https://claude.ai/code/routines
 
 **The scheduled run does NOT call `main()`** — it reimplements the pipeline as
 inline `python -c` scripts stored in the trigger config (Step 3 gather, Step 5
-parse/sanitize/render/save). So any `digest.py` signature change or new pipeline
-stage must be mirrored there too. Edit via the `RemoteTrigger` tool (`get`/`update`),
-not a repo file.
+parse/sanitize/render/save/regenerate-archive, Step 7 `git add` + commit + push).
+So any `digest.py` signature change or new pipeline stage must be mirrored there
+too. Edit via the `RemoteTrigger` tool (`get`/`update`), not a repo file.
+
+> Step 5 mirrors `main()` stages 3–7, including archive regeneration
+> (`build_archive_entries` + `render_archive` → `archive.html`). Step 7's `git add`
+> must include `archive.html` (it lives at repo root, not in `digests/`), or the
+> archive silently goes stale even though it was rebuilt.
 
 ## Architecture
 
