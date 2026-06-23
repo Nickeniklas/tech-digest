@@ -246,5 +246,61 @@
     "source_urls": [
       "https://github.com/tursodatabase/turso"
     ]
+  },
+  {
+    "date": "2026-06-23",
+    "title": "A Small AI Model Punches Far Above Its Size",
+    "summary": "Researchers released VibeThinker, an open model with just 3 billion parameters that, on reasoning benchmarks, reportedly matches or beats Anthropic's far larger Opus 4.",
+    "source_urls": [
+      "https://arxiv.org/abs/2606.16140"
+    ]
+  },
+  {
+    "date": "2026-06-23",
+    "title": "Valve's Steam Machine Goes on Sale",
+    "summary": "Valve started selling the Steam Machine, a small living-room computer that plays PC games on your TV the way a console does.",
+    "source_urls": [
+      "https://store.steampowered.com/news/group/45479024/view/685257114654870245"
+    ]
+  },
+  {
+    "date": "2026-06-23",
+    "title": "Microsoft Locks In 20 Years of Power for a Texas Data Center",
+    "summary": "Chevron signed a 20-year deal to supply electricity to a new Microsoft data center in West Texas.",
+    "source_urls": [
+      "https://www.chevron.com/newsroom/2026/q2/chevron-signs-20-year-power-agreement-with-microsoft-for-west-texas-data-center"
+    ]
+  },
+  {
+    "date": "2026-06-23",
+    "title": "An Open-Source Studio for AI Voices",
+    "summary": "Voicebox is a free, open-source tool for cloning voices, dictating, and generating speech from text.",
+    "source_urls": [
+      "https://github.com/jamiepine/voicebox"
+    ]
+  },
+  {
+    "date": "2026-06-23",
+    "title": "A Free Tool for Editing PDFs on Any Device",
+    "summary": "Stirling-PDF, now the most popular PDF project on GitHub, lets you merge, split, sign, and convert PDFs in your browser without uploading them to someone else's server.",
+    "source_urls": [
+      "https://github.com/Stirling-Tools/Stirling-PDF"
+    ]
+  },
+  {
+    "date": "2026-06-23",
+    "title": "Running a 70-Billion-Parameter Model on a 4GB GPU",
+    "summary": "AirLLM is a library that runs very large language models — up to 70 billion parameters — on a single graphics card with as little as 4GB of memory.",
+    "source_urls": [
+      "https://github.com/lyogavin/airllm"
+    ]
+  },
+  {
+    "date": "2026-06-23",
+    "title": "How GitHub Made Issues Feel Instant",
+    "summary": "GitHub's engineering team rebuilt how its Issues pages load, using client-side caching, smart prefetching, and service workers so that moving between issues feels immediate instead of waiting on the network each time.",
+    "source_urls": [
+      "https://github.blog/engineering/architecture-optimization/from-latency-to-instant-modernizing-github-issues-navigation-performance/"
+    ]
   }
 ]
