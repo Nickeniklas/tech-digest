@@ -1,45 +1,5 @@
 [
   {
-    "date": "2026-06-16",
-    "title": "A Free Tool Gives Your AI Agent Eyes Across Six Major Platforms",
-    "summary": "Agent-Reach, a new open-source command-line tool, lets AI agents read and search across Twitter, Reddit, YouTube, GitHub, Bilibili, and XiaoHongShu — all from one interface, with no API fees.",
-    "source_urls": [
-      "https://github.com/Panniantong/Agent-Reach"
-    ]
-  },
-  {
-    "date": "2026-06-16",
-    "title": "Open-Source AI Can Now Operate a Full Desktop — Mac, Windows, or Linux",
-    "summary": "A project called CUA (Computer-Use Agents) is trending on GitHub.",
-    "source_urls": [
-      "https://github.com/trycua/cua"
-    ]
-  },
-  {
-    "date": "2026-06-16",
-    "title": "A Free Script Strips the Clutter That Slows Down Windows 11",
-    "summary": "Win11Debloat is a lightweight PowerShell script that removes pre-installed apps, disables telemetry, and cleans up default settings on Windows 10 and 11.",
-    "source_urls": [
-      "https://github.com/Raphire/Win11Debloat"
-    ]
-  },
-  {
-    "date": "2026-06-16",
-    "title": "A Deep Free Guide to Running Your Own Software Without Big Tech",
-    "summary": "The Self-Hosting Guide on GitHub covers everything from running your own AI models and cloud storage to setting up home networking and automation with tools like Home Assistant and WireGuard.",
-    "source_urls": [
-      "https://github.com/mikeroyal/Self-Hosting-Guide"
-    ]
-  },
-  {
-    "date": "2026-06-16",
-    "title": "Kronos: An AI Foundation Model Built Specifically for Financial Market Language",
-    "summary": "Kronos is a new open-source foundation model designed from the ground up to understand the language of financial markets — earnings calls, trading signals, price commentary, and economic reports.",
-    "source_urls": [
-      "https://github.com/shiyu-coder/Kronos"
-    ]
-  },
-  {
     "date": "2026-06-17",
     "title": "A New Open-Source Tool Can Clone Any Voice — In Any Language",
     "summary": "VoxCPM2, a new open-source AI model from OpenBMB, generates speech in multiple languages and can clone a person's voice from a short sample, without needing the usual step-by-step text breakdown other speech tools rely on.",
@@ -301,6 +261,62 @@
     "summary": "GitHub's engineering team rebuilt how its Issues pages load, using client-side caching, smart prefetching, and service workers so that moving between issues feels immediate instead of waiting on the network each time.",
     "source_urls": [
       "https://github.blog/engineering/architecture-optimization/from-latency-to-instant-modernizing-github-issues-navigation-performance/"
+    ]
+  },
+  {
+    "date": "2026-06-24",
+    "title": "A Tech Leader Automated 40 Parts of Their Own Job",
+    "summary": "A senior leader at GitHub wrote about how they now lean on roughly 40 small automations — built with AI and simple scripts — to handle routine parts of their day, from triaging messages to prepping reports and tracking follow-ups.",
+    "source_urls": [
+      "https://github.blog/developer-skills/github/i-automated-my-job-and-it-made-me-a-better-leader/"
+    ]
+  },
+  {
+    "date": "2026-06-24",
+    "title": "A Phone Keyboard That Types Without Sending Your Words Away",
+    "summary": "FUTO released a new swipe-typing model for its privacy-focused phone keyboard, letting you glide a finger across letters to spell whole words.",
+    "source_urls": [
+      "https://swipe.futo.tech/"
+    ]
+  },
+  {
+    "date": "2026-06-24",
+    "title": "A New Way to Drill for Clean Energy: Vaporise the Rock",
+    "summary": "Quaise Energy says it drilled 100 meters into hard granite using beams of millimeter-wave energy that essentially vaporise rock, instead of a traditional grinding drill bit.",
+    "source_urls": [
+      "https://www.thinkgeoenergy.com/quaise-energy-achieves-100-meters-of-drilling-using-millimeter-wave-technology/"
+    ]
+  },
+  {
+    "date": "2026-06-24",
+    "title": "Meta Pauses an Employee-Tracking Program After a Leak",
+    "summary": "Meta has paused an internal program that tracked employee activity after some of the collected data leaked inside the company.",
+    "source_urls": [
+      "https://www.wired.com/story/meta-pauses-employee-tracking-program-following-internal-security-breach/"
+    ]
+  },
+  {
+    "date": "2026-06-24",
+    "title": "GitHub Pushes Back on a California AI Transparency Law",
+    "summary": "GitHub joined a coalition asking California to amend its new AI Transparency Act, arguing the current wording could unintentionally burden open-source software shared freely online.",
+    "source_urls": [
+      "https://github.blog/news-insights/policy-news-and-insights/github-joins-coalition-advocating-for-fixes-to-california-ai-transparency-act-to-protect-open-source/"
+    ]
+  },
+  {
+    "date": "2026-06-24",
+    "title": "ByteDance Open-Sources a Harness for Long-Running AI Agents",
+    "summary": "ByteDance released deer-flow, an open-source framework for building AI agents that work on long, multi-step tasks — researching, coding, and creating content over minutes or hours rather than a single reply.",
+    "source_urls": [
+      "https://github.com/bytedance/deer-flow"
+    ]
+  },
+  {
+    "date": "2026-06-24",
+    "title": "How Copilot Squeezes More Out of Every Token",
+    "summary": "GitHub published a technical look at how Copilot decides what to feed the model and which model to use for a given request — trimming irrelevant context and routing simpler tasks to cheaper, faster models while reserving the heavyweight ones for genuinely hard problems.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/"
     ]
   }
 ]
