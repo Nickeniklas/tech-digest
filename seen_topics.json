@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-06-17",
-    "title": "A New Open-Source Tool Can Clone Any Voice — In Any Language",
-    "summary": "VoxCPM2, a new open-source AI model from OpenBMB, generates speech in multiple languages and can clone a person's voice from a short sample, without needing the usual step-by-step text breakdown other speech tools rely on.",
-    "source_urls": [
-      "https://github.com/OpenBMB/VoxCPM"
-    ]
-  },
-  {
-    "date": "2026-06-17",
-    "title": "A Free Tool Lets Businesses Run Their Own WhatsApp Bot",
-    "summary": "OpenWA is a free, self-hosted gateway that lets a business connect its own systems to WhatsApp — for order updates, support replies, or reminders — without paying for WhatsApp's official business API.",
-    "source_urls": [
-      "https://github.com/rmyndharis/OpenWA"
-    ]
-  },
-  {
-    "date": "2026-06-17",
-    "title": "A Privacy Tool Strips Pre-Installed Bloatware From Android Phones",
-    "summary": "Universal Android Debloater is a free tool that removes manufacturer and carrier apps from non-rooted Android phones to improve privacy, security, and battery life.",
-    "source_urls": [
-      "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"
-    ]
-  },
-  {
-    "date": "2026-06-17",
-    "title": "An Open-Source Tool Logs Everything Your Tesla Does",
-    "summary": "TeslaMate is a self-hosted logger that tracks a Tesla's trips, charging sessions, and battery health over time, giving owners a private dashboard instead of relying on Tesla's own app and data.",
-    "source_urls": [
-      "https://github.com/teslamate-org/teslamate"
-    ]
-  },
-  {
-    "date": "2026-06-17",
-    "title": "A Self-Hosted Alternative to Spotify Connect Is Trending Again",
-    "summary": "Music Assistant is a free media-library manager that connects your own music files and streaming accounts to a wide range of smart speakers, acting as a private alternative to relying on a single streaming app's ecosystem.",
-    "source_urls": [
-      "https://github.com/music-assistant/server"
-    ]
-  },
-  {
-    "date": "2026-06-17",
-    "title": "A Lightweight Vector Database Built for AI Search",
-    "summary": "Alibaba released zvec, a free, lightweight vector database designed to run in-process rather than as a separate server.",
-    "source_urls": [
-      "https://github.com/alibaba/zvec"
-    ]
-  },
-  {
-    "date": "2026-06-17",
-    "title": "A New Networking Stack Replaces IP Addresses With Cryptographic Keys",
-    "summary": "Iroh is an open-source, modular networking library in Rust built around connecting to a cryptographic key instead of an IP address, so a connection can survive a device changing networks or its address breaking.",
-    "source_urls": [
-      "https://github.com/n0-computer/iroh"
-    ]
-  },
-  {
     "date": "2026-06-18",
     "title": "An Open-Source Project Turns Your AI Coding Assistant Into a Video Production Studio",
     "summary": "OpenMontage, a new open-source toolkit, gives AI coding agents over 500 video-editing skills and 52 specialized tools spanning 12 production pipelines — covering everything from scripting to final cut.",
@@ -317,6 +261,62 @@
     "summary": "GitHub published a technical look at how Copilot decides what to feed the model and which model to use for a given request — trimming irrelevant context and routing simpler tasks to cheaper, faster models while reserving the heavyweight ones for genuinely hard problems.",
     "source_urls": [
       "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/"
+    ]
+  },
+  {
+    "date": "2026-06-25",
+    "title": "OpenAI Unveils Its First Custom Chip, Built With Broadcom",
+    "summary": "OpenAI revealed its first in-house AI chip, designed in partnership with Broadcom.",
+    "source_urls": [
+      "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/"
+    ]
+  },
+  {
+    "date": "2026-06-25",
+    "title": "Google's Gemini Can Now Operate a Computer for You",
+    "summary": "Google added a feature to its Gemini 3.",
+    "source_urls": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/"
+    ]
+  },
+  {
+    "date": "2026-06-25",
+    "title": "Cloudflare Makes a Common Login System Free for Everyone",
+    "summary": "Cloudflare released self-managed OAuth — the technology behind 'Sign in with Google' style buttons — for all of its users at no cost.",
+    "source_urls": [
+      "https://blog.cloudflare.com/oauth-for-all/"
+    ]
+  },
+  {
+    "date": "2026-06-25",
+    "title": "Krea 2 Is a New Open Image Model Anyone Can Run",
+    "summary": "Krea released Krea 2, a 12-billion-parameter image generator whose weights are open, meaning anyone can download and run it rather than paying for access through a single company's service.",
+    "source_urls": [
+      "https://www.krea.ai/blog/krea-2-technical-report"
+    ]
+  },
+  {
+    "date": "2026-06-25",
+    "title": "A Cooling Design That Nearly Eliminates Data-Center Water Use",
+    "summary": "Nvidia detailed a liquid-cooling approach for AI data centers that runs at a warmer 45°C, which lets the facility shed heat without the constant water evaporation that traditional cooling relies on.",
+    "source_urls": [
+      "https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/"
+    ]
+  },
+  {
+    "date": "2026-06-25",
+    "title": "Git Worktrees: One Repository, Several Branches at Once",
+    "summary": "GitHub published a practical guide to git worktrees, a feature that has existed since 2015 but has become popular again.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them/"
+    ]
+  },
+  {
+    "date": "2026-06-25",
+    "title": "GitHub Adds Limits to Cut Down Pull-Request Spam",
+    "summary": "GitHub introduced pull-request limits that let maintainers cap how many open contributions a single person can have at once.",
+    "source_urls": [
+      "https://github.blog/open-source/maintainers/how-pull-request-limits-are-cutting-down-the-noise/"
     ]
   }
 ]
