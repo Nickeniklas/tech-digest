@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-06-18",
-    "title": "An Open-Source Project Turns Your AI Coding Assistant Into a Video Production Studio",
-    "summary": "OpenMontage, a new open-source toolkit, gives AI coding agents over 500 video-editing skills and 52 specialized tools spanning 12 production pipelines — covering everything from scripting to final cut.",
-    "source_urls": [
-      "https://github.com/calesthio/OpenMontage"
-    ]
-  },
-  {
-    "date": "2026-06-18",
-    "title": "A Free, Open-Source Alternative to Figma Keeps Climbing GitHub's Trending List",
-    "summary": "Penpot is an open-source design tool that lets designers and developers work directly on the same files — no proprietary format, no per-seat licensing.",
-    "source_urls": [
-      "https://github.com/penpot/penpot"
-    ]
-  },
-  {
-    "date": "2026-06-18",
-    "title": "Google Researchers Release a Foundation Model Built Just for Forecasting",
-    "summary": "TimesFM is a pretrained model from Google Research designed specifically to forecast time-series data — sales figures, web traffic, demand curves — without retraining it on your own data first.",
-    "source_urls": [
-      "https://github.com/google-research/timesfm"
-    ]
-  },
-  {
-    "date": "2026-06-18",
-    "title": "An Open-Source Communications Platform Pitches Itself for 'Mission-Critical' Teams",
-    "summary": "Rocket.",
-    "source_urls": [
-      "https://github.com/RocketChat/Rocket.Chat"
-    ]
-  },
-  {
-    "date": "2026-06-18",
-    "title": "An Open-Source AI Agent Can Now Click, Type, and Navigate Your Whole Desktop",
-    "summary": "UI-TARS-desktop, from ByteDance, is an open-source AI agent stack that can see your screen and operate your computer directly — opening apps, filling forms, navigating menus — instead of just answering questions in a chat window.",
-    "source_urls": [
-      "https://github.com/bytedance/UI-TARS-desktop"
-    ]
-  },
-  {
-    "date": "2026-06-18",
-    "title": "A New Framework Tries to Standardize How AI Coding Agents Learn 'Skills'",
-    "summary": "Superpowers is an open-source framework and methodology for packaging reusable capabilities — 'skills' — that AI coding agents like Claude Code can load on demand, rather than re-explaining how to do a task every time.",
-    "source_urls": [
-      "https://github.com/obra/superpowers"
-    ]
-  },
-  {
-    "date": "2026-06-18",
-    "title": "An MCP Server Promises Near-Instant Code Search Across 158 Languages",
-    "summary": "Codebase Memory MCP indexes an entire codebase into a persistent knowledge graph, then answers questions about it in milliseconds rather than re-reading files every time.",
-    "source_urls": [
-      "https://github.com/DeusData/codebase-memory-mcp"
-    ]
-  },
-  {
     "date": "2026-06-19",
     "title": "A New Open AI Model, GLM-5, Aims to Replace 'Vibe Coding' With Real Engineering",
     "summary": "Z.",
@@ -317,6 +261,62 @@
     "summary": "GitHub introduced pull-request limits that let maintainers cap how many open contributions a single person can have at once.",
     "source_urls": [
       "https://github.blog/open-source/maintainers/how-pull-request-limits-are-cutting-down-the-noise/"
+    ]
+  },
+  {
+    "date": "2026-06-26",
+    "title": "AI Reads an Entire Ancient Scroll Burned by Vesuvius",
+    "summary": "Researchers say they have read a complete carbonized scroll from Herculaneum — buried by the eruption of Mount Vesuvius in 79 AD — for the first time, without physically opening it.",
+    "source_urls": [
+      "https://scrollprize.org/firstscroll"
+    ]
+  },
+  {
+    "date": "2026-06-26",
+    "title": "Apple Skips Its High-End M6 Chips to Focus on AI",
+    "summary": "Apple reportedly plans to bypass top-tier M6 Mac chips and jump straight to a new AI-focused M7 line, split into Pro, Max, and Ultra tiers.",
+    "source_urls": [
+      "https://www.bloomberg.com/news/articles/2026-06-25/apple-to-skip-high-end-m6-mac-chips-to-launch-m7-pro-m7-max-m7-ultra-instead?embedded-checkout=true"
+    ]
+  },
+  {
+    "date": "2026-06-26",
+    "title": "IBM Unveils Chip Technology Smaller Than a Nanometer",
+    "summary": "IBM says it has demonstrated the world's first sub-1-nanometer chip technology, pushing past a size barrier the industry has been approaching for years.",
+    "source_urls": [
+      "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology"
+    ]
+  },
+  {
+    "date": "2026-06-26",
+    "title": "Google Releases a 'DESIGN.md' Standard for AI Coding Agents",
+    "summary": "Google Labs published design.",
+    "source_urls": [
+      "https://github.com/google-labs-code/design.md"
+    ]
+  },
+  {
+    "date": "2026-06-26",
+    "title": "A Free Tool Turns Messy PDFs Into AI-Ready Text",
+    "summary": "MinerU, an open-source project trending on GitHub, converts complicated documents like PDFs and Office files into clean, structured text that AI tools can actually work with.",
+    "source_urls": [
+      "https://github.com/opendatalab/MinerU"
+    ]
+  },
+  {
+    "date": "2026-06-26",
+    "title": "GitHub Benchmarks Its Copilot 'Agentic Harness' Across 20+ Models",
+    "summary": "GitHub published an evaluation of its Copilot agentic harness — the system that lets the AI plan and carry out multi-step coding tasks rather than just suggest a line at a time.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks/"
+    ]
+  },
+  {
+    "date": "2026-06-26",
+    "title": "What Happened When 2,000 People Tried to Hack One AI Assistant",
+    "summary": "A developer set up a public challenge inviting people to break their AI assistant — tricking it into ignoring its instructions or leaking information it shouldn't.",
+    "source_urls": [
+      "https://www.fernandoi.cl/posts/hackmyclaw/"
     ]
   }
 ]
