@@ -1,45 +1,5 @@
 [
   {
-    "date": "2026-06-19",
-    "title": "A New Open AI Model, GLM-5, Aims to Replace 'Vibe Coding' With Real Engineering",
-    "summary": "Z.",
-    "source_urls": [
-      "https://github.com/zai-org/GLM-5"
-    ]
-  },
-  {
-    "date": "2026-06-19",
-    "title": "A New AI Model Generates Matching Video and Audio Together",
-    "summary": "Lightricks released LTX-2, an open-source AI model that creates video and matching audio from a single prompt, plus tools to fine-tune it for specific styles.",
-    "source_urls": [
-      "https://github.com/Lightricks/LTX-2"
-    ]
-  },
-  {
-    "date": "2026-06-19",
-    "title": "An All-in-One Platform for AI Coding Agents Is Trending on GitHub",
-    "summary": "Kilo Code bills itself as an all-in-one platform for building and running AI coding agents, bundling several tools developers currently juggle separately into one workflow.",
-    "source_urls": [
-      "https://github.com/Kilo-Org/kilocode"
-    ]
-  },
-  {
-    "date": "2026-06-19",
-    "title": "A New Tool Turns Messy Documents Into Searchable Knowledge Maps",
-    "summary": "Hyper-Extract is a free tool that uses AI to convert unstructured text, like contracts, reports, or research papers, into structured graphs and timelines with a single command.",
-    "source_urls": [
-      "https://github.com/yifanfeng97/Hyper-Extract"
-    ]
-  },
-  {
-    "date": "2026-06-19",
-    "title": "The Team Behind Astro Is Building a 'Sandbox' Framework for AI Agents",
-    "summary": "Flue, from the makers of the popular Astro web framework, is a new open-source framework for running AI agents inside sandboxes — isolated environments where an agent's actions can't affect the rest of your system.",
-    "source_urls": [
-      "https://github.com/withastro/flue"
-    ]
-  },
-  {
     "date": "2026-06-22",
     "title": "GitHub Built an AI That Lets Any Employee Query Company Data in Plain English",
     "summary": "GitHub described how it built Qubot, an internal assistant that lets any employee ask questions about company data in plain English and get an answer back — instead of waiting on a data team to write the database query.",
@@ -317,6 +277,62 @@
     "summary": "A developer set up a public challenge inviting people to break their AI assistant — tricking it into ignoring its instructions or leaking information it shouldn't.",
     "source_urls": [
       "https://www.fernandoi.cl/posts/hackmyclaw/"
+    ]
+  },
+  {
+    "date": "2026-06-27",
+    "title": "The U.S. Government Is Now Vetting Who Can Use the Most Powerful AI",
+    "summary": "OpenAI previewed GPT-5.",
+    "source_urls": [
+      "https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/"
+    ]
+  },
+  {
+    "date": "2026-06-27",
+    "title": "Anthropic's Mythos Released to a Short List of \"Trusted\" Companies",
+    "summary": "The U.",
+    "source_urls": [
+      "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies"
+    ]
+  },
+  {
+    "date": "2026-06-27",
+    "title": "A Messaging App With No Usernames Tops GitHub's Charts",
+    "summary": "SimpleX, a chat network that works without any user IDs, phone numbers, or accounts, became the most popular project on GitHub this week.",
+    "source_urls": [
+      "https://github.com/simplex-chat/simplex-chat"
+    ]
+  },
+  {
+    "date": "2026-06-27",
+    "title": "PlayStation Is Deleting 551 Movies People Already Paid For",
+    "summary": "Sony is removing 551 films from customers' PlayStation accounts after a licensing deal expired, even for people who bought them outright years ago.",
+    "source_urls": [
+      "https://kotaku.com/playstation-store-movies-digital-studio-canal-terminator-2000711013"
+    ]
+  },
+  {
+    "date": "2026-06-27",
+    "title": "AI Is Forcing Mathematicians to Rethink What a Proof Is",
+    "summary": "AI systems are now producing mathematical results so long and dense that humans struggle to fully check them, raising the question of what counts as a proof if no person can read it end to end.",
+    "source_urls": [
+      "https://spectrum.ieee.org/ai-in-mathematics"
+    ]
+  },
+  {
+    "date": "2026-06-27",
+    "title": "How Big Is the Gap Between Open and Closed AI Models, Really?",
+    "summary": "A new analysis weighs \"open weights\" models — ones you can download and run yourself — against closed models like GPT and Claude that you can only rent through an API.",
+    "source_urls": [
+      "https://blog.doubleword.ai/frontier-os-llm"
+    ]
+  },
+  {
+    "date": "2026-06-27",
+    "title": "AWS Lambda Can Now Run Isolated \"MicroVMs\" on Demand",
+    "summary": "Amazon added a way to spin up tiny, fully isolated virtual machines — microVMs — through AWS Lambda, with control over their full lifecycle.",
+    "source_urls": [
+      "https://aws.amazon.com/blogs/aws/run-isolated-sandboxes-with-full-lifecycle-control-aws-lambda-introduces-microvms/"
     ]
   }
 ]
