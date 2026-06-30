@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-06-22",
-    "title": "GitHub Built an AI That Lets Any Employee Query Company Data in Plain English",
-    "summary": "GitHub described how it built Qubot, an internal assistant that lets any employee ask questions about company data in plain English and get an answer back — instead of waiting on a data team to write the database query.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/"
-    ]
-  },
-  {
-    "date": "2026-06-22",
-    "title": "A Fully Open AI Model Pitches 'Sovereign AI' for Anyone Who Wants Control",
-    "summary": "A new foundation model called Apertus has been released with fully open weights, aimed at \"sovereign AI\" — countries and organisations running capable models they own and control rather than renting access from a handful of US firms.",
-    "source_urls": [
-      "https://apertvs.ai/"
-    ]
-  },
-  {
-    "date": "2026-06-22",
-    "title": "GitHub Copilot Switches to Pay-As-You-Go Pricing",
-    "summary": "GitHub is moving Copilot, its widely used AI coding assistant, to usage-based billing: your activity now draws down \"GitHub AI Credits\" instead of a flat monthly fee.",
-    "source_urls": [
-      "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
-    ]
-  },
-  {
-    "date": "2026-06-22",
-    "title": "A Free Dashboard Tries to Replace Doomscrolling With One Calm Screen",
-    "summary": "WorldMonitor, a free open-source project, pulls global news, geopolitical events, and infrastructure status into a single real-time dashboard and uses AI to summarise and flag what actually matters.",
-    "source_urls": [
-      "https://github.com/koala73/worldmonitor"
-    ]
-  },
-  {
-    "date": "2026-06-22",
-    "title": "An Open Tool Gives AI Assistants a Long-Term Memory",
-    "summary": "Cognee is an open-source tool that gives AI assistants memory across sessions, so they remember earlier context instead of starting from scratch every conversation.",
-    "source_urls": [
-      "https://github.com/topoteretes/cognee"
-    ]
-  },
-  {
-    "date": "2026-06-22",
-    "title": "A Tool That Squeezes 60–95% of the Cost Out of AI Requests",
-    "summary": "Headroom sits between your application and a large language model and compresses what gets sent in — tool outputs, logs, files, and retrieved document chunks — reporting 60 to 95 percent fewer tokens while keeping the same answers.",
-    "source_urls": [
-      "https://github.com/chopratejas/headroom"
-    ]
-  },
-  {
-    "date": "2026-06-22",
-    "title": "A Modern Rewrite of SQLite, the Database Hiding in Your Phone",
-    "summary": "Turso is an in-process SQL database compatible with SQLite — it runs inside your app rather than as a separate server — but it's being rebuilt from scratch in Rust to add features SQLite has long lacked, such as better handling of simultaneous writes and built-in syncing.",
-    "source_urls": [
-      "https://github.com/tursodatabase/turso"
-    ]
-  },
-  {
     "date": "2026-06-23",
     "title": "A Small AI Model Punches Far Above Its Size",
     "summary": "Researchers released VibeThinker, an open model with just 3 billion parameters that, on reasoning benchmarks, reportedly matches or beats Anthropic's far larger Opus 4.",
@@ -437,6 +381,62 @@
     "summary": "At the ISC 2026 conference, the TOP500 list — the official ranking of the world's most powerful supercomputers — crowned a new number one.",
     "source_urls": [
       "https://chipsandcheese.com/p/top500-at-isc26-we-have-a-new-number"
+    ]
+  },
+  {
+    "date": "2026-06-30",
+    "title": "South Korea Bets $1 Trillion on Chips and Robots",
+    "summary": "South Korea unveiled a roughly $1 trillion plan to expand memory-chip production and build out a homegrown humanoid-robot industry — a national wager on the physical hardware that the AI boom depends on.",
+    "source_urls": [
+      "https://arstechnica.com/ai/2026/06/south-korea-to-spend-1t-on-more-memory-chip-production-and-humanoid-robots/"
+    ]
+  },
+  {
+    "date": "2026-06-30",
+    "title": "Supreme Court Reins In 'Geofence' Location Warrants",
+    "summary": "The US Supreme Court ruled that geofence warrants — which let police demand data on every phone near a crime scene — need constitutional protections.",
+    "source_urls": [
+      "https://www.theguardian.com/us-news/2026/jun/29/supreme-court-geofence-warrants-case-decision"
+    ]
+  },
+  {
+    "date": "2026-06-30",
+    "title": "GitHub Copilot Switches to Pay-Per-Use Pricing",
+    "summary": "GitHub is moving its Copilot coding assistant to usage-based billing, where each request draws down a pool of AI credits instead of a flat monthly fee.",
+    "source_urls": [
+      "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
+    ]
+  },
+  {
+    "date": "2026-06-30",
+    "title": "A Tool That Builds a Dossier on Anyone From a Username",
+    "summary": "Maigret, now trending on GitHub, takes a single username and hunts for matching accounts across more than 3,000 websites, stitching together a profile of someone's online footprint.",
+    "source_urls": [
+      "https://github.com/soxoj/maigret"
+    ]
+  },
+  {
+    "date": "2026-06-30",
+    "title": "A Mac Dictation App That Never Leaves Your Computer",
+    "summary": "FluidVoice is a free, open-source dictation tool for Mac that turns speech into text entirely on your own machine, with nothing sent to a server.",
+    "source_urls": [
+      "https://github.com/altic-dev/FluidVoice"
+    ]
+  },
+  {
+    "date": "2026-06-30",
+    "title": "Git 2.55 Lands With a Round of Quality-of-Life Upgrades",
+    "summary": "The open-source Git project — the version-control system underpinning nearly all modern software — shipped version 2.",
+    "source_urls": [
+      "https://github.blog/open-source/git/highlights-from-git-2-55/"
+    ]
+  },
+  {
+    "date": "2026-06-30",
+    "title": "LongCat-2.0: A 1.6-Trillion-Parameter Model That Only Wakes Part of Itself",
+    "summary": "A new open model called LongCat-2.",
+    "source_urls": [
+      "https://longcat.chat/blog/longcat-2.0/"
     ]
   }
 ]
