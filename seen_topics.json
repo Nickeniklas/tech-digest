@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-06-23",
-    "title": "A Small AI Model Punches Far Above Its Size",
-    "summary": "Researchers released VibeThinker, an open model with just 3 billion parameters that, on reasoning benchmarks, reportedly matches or beats Anthropic's far larger Opus 4.",
-    "source_urls": [
-      "https://arxiv.org/abs/2606.16140"
-    ]
-  },
-  {
-    "date": "2026-06-23",
-    "title": "Valve's Steam Machine Goes on Sale",
-    "summary": "Valve started selling the Steam Machine, a small living-room computer that plays PC games on your TV the way a console does.",
-    "source_urls": [
-      "https://store.steampowered.com/news/group/45479024/view/685257114654870245"
-    ]
-  },
-  {
-    "date": "2026-06-23",
-    "title": "Microsoft Locks In 20 Years of Power for a Texas Data Center",
-    "summary": "Chevron signed a 20-year deal to supply electricity to a new Microsoft data center in West Texas.",
-    "source_urls": [
-      "https://www.chevron.com/newsroom/2026/q2/chevron-signs-20-year-power-agreement-with-microsoft-for-west-texas-data-center"
-    ]
-  },
-  {
-    "date": "2026-06-23",
-    "title": "An Open-Source Studio for AI Voices",
-    "summary": "Voicebox is a free, open-source tool for cloning voices, dictating, and generating speech from text.",
-    "source_urls": [
-      "https://github.com/jamiepine/voicebox"
-    ]
-  },
-  {
-    "date": "2026-06-23",
-    "title": "A Free Tool for Editing PDFs on Any Device",
-    "summary": "Stirling-PDF, now the most popular PDF project on GitHub, lets you merge, split, sign, and convert PDFs in your browser without uploading them to someone else's server.",
-    "source_urls": [
-      "https://github.com/Stirling-Tools/Stirling-PDF"
-    ]
-  },
-  {
-    "date": "2026-06-23",
-    "title": "Running a 70-Billion-Parameter Model on a 4GB GPU",
-    "summary": "AirLLM is a library that runs very large language models — up to 70 billion parameters — on a single graphics card with as little as 4GB of memory.",
-    "source_urls": [
-      "https://github.com/lyogavin/airllm"
-    ]
-  },
-  {
-    "date": "2026-06-23",
-    "title": "How GitHub Made Issues Feel Instant",
-    "summary": "GitHub's engineering team rebuilt how its Issues pages load, using client-side caching, smart prefetching, and service workers so that moving between issues feels immediate instead of waiting on the network each time.",
-    "source_urls": [
-      "https://github.blog/engineering/architecture-optimization/from-latency-to-instant-modernizing-github-issues-navigation-performance/"
-    ]
-  },
-  {
     "date": "2026-06-24",
     "title": "A Tech Leader Automated 40 Parts of Their Own Job",
     "summary": "A senior leader at GitHub wrote about how they now lean on roughly 40 small automations — built with AI and simple scripts — to handle routine parts of their day, from triaging messages to prepping reports and tracking follow-ups.",
@@ -437,6 +381,62 @@
     "summary": "A new open model called LongCat-2.",
     "source_urls": [
       "https://longcat.chat/blog/longcat-2.0/"
+    ]
+  },
+  {
+    "date": "2026-07-01",
+    "title": "Anthropic Releases Claude Sonnet 5",
+    "summary": "Anthropic released Claude Sonnet 5, the newest version of its mid-tier AI model — the one that quietly powers a large share of everyday AI assistants, writing tools, and chatbots rather than the pricier flagship tiers.",
+    "source_urls": [
+      "https://www.anthropic.com/news/claude-sonnet-5"
+    ]
+  },
+  {
+    "date": "2026-07-01",
+    "title": "U.S. Lifts Export Controls on Anthropic's Restricted Models",
+    "summary": "Previously covered on 2026-06-27: the U.",
+    "source_urls": [
+      "https://twitter.com/AnthropicAI/status/2072106151890809341"
+    ]
+  },
+  {
+    "date": "2026-07-01",
+    "title": "Google's 'Nano Banana 2 Lite' Is a Lighter Image Generator",
+    "summary": "Google released a smaller, faster version of its Gemini image model, built to run cheaply and quickly rather than chase maximum quality.",
+    "source_urls": [
+      "https://deepmind.google/models/gemini-image/flash-lite/"
+    ]
+  },
+  {
+    "date": "2026-07-01",
+    "title": "Meta Shows Typing From Brain Waves — No Surgery Required",
+    "summary": "Meta's research team demonstrated a system that turns brain activity into typed words using external sensors, without any implant or operation.",
+    "source_urls": [
+      "https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/?_fb_noscript=1"
+    ]
+  },
+  {
+    "date": "2026-07-01",
+    "title": "GitHub's Security Database Is Buckling Under Record Vulnerability Reports",
+    "summary": "GitHub says the database it uses to catalog software security flaws is processing more reports than ever, straining the team that reviews them.",
+    "source_urls": [
+      "https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/"
+    ]
+  },
+  {
+    "date": "2026-07-01",
+    "title": "How GitHub Tracks Software Licenses at Massive Scale",
+    "summary": "GitHub detailed how its internal Open Source Program Office keeps tabs on the licenses attached to the thousands of open-source components its own products depend on.",
+    "source_urls": [
+      "https://github.blog/enterprise-software/governance-and-compliance/how-github-maintains-compliance-for-open-source-dependencies/"
+    ]
+  },
+  {
+    "date": "2026-07-01",
+    "title": "A Developer Claims Claude Code Hides Invisible Markers in Requests",
+    "summary": "A researcher published an analysis arguing that Claude Code, Anthropic's coding assistant, embeds subtle, hard-to-see markers in the text it sends — a technique called steganography, where information is hidden inside otherwise ordinary-looking content.",
+    "source_urls": [
+      "https://thereallo.dev/blog/claude-code-prompt-steganography"
     ]
   }
 ]
