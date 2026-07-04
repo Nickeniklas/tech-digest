@@ -1,173 +1,5 @@
 [
   {
-    "date": "2026-06-24",
-    "title": "A Tech Leader Automated 40 Parts of Their Own Job",
-    "summary": "A senior leader at GitHub wrote about how they now lean on roughly 40 small automations — built with AI and simple scripts — to handle routine parts of their day, from triaging messages to prepping reports and tracking follow-ups.",
-    "source_urls": [
-      "https://github.blog/developer-skills/github/i-automated-my-job-and-it-made-me-a-better-leader/"
-    ]
-  },
-  {
-    "date": "2026-06-24",
-    "title": "A Phone Keyboard That Types Without Sending Your Words Away",
-    "summary": "FUTO released a new swipe-typing model for its privacy-focused phone keyboard, letting you glide a finger across letters to spell whole words.",
-    "source_urls": [
-      "https://swipe.futo.tech/"
-    ]
-  },
-  {
-    "date": "2026-06-24",
-    "title": "A New Way to Drill for Clean Energy: Vaporise the Rock",
-    "summary": "Quaise Energy says it drilled 100 meters into hard granite using beams of millimeter-wave energy that essentially vaporise rock, instead of a traditional grinding drill bit.",
-    "source_urls": [
-      "https://www.thinkgeoenergy.com/quaise-energy-achieves-100-meters-of-drilling-using-millimeter-wave-technology/"
-    ]
-  },
-  {
-    "date": "2026-06-24",
-    "title": "Meta Pauses an Employee-Tracking Program After a Leak",
-    "summary": "Meta has paused an internal program that tracked employee activity after some of the collected data leaked inside the company.",
-    "source_urls": [
-      "https://www.wired.com/story/meta-pauses-employee-tracking-program-following-internal-security-breach/"
-    ]
-  },
-  {
-    "date": "2026-06-24",
-    "title": "GitHub Pushes Back on a California AI Transparency Law",
-    "summary": "GitHub joined a coalition asking California to amend its new AI Transparency Act, arguing the current wording could unintentionally burden open-source software shared freely online.",
-    "source_urls": [
-      "https://github.blog/news-insights/policy-news-and-insights/github-joins-coalition-advocating-for-fixes-to-california-ai-transparency-act-to-protect-open-source/"
-    ]
-  },
-  {
-    "date": "2026-06-24",
-    "title": "ByteDance Open-Sources a Harness for Long-Running AI Agents",
-    "summary": "ByteDance released deer-flow, an open-source framework for building AI agents that work on long, multi-step tasks — researching, coding, and creating content over minutes or hours rather than a single reply.",
-    "source_urls": [
-      "https://github.com/bytedance/deer-flow"
-    ]
-  },
-  {
-    "date": "2026-06-24",
-    "title": "How Copilot Squeezes More Out of Every Token",
-    "summary": "GitHub published a technical look at how Copilot decides what to feed the model and which model to use for a given request — trimming irrelevant context and routing simpler tasks to cheaper, faster models while reserving the heavyweight ones for genuinely hard problems.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/"
-    ]
-  },
-  {
-    "date": "2026-06-25",
-    "title": "OpenAI Unveils Its First Custom Chip, Built With Broadcom",
-    "summary": "OpenAI revealed its first in-house AI chip, designed in partnership with Broadcom.",
-    "source_urls": [
-      "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/"
-    ]
-  },
-  {
-    "date": "2026-06-25",
-    "title": "Google's Gemini Can Now Operate a Computer for You",
-    "summary": "Google added a feature to its Gemini 3.",
-    "source_urls": [
-      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/"
-    ]
-  },
-  {
-    "date": "2026-06-25",
-    "title": "Cloudflare Makes a Common Login System Free for Everyone",
-    "summary": "Cloudflare released self-managed OAuth — the technology behind 'Sign in with Google' style buttons — for all of its users at no cost.",
-    "source_urls": [
-      "https://blog.cloudflare.com/oauth-for-all/"
-    ]
-  },
-  {
-    "date": "2026-06-25",
-    "title": "Krea 2 Is a New Open Image Model Anyone Can Run",
-    "summary": "Krea released Krea 2, a 12-billion-parameter image generator whose weights are open, meaning anyone can download and run it rather than paying for access through a single company's service.",
-    "source_urls": [
-      "https://www.krea.ai/blog/krea-2-technical-report"
-    ]
-  },
-  {
-    "date": "2026-06-25",
-    "title": "A Cooling Design That Nearly Eliminates Data-Center Water Use",
-    "summary": "Nvidia detailed a liquid-cooling approach for AI data centers that runs at a warmer 45°C, which lets the facility shed heat without the constant water evaporation that traditional cooling relies on.",
-    "source_urls": [
-      "https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/"
-    ]
-  },
-  {
-    "date": "2026-06-25",
-    "title": "Git Worktrees: One Repository, Several Branches at Once",
-    "summary": "GitHub published a practical guide to git worktrees, a feature that has existed since 2015 but has become popular again.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them/"
-    ]
-  },
-  {
-    "date": "2026-06-25",
-    "title": "GitHub Adds Limits to Cut Down Pull-Request Spam",
-    "summary": "GitHub introduced pull-request limits that let maintainers cap how many open contributions a single person can have at once.",
-    "source_urls": [
-      "https://github.blog/open-source/maintainers/how-pull-request-limits-are-cutting-down-the-noise/"
-    ]
-  },
-  {
-    "date": "2026-06-26",
-    "title": "AI Reads an Entire Ancient Scroll Burned by Vesuvius",
-    "summary": "Researchers say they have read a complete carbonized scroll from Herculaneum — buried by the eruption of Mount Vesuvius in 79 AD — for the first time, without physically opening it.",
-    "source_urls": [
-      "https://scrollprize.org/firstscroll"
-    ]
-  },
-  {
-    "date": "2026-06-26",
-    "title": "Apple Skips Its High-End M6 Chips to Focus on AI",
-    "summary": "Apple reportedly plans to bypass top-tier M6 Mac chips and jump straight to a new AI-focused M7 line, split into Pro, Max, and Ultra tiers.",
-    "source_urls": [
-      "https://www.bloomberg.com/news/articles/2026-06-25/apple-to-skip-high-end-m6-mac-chips-to-launch-m7-pro-m7-max-m7-ultra-instead?embedded-checkout=true"
-    ]
-  },
-  {
-    "date": "2026-06-26",
-    "title": "IBM Unveils Chip Technology Smaller Than a Nanometer",
-    "summary": "IBM says it has demonstrated the world's first sub-1-nanometer chip technology, pushing past a size barrier the industry has been approaching for years.",
-    "source_urls": [
-      "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology"
-    ]
-  },
-  {
-    "date": "2026-06-26",
-    "title": "Google Releases a 'DESIGN.md' Standard for AI Coding Agents",
-    "summary": "Google Labs published design.",
-    "source_urls": [
-      "https://github.com/google-labs-code/design.md"
-    ]
-  },
-  {
-    "date": "2026-06-26",
-    "title": "A Free Tool Turns Messy PDFs Into AI-Ready Text",
-    "summary": "MinerU, an open-source project trending on GitHub, converts complicated documents like PDFs and Office files into clean, structured text that AI tools can actually work with.",
-    "source_urls": [
-      "https://github.com/opendatalab/MinerU"
-    ]
-  },
-  {
-    "date": "2026-06-26",
-    "title": "GitHub Benchmarks Its Copilot 'Agentic Harness' Across 20+ Models",
-    "summary": "GitHub published an evaluation of its Copilot agentic harness — the system that lets the AI plan and carry out multi-step coding tasks rather than just suggest a line at a time.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks/"
-    ]
-  },
-  {
-    "date": "2026-06-26",
-    "title": "What Happened When 2,000 People Tried to Hack One AI Assistant",
-    "summary": "A developer set up a public challenge inviting people to break their AI assistant — tricking it into ignoring its instructions or leaking information it shouldn't.",
-    "source_urls": [
-      "https://www.fernandoi.cl/posts/hackmyclaw/"
-    ]
-  },
-  {
     "date": "2026-06-27",
     "title": "The U.S. Government Is Now Vetting Who Can Use the Most Powerful AI",
     "summary": "OpenAI previewed GPT-5.",
@@ -437,6 +269,62 @@
     "summary": "A researcher published an analysis arguing that Claude Code, Anthropic's coding assistant, embeds subtle, hard-to-see markers in the text it sends — a technique called steganography, where information is hidden inside otherwise ordinary-looking content.",
     "source_urls": [
       "https://thereallo.dev/blog/claude-code-prompt-steganography"
+    ]
+  },
+  {
+    "date": "2026-07-04",
+    "title": "Voice AI Is About to Feel Instant",
+    "summary": "Hugging Face and chipmaker Cerebras built a speech system, using Google's open Gemma 4 model, that listens and talks back in near real time instead of the usual awkward pause.",
+    "source_urls": [
+      "https://huggingface.co/blog/cerebras-gemma4-voice-ai"
+    ]
+  },
+  {
+    "date": "2026-07-04",
+    "title": "Mistral Releases an AI That Proves Math",
+    "summary": "French lab Mistral released Leanstral 1.",
+    "source_urls": [
+      "https://mistral.ai/news/leanstral-1-5/"
+    ]
+  },
+  {
+    "date": "2026-07-04",
+    "title": "GitHub Cleared 20,000 Security Alerts — and Hit Zero",
+    "summary": "GitHub had piled up more than 20,000 unresolved \"leaked secret\" alerts — exposed passwords and keys — across 15,000 of its own code repositories.",
+    "source_urls": [
+      "https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/"
+    ]
+  },
+  {
+    "date": "2026-07-04",
+    "title": "Six Free Settings That Make Your Code Harder to Attack",
+    "summary": "GitHub published a plain checklist of six security settings any project owner can switch on this week at no cost.",
+    "source_urls": [
+      "https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/"
+    ]
+  },
+  {
+    "date": "2026-07-04",
+    "title": "A Popular Windows App Could Hand Over Full Control",
+    "summary": "A researcher showed that MSI Center, software preinstalled on many MSI-brand PCs, could be tricked into granting an attacker the highest level of control over the machine within seconds.",
+    "source_urls": [
+      "https://mrbruh.com/msicenter/"
+    ]
+  },
+  {
+    "date": "2026-07-04",
+    "title": "The Same AI Model, Much Cheaper Hardware",
+    "summary": "Engineers ran the open GLM5.",
+    "source_urls": [
+      "https://www.wafer.ai/blog/glm52-amd"
+    ]
+  },
+  {
+    "date": "2026-07-04",
+    "title": "Tiny OCR Models That Read 50 Languages",
+    "summary": "PaddlePaddle released PP-OCRv6, a family of optical-character-recognition models — software that turns pictures of text into editable text — spanning 50 languages.",
+    "source_urls": [
+      "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6"
     ]
   }
 ]

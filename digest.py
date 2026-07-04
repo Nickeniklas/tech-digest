@@ -250,7 +250,10 @@ def extract_github_trending(html: str) -> list[dict]:
 def extract_generic(html: str, base_url: str = "") -> list[dict]:
     """
     Generic extractor for blog/news pages.
-    Grabs article titles + links from common patterns (h2 a, h3 a, article a).
+    Grabs article titles + links from common patterns. Handles both the
+    heading-wraps-anchor pattern (``<h2><a>Title</a></h2>``) and the
+    anchor-wraps-heading card pattern (``<a href><h2>Title</h2></a>``, used by
+    HuggingFace's blog since mid-2026).
     """
     soup = BeautifulSoup(html, "html.parser")
     seen_urls = set()
@@ -258,10 +261,13 @@ def extract_generic(html: str, base_url: str = "") -> list[dict]:
 
     for tag in ("h2", "h3", "h1"):
         for el in soup.find_all(tag):
-            a = el.find("a", href=True)
+            # Anchor inside the heading, or a heading wrapped by an anchor card.
+            a = el.find("a", href=True) or el.find_parent("a", href=True)
             if not a:
                 continue
-            title = a.get_text(strip=True)
+            # Prefer the heading's own text — an ancestor anchor may wrap extra
+            # markup (image, byline) whose text would pollute the title.
+            title = el.get_text(strip=True) or a.get_text(strip=True)
             href  = a["href"]
             if not href.startswith("http"):
                 href = base_url.rstrip("/") + "/" + href.lstrip("/")
