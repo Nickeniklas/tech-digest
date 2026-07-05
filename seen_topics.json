@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-06-27",
-    "title": "The U.S. Government Is Now Vetting Who Can Use the Most Powerful AI",
-    "summary": "OpenAI previewed GPT-5.",
-    "source_urls": [
-      "https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/"
-    ]
-  },
-  {
-    "date": "2026-06-27",
-    "title": "Anthropic's Mythos Released to a Short List of \"Trusted\" Companies",
-    "summary": "The U.",
-    "source_urls": [
-      "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies"
-    ]
-  },
-  {
-    "date": "2026-06-27",
-    "title": "A Messaging App With No Usernames Tops GitHub's Charts",
-    "summary": "SimpleX, a chat network that works without any user IDs, phone numbers, or accounts, became the most popular project on GitHub this week.",
-    "source_urls": [
-      "https://github.com/simplex-chat/simplex-chat"
-    ]
-  },
-  {
-    "date": "2026-06-27",
-    "title": "PlayStation Is Deleting 551 Movies People Already Paid For",
-    "summary": "Sony is removing 551 films from customers' PlayStation accounts after a licensing deal expired, even for people who bought them outright years ago.",
-    "source_urls": [
-      "https://kotaku.com/playstation-store-movies-digital-studio-canal-terminator-2000711013"
-    ]
-  },
-  {
-    "date": "2026-06-27",
-    "title": "AI Is Forcing Mathematicians to Rethink What a Proof Is",
-    "summary": "AI systems are now producing mathematical results so long and dense that humans struggle to fully check them, raising the question of what counts as a proof if no person can read it end to end.",
-    "source_urls": [
-      "https://spectrum.ieee.org/ai-in-mathematics"
-    ]
-  },
-  {
-    "date": "2026-06-27",
-    "title": "How Big Is the Gap Between Open and Closed AI Models, Really?",
-    "summary": "A new analysis weighs \"open weights\" models — ones you can download and run yourself — against closed models like GPT and Claude that you can only rent through an API.",
-    "source_urls": [
-      "https://blog.doubleword.ai/frontier-os-llm"
-    ]
-  },
-  {
-    "date": "2026-06-27",
-    "title": "AWS Lambda Can Now Run Isolated \"MicroVMs\" on Demand",
-    "summary": "Amazon added a way to spin up tiny, fully isolated virtual machines — microVMs — through AWS Lambda, with control over their full lifecycle.",
-    "source_urls": [
-      "https://aws.amazon.com/blogs/aws/run-isolated-sandboxes-with-full-lifecycle-control-aws-lambda-introduces-microvms/"
-    ]
-  },
-  {
     "date": "2026-06-28",
     "title": "Ford Swapped Workers for AI. It Backfired.",
     "summary": "Ford moved to automate parts of its operations with AI and cut human staff to do it, but the rollout went badly enough that the company is now dealing with the fallout rather than the savings it expected.",
@@ -325,6 +269,54 @@
     "summary": "PaddlePaddle released PP-OCRv6, a family of optical-character-recognition models — software that turns pictures of text into editable text — spanning 50 languages.",
     "source_urls": [
       "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6"
+    ]
+  },
+  {
+    "date": "2026-07-05",
+    "title": "A New Test Asks: Can AI Agents Actually Fix Old Software?",
+    "summary": "IBM Research and Hugging Face released ScarfBench, a benchmark that measures how well AI coding agents can migrate enterprise Java applications from one software framework to another — the slow, unglamorous modernization work that keeps big companies running.",
+    "source_urls": [
+      "https://huggingface.co/blog/ibm-research/scarfbench"
+    ]
+  },
+  {
+    "date": "2026-07-05",
+    "title": "OpenAI's Newest Coding AI May Be Getting Worse",
+    "summary": "Developers report that GPT-5.",
+    "source_urls": [
+      "https://github.com/openai/codex/issues/30364"
+    ]
+  },
+  {
+    "date": "2026-07-05",
+    "title": "A Researcher Found a Way to View Private YouTube Videos",
+    "summary": "A security researcher demonstrated a flaw that could expose creators' unlisted and private videos to outsiders.",
+    "source_urls": [
+      "https://javoriuski.com/post/youtube"
+    ]
+  },
+  {
+    "date": "2026-07-05",
+    "title": "Why the Future of AI May Be Many Small Models, Not One Giant One",
+    "summary": "A widely shared analysis argues that specialized AI models — each tuned for one narrow job — will increasingly beat a single all-purpose model on cost, speed, and reliability.",
+    "source_urls": [
+      "https://huggingface.co/blog/Dharma-AI/why-specialization-is-inevitable"
+    ]
+  },
+  {
+    "date": "2026-07-05",
+    "title": "A Major Study Backs Psilocybin for Hard-to-Treat Depression",
+    "summary": "A study published in JAMA Psychiatry reports that psilocybin, the active compound in magic mushrooms, showed both efficacy and safety for people whose depression hasn't responded to standard treatments.",
+    "source_urls": [
+      "https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2846478"
+    ]
+  },
+  {
+    "date": "2026-07-05",
+    "title": "Zig Splits Package Management Out of Its Compiler",
+    "summary": "The Zig programming language moved all of its package-management features out of the compiler and into its separate build system.",
+    "source_urls": [
+      "https://ziglang.org/devlog/2026/#2026-06-30"
     ]
   }
 ]
