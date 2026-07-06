@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-06-28",
-    "title": "Ford Swapped Workers for AI. It Backfired.",
-    "summary": "Ford moved to automate parts of its operations with AI and cut human staff to do it, but the rollout went badly enough that the company is now dealing with the fallout rather than the savings it expected.",
-    "source_urls": [
-      "https://www.the-independent.com/tech/ford-ai-automation-human-workers-b3003787.html"
-    ]
-  },
-  {
-    "date": "2026-06-28",
-    "title": "An AI That Builds Real, Editable Slide Decks",
-    "summary": "A new open-source tool called PPT Master turns any document into an actual PowerPoint file — native shapes, animations, and speaker notes you can edit, not just a flat image of a slide.",
-    "source_urls": [
-      "https://github.com/hugohe3/ppt-master"
-    ]
-  },
-  {
-    "date": "2026-06-28",
-    "title": "Asia Builds Its Own Answer to a Blocked AI Model",
-    "summary": "After the U.",
-    "source_urls": [
-      "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/"
-    ]
-  },
-  {
-    "date": "2026-06-28",
-    "title": "GitHub and the UN Bring Open Source to Ghana",
-    "summary": "GitHub teamed up with the United Nations Development Programme in Ghana to explore how openly shared, freely reusable software can support the country's digital reform plans.",
-    "source_urls": [
-      "https://github.blog/open-source/social-impact/github-and-undp-team-up-to-advance-development-priorities-in-ghana-with-open-source/"
-    ]
-  },
-  {
-    "date": "2026-06-28",
-    "title": "How 'Speculative Decoding' Makes AI Answer Faster",
-    "summary": "DeepSeek published work on DSpark, an implementation of a technique called speculative decoding.",
-    "source_urls": [
-      "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf"
-    ]
-  },
-  {
-    "date": "2026-06-28",
-    "title": "AI Takes On the 'Dark Art' of Radio Chip Design",
-    "summary": "Designing the analog radio circuits inside phones and Wi-Fi gear is notoriously hard — it leans on intuition and experience that engineers half-jokingly call a dark art.",
-    "source_urls": [
-      "https://spectrum.ieee.org/ai-radio-chip-design"
-    ]
-  },
-  {
     "date": "2026-06-29",
     "title": "Central Bankers Warn the AI Boom Could Trigger a Financial Crash",
     "summary": "Senior figures at the world's central banks cautioned that the enormous sums being borrowed and invested to build AI — data centers, chips, and the companies behind them — increasingly resemble the kind of overheated, debt-fueled bet that has ended in crashes before.",
@@ -317,6 +269,54 @@
     "summary": "The Zig programming language moved all of its package-management features out of the compiler and into its separate build system.",
     "source_urls": [
       "https://ziglang.org/devlog/2026/#2026-06-30"
+    ]
+  },
+  {
+    "date": "2026-07-06",
+    "title": "An AI Tutor Posted Big Learning Gains in a Real Dartmouth Course",
+    "summary": "A study of an AI tutor used in an actual Dartmouth course reported learning gains of 0.",
+    "source_urls": [
+      "https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf"
+    ]
+  },
+  {
+    "date": "2026-07-06",
+    "title": "Zuckerberg Says AI Agents Are Taking Longer Than Expected",
+    "summary": "Meta's Mark Zuckerberg acknowledged that building AI \"agents\" — software meant to carry out multi-step tasks on your behalf — is going slower than the industry hoped.",
+    "source_urls": [
+      "https://www.reuters.com/business/zuckerberg-says-ai-agent-development-going-slower-than-expected-2026-07-02/"
+    ]
+  },
+  {
+    "date": "2026-07-06",
+    "title": "A Free, Offline Maps App That Doesn't Track You",
+    "summary": "Organic Maps is an open-source navigation app that stores maps directly on your phone, so it works with no signal and sends none of your location data to a company.",
+    "source_urls": [
+      "https://organicmaps.app/"
+    ]
+  },
+  {
+    "date": "2026-07-06",
+    "title": "Small AI Models Did a Repo's Grunt Work for Free",
+    "summary": "Hugging Face showed that small AI models running on ordinary hardware could sort and label incoming code contributions to a project — a chore usually handled by paid cloud services.",
+    "source_urls": [
+      "https://huggingface.co/blog/local-models-pr-triage"
+    ]
+  },
+  {
+    "date": "2026-07-06",
+    "title": "How GitHub Made Its Issues Pages Feel Instant",
+    "summary": "GitHub rebuilt the way its Issues section loads pages, leaning on three techniques: caching data in your browser, quietly fetching pages before you click them (prefetching), and using service workers — small background scripts that can serve saved content without a fresh trip to the server.",
+    "source_urls": [
+      "https://github.blog/engineering/architecture-optimization/from-latency-to-instant-modernizing-github-issues-navigation-performance/"
+    ]
+  },
+  {
+    "date": "2026-07-06",
+    "title": "Can a Research AI Keep a Secret? A New Test Says: Not Always",
+    "summary": "MosaicLeaks, from ServiceNow's research team, probes whether AI \"research agents\" — models that browse and gather information for you — can be tricked into revealing confidential data they were told to protect.",
+    "source_urls": [
+      "https://huggingface.co/blog/ServiceNow/mosaicleaks"
     ]
   }
 ]
