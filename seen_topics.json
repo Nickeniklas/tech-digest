@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-06-29",
-    "title": "Central Bankers Warn the AI Boom Could Trigger a Financial Crash",
-    "summary": "Senior figures at the world's central banks cautioned that the enormous sums being borrowed and invested to build AI — data centers, chips, and the companies behind them — increasingly resemble the kind of overheated, debt-fueled bet that has ended in crashes before.",
-    "source_urls": [
-      "https://www.telegraph.co.uk/business/2026/06/28/ai-boom-risks-global-financial-crash-central-bankers-warn/"
-    ]
-  },
-  {
-    "date": "2026-06-29",
-    "title": "A Chinese Open Model Claims It Beats Claude at Finding Security Flaws",
-    "summary": "Security firm Semgrep says GLM 5.",
-    "source_urls": [
-      "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/"
-    ]
-  },
-  {
-    "date": "2026-06-29",
-    "title": "A Brown Professor Says Most of a Class Cheated With AI",
-    "summary": "A professor at Brown University publicly accused a large share of students of using AI to cheat on an exam, reigniting the debate over how schools handle tools that can write a passable essay in seconds.",
-    "source_urls": [
-      "https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html"
-    ]
-  },
-  {
-    "date": "2026-06-29",
-    "title": "Researchers Build a Pixel That Can Both Show and See Light",
-    "summary": "Engineers at ETH Zurich created a new kind of pixel that can display an image and detect light at the same time.",
-    "source_urls": [
-      "https://ethz.ch/en/news-and-events/eth-news/news/2026/06/a-new-type-of-pixel.html"
-    ]
-  },
-  {
-    "date": "2026-06-29",
-    "title": "The Boeing 747 Begins Its Final Descent",
-    "summary": "The Atlantic marks the slow retirement of the Boeing 747, the humpbacked jumbo jet that made long-haul flying affordable for ordinary travelers.",
-    "source_urls": [
-      "https://www.theatlantic.com/magazine/2026/07/boeing-747-retirement/687304/"
-    ]
-  },
-  {
-    "date": "2026-06-29",
-    "title": "66 Years of Falling Memory Prices, in One Chart",
-    "summary": "Stanford published a historical dataset tracking the price of computer memory from 1960 to 2026.",
-    "source_urls": [
-      "https://dam.stanford.edu/memory-prices.html"
-    ]
-  },
-  {
-    "date": "2026-06-29",
-    "title": "There's a New Fastest Supercomputer in the World",
-    "summary": "At the ISC 2026 conference, the TOP500 list — the official ranking of the world's most powerful supercomputers — crowned a new number one.",
-    "source_urls": [
-      "https://chipsandcheese.com/p/top500-at-isc26-we-have-a-new-number"
-    ]
-  },
-  {
     "date": "2026-06-30",
     "title": "South Korea Bets $1 Trillion on Chips and Robots",
     "summary": "South Korea unveiled a roughly $1 trillion plan to expand memory-chip production and build out a homegrown humanoid-robot industry — a national wager on the physical hardware that the AI boom depends on.",
@@ -317,6 +261,62 @@
     "summary": "MosaicLeaks, from ServiceNow's research team, probes whether AI \"research agents\" — models that browse and gather information for you — can be tricked into revealing confidential data they were told to protect.",
     "source_urls": [
       "https://huggingface.co/blog/ServiceNow/mosaicleaks"
+    ]
+  },
+  {
+    "date": "2026-07-07",
+    "title": "Hugging Face's Free Robot Toolkit Learns to Imagine",
+    "summary": "Hugging Face released LeRobot 0.",
+    "source_urls": [
+      "https://huggingface.co/blog/lerobot-release-v060"
+    ]
+  },
+  {
+    "date": "2026-07-07",
+    "title": "Why AI Tools May Be About to Get Much Cheaper",
+    "summary": "A widely shared analysis argues that a new open model, GLM 5.",
+    "source_urls": [
+      "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/"
+    ]
+  },
+  {
+    "date": "2026-07-07",
+    "title": "A Tiny AI That Runs Entirely Inside Your Browser",
+    "summary": "A developer released Ternlight, a 7-megabyte AI model — small enough to attach to a single email — that runs inside a web page with no server and nothing sent to the cloud.",
+    "source_urls": [
+      "https://ternlight-demo.vercel.app/"
+    ]
+  },
+  {
+    "date": "2026-07-07",
+    "title": "Start a Coding Task on Your Laptop, Steer It From Your Phone",
+    "summary": "GitHub now lets you kick off an AI coding session on your computer and then check in on it or redirect it from your phone.",
+    "source_urls": [
+      "https://github.blog/news-insights/product-news/take-your-local-github-sessions-anywhere/"
+    ]
+  },
+  {
+    "date": "2026-07-07",
+    "title": "Someone Turned an E-Reader Into a Magic Diary",
+    "summary": "A tinkerer used an AI model to turn a reMarkable writing tablet into a working version of Tom Riddle's enchanted diary from Harry Potter: you write a question by hand, and handwritten replies appear on the page.",
+    "source_urls": [
+      "https://github.com/MaximeRivest/Riddle"
+    ]
+  },
+  {
+    "date": "2026-07-07",
+    "title": "A New Bug Lets a Virtual Machine Break Out of Its Box",
+    "summary": "Researchers disclosed Januscape (CVE-2026-53359), a flaw in KVM — the virtualization layer built into Linux that lets a single server run many isolated virtual machines.",
+    "source_urls": [
+      "https://github.com/V4bel/Januscape"
+    ]
+  },
+  {
+    "date": "2026-07-07",
+    "title": "Peering Into How a Language Model Talks to Itself",
+    "summary": "Anthropic published research suggesting large language models develop something like a \"global workspace\" — a shared internal space where different parts of the model post and read information.",
+    "source_urls": [
+      "https://www.anthropic.com/research/global-workspace"
     ]
   }
 ]
