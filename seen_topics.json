@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-06-30",
-    "title": "South Korea Bets $1 Trillion on Chips and Robots",
-    "summary": "South Korea unveiled a roughly $1 trillion plan to expand memory-chip production and build out a homegrown humanoid-robot industry — a national wager on the physical hardware that the AI boom depends on.",
-    "source_urls": [
-      "https://arstechnica.com/ai/2026/06/south-korea-to-spend-1t-on-more-memory-chip-production-and-humanoid-robots/"
-    ]
-  },
-  {
-    "date": "2026-06-30",
-    "title": "Supreme Court Reins In 'Geofence' Location Warrants",
-    "summary": "The US Supreme Court ruled that geofence warrants — which let police demand data on every phone near a crime scene — need constitutional protections.",
-    "source_urls": [
-      "https://www.theguardian.com/us-news/2026/jun/29/supreme-court-geofence-warrants-case-decision"
-    ]
-  },
-  {
-    "date": "2026-06-30",
-    "title": "GitHub Copilot Switches to Pay-Per-Use Pricing",
-    "summary": "GitHub is moving its Copilot coding assistant to usage-based billing, where each request draws down a pool of AI credits instead of a flat monthly fee.",
-    "source_urls": [
-      "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
-    ]
-  },
-  {
-    "date": "2026-06-30",
-    "title": "A Tool That Builds a Dossier on Anyone From a Username",
-    "summary": "Maigret, now trending on GitHub, takes a single username and hunts for matching accounts across more than 3,000 websites, stitching together a profile of someone's online footprint.",
-    "source_urls": [
-      "https://github.com/soxoj/maigret"
-    ]
-  },
-  {
-    "date": "2026-06-30",
-    "title": "A Mac Dictation App That Never Leaves Your Computer",
-    "summary": "FluidVoice is a free, open-source dictation tool for Mac that turns speech into text entirely on your own machine, with nothing sent to a server.",
-    "source_urls": [
-      "https://github.com/altic-dev/FluidVoice"
-    ]
-  },
-  {
-    "date": "2026-06-30",
-    "title": "Git 2.55 Lands With a Round of Quality-of-Life Upgrades",
-    "summary": "The open-source Git project — the version-control system underpinning nearly all modern software — shipped version 2.",
-    "source_urls": [
-      "https://github.blog/open-source/git/highlights-from-git-2-55/"
-    ]
-  },
-  {
-    "date": "2026-06-30",
-    "title": "LongCat-2.0: A 1.6-Trillion-Parameter Model That Only Wakes Part of Itself",
-    "summary": "A new open model called LongCat-2.",
-    "source_urls": [
-      "https://longcat.chat/blog/longcat-2.0/"
-    ]
-  },
-  {
     "date": "2026-07-01",
     "title": "Anthropic Releases Claude Sonnet 5",
     "summary": "Anthropic released Claude Sonnet 5, the newest version of its mid-tier AI model — the one that quietly powers a large share of everyday AI assistants, writing tools, and chatbots rather than the pricier flagship tiers.",
@@ -317,6 +261,62 @@
     "summary": "Anthropic published research suggesting large language models develop something like a \"global workspace\" — a shared internal space where different parts of the model post and read information.",
     "source_urls": [
       "https://www.anthropic.com/research/global-workspace"
+    ]
+  },
+  {
+    "date": "2026-07-08",
+    "title": "A Hidden Backdoor Is Lurking in Popular Home Routers",
+    "summary": "Security researchers at Carnegie Mellon's CERT Coordination Center reported that several firmware versions of Tenda routers ship with a hidden, built-in login that lets an outsider bypass the normal password and take control of the device.",
+    "source_urls": [
+      "https://kb.cert.org/vuls/id/213560"
+    ]
+  },
+  {
+    "date": "2026-07-08",
+    "title": "Every New EU Car Will Watch the Driver",
+    "summary": "New rules mean every car sold in the European Union must now include a camera or sensor system that monitors the driver for signs of distraction or drowsiness.",
+    "source_urls": [
+      "https://allaboutcookies.org/eu-mandatory-distracted-driver-system"
+    ]
+  },
+  {
+    "date": "2026-07-08",
+    "title": "Free, High-Quality AI Voice That Runs on a Laptop",
+    "summary": "A developer showed how to run Kokoro, an open text-to-speech model, entirely on an ordinary computer's processor — no expensive graphics card and nothing sent to the cloud.",
+    "source_urls": [
+      "https://ariya.io/2026/03/local-cpu-friendly-high-quality-tts-text-to-speech-with-kokoro/"
+    ]
+  },
+  {
+    "date": "2026-07-08",
+    "title": "Open-Source Collaboration Keeps Speeding Up Worldwide",
+    "summary": "GitHub's latest Innovation Graph, its running snapshot of global software activity, shows developer communities growing and collaborating across borders faster than ever.",
+    "source_urls": [
+      "https://github.blog/news-insights/policy-news-and-insights/q1-2026-innovation-graph-update-open-source-collaboration-is-accelerating-worldwide/"
+    ]
+  },
+  {
+    "date": "2026-07-08",
+    "title": "Deploying an AI Model Just Got a One-Click Shortcut",
+    "summary": "Hugging Face and Amazon added a way to move an AI model from Hugging Face's library into Amazon's cloud tools with a single click, skipping much of the fiddly setup.",
+    "source_urls": [
+      "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio"
+    ]
+  },
+  {
+    "date": "2026-07-08",
+    "title": "Git 2.55 Ships With Speed and Quality-of-Life Upgrades",
+    "summary": "The open-source Git project — the version-control system that underpins almost all modern software development — released version 2.",
+    "source_urls": [
+      "https://github.blog/open-source/git/highlights-from-git-2-55/"
+    ]
+  },
+  {
+    "date": "2026-07-08",
+    "title": "AI Turns Up Real Bugs in Cloudflare's Cryptography Code",
+    "summary": "A security write-up walks through how AI tools were pointed at Circl, an open-source cryptography library from Cloudflare, and helped surface genuine flaws in code that is supposed to be extremely carefully written.",
+    "source_urls": [
+      "https://blog.zksecurity.xyz/posts/circl-bugs/"
     ]
   }
 ]
