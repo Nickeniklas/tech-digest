@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-07-01",
-    "title": "Anthropic Releases Claude Sonnet 5",
-    "summary": "Anthropic released Claude Sonnet 5, the newest version of its mid-tier AI model — the one that quietly powers a large share of everyday AI assistants, writing tools, and chatbots rather than the pricier flagship tiers.",
-    "source_urls": [
-      "https://www.anthropic.com/news/claude-sonnet-5"
-    ]
-  },
-  {
-    "date": "2026-07-01",
-    "title": "U.S. Lifts Export Controls on Anthropic's Restricted Models",
-    "summary": "Previously covered on 2026-06-27: the U.",
-    "source_urls": [
-      "https://twitter.com/AnthropicAI/status/2072106151890809341"
-    ]
-  },
-  {
-    "date": "2026-07-01",
-    "title": "Google's 'Nano Banana 2 Lite' Is a Lighter Image Generator",
-    "summary": "Google released a smaller, faster version of its Gemini image model, built to run cheaply and quickly rather than chase maximum quality.",
-    "source_urls": [
-      "https://deepmind.google/models/gemini-image/flash-lite/"
-    ]
-  },
-  {
-    "date": "2026-07-01",
-    "title": "Meta Shows Typing From Brain Waves — No Surgery Required",
-    "summary": "Meta's research team demonstrated a system that turns brain activity into typed words using external sensors, without any implant or operation.",
-    "source_urls": [
-      "https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/?_fb_noscript=1"
-    ]
-  },
-  {
-    "date": "2026-07-01",
-    "title": "GitHub's Security Database Is Buckling Under Record Vulnerability Reports",
-    "summary": "GitHub says the database it uses to catalog software security flaws is processing more reports than ever, straining the team that reviews them.",
-    "source_urls": [
-      "https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/"
-    ]
-  },
-  {
-    "date": "2026-07-01",
-    "title": "How GitHub Tracks Software Licenses at Massive Scale",
-    "summary": "GitHub detailed how its internal Open Source Program Office keeps tabs on the licenses attached to the thousands of open-source components its own products depend on.",
-    "source_urls": [
-      "https://github.blog/enterprise-software/governance-and-compliance/how-github-maintains-compliance-for-open-source-dependencies/"
-    ]
-  },
-  {
-    "date": "2026-07-01",
-    "title": "A Developer Claims Claude Code Hides Invisible Markers in Requests",
-    "summary": "A researcher published an analysis arguing that Claude Code, Anthropic's coding assistant, embeds subtle, hard-to-see markers in the text it sends — a technique called steganography, where information is hidden inside otherwise ordinary-looking content.",
-    "source_urls": [
-      "https://thereallo.dev/blog/claude-code-prompt-steganography"
-    ]
-  },
-  {
     "date": "2026-07-04",
     "title": "Voice AI Is About to Feel Instant",
     "summary": "Hugging Face and chipmaker Cerebras built a speech system, using Google's open Gemma 4 model, that listens and talks back in near real time instead of the usual awkward pause.",
@@ -317,6 +261,54 @@
     "summary": "A security write-up walks through how AI tools were pointed at Circl, an open-source cryptography library from Cloudflare, and helped surface genuine flaws in code that is supposed to be extremely carefully written.",
     "source_urls": [
       "https://blog.zksecurity.xyz/posts/circl-bugs/"
+    ]
+  },
+  {
+    "date": "2026-07-09",
+    "title": "Farmers Win the Right to Repair Their Own John Deere Equipment",
+    "summary": "Under a settlement with the U.",
+    "source_urls": [
+      "https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02"
+    ]
+  },
+  {
+    "date": "2026-07-09",
+    "title": "xAI Releases Grok 4.5",
+    "summary": "Elon Musk's AI company shipped Grok 4.",
+    "source_urls": [
+      "https://x.ai/news/grok-4-5"
+    ]
+  },
+  {
+    "date": "2026-07-09",
+    "title": "GitHub Copilot Switches to Pay-as-You-Go Pricing",
+    "summary": "GitHub is moving its popular AI coding assistant to usage-based billing, where each request draws down a pool of 'AI Credits' instead of a flat monthly fee.",
+    "source_urls": [
+      "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
+    ]
+  },
+  {
+    "date": "2026-07-09",
+    "title": "Mistral Releases a Robotics Navigation Model",
+    "summary": "French AI lab Mistral released Robostral Navigate, a model that helps robots find their way through physical spaces.",
+    "source_urls": [
+      "https://mistral.ai/news/robostral-navigate/"
+    ]
+  },
+  {
+    "date": "2026-07-09",
+    "title": "TypeScript 7 Arrives, Rebuilt for Speed",
+    "summary": "Microsoft announced TypeScript 7.",
+    "source_urls": [
+      "https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/"
+    ]
+  },
+  {
+    "date": "2026-07-09",
+    "title": "Why AI Agents Are Hungry for Open Data, Not Just Bigger Models",
+    "summary": "NVIDIA and Hugging Face published a case for open datasets aimed specifically at AI 'agents' — software that carries out multi-step tasks on your behalf.",
+    "source_urls": [
+      "https://huggingface.co/blog/nvidia/open-data-for-agents"
     ]
   }
 ]
