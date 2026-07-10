@@ -310,5 +310,53 @@
     "source_urls": [
       "https://huggingface.co/blog/nvidia/open-data-for-agents"
     ]
+  },
+  {
+    "date": "2026-07-10",
+    "title": "The EU Votes to Scan Private Messages",
+    "summary": "The European Parliament approved a version of 'Chat Control,' a rule that would push messaging apps to scan the private chats and photos on your phone for illegal material before they are sent.",
+    "source_urls": [
+      "https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/"
+    ]
+  },
+  {
+    "date": "2026-07-10",
+    "title": "OpenAI Ships GPT-5.6",
+    "summary": "OpenAI released GPT-5.",
+    "source_urls": [
+      "https://openai.com/index/gpt-5-6/"
+    ]
+  },
+  {
+    "date": "2026-07-10",
+    "title": "An AI Tutor That Answers a Child in One Second",
+    "summary": "The team behind Ello, a reading app for young children, explained how they built an AI tutor that responds to a five-year-old in about a second — fast enough to feel like a real back-and-forth.",
+    "source_urls": [
+      "https://www.ello.com/blog/teaching-a-child-in-1000-ms"
+    ]
+  },
+  {
+    "date": "2026-07-10",
+    "title": "Running a Capable AI on an Ordinary Laptop",
+    "summary": "A developer shared Colibri, a project for getting GLM 5.",
+    "source_urls": [
+      "https://github.com/JustVugg/colibri"
+    ]
+  },
+  {
+    "date": "2026-07-10",
+    "title": "How GitHub Gave Every Repository a Durable Owner",
+    "summary": "GitHub found that of its 14,000-plus internal code repositories, fewer than half had a clear owner.",
+    "source_urls": [
+      "https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/"
+    ]
+  },
+  {
+    "date": "2026-07-10",
+    "title": "Making a Common AI Toolkit Run at Full Speed",
+    "summary": "Hugging Face rebuilt the link between its widely used 'transformers' library — the default way most open AI models are written — and vLLM, a system for serving those models quickly.",
+    "source_urls": [
+      "https://huggingface.co/blog/native-speed-vllm-transformers-backend"
+    ]
   }
 ]
