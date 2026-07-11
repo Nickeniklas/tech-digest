@@ -358,5 +358,61 @@
     "source_urls": [
       "https://huggingface.co/blog/native-speed-vllm-transformers-backend"
     ]
+  },
+  {
+    "date": "2026-07-11",
+    "title": "An AI Produces a Proof That Eluded Mathematicians for 40 Years",
+    "summary": "Previously covered on 2026-07-10: OpenAI released GPT-5.",
+    "source_urls": [
+      "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf"
+    ]
+  },
+  {
+    "date": "2026-07-11",
+    "title": "Apple Sues OpenAI Over Alleged Trade-Secret Theft",
+    "summary": "Apple has filed a lawsuit accusing OpenAI of taking confidential information through former Apple employees who moved to the AI company.",
+    "source_urls": [
+      "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/"
+    ]
+  },
+  {
+    "date": "2026-07-11",
+    "title": "SpaceX Wants 100,000 More Starlink Satellites",
+    "summary": "SpaceX has asked regulators for permission to launch roughly 100,000 additional Starlink satellites, which it says would multiply the network's total capacity about a hundredfold.",
+    "source_urls": [
+      "https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/"
+    ]
+  },
+  {
+    "date": "2026-07-11",
+    "title": "New York City Moves to Ban Sneaky Subscription Traps",
+    "summary": "New York City passed rules cracking down on \"deceptive subscription practices\" — the hard-to-cancel sign-ups and hidden auto-renewals that quietly drain money each month.",
+    "source_urls": [
+      "https://www.theguardian.com/us-news/2026/jul/10/new-york-city-deceptive-subscriptions-ban"
+    ]
+  },
+  {
+    "date": "2026-07-11",
+    "title": "A 15-Year-Old Flaw Found in Every Linux Distribution",
+    "summary": "Researchers disclosed GhostLock, a memory-handling bug that has been present in essentially all Linux distributions for about 15 years.",
+    "source_urls": [
+      "https://nebusec.ai/research/ionstack-part-2/"
+    ]
+  },
+  {
+    "date": "2026-07-11",
+    "title": "Profiling PyTorch Attention, One Backend at a Time",
+    "summary": "Hugging Face published the third part of a series on measuring where time actually goes inside a running AI model.",
+    "source_urls": [
+      "https://huggingface.co/blog/torch-attention-profile"
+    ]
+  },
+  {
+    "date": "2026-07-11",
+    "title": "Why GitHub Made Its Copilot Code Reviewer Use Plain Unix Tools",
+    "summary": "GitHub explained that adding fancy custom tools to its Copilot code-review agent actually made the reviews worse and more expensive.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/"
+    ]
   }
 ]
