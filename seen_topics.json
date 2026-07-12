@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-07-04",
-    "title": "Voice AI Is About to Feel Instant",
-    "summary": "Hugging Face and chipmaker Cerebras built a speech system, using Google's open Gemma 4 model, that listens and talks back in near real time instead of the usual awkward pause.",
-    "source_urls": [
-      "https://huggingface.co/blog/cerebras-gemma4-voice-ai"
-    ]
-  },
-  {
-    "date": "2026-07-04",
-    "title": "Mistral Releases an AI That Proves Math",
-    "summary": "French lab Mistral released Leanstral 1.",
-    "source_urls": [
-      "https://mistral.ai/news/leanstral-1-5/"
-    ]
-  },
-  {
-    "date": "2026-07-04",
-    "title": "GitHub Cleared 20,000 Security Alerts — and Hit Zero",
-    "summary": "GitHub had piled up more than 20,000 unresolved \"leaked secret\" alerts — exposed passwords and keys — across 15,000 of its own code repositories.",
-    "source_urls": [
-      "https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/"
-    ]
-  },
-  {
-    "date": "2026-07-04",
-    "title": "Six Free Settings That Make Your Code Harder to Attack",
-    "summary": "GitHub published a plain checklist of six security settings any project owner can switch on this week at no cost.",
-    "source_urls": [
-      "https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/"
-    ]
-  },
-  {
-    "date": "2026-07-04",
-    "title": "A Popular Windows App Could Hand Over Full Control",
-    "summary": "A researcher showed that MSI Center, software preinstalled on many MSI-brand PCs, could be tricked into granting an attacker the highest level of control over the machine within seconds.",
-    "source_urls": [
-      "https://mrbruh.com/msicenter/"
-    ]
-  },
-  {
-    "date": "2026-07-04",
-    "title": "The Same AI Model, Much Cheaper Hardware",
-    "summary": "Engineers ran the open GLM5.",
-    "source_urls": [
-      "https://www.wafer.ai/blog/glm52-amd"
-    ]
-  },
-  {
-    "date": "2026-07-04",
-    "title": "Tiny OCR Models That Read 50 Languages",
-    "summary": "PaddlePaddle released PP-OCRv6, a family of optical-character-recognition models — software that turns pictures of text into editable text — spanning 50 languages.",
-    "source_urls": [
-      "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6"
-    ]
-  },
-  {
     "date": "2026-07-05",
     "title": "A New Test Asks: Can AI Agents Actually Fix Old Software?",
     "summary": "IBM Research and Hugging Face released ScarfBench, a benchmark that measures how well AI coding agents can migrate enterprise Java applications from one software framework to another — the slow, unglamorous modernization work that keeps big companies running.",
@@ -413,6 +357,62 @@
     "summary": "GitHub explained that adding fancy custom tools to its Copilot code-review agent actually made the reviews worse and more expensive.",
     "source_urls": [
       "https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/"
+    ]
+  },
+  {
+    "date": "2026-07-12",
+    "title": "The Money Behind the AI Boom Is Starting to Look Circular",
+    "summary": "An investment analysis lays out how a small group of companies now fund each other's AI spending: Nvidia sells the chips that power AI, invests in cloud firms like CoreWeave and Nebius, and those firms then borrow and spend heavily to buy more Nvidia chips.",
+    "source_urls": [
+      "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom"
+    ]
+  },
+  {
+    "date": "2026-07-12",
+    "title": "A Look at What Grok's Coding Tool Quietly Sends Back",
+    "summary": "A developer inspected xAI's new Grok command-line coding tool and documented exactly what it transmits back to the company as you use it.",
+    "source_urls": [
+      "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547"
+    ]
+  },
+  {
+    "date": "2026-07-12",
+    "title": "AI Voice Assistants Just Got Faster to Build",
+    "summary": "Hugging Face and chipmaker Cerebras released a way to run Gemma 4, an open AI model, fast enough for real-time voice conversations.",
+    "source_urls": [
+      "https://huggingface.co/blog/cerebras-gemma4-voice-ai"
+    ]
+  },
+  {
+    "date": "2026-07-12",
+    "title": "A Free Tool That Tracks 15,000 Objects in Orbit",
+    "summary": "A developer built Orbit, a browser-based augmented-reality tool that lets you point your phone at the sky and see the satellites and debris passing overhead — more than 15,000 tracked objects in all.",
+    "source_urls": [
+      "https://nagylukas.github.io/orbit.html"
+    ]
+  },
+  {
+    "date": "2026-07-12",
+    "title": "The Last American on an Iron Lung Has Died at 78",
+    "summary": "Martha Lillard, believed to be the last person in the United States still relying on an iron lung to breathe, has died in Oklahoma.",
+    "source_urls": [
+      "https://abcnews.com/US/wireStory/martha-lillard-us-polio-patient-iron-lung-dies-134668491"
+    ]
+  },
+  {
+    "date": "2026-07-12",
+    "title": "Letting AI Keep Your Documentation in Sync — Across Repositories",
+    "summary": "GitHub's Aspire team described how they use 'agentic workflows' — AI agents that run automatically when code changes — to turn each merged product update into a draft documentation update in a separate docs repository.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/"
+    ]
+  },
+  {
+    "date": "2026-07-12",
+    "title": "Running a Language Model Spread Across Several Machines",
+    "summary": "A project called Mesh LLM shows how to run a large AI model split across several ordinary computers linked together over a peer-to-peer network, instead of on one big expensive server.",
+    "source_urls": [
+      "https://www.iroh.computer/blog/mesh-llm"
     ]
   }
 ]
