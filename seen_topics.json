@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-07-05",
-    "title": "A New Test Asks: Can AI Agents Actually Fix Old Software?",
-    "summary": "IBM Research and Hugging Face released ScarfBench, a benchmark that measures how well AI coding agents can migrate enterprise Java applications from one software framework to another — the slow, unglamorous modernization work that keeps big companies running.",
-    "source_urls": [
-      "https://huggingface.co/blog/ibm-research/scarfbench"
-    ]
-  },
-  {
-    "date": "2026-07-05",
-    "title": "OpenAI's Newest Coding AI May Be Getting Worse",
-    "summary": "Developers report that GPT-5.",
-    "source_urls": [
-      "https://github.com/openai/codex/issues/30364"
-    ]
-  },
-  {
-    "date": "2026-07-05",
-    "title": "A Researcher Found a Way to View Private YouTube Videos",
-    "summary": "A security researcher demonstrated a flaw that could expose creators' unlisted and private videos to outsiders.",
-    "source_urls": [
-      "https://javoriuski.com/post/youtube"
-    ]
-  },
-  {
-    "date": "2026-07-05",
-    "title": "Why the Future of AI May Be Many Small Models, Not One Giant One",
-    "summary": "A widely shared analysis argues that specialized AI models — each tuned for one narrow job — will increasingly beat a single all-purpose model on cost, speed, and reliability.",
-    "source_urls": [
-      "https://huggingface.co/blog/Dharma-AI/why-specialization-is-inevitable"
-    ]
-  },
-  {
-    "date": "2026-07-05",
-    "title": "A Major Study Backs Psilocybin for Hard-to-Treat Depression",
-    "summary": "A study published in JAMA Psychiatry reports that psilocybin, the active compound in magic mushrooms, showed both efficacy and safety for people whose depression hasn't responded to standard treatments.",
-    "source_urls": [
-      "https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2846478"
-    ]
-  },
-  {
-    "date": "2026-07-05",
-    "title": "Zig Splits Package Management Out of Its Compiler",
-    "summary": "The Zig programming language moved all of its package-management features out of the compiler and into its separate build system.",
-    "source_urls": [
-      "https://ziglang.org/devlog/2026/#2026-06-30"
-    ]
-  },
-  {
     "date": "2026-07-06",
     "title": "An AI Tutor Posted Big Learning Gains in a Real Dartmouth Course",
     "summary": "A study of an AI tutor used in an actual Dartmouth course reported learning gains of 0.",
@@ -413,6 +365,54 @@
     "summary": "A project called Mesh LLM shows how to run a large AI model split across several ordinary computers linked together over a peer-to-peer network, instead of on one big expensive server.",
     "source_urls": [
       "https://www.iroh.computer/blog/mesh-llm"
+    ]
+  },
+  {
+    "date": "2026-07-13",
+    "title": "Your Browser's Math Can Now Reveal Which Computer You're Using",
+    "summary": "Researchers found that since Chrome's latest Chromium update, a basic built-in math function returns slightly different results depending on your operating system, letting a website tell whether you're on Windows, Mac, or Linux — without ever asking.",
+    "source_urls": [
+      "https://scrapfly.dev/posts/browser-math-os-fingerprint/"
+    ]
+  },
+  {
+    "date": "2026-07-13",
+    "title": "A Real Team Moved to GPT-5.6 and Cut Its Costs by a Quarter",
+    "summary": "Previously covered on 2026-07-10: OpenAI released GPT-5.",
+    "source_urls": [
+      "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6"
+    ]
+  },
+  {
+    "date": "2026-07-13",
+    "title": "One of the Internet's Founders Is Retiring at Last",
+    "summary": "Vint Cerf, widely called a 'father of the internet' for co-designing the basic rules that let computers talk to each other, is stepping back after decades at Google and across the industry.",
+    "source_urls": [
+      "https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/"
+    ]
+  },
+  {
+    "date": "2026-07-13",
+    "title": "Google Wants AI to Smooth Out Your Commute",
+    "summary": "Google Research described a project that uses AI to fine-tune the timing of traffic lights, aiming to cut the stop-and-go congestion that wastes fuel and time.",
+    "source_urls": [
+      "https://research.google/blog/the-power-of-collaboration-how-we-can-reduce-traffic-congestion/"
+    ]
+  },
+  {
+    "date": "2026-07-13",
+    "title": "How GitHub Cleared More Than 20,000 Security Alerts",
+    "summary": "GitHub explained how it faced over 20,000 'secret scanning' alerts — automated warnings that a password or access key may have been accidentally saved into code — spread across 15,000 of its own repositories, and how it worked through every one to reach zero in nine months.",
+    "source_urls": [
+      "https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/"
+    ]
+  },
+  {
+    "date": "2026-07-13",
+    "title": "A New Test for AI That Modernizes Old Java Code",
+    "summary": "IBM Research released ScarfBench, a benchmark that measures how well AI 'agents' can migrate large enterprise Java applications from one software framework to another — the kind of tedious, error-prone rewrite that big companies spend heavily on.",
+    "source_urls": [
+      "https://huggingface.co/blog/ibm-research/scarfbench"
     ]
   }
 ]
