@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-07-06",
-    "title": "An AI Tutor Posted Big Learning Gains in a Real Dartmouth Course",
-    "summary": "A study of an AI tutor used in an actual Dartmouth course reported learning gains of 0.",
-    "source_urls": [
-      "https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf"
-    ]
-  },
-  {
-    "date": "2026-07-06",
-    "title": "Zuckerberg Says AI Agents Are Taking Longer Than Expected",
-    "summary": "Meta's Mark Zuckerberg acknowledged that building AI \"agents\" — software meant to carry out multi-step tasks on your behalf — is going slower than the industry hoped.",
-    "source_urls": [
-      "https://www.reuters.com/business/zuckerberg-says-ai-agent-development-going-slower-than-expected-2026-07-02/"
-    ]
-  },
-  {
-    "date": "2026-07-06",
-    "title": "A Free, Offline Maps App That Doesn't Track You",
-    "summary": "Organic Maps is an open-source navigation app that stores maps directly on your phone, so it works with no signal and sends none of your location data to a company.",
-    "source_urls": [
-      "https://organicmaps.app/"
-    ]
-  },
-  {
-    "date": "2026-07-06",
-    "title": "Small AI Models Did a Repo's Grunt Work for Free",
-    "summary": "Hugging Face showed that small AI models running on ordinary hardware could sort and label incoming code contributions to a project — a chore usually handled by paid cloud services.",
-    "source_urls": [
-      "https://huggingface.co/blog/local-models-pr-triage"
-    ]
-  },
-  {
-    "date": "2026-07-06",
-    "title": "How GitHub Made Its Issues Pages Feel Instant",
-    "summary": "GitHub rebuilt the way its Issues section loads pages, leaning on three techniques: caching data in your browser, quietly fetching pages before you click them (prefetching), and using service workers — small background scripts that can serve saved content without a fresh trip to the server.",
-    "source_urls": [
-      "https://github.blog/engineering/architecture-optimization/from-latency-to-instant-modernizing-github-issues-navigation-performance/"
-    ]
-  },
-  {
-    "date": "2026-07-06",
-    "title": "Can a Research AI Keep a Secret? A New Test Says: Not Always",
-    "summary": "MosaicLeaks, from ServiceNow's research team, probes whether AI \"research agents\" — models that browse and gather information for you — can be tricked into revealing confidential data they were told to protect.",
-    "source_urls": [
-      "https://huggingface.co/blog/ServiceNow/mosaicleaks"
-    ]
-  },
-  {
     "date": "2026-07-07",
     "title": "Hugging Face's Free Robot Toolkit Learns to Imagine",
     "summary": "Hugging Face released LeRobot 0.",
@@ -413,6 +365,62 @@
     "summary": "IBM Research released ScarfBench, a benchmark that measures how well AI 'agents' can migrate large enterprise Java applications from one software framework to another — the kind of tedious, error-prone rewrite that big companies spend heavily on.",
     "source_urls": [
       "https://huggingface.co/blog/ibm-research/scarfbench"
+    ]
+  },
+  {
+    "date": "2026-07-14",
+    "title": "Japan Finds a Way to Reclaim Most of the Lithium in Dead EV Batteries",
+    "summary": "Researchers in Japan demonstrated a process that recovers up to 90% of the lithium from spent electric-vehicle batteries, far more than most recycling methods manage today.",
+    "source_urls": [
+      "https://tech.supercarblondie.com/japan-recovers-up-to-90-of-lithium-from-used-ev-batteries/"
+    ]
+  },
+  {
+    "date": "2026-07-14",
+    "title": "Telegram's Link Domain, t.me, Has Been Suspended",
+    "summary": "The t.",
+    "source_urls": [
+      "https://www.whois.com/whois/t.me"
+    ]
+  },
+  {
+    "date": "2026-07-14",
+    "title": "California May Force Social Apps to Switch Off 'Infinite Scroll' for Teens",
+    "summary": "A proposed California law would require platforms to disable engagement features like endless feeds and autoplay for users under 18.",
+    "source_urls": [
+      "https://www.sfgate.com/politics/article/meta-social-media-teenagers-22337724.php"
+    ]
+  },
+  {
+    "date": "2026-07-14",
+    "title": "A Rare Look at How Microsoft Gave Its Own Staff AI Coding Tools",
+    "summary": "Researchers published a study of Microsoft's early-2026 rollout of two AI command-line coding assistants, Claude Code and GitHub Copilot CLI, to its developers.",
+    "source_urls": [
+      "https://arxiv.org/abs/2607.01418"
+    ]
+  },
+  {
+    "date": "2026-07-14",
+    "title": "One Place to Compare Uber, Lyft, Waymo, and Robotaxi Prices",
+    "summary": "A new tool called Hackney lets you check the cost of the same trip across Uber, Lyft, Waymo, and other robotaxi services side by side.",
+    "source_urls": [
+      "https://hackney.app/"
+    ]
+  },
+  {
+    "date": "2026-07-14",
+    "title": "How GitHub Made Its Issues Pages Feel Instant",
+    "summary": "GitHub's engineering team rebuilt navigation for its Issues pages so moving between them feels immediate.",
+    "source_urls": [
+      "https://github.blog/engineering/architecture-optimization/from-latency-to-instant-modernizing-github-issues-navigation-performance/"
+    ]
+  },
+  {
+    "date": "2026-07-14",
+    "title": "Someone Built a Neural Network Entirely in SQL",
+    "summary": "A developer implemented a working neural network, the math behind modern AI, using nothing but SQL, the decades-old language designed for querying databases.",
+    "source_urls": [
+      "https://github.com/xqlsystems/xarray-sql/blob/claude/xarray-sql-mnist-demo/benchmarks/nn.py"
     ]
   }
 ]
