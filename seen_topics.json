@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-07-07",
-    "title": "Hugging Face's Free Robot Toolkit Learns to Imagine",
-    "summary": "Hugging Face released LeRobot 0.",
-    "source_urls": [
-      "https://huggingface.co/blog/lerobot-release-v060"
-    ]
-  },
-  {
-    "date": "2026-07-07",
-    "title": "Why AI Tools May Be About to Get Much Cheaper",
-    "summary": "A widely shared analysis argues that a new open model, GLM 5.",
-    "source_urls": [
-      "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/"
-    ]
-  },
-  {
-    "date": "2026-07-07",
-    "title": "A Tiny AI That Runs Entirely Inside Your Browser",
-    "summary": "A developer released Ternlight, a 7-megabyte AI model — small enough to attach to a single email — that runs inside a web page with no server and nothing sent to the cloud.",
-    "source_urls": [
-      "https://ternlight-demo.vercel.app/"
-    ]
-  },
-  {
-    "date": "2026-07-07",
-    "title": "Start a Coding Task on Your Laptop, Steer It From Your Phone",
-    "summary": "GitHub now lets you kick off an AI coding session on your computer and then check in on it or redirect it from your phone.",
-    "source_urls": [
-      "https://github.blog/news-insights/product-news/take-your-local-github-sessions-anywhere/"
-    ]
-  },
-  {
-    "date": "2026-07-07",
-    "title": "Someone Turned an E-Reader Into a Magic Diary",
-    "summary": "A tinkerer used an AI model to turn a reMarkable writing tablet into a working version of Tom Riddle's enchanted diary from Harry Potter: you write a question by hand, and handwritten replies appear on the page.",
-    "source_urls": [
-      "https://github.com/MaximeRivest/Riddle"
-    ]
-  },
-  {
-    "date": "2026-07-07",
-    "title": "A New Bug Lets a Virtual Machine Break Out of Its Box",
-    "summary": "Researchers disclosed Januscape (CVE-2026-53359), a flaw in KVM — the virtualization layer built into Linux that lets a single server run many isolated virtual machines.",
-    "source_urls": [
-      "https://github.com/V4bel/Januscape"
-    ]
-  },
-  {
-    "date": "2026-07-07",
-    "title": "Peering Into How a Language Model Talks to Itself",
-    "summary": "Anthropic published research suggesting large language models develop something like a \"global workspace\" — a shared internal space where different parts of the model post and read information.",
-    "source_urls": [
-      "https://www.anthropic.com/research/global-workspace"
-    ]
-  },
-  {
     "date": "2026-07-08",
     "title": "A Hidden Backdoor Is Lurking in Popular Home Routers",
     "summary": "Security researchers at Carnegie Mellon's CERT Coordination Center reported that several firmware versions of Tenda routers ship with a hidden, built-in login that lets an outsider bypass the normal password and take control of the device.",
@@ -421,6 +365,62 @@
     "summary": "A developer implemented a working neural network, the math behind modern AI, using nothing but SQL, the decades-old language designed for querying databases.",
     "source_urls": [
       "https://github.com/xqlsystems/xarray-sql/blob/claude/xarray-sql-mnist-demo/benchmarks/nn.py"
+    ]
+  },
+  {
+    "date": "2026-07-15",
+    "title": "The AI Data-Center Boom Is Raising Your Electricity Bill",
+    "summary": "A Fortune analysis found that the rapid build-out of data centers — much of it to power AI — has pushed roughly $23 billion in higher electricity costs onto ordinary utility customers, as grids strain to keep up with demand.",
+    "source_urls": [
+      "https://fortune.com/2026/07/14/data-centers-23-billion-electricity-bills/"
+    ]
+  },
+  {
+    "date": "2026-07-15",
+    "title": "A Capable AI Model That Runs Entirely on Your Phone",
+    "summary": "A team released Bonsai 27B, an AI model in the same size class as many cloud services that runs directly on a phone — no internet connection and nothing sent to a company's servers.",
+    "source_urls": [
+      "https://prismml.com/news/bonsai-27b"
+    ]
+  },
+  {
+    "date": "2026-07-15",
+    "title": "Microsoft Patches a Record 570 Security Flaws",
+    "summary": "Microsoft's monthly security update fixed 570 vulnerabilities at once — the most it has ever addressed in a single batch.",
+    "source_urls": [
+      "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/"
+    ]
+  },
+  {
+    "date": "2026-07-15",
+    "title": "A Flaw in Tailscale's Popular Networking Tool Allowed Root Access",
+    "summary": "Tailscale, a widely used tool that lets companies connect their computers securely, disclosed a bug in its SSH feature that could have let an attacker gain full control of a machine.",
+    "source_urls": [
+      "https://tailscale.com/security-bulletins"
+    ]
+  },
+  {
+    "date": "2026-07-15",
+    "title": "AI Cracks 20 Long-Standing Math Problems at Once",
+    "summary": "Researchers pointed 20 copies of OpenAI's Codex, running in parallel, at a famous list of unsolved problems posed by mathematician Paul Erdős — and reported solutions to 20 of them.",
+    "source_urls": [
+      "https://www.starfleetmath.com/"
+    ]
+  },
+  {
+    "date": "2026-07-15",
+    "title": "Dependabot Adds a Cooldown Before Adopting New Package Versions",
+    "summary": "GitHub's Dependabot — the bot that automatically suggests updates to the third-party code libraries a project depends on — now waits a built-in 'cooldown' period before proposing a brand-new release, rather than pulling it in the moment it appears.",
+    "source_urls": [
+      "https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown/"
+    ]
+  },
+  {
+    "date": "2026-07-15",
+    "title": "A Developer Trained an AI 'World Model' to Play Super Mario Bros.",
+    "summary": "A developer built LeMario, a JEPA-style world model trained on Super Mario Bros.",
+    "source_urls": [
+      "https://www.benjamin-bai.com/projects/lemario"
     ]
   }
 ]
