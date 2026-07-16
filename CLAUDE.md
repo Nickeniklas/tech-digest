@@ -29,11 +29,16 @@ Required packages:
 Never use `pip install` without the venv being active.
 
 ## Model
-Always use `claude-haiku-4-5-20251001` for all API calls. Never use Sonnet or Opus —
-cost constraint. Haiku is ~5x cheaper than Sonnet for this structured generation task.
+Default is `claude-haiku-4-5-20251001` for all API calls. Never use Sonnet or Opus by
+default — cost constraint. Haiku is ~5x cheaper than Sonnet for this structured
+generation task. The default can be overridden via `DIGEST_MODEL` (see below) for
+self-hosting/testing, but don't change the default in code without being asked.
 
 ## Environment variables
 - Required `.env` key: `ANTHROPIC_API_KEY`
+- Optional `.env` key: `DIGEST_MODEL` — overrides the model id, default `claude-haiku-4-5-20251001`
+- Optional `.env` key: `DIGEST_BASE_URL` — if set, passed as `base_url=` to `anthropic.Anthropic(...)`,
+  for pointing at a LiteLLM proxy or self-hosted Anthropic-compatible endpoint
 
 ## Commands
 
@@ -94,20 +99,59 @@ Claude Code remote trigger — runs daily at 06:45 Europe/Helsinki (03:45 UTC).
 Trigger ID: `trig_01H3NViVVFhGYrTXS4VyNu35`
 Manage at: https://claude.ai/code/routines
 
-**The scheduled run does NOT call `main()`** — it reimplements the pipeline as
-inline `python -c` scripts stored in the trigger config (Step 3 gather, Step 5
-parse/sanitize/render/save/regenerate-archive, Step 7 `git add` + commit + push).
-So any `digest.py` signature change or new pipeline stage must be mirrored there
-too. Edit via the `RemoteTrigger` tool (`get`/`update`), not a repo file.
+**The scheduled run's entire prompt is just "open `ROUTINE.md` and follow it."**
+As of the July 2026 pipeline-unification pass, all pipeline logic lives in
+`digest.py` — the trigger config no longer contains any inline `python -c`
+pipeline steps. `ROUTINE.md` calls `python digest.py gather`, has the routine
+agent generate the digest JSON itself (reading `prompts/system_prompt.md` as
+its system prompt — the same file the local API path loads), then
+`python digest.py finish build/digest_raw.txt`, then commits and pushes.
 
-> Step 5 mirrors `main()` stages 3–7, including archive regeneration
-> (`build_archive_entries` + `render_archive` → `archive.html`). Step 7's `git add`
-> must include `archive.html` (it lives at repo root, not in `digests/`), or the
-> archive silently goes stale even though it was rebuilt.
+Because both the local (`python digest.py`) and routine paths call the same
+`gather_stage()` / `finish_stage()` functions, there is nothing left to keep in
+sync by hand — any `digest.py` signature or pipeline change is automatically
+picked up by both paths. Only edit the trigger itself (via the `RemoteTrigger`
+tool) if the schedule, model, or top-level instructions change; day-to-day
+pipeline changes only need `digest.py` and `ROUTINE.md` edited.
 
 ## Architecture
 
-`digest.py` is the single entry point with six stages:
+`digest.py` is the single entry point, structured as two composable pipeline
+stages plus a thin CLI:
+
+- `gather_stage()` — load seen topics + `gather_context()`. Returns `None` if
+  today's digest already exists (nothing to do), otherwise a dict with
+  `date_str`, `full_date`, `seen_topics`, `seen_block`, `image_refs`, `context`,
+  `known_urls`.
+- `finish_stage(date_str, full_date, raw, known_urls)` — `parse_output` →
+  `sanitize_story_urls` → `render_markdown` → `render_html` → `save_files` →
+  `extract_seen_entries` + `save_seen_topics` → regenerate `archive.html` →
+  `update_index_html`.
+
+Three ways to invoke them:
+- `python digest.py` (no args) — `main()`, composed as gather_stage → call the
+  Anthropic API (`generate_digest`, stage 2 below) → finish_stage. Full local run.
+- `python digest.py gather` — runs `gather_stage()` only. Prints `SKIP` and exits
+  if today's digest exists; otherwise writes `build/gather_output.txt` (labeled
+  `IMAGE_REFS` / `SEEN_BLOCK` / `CONTEXT` sections) and `build/known_urls.txt`,
+  then prints `PROCEED:{date_str}`. This is what `ROUTINE.md` calls so the
+  scheduled agent (which IS the AI — no API call) can read the same context a
+  local run would send to Claude.
+- `python digest.py finish <raw_response_path>` — runs `finish_stage()` against
+  an already-generated raw response file, reading `known_urls` back from
+  `build/known_urls.txt`. Also what `ROUTINE.md` calls, after the routine agent
+  writes its own generated JSON to `build/digest_raw.txt`.
+
+`build/` is gitignored — everything in it is regenerated every run, same as
+`digests/raw_response.txt` and `digests/raw_context.txt`.
+
+Since both the local API path and the scheduled routine call these same two
+functions, there is exactly one implementation of each pipeline stage — nothing
+to keep in sync by hand across two code paths anymore.
+
+The six logical stages below are unchanged in behavior from before the CLI
+refactor — only how they're invoked (directly in `main()` vs. via the `gather`/
+`finish` subcommands) changed:
 
 **1. Load seen topics (`load_seen_topics`)**
 Reads `seen_topics.json` from the project root. Prunes entries older than 7 days
@@ -162,8 +206,14 @@ this order:
 3. Seen-topics block (if any)
 4. Full headline context
 
-`SYSTEM_PROMPT` targets a non-technical professional audience with a calm, clear
-journalistic voice. Claude does NOT generate HTML or Markdown — only structured JSON.
+`SYSTEM_PROMPT` is loaded at import time from `prompts/system_prompt.md`
+(`SYSTEM_PROMPT = (Path(__file__).parent / "prompts" / "system_prompt.md").read_text(...).strip()`)
+— that file is the single source of truth for the editorial brief, read by both
+the local API path and the routine agent (via `ROUTINE.md`, which tells it to
+read that file directly and follow it as its own system prompt). Never edit the
+brief as an inline string in `digest.py` again. It targets a non-technical
+professional audience with a calm, clear journalistic voice. Claude does NOT
+generate HTML or Markdown — only structured JSON.
 
 Claude outputs only a structured JSON block, wrapped in:
 ```
@@ -219,7 +269,7 @@ The JSON schema:
 - The prompt mandates **at least 2 visuals** across the full digest; lead_story always attempts one
 
 **2.5. Sanitize URLs (`sanitize_story_urls`)**
-Called in `main()` right after `parse_output`. Drops any `source_url`/`visual_url`
+Called in `finish_stage()` right after `parse_output`. Drops any `source_url`/`visual_url`
 not in `known_urls` — the real enforcement, since the prompt instruction alone
 isn't a safety boundary against scraped content designed to override it.
 
@@ -282,21 +332,31 @@ Max-width 1240px. Responsive breakpoint at `≤800px` collapses to single column
 
 **5. Save files (`save_files`)**
 Writes to `digests/tech-digest-{YYYY-MM-DD}.md` and `.html`.
-Also saves on every run (overwritten each time):
-- `digests/raw_response.txt` — Claude's raw output (debug delimiter parsing failures)
-- `digests/raw_context.txt` — full context string sent to Claude (debug enrichment / missing visuals)
+Also saved (overwritten each time):
+- `digests/raw_response.txt` — Claude's raw output, written by `parse_output()`
+  inside `finish_stage()` (debug delimiter parsing failures) — every path
+- `digests/raw_context.txt` — full context string sent to Claude (debug
+  enrichment / missing visuals) — only `python digest.py` (full local run)
+  writes this; `python digest.py gather` writes the equivalent context to
+  `build/gather_output.txt` instead
 
 **6. Update seen topics (`save_seen_topics`)**
-Called after `save_files` succeeds — never on error paths. `extract_seen_entries(data, date_str)`
-collects entries from all three sections: lead_story and under_the_hood use `what_happened`,
-quick_hits uses `summary`. Extracts the first sentence as a summary, merges with prior
-entries, re-prunes to 7 days, and writes `seen_topics.json`. Accumulates at most ~42
-entries (6–7 stories × 7 days).
+Called in `finish_stage()` after `save_files` succeeds — never on error paths.
+`extract_seen_entries(data, date_str)` collects entries from all three sections:
+lead_story and under_the_hood use `what_happened`, quick_hits uses `summary`.
+Extracts the first sentence as a summary, merges with prior entries, re-prunes
+to 7 days, and writes `seen_topics.json`. Accumulates at most ~42 entries
+(6–7 stories × 7 days).
 
-**7. Regenerate archive (`build_archive_entries`, `render_archive`)**
-Runs at the end of every `main()` call. Rewrites `archive.html` (via
-`archive_template.html`) listing every past digest. Not linked from `index.html` —
-v0.1, reachable only by typing `/archive.html` directly.
+**7. Regenerate archive and index (`build_archive_entries`, `render_archive`, `update_index_html`)**
+Runs at the end of every `finish_stage()` call — i.e. both the local and routine
+paths, since both call `finish_stage()`. Rewrites `archive.html` (via
+`archive_template.html`) listing every past digest, and rewrites `index.html` to
+meta-refresh to today's digest. `index.html` regeneration used to live only in
+the routine's inline Step 6, so local-only runs left the redirect stale — as of
+the CLI refactor it's part of the shared stage and both paths update it. Not
+linked from `index.html` — v0.1, reachable only by typing `/archive.html`
+directly.
 
 ## Topic deduplication
 

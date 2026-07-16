@@ -8,3 +8,6 @@ __pycache__/
 ## Debug artifacts (regenerated every run, not history worth keeping)
 digests/raw_response.txt
 digests/raw_context.txt
+
+## Intermediate pipeline files (regenerated every run)
+build/

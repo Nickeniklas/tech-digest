@@ -23,7 +23,10 @@ logging.basicConfig(
     format="%(asctime)s %(message)s"
 )
 
-MODEL     = "claude-haiku-4-5-20251001"
+load_dotenv()
+
+MODEL     = os.environ.get("DIGEST_MODEL", "claude-haiku-4-5-20251001")
+BASE_URL  = os.environ.get("DIGEST_BASE_URL")
 
 MAX_CONTEXT_CHARS = 16_000
 
@@ -33,124 +36,7 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; tech-digest-bot/1.0)"}
 # Digest generation prompt
 # ---------------------------------------------------------------------------
 
-SYSTEM_PROMPT = """
-You are writing a daily AI and tech news digest for professionals who are curious about AI but don't have a technical background. Think: teachers, marketers, lawyers, designers, managers — people who use AI tools and want to stay informed, but don't write code for a living.
-
-Your job is to make today's most important stories clear, relevant, and worth reading in under 5 minutes.
-
-## Reader brief
-
-The reader is smart and busy. They follow AI news because it affects their work, not because they love technology for its own sake. They don't need jargon explained at length — just one plain sentence, then move on. They want to know what happened and why it matters to them personally.
-
-## Voice & tone
-
-Write like a calm, clear journalist who knows tech well. Confident but not opinionated. Informative but never dry.
-
-- Never hype: no "groundbreaking", "revolutionary", "game-changer", "exciting"
-- No passive corporate tone: never "it has been announced that..."
-- No padding, no filler transitions, no hedging
-- When something is technical: one plain-language sentence, then move on
-- Talk directly to the reader using "you"
-- Never make the reader feel behind for not knowing something
-
-## Structure
-
-Produce exactly three sections:
-
-### 1. lead_story
-The single most important or interesting AI/tech story today. Explain what happened in plain language. Include a "what_this_means" field written for a general professional audience. If the story has obvious relevance to specific professions (e.g. teachers, lawyers, marketers), mention them naturally — never force it. Max ~150 words total across all fields.
-
-### 2. quick_hits
-3–4 shorter stories. Each one is 2–3 sentences max. No jargon. Just what happened and why it matters. These should be fast to read.
-
-### 3. under_the_hood
-1–2 more technical stories for readers who want to go deeper. Still written in plain language, but can include more detail. If there is a simple, runnable code example (max 10 lines of Python), include it. This section is clearly marked as the nerdy part — readers self-select into it.
-
-## Visuals — include at least 2 visuals across the full digest
-
-- lead_story: ALWAYS attempt a visual. Check the "Available image URLs" list in the user message — if one matches this story's source, use it (visual_type "image"). Otherwise, if the story mentions any numbers, benchmarks, or comparisons, synthesize a chart or table from them (visual_type "chart" or "table").
-- quick_hits: include a visual for any story that mentions numbers, percentages, rankings, or comparisons.
-- under_the_hood: default to a chart or table — these stories almost always have technical data worth visualising.
-- Set visual_type to null only when the story is purely qualitative and no matching image URL is available.
-
-## Story selection
-
-Use ONLY the provided headlines — never invent or assume stories.
-
-Prioritise:
-- Real releases and shipped features over announcements and demos
-- Stories with clear real-world impact over purely technical ones
-- Freshness — skip anything older than 48 hours unless truly significant
-
-Skip: funding rounds, corporate drama, vague announcements, rumours.
-
-## Deduplication
-
-A list of recently covered topics may be provided. Skip any story that is the same topic with no meaningful new development. Meaningful new development includes: a new release, major update, reversal, significant new data, or a follow-up announcement. If a follow-up is warranted, begin what_happened with: "Previously covered on {date}: [brief recap]. Since then, ..."
-
-## Output format — IMPORTANT
-
-Output ONLY a JSON block using these exact delimiters:
-
-<!-- BEGIN_JSON -->
-{
-  "teaser": "One sentence. What's the most interesting thing today — written for a curious non-technical reader.",
-  "fun_fact": null,
-  "lead_story": {
-    "title": "Story title",
-    "what_happened": "1–2 sentences. Plain language. What actually happened.",
-    "what_this_means": "1–2 sentences. Why does this matter? Generic professional audience. Include profession examples if obvious.",
-    "visual_type": "image",
-    "visual_url": "https://example.com/image.png",
-    "visual_data": null,
-    "source_name": "Source Name",
-    "source_url": "https://..."
-  },
-  "quick_hits": [
-    {
-      "title": "Story with numbers",
-      "summary": "2–3 sentences max. What happened and why it matters. No jargon.",
-      "visual_type": "chart",
-      "visual_url": null,
-      "visual_data": {"headers": ["Model", "Score"], "rows": [["GPT-4", "85"], ["Claude 3", "88"], ["Gemini", "82"]]},
-      "source_name": "Source Name",
-      "source_url": "https://..."
-    },
-    {
-      "title": "Story without numbers",
-      "summary": "2–3 sentences max. What happened and why it matters. No jargon.",
-      "visual_type": null,
-      "visual_url": null,
-      "visual_data": null,
-      "source_name": "Source Name",
-      "source_url": "https://..."
-    }
-  ],
-  "under_the_hood": [
-    {
-      "title": "Story title",
-      "what_happened": "Plain language but more detail than quick hits.",
-      "why_it_matters": "Technical significance. Who this is for.",
-      "code_example": null,
-      "visual_type": "table",
-      "visual_url": null,
-      "visual_data": {"headers": ["Feature", "Before", "After"], "rows": [["Speed", "120ms", "45ms"], ["Memory", "2GB", "800MB"]]},
-      "source_name": "Source Name",
-      "source_url": "https://..."
-    }
-  ]
-}
-<!-- END_JSON -->
-
-### Field rules
-- "fun_fact": one punchy sentence if genuinely interesting — otherwise null. Max 20 words.
-- "visual_type": exactly "image", "chart", "table", or null
-- "visual_url": ONLY use a URL that appears verbatim in the "Available image URLs" list in the user message. Never construct, guess, or fabricate a URL. If no matching image URL exists, use null and set visual_type to "chart" or "table" instead.
-- "visual_data": Claude-synthesized from numbers, benchmarks, or comparisons in the story text. Do NOT leave null when quantitative data exists. Format: {"headers": [...], "rows": [[...]]}
-- "code_example": plain text only, no markdown fences, max 10 lines — under_the_hood only
-- "teaser": written for a non-technical reader, no jargon
-- Output valid JSON — no trailing commas, no comments
-""".strip()
+SYSTEM_PROMPT = (Path(__file__).parent / "prompts" / "system_prompt.md").read_text(encoding="utf-8").strip()
 
 # ---------------------------------------------------------------------------
 # Web fetching & extraction
@@ -460,7 +346,10 @@ def generate_digest(date_str: str, context: str, seen_topics: list[dict], image_
         user_msg += seen_block + "\n\n"
     user_msg += f"Here are today's headlines from key tech sources:\n\n{context}\n\nGenerate the digest."
 
-    client = anthropic.Anthropic(timeout=120)
+    client_kwargs = {"timeout": 120}
+    if BASE_URL:
+        client_kwargs["base_url"] = BASE_URL
+    client = anthropic.Anthropic(**client_kwargs)
     try:
         response = client.messages.create(
             model=MODEL,
@@ -662,64 +551,175 @@ def save_files(date_str: str, md: str, html: str) -> tuple[Path, Path]:
 
 
 # ---------------------------------------------------------------------------
-# Entry point
+# Pipeline stages (shared by `python digest.py`, `gather`, and `finish`)
 # ---------------------------------------------------------------------------
 
-def main() -> None:
-    load_dotenv()
+BUILD_DIR = Path("build")
 
+
+def update_index_html(date_str: str) -> None:
+    """Rewrite index.html to redirect to today's digest."""
+    html = f"""<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url=digests/tech-digest-{date_str}.html">
+</head>
+<body>
+  <p>Redirecting to latest digest...</p>
+</body>
+</html>"""
+    Path("index.html").write_text(html, encoding="utf-8")
+
+
+def gather_stage() -> dict | None:
+    """Load seen topics and fetch headlines. Returns None if today's digest
+    already exists (nothing to do), otherwise a dict with everything needed
+    to generate and finish today's digest.
+    """
     today     = datetime.date.today()
     date_str  = today.strftime("%Y-%m-%d")
     full_date = today.strftime("%A, %B %d %Y").replace(" 0", " ")
 
-    # Skip if today's digest already exists (to avoid duplicates on reruns)
     if Path(f"digests/tech-digest-{date_str}.html").exists():
-        print(f"Digest for {date_str} already generated, skipping.")
-        logging.info(f"Digest for {date_str} already exists, skipping.")
-        return
+        return None
 
     seen_topics = load_seen_topics()
     logging.info(f"Loaded {len(seen_topics)} seen topic(s) from last 7 days")
+    seen_block = format_seen_topics_context(seen_topics)
 
-    print(f"Gathering headlines for {date_str}...")
     logging.info(f"Starting digest generation for {date_str}")
     context, image_refs, known_urls = gather_context()
-    print(f"  Context size: {len(context):,} chars")
     logging.info(f"Context gathered with {len(context):,} chars")
-    os.makedirs("digests", exist_ok=True)
-    Path("digests/raw_context.txt").write_text(context, encoding="utf-8")
 
-    print("Generating digest...")
-    logging.info("Calling Anthropic API...")  # <-- if script hangs, log stops here
-    raw = generate_digest(date_str, context, seen_topics, image_refs)
-    logging.info("Anthropic API call completed")  # <-- confirms API didn't hang
+    return {
+        "date_str": date_str,
+        "full_date": full_date,
+        "seen_topics": seen_topics,
+        "seen_block": seen_block,
+        "image_refs": image_refs,
+        "context": context,
+        "known_urls": known_urls,
+    }
 
-    print("Parsing output...")
+
+def finish_stage(date_str: str, full_date: str, raw: str, known_urls: set[str]) -> tuple[Path, Path]:
+    """Parse, sanitize, render, save, and regenerate archive.html + index.html."""
     data = parse_output(raw)
     data = sanitize_story_urls(data, known_urls)
 
-    print("Rendering...")
     md   = render_markdown(data, full_date)
     html = render_html(data, full_date)
-
-    print("Saving files...")
-    save_files(date_str, md, html)
-    print(f"  -> digests/tech-digest-{date_str}.md")
-    print(f"  -> digests/tech-digest-{date_str}.html")
+    md_path, html_path = save_files(date_str, md, html)
     logging.info(f"Files saved for {date_str}")
 
+    seen_topics = load_seen_topics()
     new_entries = extract_seen_entries(data, date_str)
     save_seen_topics(seen_topics, new_entries)
     logging.info(f"seen_topics.json updated with {len(new_entries)} new entry(ies)")
 
     archive_entries = build_archive_entries()
     Path("archive.html").write_text(render_archive(archive_entries), encoding="utf-8")
-    print(f"  -> archive.html ({len(archive_entries)} issues)")
     logging.info(f"archive.html regenerated with {len(archive_entries)} entries")
+
+    update_index_html(date_str)
+    logging.info(f"index.html updated to redirect to {date_str}")
+
+    return md_path, html_path
+
+
+# ---------------------------------------------------------------------------
+# CLI subcommands
+# ---------------------------------------------------------------------------
+
+def cmd_gather() -> None:
+    gathered = gather_stage()
+    if gathered is None:
+        print("SKIP")
+        return
+
+    BUILD_DIR.mkdir(exist_ok=True)
+    gather_output = (
+        f"IMAGE_REFS:\n{gathered['image_refs']}\n\n"
+        f"SEEN_BLOCK:\n{gathered['seen_block']}\n\n"
+        f"CONTEXT:\n{gathered['context']}"
+    )
+    (BUILD_DIR / "gather_output.txt").write_text(gather_output, encoding="utf-8")
+    (BUILD_DIR / "known_urls.txt").write_text(
+        "\n".join(sorted(gathered["known_urls"])), encoding="utf-8"
+    )
+
+    print(f"PROCEED:{gathered['date_str']}")
+    print(f"Context size: {len(gathered['context']):,} chars")
+
+
+def cmd_finish(raw_path: str) -> None:
+    today     = datetime.date.today()
+    date_str  = today.strftime("%Y-%m-%d")
+    full_date = today.strftime("%A, %B %d %Y").replace(" 0", " ")
+
+    raw = Path(raw_path).read_text(encoding="utf-8")
+    known_urls = set(
+        line for line in (BUILD_DIR / "known_urls.txt").read_text(encoding="utf-8").splitlines() if line
+    )
+
+    md_path, html_path = finish_stage(date_str, full_date, raw, known_urls)
+    print(f"  -> {md_path}")
+    print(f"  -> {html_path}")
+    print(f"  -> archive.html")
+    print(f"  -> index.html")
+
+
+def main() -> None:
+    gathered = gather_stage()
+    if gathered is None:
+        date_str = datetime.date.today().strftime("%Y-%m-%d")
+        print(f"Digest for {date_str} already generated, skipping.")
+        logging.info(f"Digest for {date_str} already exists, skipping.")
+        return
+
+    date_str   = gathered["date_str"]
+    full_date  = gathered["full_date"]
+    context    = gathered["context"]
+    known_urls = gathered["known_urls"]
+
+    print(f"Gathering headlines for {date_str}...")
+    print(f"  Context size: {len(context):,} chars")
+    os.makedirs("digests", exist_ok=True)
+    Path("digests/raw_context.txt").write_text(context, encoding="utf-8")
+
+    print("Generating digest...")
+    logging.info("Calling Anthropic API...")  # <-- if script hangs, log stops here
+    raw = generate_digest(date_str, context, gathered["seen_topics"], gathered["image_refs"])
+    logging.info("Anthropic API call completed")  # <-- confirms API didn't hang
+
+    print("Parsing, rendering, saving...")
+    md_path, html_path = finish_stage(date_str, full_date, raw, known_urls)
+    print(f"  -> {md_path}")
+    print(f"  -> {html_path}")
+    print(f"  -> archive.html")
+    print(f"  -> index.html")
 
     print(f"Done. Digest saved for {date_str}.")
     logging.info(f"Digest generation completed for {date_str}")
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Generate the daily tech digest.")
+    subparsers = parser.add_subparsers(dest="command")
+
+    subparsers.add_parser("gather", help="Fetch headlines and write build/gather_output.txt")
+
+    finish_parser = subparsers.add_parser("finish", help="Render and save the digest from a raw response file")
+    finish_parser.add_argument("raw_path", help="Path to the raw Claude output (e.g. build/digest_raw.txt)")
+
+    args = parser.parse_args()
+
+    if args.command == "gather":
+        cmd_gather()
+    elif args.command == "finish":
+        cmd_finish(args.raw_path)
+    else:
+        main()
