@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-07-08",
-    "title": "A Hidden Backdoor Is Lurking in Popular Home Routers",
-    "summary": "Security researchers at Carnegie Mellon's CERT Coordination Center reported that several firmware versions of Tenda routers ship with a hidden, built-in login that lets an outsider bypass the normal password and take control of the device.",
-    "source_urls": [
-      "https://kb.cert.org/vuls/id/213560"
-    ]
-  },
-  {
-    "date": "2026-07-08",
-    "title": "Every New EU Car Will Watch the Driver",
-    "summary": "New rules mean every car sold in the European Union must now include a camera or sensor system that monitors the driver for signs of distraction or drowsiness.",
-    "source_urls": [
-      "https://allaboutcookies.org/eu-mandatory-distracted-driver-system"
-    ]
-  },
-  {
-    "date": "2026-07-08",
-    "title": "Free, High-Quality AI Voice That Runs on a Laptop",
-    "summary": "A developer showed how to run Kokoro, an open text-to-speech model, entirely on an ordinary computer's processor — no expensive graphics card and nothing sent to the cloud.",
-    "source_urls": [
-      "https://ariya.io/2026/03/local-cpu-friendly-high-quality-tts-text-to-speech-with-kokoro/"
-    ]
-  },
-  {
-    "date": "2026-07-08",
-    "title": "Open-Source Collaboration Keeps Speeding Up Worldwide",
-    "summary": "GitHub's latest Innovation Graph, its running snapshot of global software activity, shows developer communities growing and collaborating across borders faster than ever.",
-    "source_urls": [
-      "https://github.blog/news-insights/policy-news-and-insights/q1-2026-innovation-graph-update-open-source-collaboration-is-accelerating-worldwide/"
-    ]
-  },
-  {
-    "date": "2026-07-08",
-    "title": "Deploying an AI Model Just Got a One-Click Shortcut",
-    "summary": "Hugging Face and Amazon added a way to move an AI model from Hugging Face's library into Amazon's cloud tools with a single click, skipping much of the fiddly setup.",
-    "source_urls": [
-      "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio"
-    ]
-  },
-  {
-    "date": "2026-07-08",
-    "title": "Git 2.55 Ships With Speed and Quality-of-Life Upgrades",
-    "summary": "The open-source Git project — the version-control system that underpins almost all modern software development — released version 2.",
-    "source_urls": [
-      "https://github.blog/open-source/git/highlights-from-git-2-55/"
-    ]
-  },
-  {
-    "date": "2026-07-08",
-    "title": "AI Turns Up Real Bugs in Cloudflare's Cryptography Code",
-    "summary": "A security write-up walks through how AI tools were pointed at Circl, an open-source cryptography library from Cloudflare, and helped surface genuine flaws in code that is supposed to be extremely carefully written.",
-    "source_urls": [
-      "https://blog.zksecurity.xyz/posts/circl-bugs/"
-    ]
-  },
-  {
     "date": "2026-07-09",
     "title": "Farmers Win the Right to Repair Their Own John Deere Equipment",
     "summary": "Under a settlement with the U.",
@@ -421,6 +365,54 @@
     "summary": "A developer built LeMario, a JEPA-style world model trained on Super Mario Bros.",
     "source_urls": [
       "https://www.benjamin-bai.com/projects/lemario"
+    ]
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Thinking Machines Releases Its First Open Model, Inkling",
+    "summary": "Thinking Machines, the AI startup founded by OpenAI's former research lead Mira Murati, released Inkling — its first model with 'open weights,' meaning anyone can download it and run it on their own computers for free rather than renting access through a company's website.",
+    "source_urls": [
+      "https://thinkingmachines.ai/news/introducing-inkling/"
+    ]
+  },
+  {
+    "date": "2026-07-16",
+    "title": "xAI Opens Up the Code Behind Its Grok Coding Tool",
+    "summary": "Elon Musk's xAI published the full source code for Grok Build, its command-line assistant that helps developers write and edit software.",
+    "source_urls": [
+      "https://github.com/xai-org/grok-build"
+    ]
+  },
+  {
+    "date": "2026-07-16",
+    "title": "A New Yardstick for How Human Voice Assistants Actually Sound",
+    "summary": "Hugging Face released Real World VoiceEQ, a test that measures how natural and human a voice AI feels to real people, not just whether it gets the words right.",
+    "source_urls": [
+      "https://huggingface.co/blog/real-world-voiceeq"
+    ]
+  },
+  {
+    "date": "2026-07-16",
+    "title": "A Full Firefox Web Browser Now Runs Inside a Web Page",
+    "summary": "Developers got the Firefox browser running entirely inside another browser tab, using a technology called WebAssembly that lets heavy desktop software run on a web page.",
+    "source_urls": [
+      "https://developer.puter.com/labs/firefox-wasm/"
+    ]
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Running a Modern AI Model on a 13-Year-Old Server, No GPU",
+    "summary": "A tinkerer got Gemma 4 26B — a sizeable open model from Google — generating text at about 5 words per second on a 2013-era Xeon server with no graphics card, relying only on ordinary system memory and a lot of careful tuning.",
+    "source_urls": [
+      "https://www.neomindlabs.com/2026/06/08/running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu/"
+    ]
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Why Automatically Routing Requests to Cheaper AI Models Is Harder Than It Looks",
+    "summary": "IBM researchers, writing on Hugging Face, walked through why a seemingly simple idea — send easy questions to a cheap AI model and hard ones to an expensive model — keeps tripping teams up.",
+    "source_urls": [
+      "https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt"
     ]
   }
 ]
