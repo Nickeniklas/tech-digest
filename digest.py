@@ -56,6 +56,20 @@ def fetch_page(url: str) -> str:
         r = requests.get(url, timeout=12, headers=HEADERS)
         r.raise_for_status()
         return r.text
+    except requests.exceptions.HTTPError as e:
+        # x-deny-reason distinguishes a proxy denial (routine env allowlist) from
+        # a block by the origin server itself, which look identical as bare 403s.
+        resp = getattr(e, "response", None)
+        if resp is None:
+            detail = str(e)
+        else:
+            detail = f"HTTP {resp.status_code}"
+            deny_reason = resp.headers.get("x-deny-reason")
+            if deny_reason:
+                detail += f" (x-deny-reason: {deny_reason})"
+        print(f"  [warn] Could not fetch {url}: {detail}")
+        logging.warning(f"  [warn] Could not fetch {url}: {detail}")
+        return ""
     except Exception as e:
         print(f"  [warn] Could not fetch {url}: {e}")
         logging.info(f"  [warn] Could not fetch {url}: {e}")
@@ -204,7 +218,7 @@ def gather_context() -> tuple[str, str, set[str]]:
     hf_items = extract_generic(fetch_page("https://huggingface.co/blog"), "https://huggingface.co")
 
     print("  Fetching Anthropic News...")
-    ant_items = extract_generic(fetch_page("https://anthropic.com/news"), "https://anthropic.com")
+    ant_items = extract_generic(fetch_page("https://www.anthropic.com/news"), "https://www.anthropic.com")
 
     print("  Fetching GitHub Blog...")
     ghb_items = extract_generic(fetch_page("https://github.blog"), "https://github.blog")
@@ -307,20 +321,29 @@ def extract_seen_entries(data: dict, date_str: str) -> list[dict]:
     """Build seen_topics entries from today's generated digest."""
     entries = []
 
-    def _entry(title: str, raw_text: str, source_url: str) -> dict:
+    def _entry(story: dict, text_field: str) -> dict:
+        raw_text = story.get(text_field) or ""
         first_sentence = raw_text.split(".")[0].strip()
         summary = first_sentence + "." if first_sentence else raw_text[:120]
-        return {"date": date_str, "title": title, "summary": summary, "source_urls": [source_url]}
+        source_url = story.get("source_url")
+        return {
+            "date": date_str,
+            "title": story.get("title", ""),
+            "summary": summary,
+            "source_urls": [source_url] if source_url else [],
+        }
 
-    lead = data.get("lead_story", {})
-    if lead:
-        entries.append(_entry(lead["title"], lead.get("what_happened", ""), lead["source_url"]))
+    lead = data.get("lead_story")
+    if isinstance(lead, dict):
+        entries.append(_entry(lead, "what_happened"))
 
-    for story in data.get("quick_hits", []):
-        entries.append(_entry(story["title"], story.get("summary", ""), story["source_url"]))
+    for story in data.get("quick_hits") or []:
+        if isinstance(story, dict):
+            entries.append(_entry(story, "summary"))
 
-    for story in data.get("under_the_hood", []):
-        entries.append(_entry(story["title"], story.get("what_happened", ""), story["source_url"]))
+    for story in data.get("under_the_hood") or []:
+        if isinstance(story, dict):
+            entries.append(_entry(story, "what_happened"))
 
     return entries
 
@@ -528,7 +551,11 @@ def sanitize_story_urls(data: dict, known_urls: set[str]) -> dict:
     boundary — scraped content could contain text designed to override it. This is
     the actual enforcement, checked before anything is ever rendered into HTML.
     """
-    stories = [data.get("lead_story"), *data.get("quick_hits", []), *data.get("under_the_hood", [])]
+    stories = [
+        data.get("lead_story"),
+        *(data.get("quick_hits") or []),
+        *(data.get("under_the_hood") or []),
+    ]
     for story in stories:
         if not isinstance(story, dict):
             continue

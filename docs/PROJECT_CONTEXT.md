@@ -65,6 +65,7 @@ Rerun-safe: skips if today's digest already exists.
 - `template.html`, `archive_template.html` — Jinja2 templates (editorial layout, Newsreader + IBM Plex, forest-green palette, Quick Hits accordion)
 - `index.html`, `assets/favicon.svg`
 - `seen_topics.json` — committed dedup memory
+- `tests/test_sanitize.py` — dependency-free tests for `sanitize_story_urls` (`python tests/test_sanitize.py`)
 - `build/` — gitignored intermediates
 - `CLAUDE.md`, README, FUTURE.md, `.github/workflows/auto-merge-claude.yml`, `requirements.txt`
 
@@ -75,9 +76,10 @@ Rerun-safe: skips if today's digest already exists.
 - Windows dev environment, venv mandatory
 
 ## Status
-- Unification refactor merged and pushed (c652f60); trigger updated to ROUTINE.md pointer. First scheduled run on the new path: 2026-07-17 03:45 UTC — verify it lands.
+- Unification refactor merged and pushed (c652f60); trigger updated to ROUTINE.md pointer. **First scheduled run on the new path landed successfully** — digest for 2026-07-17 committed via PR #45 (c1e9902). The two-path design is confirmed working end to end.
 - Beginner-friendly rewrite: merged and live
-- Known past flakiness: routine-environment allowlist 403s for HuggingFace/Anthropic blog — the <3-of-5 guardrail catches total failure, but watch source warnings in logs
+- Routine-environment allowlist 403s: **Anthropic addressed July 2026** — the fetch URL is now `https://www.anthropic.com/news` (bare `anthropic.com` redirects; the proxy denied the hop) and `www.anthropic.com` was added to the environment allowlist. `fetch_page` now logs the status code and any `x-deny-reason` header on HTTPError, so a proxy denial is distinguishable from a server-side block instead of both reading as a bare 403. HuggingFace has not been re-checked — if it 403s, read the new warning to tell which kind it is. The <3-of-5 guardrail still catches total failure.
+- Hardening (July 2026): `sanitize_story_urls` and `extract_seen_entries` tolerate malformed model JSON; `seen_topics.json` no longer written with `[None]` source_urls (which crashed the *following* day's run). Covered by `tests/test_sanitize.py`.
 
 ## Backlog (FUTURE.md)
 Archive page polish, PWA support, push notifications, search across digests, mobile styling improvements.

@@ -115,9 +115,31 @@ import sys, types
 for name in ("anthropic", "requests", "bs4", "dotenv"):
     sys.modules[name] = types.ModuleType(name)
 sys.modules["anthropic"].Anthropic = object
+sys.modules["requests"].exceptions = types.SimpleNamespace(
+    HTTPError=type("HTTPError", (Exception,), {})
+)
 sys.modules["bs4"].BeautifulSoup = object
 sys.modules["dotenv"].load_dotenv = lambda *a, **k: None
 ```
+The `requests.exceptions` line is only needed if the code under test *calls*
+`fetch_page` (its `except requests.exceptions.HTTPError` clause resolves at raise
+time, not import time). Without it you get `module 'requests' has no attribute
+'exceptions'` rather than the real failure. Import and the pure-logic functions
+work without it.
+
+### Tests
+
+`tests/test_sanitize.py` covers `sanitize_story_urls`: untrusted URLs dropped,
+known URLs kept, and malformed model output (`lead_story: None`, a null section,
+a bare string where a story dict belongs) not raising. It uses the stub recipe
+above, so it needs no venv and no installed dependencies:
+
+```bash
+python tests/test_sanitize.py    # prints PASS/FAIL per test, exit 1 on failure
+```
+
+No pytest — plain asserts and a `__main__` runner, deliberately, so the routine
+environment can run it without installing anything.
 
 ## Scheduling
 Claude Code remote trigger — runs daily at 06:45 Europe/Helsinki (03:45 UTC).
@@ -190,6 +212,14 @@ Uses `requests` + `BeautifulSoup` to fetch these sources directly:
 - HuggingFace Blog, Anthropic News, GitHub Blog — titles + URLs via generic `<h2>`/`<h3>` extractor (description up to 250 chars)
 
 > OpenAI News is excluded — it reliably returns 403. OpenAI stories are well-covered via Hacker News.
+
+> Anthropic News must be fetched as `https://www.anthropic.com/news`, **with** the
+> `www`. The bare `anthropic.com` redirects, and the routine environment's proxy
+> denies the redirect hop — surfacing as a 403 that looks identical to a
+> server-side block. The same `www` URL is passed as `extract_generic`'s
+> `base_url`, since relative hrefs are joined onto it and would otherwise
+> reintroduce the redirect on every enriched article fetch. `www.anthropic.com`
+> is on the routine environment's allowlist (added July 2026).
 
 After extraction, the top 3 articles from each blog source (HuggingFace, Anthropic,
 GitHub Blog) are **enriched** via `enrich_items()`:
@@ -298,6 +328,13 @@ Called in `finish_stage()` right after `parse_output`. Drops any `source_url`/`v
 not in `known_urls` — the real enforcement, since the prompt instruction alone
 isn't a safety boundary against scraped content designed to override it.
 
+Model output is untrusted JSON, so both this and `extract_seen_entries` treat the
+schema as advisory: a missing or `null` `lead_story`, a `null` section, and
+non-dict entries inside a section are all skipped rather than raised on. Note
+`data.get("quick_hits", [])` is *not* sufficient — a key present with a `null`
+value returns `None`, not the default, and blows up the `*` unpack. Use
+`data.get("quick_hits") or []`.
+
 **3. Render Markdown (`render_markdown`)**
 Python derives the `.md` file deterministically from the JSON:
 - Header + teaser
@@ -372,6 +409,13 @@ lead_story and under_the_hood use `what_happened`, quick_hits uses `summary`.
 Extracts the first sentence as a summary, merges with prior entries, re-prunes
 to 7 days, and writes `seen_topics.json`. Accumulates at most ~42 entries
 (6–7 stories × 7 days).
+
+`source_urls` must be `[]`, never `[None]`, when the story has no `source_url`.
+This matters across days, not just within a run: `extract_seen_entries` runs
+*after* `sanitize_story_urls` may have nulled a URL, and the next day's
+`format_seen_topics_context` does `", ".join(e["source_urls"])` — a `[None]`
+written today raises `TypeError` on tomorrow's run. Fixed July 2026; entries
+written before then age out of the 7-day window on their own.
 
 **7. Regenerate archive and index (`build_archive_entries`, `render_archive`, `update_index_html`)**
 Runs at the end of every `finish_stage()` call — i.e. both the local and routine
