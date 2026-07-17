@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-07-09",
-    "title": "Farmers Win the Right to Repair Their Own John Deere Equipment",
-    "summary": "Under a settlement with the U.",
-    "source_urls": [
-      "https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02"
-    ]
-  },
-  {
-    "date": "2026-07-09",
-    "title": "xAI Releases Grok 4.5",
-    "summary": "Elon Musk's AI company shipped Grok 4.",
-    "source_urls": [
-      "https://x.ai/news/grok-4-5"
-    ]
-  },
-  {
-    "date": "2026-07-09",
-    "title": "GitHub Copilot Switches to Pay-as-You-Go Pricing",
-    "summary": "GitHub is moving its popular AI coding assistant to usage-based billing, where each request draws down a pool of 'AI Credits' instead of a flat monthly fee.",
-    "source_urls": [
-      "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
-    ]
-  },
-  {
-    "date": "2026-07-09",
-    "title": "Mistral Releases a Robotics Navigation Model",
-    "summary": "French AI lab Mistral released Robostral Navigate, a model that helps robots find their way through physical spaces.",
-    "source_urls": [
-      "https://mistral.ai/news/robostral-navigate/"
-    ]
-  },
-  {
-    "date": "2026-07-09",
-    "title": "TypeScript 7 Arrives, Rebuilt for Speed",
-    "summary": "Microsoft announced TypeScript 7.",
-    "source_urls": [
-      "https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/"
-    ]
-  },
-  {
-    "date": "2026-07-09",
-    "title": "Why AI Agents Are Hungry for Open Data, Not Just Bigger Models",
-    "summary": "NVIDIA and Hugging Face published a case for open datasets aimed specifically at AI 'agents' — software that carries out multi-step tasks on your behalf.",
-    "source_urls": [
-      "https://huggingface.co/blog/nvidia/open-data-for-agents"
-    ]
-  },
-  {
     "date": "2026-07-10",
     "title": "The EU Votes to Scan Private Messages",
     "summary": "The European Parliament approved a version of 'Chat Control,' a rule that would push messaging apps to scan the private chats and photos on your phone for illegal material before they are sent.",
@@ -413,6 +365,54 @@
     "summary": "IBM researchers, writing on Hugging Face, walked through why a seemingly simple idea — send easy questions to a cheap AI model and hard ones to an expensive model — keeps tripping teams up.",
     "source_urls": [
       "https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt"
+    ]
+  },
+  {
+    "date": "2026-07-17",
+    "title": "Hugging Face Catches an AI-Driven Break-In",
+    "summary": "Hugging Face, the company that hosts much of the world's open AI models, disclosed that attackers broke into part of its production systems — and that this intrusion was driven by AI acting on its own, moving faster than the human attacks the team had handled before.",
+    "source_urls": [
+      "https://huggingface.co/blog/security-incident-july-2026"
+    ]
+  },
+  {
+    "date": "2026-07-17",
+    "title": "A New Free AI Model Claims Frontier-Level Smarts: Kimi K3",
+    "summary": "The team behind Kimi released K3, an open model they describe as 'frontier intelligence' — meaning it aims to match the quality of the paid systems from OpenAI and Google, while being free to download and run.",
+    "source_urls": [
+      "https://www.kimi.com/blog/kimi-k3"
+    ]
+  },
+  {
+    "date": "2026-07-17",
+    "title": "Google Folds NotebookLM Into Gemini",
+    "summary": "Google is renaming NotebookLM — its popular tool for turning your own documents into summaries, study guides, and audio overviews — to 'Gemini Notebook,' bringing it under the same brand as its main AI assistant.",
+    "source_urls": [
+      "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/"
+    ]
+  },
+  {
+    "date": "2026-07-17",
+    "title": "LM Studio Adds an AI 'Agent' for Models You Run Yourself",
+    "summary": "LM Studio, an app that lets people run AI models on their own computer, launched Bionic — an agent that can carry out multi-step tasks using those local models rather than a cloud service.",
+    "source_urls": [
+      "https://lmstudio.ai/blog/introducing-lm-studio-bionic"
+    ]
+  },
+  {
+    "date": "2026-07-17",
+    "title": "NVIDIA's New Retrieval Model Tops the RTEB Leaderboard",
+    "summary": "NVIDIA released Nemotron 3 Embed, an 'embedding' model — the piece that helps AI find the right document to answer a question — and it now ranks first overall on RTEB, a public benchmark for retrieval quality.",
+    "source_urls": [
+      "https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb"
+    ]
+  },
+  {
+    "date": "2026-07-17",
+    "title": "Scaling 'Zero' Reinforcement Learning to a Trillion Parameters",
+    "summary": "Researchers behind Ring-Zero describe training a one-trillion-parameter model using reinforcement learning from scratch — 'zero RL,' meaning the model learns to reason by trial and error rather than by copying human-written examples.",
+    "source_urls": [
+      "https://arxiv.org/abs/2607.12395"
     ]
   }
 ]
