@@ -48,8 +48,13 @@ python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 
-# Run the digest
+# Run the digest (full local run: gather -> Claude API -> finish)
 python digest.py
+
+# Or run the two stages separately (no API call needed to test rendering —
+# see "Testing digest.py's CLI stages" below)
+python digest.py gather
+python digest.py finish build/digest_raw.txt
 
 # Install a new package (venv must be active)
 pip install <package>
@@ -80,6 +85,26 @@ from digest import build_archive_entries, render_archive
 from pathlib import Path
 Path("archive.html").write_text(render_archive(build_archive_entries()), encoding="utf-8")
 ```
+
+### Testing digest.py's CLI stages without an API call
+
+`python digest.py gather` and `python digest.py finish <path>` can be exercised
+independently, at zero API cost:
+
+- `gather` only skips (`SKIP`) if today's `digests/tech-digest-{date}.html`
+  already exists — otherwise it does a real (free) fetch of all five sources
+  and writes `build/gather_output.txt` + `build/known_urls.txt`.
+- `finish` needs a raw JSON response file (delimited by `<!-- BEGIN_JSON -->` /
+  `<!-- END_JSON -->`) and `build/known_urls.txt` to already exist. Write a
+  small synthetic JSON matching the schema (see the schema below), or reuse
+  `digests/raw_response.txt` from a prior real run.
+
+If today's real digest already exists and you need `gather` to actually run
+(not `SKIP`), temporarily move `digests/tech-digest-{date}.md`/`.html` (and
+`archive.html`, `index.html`, `seen_topics.json` if you're also testing
+`finish`) aside first — `finish` overwrites all of these. Since they're
+git-tracked, `git checkout -- <paths>` restores the real committed content
+afterward; `build/` is gitignored so it's safe to delete once done.
 
 ### Testing digest.py logic with no dependencies installed
 
