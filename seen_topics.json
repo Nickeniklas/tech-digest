@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-07-10",
-    "title": "The EU Votes to Scan Private Messages",
-    "summary": "The European Parliament approved a version of 'Chat Control,' a rule that would push messaging apps to scan the private chats and photos on your phone for illegal material before they are sent.",
-    "source_urls": [
-      "https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/"
-    ]
-  },
-  {
-    "date": "2026-07-10",
-    "title": "OpenAI Ships GPT-5.6",
-    "summary": "OpenAI released GPT-5.",
-    "source_urls": [
-      "https://openai.com/index/gpt-5-6/"
-    ]
-  },
-  {
-    "date": "2026-07-10",
-    "title": "An AI Tutor That Answers a Child in One Second",
-    "summary": "The team behind Ello, a reading app for young children, explained how they built an AI tutor that responds to a five-year-old in about a second — fast enough to feel like a real back-and-forth.",
-    "source_urls": [
-      "https://www.ello.com/blog/teaching-a-child-in-1000-ms"
-    ]
-  },
-  {
-    "date": "2026-07-10",
-    "title": "Running a Capable AI on an Ordinary Laptop",
-    "summary": "A developer shared Colibri, a project for getting GLM 5.",
-    "source_urls": [
-      "https://github.com/JustVugg/colibri"
-    ]
-  },
-  {
-    "date": "2026-07-10",
-    "title": "How GitHub Gave Every Repository a Durable Owner",
-    "summary": "GitHub found that of its 14,000-plus internal code repositories, fewer than half had a clear owner.",
-    "source_urls": [
-      "https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/"
-    ]
-  },
-  {
-    "date": "2026-07-10",
-    "title": "Making a Common AI Toolkit Run at Full Speed",
-    "summary": "Hugging Face rebuilt the link between its widely used 'transformers' library — the default way most open AI models are written — and vLLM, a system for serving those models quickly.",
-    "source_urls": [
-      "https://huggingface.co/blog/native-speed-vllm-transformers-backend"
-    ]
-  },
-  {
     "date": "2026-07-11",
     "title": "An AI Produces a Proof That Eluded Mathematicians for 40 Years",
     "summary": "Previously covered on 2026-07-10: OpenAI released GPT-5.",
@@ -413,6 +365,62 @@
     "summary": "Researchers behind Ring-Zero describe training a one-trillion-parameter model using reinforcement learning from scratch — 'zero RL,' meaning the model learns to reason by trial and error rather than by copying human-written examples.",
     "source_urls": [
       "https://arxiv.org/abs/2607.12395"
+    ]
+  },
+  {
+    "date": "2026-07-18",
+    "title": "Google's Drug AI Moves Beyond Predicting Proteins to Designing Medicines",
+    "summary": "Isomorphic Labs, the drug-discovery company spun out of Google DeepMind, unveiled a 'drug design engine' it says goes a step beyond AlphaFold — the protein-structure tool that won a Nobel Prize.",
+    "source_urls": [
+      "https://www.isomorphiclabs.com/articles/the-isomorphic-labs-drug-design-engine-unlocks-a-new-frontier"
+    ]
+  },
+  {
+    "date": "2026-07-18",
+    "title": "Nurses Say AI and Monitoring Are Making Care Worse, Not Better",
+    "summary": "Kaiser Permanente nurses report that new AI tools and workplace surveillance are adding to their workload and getting between them and their patients, rather than helping.",
+    "source_urls": [
+      "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse/"
+    ]
+  },
+  {
+    "date": "2026-07-18",
+    "title": "Anthropic Asks the Public for Its Hardest Questions About AI",
+    "summary": "Anthropic, the company behind the Claude assistant, is inviting people to send in their toughest questions about AI and says it will publish its answers.",
+    "source_urls": [
+      "https://www.anthropic.com/news/hard-questions"
+    ]
+  },
+  {
+    "date": "2026-07-18",
+    "title": "Popular Home Cameras Leaked Their Owners' Location for Six Years",
+    "summary": "Security researchers found that TP-Link's Kasa EC71 cameras broadcast their home's GPS coordinates over the internet with no password protection — a flaw that sat unnoticed for about six years.",
+    "source_urls": [
+      "https://github.com/BadChemical/IoT-Vulnerability-Research-Public/blob/main/TP-Link_Kasa_EC71/Kasa_EC71.md"
+    ]
+  },
+  {
+    "date": "2026-07-18",
+    "title": "Astronomers Find the First Atmosphere Around an Earth-Like Planet",
+    "summary": "Using the James Webb telescope, scientists detected an atmosphere around a rocky, Earth-sized planet orbiting in the zone where liquid water could exist.",
+    "source_urls": [
+      "https://www.bbc.com/news/articles/cy4kdd1e0ejo"
+    ]
+  },
+  {
+    "date": "2026-07-18",
+    "title": "Fine-Tuning Image and Video AI Models at Scale Gets a Standard Recipe",
+    "summary": "NVIDIA and Hugging Face released a workflow that lets teams fine-tune large image- and video-generation models — such as FLUX — across many GPUs, using NVIDIA's NeMo Automodel together with Hugging Face's Diffusers library.",
+    "source_urls": [
+      "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel"
+    ]
+  },
+  {
+    "date": "2026-07-18",
+    "title": "How GitHub Gave 14,000 Repositories a Clear Owner in Under 45 Days",
+    "summary": "GitHub described how, of its more than 14,000 internal code repositories, fewer than half had a clearly defined owner.",
+    "source_urls": [
+      "https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/"
     ]
   }
 ]
