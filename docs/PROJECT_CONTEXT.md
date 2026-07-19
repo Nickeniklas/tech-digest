@@ -4,11 +4,15 @@
 A daily automated tech news digest for **non-technical professionals** (teachers, marketers, lawyers, designers, managers). A pipeline fetches headlines from high-signal sources, has Claude write a structured digest, and renders it as styled HTML and Markdown. Live for several months. No email, no manual steps.
 
 ## Output
-- `digests/tech-digest-{YYYY-MM-DD}.md` and `.html`
+- `digests/tech-digest-{YYYY-MM-DD}.md` and `.html` — permanent dated archive copies
+- `index.html` — contains the **full latest digest** (no longer a redirect; changed July 19 2026 so iOS home-screen bookmarks of the site root always show the newest digest), rewritten every run
 - `archive.html` (repo root) — listing of all past digests, regenerated every run
-- `index.html` — redirect to the latest digest, regenerated every run (both paths)
+- `manifest.json` + `assets/apple-touch-icon.png` / `icon-192.png` / `icon-512.png` — PWA/home-screen support
 - Debug artifacts, overwritten each run: `digests/raw_response.txt`, `digests/raw_context.txt`
 - Intermediate files in gitignored `build/` (gather output, known URLs, routine raw response)
+
+## Hosting
+GitHub Pages **project site** at `https://nickeniklas.github.io/tech-digest/` — served under the `/tech-digest/` subpath, no CNAME. Because of this, static asset references (favicon, manifest, icons) use a `SITE_ROOT = "/tech-digest"` constant in `digest.py`, injected as `site_root` into both Jinja renders. No `<base>` tag — it would break `#qh-item-N` fragment links. `manifest.json` uses start_url/scope `/tech-digest/`.
 
 ## Architecture — unified two-path design (July 2026 refactor, commit c652f60)
 Both execution paths run the **same code** (`digest.py` stages) and read the **same editorial prompt** (`prompts/system_prompt.md`). The only difference is who writes the digest JSON.
@@ -39,8 +43,8 @@ JSON wrapped in `<!-- BEGIN_JSON --> ... <!-- END_JSON -->`:
 3. Generation — Haiku API call (local) or routine agent (scheduled), same prompt
 4. `parse_output()` — extract JSON from delimiters
 5. `sanitize_story_urls()` — drops any source_url/visual_url not in `known_urls`; the real security boundary against scraped-content prompt injection. Guards non-dict stories.
-6. `render_markdown()` + `render_html()` — deterministic; Jinja2 `template.html`, autoescape on; only the self-escaping `md_links` filter uses `| safe`
-7. Save files → update seen topics (only after successful save) → regenerate `archive.html` + `index.html`
+6. `render_markdown()` + `render_html()` — deterministic; Jinja2 `template.html`, autoescape on; only the self-escaping `md_links` filter uses `| safe`; `site_root` passed to both renders
+7. Save files → update seen topics (only after successful save) → regenerate `archive.html` → write the full rendered digest HTML to `index.html` (`update_index_html(html)` — takes the html string, not date_str)
 
 Rerun-safe: skips if today's digest already exists.
 
@@ -59,13 +63,12 @@ Rerun-safe: skips if today's digest already exists.
 `seen_topics.json` (repo root, **committed** — being gitignored previously caused daily repeats). Rolling 7-day window, ~42 entries max. Passed as context; exact repeats skipped, follow-ups prefixed "Previously covered on {date}: ...".
 
 ## Files
-- `digest.py` — single entry point + CLI subcommands
+- `digest.py` — single entry point + CLI subcommands; `SITE_ROOT` constant
 - `prompts/system_prompt.md` — the editorial brief, single source of truth
 - `ROUTINE.md` — full routine instructions (trigger config just points here)
-- `template.html`, `archive_template.html` — Jinja2 templates (editorial layout, Newsreader + IBM Plex, forest-green palette, Quick Hits accordion)
-- `index.html`, `assets/favicon.svg`
+- `template.html`, `archive_template.html` — Jinja2 templates (editorial layout, Newsreader + IBM Plex, forest-green palette, Quick Hits accordion; PWA/iOS meta tags in head)
+- `index.html` (latest digest), `manifest.json`, `assets/favicon.svg` + PNG icons
 - `seen_topics.json` — committed dedup memory
-- `tests/test_sanitize.py` — dependency-free tests for `sanitize_story_urls` (`python tests/test_sanitize.py`)
 - `build/` — gitignored intermediates
 - `CLAUDE.md`, README, FUTURE.md, `.github/workflows/auto-merge-claude.yml`, `requirements.txt`
 
@@ -74,12 +77,13 @@ Rerun-safe: skips if today's digest already exists.
 - **No logic outside the repo** — trigger config must never carry pipeline steps or prompts
 - Self-fetch headlines instead of web_search tool (cost + context control)
 - Windows dev environment, venv mandatory
+- PROJECT_CONTEXT.md is maintained by the design chat (this project), not by Claude Code — always rewritten wholesale, never patch-edited
 
 ## Status
-- Unification refactor merged and pushed (c652f60); trigger updated to ROUTINE.md pointer. **First scheduled run on the new path landed successfully** — digest for 2026-07-17 committed via PR #45 (c1e9902). The two-path design is confirmed working end to end.
+- Home-screen/PWA fix (July 19): `index.html` now serves the latest digest directly; `manifest.json` + apple-touch icons added; assets referenced via `SITE_ROOT`. Local changes were caught in a git divergence with the morning routine run of July 19 (which ran the old code) — resolution: commit local work, rebase taking origin's generated files, regenerate `index.html`/`archive.html` with new code, push. First routine run on the new code: **2026-07-20 — verify `index.html` contains a full digest, not a redirect.**
+- Unification refactor (c652f60) verified in production: scheduled runs landing correctly since 2026-07-17.
 - Beginner-friendly rewrite: merged and live
-- Routine-environment allowlist 403s: **Anthropic addressed July 2026** — the fetch URL is now `https://www.anthropic.com/news` (bare `anthropic.com` redirects; the proxy denied the hop) and `www.anthropic.com` was added to the environment allowlist. `fetch_page` now logs the status code and any `x-deny-reason` header on HTTPError, so a proxy denial is distinguishable from a server-side block instead of both reading as a bare 403. HuggingFace has not been re-checked — if it 403s, read the new warning to tell which kind it is. The <3-of-5 guardrail still catches total failure.
-- Hardening (July 2026): `sanitize_story_urls` and `extract_seen_entries` tolerate malformed model JSON; `seen_topics.json` no longer written with `[None]` source_urls (which crashed the *following* day's run). Covered by `tests/test_sanitize.py`.
+- Known past flakiness: routine-environment allowlist 403s for HuggingFace/Anthropic blog — the <3-of-5 guardrail catches total failure, but watch source warnings in logs
 
 ## Backlog (FUTURE.md)
-Archive page polish, PWA support, push notifications, search across digests, mobile styling improvements.
+Archive page polish (now has updated template + PWA icons), full PWA support (service worker / offline reading still open — installable bookmark done), push notifications, search across digests, mobile styling improvements.
