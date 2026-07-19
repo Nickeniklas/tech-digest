@@ -420,12 +420,48 @@ written before then age out of the 7-day window on their own.
 **7. Regenerate archive and index (`build_archive_entries`, `render_archive`, `update_index_html`)**
 Runs at the end of every `finish_stage()` call — i.e. both the local and routine
 paths, since both call `finish_stage()`. Rewrites `archive.html` (via
-`archive_template.html`) listing every past digest, and rewrites `index.html` to
-meta-refresh to today's digest. `index.html` regeneration used to live only in
-the routine's inline Step 6, so local-only runs left the redirect stale — as of
-the CLI refactor it's part of the shared stage and both paths update it. Not
-linked from `index.html` — v0.1, reachable only by typing `/archive.html`
-directly.
+`archive_template.html`) listing every past digest, and writes today's fully
+rendered digest HTML **directly to `index.html`** (`update_index_html(html)`
+takes the already-rendered string, not a date). Not linked from `index.html` —
+v0.1, reachable only by typing `/archive.html` directly.
+
+> As of July 2026, `index.html` is no longer a meta-refresh redirect to
+> `digests/tech-digest-{date}.html` — it *is* the latest digest, verbatim. iOS
+> "Add to Home Screen" bookmarks the current page's URL, so a redirect page
+> would permanently pin whatever date happened to be live when the user added
+> it. Serving the content at the root instead means the bookmark always shows
+> today's digest.
+>
+> This repo is a GitHub Pages **project site** (`github.com/Nickeniklas/tech-digest`,
+> no `CNAME`), served at `https://nickeniklas.github.io/tech-digest/` — not at
+> the domain root. Since `template.html` is rendered at two different
+> directory depths (`index.html` at repo root, `digests/tech-digest-*.html`
+> one level down) with otherwise identical output, any static asset reference
+> in the `<head>` (favicon, manifest, apple-touch-icon) must resolve
+> identically from both. Plain relative paths can't do that (`../assets/...`
+> breaks from the root; `assets/...` breaks from `digests/`), so `render_html`/
+> `render_archive` inject a `site_root` template variable
+> (`digest.py`'s `SITE_ROOT = "/tech-digest"`) and every such reference is
+> written as `{{ site_root }}/assets/...` — a root-relative path anchored to
+> the Pages subpath rather than the domain root. Fragment-only same-page links
+> (`href="#qh-item-N"`, used by the Quick Hits sidebar) are untouched and
+> deliberately **not** routed through `site_root` or a `<base>` tag — a `<base>`
+> element would also rewrite those, resolving them against the base path
+> instead of the current document and breaking the sidebar's jump-to-accordion
+> behavior on every page except the one at `site_root` itself.
+>
+> `manifest.json` (repo root) declares `start_url`/`scope` as `/tech-digest/`
+> for the same reason, plus `apple-touch-icon.png` (180×180), `icon-192.png`,
+> and `icon-512.png` in `assets/`, all derived from `assets/favicon.svg`'s
+> two-square mark redrawn on a `#1B4332` background (flat PNG, since iOS/PWA
+> icons need an opaque canvas — it applies its own corner mask). Generated via
+> Pillow (`ImageDraw.rounded_rectangle`, scaled from the SVG's `0 0 28 28`
+> viewBox) rather than `cairosvg`: `cairosvg` installs fine via pip but needs
+> the native Cairo library, which isn't installable through pip alone on
+> Windows and isn't present on this machine — install and use it instead if
+> your environment has Cairo available, otherwise Pillow is the fallback.
+> Neither package is a runtime dependency of `digest.py`, so neither belongs in
+> `requirements.txt`; they were only needed to generate these three PNGs once.
 
 ## Topic deduplication
 

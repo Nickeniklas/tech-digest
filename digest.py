@@ -30,6 +30,13 @@ BASE_URL  = os.environ.get("DIGEST_BASE_URL")
 
 MAX_CONTEXT_CHARS = 16_000
 
+# GitHub Pages serves this repo as a project site (github.com/Nickeniklas/tech-digest,
+# no CNAME) at https://nickeniklas.github.io/tech-digest/ — every root-relative asset
+# reference must carry this prefix, since index.html and digests/*.html render the
+# same template.html at different directory depths and only an absolute path resolves
+# identically from both.
+SITE_ROOT = "/tech-digest"
+
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; tech-digest-bot/1.0)"}
 
 # ---------------------------------------------------------------------------
@@ -492,7 +499,7 @@ def render_html(data: dict, full_date: str) -> str:
     env.filters["md_links"] = _md_links_to_html
     env.filters["chart_bars"] = _chart_bars
     template = env.get_template("template.html")
-    return template.render(full_date=full_date, **data)
+    return template.render(full_date=full_date, site_root=SITE_ROOT, **data)
 
 
 def build_archive_entries() -> list[dict]:
@@ -526,7 +533,7 @@ def build_archive_entries() -> list[dict]:
 def render_archive(entries: list[dict]) -> str:
     env = Environment(loader=FileSystemLoader(str(Path(__file__).parent)), autoescape=True)
     template = env.get_template("archive_template.html")
-    return template.render(entries=entries)
+    return template.render(entries=entries, site_root=SITE_ROOT)
 
 
 def parse_output(text: str) -> dict:
@@ -584,18 +591,14 @@ def save_files(date_str: str, md: str, html: str) -> tuple[Path, Path]:
 BUILD_DIR = Path("build")
 
 
-def update_index_html(date_str: str) -> None:
-    """Rewrite index.html to redirect to today's digest."""
-    html = f"""<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0; url=digests/tech-digest-{date_str}.html">
-</head>
-<body>
-  <p>Redirecting to latest digest...</p>
-</body>
-</html>"""
+def update_index_html(html: str) -> None:
+    """Write today's rendered digest HTML directly to index.html.
+
+    Serving the digest AT the root (rather than redirecting to
+    digests/tech-digest-{date}.html) is what makes iOS "Add to Home Screen"
+    useful: iOS bookmarks the current page's URL, so a redirect page would
+    permanently pin whatever date was live at bookmark time.
+    """
     Path("index.html").write_text(html, encoding="utf-8")
 
 
@@ -649,8 +652,8 @@ def finish_stage(date_str: str, full_date: str, raw: str, known_urls: set[str]) 
     Path("archive.html").write_text(render_archive(archive_entries), encoding="utf-8")
     logging.info(f"archive.html regenerated with {len(archive_entries)} entries")
 
-    update_index_html(date_str)
-    logging.info(f"index.html updated to redirect to {date_str}")
+    update_index_html(html)
+    logging.info(f"index.html updated with today's digest ({date_str})")
 
     return md_path, html_path
 

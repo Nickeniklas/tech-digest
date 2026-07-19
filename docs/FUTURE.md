@@ -5,7 +5,10 @@
       `digests/` folder at the end of every `finish_stage()` (both local and routine
       paths). Still v0.1: **not linked from `index.html`**, reachable only by typing
       `/archive.html` directly. Remaining work is polish + linking it, not building it.
-- [ ] PWA support (add to home screen, offline reading)
+- [x] PWA support, partially — home-screen bookmarking: `index.html` now serves
+      today's digest directly (no redirect), `manifest.json` + generated icons
+      make it installable on iOS/Android as a standalone app-like bookmark that
+      stays current. Offline reading (service worker) still open.
 - [ ] Push notifications when new digest drops
 - [ ] Search across past digests
 - [ ] Styling improvements based on mobile usage
