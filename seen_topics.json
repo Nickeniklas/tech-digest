@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-07-11",
-    "title": "An AI Produces a Proof That Eluded Mathematicians for 40 Years",
-    "summary": "Previously covered on 2026-07-10: OpenAI released GPT-5.",
-    "source_urls": [
-      "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf"
-    ]
-  },
-  {
-    "date": "2026-07-11",
-    "title": "Apple Sues OpenAI Over Alleged Trade-Secret Theft",
-    "summary": "Apple has filed a lawsuit accusing OpenAI of taking confidential information through former Apple employees who moved to the AI company.",
-    "source_urls": [
-      "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/"
-    ]
-  },
-  {
-    "date": "2026-07-11",
-    "title": "SpaceX Wants 100,000 More Starlink Satellites",
-    "summary": "SpaceX has asked regulators for permission to launch roughly 100,000 additional Starlink satellites, which it says would multiply the network's total capacity about a hundredfold.",
-    "source_urls": [
-      "https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/"
-    ]
-  },
-  {
-    "date": "2026-07-11",
-    "title": "New York City Moves to Ban Sneaky Subscription Traps",
-    "summary": "New York City passed rules cracking down on \"deceptive subscription practices\" — the hard-to-cancel sign-ups and hidden auto-renewals that quietly drain money each month.",
-    "source_urls": [
-      "https://www.theguardian.com/us-news/2026/jul/10/new-york-city-deceptive-subscriptions-ban"
-    ]
-  },
-  {
-    "date": "2026-07-11",
-    "title": "A 15-Year-Old Flaw Found in Every Linux Distribution",
-    "summary": "Researchers disclosed GhostLock, a memory-handling bug that has been present in essentially all Linux distributions for about 15 years.",
-    "source_urls": [
-      "https://nebusec.ai/research/ionstack-part-2/"
-    ]
-  },
-  {
-    "date": "2026-07-11",
-    "title": "Profiling PyTorch Attention, One Backend at a Time",
-    "summary": "Hugging Face published the third part of a series on measuring where time actually goes inside a running AI model.",
-    "source_urls": [
-      "https://huggingface.co/blog/torch-attention-profile"
-    ]
-  },
-  {
-    "date": "2026-07-11",
-    "title": "Why GitHub Made Its Copilot Code Reviewer Use Plain Unix Tools",
-    "summary": "GitHub explained that adding fancy custom tools to its Copilot code-review agent actually made the reviews worse and more expensive.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/"
-    ]
-  },
-  {
     "date": "2026-07-12",
     "title": "The Money Behind the AI Boom Is Starting to Look Circular",
     "summary": "An investment analysis lays out how a small group of companies now fund each other's AI spending: Nvidia sells the chips that power AI, invests in cloud firms like CoreWeave and Nebius, and those firms then borrow and spend heavily to buy more Nvidia chips.",
@@ -421,6 +365,54 @@
     "summary": "GitHub described how, of its more than 14,000 internal code repositories, fewer than half had a clearly defined owner.",
     "source_urls": [
       "https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/"
+    ]
+  },
+  {
+    "date": "2026-07-19",
+    "title": "An AI Model Helped Close a 30-Year-Old Math Problem",
+    "summary": "Days after OpenAI reported that its systems contributed to a research proof, mathematicians on Reddit documented how a single prompt to GPT-5.",
+    "source_urls": [
+      "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/"
+    ]
+  },
+  {
+    "date": "2026-07-19",
+    "title": "New York Tells Landlords: No AI-Faked Apartment Photos",
+    "summary": "New York City's mayor said landlords can't quietly use AI-generated or heavily altered images to advertise rental units without disclosing it.",
+    "source_urls": [
+      "https://petapixel.com/2026/07/16/mayor-mamdani-says-landlords-cant-secretly-use-ai-images-to-advertise-properties/"
+    ]
+  },
+  {
+    "date": "2026-07-19",
+    "title": "LG Monitors Quietly Installed Software Through Windows Update",
+    "summary": "Owners discovered that some LG monitors pushed their own software onto Windows PCs automatically, routed through the normal Windows Update process, without asking permission first.",
+    "source_urls": [
+      "https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent"
+    ]
+  },
+  {
+    "date": "2026-07-19",
+    "title": "One Chart Shows How AI Reshaped Stack Overflow",
+    "summary": "A single graph, drawn straight from Stack Overflow's own public data, shows how sharply activity on the long-running programming Q&A site has fallen since AI chatbots arrived — developers increasingly ask an assistant instead of posting a question.",
+    "source_urls": [
+      "https://data.stackexchange.com/stackoverflow/query/1953768#graph"
+    ]
+  },
+  {
+    "date": "2026-07-19",
+    "title": "The Cost of Saying Yes to New Code Has Changed",
+    "summary": "GitHub's engineering team argues that AI has made writing code cheap, but owning it — maintaining, securing, and understanding it over years — just as expensive as ever.",
+    "source_urls": [
+      "https://github.blog/engineering/the-cost-of-saying-yes-has-changed/"
+    ]
+  },
+  {
+    "date": "2026-07-19",
+    "title": "Why Better Tools Made Copilot's Code Review Worse — Then Better",
+    "summary": "GitHub describes rebuilding how its Copilot code-review agent works.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/"
     ]
   }
 ]
