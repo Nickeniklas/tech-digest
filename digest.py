@@ -139,21 +139,6 @@ def extract_hn(html: str) -> list[dict]:
     return items
 
 
-def extract_github_trending(html: str) -> list[dict]:
-    """GitHub trending — repo name + URL + short description."""
-    soup = BeautifulSoup(html, "html.parser")
-    items = []
-    for article in soup.select("article.Box-row")[:20]:
-        h2 = article.select_one("h2 a")
-        desc_el = article.select_one("p")
-        if h2:
-            name = " ".join(h2.get_text().split())
-            url  = "https://github.com" + h2.get("href", "")
-            desc = desc_el.get_text(strip=True)[:250] if desc_el else ""
-            items.append({"title": name, "url": url, "description": desc})
-    return items
-
-
 def extract_generic(html: str, base_url: str = "") -> list[dict]:
     """
     Generic extractor for blog/news pages.
@@ -218,9 +203,6 @@ def gather_context() -> tuple[str, str, set[str]]:
     print("  Fetching Hacker News...")
     hn_items = extract_hn(fetch_page("https://news.ycombinator.com"))
 
-    print("  Fetching GitHub Trending...")
-    gh_items = extract_github_trending(fetch_page("https://github.com/trending"))
-
     print("  Fetching HuggingFace Blog...")
     hf_items = extract_generic(fetch_page("https://huggingface.co/blog"), "https://huggingface.co")
 
@@ -231,8 +213,7 @@ def gather_context() -> tuple[str, str, set[str]]:
     ghb_items = extract_generic(fetch_page("https://github.blog"), "https://github.blog")
 
     # Enrich top articles from trusted blog sources with og:image + first paragraph.
-    # HN and GitHub Trending are skipped: HN links arbitrary external sites (prompt
-    # injection risk), Trending links repo pages (no useful og:image or article body).
+    # HN is skipped: it links arbitrary external sites (prompt injection risk).
     # OpenAI removed: their /news page returns 403 reliably; HN surfaces OpenAI news anyway.
     print("  Enriching blog articles...")
     enrich_items(hf_items,  "HuggingFace", n=3)
@@ -242,9 +223,9 @@ def gather_context() -> tuple[str, str, set[str]]:
     # Fail-loud guardrail: count how many sources returned usable content.
     # A 403/empty fetch yields an empty item list, so an empty list == failure.
     # We refuse to build a digest from partial data rather than emit a hollow one.
+    # Requires 3 of the 4 sources below to succeed.
     sources = [
         ("Hacker News", hn_items),
-        ("GitHub Trending", gh_items),
         ("HuggingFace Blog", hf_items),
         ("Anthropic News", ant_items),
         ("GitHub Blog", ghb_items),
@@ -284,7 +265,7 @@ def gather_context() -> tuple[str, str, set[str]]:
     # Claude's output is checked against this set before rendering, since the scraped
     # content it summarizes could otherwise be used to smuggle in an attacker-chosen URL.
     known_urls = set()
-    for items in (hn_items, gh_items, hf_items, ant_items, ghb_items):
+    for items in (hn_items, hf_items, ant_items, ghb_items):
         for item in items:
             if item.get("url"):
                 known_urls.add(item["url"])

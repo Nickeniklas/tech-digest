@@ -39,7 +39,7 @@ JSON wrapped in `<!-- BEGIN_JSON --> ... <!-- END_JSON -->`:
 
 ## Pipeline stages
 1. `load_seen_topics()` — `seen_topics.json`, pruned to 7-day window
-2. `gather_context()` — scrapes Hacker News, GitHub Trending, HuggingFace Blog, Anthropic News, GitHub Blog (OpenAI blog excluded — reliable 403; HN covers it). Enriches top 3 blog articles with og:image + first paragraph (parallel, SSRF-guarded). **Fail-loud:** RuntimeError if <3 of 5 sources return content. Context capped at 16k chars. Returns `(context, image_refs, known_urls)`.
+2. `gather_context()` — scrapes **4 sources**: Hacker News, HuggingFace Blog, Anthropic News, GitHub Blog. GitHub Trending removed July 19 2026 (origin-side 403 from the routine environment — GitHub blocks `/trending` scraping; lowest-value source anyway, repo names only, never enriched). OpenAI blog excluded earlier — reliable 403; HN covers it. Enriches top 3 blog articles with og:image + first paragraph (parallel, SSRF-guarded). **Fail-loud:** RuntimeError if <3 of 4 sources return content (`MIN_SOURCES = 3`, "of N" computed dynamically from the sources list). Context capped at 16k chars. Returns `(context, image_refs, known_urls)`.
 3. Generation — Haiku API call (local) or routine agent (scheduled), same prompt
 4. `parse_output()` — extract JSON from delimiters
 5. `sanitize_story_urls()` — drops any source_url/visual_url not in `known_urls`; the real security boundary against scraped-content prompt injection. Guards non-dict stories.
@@ -58,9 +58,10 @@ Rerun-safe: skips if today's digest already exists.
 - Routine commits directly per ROUTINE.md: `git add digests/ index.html seen_topics.json archive.html`, commit, push
 - GitHub Actions workflow (`.github/workflows/auto-merge-claude.yml`) handles claude/ branch auto-merging
 - Manage routine at https://claude.ai/code/routines
+- **Routine diagnostics live in the routine run transcript, not the repo**: the routine writes `digest.log` in its own remote checkout and only commits digest output files, so local `digest.log` never contains routine runs. Check the run transcript for `[warn]` fetch lines and `x-deny-reason` details.
 
 ## Deduplication
-`seen_topics.json` (repo root, **committed** — being gitignored previously caused daily repeats). Rolling 7-day window, ~42 entries max. Passed as context; exact repeats skipped, follow-ups prefixed "Previously covered on {date}: ...".
+`seen_topics.json` (repo root, **committed** — being gitignored previously caused daily repeats). Rolling 7-day window, ~6 stories × 7 days max. Passed as context; exact repeats skipped, follow-ups prefixed "Previously covered on {date}: ...".
 
 ## Files
 - `digest.py` — single entry point + CLI subcommands; `SITE_ROOT` constant
@@ -69,6 +70,7 @@ Rerun-safe: skips if today's digest already exists.
 - `template.html`, `archive_template.html` — Jinja2 templates (editorial layout, Newsreader + IBM Plex, forest-green palette, Quick Hits accordion; PWA/iOS meta tags in head)
 - `index.html` (latest digest), `manifest.json`, `assets/favicon.svg` + PNG icons
 - `seen_topics.json` — committed dedup memory
+- `tests/test_sanitize.py` — dependency-free sanitization tests (`python tests/test_sanitize.py`)
 - `build/` — gitignored intermediates
 - `CLAUDE.md`, README, FUTURE.md, `.github/workflows/auto-merge-claude.yml`, `requirements.txt`
 
@@ -76,14 +78,16 @@ Rerun-safe: skips if today's digest already exists.
 - **Fail loud** — abort with informative errors rather than emit a hollow digest
 - **No logic outside the repo** — trigger config must never carry pipeline steps or prompts
 - Self-fetch headlines instead of web_search tool (cost + context control)
+- Sources that permanently fail get removed, not carried — a dead source normalizes bad log lines ("3/5 as usual") and hides real regressions
 - Windows dev environment, venv mandatory
 - PROJECT_CONTEXT.md is maintained by the design chat (this project), not by Claude Code — always rewritten wholesale, never patch-edited
 
 ## Status
-- Home-screen/PWA fix (July 19): `index.html` now serves the latest digest directly; `manifest.json` + apple-touch icons added; assets referenced via `SITE_ROOT`. Local changes were caught in a git divergence with the morning routine run of July 19 (which ran the old code) — resolution: commit local work, rebase taking origin's generated files, regenerate `index.html`/`archive.html` with new code, push. First routine run on the new code: **2026-07-20 — verify `index.html` contains a full digest, not a redirect.**
+- **Source lineup finalized July 19 2026 at 4 sources.** The allowlist fixes (www.anthropic.com) verified in production: the July 19 routine run fetched HuggingFace and Anthropic News successfully for the first time since the security patches. GitHub Trending 403'd origin-side in the same run and was removed from the pipeline the same day (code + README + CLAUDE.md updated; tests pass).
+- Home-screen/PWA fix (July 19): `index.html` now serves the latest digest directly; `manifest.json` + apple-touch icons added; assets referenced via `SITE_ROOT`.
+- **First routine run on the new code: 2026-07-20 — verify (a) `index.html` contains a full digest, not a redirect, (b) gather reports 4/4 sources with no Trending fetch attempt.**
 - Unification refactor (c652f60) verified in production: scheduled runs landing correctly since 2026-07-17.
 - Beginner-friendly rewrite: merged and live
-- Known past flakiness: routine-environment allowlist 403s for HuggingFace/Anthropic blog — the <3-of-5 guardrail catches total failure, but watch source warnings in logs
 
 ## Backlog (FUTURE.md)
 Archive page polish (now has updated template + PWA icons), full PWA support (service worker / offline reading still open — installable bookmark done), push notifications, search across digests, mobile styling improvements.

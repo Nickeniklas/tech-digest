@@ -4,7 +4,7 @@ Daily tech news digest for busy professionals. Fetches the latest AI and dev too
 
 ## What it does
 
-1. Fetches HackerNews, GitHub Trending, HuggingFace Blog, Anthropic News, and GitHub Blog for today's most relevant AI and tech news
+1. Fetches HackerNews, HuggingFace Blog, Anthropic News, and GitHub Blog for today's most relevant AI and tech news
 2. Enriches the top 3 articles from each blog source by fetching their pages for og:image URLs and opening paragraphs — giving Claude richer material for visuals and summaries
 3. Generates a digest in three sections: a **Lead Story**, 3–4 **Quick Hits**, and 1–2 **Under the Hood** deep dives
 4. Renders a polished HTML page and a Markdown file, both saved to `digests/`

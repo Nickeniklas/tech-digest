@@ -92,7 +92,7 @@ Path("archive.html").write_text(render_archive(build_archive_entries()), encodin
 independently, at zero API cost:
 
 - `gather` only skips (`SKIP`) if today's `digests/tech-digest-{date}.html`
-  already exists — otherwise it does a real (free) fetch of all five sources
+  already exists — otherwise it does a real (free) fetch of all four sources
   and writes `build/gather_output.txt` + `build/known_urls.txt`.
 - `finish` needs a raw JSON response file (delimited by `<!-- BEGIN_JSON -->` /
   `<!-- END_JSON -->`) and `build/known_urls.txt` to already exist. Write a
@@ -220,8 +220,12 @@ in-memory. Returns a list of `{date, title, summary, source_urls}` dicts. Return
 **1.5. Fetch & extract (`gather_context`)**
 Uses `requests` + `BeautifulSoup` to fetch these sources directly:
 - Hacker News front page — top 30 story titles + URLs
-- GitHub Trending — repo name, URL, description (up to 250 chars)
 - HuggingFace Blog, Anthropic News, GitHub Blog — titles + URLs via generic `<h2>`/`<h3>` extractor (description up to 250 chars)
+
+> GitHub Trending was dropped as a source in July 2026 — GitHub blocks `/trending`
+> scraping origin-side (not a routine-environment proxy issue; `github.com` stays
+> allowlisted for git push, and `github.blog` is unaffected), and it was a
+> permanently dead source rather than an intermittent failure.
 
 > OpenAI News is excluded — it reliably returns 403. OpenAI stories are well-covered via Hacker News.
 
@@ -239,8 +243,8 @@ GitHub Blog) are **enriched** via `enrich_items()`:
   the `og:image` / `twitter:image` URL and the first substantial paragraph (≥80 chars, capped at 300 chars).
 - Fetches run in parallel via `ThreadPoolExecutor(max_workers=8)`.
 - URL validation in `fetch_article_detail` skips non-http(s) and private/loopback IPs
-  to prevent SSRF. HN and GitHub Trending are never enriched: HN links arbitrary
-  external sites (prompt injection risk), Trending links repo pages (no article content).
+  to prevent SSRF. HN is never enriched: it links arbitrary external sites (prompt
+  injection risk).
 
 `format_section()` includes `description`, `Body:`, and `Image:` fields when present.
 Total context hard-capped at 16,000 characters. The full context string is written to
