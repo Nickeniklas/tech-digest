@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-07-12",
-    "title": "The Money Behind the AI Boom Is Starting to Look Circular",
-    "summary": "An investment analysis lays out how a small group of companies now fund each other's AI spending: Nvidia sells the chips that power AI, invests in cloud firms like CoreWeave and Nebius, and those firms then borrow and spend heavily to buy more Nvidia chips.",
-    "source_urls": [
-      "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom"
-    ]
-  },
-  {
-    "date": "2026-07-12",
-    "title": "A Look at What Grok's Coding Tool Quietly Sends Back",
-    "summary": "A developer inspected xAI's new Grok command-line coding tool and documented exactly what it transmits back to the company as you use it.",
-    "source_urls": [
-      "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547"
-    ]
-  },
-  {
-    "date": "2026-07-12",
-    "title": "AI Voice Assistants Just Got Faster to Build",
-    "summary": "Hugging Face and chipmaker Cerebras released a way to run Gemma 4, an open AI model, fast enough for real-time voice conversations.",
-    "source_urls": [
-      "https://huggingface.co/blog/cerebras-gemma4-voice-ai"
-    ]
-  },
-  {
-    "date": "2026-07-12",
-    "title": "A Free Tool That Tracks 15,000 Objects in Orbit",
-    "summary": "A developer built Orbit, a browser-based augmented-reality tool that lets you point your phone at the sky and see the satellites and debris passing overhead — more than 15,000 tracked objects in all.",
-    "source_urls": [
-      "https://nagylukas.github.io/orbit.html"
-    ]
-  },
-  {
-    "date": "2026-07-12",
-    "title": "The Last American on an Iron Lung Has Died at 78",
-    "summary": "Martha Lillard, believed to be the last person in the United States still relying on an iron lung to breathe, has died in Oklahoma.",
-    "source_urls": [
-      "https://abcnews.com/US/wireStory/martha-lillard-us-polio-patient-iron-lung-dies-134668491"
-    ]
-  },
-  {
-    "date": "2026-07-12",
-    "title": "Letting AI Keep Your Documentation in Sync — Across Repositories",
-    "summary": "GitHub's Aspire team described how they use 'agentic workflows' — AI agents that run automatically when code changes — to turn each merged product update into a draft documentation update in a separate docs repository.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/"
-    ]
-  },
-  {
-    "date": "2026-07-12",
-    "title": "Running a Language Model Spread Across Several Machines",
-    "summary": "A project called Mesh LLM shows how to run a large AI model split across several ordinary computers linked together over a peer-to-peer network, instead of on one big expensive server.",
-    "source_urls": [
-      "https://www.iroh.computer/blog/mesh-llm"
-    ]
-  },
-  {
     "date": "2026-07-13",
     "title": "Your Browser's Math Can Now Reveal Which Computer You're Using",
     "summary": "Researchers found that since Chrome's latest Chromium update, a basic built-in math function returns slightly different results depending on your operating system, letting a website tell whether you're on Windows, Mac, or Linux — without ever asking.",
@@ -413,6 +357,62 @@
     "summary": "GitHub describes rebuilding how its Copilot code-review agent works.",
     "source_urls": [
       "https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/"
+    ]
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Leaning on AI for Answers Can Make You More Confident and Less Right",
+    "summary": "A new study found that people who received AI advice ended up more confident in their answers but actually less accurate.",
+    "source_urls": [
+      "https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study"
+    ]
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Alibaba Releases Qwen 3.8, Its Latest Free-to-Download AI Model",
+    "summary": "Alibaba put out Qwen 3.",
+    "source_urls": [
+      "https://twitter.com/Alibaba_Qwen/status/2078759124914098291"
+    ]
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Kimi K3 Demand Is So High Its Maker Paused New Subscriptions",
+    "summary": "Previously covered on 2026-07-17: Moonshot's Kimi K3 launched as a free, downloadable model claiming frontier-level quality.",
+    "source_urls": [
+      "https://twitter.com/kimi_moonshot/status/2078855608565207130"
+    ]
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Ollama Bets on Open Models as the Releases Pile Up",
+    "summary": "Ollama, a popular app for running AI models directly on your own computer, published a post firmly backing open models — the kind you download rather than rent from a company's website.",
+    "source_urls": [
+      "https://ollama.com/blog/all-aboard-open-models"
+    ]
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Minecraft's Java Edition Switches to SDL3",
+    "summary": "Minecraft's Java edition now runs on SDL3, a widely used open-source toolkit for handling windows, input, and sound.",
+    "source_urls": [
+      "https://www.minecraft.net/en-us/article/minecraft-26-3-snapshot-4"
+    ]
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Claude Code Rebuilt on Bun, With Rust Under the Hood",
+    "summary": "Anthropic's command-line coding tool, Claude Code, now runs on Bun — a faster JavaScript runtime — with performance-critical parts written in Rust, a language prized for speed and tight memory control.",
+    "source_urls": [
+      "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/"
+    ]
+  },
+  {
+    "date": "2026-07-20",
+    "title": "An AI Model Reportedly Cracked a Long-Standing Algebra Puzzle",
+    "summary": "A mathematician reported that Claude Fable, one of Anthropic's newest models, produced a counterexample to the Jacobian Conjecture — a decades-old open problem in algebra about when a certain kind of polynomial map can be run in reverse.",
+    "source_urls": [
+      "https://xcancel.com/__alpoge__/status/2079028340955197566"
     ]
   }
 ]
