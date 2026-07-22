@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-07-14",
-    "title": "Japan Finds a Way to Reclaim Most of the Lithium in Dead EV Batteries",
-    "summary": "Researchers in Japan demonstrated a process that recovers up to 90% of the lithium from spent electric-vehicle batteries, far more than most recycling methods manage today.",
-    "source_urls": [
-      "https://tech.supercarblondie.com/japan-recovers-up-to-90-of-lithium-from-used-ev-batteries/"
-    ]
-  },
-  {
-    "date": "2026-07-14",
-    "title": "Telegram's Link Domain, t.me, Has Been Suspended",
-    "summary": "The t.",
-    "source_urls": [
-      "https://www.whois.com/whois/t.me"
-    ]
-  },
-  {
-    "date": "2026-07-14",
-    "title": "California May Force Social Apps to Switch Off 'Infinite Scroll' for Teens",
-    "summary": "A proposed California law would require platforms to disable engagement features like endless feeds and autoplay for users under 18.",
-    "source_urls": [
-      "https://www.sfgate.com/politics/article/meta-social-media-teenagers-22337724.php"
-    ]
-  },
-  {
-    "date": "2026-07-14",
-    "title": "A Rare Look at How Microsoft Gave Its Own Staff AI Coding Tools",
-    "summary": "Researchers published a study of Microsoft's early-2026 rollout of two AI command-line coding assistants, Claude Code and GitHub Copilot CLI, to its developers.",
-    "source_urls": [
-      "https://arxiv.org/abs/2607.01418"
-    ]
-  },
-  {
-    "date": "2026-07-14",
-    "title": "One Place to Compare Uber, Lyft, Waymo, and Robotaxi Prices",
-    "summary": "A new tool called Hackney lets you check the cost of the same trip across Uber, Lyft, Waymo, and other robotaxi services side by side.",
-    "source_urls": [
-      "https://hackney.app/"
-    ]
-  },
-  {
-    "date": "2026-07-14",
-    "title": "How GitHub Made Its Issues Pages Feel Instant",
-    "summary": "GitHub's engineering team rebuilt navigation for its Issues pages so moving between them feels immediate.",
-    "source_urls": [
-      "https://github.blog/engineering/architecture-optimization/from-latency-to-instant-modernizing-github-issues-navigation-performance/"
-    ]
-  },
-  {
-    "date": "2026-07-14",
-    "title": "Someone Built a Neural Network Entirely in SQL",
-    "summary": "A developer implemented a working neural network, the math behind modern AI, using nothing but SQL, the decades-old language designed for querying databases.",
-    "source_urls": [
-      "https://github.com/xqlsystems/xarray-sql/blob/claude/xarray-sql-mnist-demo/benchmarks/nn.py"
-    ]
-  },
-  {
     "date": "2026-07-15",
     "title": "The AI Data-Center Boom Is Raising Your Electricity Bill",
     "summary": "A Fortune analysis found that the rapid build-out of data centers — much of it to power AI — has pushed roughly $23 billion in higher electricity costs onto ordinary utility customers, as grids strain to keep up with demand.",
@@ -413,6 +357,62 @@
     "summary": "A developer hand-optimised the most basic operation in AI — multiplying two grids of numbers, known as a matrix multiply — to run at about 85 billion calculations per second on a single core of an AMD processor, with no graphics card involved.",
     "source_urls": [
       "https://github.com/houslast3/85.30-GFLOPS-Single-Core-FP32-Matrix-Multiplication-on-AMD-Zen-3"
+    ]
+  },
+  {
+    "date": "2026-07-22",
+    "title": "A Court Approves Anthropic's $1.5 Billion Settlement Over Pirated Books",
+    "summary": "A federal judge approved a $1.",
+    "source_urls": [
+      "https://apnews.com/article/ai-anthropic-copyright-settlement-claude-books-bartz-74b140444023898aeba8579b6e9f0d63"
+    ]
+  },
+  {
+    "date": "2026-07-22",
+    "title": "OpenAI Opens ChatGPT to Advertisers",
+    "summary": "OpenAI launched a way for businesses to buy ads inside ChatGPT, the chatbot hundreds of millions of people use daily.",
+    "source_urls": [
+      "https://ads.openai.com/"
+    ]
+  },
+  {
+    "date": "2026-07-22",
+    "title": "Google Ships Faster, Cheaper Gemini Flash Models",
+    "summary": "Google released Gemini 3.",
+    "source_urls": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/"
+    ]
+  },
+  {
+    "date": "2026-07-22",
+    "title": "EU's Top Court Rules VPNs Are Lawful Tools",
+    "summary": "In a copyright case, the European Union's highest court ruled that VPNs — software that hides your internet location — are legitimate technical tools and not evidence of wrongdoing on their own.",
+    "source_urls": [
+      "https://www.techradar.com/vpn/vpn-privacy-security/vpns-are-lawful-technical-tools-says-eu-court-in-landmark-anne-frank-copyright-ruling"
+    ]
+  },
+  {
+    "date": "2026-07-22",
+    "title": "GitHub's Community Passes $100 Million for Open-Source Maintainers",
+    "summary": "GitHub said its Sponsors program has now channeled more than $100 million from companies and individuals to the volunteers who build and maintain free, open-source software.",
+    "source_urls": [
+      "https://github.blog/open-source/maintainers/100-million-for-open-source-a-milestone-built-by-the-community/"
+    ]
+  },
+  {
+    "date": "2026-07-22",
+    "title": "Inside the Simulators Teaching Robots to Move",
+    "summary": "NVIDIA published an overview of how 'physical AI' — robots and self-driving systems — is trained largely in simulation, where a virtual robot can practice walking or grasping millions of times before touching the real world.",
+    "source_urls": [
+      "https://huggingface.co/blog/nvidia/state-of-simulation-for-physical-ai"
+    ]
+  },
+  {
+    "date": "2026-07-22",
+    "title": "OpenAI and Hugging Face Detail an AI-Driven Break-In",
+    "summary": "Previously covered on 2026-07-17: Hugging Face disclosed that attackers, aided by AI acting largely on its own, broke into part of its production systems.",
+    "source_urls": [
+      "https://openai.com/index/hugging-face-model-evaluation-security-incident/"
     ]
   }
 ]
