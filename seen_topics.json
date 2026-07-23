@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-07-15",
-    "title": "The AI Data-Center Boom Is Raising Your Electricity Bill",
-    "summary": "A Fortune analysis found that the rapid build-out of data centers — much of it to power AI — has pushed roughly $23 billion in higher electricity costs onto ordinary utility customers, as grids strain to keep up with demand.",
-    "source_urls": [
-      "https://fortune.com/2026/07/14/data-centers-23-billion-electricity-bills/"
-    ]
-  },
-  {
-    "date": "2026-07-15",
-    "title": "A Capable AI Model That Runs Entirely on Your Phone",
-    "summary": "A team released Bonsai 27B, an AI model in the same size class as many cloud services that runs directly on a phone — no internet connection and nothing sent to a company's servers.",
-    "source_urls": [
-      "https://prismml.com/news/bonsai-27b"
-    ]
-  },
-  {
-    "date": "2026-07-15",
-    "title": "Microsoft Patches a Record 570 Security Flaws",
-    "summary": "Microsoft's monthly security update fixed 570 vulnerabilities at once — the most it has ever addressed in a single batch.",
-    "source_urls": [
-      "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/"
-    ]
-  },
-  {
-    "date": "2026-07-15",
-    "title": "A Flaw in Tailscale's Popular Networking Tool Allowed Root Access",
-    "summary": "Tailscale, a widely used tool that lets companies connect their computers securely, disclosed a bug in its SSH feature that could have let an attacker gain full control of a machine.",
-    "source_urls": [
-      "https://tailscale.com/security-bulletins"
-    ]
-  },
-  {
-    "date": "2026-07-15",
-    "title": "AI Cracks 20 Long-Standing Math Problems at Once",
-    "summary": "Researchers pointed 20 copies of OpenAI's Codex, running in parallel, at a famous list of unsolved problems posed by mathematician Paul Erdős — and reported solutions to 20 of them.",
-    "source_urls": [
-      "https://www.starfleetmath.com/"
-    ]
-  },
-  {
-    "date": "2026-07-15",
-    "title": "Dependabot Adds a Cooldown Before Adopting New Package Versions",
-    "summary": "GitHub's Dependabot — the bot that automatically suggests updates to the third-party code libraries a project depends on — now waits a built-in 'cooldown' period before proposing a brand-new release, rather than pulling it in the moment it appears.",
-    "source_urls": [
-      "https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown/"
-    ]
-  },
-  {
-    "date": "2026-07-15",
-    "title": "A Developer Trained an AI 'World Model' to Play Super Mario Bros.",
-    "summary": "A developer built LeMario, a JEPA-style world model trained on Super Mario Bros.",
-    "source_urls": [
-      "https://www.benjamin-bai.com/projects/lemario"
-    ]
-  },
-  {
     "date": "2026-07-16",
     "title": "Thinking Machines Releases Its First Open Model, Inkling",
     "summary": "Thinking Machines, the AI startup founded by OpenAI's former research lead Mira Murati, released Inkling — its first model with 'open weights,' meaning anyone can download it and run it on their own computers for free rather than renting access through a company's website.",
@@ -413,6 +357,62 @@
     "summary": "Previously covered on 2026-07-17: Hugging Face disclosed that attackers, aided by AI acting largely on its own, broke into part of its production systems.",
     "source_urls": [
       "https://openai.com/index/hugging-face-model-evaluation-security-incident/"
+    ]
+  },
+  {
+    "date": "2026-07-23",
+    "title": "A Top Mathematician Checks the AI's Claimed Math Breakthrough",
+    "summary": "Previously covered on 2026-07-20: a counterexample to the long-unsolved Jacobian Conjecture was reportedly produced with help from Claude Fable, one of Anthropic's newest models.",
+    "source_urls": [
+      "https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56"
+    ]
+  },
+  {
+    "date": "2026-07-23",
+    "title": "GitHub Now Charges Copilot Users the Same Rates as the Raw AI",
+    "summary": "GitHub is changing how it bills its Copilot coding assistant, passing along the underlying AI model costs at the same listed rates you'd pay to use those models directly.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for/"
+    ]
+  },
+  {
+    "date": "2026-07-23",
+    "title": "GitHub Overhauls the Program That Pays Hackers to Find Bugs",
+    "summary": "GitHub is restructuring its 'bug bounty' program — the system that pays independent security researchers to report flaws instead of exploiting them.",
+    "source_urls": [
+      "https://github.blog/security/next-chapter-restructuring-githubs-bug-bounty-program/"
+    ]
+  },
+  {
+    "date": "2026-07-23",
+    "title": "Tech Commentator John C. Dvorak Has Died",
+    "summary": "John C.",
+    "source_urls": [
+      "https://twitter.com/na_announce/status/2079952538040672302"
+    ]
+  },
+  {
+    "date": "2026-07-23",
+    "title": "A New Tool Teaches a Small AI Model to Know When It's Wrong",
+    "summary": "Developers released Cactus Hybrid, a system that trains a compact AI model to recognize when it isn't confident and hand the question off to a more capable model instead of guessing.",
+    "source_urls": [
+      "https://github.com/cactus-compute/cactus-hybrid"
+    ]
+  },
+  {
+    "date": "2026-07-23",
+    "title": "GigaToken: Making the First Step of AI Text Processing Far Faster",
+    "summary": "Before an AI model reads your text, that text is broken into small pieces called tokens — a step called tokenization.",
+    "source_urls": [
+      "https://github.com/marcelroed/gigatoken/"
+    ]
+  },
+  {
+    "date": "2026-07-23",
+    "title": "Running Hugging Face Models at Full Speed Inside vLLM",
+    "summary": "Hugging Face and the vLLM project detailed a new backend that lets models defined in the popular Transformers library run at native speed inside vLLM, a system built to serve AI models to many users quickly.",
+    "source_urls": [
+      "https://huggingface.co/blog/native-speed-vllm-transformers-backend"
     ]
   }
 ]
