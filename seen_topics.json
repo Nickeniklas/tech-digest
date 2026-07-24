@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-07-16",
-    "title": "Thinking Machines Releases Its First Open Model, Inkling",
-    "summary": "Thinking Machines, the AI startup founded by OpenAI's former research lead Mira Murati, released Inkling — its first model with 'open weights,' meaning anyone can download it and run it on their own computers for free rather than renting access through a company's website.",
-    "source_urls": [
-      "https://thinkingmachines.ai/news/introducing-inkling/"
-    ]
-  },
-  {
-    "date": "2026-07-16",
-    "title": "xAI Opens Up the Code Behind Its Grok Coding Tool",
-    "summary": "Elon Musk's xAI published the full source code for Grok Build, its command-line assistant that helps developers write and edit software.",
-    "source_urls": [
-      "https://github.com/xai-org/grok-build"
-    ]
-  },
-  {
-    "date": "2026-07-16",
-    "title": "A New Yardstick for How Human Voice Assistants Actually Sound",
-    "summary": "Hugging Face released Real World VoiceEQ, a test that measures how natural and human a voice AI feels to real people, not just whether it gets the words right.",
-    "source_urls": [
-      "https://huggingface.co/blog/real-world-voiceeq"
-    ]
-  },
-  {
-    "date": "2026-07-16",
-    "title": "A Full Firefox Web Browser Now Runs Inside a Web Page",
-    "summary": "Developers got the Firefox browser running entirely inside another browser tab, using a technology called WebAssembly that lets heavy desktop software run on a web page.",
-    "source_urls": [
-      "https://developer.puter.com/labs/firefox-wasm/"
-    ]
-  },
-  {
-    "date": "2026-07-16",
-    "title": "Running a Modern AI Model on a 13-Year-Old Server, No GPU",
-    "summary": "A tinkerer got Gemma 4 26B — a sizeable open model from Google — generating text at about 5 words per second on a 2013-era Xeon server with no graphics card, relying only on ordinary system memory and a lot of careful tuning.",
-    "source_urls": [
-      "https://www.neomindlabs.com/2026/06/08/running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu/"
-    ]
-  },
-  {
-    "date": "2026-07-16",
-    "title": "Why Automatically Routing Requests to Cheaper AI Models Is Harder Than It Looks",
-    "summary": "IBM researchers, writing on Hugging Face, walked through why a seemingly simple idea — send easy questions to a cheap AI model and hard ones to an expensive model — keeps tripping teams up.",
-    "source_urls": [
-      "https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt"
-    ]
-  },
-  {
     "date": "2026-07-17",
     "title": "Hugging Face Catches an AI-Driven Break-In",
     "summary": "Hugging Face, the company that hosts much of the world's open AI models, disclosed that attackers broke into part of its production systems — and that this intrusion was driven by AI acting on its own, moving faster than the human attacks the team had handled before.",
@@ -413,6 +365,62 @@
     "summary": "Hugging Face and the vLLM project detailed a new backend that lets models defined in the popular Transformers library run at native speed inside vLLM, a system built to serve AI models to many users quickly.",
     "source_urls": [
       "https://huggingface.co/blog/native-speed-vllm-transformers-backend"
+    ]
+  },
+  {
+    "date": "2026-07-24",
+    "title": "DARPA and the Air Force Fly an AI-Controlled F-16",
+    "summary": "DARPA and the U.",
+    "source_urls": [
+      "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16"
+    ]
+  },
+  {
+    "date": "2026-07-24",
+    "title": "Startups Urge Washington Not to Cut Off Chinese Open AI Models",
+    "summary": "A group of U.",
+    "source_urls": [
+      "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992"
+    ]
+  },
+  {
+    "date": "2026-07-24",
+    "title": "Report: AI Companies Are Hiding a Lot of Debt",
+    "summary": "A new report argues that some of the biggest names in AI are keeping large amounts of debt off their main balance sheets, often through financing tied to data centers and chips.",
+    "source_urls": [
+      "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet"
+    ]
+  },
+  {
+    "date": "2026-07-24",
+    "title": "GitHub's Dependabot Now Waits Before Pushing Software Updates",
+    "summary": "GitHub changed its automated update tool, Dependabot, to wait three days by default before recommending a new version of a software component.",
+    "source_urls": [
+      "https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/"
+    ]
+  },
+  {
+    "date": "2026-07-24",
+    "title": "Astronomers May Have Found the First Exomoon",
+    "summary": "Using ground-based telescopes, scientists reported possible signs of a moon orbiting a planet in another solar system — something that has never been confirmed before.",
+    "source_urls": [
+      "https://www.eso.org/public/news/eso2610/"
+    ]
+  },
+  {
+    "date": "2026-07-24",
+    "title": "Running 4-Bit Image Models Directly in Diffusers",
+    "summary": "Hugging Face added native support for Nunchaku, a method that squeezes image-generation models down to 4-bit precision so they run faster and use far less memory.",
+    "source_urls": [
+      "https://huggingface.co/blog/nunchaku-diffusers"
+    ]
+  },
+  {
+    "date": "2026-07-24",
+    "title": "Grabette: Recording Robot Training Data With Your Own Hands",
+    "summary": "Hugging Face released Grabette, an open system for capturing how a human hand manipulates objects and turning that into a dataset for training robots.",
+    "source_urls": [
+      "https://huggingface.co/blog/grabette"
     ]
   }
 ]
