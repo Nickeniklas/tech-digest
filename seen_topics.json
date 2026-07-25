@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-07-17",
-    "title": "Hugging Face Catches an AI-Driven Break-In",
-    "summary": "Hugging Face, the company that hosts much of the world's open AI models, disclosed that attackers broke into part of its production systems — and that this intrusion was driven by AI acting on its own, moving faster than the human attacks the team had handled before.",
-    "source_urls": [
-      "https://huggingface.co/blog/security-incident-july-2026"
-    ]
-  },
-  {
-    "date": "2026-07-17",
-    "title": "A New Free AI Model Claims Frontier-Level Smarts: Kimi K3",
-    "summary": "The team behind Kimi released K3, an open model they describe as 'frontier intelligence' — meaning it aims to match the quality of the paid systems from OpenAI and Google, while being free to download and run.",
-    "source_urls": [
-      "https://www.kimi.com/blog/kimi-k3"
-    ]
-  },
-  {
-    "date": "2026-07-17",
-    "title": "Google Folds NotebookLM Into Gemini",
-    "summary": "Google is renaming NotebookLM — its popular tool for turning your own documents into summaries, study guides, and audio overviews — to 'Gemini Notebook,' bringing it under the same brand as its main AI assistant.",
-    "source_urls": [
-      "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/"
-    ]
-  },
-  {
-    "date": "2026-07-17",
-    "title": "LM Studio Adds an AI 'Agent' for Models You Run Yourself",
-    "summary": "LM Studio, an app that lets people run AI models on their own computer, launched Bionic — an agent that can carry out multi-step tasks using those local models rather than a cloud service.",
-    "source_urls": [
-      "https://lmstudio.ai/blog/introducing-lm-studio-bionic"
-    ]
-  },
-  {
-    "date": "2026-07-17",
-    "title": "NVIDIA's New Retrieval Model Tops the RTEB Leaderboard",
-    "summary": "NVIDIA released Nemotron 3 Embed, an 'embedding' model — the piece that helps AI find the right document to answer a question — and it now ranks first overall on RTEB, a public benchmark for retrieval quality.",
-    "source_urls": [
-      "https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb"
-    ]
-  },
-  {
-    "date": "2026-07-17",
-    "title": "Scaling 'Zero' Reinforcement Learning to a Trillion Parameters",
-    "summary": "Researchers behind Ring-Zero describe training a one-trillion-parameter model using reinforcement learning from scratch — 'zero RL,' meaning the model learns to reason by trial and error rather than by copying human-written examples.",
-    "source_urls": [
-      "https://arxiv.org/abs/2607.12395"
-    ]
-  },
-  {
     "date": "2026-07-18",
     "title": "Google's Drug AI Moves Beyond Predicting Proteins to Designing Medicines",
     "summary": "Isomorphic Labs, the drug-discovery company spun out of Google DeepMind, unveiled a 'drug design engine' it says goes a step beyond AlphaFold — the protein-structure tool that won a Nobel Prize.",
@@ -421,6 +373,62 @@
     "summary": "Hugging Face released Grabette, an open system for capturing how a human hand manipulates objects and turning that into a dataset for training robots.",
     "source_urls": [
       "https://huggingface.co/blog/grabette"
+    ]
+  },
+  {
+    "date": "2026-07-25",
+    "title": "Anthropic Releases Claude Opus 5, Its New Top-Tier Model",
+    "summary": "Anthropic released Claude Opus 5, the newest version of its most capable model.",
+    "source_urls": [
+      "https://www.anthropic.com/news/claude-opus-5"
+    ]
+  },
+  {
+    "date": "2026-07-25",
+    "title": "India's First Private Rocket Reaches Orbit on Its Debut",
+    "summary": "A privately built Indian rocket reached orbit on its very first launch — a rare success, since most new rockets fail their debut flight.",
+    "source_urls": [
+      "https://arstechnica.com/space/2026/07/indias-first-privately-developed-rocket-reaches-orbit-on-dramatic-debut-launch/"
+    ]
+  },
+  {
+    "date": "2026-07-25",
+    "title": "Firefox Previews a Way to Keep Your Browsing Separate",
+    "summary": "Mozilla is previewing 'Containers' in Firefox, which lets you keep different parts of your online life — work, personal, shopping — walled off in the same browser so sites can't easily track you across them.",
+    "source_urls": [
+      "https://blog.mozilla.org/en/firefox/firefox-containers-preview/"
+    ]
+  },
+  {
+    "date": "2026-07-25",
+    "title": "India Orders GitHub to Remove Jack Dorsey's Bitchat App",
+    "summary": "The Indian government told GitHub to take down Bitchat, a messaging app backed by Twitter co-founder Jack Dorsey that lets phones talk directly over Bluetooth without the internet.",
+    "source_urls": [
+      "https://www.thehindu.com/news/national/government-orders-github-to-remove-bluetooth-based-chat-app-bitchat-over-security-concerns-jack-dorsey/article71262049.ece"
+    ]
+  },
+  {
+    "date": "2026-07-25",
+    "title": "Nvidia, Microsoft and Meta Push Back on Regulating Open AI Models",
+    "summary": "Three of the biggest names in tech publicly warned governments against heavily regulating 'open-weight' AI models — the kind anyone can download and run themselves.",
+    "source_urls": [
+      "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html"
+    ]
+  },
+  {
+    "date": "2026-07-25",
+    "title": "Postgres's Built-In Notifications Scale Better Than Their Reputation",
+    "summary": "A common trick for making apps react instantly to database changes — Postgres's built-in LISTEN/NOTIFY feature — has long been assumed to buckle under heavy load.",
+    "source_urls": [
+      "https://www.dbos.dev/blog/postgres-listen-notify-scalability"
+    ]
+  },
+  {
+    "date": "2026-07-25",
+    "title": "Where Opus 5 Fits in Anthropic's Model Lineup",
+    "summary": "Opus 5 sits in Anthropic's high-end 'Opus' tier.",
+    "source_urls": [
+      "https://www.anthropic.com/news/claude-opus-5"
     ]
   }
 ]
