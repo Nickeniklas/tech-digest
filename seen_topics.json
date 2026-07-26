@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-07-18",
-    "title": "Google's Drug AI Moves Beyond Predicting Proteins to Designing Medicines",
-    "summary": "Isomorphic Labs, the drug-discovery company spun out of Google DeepMind, unveiled a 'drug design engine' it says goes a step beyond AlphaFold — the protein-structure tool that won a Nobel Prize.",
-    "source_urls": [
-      "https://www.isomorphiclabs.com/articles/the-isomorphic-labs-drug-design-engine-unlocks-a-new-frontier"
-    ]
-  },
-  {
-    "date": "2026-07-18",
-    "title": "Nurses Say AI and Monitoring Are Making Care Worse, Not Better",
-    "summary": "Kaiser Permanente nurses report that new AI tools and workplace surveillance are adding to their workload and getting between them and their patients, rather than helping.",
-    "source_urls": [
-      "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse/"
-    ]
-  },
-  {
-    "date": "2026-07-18",
-    "title": "Anthropic Asks the Public for Its Hardest Questions About AI",
-    "summary": "Anthropic, the company behind the Claude assistant, is inviting people to send in their toughest questions about AI and says it will publish its answers.",
-    "source_urls": [
-      "https://www.anthropic.com/news/hard-questions"
-    ]
-  },
-  {
-    "date": "2026-07-18",
-    "title": "Popular Home Cameras Leaked Their Owners' Location for Six Years",
-    "summary": "Security researchers found that TP-Link's Kasa EC71 cameras broadcast their home's GPS coordinates over the internet with no password protection — a flaw that sat unnoticed for about six years.",
-    "source_urls": [
-      "https://github.com/BadChemical/IoT-Vulnerability-Research-Public/blob/main/TP-Link_Kasa_EC71/Kasa_EC71.md"
-    ]
-  },
-  {
-    "date": "2026-07-18",
-    "title": "Astronomers Find the First Atmosphere Around an Earth-Like Planet",
-    "summary": "Using the James Webb telescope, scientists detected an atmosphere around a rocky, Earth-sized planet orbiting in the zone where liquid water could exist.",
-    "source_urls": [
-      "https://www.bbc.com/news/articles/cy4kdd1e0ejo"
-    ]
-  },
-  {
-    "date": "2026-07-18",
-    "title": "Fine-Tuning Image and Video AI Models at Scale Gets a Standard Recipe",
-    "summary": "NVIDIA and Hugging Face released a workflow that lets teams fine-tune large image- and video-generation models — such as FLUX — across many GPUs, using NVIDIA's NeMo Automodel together with Hugging Face's Diffusers library.",
-    "source_urls": [
-      "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel"
-    ]
-  },
-  {
-    "date": "2026-07-18",
-    "title": "How GitHub Gave 14,000 Repositories a Clear Owner in Under 45 Days",
-    "summary": "GitHub described how, of its more than 14,000 internal code repositories, fewer than half had a clearly defined owner.",
-    "source_urls": [
-      "https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/"
-    ]
-  },
-  {
     "date": "2026-07-19",
     "title": "An AI Model Helped Close a 30-Year-Old Math Problem",
     "summary": "Days after OpenAI reported that its systems contributed to a research proof, mathematicians on Reddit documented how a single prompt to GPT-5.",
@@ -429,6 +373,62 @@
     "summary": "Opus 5 sits in Anthropic's high-end 'Opus' tier.",
     "source_urls": [
       "https://www.anthropic.com/news/claude-opus-5"
+    ]
+  },
+  {
+    "date": "2026-07-26",
+    "title": "Cloudflare Lets Websites Block or Charge AI Crawlers",
+    "summary": "Cloudflare, which sits in front of a large share of the world's websites, rolled out new controls that let site owners decide how AI companies' bots may use their content — allow them, block them, or charge them per visit.",
+    "source_urls": [
+      "https://blog.cloudflare.com/content-independence-day-ai-options/"
+    ]
+  },
+  {
+    "date": "2026-07-26",
+    "title": "Thinking Machines Releases Its First Model, Inkling",
+    "summary": "Thinking Machines, the high-profile startup founded by former OpenAI leaders, published its first model, Inkling, on Hugging Face.",
+    "source_urls": [
+      "https://huggingface.co/blog/thinkingmachines-inkling"
+    ]
+  },
+  {
+    "date": "2026-07-26",
+    "title": "Bitchat Resurfaces After India's Takedown Order",
+    "summary": "Previously covered on 2026-07-25: India ordered GitHub to remove Bitchat, Jack Dorsey's Bluetooth-based messaging app.",
+    "source_urls": [
+      "https://radicle.network/nodes/rosa.radicle.network/rad%3Az2v9tRJz1oknFAqCSY5W5c76nVvm6"
+    ]
+  },
+  {
+    "date": "2026-07-26",
+    "title": "A Top Law School Rethinks How It Teaches for the AI Era",
+    "summary": "The University of Chicago Law School published a strategy for how legal education should change now that AI can draft, research, and review documents.",
+    "source_urls": [
+      "https://www.law.uchicago.edu/news/ai-strategy-statement"
+    ]
+  },
+  {
+    "date": "2026-07-26",
+    "title": "GM Bets on Sodium Batteries for the Power Grid",
+    "summary": "General Motors is backing sodium-ion batteries — which swap out the scarce lithium found in most batteries for cheap, abundant salt — to store energy for the US electric grid.",
+    "source_urls": [
+      "https://spectrum.ieee.org/sodium-ion-battery-peak-energy"
+    ]
+  },
+  {
+    "date": "2026-07-26",
+    "title": "Running a 28.9M-Parameter Language Model on an $8 Chip",
+    "summary": "A developer got a small language model — 28.",
+    "source_urls": [
+      "https://github.com/slvDev/esp32-ai"
+    ]
+  },
+  {
+    "date": "2026-07-26",
+    "title": "Why Automatically Picking the Right AI Model Is Harder Than It Looks",
+    "summary": "IBM researchers dug into 'model routing' — the idea of automatically sending each question to the cheapest AI model that can still answer it well, and only escalating hard ones to an expensive model.",
+    "source_urls": [
+      "https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt"
     ]
   }
 ]
