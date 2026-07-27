@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-07-19",
-    "title": "An AI Model Helped Close a 30-Year-Old Math Problem",
-    "summary": "Days after OpenAI reported that its systems contributed to a research proof, mathematicians on Reddit documented how a single prompt to GPT-5.",
-    "source_urls": [
-      "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/"
-    ]
-  },
-  {
-    "date": "2026-07-19",
-    "title": "New York Tells Landlords: No AI-Faked Apartment Photos",
-    "summary": "New York City's mayor said landlords can't quietly use AI-generated or heavily altered images to advertise rental units without disclosing it.",
-    "source_urls": [
-      "https://petapixel.com/2026/07/16/mayor-mamdani-says-landlords-cant-secretly-use-ai-images-to-advertise-properties/"
-    ]
-  },
-  {
-    "date": "2026-07-19",
-    "title": "LG Monitors Quietly Installed Software Through Windows Update",
-    "summary": "Owners discovered that some LG monitors pushed their own software onto Windows PCs automatically, routed through the normal Windows Update process, without asking permission first.",
-    "source_urls": [
-      "https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent"
-    ]
-  },
-  {
-    "date": "2026-07-19",
-    "title": "One Chart Shows How AI Reshaped Stack Overflow",
-    "summary": "A single graph, drawn straight from Stack Overflow's own public data, shows how sharply activity on the long-running programming Q&A site has fallen since AI chatbots arrived — developers increasingly ask an assistant instead of posting a question.",
-    "source_urls": [
-      "https://data.stackexchange.com/stackoverflow/query/1953768#graph"
-    ]
-  },
-  {
-    "date": "2026-07-19",
-    "title": "The Cost of Saying Yes to New Code Has Changed",
-    "summary": "GitHub's engineering team argues that AI has made writing code cheap, but owning it — maintaining, securing, and understanding it over years — just as expensive as ever.",
-    "source_urls": [
-      "https://github.blog/engineering/the-cost-of-saying-yes-has-changed/"
-    ]
-  },
-  {
-    "date": "2026-07-19",
-    "title": "Why Better Tools Made Copilot's Code Review Worse — Then Better",
-    "summary": "GitHub describes rebuilding how its Copilot code-review agent works.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/"
-    ]
-  },
-  {
     "date": "2026-07-20",
     "title": "Leaning on AI for Answers Can Make You More Confident and Less Right",
     "summary": "A new study found that people who received AI advice ended up more confident in their answers but actually less accurate.",
@@ -429,6 +381,62 @@
     "summary": "IBM researchers dug into 'model routing' — the idea of automatically sending each question to the cheapest AI model that can still answer it well, and only escalating hard ones to an expensive model.",
     "source_urls": [
       "https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt"
+    ]
+  },
+  {
+    "date": "2026-07-27",
+    "title": "A Phone Wiped Itself at the Airport. Now Its Owner Is Facing Charges.",
+    "summary": "US prosecutors have charged an Atlanta man after his phone erased its own contents during a border search at the airport.",
+    "source_urls": [
+      "https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html"
+    ]
+  },
+  {
+    "date": "2026-07-27",
+    "title": "GitHub: Making Things Got Cheap, Keeping Them Didn't",
+    "summary": "GitHub's engineering team published a framework for deciding which projects are actually worth saying yes to now that AI has made building software fast and cheap.",
+    "source_urls": [
+      "https://github.blog/engineering/the-cost-of-saying-yes-has-changed/"
+    ]
+  },
+  {
+    "date": "2026-07-27",
+    "title": "A New Test for Whether Voice AI Actually Sounds Human",
+    "summary": "Hugging Face released Real World VoiceEQ, a way to measure the human quality of AI voices rather than just their accuracy.",
+    "source_urls": [
+      "https://huggingface.co/blog/real-world-voiceeq"
+    ]
+  },
+  {
+    "date": "2026-07-27",
+    "title": "The Grey Market Reselling Access to AI Models",
+    "summary": "A new analysis maps the 'relay' market — intermediaries who buy access to AI models in bulk and resell it cheaply, often on top of stolen or fraudulently obtained accounts.",
+    "source_urls": [
+      "https://vectoral.com/blog/token-relay-market"
+    ]
+  },
+  {
+    "date": "2026-07-27",
+    "title": "GitHub Copilot Adds Canvases, a Shared Workspace for AI Tasks",
+    "summary": "GitHub introduced canvases, which turn a chat with an AI assistant into an interactive workspace where you can lay out information, walk through a workflow, and act on it in place.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/how-to-build-interactive-experiences-with-canvases/"
+    ]
+  },
+  {
+    "date": "2026-07-27",
+    "title": "Vercel's Scriptc Compiles TypeScript Straight to a Native Binary",
+    "summary": "Vercel Labs published Scriptc, a compiler that turns TypeScript into a native executable without bundling a JavaScript engine inside it.",
+    "source_urls": [
+      "https://github.com/vercel-labs/scriptc"
+    ]
+  },
+  {
+    "date": "2026-07-27",
+    "title": "Automated Proofs Are Now Practical Enough for Real Code",
+    "summary": "Adam Langley walked through applying automated proof tools to zstd, the compression library that quietly runs inside a large share of modern software.",
+    "source_urls": [
+      "https://www.imperialviolet.org/2026/07/26/zstd-lean.html"
     ]
   }
 ]
