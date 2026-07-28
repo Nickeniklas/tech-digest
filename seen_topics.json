@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-07-20",
-    "title": "Leaning on AI for Answers Can Make You More Confident and Less Right",
-    "summary": "A new study found that people who received AI advice ended up more confident in their answers but actually less accurate.",
-    "source_urls": [
-      "https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study"
-    ]
-  },
-  {
-    "date": "2026-07-20",
-    "title": "Alibaba Releases Qwen 3.8, Its Latest Free-to-Download AI Model",
-    "summary": "Alibaba put out Qwen 3.",
-    "source_urls": [
-      "https://twitter.com/Alibaba_Qwen/status/2078759124914098291"
-    ]
-  },
-  {
-    "date": "2026-07-20",
-    "title": "Kimi K3 Demand Is So High Its Maker Paused New Subscriptions",
-    "summary": "Previously covered on 2026-07-17: Moonshot's Kimi K3 launched as a free, downloadable model claiming frontier-level quality.",
-    "source_urls": [
-      "https://twitter.com/kimi_moonshot/status/2078855608565207130"
-    ]
-  },
-  {
-    "date": "2026-07-20",
-    "title": "Ollama Bets on Open Models as the Releases Pile Up",
-    "summary": "Ollama, a popular app for running AI models directly on your own computer, published a post firmly backing open models — the kind you download rather than rent from a company's website.",
-    "source_urls": [
-      "https://ollama.com/blog/all-aboard-open-models"
-    ]
-  },
-  {
-    "date": "2026-07-20",
-    "title": "Minecraft's Java Edition Switches to SDL3",
-    "summary": "Minecraft's Java edition now runs on SDL3, a widely used open-source toolkit for handling windows, input, and sound.",
-    "source_urls": [
-      "https://www.minecraft.net/en-us/article/minecraft-26-3-snapshot-4"
-    ]
-  },
-  {
-    "date": "2026-07-20",
-    "title": "Claude Code Rebuilt on Bun, With Rust Under the Hood",
-    "summary": "Anthropic's command-line coding tool, Claude Code, now runs on Bun — a faster JavaScript runtime — with performance-critical parts written in Rust, a language prized for speed and tight memory control.",
-    "source_urls": [
-      "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/"
-    ]
-  },
-  {
-    "date": "2026-07-20",
-    "title": "An AI Model Reportedly Cracked a Long-Standing Algebra Puzzle",
-    "summary": "A mathematician reported that Claude Fable, one of Anthropic's newest models, produced a counterexample to the Jacobian Conjecture — a decades-old open problem in algebra about when a certain kind of polynomial map can be run in reverse.",
-    "source_urls": [
-      "https://xcancel.com/__alpoge__/status/2079028340955197566"
-    ]
-  },
-  {
     "date": "2026-07-21",
     "title": "A Hacker Erased Romania's National Land Registry",
     "summary": "An attacker broke into Romania's national land registry and wiped its database — the official record of who owns which piece of property across the country.",
@@ -437,6 +381,62 @@
     "summary": "Adam Langley walked through applying automated proof tools to zstd, the compression library that quietly runs inside a large share of modern software.",
     "source_urls": [
       "https://www.imperialviolet.org/2026/07/26/zstd-lean.html"
+    ]
+  },
+  {
+    "date": "2026-07-28",
+    "title": "A $500 Tune-Up Made a Small AI Model Beat the Big Ones",
+    "summary": "A team fine-tuned a small open AI model — one anyone can download and run — for about $500, and it outperformed the leading commercial models at reviewing product catalogue entries.",
+    "source_urls": [
+      "https://fermisense.com/when-machines-take-the-wheel/"
+    ]
+  },
+  {
+    "date": "2026-07-28",
+    "title": "Anthropic Sets Out Where It Stands on Open AI Models",
+    "summary": "Anthropic published its position on open-weight models — the kind you can download and run yourself, rather than rent through a company's website.",
+    "source_urls": [
+      "https://www.anthropic.com/news/position-open-weights-models"
+    ]
+  },
+  {
+    "date": "2026-07-28",
+    "title": "A Missing Underscore Sent the Wrong Man to Prison for 18 Months",
+    "summary": "Police searching a database typed a username without one underscore character, matched the wrong person, and an innocent man spent 18 months behind bars.",
+    "source_urls": [
+      "https://arstechnica.com/tech-policy/2026/07/police-missed-one-underscore-and-sent-the-wrong-man-to-prison/"
+    ]
+  },
+  {
+    "date": "2026-07-28",
+    "title": "A Researcher Took Control of an Entire Truck Fleet Platform",
+    "summary": "A security researcher found flaws in the online platform Volvo-owned Eicher uses to manage commercial vehicles, and was able to reach every user account and vehicle on it.",
+    "source_urls": [
+      "https://eaton-works.com/2026/07/27/my-eicher-hack/"
+    ]
+  },
+  {
+    "date": "2026-07-28",
+    "title": "NVIDIA Builds a Surgical Simulator That Runs in Real Time",
+    "summary": "NVIDIA released Cosmos-H-Dreams, a system that generates a realistic surgical scene fast enough to respond as it is being used, so robotic surgery systems can practise against it live rather than replaying recordings.",
+    "source_urls": [
+      "https://huggingface.co/blog/nvidia/cosmos-h-dreams"
+    ]
+  },
+  {
+    "date": "2026-07-28",
+    "title": "The Harness Matters More Than the Model",
+    "summary": "GitHub published the working method behind its Copilot team's own development: a fixed loop of prototype, plan, implement, review, with the AI slotted into each step rather than treated as a separate tool to switch to.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly/"
+    ]
+  },
+  {
+    "date": "2026-07-28",
+    "title": "Voice Dictation on a Mac With Nothing to Download",
+    "summary": "A developer released Yap, an open-source dictation tool for macOS that uses the speech-recognition models already built into the operating system.",
+    "source_urls": [
+      "https://github.com/FrigadeHQ/yap"
     ]
   }
 ]
