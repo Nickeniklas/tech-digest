@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-07-21",
-    "title": "A Hacker Erased Romania's National Land Registry",
-    "summary": "An attacker broke into Romania's national land registry and wiped its database — the official record of who owns which piece of property across the country.",
-    "source_urls": [
-      "https://news.risky.biz/risky-bulletin-hacker-wipes-romanias-entire-land-registry-database/"
-    ]
-  },
-  {
-    "date": "2026-07-21",
-    "title": "NVIDIA Builds an AI That Learns How the Physical World Moves",
-    "summary": "NVIDIA released Cosmos 3 Edge, a model that predicts how a scene will change so robots, warehouse machines, and self-driving systems can anticipate what happens next instead of only reacting.",
-    "source_urls": [
-      "https://huggingface.co/blog/nvidia/cosmos3edge"
-    ]
-  },
-  {
-    "date": "2026-07-21",
-    "title": "A Small, Specialised Model Still Beats the Big New Ones",
-    "summary": "Dharma AI showed that its compact text-recognition model, tuned specifically for Brazilian Portuguese, still reads scanned documents in that language more accurately than newer general-purpose systems.",
-    "source_urls": [
-      "https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages"
-    ]
-  },
-  {
-    "date": "2026-07-21",
-    "title": "Surveillance-Camera Maker Accused of Misleading Officials",
-    "summary": "The ACLU published findings that Flock Safety, which sells automated license-plate-reading cameras to towns and police departments, repeatedly gave city councils and the public inaccurate claims about how its cameras are used.",
-    "source_urls": [
-      "https://www.aclu.org/news/privacy-technology/tracking-alpr-cameras/flock-safety-credibility-lost-as-it-repeatedly-lies-to-city-councils-police-departments-and-public-across-the-country"
-    ]
-  },
-  {
-    "date": "2026-07-21",
-    "title": "Kimi Launches an AI Assistant Aimed at Office Work",
-    "summary": "Moonshot, the Chinese lab behind the Kimi chatbot, launched Kimi Work — a version pointed at everyday office tasks like handling documents and carrying out multi-step assignments.",
-    "source_urls": [
-      "https://www.kimi.com/products/kimi-work"
-    ]
-  },
-  {
-    "date": "2026-07-21",
-    "title": "Squeezing 85 Billion Calculations a Second Out of One CPU Core",
-    "summary": "A developer hand-optimised the most basic operation in AI — multiplying two grids of numbers, known as a matrix multiply — to run at about 85 billion calculations per second on a single core of an AMD processor, with no graphics card involved.",
-    "source_urls": [
-      "https://github.com/houslast3/85.30-GFLOPS-Single-Core-FP32-Matrix-Multiplication-on-AMD-Zen-3"
-    ]
-  },
-  {
     "date": "2026-07-22",
     "title": "A Court Approves Anthropic's $1.5 Billion Settlement Over Pirated Books",
     "summary": "A federal judge approved a $1.",
@@ -437,6 +389,62 @@
     "summary": "A developer released Yap, an open-source dictation tool for macOS that uses the speech-recognition models already built into the operating system.",
     "source_urls": [
       "https://github.com/FrigadeHQ/yap"
+    ]
+  },
+  {
+    "date": "2026-07-29",
+    "title": "Chip Stocks Slide as Investors Get Nervous About AI",
+    "summary": "Shares in chipmakers fell across the United States and Asia as investors reassessed how much money AI will actually make in the near term.",
+    "source_urls": [
+      "https://www.bbc.com/news/articles/cly8zng43npo"
+    ]
+  },
+  {
+    "date": "2026-07-29",
+    "title": "Andrew Ng Launches a Company Built Around One-to-One Teaching",
+    "summary": "Andrew Ng, one of the best-known figures in AI education, unveiled LearnVector, a company focused on building one-to-one learning experiences rather than the one-size-fits-all courses that dominate online education.",
+    "source_urls": [
+      "https://learnvector.ai/"
+    ]
+  },
+  {
+    "date": "2026-07-29",
+    "title": "Anthropic Used Claude to Find Weaknesses in Encryption",
+    "summary": "Anthropic published research on using Claude to discover flaws in cryptography — the maths that protects your bank transfers, messages, and passwords.",
+    "source_urls": [
+      "https://www.anthropic.com/research/discovering-cryptographic-weaknesses"
+    ]
+  },
+  {
+    "date": "2026-07-29",
+    "title": "GitHub Shuts Down Attack Routes Into the Software Everyone Uses",
+    "summary": "GitHub detailed months of changes to npm and GitHub Actions — the plumbing that pulls free code components into most modern software — aimed at breaking the techniques attackers use to slip malicious code into them.",
+    "source_urls": [
+      "https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/"
+    ]
+  },
+  {
+    "date": "2026-07-29",
+    "title": "Apple Retires Its iPhone Upgrade Program",
+    "summary": "Apple is replacing the iPhone Upgrade Program with a new scheme called Apple Upgrade.",
+    "source_urls": [
+      "https://www.apple.com/shop/iphone/iphone-upgrade-program"
+    ]
+  },
+  {
+    "date": "2026-07-29",
+    "title": "A Minute-by-Minute Account of the July AI Break-In",
+    "summary": "Previously covered on 2026-07-22: Hugging Face disclosed that attackers, aided by AI acting largely on its own, broke into part of its production systems.",
+    "source_urls": [
+      "https://huggingface.co/blog/agent-intrusion-technical-timeline"
+    ]
+  },
+  {
+    "date": "2026-07-29",
+    "title": "New Encoder Models Read Long Documents Fast on an Ordinary CPU",
+    "summary": "Liquid AI released LFM2.",
+    "source_urls": [
+      "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders"
     ]
   }
 ]
