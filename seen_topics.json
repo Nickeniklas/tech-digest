@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-07-22",
-    "title": "A Court Approves Anthropic's $1.5 Billion Settlement Over Pirated Books",
-    "summary": "A federal judge approved a $1.",
-    "source_urls": [
-      "https://apnews.com/article/ai-anthropic-copyright-settlement-claude-books-bartz-74b140444023898aeba8579b6e9f0d63"
-    ]
-  },
-  {
-    "date": "2026-07-22",
-    "title": "OpenAI Opens ChatGPT to Advertisers",
-    "summary": "OpenAI launched a way for businesses to buy ads inside ChatGPT, the chatbot hundreds of millions of people use daily.",
-    "source_urls": [
-      "https://ads.openai.com/"
-    ]
-  },
-  {
-    "date": "2026-07-22",
-    "title": "Google Ships Faster, Cheaper Gemini Flash Models",
-    "summary": "Google released Gemini 3.",
-    "source_urls": [
-      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/"
-    ]
-  },
-  {
-    "date": "2026-07-22",
-    "title": "EU's Top Court Rules VPNs Are Lawful Tools",
-    "summary": "In a copyright case, the European Union's highest court ruled that VPNs — software that hides your internet location — are legitimate technical tools and not evidence of wrongdoing on their own.",
-    "source_urls": [
-      "https://www.techradar.com/vpn/vpn-privacy-security/vpns-are-lawful-technical-tools-says-eu-court-in-landmark-anne-frank-copyright-ruling"
-    ]
-  },
-  {
-    "date": "2026-07-22",
-    "title": "GitHub's Community Passes $100 Million for Open-Source Maintainers",
-    "summary": "GitHub said its Sponsors program has now channeled more than $100 million from companies and individuals to the volunteers who build and maintain free, open-source software.",
-    "source_urls": [
-      "https://github.blog/open-source/maintainers/100-million-for-open-source-a-milestone-built-by-the-community/"
-    ]
-  },
-  {
-    "date": "2026-07-22",
-    "title": "Inside the Simulators Teaching Robots to Move",
-    "summary": "NVIDIA published an overview of how 'physical AI' — robots and self-driving systems — is trained largely in simulation, where a virtual robot can practice walking or grasping millions of times before touching the real world.",
-    "source_urls": [
-      "https://huggingface.co/blog/nvidia/state-of-simulation-for-physical-ai"
-    ]
-  },
-  {
-    "date": "2026-07-22",
-    "title": "OpenAI and Hugging Face Detail an AI-Driven Break-In",
-    "summary": "Previously covered on 2026-07-17: Hugging Face disclosed that attackers, aided by AI acting largely on its own, broke into part of its production systems.",
-    "source_urls": [
-      "https://openai.com/index/hugging-face-model-evaluation-security-incident/"
-    ]
-  },
-  {
     "date": "2026-07-23",
     "title": "A Top Mathematician Checks the AI's Claimed Math Breakthrough",
     "summary": "Previously covered on 2026-07-20: a counterexample to the long-unsolved Jacobian Conjecture was reportedly produced with help from Claude Fable, one of Anthropic's newest models.",
@@ -445,6 +389,62 @@
     "summary": "Liquid AI released LFM2.",
     "source_urls": [
       "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders"
+    ]
+  },
+  {
+    "date": "2026-07-30",
+    "title": "AI Companies Are Recruiting Electricians and Carpenters by the Thousands",
+    "summary": "AI companies are recruiting and training skilled tradespeople — electricians, carpenters and others — in the thousands to build the data centres their models run on.",
+    "source_urls": [
+      "https://www.nytimes.com/2026/07/29/business/economy/data-center-electricians-training.html"
+    ]
+  },
+  {
+    "date": "2026-07-30",
+    "title": "AI's Biggest Startups Have Nearly Stopped Publishing Their Research",
+    "summary": "Science reports that the leading AI startups now publish very little of the research behind their models.",
+    "source_urls": [
+      "https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research"
+    ]
+  },
+  {
+    "date": "2026-07-30",
+    "title": "Allen AI Opens Up Satellite Analysis at Planetary Scale",
+    "summary": "The Allen Institute for AI described OlmoEarth, the system it built to run AI analysis over satellite imagery of the entire planet.",
+    "source_urls": [
+      "https://huggingface.co/blog/allenai/olmoearth-infrastructure"
+    ]
+  },
+  {
+    "date": "2026-07-30",
+    "title": "Long Rulebooks Don't Reliably Keep AI Agents in Line",
+    "summary": "A new paper tested whether lengthy written policy documents actually govern how AI agents behave, and found they don't do it reliably.",
+    "source_urls": [
+      "https://arxiv.org/abs/2607.25398"
+    ]
+  },
+  {
+    "date": "2026-07-30",
+    "title": "The US Science Agency Pilots Four-Year PhDs With Industry Placements",
+    "summary": "The National Science Foundation is piloting a programme with universities and companies to shorten doctorates to four years, with research placements in industry along the way.",
+    "source_urls": [
+      "https://www.nsf.gov/news/nsf-partners-universities-industry-pilot-initiative-four"
+    ]
+  },
+  {
+    "date": "2026-07-30",
+    "title": "A 26-Billion-Parameter Model Running in 2 GB of RAM on a Mac",
+    "summary": "A developer released an open-source engine that runs Gemma 4 26B — a fairly large open model — inside 2 GB of memory on any M-series Mac.",
+    "source_urls": [
+      "https://github.com/drumih/turbo-fieldfare"
+    ]
+  },
+  {
+    "date": "2026-07-30",
+    "title": "Taming the Flood of Automated Dependency Updates",
+    "summary": "GitHub published a practical guide to configuring Dependabot, the tool that automatically proposes updates to the third-party code a project depends on.",
+    "source_urls": [
+      "https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast/"
     ]
   }
 ]
