@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-07-24",
-    "title": "DARPA and the Air Force Fly an AI-Controlled F-16",
-    "summary": "DARPA and the U.",
-    "source_urls": [
-      "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16"
-    ]
-  },
-  {
-    "date": "2026-07-24",
-    "title": "Startups Urge Washington Not to Cut Off Chinese Open AI Models",
-    "summary": "A group of U.",
-    "source_urls": [
-      "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992"
-    ]
-  },
-  {
-    "date": "2026-07-24",
-    "title": "Report: AI Companies Are Hiding a Lot of Debt",
-    "summary": "A new report argues that some of the biggest names in AI are keeping large amounts of debt off their main balance sheets, often through financing tied to data centers and chips.",
-    "source_urls": [
-      "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet"
-    ]
-  },
-  {
-    "date": "2026-07-24",
-    "title": "GitHub's Dependabot Now Waits Before Pushing Software Updates",
-    "summary": "GitHub changed its automated update tool, Dependabot, to wait three days by default before recommending a new version of a software component.",
-    "source_urls": [
-      "https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/"
-    ]
-  },
-  {
-    "date": "2026-07-24",
-    "title": "Astronomers May Have Found the First Exomoon",
-    "summary": "Using ground-based telescopes, scientists reported possible signs of a moon orbiting a planet in another solar system — something that has never been confirmed before.",
-    "source_urls": [
-      "https://www.eso.org/public/news/eso2610/"
-    ]
-  },
-  {
-    "date": "2026-07-24",
-    "title": "Running 4-Bit Image Models Directly in Diffusers",
-    "summary": "Hugging Face added native support for Nunchaku, a method that squeezes image-generation models down to 4-bit precision so they run faster and use far less memory.",
-    "source_urls": [
-      "https://huggingface.co/blog/nunchaku-diffusers"
-    ]
-  },
-  {
-    "date": "2026-07-24",
-    "title": "Grabette: Recording Robot Training Data With Your Own Hands",
-    "summary": "Hugging Face released Grabette, an open system for capturing how a human hand manipulates objects and turning that into a dataset for training robots.",
-    "source_urls": [
-      "https://huggingface.co/blog/grabette"
-    ]
-  },
-  {
     "date": "2026-07-25",
     "title": "Anthropic Releases Claude Opus 5, Its New Top-Tier Model",
     "summary": "Anthropic released Claude Opus 5, the newest version of its most capable model.",
@@ -445,6 +389,62 @@
     "summary": "GitHub put stacked pull requests into public preview.",
     "source_urls": [
       "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/"
+    ]
+  },
+  {
+    "date": "2026-08-01",
+    "title": "Idle Chips Are the AI Industry's Grounded Aircraft",
+    "summary": "A Hugging Face analysis borrows a lesson from aviation: for most of that industry's history, the number that best predicted whether an airline survived was how much of the day each aircraft spent on the ground.",
+    "source_urls": [
+      "https://huggingface.co/blog/Dharma-AI/gpu-management"
+    ]
+  },
+  {
+    "date": "2026-08-01",
+    "title": "Does AI Reasoning Actually Reason?",
+    "summary": "Quanta Magazine looks at a growing body of research asking whether AI models that show their work are genuinely reasoning, or arriving at right answers for the wrong reasons.",
+    "source_urls": [
+      "https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731/"
+    ]
+  },
+  {
+    "date": "2026-08-01",
+    "title": "A Security Vendor's Post-Mortem on the Hugging Face Break-In",
+    "summary": "Previously covered on 2026-07-29: Hugging Face published a minute-by-minute account of the July intrusion in which attackers, aided by AI, reached part of its production systems.",
+    "source_urls": [
+      "https://tailscale.com/blog/hugging-face-intrusion"
+    ]
+  },
+  {
+    "date": "2026-08-01",
+    "title": "Microsoft Releases a Charting Language Built for AI Tools",
+    "summary": "Microsoft published Flint, a language for describing charts that is designed to be written by AI assistants rather than by hand.",
+    "source_urls": [
+      "https://microsoft.github.io/flint-chart/"
+    ]
+  },
+  {
+    "date": "2026-08-01",
+    "title": "BMW Puts Movie Advertising on the Dashboard",
+    "summary": "A consumer rights wiki documented BMW displaying Spider-Man advertising on the screens inside customers' cars.",
+    "source_urls": [
+      "https://consumerrights.wiki/w/BMW_Spider-Man_in-car_advertising"
+    ]
+  },
+  {
+    "date": "2026-08-01",
+    "title": "Case-Folding Every Byte of GitHub's Code Search at 45 GiB/s",
+    "summary": "GitHub's engineering team detailed how it makes code search case-insensitive at scale.",
+    "source_urls": [
+      "https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/"
+    ]
+  },
+  {
+    "date": "2026-08-01",
+    "title": "Running Kimi K3 in 29 GB of RAM — Very, Very Slowly",
+    "summary": "A developer released a tool that runs Kimi K3, a large open AI model, on a machine with only 29 GB of memory.",
+    "source_urls": [
+      "https://github.com/sqliteai/waste"
     ]
   }
 ]
