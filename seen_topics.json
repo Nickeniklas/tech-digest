@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-07-25",
-    "title": "Anthropic Releases Claude Opus 5, Its New Top-Tier Model",
-    "summary": "Anthropic released Claude Opus 5, the newest version of its most capable model.",
-    "source_urls": [
-      "https://www.anthropic.com/news/claude-opus-5"
-    ]
-  },
-  {
-    "date": "2026-07-25",
-    "title": "India's First Private Rocket Reaches Orbit on Its Debut",
-    "summary": "A privately built Indian rocket reached orbit on its very first launch — a rare success, since most new rockets fail their debut flight.",
-    "source_urls": [
-      "https://arstechnica.com/space/2026/07/indias-first-privately-developed-rocket-reaches-orbit-on-dramatic-debut-launch/"
-    ]
-  },
-  {
-    "date": "2026-07-25",
-    "title": "Firefox Previews a Way to Keep Your Browsing Separate",
-    "summary": "Mozilla is previewing 'Containers' in Firefox, which lets you keep different parts of your online life — work, personal, shopping — walled off in the same browser so sites can't easily track you across them.",
-    "source_urls": [
-      "https://blog.mozilla.org/en/firefox/firefox-containers-preview/"
-    ]
-  },
-  {
-    "date": "2026-07-25",
-    "title": "India Orders GitHub to Remove Jack Dorsey's Bitchat App",
-    "summary": "The Indian government told GitHub to take down Bitchat, a messaging app backed by Twitter co-founder Jack Dorsey that lets phones talk directly over Bluetooth without the internet.",
-    "source_urls": [
-      "https://www.thehindu.com/news/national/government-orders-github-to-remove-bluetooth-based-chat-app-bitchat-over-security-concerns-jack-dorsey/article71262049.ece"
-    ]
-  },
-  {
-    "date": "2026-07-25",
-    "title": "Nvidia, Microsoft and Meta Push Back on Regulating Open AI Models",
-    "summary": "Three of the biggest names in tech publicly warned governments against heavily regulating 'open-weight' AI models — the kind anyone can download and run themselves.",
-    "source_urls": [
-      "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html"
-    ]
-  },
-  {
-    "date": "2026-07-25",
-    "title": "Postgres's Built-In Notifications Scale Better Than Their Reputation",
-    "summary": "A common trick for making apps react instantly to database changes — Postgres's built-in LISTEN/NOTIFY feature — has long been assumed to buckle under heavy load.",
-    "source_urls": [
-      "https://www.dbos.dev/blog/postgres-listen-notify-scalability"
-    ]
-  },
-  {
-    "date": "2026-07-25",
-    "title": "Where Opus 5 Fits in Anthropic's Model Lineup",
-    "summary": "Opus 5 sits in Anthropic's high-end 'Opus' tier.",
-    "source_urls": [
-      "https://www.anthropic.com/news/claude-opus-5"
-    ]
-  },
-  {
     "date": "2026-07-26",
     "title": "Cloudflare Lets Websites Block or Charge AI Crawlers",
     "summary": "Cloudflare, which sits in front of a large share of the world's websites, rolled out new controls that let site owners decide how AI companies' bots may use their content — allow them, block them, or charge them per visit.",
@@ -445,6 +389,62 @@
     "summary": "A developer released a tool that runs Kimi K3, a large open AI model, on a machine with only 29 GB of memory.",
     "source_urls": [
       "https://github.com/sqliteai/waste"
+    ]
+  },
+  {
+    "date": "2026-08-02",
+    "title": "Anthropic Releases Claude Opus 5",
+    "summary": "Anthropic released Claude Opus 5, the newest model in its Opus tier.",
+    "source_urls": [
+      "https://www.anthropic.com/news/claude-opus-5"
+    ]
+  },
+  {
+    "date": "2026-08-02",
+    "title": "ByteDance Releases Seedance 2.5",
+    "summary": "ByteDance published Seedance 2.",
+    "source_urls": [
+      "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5"
+    ]
+  },
+  {
+    "date": "2026-08-02",
+    "title": "China Starts Making Its Own Advanced Chipmaking Machines",
+    "summary": "China has begun producing home-grown immersion deep-ultraviolet lithography machines — the equipment that prints circuits onto silicon — according to a source cited by Reuters.",
+    "source_urls": [
+      "https://www.reuters.com/world/china/china-starts-production-home-grown-immersion-duv-chipmaking-tools-source-2026-07-28/"
+    ]
+  },
+  {
+    "date": "2026-08-02",
+    "title": "AI Financial Advice Holds Up Better Than Expected",
+    "summary": "MIT Sloan looked at how well AI assistants answer personal finance questions and found the advice largely holds up — provided you ask specific questions rather than vague ones.",
+    "source_urls": [
+      "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions"
+    ]
+  },
+  {
+    "date": "2026-08-02",
+    "title": "US Warns of Attacks on Water Utility Controllers",
+    "summary": "CISA, the US cybersecurity agency, issued an alert about attackers targeting the programmable controllers that run water treatment and distribution equipment.",
+    "source_urls": [
+      "https://censys.com/blog/cisa-alert-water-tower-plc-targeting/"
+    ]
+  },
+  {
+    "date": "2026-08-02",
+    "title": "TLS 1.2's Oldest Key Exchange Methods Are Officially Deprecated",
+    "summary": "The IETF published RFC 10015, which formally deprecates obsolete key exchange methods in TLS 1.",
+    "source_urls": [
+      "https://www.rfc-editor.org/rfc/rfc10015.html"
+    ]
+  },
+  {
+    "date": "2026-08-02",
+    "title": "A Soundness Bug in Lean's Proof Kernel, Written Up in Full",
+    "summary": "Leonardo de Moura published a postmortem for bug #14576 in the kernel of Lean, the proof assistant — the small trusted core that checks every proof the system accepts.",
+    "source_urls": [
+      "https://leodemoura.github.io/blog/2026-8-1-postmortem-for-kernel-soundness-bug-14576/"
     ]
   }
 ]
