@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-07-26",
-    "title": "Cloudflare Lets Websites Block or Charge AI Crawlers",
-    "summary": "Cloudflare, which sits in front of a large share of the world's websites, rolled out new controls that let site owners decide how AI companies' bots may use their content — allow them, block them, or charge them per visit.",
-    "source_urls": [
-      "https://blog.cloudflare.com/content-independence-day-ai-options/"
-    ]
-  },
-  {
-    "date": "2026-07-26",
-    "title": "Thinking Machines Releases Its First Model, Inkling",
-    "summary": "Thinking Machines, the high-profile startup founded by former OpenAI leaders, published its first model, Inkling, on Hugging Face.",
-    "source_urls": [
-      "https://huggingface.co/blog/thinkingmachines-inkling"
-    ]
-  },
-  {
-    "date": "2026-07-26",
-    "title": "Bitchat Resurfaces After India's Takedown Order",
-    "summary": "Previously covered on 2026-07-25: India ordered GitHub to remove Bitchat, Jack Dorsey's Bluetooth-based messaging app.",
-    "source_urls": [
-      "https://radicle.network/nodes/rosa.radicle.network/rad%3Az2v9tRJz1oknFAqCSY5W5c76nVvm6"
-    ]
-  },
-  {
-    "date": "2026-07-26",
-    "title": "A Top Law School Rethinks How It Teaches for the AI Era",
-    "summary": "The University of Chicago Law School published a strategy for how legal education should change now that AI can draft, research, and review documents.",
-    "source_urls": [
-      "https://www.law.uchicago.edu/news/ai-strategy-statement"
-    ]
-  },
-  {
-    "date": "2026-07-26",
-    "title": "GM Bets on Sodium Batteries for the Power Grid",
-    "summary": "General Motors is backing sodium-ion batteries — which swap out the scarce lithium found in most batteries for cheap, abundant salt — to store energy for the US electric grid.",
-    "source_urls": [
-      "https://spectrum.ieee.org/sodium-ion-battery-peak-energy"
-    ]
-  },
-  {
-    "date": "2026-07-26",
-    "title": "Running a 28.9M-Parameter Language Model on an $8 Chip",
-    "summary": "A developer got a small language model — 28.",
-    "source_urls": [
-      "https://github.com/slvDev/esp32-ai"
-    ]
-  },
-  {
-    "date": "2026-07-26",
-    "title": "Why Automatically Picking the Right AI Model Is Harder Than It Looks",
-    "summary": "IBM researchers dug into 'model routing' — the idea of automatically sending each question to the cheapest AI model that can still answer it well, and only escalating hard ones to an expensive model.",
-    "source_urls": [
-      "https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt"
-    ]
-  },
-  {
     "date": "2026-07-27",
     "title": "A Phone Wiped Itself at the Airport. Now Its Owner Is Facing Charges.",
     "summary": "US prosecutors have charged an Atlanta man after his phone erased its own contents during a border search at the airport.",
@@ -445,6 +389,62 @@
     "summary": "Leonardo de Moura published a postmortem for bug #14576 in the kernel of Lean, the proof assistant — the small trusted core that checks every proof the system accepts.",
     "source_urls": [
       "https://leodemoura.github.io/blog/2026-8-1-postmortem-for-kernel-soundness-bug-14576/"
+    ]
+  },
+  {
+    "date": "2026-08-03",
+    "title": "Alibaba's Qwen Team Releases Qwen3.8-Max",
+    "summary": "Alibaba's Qwen team released Qwen3.",
+    "source_urls": [
+      "https://qwen.ai/blog?id=qwen3.8"
+    ]
+  },
+  {
+    "date": "2026-08-03",
+    "title": "Californians Can Now Force Data Brokers to Delete Their Data",
+    "summary": "California's DROP system — one request that reaches the data brokers holding your personal information — became enforceable on August 1.",
+    "source_urls": [
+      "https://www.nbcsandiego.com/nbc-7-responds-2/californians-data-deletion-requests-drop-become-enforceable-aug-1/4054771/"
+    ]
+  },
+  {
+    "date": "2026-08-03",
+    "title": "A Working Example of GitHub's Stacked Pull Requests",
+    "summary": "Previously covered on 2026-07-31: GitHub put stacked pull requests — splitting one large change into a chain of smaller reviewable pieces — into public preview.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app/"
+    ]
+  },
+  {
+    "date": "2026-08-03",
+    "title": "Why People Get Attached to Their Tools",
+    "summary": "Stack Overflow published an argument that developers cling to particular tools because a tool people have used for years encodes trust — you know exactly how it behaves when things go wrong.",
+    "source_urls": [
+      "https://stackoverflow.blog/2026/07/29/developers-are-attached-to-tools-because-tools-encode-trust/"
+    ]
+  },
+  {
+    "date": "2026-08-03",
+    "title": "Thinking Machines Publishes a Model Called Inkling",
+    "summary": "The AI lab Thinking Machines released a model named Inkling on Hugging Face, the site where open models are shared and downloaded.",
+    "source_urls": [
+      "https://huggingface.co/blog/thinkingmachines-inkling"
+    ]
+  },
+  {
+    "date": "2026-08-03",
+    "title": "Dependabot Now Waits Three Days Before Suggesting an Update",
+    "summary": "Dependabot is the GitHub service that automatically opens a pull request when a piece of third-party code your project depends on publishes a new version.",
+    "source_urls": [
+      "https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/"
+    ]
+  },
+  {
+    "date": "2026-08-03",
+    "title": "A Language Model Running on a 6502",
+    "summary": "A developer got an autoregressive language model — the same basic design as the chatbots you use, generating one word at a time and feeding each one back in — running on the 6502, the 8-bit processor from the 1970s that powered the Apple II, the Commodore 64 and the NES.",
+    "source_urls": [
+      "https://mattbeton.com/blog/bitnet-6502.html"
     ]
   }
 ]
