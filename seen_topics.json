@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-07-27",
-    "title": "A Phone Wiped Itself at the Airport. Now Its Owner Is Facing Charges.",
-    "summary": "US prosecutors have charged an Atlanta man after his phone erased its own contents during a border search at the airport.",
-    "source_urls": [
-      "https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html"
-    ]
-  },
-  {
-    "date": "2026-07-27",
-    "title": "GitHub: Making Things Got Cheap, Keeping Them Didn't",
-    "summary": "GitHub's engineering team published a framework for deciding which projects are actually worth saying yes to now that AI has made building software fast and cheap.",
-    "source_urls": [
-      "https://github.blog/engineering/the-cost-of-saying-yes-has-changed/"
-    ]
-  },
-  {
-    "date": "2026-07-27",
-    "title": "A New Test for Whether Voice AI Actually Sounds Human",
-    "summary": "Hugging Face released Real World VoiceEQ, a way to measure the human quality of AI voices rather than just their accuracy.",
-    "source_urls": [
-      "https://huggingface.co/blog/real-world-voiceeq"
-    ]
-  },
-  {
-    "date": "2026-07-27",
-    "title": "The Grey Market Reselling Access to AI Models",
-    "summary": "A new analysis maps the 'relay' market — intermediaries who buy access to AI models in bulk and resell it cheaply, often on top of stolen or fraudulently obtained accounts.",
-    "source_urls": [
-      "https://vectoral.com/blog/token-relay-market"
-    ]
-  },
-  {
-    "date": "2026-07-27",
-    "title": "GitHub Copilot Adds Canvases, a Shared Workspace for AI Tasks",
-    "summary": "GitHub introduced canvases, which turn a chat with an AI assistant into an interactive workspace where you can lay out information, walk through a workflow, and act on it in place.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/how-to-build-interactive-experiences-with-canvases/"
-    ]
-  },
-  {
-    "date": "2026-07-27",
-    "title": "Vercel's Scriptc Compiles TypeScript Straight to a Native Binary",
-    "summary": "Vercel Labs published Scriptc, a compiler that turns TypeScript into a native executable without bundling a JavaScript engine inside it.",
-    "source_urls": [
-      "https://github.com/vercel-labs/scriptc"
-    ]
-  },
-  {
-    "date": "2026-07-27",
-    "title": "Automated Proofs Are Now Practical Enough for Real Code",
-    "summary": "Adam Langley walked through applying automated proof tools to zstd, the compression library that quietly runs inside a large share of modern software.",
-    "source_urls": [
-      "https://www.imperialviolet.org/2026/07/26/zstd-lean.html"
-    ]
-  },
-  {
     "date": "2026-07-28",
     "title": "A $500 Tune-Up Made a Small AI Model Beat the Big Ones",
     "summary": "A team fine-tuned a small open AI model — one anyone can download and run — for about $500, and it outperformed the leading commercial models at reviewing product catalogue entries.",
@@ -445,6 +389,62 @@
     "summary": "A developer got an autoregressive language model — the same basic design as the chatbots you use, generating one word at a time and feeding each one back in — running on the 6502, the 8-bit processor from the 1970s that powered the Apple II, the Commodore 64 and the NES.",
     "source_urls": [
       "https://mattbeton.com/blog/bitnet-6502.html"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "title": "OpenAI Publishes Ten New Results in Mathematics and Computer Science",
+    "summary": "OpenAI published a list of ten advances in mathematics and theoretical computer science that its models contributed to.",
+    "source_urls": [
+      "https://openai.com/index/ten-advances-in-mathematics/"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "title": "A Large AI Model Now Fits on a Laptop — and a Smaller One on Your Phone",
+    "summary": "A developer released Swiftlet, an open-source tool that runs Qwen, an 80-billion-parameter AI model, in 4.",
+    "source_urls": [
+      "https://github.com/leonickson1/Swiftlet"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "title": "AI Helps Experts More Than It Helps Beginners",
+    "summary": "Engineer Sean Goedecke argues that large language models pay off in proportion to what you already know: an expert spots the wrong answer and redirects, while a novice takes it at face value.",
+    "source_urls": [
+      "https://www.seangoedecke.com/llms-reward-expertise/"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "title": "A New Video Model Arrives With Sound Built In",
+    "summary": "MiniMax released H3, a video generation model with openly published weights, native audio, and output up to 2K resolution — and it works in ComfyUI, a popular free tool for building image and video pipelines, from day one.",
+    "source_urls": [
+      "https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "title": "A Benchmark for Whether Voice AI Actually Sounds Human",
+    "summary": "Hugging Face published Real World VoiceEQ, a way of measuring the human quality of voice AI rather than just its accuracy.",
+    "source_urls": [
+      "https://huggingface.co/blog/real-world-voiceeq"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "title": "Cloudflare on Serving Open Models at Scale",
+    "summary": "Cloudflare wrote up how it runs Kimi and GLM — two large open-weight models — across its network, covering the compression work that shrinks them, the changes that cut response time, and the guardrails around what they output.",
+    "source_urls": [
+      "https://blog.cloudflare.com/smaller-faster-safer-models/"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "title": "Why Routing Between AI Models Is Harder Than It Looks",
+    "summary": "IBM Research published a piece on model routing — automatically sending each request to the cheapest model that can handle it, and escalating to a stronger one only when needed.",
+    "source_urls": [
+      "https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt"
     ]
   }
 ]
