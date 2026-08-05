@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-07-28",
-    "title": "A $500 Tune-Up Made a Small AI Model Beat the Big Ones",
-    "summary": "A team fine-tuned a small open AI model — one anyone can download and run — for about $500, and it outperformed the leading commercial models at reviewing product catalogue entries.",
-    "source_urls": [
-      "https://fermisense.com/when-machines-take-the-wheel/"
-    ]
-  },
-  {
-    "date": "2026-07-28",
-    "title": "Anthropic Sets Out Where It Stands on Open AI Models",
-    "summary": "Anthropic published its position on open-weight models — the kind you can download and run yourself, rather than rent through a company's website.",
-    "source_urls": [
-      "https://www.anthropic.com/news/position-open-weights-models"
-    ]
-  },
-  {
-    "date": "2026-07-28",
-    "title": "A Missing Underscore Sent the Wrong Man to Prison for 18 Months",
-    "summary": "Police searching a database typed a username without one underscore character, matched the wrong person, and an innocent man spent 18 months behind bars.",
-    "source_urls": [
-      "https://arstechnica.com/tech-policy/2026/07/police-missed-one-underscore-and-sent-the-wrong-man-to-prison/"
-    ]
-  },
-  {
-    "date": "2026-07-28",
-    "title": "A Researcher Took Control of an Entire Truck Fleet Platform",
-    "summary": "A security researcher found flaws in the online platform Volvo-owned Eicher uses to manage commercial vehicles, and was able to reach every user account and vehicle on it.",
-    "source_urls": [
-      "https://eaton-works.com/2026/07/27/my-eicher-hack/"
-    ]
-  },
-  {
-    "date": "2026-07-28",
-    "title": "NVIDIA Builds a Surgical Simulator That Runs in Real Time",
-    "summary": "NVIDIA released Cosmos-H-Dreams, a system that generates a realistic surgical scene fast enough to respond as it is being used, so robotic surgery systems can practise against it live rather than replaying recordings.",
-    "source_urls": [
-      "https://huggingface.co/blog/nvidia/cosmos-h-dreams"
-    ]
-  },
-  {
-    "date": "2026-07-28",
-    "title": "The Harness Matters More Than the Model",
-    "summary": "GitHub published the working method behind its Copilot team's own development: a fixed loop of prototype, plan, implement, review, with the AI slotted into each step rather than treated as a separate tool to switch to.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly/"
-    ]
-  },
-  {
-    "date": "2026-07-28",
-    "title": "Voice Dictation on a Mac With Nothing to Download",
-    "summary": "A developer released Yap, an open-source dictation tool for macOS that uses the speech-recognition models already built into the operating system.",
-    "source_urls": [
-      "https://github.com/FrigadeHQ/yap"
-    ]
-  },
-  {
     "date": "2026-07-29",
     "title": "Chip Stocks Slide as Investors Get Nervous About AI",
     "summary": "Shares in chipmakers fell across the United States and Asia as investors reassessed how much money AI will actually make in the near term.",
@@ -445,6 +389,62 @@
     "summary": "IBM Research published a piece on model routing — automatically sending each request to the cheapest model that can handle it, and escalating to a stronger one only when needed.",
     "source_urls": [
       "https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt"
+    ]
+  },
+  {
+    "date": "2026-08-05",
+    "title": "GitHub's Legal Team Built Its Own Tools — Without Writing Code",
+    "summary": "GitHub published an account of how its own legal team used Copilot CLI, a command-line AI assistant, to build small tools that automate parts of their day-to-day work.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows/"
+    ]
+  },
+  {
+    "date": "2026-08-05",
+    "title": "A Browser Flaw Is Leaking the Addresses iCloud Private Relay Hides",
+    "summary": "Security researchers at Mysk found that WebKit, the engine behind Safari and every browser on iPhone, leaks your real IP address and the sites you look up, even when you are using a proxy or Apple's iCloud Private Relay.",
+    "source_urls": [
+      "https://mysk.blog/2026/08/04/webkit-proxy-icloud-private-relay-ip-leak/"
+    ]
+  },
+  {
+    "date": "2026-08-05",
+    "title": "Mistral Releases a Free Model for Spotting Harmful Content",
+    "summary": "The French AI company Mistral released Shieldstral, a small open model that reviews both text and images and flags content that breaks safety rules.",
+    "source_urls": [
+      "https://mistral.ai/news/shieldstral/"
+    ]
+  },
+  {
+    "date": "2026-08-05",
+    "title": "Interpol Says AI Now Drives Most Cybercrime in Africa",
+    "summary": "Interpol reported that more than half of cybercrime across Africa is now powered by AI, as automated scams surge.",
+    "source_urls": [
+      "https://www.africanews.com/2026/08/04/ai-fuels-more-than-half-of-cybercrime-in-africa-as-digital-scams-surge-interpol/"
+    ]
+  },
+  {
+    "date": "2026-08-05",
+    "title": "Flowise, a Popular Drag-and-Drop AI Builder, Is Shutting Down",
+    "summary": "Flowise, one of the better-known tools for assembling AI workflows by dragging boxes around instead of coding, announced it is sunsetting.",
+    "source_urls": [
+      "https://flowiseai.com/sunset"
+    ]
+  },
+  {
+    "date": "2026-08-05",
+    "title": "An Active Supply Chain Attack Has Compromised Keyv and Its Neighbours",
+    "summary": "Security firm Aikido reported that Keyv — a widely used npm package for caching data, pulled in indirectly by a great many JavaScript projects — has been compromised as part of the ongoing Shai-Hulud campaign.",
+    "source_urls": [
+      "https://www.aikido.dev/blog/keyv-and-friends-compromised-in-npm-supply-chain-attack"
+    ]
+  },
+  {
+    "date": "2026-08-05",
+    "title": "Liquid AI Ships a 2.6-Billion-Parameter Agent That Runs on the Device Itself",
+    "summary": "Previously covered on 2026-07-29: Liquid AI released the LFM2.",
+    "source_urls": [
+      "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b"
     ]
   }
 ]
