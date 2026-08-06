@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-07-29",
-    "title": "Chip Stocks Slide as Investors Get Nervous About AI",
-    "summary": "Shares in chipmakers fell across the United States and Asia as investors reassessed how much money AI will actually make in the near term.",
-    "source_urls": [
-      "https://www.bbc.com/news/articles/cly8zng43npo"
-    ]
-  },
-  {
-    "date": "2026-07-29",
-    "title": "Andrew Ng Launches a Company Built Around One-to-One Teaching",
-    "summary": "Andrew Ng, one of the best-known figures in AI education, unveiled LearnVector, a company focused on building one-to-one learning experiences rather than the one-size-fits-all courses that dominate online education.",
-    "source_urls": [
-      "https://learnvector.ai/"
-    ]
-  },
-  {
-    "date": "2026-07-29",
-    "title": "Anthropic Used Claude to Find Weaknesses in Encryption",
-    "summary": "Anthropic published research on using Claude to discover flaws in cryptography — the maths that protects your bank transfers, messages, and passwords.",
-    "source_urls": [
-      "https://www.anthropic.com/research/discovering-cryptographic-weaknesses"
-    ]
-  },
-  {
-    "date": "2026-07-29",
-    "title": "GitHub Shuts Down Attack Routes Into the Software Everyone Uses",
-    "summary": "GitHub detailed months of changes to npm and GitHub Actions — the plumbing that pulls free code components into most modern software — aimed at breaking the techniques attackers use to slip malicious code into them.",
-    "source_urls": [
-      "https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/"
-    ]
-  },
-  {
-    "date": "2026-07-29",
-    "title": "Apple Retires Its iPhone Upgrade Program",
-    "summary": "Apple is replacing the iPhone Upgrade Program with a new scheme called Apple Upgrade.",
-    "source_urls": [
-      "https://www.apple.com/shop/iphone/iphone-upgrade-program"
-    ]
-  },
-  {
-    "date": "2026-07-29",
-    "title": "A Minute-by-Minute Account of the July AI Break-In",
-    "summary": "Previously covered on 2026-07-22: Hugging Face disclosed that attackers, aided by AI acting largely on its own, broke into part of its production systems.",
-    "source_urls": [
-      "https://huggingface.co/blog/agent-intrusion-technical-timeline"
-    ]
-  },
-  {
-    "date": "2026-07-29",
-    "title": "New Encoder Models Read Long Documents Fast on an Ordinary CPU",
-    "summary": "Liquid AI released LFM2.",
-    "source_urls": [
-      "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders"
-    ]
-  },
-  {
     "date": "2026-07-30",
     "title": "AI Companies Are Recruiting Electricians and Carpenters by the Thousands",
     "summary": "AI companies are recruiting and training skilled tradespeople — electricians, carpenters and others — in the thousands to build the data centres their models run on.",
@@ -445,6 +389,62 @@
     "summary": "Previously covered on 2026-07-29: Liquid AI released the LFM2.",
     "source_urls": [
       "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b"
+    ]
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Google DeepMind Changes Hands at the Top",
+    "summary": "Google announced that Demis Hassabis, who co-founded DeepMind and has led it as CEO, is moving to the role of Chair, and that Jeff Dean is leaving the company.",
+    "source_urls": [
+      "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/"
+    ]
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Nashville Votes to Seize Land to Stop a Data Centre",
+    "summary": "Nashville's council approved an eminent domain action to halt a data centre project planned near the city zoo.",
+    "source_urls": [
+      "https://www.costar.com/article/970809918/nashville-council-approves-eminent-domain-action-to-halt-data-center-project"
+    ]
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Atlassian's AI Assistant Can Be Talked Into Leaking Company Data",
+    "summary": "Security researchers at PromptArmor showed that Rovo, the AI assistant built into Atlassian's Jira and Confluence, can be made to pull information out of a workspace and send it elsewhere — getting around the permission controls that are supposed to stop exactly that.",
+    "source_urls": [
+      "https://www.promptarmor.com/resources/atlassian-rovo-exfiltrates-data"
+    ]
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Cloudflare Announces an Operating System for AI Agents",
+    "summary": "Cloudflare introduced Cloudflare OS, which it describes as an open platform for running agents, apps and work on its network.",
+    "source_urls": [
+      "https://blog.cloudflare.com/cloudflare-os/"
+    ]
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Why the AI Scores in Every Press Release Keep Losing Meaning",
+    "summary": "A piece in Communications of the ACM applies Goodhart's law to AI benchmarks: once a measure becomes a target, it stops being a good measure.",
+    "source_urls": [
+      "https://cacm.acm.org/blogcacm/goodharts-law-comes-for-every-benchmark-you-trust/"
+    ]
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Open Models Beat a Frontier Model at Retrieval, for 1/100th the Cost",
+    "summary": "Neon published results for Castform, its retrieval setup — the step where a system searches your documents for the passages relevant to a question before an AI model answers.",
+    "source_urls": [
+      "https://neon.com/blog/how-castform-neon-beats-frontier-models-on-price-and-efficiency"
+    ]
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Removing a Single 'if' Made a Filter Four Times Faster",
+    "summary": "A Rust developer walked through speeding up a filtering routine by 4x, and the change was to delete an if-statement rather than add cleverness.",
+    "source_urls": [
+      "https://www.greyblake.com/blog/branchless-rust/"
     ]
   }
 ]
