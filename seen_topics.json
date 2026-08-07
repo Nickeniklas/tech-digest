@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-07-30",
-    "title": "AI Companies Are Recruiting Electricians and Carpenters by the Thousands",
-    "summary": "AI companies are recruiting and training skilled tradespeople — electricians, carpenters and others — in the thousands to build the data centres their models run on.",
-    "source_urls": [
-      "https://www.nytimes.com/2026/07/29/business/economy/data-center-electricians-training.html"
-    ]
-  },
-  {
-    "date": "2026-07-30",
-    "title": "AI's Biggest Startups Have Nearly Stopped Publishing Their Research",
-    "summary": "Science reports that the leading AI startups now publish very little of the research behind their models.",
-    "source_urls": [
-      "https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research"
-    ]
-  },
-  {
-    "date": "2026-07-30",
-    "title": "Allen AI Opens Up Satellite Analysis at Planetary Scale",
-    "summary": "The Allen Institute for AI described OlmoEarth, the system it built to run AI analysis over satellite imagery of the entire planet.",
-    "source_urls": [
-      "https://huggingface.co/blog/allenai/olmoearth-infrastructure"
-    ]
-  },
-  {
-    "date": "2026-07-30",
-    "title": "Long Rulebooks Don't Reliably Keep AI Agents in Line",
-    "summary": "A new paper tested whether lengthy written policy documents actually govern how AI agents behave, and found they don't do it reliably.",
-    "source_urls": [
-      "https://arxiv.org/abs/2607.25398"
-    ]
-  },
-  {
-    "date": "2026-07-30",
-    "title": "The US Science Agency Pilots Four-Year PhDs With Industry Placements",
-    "summary": "The National Science Foundation is piloting a programme with universities and companies to shorten doctorates to four years, with research placements in industry along the way.",
-    "source_urls": [
-      "https://www.nsf.gov/news/nsf-partners-universities-industry-pilot-initiative-four"
-    ]
-  },
-  {
-    "date": "2026-07-30",
-    "title": "A 26-Billion-Parameter Model Running in 2 GB of RAM on a Mac",
-    "summary": "A developer released an open-source engine that runs Gemma 4 26B — a fairly large open model — inside 2 GB of memory on any M-series Mac.",
-    "source_urls": [
-      "https://github.com/drumih/turbo-fieldfare"
-    ]
-  },
-  {
-    "date": "2026-07-30",
-    "title": "Taming the Flood of Automated Dependency Updates",
-    "summary": "GitHub published a practical guide to configuring Dependabot, the tool that automatically proposes updates to the third-party code a project depends on.",
-    "source_urls": [
-      "https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast/"
-    ]
-  },
-  {
     "date": "2026-07-31",
     "title": "OpenAI's GPT-5.6 Competes on Price, Not Just Power",
     "summary": "OpenAI released GPT-5.",
@@ -445,6 +389,62 @@
     "summary": "A Rust developer walked through speeding up a filtering routine by 4x, and the change was to delete an if-statement rather than add cleverness.",
     "source_urls": [
       "https://www.greyblake.com/blog/branchless-rust/"
+    ]
+  },
+  {
+    "date": "2026-08-07",
+    "title": "People Approving AI Actions Miss One Dangerous Request in Three",
+    "summary": "A study across 40,000 simulated runs found that when people were shown what an AI agent wanted to do and asked to approve or deny it, they missed roughly one in three harmful commands.",
+    "source_urls": [
+      "https://scalex.dev/blog/ai-agent-permissions-stats/"
+    ]
+  },
+  {
+    "date": "2026-08-07",
+    "title": "Meta Ordered to Pay $942 Million Over Harm to Children",
+    "summary": "A court ordered Meta to pay $942 million to address harm caused to children by its social media products.",
+    "source_urls": [
+      "https://www.wsj.com/tech/meta-ordered-to-pay-942-million-to-address-harm-to-kids-from-social-media-8ba5aab7"
+    ]
+  },
+  {
+    "date": "2026-08-07",
+    "title": "A Reporter Was Stalked Through a Child's Smartwatch",
+    "summary": "Wired documented how hackers took over a smartwatch marketed for children and used it to track a person's movements and listen in.",
+    "source_urls": [
+      "https://www.wired.com/story/hackers-stalked-me-by-hijacking-a-smartwatch-for-kids/"
+    ]
+  },
+  {
+    "date": "2026-08-07",
+    "title": "OpenAI Opens Its Newer Model to Free ChatGPT Users",
+    "summary": "Previously covered on 2026-07-31: OpenAI released GPT-5.",
+    "source_urls": [
+      "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/"
+    ]
+  },
+  {
+    "date": "2026-08-07",
+    "title": "USB-C Cable Labels Are Not Worth Trusting",
+    "summary": "A writer tested a drawer of USB-C cables with a meter and found the printed claims about charging speed and data transfer frequently did not match reality.",
+    "source_urls": [
+      "https://www.makeuseof.com/i-stopped-trusting-usb-c-cable-labels-started-testing-with-meter-instead/"
+    ]
+  },
+  {
+    "date": "2026-08-07",
+    "title": "GitHub's Malware Warnings Now Reach Past npm",
+    "summary": "GitHub's Advisory Database — the list it uses to warn projects that a piece of third-party code they depend on is malicious — previously covered only npm, the JavaScript package registry.",
+    "source_urls": [
+      "https://github.blog/security/supply-chain-security/how-we-took-malware-advisories-beyond-npm/"
+    ]
+  },
+  {
+    "date": "2026-08-07",
+    "title": "Writing Code Got Cheap. Owning It Didn't.",
+    "summary": "GitHub's engineering team published a framework for deciding which changes are genuinely cheap now that AI tools write much of the code.",
+    "source_urls": [
+      "https://github.blog/engineering/the-cost-of-saying-yes-has-changed/"
     ]
   }
 ]
