@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-07-31",
-    "title": "OpenAI's GPT-5.6 Competes on Price, Not Just Power",
-    "summary": "OpenAI released GPT-5.",
-    "source_urls": [
-      "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/"
-    ]
-  },
-  {
-    "date": "2026-07-31",
-    "title": "A Reviewer Flagged Two Papers for Fake Authors. Both Were Accepted Anyway.",
-    "summary": "A conference reviewer flagged two submitted research papers for having fabricated authors, and both were still accepted as oral presentations — the top tier of acceptance.",
-    "source_urls": [
-      "https://geospatialml.com/posts/reviewing-ai-slop/"
-    ]
-  },
-  {
-    "date": "2026-07-31",
-    "title": "Google Is Rolling Out Age Checks Across Android Worldwide",
-    "summary": "Google will extend age verification on Android to every market by the end of the year, using signals from Google Play to tell apps whether a user is an adult.",
-    "source_urls": [
-      "https://android-developers.googleblog.com/2026/07/google-play-age-signals-api-safer-experiences.html"
-    ]
-  },
-  {
-    "date": "2026-07-31",
-    "title": "Google's Robots Learn to Use Their Whole Body",
-    "summary": "DeepMind released Gemini Robotics 2, which coordinates a robot's entire body — legs, torso, and arms together — instead of treating the arm as a separate problem from balance and movement.",
-    "source_urls": [
-      "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/"
-    ]
-  },
-  {
-    "date": "2026-07-31",
-    "title": "They Gave an AI a Real Business. It Lost $447.",
-    "summary": "Researchers handed GPT-5.",
-    "source_urls": [
-      "https://www.bottlenecklabs.com/blog/autonomously-run-businesses"
-    ]
-  },
-  {
-    "date": "2026-07-31",
-    "title": "The Honest Number for AI Coding Is 2x, Not 10x",
-    "summary": "A developer wrote up a year of working with AI coding tools and put the realistic productivity gain at roughly double, not the tenfold figure that circulates in marketing.",
-    "source_urls": [
-      "https://obryant.dev/p/2x-not-10x/"
-    ]
-  },
-  {
-    "date": "2026-07-31",
-    "title": "Stacked Pull Requests Are Now Live on GitHub",
-    "summary": "GitHub put stacked pull requests into public preview.",
-    "source_urls": [
-      "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/"
-    ]
-  },
-  {
     "date": "2026-08-01",
     "title": "Idle Chips Are the AI Industry's Grounded Aircraft",
     "summary": "A Hugging Face analysis borrows a lesson from aviation: for most of that industry's history, the number that best predicted whether an airline survived was how much of the day each aircraft spent on the ground.",
@@ -445,6 +389,62 @@
     "summary": "GitHub's engineering team published a framework for deciding which changes are genuinely cheap now that AI tools write much of the code.",
     "source_urls": [
       "https://github.blog/engineering/the-cost-of-saying-yes-has-changed/"
+    ]
+  },
+  {
+    "date": "2026-08-08",
+    "title": "AI Tutors Are Good at Answering. They're Bad at Holding Back.",
+    "summary": "The Allen Institute for AI released TutorMoments, a study and public dataset that looks at the moments where a tutor has to choose between giving a student the answer and letting them struggle a little longer.",
+    "source_urls": [
+      "https://huggingface.co/blog/allenai/tutormoments"
+    ]
+  },
+  {
+    "date": "2026-08-08",
+    "title": "Memory Chips Are Sold Out Through 2027",
+    "summary": "Reports say memory manufacturing capacity for 2027 has already been bought up, largely by AI data centre demand.",
+    "source_urls": [
+      "https://www.ign.com/articles/ramageddon-continues-another-year-as-2027-memory-capacity-is-reportedly-sold-out"
+    ]
+  },
+  {
+    "date": "2026-08-08",
+    "title": "Oracle Bans AI-Generated Code From OpenJDK",
+    "summary": "Oracle has barred AI-generated contributions from OpenJDK, the open-source project behind Java, which runs a large share of corporate software.",
+    "source_urls": [
+      "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code"
+    ]
+  },
+  {
+    "date": "2026-08-08",
+    "title": "One Site Found 99% of Its Traffic Was Bots",
+    "summary": "The owner of a 1.",
+    "source_urls": [
+      "https://patronview.com/news/99-percent-of-my-website-traffic-is-bots/"
+    ]
+  },
+  {
+    "date": "2026-08-08",
+    "title": "The US Energy Department Launches Its Own Open AI Models",
+    "summary": "The Department of Energy opened the Genesis Open Models Initiative, run out of Argonne National Laboratory, to build and publish AI models openly rather than behind a commercial licence.",
+    "source_urls": [
+      "https://genesisopenmodels.anl.gov/"
+    ]
+  },
+  {
+    "date": "2026-08-08",
+    "title": "Making Postgres 300x Faster at Analytics",
+    "summary": "Engineers rebuilt the part of PostgreSQL that executes queries and reported a 300x speed-up on analytical workloads.",
+    "source_urls": [
+      "https://malisper.me/how-we-made-postgres-hundreds-of-times-faster-the-query-engine/"
+    ]
+  },
+  {
+    "date": "2026-08-08",
+    "title": "Cloudflare Built a Browser for Agents Instead of People",
+    "summary": "Cloudflare released Kitesurf, a browser designed to be driven by AI agents rather than displayed to a human.",
+    "source_urls": [
+      "https://blog.cloudflare.com/kitesurf/"
     ]
   }
 ]
