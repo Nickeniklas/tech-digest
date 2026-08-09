@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-01",
-    "title": "Idle Chips Are the AI Industry's Grounded Aircraft",
-    "summary": "A Hugging Face analysis borrows a lesson from aviation: for most of that industry's history, the number that best predicted whether an airline survived was how much of the day each aircraft spent on the ground.",
-    "source_urls": [
-      "https://huggingface.co/blog/Dharma-AI/gpu-management"
-    ]
-  },
-  {
-    "date": "2026-08-01",
-    "title": "Does AI Reasoning Actually Reason?",
-    "summary": "Quanta Magazine looks at a growing body of research asking whether AI models that show their work are genuinely reasoning, or arriving at right answers for the wrong reasons.",
-    "source_urls": [
-      "https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731/"
-    ]
-  },
-  {
-    "date": "2026-08-01",
-    "title": "A Security Vendor's Post-Mortem on the Hugging Face Break-In",
-    "summary": "Previously covered on 2026-07-29: Hugging Face published a minute-by-minute account of the July intrusion in which attackers, aided by AI, reached part of its production systems.",
-    "source_urls": [
-      "https://tailscale.com/blog/hugging-face-intrusion"
-    ]
-  },
-  {
-    "date": "2026-08-01",
-    "title": "Microsoft Releases a Charting Language Built for AI Tools",
-    "summary": "Microsoft published Flint, a language for describing charts that is designed to be written by AI assistants rather than by hand.",
-    "source_urls": [
-      "https://microsoft.github.io/flint-chart/"
-    ]
-  },
-  {
-    "date": "2026-08-01",
-    "title": "BMW Puts Movie Advertising on the Dashboard",
-    "summary": "A consumer rights wiki documented BMW displaying Spider-Man advertising on the screens inside customers' cars.",
-    "source_urls": [
-      "https://consumerrights.wiki/w/BMW_Spider-Man_in-car_advertising"
-    ]
-  },
-  {
-    "date": "2026-08-01",
-    "title": "Case-Folding Every Byte of GitHub's Code Search at 45 GiB/s",
-    "summary": "GitHub's engineering team detailed how it makes code search case-insensitive at scale.",
-    "source_urls": [
-      "https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/"
-    ]
-  },
-  {
-    "date": "2026-08-01",
-    "title": "Running Kimi K3 in 29 GB of RAM — Very, Very Slowly",
-    "summary": "A developer released a tool that runs Kimi K3, a large open AI model, on a machine with only 29 GB of memory.",
-    "source_urls": [
-      "https://github.com/sqliteai/waste"
-    ]
-  },
-  {
     "date": "2026-08-02",
     "title": "Anthropic Releases Claude Opus 5",
     "summary": "Anthropic released Claude Opus 5, the newest model in its Opus tier.",
@@ -445,6 +389,62 @@
     "summary": "Cloudflare released Kitesurf, a browser designed to be driven by AI agents rather than displayed to a human.",
     "source_urls": [
       "https://blog.cloudflare.com/kitesurf/"
+    ]
+  },
+  {
+    "date": "2026-08-09",
+    "title": "An AI Agent Broke Into Hugging Face by Accident",
+    "summary": "Hugging Face — the site where most open AI models are hosted and downloaded — published a technical timeline of a July incident in which an automated agent belonging to another AI lab got into its systems, alongside its formal security disclosure.",
+    "source_urls": [
+      "https://huggingface.co/blog/agent-intrusion-technical-timeline"
+    ]
+  },
+  {
+    "date": "2026-08-09",
+    "title": "ChatGPT Will No Longer Copy a Named Author's Style",
+    "summary": "OpenAI has started blocking direct requests to write in the voice of a specific named author.",
+    "source_urls": [
+      "https://arstechnica.com/ai/2026/07/chatgpt-stops-cloning-famous-writers-voices-but-may-capture-a-similar-feeling/"
+    ]
+  },
+  {
+    "date": "2026-08-09",
+    "title": "Danish Students Will Have to Defend Their Essays Out Loud",
+    "summary": "Denmark will require high schoolers to verbally defend written assignments, so the grade rests on whether the student can explain the work rather than on who or what typed it.",
+    "source_urls": [
+      "https://mezha.net/eng/bukvy/ca117584_denmark_requires_oral/"
+    ]
+  },
+  {
+    "date": "2026-08-09",
+    "title": "Fastmail Adds an EU Data Region",
+    "summary": "Email provider Fastmail now lets customers keep their data stored inside the European Union.",
+    "source_urls": [
+      "https://www.fastmail.com/blog/fastmail-offers-eu-data-region/"
+    ]
+  },
+  {
+    "date": "2026-08-09",
+    "title": "NVIDIA Brings Real-Time Simulation to Surgical Robots",
+    "summary": "NVIDIA released Cosmos-H-Dreams, a system that generates simulated surgical environments fast enough to run in real time.",
+    "source_urls": [
+      "https://huggingface.co/blog/nvidia/cosmos-h-dreams"
+    ]
+  },
+  {
+    "date": "2026-08-09",
+    "title": "Shopify Replaced Redis With MySQL — and It Scaled",
+    "summary": "Shopify moved inventory reservations — the short-lived holds placed on stock while a shopper is checking out — out of Redis, an in-memory cache, and into MySQL, the relational database it already runs.",
+    "source_urls": [
+      "https://shopify.engineering/scaling-inventory-reservations"
+    ]
+  },
+  {
+    "date": "2026-08-09",
+    "title": "Case-Folding Every Byte of Code Search at Memory Speed",
+    "summary": "GitHub described how its code search normalises upper and lower case across every byte it indexes.",
+    "source_urls": [
+      "https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/"
     ]
   }
 ]
