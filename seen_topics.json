@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-02",
-    "title": "Anthropic Releases Claude Opus 5",
-    "summary": "Anthropic released Claude Opus 5, the newest model in its Opus tier.",
-    "source_urls": [
-      "https://www.anthropic.com/news/claude-opus-5"
-    ]
-  },
-  {
-    "date": "2026-08-02",
-    "title": "ByteDance Releases Seedance 2.5",
-    "summary": "ByteDance published Seedance 2.",
-    "source_urls": [
-      "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5"
-    ]
-  },
-  {
-    "date": "2026-08-02",
-    "title": "China Starts Making Its Own Advanced Chipmaking Machines",
-    "summary": "China has begun producing home-grown immersion deep-ultraviolet lithography machines — the equipment that prints circuits onto silicon — according to a source cited by Reuters.",
-    "source_urls": [
-      "https://www.reuters.com/world/china/china-starts-production-home-grown-immersion-duv-chipmaking-tools-source-2026-07-28/"
-    ]
-  },
-  {
-    "date": "2026-08-02",
-    "title": "AI Financial Advice Holds Up Better Than Expected",
-    "summary": "MIT Sloan looked at how well AI assistants answer personal finance questions and found the advice largely holds up — provided you ask specific questions rather than vague ones.",
-    "source_urls": [
-      "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions"
-    ]
-  },
-  {
-    "date": "2026-08-02",
-    "title": "US Warns of Attacks on Water Utility Controllers",
-    "summary": "CISA, the US cybersecurity agency, issued an alert about attackers targeting the programmable controllers that run water treatment and distribution equipment.",
-    "source_urls": [
-      "https://censys.com/blog/cisa-alert-water-tower-plc-targeting/"
-    ]
-  },
-  {
-    "date": "2026-08-02",
-    "title": "TLS 1.2's Oldest Key Exchange Methods Are Officially Deprecated",
-    "summary": "The IETF published RFC 10015, which formally deprecates obsolete key exchange methods in TLS 1.",
-    "source_urls": [
-      "https://www.rfc-editor.org/rfc/rfc10015.html"
-    ]
-  },
-  {
-    "date": "2026-08-02",
-    "title": "A Soundness Bug in Lean's Proof Kernel, Written Up in Full",
-    "summary": "Leonardo de Moura published a postmortem for bug #14576 in the kernel of Lean, the proof assistant — the small trusted core that checks every proof the system accepts.",
-    "source_urls": [
-      "https://leodemoura.github.io/blog/2026-8-1-postmortem-for-kernel-soundness-bug-14576/"
-    ]
-  },
-  {
     "date": "2026-08-03",
     "title": "Alibaba's Qwen Team Releases Qwen3.8-Max",
     "summary": "Alibaba's Qwen team released Qwen3.",
@@ -445,6 +389,62 @@
     "summary": "GitHub described how its code search normalises upper and lower case across every byte it indexes.",
     "source_urls": [
       "https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/"
+    ]
+  },
+  {
+    "date": "2026-08-10",
+    "title": "Anthropic Releases Claude Opus 5",
+    "summary": "Anthropic released Claude Opus 5, an update to its Opus tier of models, available today.",
+    "source_urls": [
+      "https://www.anthropic.com/news/claude-opus-5"
+    ]
+  },
+  {
+    "date": "2026-08-10",
+    "title": "A Japanese Court Overturned Red's RAW Video Patent",
+    "summary": "Panasonic won a case in Japan invalidating Red's patent on compressed RAW video recording — a patent Apple, Sony and Nikon had all failed to overturn.",
+    "source_urls": [
+      "https://www.dpreview.com/news/panasonic-did-what-apple-sony-and-nikon-couldnt-overturn-a-red-raw-video-patent/"
+    ]
+  },
+  {
+    "date": "2026-08-10",
+    "title": "A Working Method for Learning Hard Things With an AI Model",
+    "summary": "A developer wrote up the routine they use to learn unfamiliar technical subjects with a language model: not asking it for answers, but using it to test whether their own explanation holds up.",
+    "source_urls": [
+      "https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/"
+    ]
+  },
+  {
+    "date": "2026-08-10",
+    "title": "Windows 11's Weather App Uses More Than a Gigabyte of Memory",
+    "summary": "Testing found the small weather widget built into Windows 11 holding over 1 GB of RAM — more than many full applications.",
+    "source_urls": [
+      "https://www.notebookcheck.net/Windows-11-s-built-in-Weather-app-wastes-more-than-1-GB-of-RAM.1364205.0.html"
+    ]
+  },
+  {
+    "date": "2026-08-10",
+    "title": "Turn Satellite Imagery Into a Paper Globe You Fold Yourself",
+    "summary": "A small web tool takes satellite imagery and lays it out as a printable net you cut and fold into a globe.",
+    "source_urls": [
+      "https://foldingglobes.com/"
+    ]
+  },
+  {
+    "date": "2026-08-10",
+    "title": "4-Bit Image Generation Lands in Diffusers",
+    "summary": "Hugging Face added Nunchaku 4-bit inference to Diffusers, the standard Python library for running image-generation models.",
+    "source_urls": [
+      "https://huggingface.co/blog/nunchaku-diffusers"
+    ]
+  },
+  {
+    "date": "2026-08-10",
+    "title": "Idle GPUs Are the New Grounded Aircraft",
+    "summary": "A piece on GPU management argues that AI infrastructure should be measured the way airlines measure fleets: the expensive asset only earns while it is in use, so utilisation matters more than how many you own.",
+    "source_urls": [
+      "https://huggingface.co/blog/Dharma-AI/gpu-management"
     ]
   }
 ]
