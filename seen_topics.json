@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-04",
-    "title": "OpenAI Publishes Ten New Results in Mathematics and Computer Science",
-    "summary": "OpenAI published a list of ten advances in mathematics and theoretical computer science that its models contributed to.",
-    "source_urls": [
-      "https://openai.com/index/ten-advances-in-mathematics/"
-    ]
-  },
-  {
-    "date": "2026-08-04",
-    "title": "A Large AI Model Now Fits on a Laptop — and a Smaller One on Your Phone",
-    "summary": "A developer released Swiftlet, an open-source tool that runs Qwen, an 80-billion-parameter AI model, in 4.",
-    "source_urls": [
-      "https://github.com/leonickson1/Swiftlet"
-    ]
-  },
-  {
-    "date": "2026-08-04",
-    "title": "AI Helps Experts More Than It Helps Beginners",
-    "summary": "Engineer Sean Goedecke argues that large language models pay off in proportion to what you already know: an expert spots the wrong answer and redirects, while a novice takes it at face value.",
-    "source_urls": [
-      "https://www.seangoedecke.com/llms-reward-expertise/"
-    ]
-  },
-  {
-    "date": "2026-08-04",
-    "title": "A New Video Model Arrives With Sound Built In",
-    "summary": "MiniMax released H3, a video generation model with openly published weights, native audio, and output up to 2K resolution — and it works in ComfyUI, a popular free tool for building image and video pipelines, from day one.",
-    "source_urls": [
-      "https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui"
-    ]
-  },
-  {
-    "date": "2026-08-04",
-    "title": "A Benchmark for Whether Voice AI Actually Sounds Human",
-    "summary": "Hugging Face published Real World VoiceEQ, a way of measuring the human quality of voice AI rather than just its accuracy.",
-    "source_urls": [
-      "https://huggingface.co/blog/real-world-voiceeq"
-    ]
-  },
-  {
-    "date": "2026-08-04",
-    "title": "Cloudflare on Serving Open Models at Scale",
-    "summary": "Cloudflare wrote up how it runs Kimi and GLM — two large open-weight models — across its network, covering the compression work that shrinks them, the changes that cut response time, and the guardrails around what they output.",
-    "source_urls": [
-      "https://blog.cloudflare.com/smaller-faster-safer-models/"
-    ]
-  },
-  {
-    "date": "2026-08-04",
-    "title": "Why Routing Between AI Models Is Harder Than It Looks",
-    "summary": "IBM Research published a piece on model routing — automatically sending each request to the cheapest model that can handle it, and escalating to a stronger one only when needed.",
-    "source_urls": [
-      "https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt"
-    ]
-  },
-  {
     "date": "2026-08-05",
     "title": "GitHub's Legal Team Built Its Own Tools — Without Writing Code",
     "summary": "GitHub published an account of how its own legal team used Copilot CLI, a command-line AI assistant, to build small tools that automate parts of their day-to-day work.",
@@ -445,6 +389,62 @@
     "summary": "GitHub released a Java SDK for Copilot, so a Java application can drive the model from ordinary Java code — using annotations to declare what the model may call, and virtual threads to run many requests at once — instead of shelling out to a command-line tool or hand-writing HTTP calls.",
     "source_urls": [
       "https://github.blog/engineering/using-the-github-copilot-sdk-for-java/"
+    ]
+  },
+  {
+    "date": "2026-08-12",
+    "title": "London Underground Starts Scanning Passengers' Faces",
+    "summary": "British Transport Police are expanding their live facial recognition trial into London Underground stations, where cameras check passing faces against a watchlist in real time.",
+    "source_urls": [
+      "https://www.btp.police.uk/news/btp/news/england/btp-expands-live-facial-recognition-lfr-trial-into-london-underground-stations/"
+    ]
+  },
+  {
+    "date": "2026-08-12",
+    "title": "A Firm Selling \"100% Human-Written\" Research Was Using AI for All of It",
+    "summary": "404 Media reports that a company marketing medical research and peer review as never AI-generated was in fact producing it entirely with AI.",
+    "source_urls": [
+      "https://www.404media.co/company-offering-100-human-written-never-ai-peer-review-is-entirely-ai/"
+    ]
+  },
+  {
+    "date": "2026-08-12",
+    "title": "An Officer Is Accused of Using a Camera Network to Follow an Ex-Partner",
+    "summary": "A New Bedford police officer allegedly used Flock's automated licence plate camera network to track a former romantic partner.",
+    "source_urls": [
+      "https://newbedfordlight.org/new-bedford-police-officer-accused-of-using-flock-cameras-to-track-and-follow-ex-romantic-partner/"
+    ]
+  },
+  {
+    "date": "2026-08-12",
+    "title": "Researchers Test Whether AI Models Can Notice Their Own Thinking",
+    "summary": "A new paper looks at whether large language models can accurately report what is happening inside them, or whether they just produce a plausible-sounding story about it.",
+    "source_urls": [
+      "https://arxiv.org/abs/2601.01828"
+    ]
+  },
+  {
+    "date": "2026-08-12",
+    "title": "Mojo, the Python-Like Language Built for AI, Reaches 1.0",
+    "summary": "Modular shipped version 1.",
+    "source_urls": [
+      "https://www.modular.com/blog/modular-26-5-mojo-1-0-is-here"
+    ]
+  },
+  {
+    "date": "2026-08-12",
+    "title": "Two Ways to Let an Agent Learn From Itself — and What Each Costs in Tokens",
+    "summary": "IBM Research compared its ALTK-Evolve approach with ACE.",
+    "source_urls": [
+      "https://huggingface.co/blog/ibm-research/altk-evolve-sldd"
+    ]
+  },
+  {
+    "date": "2026-08-12",
+    "title": "Postgres Hands Analytics Queries Off to ClickHouse",
+    "summary": "pg_clickhouse v0.",
+    "source_urls": [
+      "https://clickhouse.com/blog/pg_clickhouse-whats-new-july-2026"
     ]
   }
 ]
