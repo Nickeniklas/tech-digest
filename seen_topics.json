@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-05",
-    "title": "GitHub's Legal Team Built Its Own Tools — Without Writing Code",
-    "summary": "GitHub published an account of how its own legal team used Copilot CLI, a command-line AI assistant, to build small tools that automate parts of their day-to-day work.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows/"
-    ]
-  },
-  {
-    "date": "2026-08-05",
-    "title": "A Browser Flaw Is Leaking the Addresses iCloud Private Relay Hides",
-    "summary": "Security researchers at Mysk found that WebKit, the engine behind Safari and every browser on iPhone, leaks your real IP address and the sites you look up, even when you are using a proxy or Apple's iCloud Private Relay.",
-    "source_urls": [
-      "https://mysk.blog/2026/08/04/webkit-proxy-icloud-private-relay-ip-leak/"
-    ]
-  },
-  {
-    "date": "2026-08-05",
-    "title": "Mistral Releases a Free Model for Spotting Harmful Content",
-    "summary": "The French AI company Mistral released Shieldstral, a small open model that reviews both text and images and flags content that breaks safety rules.",
-    "source_urls": [
-      "https://mistral.ai/news/shieldstral/"
-    ]
-  },
-  {
-    "date": "2026-08-05",
-    "title": "Interpol Says AI Now Drives Most Cybercrime in Africa",
-    "summary": "Interpol reported that more than half of cybercrime across Africa is now powered by AI, as automated scams surge.",
-    "source_urls": [
-      "https://www.africanews.com/2026/08/04/ai-fuels-more-than-half-of-cybercrime-in-africa-as-digital-scams-surge-interpol/"
-    ]
-  },
-  {
-    "date": "2026-08-05",
-    "title": "Flowise, a Popular Drag-and-Drop AI Builder, Is Shutting Down",
-    "summary": "Flowise, one of the better-known tools for assembling AI workflows by dragging boxes around instead of coding, announced it is sunsetting.",
-    "source_urls": [
-      "https://flowiseai.com/sunset"
-    ]
-  },
-  {
-    "date": "2026-08-05",
-    "title": "An Active Supply Chain Attack Has Compromised Keyv and Its Neighbours",
-    "summary": "Security firm Aikido reported that Keyv — a widely used npm package for caching data, pulled in indirectly by a great many JavaScript projects — has been compromised as part of the ongoing Shai-Hulud campaign.",
-    "source_urls": [
-      "https://www.aikido.dev/blog/keyv-and-friends-compromised-in-npm-supply-chain-attack"
-    ]
-  },
-  {
-    "date": "2026-08-05",
-    "title": "Liquid AI Ships a 2.6-Billion-Parameter Agent That Runs on the Device Itself",
-    "summary": "Previously covered on 2026-07-29: Liquid AI released the LFM2.",
-    "source_urls": [
-      "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b"
-    ]
-  },
-  {
     "date": "2026-08-06",
     "title": "Google DeepMind Changes Hands at the Top",
     "summary": "Google announced that Demis Hassabis, who co-founded DeepMind and has led it as CEO, is moving to the role of Chair, and that Jeff Dean is leaving the company.",
@@ -445,6 +389,62 @@
     "summary": "pg_clickhouse v0.",
     "source_urls": [
       "https://clickhouse.com/blog/pg_clickhouse-whats-new-july-2026"
+    ]
+  },
+  {
+    "date": "2026-08-13",
+    "title": "Three New AI Models Landed on the Same Day",
+    "summary": "DeepSeek published V4 Pro, Alibaba's Qwen team released Qwen3.",
+    "source_urls": [
+      "https://openrouter.ai/deepseek/deepseek-v4-pro-0813"
+    ]
+  },
+  {
+    "date": "2026-08-13",
+    "title": "uBlock Origin Stops Trying to Block Facebook Ads",
+    "summary": "uBlock Origin, the most widely used ad blocker, is giving up on keeping ads off Facebook.",
+    "source_urls": [
+      "https://digitalescapetools.com/2026/08/ublock-origin-stops-chasing-facebook-ads.html"
+    ]
+  },
+  {
+    "date": "2026-08-13",
+    "title": "Someone Is Scanning the Web While Pretending to Be an AI Bot",
+    "summary": "A report describes mass scans hunting for security holes across websites, disguised so the traffic looks like well-known AI crawlers such as ClaudeBot.",
+    "source_urls": [
+      "https://knownagents.com/insights"
+    ]
+  },
+  {
+    "date": "2026-08-13",
+    "title": "Open Source Projects Are Getting AI-Written Contributions Whether They Want Them or Not",
+    "summary": "A maintainer of AutoGPT, writing on GitHub's blog, says AI-generated contributions are already arriving in project queues and shares the written rules and review gates they use to stay in control of what gets accepted.",
+    "source_urls": [
+      "https://github.blog/open-source/maintainers/your-contributors-are-ai-first-now-is-your-project/"
+    ]
+  },
+  {
+    "date": "2026-08-13",
+    "title": "The Developer Job Is Drifting From Writing to Directing",
+    "summary": "GitHub argues that as AI agents take on more of the typing, developers are increasingly responsible for the whole delivery system around the code rather than the code itself.",
+    "source_urls": [
+      "https://github.blog/developer-skills/career-growth/from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer/"
+    ]
+  },
+  {
+    "date": "2026-08-13",
+    "title": "Tailscale Traced Data Corruption to a 16-Year-Old SQLite Bug",
+    "summary": "Tailscale investigated databases that were coming back damaged and traced the cause to a bug in SQLite's write-ahead log reset — the mechanism that lets a database record changes to a side file first and fold them back into the main file later.",
+    "source_urls": [
+      "https://tailscale.com/blog/sqlite-wal-reset-bug"
+    ]
+  },
+  {
+    "date": "2026-08-13",
+    "title": "A Vision Model Small Enough to Run on Your Own Machine",
+    "summary": "Liquid AI released LFM2.",
+    "source_urls": [
+      "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b"
     ]
   }
 ]
