@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-07",
-    "title": "People Approving AI Actions Miss One Dangerous Request in Three",
-    "summary": "A study across 40,000 simulated runs found that when people were shown what an AI agent wanted to do and asked to approve or deny it, they missed roughly one in three harmful commands.",
-    "source_urls": [
-      "https://scalex.dev/blog/ai-agent-permissions-stats/"
-    ]
-  },
-  {
-    "date": "2026-08-07",
-    "title": "Meta Ordered to Pay $942 Million Over Harm to Children",
-    "summary": "A court ordered Meta to pay $942 million to address harm caused to children by its social media products.",
-    "source_urls": [
-      "https://www.wsj.com/tech/meta-ordered-to-pay-942-million-to-address-harm-to-kids-from-social-media-8ba5aab7"
-    ]
-  },
-  {
-    "date": "2026-08-07",
-    "title": "A Reporter Was Stalked Through a Child's Smartwatch",
-    "summary": "Wired documented how hackers took over a smartwatch marketed for children and used it to track a person's movements and listen in.",
-    "source_urls": [
-      "https://www.wired.com/story/hackers-stalked-me-by-hijacking-a-smartwatch-for-kids/"
-    ]
-  },
-  {
-    "date": "2026-08-07",
-    "title": "OpenAI Opens Its Newer Model to Free ChatGPT Users",
-    "summary": "Previously covered on 2026-07-31: OpenAI released GPT-5.",
-    "source_urls": [
-      "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/"
-    ]
-  },
-  {
-    "date": "2026-08-07",
-    "title": "USB-C Cable Labels Are Not Worth Trusting",
-    "summary": "A writer tested a drawer of USB-C cables with a meter and found the printed claims about charging speed and data transfer frequently did not match reality.",
-    "source_urls": [
-      "https://www.makeuseof.com/i-stopped-trusting-usb-c-cable-labels-started-testing-with-meter-instead/"
-    ]
-  },
-  {
-    "date": "2026-08-07",
-    "title": "GitHub's Malware Warnings Now Reach Past npm",
-    "summary": "GitHub's Advisory Database — the list it uses to warn projects that a piece of third-party code they depend on is malicious — previously covered only npm, the JavaScript package registry.",
-    "source_urls": [
-      "https://github.blog/security/supply-chain-security/how-we-took-malware-advisories-beyond-npm/"
-    ]
-  },
-  {
-    "date": "2026-08-07",
-    "title": "Writing Code Got Cheap. Owning It Didn't.",
-    "summary": "GitHub's engineering team published a framework for deciding which changes are genuinely cheap now that AI tools write much of the code.",
-    "source_urls": [
-      "https://github.blog/engineering/the-cost-of-saying-yes-has-changed/"
-    ]
-  },
-  {
     "date": "2026-08-08",
     "title": "AI Tutors Are Good at Answering. They're Bad at Holding Back.",
     "summary": "The Allen Institute for AI released TutorMoments, a study and public dataset that looks at the moments where a tutor has to choose between giving a student the answer and letting them struggle a little longer.",
@@ -445,6 +389,62 @@
     "summary": "GitHub published a method for stopping coding agents from dumping one enormous change into review.",
     "source_urls": [
       "https://github.blog/engineering/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/"
+    ]
+  },
+  {
+    "date": "2026-08-15",
+    "title": "Google Is Making AI That Works on Data It Cannot Read",
+    "summary": "Google published how it is using homomorphic encryption — a method that lets a computer run calculations on encrypted data without ever unlocking it — to make private AI features practical in real products rather than just in research papers.",
+    "source_urls": [
+      "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/"
+    ]
+  },
+  {
+    "date": "2026-08-15",
+    "title": "Where Open AI Models Actually Stand This Summer",
+    "summary": "Hugging Face published its half-yearly review of open models — the ones anyone can download and run on their own machines.",
+    "source_urls": [
+      "https://huggingface.co/blog/state-of-open-models-summer-2026"
+    ]
+  },
+  {
+    "date": "2026-08-15",
+    "title": "Firefox Is Now the Last Major Browser Where uBlock Origin Still Works",
+    "summary": "Chrome and the other Chromium-based browsers have finished phasing out the extension format uBlock Origin depends on, leaving Firefox as the only major browser where the ad blocker still runs in full.",
+    "source_urls": [
+      "https://www.pcworld.com/article/3212428/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin.html"
+    ]
+  },
+  {
+    "date": "2026-08-15",
+    "title": "A New Open Coding Model Arrives With Security Skills Attached",
+    "summary": "Z.",
+    "source_urls": [
+      "https://z.ai/blog/glm-5.3"
+    ]
+  },
+  {
+    "date": "2026-08-15",
+    "title": "What 50 Open Source Projects Learned About Security in the AI Era",
+    "summary": "GitHub wrote up the fourth round of its Secure Open Source Fund, where 50 projects combined AI-assisted workflows, maintainer expertise, security tooling and funding to harden their code.",
+    "source_urls": [
+      "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/"
+    ]
+  },
+  {
+    "date": "2026-08-15",
+    "title": "One Loop From Robot Demonstration to Deployed Policy",
+    "summary": "Amazon and Hugging Face described a single pipeline for training robots: record a human demonstration straight into a cloud storage bucket, store it with byte-level deduplication so repeated frames are not saved twice, train by streaming the data from the Hub instead of downloading a copy, then deploy the resulting policy and feed its new recordings back into the same loop.",
+    "source_urls": [
+      "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop"
+    ]
+  },
+  {
+    "date": "2026-08-15",
+    "title": "RustDesk Adds Unattended Remote Access on Wayland",
+    "summary": "RustDesk, the open source alternative to TeamViewer, now supports true unattended remote access on Wayland — the display system that has been replacing the decades-old X11 on Linux desktops.",
+    "source_urls": [
+      "https://rustdesk.com/blog/unattended-remote-access-wayland/"
     ]
   }
 ]
