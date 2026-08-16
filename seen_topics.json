@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-08",
-    "title": "AI Tutors Are Good at Answering. They're Bad at Holding Back.",
-    "summary": "The Allen Institute for AI released TutorMoments, a study and public dataset that looks at the moments where a tutor has to choose between giving a student the answer and letting them struggle a little longer.",
-    "source_urls": [
-      "https://huggingface.co/blog/allenai/tutormoments"
-    ]
-  },
-  {
-    "date": "2026-08-08",
-    "title": "Memory Chips Are Sold Out Through 2027",
-    "summary": "Reports say memory manufacturing capacity for 2027 has already been bought up, largely by AI data centre demand.",
-    "source_urls": [
-      "https://www.ign.com/articles/ramageddon-continues-another-year-as-2027-memory-capacity-is-reportedly-sold-out"
-    ]
-  },
-  {
-    "date": "2026-08-08",
-    "title": "Oracle Bans AI-Generated Code From OpenJDK",
-    "summary": "Oracle has barred AI-generated contributions from OpenJDK, the open-source project behind Java, which runs a large share of corporate software.",
-    "source_urls": [
-      "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code"
-    ]
-  },
-  {
-    "date": "2026-08-08",
-    "title": "One Site Found 99% of Its Traffic Was Bots",
-    "summary": "The owner of a 1.",
-    "source_urls": [
-      "https://patronview.com/news/99-percent-of-my-website-traffic-is-bots/"
-    ]
-  },
-  {
-    "date": "2026-08-08",
-    "title": "The US Energy Department Launches Its Own Open AI Models",
-    "summary": "The Department of Energy opened the Genesis Open Models Initiative, run out of Argonne National Laboratory, to build and publish AI models openly rather than behind a commercial licence.",
-    "source_urls": [
-      "https://genesisopenmodels.anl.gov/"
-    ]
-  },
-  {
-    "date": "2026-08-08",
-    "title": "Making Postgres 300x Faster at Analytics",
-    "summary": "Engineers rebuilt the part of PostgreSQL that executes queries and reported a 300x speed-up on analytical workloads.",
-    "source_urls": [
-      "https://malisper.me/how-we-made-postgres-hundreds-of-times-faster-the-query-engine/"
-    ]
-  },
-  {
-    "date": "2026-08-08",
-    "title": "Cloudflare Built a Browser for Agents Instead of People",
-    "summary": "Cloudflare released Kitesurf, a browser designed to be driven by AI agents rather than displayed to a human.",
-    "source_urls": [
-      "https://blog.cloudflare.com/kitesurf/"
-    ]
-  },
-  {
     "date": "2026-08-09",
     "title": "An AI Agent Broke Into Hugging Face by Accident",
     "summary": "Hugging Face — the site where most open AI models are hosted and downloaded — published a technical timeline of a July incident in which an automated agent belonging to another AI lab got into its systems, alongside its formal security disclosure.",
@@ -445,6 +389,62 @@
     "summary": "RustDesk, the open source alternative to TeamViewer, now supports true unattended remote access on Wayland — the display system that has been replacing the decades-old X11 on Linux desktops.",
     "source_urls": [
       "https://rustdesk.com/blog/unattended-remote-access-wayland/"
+    ]
+  },
+  {
+    "date": "2026-08-16",
+    "title": "Anthropic Writes Up What Goes Wrong When AI Agents Work in Teams",
+    "summary": "Anthropic published research on multi-agent systems — setups where several AI agents split a job between them instead of one assistant doing all of it.",
+    "source_urls": [
+      "https://www.anthropic.com/research/multiagent-systems"
+    ]
+  },
+  {
+    "date": "2026-08-16",
+    "title": "GitHub Puts Agents Into the Steps Around the Code",
+    "summary": "GitHub showed how four of its agent apps handle the work that surrounds writing software — scoping a feature, checking it for security problems, rolling it out, and shipping it — without leaving GitHub.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/"
+    ]
+  },
+  {
+    "date": "2026-08-16",
+    "title": "GitHub Logged Eight Service Incidents in July",
+    "summary": "GitHub's monthly availability report counts eight incidents that degraded its services in July, after nine in May and six in June.",
+    "source_urls": [
+      "https://github.blog/news-insights/company-news/github-availability-report-july-2026/"
+    ]
+  },
+  {
+    "date": "2026-08-16",
+    "title": "A Reality Check on AI in Drug Discovery",
+    "summary": "Science published an assessment of where AI-assisted drug discovery actually stands and what still has to happen before it changes medicine.",
+    "source_urls": [
+      "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really"
+    ]
+  },
+  {
+    "date": "2026-08-16",
+    "title": "Working With AI Feels More Like Leading a Team Than Doing the Work",
+    "summary": "A developer argues that the skill AI tools now demand is the one managers already have: setting direction, checking work, and deciding what is good enough.",
+    "source_urls": [
+      "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership/"
+    ]
+  },
+  {
+    "date": "2026-08-16",
+    "title": "AI Helped Move a 250,000-Line Weather Model Onto GPUs",
+    "summary": "Researchers published their account of using AI assistance to port a 250,000-line legacy weather simulation to run on GPUs — the chips that make modern AI training fast, and which also run scientific simulations far quicker than ordinary processors.",
+    "source_urls": [
+      "https://arxiv.org/abs/2608.13122"
+    ]
+  },
+  {
+    "date": "2026-08-16",
+    "title": "Fast Scientific Python Now Runs Inside the Browser",
+    "summary": "Numba — a tool that speeds up Python by compiling the slow numerical parts down to machine code — now works in JupyterLite, a version of the Jupyter notebook that runs entirely in a browser tab with no server behind it.",
+    "source_urls": [
+      "https://notebook.link/blog/numba-in-the-browser/"
     ]
   }
 ]
