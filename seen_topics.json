@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-10",
-    "title": "Anthropic Releases Claude Opus 5",
-    "summary": "Anthropic released Claude Opus 5, an update to its Opus tier of models, available today.",
-    "source_urls": [
-      "https://www.anthropic.com/news/claude-opus-5"
-    ]
-  },
-  {
-    "date": "2026-08-10",
-    "title": "A Japanese Court Overturned Red's RAW Video Patent",
-    "summary": "Panasonic won a case in Japan invalidating Red's patent on compressed RAW video recording — a patent Apple, Sony and Nikon had all failed to overturn.",
-    "source_urls": [
-      "https://www.dpreview.com/news/panasonic-did-what-apple-sony-and-nikon-couldnt-overturn-a-red-raw-video-patent/"
-    ]
-  },
-  {
-    "date": "2026-08-10",
-    "title": "A Working Method for Learning Hard Things With an AI Model",
-    "summary": "A developer wrote up the routine they use to learn unfamiliar technical subjects with a language model: not asking it for answers, but using it to test whether their own explanation holds up.",
-    "source_urls": [
-      "https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/"
-    ]
-  },
-  {
-    "date": "2026-08-10",
-    "title": "Windows 11's Weather App Uses More Than a Gigabyte of Memory",
-    "summary": "Testing found the small weather widget built into Windows 11 holding over 1 GB of RAM — more than many full applications.",
-    "source_urls": [
-      "https://www.notebookcheck.net/Windows-11-s-built-in-Weather-app-wastes-more-than-1-GB-of-RAM.1364205.0.html"
-    ]
-  },
-  {
-    "date": "2026-08-10",
-    "title": "Turn Satellite Imagery Into a Paper Globe You Fold Yourself",
-    "summary": "A small web tool takes satellite imagery and lays it out as a printable net you cut and fold into a globe.",
-    "source_urls": [
-      "https://foldingglobes.com/"
-    ]
-  },
-  {
-    "date": "2026-08-10",
-    "title": "4-Bit Image Generation Lands in Diffusers",
-    "summary": "Hugging Face added Nunchaku 4-bit inference to Diffusers, the standard Python library for running image-generation models.",
-    "source_urls": [
-      "https://huggingface.co/blog/nunchaku-diffusers"
-    ]
-  },
-  {
-    "date": "2026-08-10",
-    "title": "Idle GPUs Are the New Grounded Aircraft",
-    "summary": "A piece on GPU management argues that AI infrastructure should be measured the way airlines measure fleets: the expensive asset only earns while it is in use, so utilisation matters more than how many you own.",
-    "source_urls": [
-      "https://huggingface.co/blog/Dharma-AI/gpu-management"
-    ]
-  },
-  {
     "date": "2026-08-11",
     "title": "Meta Returns to Open Models With Muse Glimmer",
     "summary": "Meta released Muse Glimmer, a 30-billion-parameter model that handles both text and images and is designed for always-on local agents — software that keeps running in the background on your machine.",
@@ -445,6 +389,62 @@
     "summary": "A short walkthrough of zero-knowledge proofs: a method for proving a statement is true without handing over the information behind it.",
     "source_urls": [
       "https://bernsteinbear.com/blog/zkp/"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "title": "Anthropic Releases Claude Opus 5",
+    "summary": "Anthropic released Claude Opus 5, the newest model in its high-end tier.",
+    "source_urls": [
+      "https://www.anthropic.com/news/claude-opus-5"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "title": "OpenAI Halves the Price of GPT-5.6 Sol",
+    "summary": "OpenAI cut the price of its GPT-5.",
+    "source_urls": [
+      "https://openrouter.ai/openai/gpt-5.6-sol"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "title": "An AI Bug-Fixing Tool Was Turned Into a Way In",
+    "summary": "Security firm Wiz describes how GitHub Copilot's \"Autofix\" feature — which proposes code fixes automatically — could be manipulated to compromise Snowflake's internal Jira system.",
+    "source_urls": [
+      "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "title": "A Fake Think Tank Built to Influence Chatbots",
+    "summary": "Responsible Statecraft reports that Israel set up a think tank that appears to exist mainly so AI chatbots will cite it.",
+    "source_urls": [
+      "https://responsiblestatecraft.org/israel-influence-chatgpt/"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "title": "A Librarian's Guide to Turning AI Off",
+    "summary": "Librarian Jessamyn West published a practical list of how to disable or avoid the AI features now switched on by default in search engines, browsers, phones, and office software.",
+    "source_urls": [
+      "https://www.librarian.net/notoai/"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "title": "Same Machines, 33 Points More Use — Only the Order Changed",
+    "summary": "A team writing on Hugging Face's blog describes running the same cluster of AI chips 33 percentage points closer to full use without buying anything, purely by changing the order jobs run in.",
+    "source_urls": [
+      "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "title": "DuckDB Previews Version 2.0",
+    "summary": "DuckDB published a preview of the highlights coming in version 2.",
+    "source_urls": [
+      "https://duckdb.org/2026/08/17/duckdb-20-highlights"
     ]
   }
 ]
