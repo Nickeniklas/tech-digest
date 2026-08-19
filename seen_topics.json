@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-11",
-    "title": "Meta Returns to Open Models With Muse Glimmer",
-    "summary": "Meta released Muse Glimmer, a 30-billion-parameter model that handles both text and images and is designed for always-on local agents — software that keeps running in the background on your machine.",
-    "source_urls": [
-      "https://huggingface.co/blog/muse-glimmer"
-    ]
-  },
-  {
-    "date": "2026-08-11",
-    "title": "An AI Model Small Enough for a Watch",
-    "summary": "Cactus released Needle2, an agentic model of roughly 14 megabytes — small enough to sit inside a phone app, a smartwatch, or a home device.",
-    "source_urls": [
-      "https://cactuscompute.com/needle"
-    ]
-  },
-  {
-    "date": "2026-08-11",
-    "title": "The UK's Push Against Online Anonymity Is Arriving in the US",
-    "summary": "A report traces how the lobbying that produced Britain's age-verification and online identity rules is now working on American legislatures.",
-    "source_urls": [
-      "https://www.effort.news/uk-lobby"
-    ]
-  },
-  {
-    "date": "2026-08-11",
-    "title": "One Open Voice Model, Twelve Languages",
-    "summary": "NVIDIA published Magpie TTS with open weights: a text-to-speech model built for real-time conversation in twelve languages, which you can run on your own hardware instead of paying per request to a service.",
-    "source_urls": [
-      "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents"
-    ]
-  },
-  {
-    "date": "2026-08-11",
-    "title": "Sonic Pi, the Code-Your-Own-Music Tool, Reaches Version 5",
-    "summary": "Sonic Pi, free software widely used in classrooms to teach programming by making music, shipped version 5.",
-    "source_urls": [
-      "https://www.patreon.com/samaaron/posts/sonic-pi-v5-166001392"
-    ]
-  },
-  {
-    "date": "2026-08-11",
-    "title": "Making Model Shrinking Cheap Enough to Do Routinely",
-    "summary": "Multiverse Computing described two systems changes that bring down the cost of knowledge distillation — training a small 'student' model to reproduce the behaviour of a larger 'teacher'.",
-    "source_urls": [
-      "https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation"
-    ]
-  },
-  {
-    "date": "2026-08-11",
-    "title": "GitHub Ships a Copilot SDK for Java",
-    "summary": "GitHub released a Java SDK for Copilot, so a Java application can drive the model from ordinary Java code — using annotations to declare what the model may call, and virtual threads to run many requests at once — instead of shelling out to a command-line tool or hand-writing HTTP calls.",
-    "source_urls": [
-      "https://github.blog/engineering/using-the-github-copilot-sdk-for-java/"
-    ]
-  },
-  {
     "date": "2026-08-12",
     "title": "London Underground Starts Scanning Passengers' Faces",
     "summary": "British Transport Police are expanding their live facial recognition trial into London Underground stations, where cameras check passing faces against a watchlist in real time.",
@@ -445,6 +389,62 @@
     "summary": "DuckDB published a preview of the highlights coming in version 2.",
     "source_urls": [
       "https://duckdb.org/2026/08/17/duckdb-20-highlights"
+    ]
+  },
+  {
+    "date": "2026-08-19",
+    "title": "Computer Memory Costs Five Times What It Did a Year Ago",
+    "summary": "Tom's Hardware reports that memory prices have climbed roughly 500% in twelve months — up to ten times the cheapest levels ever tracked.",
+    "source_urls": [
+      "https://www.tomshardware.com/pc-components/ram/memory-prices-climb-500-percent-in-12-months-up-to-10x-the-lowest-ever-tracked-prices-128gb-of-ddr5-now-usd3-399"
+    ]
+  },
+  {
+    "date": "2026-08-19",
+    "title": "Apple Changes How Apps Work in the European Union",
+    "summary": "Apple published a set of changes for apps distributed in the EU.",
+    "source_urls": [
+      "https://www.apple.com/newsroom/2026/08/apple-announces-changes-for-apps-in-the-european-union/"
+    ]
+  },
+  {
+    "date": "2026-08-19",
+    "title": "Cursor Launches a GitHub Alternative",
+    "summary": "Cursor, the AI code editor, has launched Origin — its own service for storing and hosting code, the job GitHub does for most of the software industry.",
+    "source_urls": [
+      "https://cursor.com/changelog/origin-code-hosting"
+    ]
+  },
+  {
+    "date": "2026-08-19",
+    "title": "Meta Releases an Open AI Model That Runs on Your Own Machine",
+    "summary": "Meta published Muse Glimmer, an open source model that handles both text and images, can carry out multi-step tasks, and runs locally instead of in someone else's data centre.",
+    "source_urls": [
+      "https://huggingface.co/blog/muse-glimmer"
+    ]
+  },
+  {
+    "date": "2026-08-19",
+    "title": "A 25-Year-Old Video Patent Expires, Clearing a Problem for Linux",
+    "summary": "A Brazilian patent covering video technology has run out, ending a long-standing legal complication for Linux.",
+    "source_urls": [
+      "https://www.xda-developers.com/25-year-old-brazilian-video-patent-expired-legal-headache-linux/"
+    ]
+  },
+  {
+    "date": "2026-08-19",
+    "title": "Search That Compares Every Word, Not Just the Whole Document",
+    "summary": "Sentence Transformers, one of the most widely used open source search libraries, now supports multi-vector — or \"late interaction\" — models.",
+    "source_urls": [
+      "https://huggingface.co/blog/multi-vector-encoder"
+    ]
+  },
+  {
+    "date": "2026-08-19",
+    "title": "How Much Memory an AI Agent Needs Depends on How Capable It Already Is",
+    "summary": "IBM Research tested how much accumulated memory an AI agent actually needs, comparing three configurations across models of different strength.",
+    "source_urls": [
+      "https://huggingface.co/blog/ibm-research/altk-evolve-hmm"
     ]
   }
 ]
