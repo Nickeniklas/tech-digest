@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-12",
-    "title": "London Underground Starts Scanning Passengers' Faces",
-    "summary": "British Transport Police are expanding their live facial recognition trial into London Underground stations, where cameras check passing faces against a watchlist in real time.",
-    "source_urls": [
-      "https://www.btp.police.uk/news/btp/news/england/btp-expands-live-facial-recognition-lfr-trial-into-london-underground-stations/"
-    ]
-  },
-  {
-    "date": "2026-08-12",
-    "title": "A Firm Selling \"100% Human-Written\" Research Was Using AI for All of It",
-    "summary": "404 Media reports that a company marketing medical research and peer review as never AI-generated was in fact producing it entirely with AI.",
-    "source_urls": [
-      "https://www.404media.co/company-offering-100-human-written-never-ai-peer-review-is-entirely-ai/"
-    ]
-  },
-  {
-    "date": "2026-08-12",
-    "title": "An Officer Is Accused of Using a Camera Network to Follow an Ex-Partner",
-    "summary": "A New Bedford police officer allegedly used Flock's automated licence plate camera network to track a former romantic partner.",
-    "source_urls": [
-      "https://newbedfordlight.org/new-bedford-police-officer-accused-of-using-flock-cameras-to-track-and-follow-ex-romantic-partner/"
-    ]
-  },
-  {
-    "date": "2026-08-12",
-    "title": "Researchers Test Whether AI Models Can Notice Their Own Thinking",
-    "summary": "A new paper looks at whether large language models can accurately report what is happening inside them, or whether they just produce a plausible-sounding story about it.",
-    "source_urls": [
-      "https://arxiv.org/abs/2601.01828"
-    ]
-  },
-  {
-    "date": "2026-08-12",
-    "title": "Mojo, the Python-Like Language Built for AI, Reaches 1.0",
-    "summary": "Modular shipped version 1.",
-    "source_urls": [
-      "https://www.modular.com/blog/modular-26-5-mojo-1-0-is-here"
-    ]
-  },
-  {
-    "date": "2026-08-12",
-    "title": "Two Ways to Let an Agent Learn From Itself — and What Each Costs in Tokens",
-    "summary": "IBM Research compared its ALTK-Evolve approach with ACE.",
-    "source_urls": [
-      "https://huggingface.co/blog/ibm-research/altk-evolve-sldd"
-    ]
-  },
-  {
-    "date": "2026-08-12",
-    "title": "Postgres Hands Analytics Queries Off to ClickHouse",
-    "summary": "pg_clickhouse v0.",
-    "source_urls": [
-      "https://clickhouse.com/blog/pg_clickhouse-whats-new-july-2026"
-    ]
-  },
-  {
     "date": "2026-08-13",
     "title": "Three New AI Models Landed on the Same Day",
     "summary": "DeepSeek published V4 Pro, Alibaba's Qwen team released Qwen3.",
@@ -445,6 +389,62 @@
     "summary": "IBM Research tested how much accumulated memory an AI agent actually needs, comparing three configurations across models of different strength.",
     "source_urls": [
       "https://huggingface.co/blog/ibm-research/altk-evolve-hmm"
+    ]
+  },
+  {
+    "date": "2026-08-20",
+    "title": "Stripe Is Buying the Place Companies Go to Buy AI",
+    "summary": "OpenRouter, the service that lets a business reach hundreds of different AI models through one account and one bill, announced it is joining Stripe, the company that processes online payments for a large share of the internet.",
+    "source_urls": [
+      "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/"
+    ]
+  },
+  {
+    "date": "2026-08-20",
+    "title": "OpenAI Says It Will Slow Down Where Models Get Good at Hacking",
+    "summary": "OpenAI published its thinking on how quickly to release models as they become more capable at cyber tasks — the same skills that help defenders find security holes also help attackers exploit them.",
+    "source_urls": [
+      "https://openai.com/index/pacing-model-development-cyber-capabilities/"
+    ]
+  },
+  {
+    "date": "2026-08-20",
+    "title": "A Case for Giving AI a Whiteboard Instead of a Chat Window",
+    "summary": "A GitHub engineer argues that chat is fine for saying what you want but terrible for tracking what an AI assistant actually did — the work disappears up the scroll.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient/"
+    ]
+  },
+  {
+    "date": "2026-08-20",
+    "title": "Remote Workers Reported the Highest Well-Being in a Study of 7,700 People",
+    "summary": "Researchers at the University of Colorado Boulder surveyed 7,700 employees and found that those working remotely reported better well-being than their on-site counterparts.",
+    "source_urls": [
+      "https://www.colorado.edu/today/2026/08/12/remote-workers-report-highest-well-being-study-7700-employees"
+    ]
+  },
+  {
+    "date": "2026-08-20",
+    "title": "NVIDIA Releases a Voice Model You Can Run Yourself",
+    "summary": "NVIDIA published Magpie TTS, a text-to-speech system with open weights, meaning anyone can download it and run it on their own hardware in several languages.",
+    "source_urls": [
+      "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents"
+    ]
+  },
+  {
+    "date": "2026-08-20",
+    "title": "Squeezing AI Models Down to Four Bits Without Wrecking Them",
+    "summary": "Previously covered on 2026-08-13: Liquid AI released LFM2.",
+    "source_urls": [
+      "https://huggingface.co/blog/LiquidAI/qad"
+    ]
+  },
+  {
+    "date": "2026-08-20",
+    "title": "Go 1.27 Is Out",
+    "summary": "The Go team shipped version 1.",
+    "source_urls": [
+      "https://go.dev/blog/go1.27"
     ]
   }
 ]
