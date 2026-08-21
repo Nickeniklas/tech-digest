@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-13",
-    "title": "Three New AI Models Landed on the Same Day",
-    "summary": "DeepSeek published V4 Pro, Alibaba's Qwen team released Qwen3.",
-    "source_urls": [
-      "https://openrouter.ai/deepseek/deepseek-v4-pro-0813"
-    ]
-  },
-  {
-    "date": "2026-08-13",
-    "title": "uBlock Origin Stops Trying to Block Facebook Ads",
-    "summary": "uBlock Origin, the most widely used ad blocker, is giving up on keeping ads off Facebook.",
-    "source_urls": [
-      "https://digitalescapetools.com/2026/08/ublock-origin-stops-chasing-facebook-ads.html"
-    ]
-  },
-  {
-    "date": "2026-08-13",
-    "title": "Someone Is Scanning the Web While Pretending to Be an AI Bot",
-    "summary": "A report describes mass scans hunting for security holes across websites, disguised so the traffic looks like well-known AI crawlers such as ClaudeBot.",
-    "source_urls": [
-      "https://knownagents.com/insights"
-    ]
-  },
-  {
-    "date": "2026-08-13",
-    "title": "Open Source Projects Are Getting AI-Written Contributions Whether They Want Them or Not",
-    "summary": "A maintainer of AutoGPT, writing on GitHub's blog, says AI-generated contributions are already arriving in project queues and shares the written rules and review gates they use to stay in control of what gets accepted.",
-    "source_urls": [
-      "https://github.blog/open-source/maintainers/your-contributors-are-ai-first-now-is-your-project/"
-    ]
-  },
-  {
-    "date": "2026-08-13",
-    "title": "The Developer Job Is Drifting From Writing to Directing",
-    "summary": "GitHub argues that as AI agents take on more of the typing, developers are increasingly responsible for the whole delivery system around the code rather than the code itself.",
-    "source_urls": [
-      "https://github.blog/developer-skills/career-growth/from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer/"
-    ]
-  },
-  {
-    "date": "2026-08-13",
-    "title": "Tailscale Traced Data Corruption to a 16-Year-Old SQLite Bug",
-    "summary": "Tailscale investigated databases that were coming back damaged and traced the cause to a bug in SQLite's write-ahead log reset — the mechanism that lets a database record changes to a side file first and fold them back into the main file later.",
-    "source_urls": [
-      "https://tailscale.com/blog/sqlite-wal-reset-bug"
-    ]
-  },
-  {
-    "date": "2026-08-13",
-    "title": "A Vision Model Small Enough to Run on Your Own Machine",
-    "summary": "Liquid AI released LFM2.",
-    "source_urls": [
-      "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b"
-    ]
-  },
-  {
     "date": "2026-08-14",
     "title": "1,200 Volunteers Tried to Reproduce 2,200 AI Papers",
     "summary": "Hugging Face ran a three-week community hackathon in which more than 1,200 people took papers from ICML, one of the field's biggest machine learning conferences, and tried to re-run the work themselves.",
@@ -445,6 +389,62 @@
     "summary": "The Go team shipped version 1.",
     "source_urls": [
       "https://go.dev/blog/go1.27"
+    ]
+  },
+  {
+    "date": "2026-08-21",
+    "title": "GitHub Explains the August 17 Outage and What It Is Changing",
+    "summary": "GitHub published an account of the outage that degraded its services on August 17, along with the reliability work it is committing to next.",
+    "source_urls": [
+      "https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/"
+    ]
+  },
+  {
+    "date": "2026-08-21",
+    "title": "AI Companies Are Cutting Books Apart to Scan Them",
+    "summary": "Anna's Archive argues that AI companies are buying physical books and destroying them in the process of digitising them, since slicing the spine off is the fastest way to feed pages through a scanner.",
+    "source_urls": [
+      "https://annas-archive.gl/blog/physical-destruction.html"
+    ]
+  },
+  {
+    "date": "2026-08-21",
+    "title": "AliExpress Is Fingerprinting Visitors Through Their Audio Hardware",
+    "summary": "A developer traced a strange bug in their Bluetooth headphones, which kept dropping the connection to a second device, back to AliExpress running silent audio fingerprinting in the background of its web pages.",
+    "source_urls": [
+      "https://blog.laserphile.com/2026/08/aliexpress-webpage-keeping-multipoint.html"
+    ]
+  },
+  {
+    "date": "2026-08-21",
+    "title": "A Malicious Software Package Ran Its Payload Before Anyone Pressed Run",
+    "summary": "Security researchers at SafeDep found a package in Rust's public library index that executes hostile code while software is being built, not when it is later run.",
+    "source_urls": [
+      "https://safedep.io/arrayref-proc-macro1-rust-build-time-malware/"
+    ]
+  },
+  {
+    "date": "2026-08-21",
+    "title": "A Small Model That Plays Piano With You",
+    "summary": "A developer trained a 125-million-parameter model that autocompletes piano playing and runs entirely on the device rather than in a data centre.",
+    "source_urls": [
+      "https://simedw.com/2026/08/20/midi-autocomplete/"
+    ]
+  },
+  {
+    "date": "2026-08-21",
+    "title": "Mojo Is Now Open Source",
+    "summary": "Modular has opened the source code of Mojo, the programming language it built to write high-performance AI code with Python-like syntax.",
+    "source_urls": [
+      "https://www.modular.com/blog/mojo-open-source"
+    ]
+  },
+  {
+    "date": "2026-08-21",
+    "title": "Draft Models That Make Inference Up to 3.2x Faster",
+    "summary": "Liquid AI released DSpark draft model checkpoints for three models in its LFM2.",
+    "source_urls": [
+      "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
     ]
   }
 ]
