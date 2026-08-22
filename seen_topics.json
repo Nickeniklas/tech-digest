@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-14",
-    "title": "1,200 Volunteers Tried to Reproduce 2,200 AI Papers",
-    "summary": "Hugging Face ran a three-week community hackathon in which more than 1,200 people took papers from ICML, one of the field's biggest machine learning conferences, and tried to re-run the work themselves.",
-    "source_urls": [
-      "https://huggingface.co/blog/icml-2026-open-reproductions"
-    ]
-  },
-  {
-    "date": "2026-08-14",
-    "title": "Google Releases Gemini 3.7 Flash",
-    "summary": "Google published Gemini 3.",
-    "source_urls": [
-      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/"
-    ]
-  },
-  {
-    "date": "2026-08-14",
-    "title": "Someone Followed 657,607 Links to See How Much of the Web Is Gone",
-    "summary": "A researcher traced 657,607 links to find out how many still lead anywhere.",
-    "source_urls": [
-      "https://0.mk/blog/link-rot"
-    ]
-  },
-  {
-    "date": "2026-08-14",
-    "title": "The US Government Ran a Mass Surveillance Campaign Against Protesters",
-    "summary": "The Guardian reports that US authorities carried out broad digital spying on left-wing and anti-ICE protesters.",
-    "source_urls": [
-      "https://www.theguardian.com/us-news/2026/aug/13/us-government-spied-anti-ice-protesters"
-    ]
-  },
-  {
-    "date": "2026-08-14",
-    "title": "Mistral Updates Its Document-Reading Model",
-    "summary": "Mistral shipped OCR 4.",
-    "source_urls": [
-      "https://docs.mistral.ai/models/ocr-4-1"
-    ]
-  },
-  {
-    "date": "2026-08-14",
-    "title": "One Log Line, 110 Kilobytes of Disk Writes",
-    "summary": "A bug report against systemd — the software that starts and supervises services on most Linux servers — shows that writing a single line to the system log can trigger 49 KB or more of actual disk writes on the ext4 filesystem, and 110 KB or more on btrfs.",
-    "source_urls": [
-      "https://github.com/systemd/systemd/issues/40262"
-    ]
-  },
-  {
-    "date": "2026-08-14",
-    "title": "Breaking a Giant AI-Written Pull Request Into Reviewable Pieces",
-    "summary": "GitHub published a method for stopping coding agents from dumping one enormous change into review.",
-    "source_urls": [
-      "https://github.blog/engineering/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/"
-    ]
-  },
-  {
     "date": "2026-08-15",
     "title": "Google Is Making AI That Works on Data It Cannot Read",
     "summary": "Google published how it is using homomorphic encryption — a method that lets a computer run calculations on encrypted data without ever unlocking it — to make private AI features practical in real products rather than just in research papers.",
@@ -445,6 +389,62 @@
     "summary": "Liquid AI released DSpark draft model checkpoints for three models in its LFM2.",
     "source_urls": [
       "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
+    ]
+  },
+  {
+    "date": "2026-08-22",
+    "title": "AI Lifted Homework Scores, Then Exam Scores Fell",
+    "summary": "The Economist looked at research on students who used AI assistance for their homework.",
+    "source_urls": [
+      "https://www.economist.com/graphic-detail/2026/08/18/does-ai-stop-children-from-learning"
+    ]
+  },
+  {
+    "date": "2026-08-22",
+    "title": "Kagi Will Now Hide Paywalled Pages From Your Search Results",
+    "summary": "The search engine Kagi added a setting that filters out results you cannot read without paying.",
+    "source_urls": [
+      "https://kagi.com/changelog#11296"
+    ]
+  },
+  {
+    "date": "2026-08-22",
+    "title": "A US Traveller Faces Felony Charges for Deleting Data From His Own Phone",
+    "summary": "The New York Times reports that a man who wiped data from his phone at a US border crossing is now facing felony charges over it.",
+    "source_urls": [
+      "https://www.nytimes.com/2026/08/21/us/politics/samuel-tunick-deleted-phone-felony.html"
+    ]
+  },
+  {
+    "date": "2026-08-22",
+    "title": "A Voice Model That Starts Talking in Under 50 Milliseconds",
+    "summary": "Nari Labs published how it cut the delay before a text-to-speech system begins speaking to under 50 milliseconds — fast enough that a spoken reply no longer feels like it is buffering.",
+    "source_urls": [
+      "https://nari-labs.com/blog/qwen3-tts-speed-cost-frontier/"
+    ]
+  },
+  {
+    "date": "2026-08-22",
+    "title": "GitHub Adds a Pane for Keeping Track of What Its AI Is Doing",
+    "summary": "GitHub's Copilot app now has a \"My work\" pane that lists every AI session you have running, what is finished, and what is still in progress.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-managing-your-work/"
+    ]
+  },
+  {
+    "date": "2026-08-22",
+    "title": "Speech Recognition Scores Say Human-Level. The Recordings Disagree.",
+    "summary": "Hugging Face examined why speech recognition models post near-human accuracy on public benchmarks while still tripping over real recordings.",
+    "source_urls": [
+      "https://huggingface.co/blog/asr-benchmark-optimization"
+    ]
+  },
+  {
+    "date": "2026-08-22",
+    "title": "What Happens When You Try to Reproduce 2,200 AI Papers",
+    "summary": "Hugging Face wrote up what it found running open reproductions of 2,200 papers from ICML, one of the field's main machine learning conferences.",
+    "source_urls": [
+      "https://huggingface.co/blog/icml-2026-open-reproductions"
     ]
   }
 ]
