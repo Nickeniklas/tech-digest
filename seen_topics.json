@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-15",
-    "title": "Google Is Making AI That Works on Data It Cannot Read",
-    "summary": "Google published how it is using homomorphic encryption — a method that lets a computer run calculations on encrypted data without ever unlocking it — to make private AI features practical in real products rather than just in research papers.",
-    "source_urls": [
-      "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/"
-    ]
-  },
-  {
-    "date": "2026-08-15",
-    "title": "Where Open AI Models Actually Stand This Summer",
-    "summary": "Hugging Face published its half-yearly review of open models — the ones anyone can download and run on their own machines.",
-    "source_urls": [
-      "https://huggingface.co/blog/state-of-open-models-summer-2026"
-    ]
-  },
-  {
-    "date": "2026-08-15",
-    "title": "Firefox Is Now the Last Major Browser Where uBlock Origin Still Works",
-    "summary": "Chrome and the other Chromium-based browsers have finished phasing out the extension format uBlock Origin depends on, leaving Firefox as the only major browser where the ad blocker still runs in full.",
-    "source_urls": [
-      "https://www.pcworld.com/article/3212428/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin.html"
-    ]
-  },
-  {
-    "date": "2026-08-15",
-    "title": "A New Open Coding Model Arrives With Security Skills Attached",
-    "summary": "Z.",
-    "source_urls": [
-      "https://z.ai/blog/glm-5.3"
-    ]
-  },
-  {
-    "date": "2026-08-15",
-    "title": "What 50 Open Source Projects Learned About Security in the AI Era",
-    "summary": "GitHub wrote up the fourth round of its Secure Open Source Fund, where 50 projects combined AI-assisted workflows, maintainer expertise, security tooling and funding to harden their code.",
-    "source_urls": [
-      "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/"
-    ]
-  },
-  {
-    "date": "2026-08-15",
-    "title": "One Loop From Robot Demonstration to Deployed Policy",
-    "summary": "Amazon and Hugging Face described a single pipeline for training robots: record a human demonstration straight into a cloud storage bucket, store it with byte-level deduplication so repeated frames are not saved twice, train by streaming the data from the Hub instead of downloading a copy, then deploy the resulting policy and feed its new recordings back into the same loop.",
-    "source_urls": [
-      "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop"
-    ]
-  },
-  {
-    "date": "2026-08-15",
-    "title": "RustDesk Adds Unattended Remote Access on Wayland",
-    "summary": "RustDesk, the open source alternative to TeamViewer, now supports true unattended remote access on Wayland — the display system that has been replacing the decades-old X11 on Linux desktops.",
-    "source_urls": [
-      "https://rustdesk.com/blog/unattended-remote-access-wayland/"
-    ]
-  },
-  {
     "date": "2026-08-16",
     "title": "Anthropic Writes Up What Goes Wrong When AI Agents Work in Teams",
     "summary": "Anthropic published research on multi-agent systems — setups where several AI agents split a job between them instead of one assistant doing all of it.",
@@ -445,6 +389,62 @@
     "summary": "Hugging Face wrote up what it found running open reproductions of 2,200 papers from ICML, one of the field's main machine learning conferences.",
     "source_urls": [
       "https://huggingface.co/blog/icml-2026-open-reproductions"
+    ]
+  },
+  {
+    "date": "2026-08-23",
+    "title": "A Student Spotted an AI Break-In Attempt and Blew the Whistle",
+    "summary": "Reuters published an account of how a student in Texas noticed an attempted hack being carried out with an AI system and reported it, setting off the investigation that followed.",
+    "source_urls": [
+      "https://www.reuters.com/world/how-texas-student-blew-whistle-rogue-ai-hacking-attempt-2026-08-20/"
+    ]
+  },
+  {
+    "date": "2026-08-23",
+    "title": "A Bookmarklet That Drops Any Web Page Into Figma",
+    "summary": "Figmimic is a one-click bookmarklet that copies a live web page into Figma as editable layers rather than a flat screenshot.",
+    "source_urls": [
+      "https://marcua.net/minitools/figmimic/"
+    ]
+  },
+  {
+    "date": "2026-08-23",
+    "title": "A Search Index You Run Yourself",
+    "summary": "Hister is a full-content search index that stays private and under your control instead of a search company's.",
+    "source_urls": [
+      "https://hister.org/"
+    ]
+  },
+  {
+    "date": "2026-08-23",
+    "title": "GitHub Wants California's AI Transparency Law Amended",
+    "summary": "GitHub has joined a coalition asking California to make targeted amendments to its AI Transparency Act, arguing that parts of it clash with how open source licensing works.",
+    "source_urls": [
+      "https://github.blog/news-insights/policy-news-and-insights/github-joins-coalition-advocating-for-fixes-to-california-ai-transparency-act-to-protect-open-source/"
+    ]
+  },
+  {
+    "date": "2026-08-23",
+    "title": "Your Local AI Model Might Be Fine. Your Settings Might Not Be.",
+    "summary": "A write-up on the Level1Techs forum argues that AI models people run on their own machines often seem worse than they actually are, and that the cause is usually how the model has been set up rather than the model itself.",
+    "source_urls": [
+      "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917"
+    ]
+  },
+  {
+    "date": "2026-08-23",
+    "title": "A Rust Language Server That Claims a Hundredth of the Memory",
+    "summary": "Rust Glancer is a new language server for Rust — the background program your editor talks to for autocomplete, error checking, and jump-to-definition.",
+    "source_urls": [
+      "https://rust-glancer.github.io/blog/hello-world/"
+    ]
+  },
+  {
+    "date": "2026-08-23",
+    "title": "The Protocol Behind Bluesky Starts Making Room for Private Data",
+    "summary": "ATProto, the open protocol Bluesky is built on, has published an alpha of \"spaces\" — an extension that allows records which are not public.",
+    "source_urls": [
+      "https://atproto.com/blog/atproto-spaces-alpha"
     ]
   }
 ]
