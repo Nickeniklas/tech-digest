@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-16",
-    "title": "Anthropic Writes Up What Goes Wrong When AI Agents Work in Teams",
-    "summary": "Anthropic published research on multi-agent systems — setups where several AI agents split a job between them instead of one assistant doing all of it.",
-    "source_urls": [
-      "https://www.anthropic.com/research/multiagent-systems"
-    ]
-  },
-  {
-    "date": "2026-08-16",
-    "title": "GitHub Puts Agents Into the Steps Around the Code",
-    "summary": "GitHub showed how four of its agent apps handle the work that surrounds writing software — scoping a feature, checking it for security problems, rolling it out, and shipping it — without leaving GitHub.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/"
-    ]
-  },
-  {
-    "date": "2026-08-16",
-    "title": "GitHub Logged Eight Service Incidents in July",
-    "summary": "GitHub's monthly availability report counts eight incidents that degraded its services in July, after nine in May and six in June.",
-    "source_urls": [
-      "https://github.blog/news-insights/company-news/github-availability-report-july-2026/"
-    ]
-  },
-  {
-    "date": "2026-08-16",
-    "title": "A Reality Check on AI in Drug Discovery",
-    "summary": "Science published an assessment of where AI-assisted drug discovery actually stands and what still has to happen before it changes medicine.",
-    "source_urls": [
-      "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really"
-    ]
-  },
-  {
-    "date": "2026-08-16",
-    "title": "Working With AI Feels More Like Leading a Team Than Doing the Work",
-    "summary": "A developer argues that the skill AI tools now demand is the one managers already have: setting direction, checking work, and deciding what is good enough.",
-    "source_urls": [
-      "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership/"
-    ]
-  },
-  {
-    "date": "2026-08-16",
-    "title": "AI Helped Move a 250,000-Line Weather Model Onto GPUs",
-    "summary": "Researchers published their account of using AI assistance to port a 250,000-line legacy weather simulation to run on GPUs — the chips that make modern AI training fast, and which also run scientific simulations far quicker than ordinary processors.",
-    "source_urls": [
-      "https://arxiv.org/abs/2608.13122"
-    ]
-  },
-  {
-    "date": "2026-08-16",
-    "title": "Fast Scientific Python Now Runs Inside the Browser",
-    "summary": "Numba — a tool that speeds up Python by compiling the slow numerical parts down to machine code — now works in JupyterLite, a version of the Jupyter notebook that runs entirely in a browser tab with no server behind it.",
-    "source_urls": [
-      "https://notebook.link/blog/numba-in-the-browser/"
-    ]
-  },
-  {
     "date": "2026-08-17",
     "title": "Firefox on the iPhone Now Blocks Ads Out of the Box",
     "summary": "Previously covered on 2026-08-15: Firefox became the last major browser where the ad blocker uBlock Origin still works in full.",
@@ -445,6 +389,62 @@
     "summary": "ATProto, the open protocol Bluesky is built on, has published an alpha of \"spaces\" — an extension that allows records which are not public.",
     "source_urls": [
       "https://atproto.com/blog/atproto-spaces-alpha"
+    ]
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Anthropic's Top Claude Tier Is Struggling to Hold Its Users",
+    "summary": "The Financial Times reports that Anthropic's flagship Claude model — the top-of-the-line tier that competes with OpenAI's most expensive offerings — is having trouble attracting and keeping users, while cheaper AI tools are doing well.",
+    "source_urls": [
+      "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245"
+    ]
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Over 170,000 Nonprofits Just Lost All Their Data",
+    "summary": "Slate investigates how more than 170,000 nonprofit organisations lost every file they had stored with Microsoft, and asks whether the software vendor is responsible.",
+    "source_urls": [
+      "https://slate.com/technology/2026/08/microsoft-software-nonprofit-data-delete.html"
+    ]
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Malware Is Now Infecting the Computer in Your Car's Dashboard",
+    "summary": "Kaspersky researchers describe malware that infects the Android-based head units used in many modern cars — the screen you use for maps, music, and hands-free calls.",
+    "source_urls": [
+      "https://securelist.com/android-head-unit-malware/121106/"
+    ]
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Researchers Say They Can Decode Silent Reading From an EEG Cap",
+    "summary": "A new paper reports decoding what a person is silently reading using only non-invasive EEG — the same kind of stretchy cap used in sleep and brain studies, no implants required.",
+    "source_urls": [
+      "https://arxiv.org/abs/2608.20186"
+    ]
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Coconut Oil Jet Fuel Held Its Own Against Kerosene in Engine Tests",
+    "summary": "StudyFinds reports on engine tests where jet fuel made from coconut oil matched conventional kerosene on efficiency.",
+    "source_urls": [
+      "https://studyfinds.com/coconut-oil-jet-fuel-matches-kerosenes-efficiency-in-engine-tests/"
+    ]
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Someone Rebuilt GPT-2 Using Only CMake",
+    "summary": "A developer has implemented OpenAI's GPT-2 language model in pure CMake — the tool the software industry normally uses only to describe how to build other programs, not to run them.",
+    "source_urls": [
+      "https://github.com/AlpinDale/gpt2.cmake"
+    ]
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Hugging Face's Mid-2026 Snapshot of the Open-Model Landscape",
+    "summary": "Hugging Face published its summer 2026 observations on the state of open AI models — the ones anyone can download, inspect, and run without paying a subscription.",
+    "source_urls": [
+      "https://huggingface.co/blog/state-of-open-models-summer-2026"
     ]
   }
 ]
