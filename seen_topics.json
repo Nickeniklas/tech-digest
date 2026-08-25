@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-17",
-    "title": "Firefox on the iPhone Now Blocks Ads Out of the Box",
-    "summary": "Previously covered on 2026-08-15: Firefox became the last major browser where the ad blocker uBlock Origin still works in full.",
-    "source_urls": [
-      "https://support.mozilla.org/en-US/kb/block-ads-firefox-ios"
-    ]
-  },
-  {
-    "date": "2026-08-17",
-    "title": "Anthropic Publishes the Instructions It Gives Claude",
-    "summary": "Anthropic now lists Claude's system prompts — the standing instructions the assistant is given before you type anything — in its public release notes.",
-    "source_urls": [
-      "https://platform.claude.com/docs/en/release-notes/system-prompts"
-    ]
-  },
-  {
-    "date": "2026-08-17",
-    "title": "A Resale Market Has Grown Up Around AI Credits",
-    "summary": "A report describes the brokers who buy and resell access to AI models — the credits companies pay for by the word.",
-    "source_urls": [
-      "https://vectoral.com/blog/who-are-the-token-brokers"
-    ]
-  },
-  {
-    "date": "2026-08-17",
-    "title": "A New Open Model Is Strong but Talks Itself in Circles",
-    "summary": "Developer Simon Willison put Qwen 3.",
-    "source_urls": [
-      "https://simonwillison.net/2026/Aug/16/qwen-38-27b/"
-    ]
-  },
-  {
-    "date": "2026-08-17",
-    "title": "Keyword Lists Were Used to Cancel Billions in Research Grants",
-    "summary": "Higher Ed Dive obtained the federal keyword lists used to screen research grants, and traces how matching a word on a list led to billions of dollars in cancelled funding.",
-    "source_urls": [
-      "https://www.highereddive.com/news/inside-the-federal-keyword-lists-that-canceled-billions-in-research-funding/826203/"
-    ]
-  },
-  {
-    "date": "2026-08-17",
-    "title": "A Step-by-Step Timeline of an AI Lab Break-In",
-    "summary": "Hugging Face published a technical reconstruction of the July 2026 intrusion at a frontier AI lab, laying out the incident as a timeline of how the attack unfolded around the lab's AI agents rather than as a summary after the fact.",
-    "source_urls": [
-      "https://huggingface.co/blog/agent-intrusion-technical-timeline"
-    ]
-  },
-  {
-    "date": "2026-08-17",
-    "title": "Zero-Knowledge Proofs, Explained Briefly",
-    "summary": "A short walkthrough of zero-knowledge proofs: a method for proving a statement is true without handing over the information behind it.",
-    "source_urls": [
-      "https://bernsteinbear.com/blog/zkp/"
-    ]
-  },
-  {
     "date": "2026-08-18",
     "title": "Anthropic Releases Claude Opus 5",
     "summary": "Anthropic released Claude Opus 5, the newest model in its high-end tier.",
@@ -445,6 +389,62 @@
     "summary": "Hugging Face published its summer 2026 observations on the state of open AI models — the ones anyone can download, inspect, and run without paying a subscription.",
     "source_urls": [
       "https://huggingface.co/blog/state-of-open-models-summer-2026"
+    ]
+  },
+  {
+    "date": "2026-08-25",
+    "title": "Microsoft's Image Apps Are Quietly Tagging the Files You Make",
+    "summary": "A researcher took apart MS Paint and the Windows Photos app and found they embed an invisible identifier — a unique code known as a GUID — into images you save, including images generated locally on your own machine with no cloud service involved.",
+    "source_urls": [
+      "https://xusheng.dev/posts/reversing/mspaint_invisible_watermark/main/"
+    ]
+  },
+  {
+    "date": "2026-08-25",
+    "title": "Thomson Reuters Builds Its Own AI Model",
+    "summary": "Thomson Reuters, the company behind Westlaw and much of the legal and tax research industry, has launched a frontier AI model of its own, trained on its data holdings rather than licensing someone else's system.",
+    "source_urls": [
+      "https://www.thomsonreuters.com/en/press-releases/2026/august/thomson-reuters-leverages-its-world-class-data-assets-to-launch-its-own-frontier-model"
+    ]
+  },
+  {
+    "date": "2026-08-25",
+    "title": "Apple Keeps Hide My Email on iCloud.com",
+    "summary": "Apple confirmed that iCloud+ Hide My Email addresses — the disposable addresses you can hand to a website instead of your real one — will keep using icloud.",
+    "source_urls": [
+      "https://developer.apple.com/news/?id=1ptvdtcm"
+    ]
+  },
+  {
+    "date": "2026-08-25",
+    "title": "Your Alt Text Can Pass the Checker and Still Be Useless",
+    "summary": "GitHub built a plugin for its accessibility scanner that judges whether image descriptions actually describe anything, rather than just confirming that some text exists.",
+    "source_urls": [
+      "https://github.blog/engineering/user-experience/your-alt-text-passes-automated-checks-that-doesnt-mean-its-any-good/"
+    ]
+  },
+  {
+    "date": "2026-08-25",
+    "title": "Researchers Measure AI Agents Flooding Government Services",
+    "summary": "A new paper documents what happens when automated AI agents submit requests to public services at machine speed — forms, applications and enquiries arriving faster than any human queue was designed for.",
+    "source_urls": [
+      "https://arxiv.org/abs/2608.16603"
+    ]
+  },
+  {
+    "date": "2026-08-25",
+    "title": "Gradio Adds Wire-It-Together AI Workflows",
+    "summary": "Gradio, the open source toolkit most commonly used to put a web interface on a machine learning model, now supports chaining steps into a workflow: generate an image, cut out its background, run it through another model, all as one pipeline.",
+    "source_urls": [
+      "https://huggingface.co/blog/gradio-workflow-guide"
+    ]
+  },
+  {
+    "date": "2026-08-25",
+    "title": "An Argument That Models Could Escape Through the Software Running Them",
+    "summary": "An essay makes the case that the risk in running a large language model is not only what the model says, but the program serving it.",
+    "source_urls": [
+      "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines"
     ]
   }
 ]
