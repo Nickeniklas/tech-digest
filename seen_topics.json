@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-18",
-    "title": "Anthropic Releases Claude Opus 5",
-    "summary": "Anthropic released Claude Opus 5, the newest model in its high-end tier.",
-    "source_urls": [
-      "https://www.anthropic.com/news/claude-opus-5"
-    ]
-  },
-  {
-    "date": "2026-08-18",
-    "title": "OpenAI Halves the Price of GPT-5.6 Sol",
-    "summary": "OpenAI cut the price of its GPT-5.",
-    "source_urls": [
-      "https://openrouter.ai/openai/gpt-5.6-sol"
-    ]
-  },
-  {
-    "date": "2026-08-18",
-    "title": "An AI Bug-Fixing Tool Was Turned Into a Way In",
-    "summary": "Security firm Wiz describes how GitHub Copilot's \"Autofix\" feature — which proposes code fixes automatically — could be manipulated to compromise Snowflake's internal Jira system.",
-    "source_urls": [
-      "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug"
-    ]
-  },
-  {
-    "date": "2026-08-18",
-    "title": "A Fake Think Tank Built to Influence Chatbots",
-    "summary": "Responsible Statecraft reports that Israel set up a think tank that appears to exist mainly so AI chatbots will cite it.",
-    "source_urls": [
-      "https://responsiblestatecraft.org/israel-influence-chatgpt/"
-    ]
-  },
-  {
-    "date": "2026-08-18",
-    "title": "A Librarian's Guide to Turning AI Off",
-    "summary": "Librarian Jessamyn West published a practical list of how to disable or avoid the AI features now switched on by default in search engines, browsers, phones, and office software.",
-    "source_urls": [
-      "https://www.librarian.net/notoai/"
-    ]
-  },
-  {
-    "date": "2026-08-18",
-    "title": "Same Machines, 33 Points More Use — Only the Order Changed",
-    "summary": "A team writing on Hugging Face's blog describes running the same cluster of AI chips 33 percentage points closer to full use without buying anything, purely by changing the order jobs run in.",
-    "source_urls": [
-      "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2"
-    ]
-  },
-  {
-    "date": "2026-08-18",
-    "title": "DuckDB Previews Version 2.0",
-    "summary": "DuckDB published a preview of the highlights coming in version 2.",
-    "source_urls": [
-      "https://duckdb.org/2026/08/17/duckdb-20-highlights"
-    ]
-  },
-  {
     "date": "2026-08-19",
     "title": "Computer Memory Costs Five Times What It Did a Year Ago",
     "summary": "Tom's Hardware reports that memory prices have climbed roughly 500% in twelve months — up to ten times the cheapest levels ever tracked.",
@@ -445,6 +389,62 @@
     "summary": "An essay makes the case that the risk in running a large language model is not only what the model says, but the program serving it.",
     "source_urls": [
       "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines"
+    ]
+  },
+  {
+    "date": "2026-08-26",
+    "title": "Anthropic Releases Claude Opus 5 at Half Its Flagship's Price",
+    "summary": "Anthropic released Claude Opus 5, available today.",
+    "source_urls": [
+      "https://www.anthropic.com/news/claude-opus-5"
+    ]
+  },
+  {
+    "date": "2026-08-26",
+    "title": "Apple Refreshes Its Desktop Macs With New Chips",
+    "summary": "Apple introduced the M6 and M5 Ultra processors and put them into a new Mac Studio and a new Mac mini.",
+    "source_urls": [
+      "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/"
+    ]
+  },
+  {
+    "date": "2026-08-26",
+    "title": "A Single Wearable Now Tracks Blood Sugar and Ketones",
+    "summary": "The FDA authorised the first wearable device that continuously monitors both ketone levels and blood sugar.",
+    "source_urls": [
+      "https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar"
+    ]
+  },
+  {
+    "date": "2026-08-26",
+    "title": "The Standard Meant to Prove a Photo Is Real Isn't Holding Up",
+    "summary": "C2PA is the industry effort to attach a tamper-evident record of origin to a photograph, so you can tell a camera shot from a generated image.",
+    "source_urls": [
+      "https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html"
+    ]
+  },
+  {
+    "date": "2026-08-26",
+    "title": "Firefox Will Turn On a Newer Image Format by Default",
+    "summary": "Firefox 157 will ship with JPEG XL enabled on every platform.",
+    "source_urls": [
+      "https://groups.google.com/a/mozilla.org/g/dev-platform/c/3YMV4MS34KA?pli=1"
+    ]
+  },
+  {
+    "date": "2026-08-26",
+    "title": "A 4-Bit Model That Beats the Full-Size Original",
+    "summary": "Multiverse Computing describes an approach it calls quantization-aware healing: shrink a model down to four bits per parameter first, then retrain it to recover what the compression cost.",
+    "source_urls": [
+      "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing"
+    ]
+  },
+  {
+    "date": "2026-08-26",
+    "title": "In Python, Lowercasing Text Can Open a Security Hole",
+    "summary": "Seth Larson walks through what goes wrong when code normalises text with str.",
+    "source_urls": [
+      "https://sethmlarson.dev/when-str-lower-is-a-security-vulnerability"
     ]
   }
 ]
