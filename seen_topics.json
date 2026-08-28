@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-20",
-    "title": "Stripe Is Buying the Place Companies Go to Buy AI",
-    "summary": "OpenRouter, the service that lets a business reach hundreds of different AI models through one account and one bill, announced it is joining Stripe, the company that processes online payments for a large share of the internet.",
-    "source_urls": [
-      "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/"
-    ]
-  },
-  {
-    "date": "2026-08-20",
-    "title": "OpenAI Says It Will Slow Down Where Models Get Good at Hacking",
-    "summary": "OpenAI published its thinking on how quickly to release models as they become more capable at cyber tasks — the same skills that help defenders find security holes also help attackers exploit them.",
-    "source_urls": [
-      "https://openai.com/index/pacing-model-development-cyber-capabilities/"
-    ]
-  },
-  {
-    "date": "2026-08-20",
-    "title": "A Case for Giving AI a Whiteboard Instead of a Chat Window",
-    "summary": "A GitHub engineer argues that chat is fine for saying what you want but terrible for tracking what an AI assistant actually did — the work disappears up the scroll.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient/"
-    ]
-  },
-  {
-    "date": "2026-08-20",
-    "title": "Remote Workers Reported the Highest Well-Being in a Study of 7,700 People",
-    "summary": "Researchers at the University of Colorado Boulder surveyed 7,700 employees and found that those working remotely reported better well-being than their on-site counterparts.",
-    "source_urls": [
-      "https://www.colorado.edu/today/2026/08/12/remote-workers-report-highest-well-being-study-7700-employees"
-    ]
-  },
-  {
-    "date": "2026-08-20",
-    "title": "NVIDIA Releases a Voice Model You Can Run Yourself",
-    "summary": "NVIDIA published Magpie TTS, a text-to-speech system with open weights, meaning anyone can download it and run it on their own hardware in several languages.",
-    "source_urls": [
-      "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents"
-    ]
-  },
-  {
-    "date": "2026-08-20",
-    "title": "Squeezing AI Models Down to Four Bits Without Wrecking Them",
-    "summary": "Previously covered on 2026-08-13: Liquid AI released LFM2.",
-    "source_urls": [
-      "https://huggingface.co/blog/LiquidAI/qad"
-    ]
-  },
-  {
-    "date": "2026-08-20",
-    "title": "Go 1.27 Is Out",
-    "summary": "The Go team shipped version 1.",
-    "source_urls": [
-      "https://go.dev/blog/go1.27"
-    ]
-  },
-  {
     "date": "2026-08-21",
     "title": "GitHub Explains the August 17 Outage and What It Is Changing",
     "summary": "GitHub published an account of the outage that degraded its services on August 17, along with the reliability work it is committing to next.",
@@ -445,6 +389,62 @@
     "summary": "Hugging Face released a guide to training and finetuning multi-vector embedding models with Sentence Transformers.",
     "source_urls": [
       "https://huggingface.co/blog/train-multi-vector-encoder"
+    ]
+  },
+  {
+    "date": "2026-08-28",
+    "title": "Anthropic Opens a Standard for AI That Operates Physical Machines",
+    "summary": "Anthropic has opened a research preview of the Model Hardware Standard, a shared specification that lets AI agents safely operate physical devices such as lab and manufacturing instruments.",
+    "source_urls": [
+      "https://www.anthropic.com/news/model-hardware-standard-research-preview"
+    ]
+  },
+  {
+    "date": "2026-08-28",
+    "title": "A Judge Says Blacklisting Anthropic Was Illegal",
+    "summary": "A court has ruled that the Trump administration's move to blacklist Anthropic was unlawful.",
+    "source_urls": [
+      "https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html"
+    ]
+  },
+  {
+    "date": "2026-08-28",
+    "title": "Google Releases a New Transcription Model",
+    "summary": "Google published Gemini 3.",
+    "source_urls": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/"
+    ]
+  },
+  {
+    "date": "2026-08-28",
+    "title": "MIT Publishes Its Report on AI in Teaching and Research",
+    "summary": "MIT's ad hoc committee on AI use in teaching, learning and research training has released its report.",
+    "source_urls": [
+      "https://aiandeducation.mit.edu/report/"
+    ]
+  },
+  {
+    "date": "2026-08-28",
+    "title": "The Maintainers Behind the Fastest-Growing Project on GitHub",
+    "summary": "OpenClaw became the fastest-growing project in GitHub's history, and its maintainers have written up what the first six months were like — including the security work that comes with sudden popularity.",
+    "source_urls": [
+      "https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it/"
+    ]
+  },
+  {
+    "date": "2026-08-28",
+    "title": "Cloudflare Cut 100 Terabytes of Memory From Its DNS Cache",
+    "summary": "Cloudflare runs 1.",
+    "source_urls": [
+      "https://blog.cloudflare.com/dns-cache-memory-optimization-1111/"
+    ]
+  },
+  {
+    "date": "2026-08-28",
+    "title": "IBM Shows Its Work on How Granite 4.2 Was Built",
+    "summary": "IBM published a detailed account of how it built its Granite 4.",
+    "source_urls": [
+      "https://huggingface.co/blog/ibm-granite/granite-4-2"
     ]
   }
 ]
