@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-21",
-    "title": "GitHub Explains the August 17 Outage and What It Is Changing",
-    "summary": "GitHub published an account of the outage that degraded its services on August 17, along with the reliability work it is committing to next.",
-    "source_urls": [
-      "https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/"
-    ]
-  },
-  {
-    "date": "2026-08-21",
-    "title": "AI Companies Are Cutting Books Apart to Scan Them",
-    "summary": "Anna's Archive argues that AI companies are buying physical books and destroying them in the process of digitising them, since slicing the spine off is the fastest way to feed pages through a scanner.",
-    "source_urls": [
-      "https://annas-archive.gl/blog/physical-destruction.html"
-    ]
-  },
-  {
-    "date": "2026-08-21",
-    "title": "AliExpress Is Fingerprinting Visitors Through Their Audio Hardware",
-    "summary": "A developer traced a strange bug in their Bluetooth headphones, which kept dropping the connection to a second device, back to AliExpress running silent audio fingerprinting in the background of its web pages.",
-    "source_urls": [
-      "https://blog.laserphile.com/2026/08/aliexpress-webpage-keeping-multipoint.html"
-    ]
-  },
-  {
-    "date": "2026-08-21",
-    "title": "A Malicious Software Package Ran Its Payload Before Anyone Pressed Run",
-    "summary": "Security researchers at SafeDep found a package in Rust's public library index that executes hostile code while software is being built, not when it is later run.",
-    "source_urls": [
-      "https://safedep.io/arrayref-proc-macro1-rust-build-time-malware/"
-    ]
-  },
-  {
-    "date": "2026-08-21",
-    "title": "A Small Model That Plays Piano With You",
-    "summary": "A developer trained a 125-million-parameter model that autocompletes piano playing and runs entirely on the device rather than in a data centre.",
-    "source_urls": [
-      "https://simedw.com/2026/08/20/midi-autocomplete/"
-    ]
-  },
-  {
-    "date": "2026-08-21",
-    "title": "Mojo Is Now Open Source",
-    "summary": "Modular has opened the source code of Mojo, the programming language it built to write high-performance AI code with Python-like syntax.",
-    "source_urls": [
-      "https://www.modular.com/blog/mojo-open-source"
-    ]
-  },
-  {
-    "date": "2026-08-21",
-    "title": "Draft Models That Make Inference Up to 3.2x Faster",
-    "summary": "Liquid AI released DSpark draft model checkpoints for three models in its LFM2.",
-    "source_urls": [
-      "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
-    ]
-  },
-  {
     "date": "2026-08-22",
     "title": "AI Lifted Homework Scores, Then Exam Scores Fell",
     "summary": "The Economist looked at research on students who used AI assistance for their homework.",
@@ -445,6 +389,62 @@
     "summary": "IBM published a detailed account of how it built its Granite 4.",
     "source_urls": [
       "https://huggingface.co/blog/ibm-granite/granite-4-2"
+    ]
+  },
+  {
+    "date": "2026-08-29",
+    "title": "Voice AI Gets Its First Public Scoreboard Outside English",
+    "summary": "Hugging Face and Voice Arena have added Hindi and Indian English to the Open ASR Leaderboard, the public ranking that compares how accurately speech recognition systems turn audio into text.",
+    "source_urls": [
+      "https://huggingface.co/blog/open-asr-leaderboard-global-south"
+    ]
+  },
+  {
+    "date": "2026-08-29",
+    "title": "SpaceX Bought Cursor, and OpenAI Has Published Where That Leaves Things",
+    "summary": "Cursor, one of the most widely used AI coding tools, has been acquired by SpaceX.",
+    "source_urls": [
+      "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/"
+    ]
+  },
+  {
+    "date": "2026-08-29",
+    "title": "A Free Tool That Splits Any Song Into Its Separate Tracks, On Your Own Laptop",
+    "summary": "StemDeck is a free, open source app that pulls a recording apart into its component parts — vocals, drums, bass — and runs entirely on your own machine rather than uploading your audio to a service.",
+    "source_urls": [
+      "https://github.com/stemdeckapp/stemdeck"
+    ]
+  },
+  {
+    "date": "2026-08-29",
+    "title": "Telling Real Cosmetics From Counterfeits With a Model",
+    "summary": "Grover Lab has published work on using AI to identify counterfeit cosmetics — a category where fakes are common and the difference is not something a shopper can see.",
+    "source_urls": [
+      "https://groverlab.org/hnbfpr/2026-08-26-ai-counterfeit-cosmetics.html"
+    ]
+  },
+  {
+    "date": "2026-08-29",
+    "title": "How a Bank Stays Open When Its Cloud Provider Goes Down",
+    "summary": "Monzo has written up Stand-In, the backup system it built so customers can keep spending and moving money through a complete outage of its cloud provider.",
+    "source_urls": [
+      "https://monzo.com/blog/tolerating-full-cloud-outages-with-monzo-stand-in"
+    ]
+  },
+  {
+    "date": "2026-08-29",
+    "title": "Same GPUs, 33 Points More Utilization — Only the Order Changed",
+    "summary": "Dharma AI reports raising utilization on an unchanged GPU cluster by 33 percentage points.",
+    "source_urls": [
+      "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2"
+    ]
+  },
+  {
+    "date": "2026-08-29",
+    "title": "Liquid AI Claims Up to 3.2x Faster Inference From LFM2.5-DSpark",
+    "summary": "Liquid AI has published LFM2.",
+    "source_urls": [
+      "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
     ]
   }
 ]
