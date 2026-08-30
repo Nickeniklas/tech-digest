@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-22",
-    "title": "AI Lifted Homework Scores, Then Exam Scores Fell",
-    "summary": "The Economist looked at research on students who used AI assistance for their homework.",
-    "source_urls": [
-      "https://www.economist.com/graphic-detail/2026/08/18/does-ai-stop-children-from-learning"
-    ]
-  },
-  {
-    "date": "2026-08-22",
-    "title": "Kagi Will Now Hide Paywalled Pages From Your Search Results",
-    "summary": "The search engine Kagi added a setting that filters out results you cannot read without paying.",
-    "source_urls": [
-      "https://kagi.com/changelog#11296"
-    ]
-  },
-  {
-    "date": "2026-08-22",
-    "title": "A US Traveller Faces Felony Charges for Deleting Data From His Own Phone",
-    "summary": "The New York Times reports that a man who wiped data from his phone at a US border crossing is now facing felony charges over it.",
-    "source_urls": [
-      "https://www.nytimes.com/2026/08/21/us/politics/samuel-tunick-deleted-phone-felony.html"
-    ]
-  },
-  {
-    "date": "2026-08-22",
-    "title": "A Voice Model That Starts Talking in Under 50 Milliseconds",
-    "summary": "Nari Labs published how it cut the delay before a text-to-speech system begins speaking to under 50 milliseconds — fast enough that a spoken reply no longer feels like it is buffering.",
-    "source_urls": [
-      "https://nari-labs.com/blog/qwen3-tts-speed-cost-frontier/"
-    ]
-  },
-  {
-    "date": "2026-08-22",
-    "title": "GitHub Adds a Pane for Keeping Track of What Its AI Is Doing",
-    "summary": "GitHub's Copilot app now has a \"My work\" pane that lists every AI session you have running, what is finished, and what is still in progress.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-managing-your-work/"
-    ]
-  },
-  {
-    "date": "2026-08-22",
-    "title": "Speech Recognition Scores Say Human-Level. The Recordings Disagree.",
-    "summary": "Hugging Face examined why speech recognition models post near-human accuracy on public benchmarks while still tripping over real recordings.",
-    "source_urls": [
-      "https://huggingface.co/blog/asr-benchmark-optimization"
-    ]
-  },
-  {
-    "date": "2026-08-22",
-    "title": "What Happens When You Try to Reproduce 2,200 AI Papers",
-    "summary": "Hugging Face wrote up what it found running open reproductions of 2,200 papers from ICML, one of the field's main machine learning conferences.",
-    "source_urls": [
-      "https://huggingface.co/blog/icml-2026-open-reproductions"
-    ]
-  },
-  {
     "date": "2026-08-23",
     "title": "A Student Spotted an AI Break-In Attempt and Blew the Whistle",
     "summary": "Reuters published an account of how a student in Texas noticed an attempted hack being carried out with an AI system and reported it, setting off the investigation that followed.",
@@ -445,6 +389,62 @@
     "summary": "Liquid AI has published LFM2.",
     "source_urls": [
       "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
+    ]
+  },
+  {
+    "date": "2026-08-30",
+    "title": "Texans Paid for a Camera Network One Dollar at a Time",
+    "summary": "Texas lawmakers added a $1 fee to every car insurance policy in the state, routed through a state auto-theft grant programme.",
+    "source_urls": [
+      "https://www.texastribune.org/2026/08/28/texas-flock-cameras-auto-insurance-fee-mvcpa-grants/"
+    ]
+  },
+  {
+    "date": "2026-08-30",
+    "title": "Tencent Releases Its Hy4 Model and Gives Away the Weights",
+    "summary": "Tencent has published a preview of Hy4 and open-sourced it, meaning anyone can download and run the model rather than only renting access through an API.",
+    "source_urls": [
+      "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/"
+    ]
+  },
+  {
+    "date": "2026-08-30",
+    "title": "DHS Is Using an Obscure Summons to Pull Records on Journalists and Nonprofits",
+    "summary": "The Guardian reports that the Department of Homeland Security has been using a little-known administrative summons to demand records about journalists, nonprofit organisations and unions — without a judge signing off first.",
+    "source_urls": [
+      "https://www.theguardian.com/us-news/2026/aug/29/trump-dhs-1509-summons-records-journalists-nonprofits"
+    ]
+  },
+  {
+    "date": "2026-08-30",
+    "title": "Courts Are Filling Up With Algorithmic Rent-Pricing Cases",
+    "summary": "New state and local laws restricting software that recommends rent prices are producing a wave of litigation, according to a Morgan Lewis analysis.",
+    "source_urls": [
+      "https://www.morganlewis.com/pubs/2026/08/algorithmic-rent-pricing-litigation-expands-under-new-state-and-local-laws"
+    ]
+  },
+  {
+    "date": "2026-08-30",
+    "title": "The Ocean Just Set a Temperature Record as an El Niño Builds",
+    "summary": "The highest ocean temperature ever measured was recorded as a powerful El Niño forms, the Los Angeles Times reports.",
+    "source_urls": [
+      "https://www.latimes.com/environment/story/2026-08-26/highest-ever-ocean-temperature-measured-as-powerful-el-nino-forms"
+    ]
+  },
+  {
+    "date": "2026-08-30",
+    "title": "Why Calling print() Inside a Python Signal Handler Can Hang Your Program",
+    "summary": "A signal handler is code Python runs the instant an interrupt arrives — pressing Ctrl-C, for example.",
+    "source_urls": [
+      "https://iafisher.com/2026/08/sigprint"
+    ]
+  },
+  {
+    "date": "2026-08-30",
+    "title": "Handing Dependency-Update Pull Requests to an Agent",
+    "summary": "GitHub published a beginner's walkthrough for building a Copilot app that triages Dependabot pull requests — the automated ones that bump a library to a newer version.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-automate-dependabot-pull-request-triage/"
     ]
   }
 ]
