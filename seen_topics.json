@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-24",
-    "title": "Anthropic's Top Claude Tier Is Struggling to Hold Its Users",
-    "summary": "The Financial Times reports that Anthropic's flagship Claude model — the top-of-the-line tier that competes with OpenAI's most expensive offerings — is having trouble attracting and keeping users, while cheaper AI tools are doing well.",
-    "source_urls": [
-      "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245"
-    ]
-  },
-  {
-    "date": "2026-08-24",
-    "title": "Over 170,000 Nonprofits Just Lost All Their Data",
-    "summary": "Slate investigates how more than 170,000 nonprofit organisations lost every file they had stored with Microsoft, and asks whether the software vendor is responsible.",
-    "source_urls": [
-      "https://slate.com/technology/2026/08/microsoft-software-nonprofit-data-delete.html"
-    ]
-  },
-  {
-    "date": "2026-08-24",
-    "title": "Malware Is Now Infecting the Computer in Your Car's Dashboard",
-    "summary": "Kaspersky researchers describe malware that infects the Android-based head units used in many modern cars — the screen you use for maps, music, and hands-free calls.",
-    "source_urls": [
-      "https://securelist.com/android-head-unit-malware/121106/"
-    ]
-  },
-  {
-    "date": "2026-08-24",
-    "title": "Researchers Say They Can Decode Silent Reading From an EEG Cap",
-    "summary": "A new paper reports decoding what a person is silently reading using only non-invasive EEG — the same kind of stretchy cap used in sleep and brain studies, no implants required.",
-    "source_urls": [
-      "https://arxiv.org/abs/2608.20186"
-    ]
-  },
-  {
-    "date": "2026-08-24",
-    "title": "Coconut Oil Jet Fuel Held Its Own Against Kerosene in Engine Tests",
-    "summary": "StudyFinds reports on engine tests where jet fuel made from coconut oil matched conventional kerosene on efficiency.",
-    "source_urls": [
-      "https://studyfinds.com/coconut-oil-jet-fuel-matches-kerosenes-efficiency-in-engine-tests/"
-    ]
-  },
-  {
-    "date": "2026-08-24",
-    "title": "Someone Rebuilt GPT-2 Using Only CMake",
-    "summary": "A developer has implemented OpenAI's GPT-2 language model in pure CMake — the tool the software industry normally uses only to describe how to build other programs, not to run them.",
-    "source_urls": [
-      "https://github.com/AlpinDale/gpt2.cmake"
-    ]
-  },
-  {
-    "date": "2026-08-24",
-    "title": "Hugging Face's Mid-2026 Snapshot of the Open-Model Landscape",
-    "summary": "Hugging Face published its summer 2026 observations on the state of open AI models — the ones anyone can download, inspect, and run without paying a subscription.",
-    "source_urls": [
-      "https://huggingface.co/blog/state-of-open-models-summer-2026"
-    ]
-  },
-  {
     "date": "2026-08-25",
     "title": "Microsoft's Image Apps Are Quietly Tagging the Files You Make",
     "summary": "A researcher took apart MS Paint and the Windows Photos app and found they embed an invisible identifier — a unique code known as a GUID — into images you save, including images generated locally on your own machine with no cloud service involved.",
@@ -445,6 +389,62 @@
     "summary": "Qubes OS — the security-focused operating system that runs each of your activities inside its own isolated virtual machine — published advisory QSB-118.",
     "source_urls": [
       "https://www.qubes-os.org/news/2026/08/29/qsb-118/"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "title": "Chrome Has Pulled the Old uBlock Origin From Its Store",
+    "summary": "Google has removed every Manifest V2 extension from the Chrome Web Store — the older format a large share of browser add-ons were built on.",
+    "source_urls": [
+      "https://webiterate.dev/google-removed-extensions-ublock-origin-108/"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "title": "Cheap GPS Jammers Are Creating Navigation Dead Zones",
+    "summary": "Low-cost jammers — small devices that drown out satellite signals — have spread widely enough to knock out navigation across whole areas, the Wall Street Journal reports.",
+    "source_urls": [
+      "https://www.wsj.com/tech/gps-jammers-dead-zones-e76f3261"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "title": "Your Phone's Flash Can Now Spot a Hidden Camera",
+    "summary": "Researchers in South Korea have built a method that uses a smartphone's LED and an AI model to detect concealed cameras, Chosun reports.",
+    "source_urls": [
+      "https://www.chosun.com/english/industry-en/2026/08/30/SBFXUIJQYZEARKP5T4FBAY25HQ/"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "title": "Apple's New Macs Are Selling as AI Workstations",
+    "summary": "Previously covered on 2026-08-26: Apple launched a new Mac Studio and Mac mini built on its M6 and M5 Ultra chips.",
+    "source_urls": [
+      "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "title": "A Famous Procrastination Study Looks Like Fraud",
+    "summary": "Data Colada, the research-integrity blog that has unpicked several high-profile psychology papers, has published evidence of fraud in an influential study on procrastination.",
+    "source_urls": [
+      "https://datacolada.org/138"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "title": "Where Open-Weight Models Stand This Summer",
+    "summary": "Hugging Face published its summer 2026 read on the state of open models — the ones you can download and run yourself, rather than rent through an API.",
+    "source_urls": [
+      "https://huggingface.co/blog/state-of-open-models-summer-2026"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "title": "Security Cameras, Repurposed as a Bird Census",
+    "summary": "A developer wired their existing home security cameras into BirdNET-Go, an open source tool that identifies bird species from sound alone, so the cameras now log which birds turn up in the garden and when.",
+    "source_urls": [
+      "https://jasontucker.blog/how-i-turned-my-security-cameras-into-an-automatic-bird-identification-system-with-birdnet-go/"
     ]
   }
 ]
