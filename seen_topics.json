@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-25",
-    "title": "Microsoft's Image Apps Are Quietly Tagging the Files You Make",
-    "summary": "A researcher took apart MS Paint and the Windows Photos app and found they embed an invisible identifier — a unique code known as a GUID — into images you save, including images generated locally on your own machine with no cloud service involved.",
-    "source_urls": [
-      "https://xusheng.dev/posts/reversing/mspaint_invisible_watermark/main/"
-    ]
-  },
-  {
-    "date": "2026-08-25",
-    "title": "Thomson Reuters Builds Its Own AI Model",
-    "summary": "Thomson Reuters, the company behind Westlaw and much of the legal and tax research industry, has launched a frontier AI model of its own, trained on its data holdings rather than licensing someone else's system.",
-    "source_urls": [
-      "https://www.thomsonreuters.com/en/press-releases/2026/august/thomson-reuters-leverages-its-world-class-data-assets-to-launch-its-own-frontier-model"
-    ]
-  },
-  {
-    "date": "2026-08-25",
-    "title": "Apple Keeps Hide My Email on iCloud.com",
-    "summary": "Apple confirmed that iCloud+ Hide My Email addresses — the disposable addresses you can hand to a website instead of your real one — will keep using icloud.",
-    "source_urls": [
-      "https://developer.apple.com/news/?id=1ptvdtcm"
-    ]
-  },
-  {
-    "date": "2026-08-25",
-    "title": "Your Alt Text Can Pass the Checker and Still Be Useless",
-    "summary": "GitHub built a plugin for its accessibility scanner that judges whether image descriptions actually describe anything, rather than just confirming that some text exists.",
-    "source_urls": [
-      "https://github.blog/engineering/user-experience/your-alt-text-passes-automated-checks-that-doesnt-mean-its-any-good/"
-    ]
-  },
-  {
-    "date": "2026-08-25",
-    "title": "Researchers Measure AI Agents Flooding Government Services",
-    "summary": "A new paper documents what happens when automated AI agents submit requests to public services at machine speed — forms, applications and enquiries arriving faster than any human queue was designed for.",
-    "source_urls": [
-      "https://arxiv.org/abs/2608.16603"
-    ]
-  },
-  {
-    "date": "2026-08-25",
-    "title": "Gradio Adds Wire-It-Together AI Workflows",
-    "summary": "Gradio, the open source toolkit most commonly used to put a web interface on a machine learning model, now supports chaining steps into a workflow: generate an image, cut out its background, run it through another model, all as one pipeline.",
-    "source_urls": [
-      "https://huggingface.co/blog/gradio-workflow-guide"
-    ]
-  },
-  {
-    "date": "2026-08-25",
-    "title": "An Argument That Models Could Escape Through the Software Running Them",
-    "summary": "An essay makes the case that the risk in running a large language model is not only what the model says, but the program serving it.",
-    "source_urls": [
-      "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines"
-    ]
-  },
-  {
     "date": "2026-08-26",
     "title": "Anthropic Releases Claude Opus 5 at Half Its Flagship's Price",
     "summary": "Anthropic released Claude Opus 5, available today.",
@@ -445,6 +389,62 @@
     "summary": "A developer wired their existing home security cameras into BirdNET-Go, an open source tool that identifies bird species from sound alone, so the cameras now log which birds turn up in the garden and when.",
     "source_urls": [
       "https://jasontucker.blog/how-i-turned-my-security-cameras-into-an-automatic-bird-identification-system-with-birdnet-go/"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "title": "Anthropic Releases Claude Fable 5.1 and Mythos 5.1",
+    "summary": "Anthropic released two new models, Claude Fable 5.",
+    "source_urls": [
+      "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "title": "The FBI Is Investigating a Service That Sold 153 Million Driver's Licenses",
+    "summary": "Brian Krebs reports the FBI is probing a service that was selling data from more than 153 million driver's licenses.",
+    "source_urls": [
+      "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "title": "Firefox on iOS Now Has an Ad Blocker",
+    "summary": "Mozilla has shipped a built-in ad blocker for Firefox on iPhone and iPad.",
+    "source_urls": [
+      "https://blog.mozilla.org/en/firefox/ad-blocker-on-ios/"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "title": "World Labs Published Atlas, a Model That Reasons About Space",
+    "summary": "World Labs released Atlas, which it describes as a world model for spatial intelligence — a system built to understand three-dimensional space rather than text.",
+    "source_urls": [
+      "https://www.worldlabs.ai/blog/atlas"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "title": "The ChatGPT Desktop App Ships With a Whole Office Suite Inside It",
+    "summary": "Simon Willison found that OpenAI's ChatGPT/Codex app bundles a complete copy of LibreOffice, the free office suite.",
+    "source_urls": [
+      "https://simonwillison.net/2026/Sep/1/codex-libreoffice/"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "title": "Hugging Face Released 200+ WebGPU Kernels for Running AI in the Browser",
+    "summary": "Hugging Face published @huggingface/kernels, a library of more than 200 WebGPU kernels.",
+    "source_urls": [
+      "https://huggingface.co/blog/webgpu-kernels"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "title": "Running a 104GB Model on a Mac With 48GB of Memory",
+    "summary": "A developer posted slotstream, a project that runs Qwen3.",
+    "source_urls": [
+      "https://github.com/carloslfu/slotstream"
     ]
   }
 ]
