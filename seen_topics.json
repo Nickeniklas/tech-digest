@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-26",
-    "title": "Anthropic Releases Claude Opus 5 at Half Its Flagship's Price",
-    "summary": "Anthropic released Claude Opus 5, available today.",
-    "source_urls": [
-      "https://www.anthropic.com/news/claude-opus-5"
-    ]
-  },
-  {
-    "date": "2026-08-26",
-    "title": "Apple Refreshes Its Desktop Macs With New Chips",
-    "summary": "Apple introduced the M6 and M5 Ultra processors and put them into a new Mac Studio and a new Mac mini.",
-    "source_urls": [
-      "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/"
-    ]
-  },
-  {
-    "date": "2026-08-26",
-    "title": "A Single Wearable Now Tracks Blood Sugar and Ketones",
-    "summary": "The FDA authorised the first wearable device that continuously monitors both ketone levels and blood sugar.",
-    "source_urls": [
-      "https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar"
-    ]
-  },
-  {
-    "date": "2026-08-26",
-    "title": "The Standard Meant to Prove a Photo Is Real Isn't Holding Up",
-    "summary": "C2PA is the industry effort to attach a tamper-evident record of origin to a photograph, so you can tell a camera shot from a generated image.",
-    "source_urls": [
-      "https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html"
-    ]
-  },
-  {
-    "date": "2026-08-26",
-    "title": "Firefox Will Turn On a Newer Image Format by Default",
-    "summary": "Firefox 157 will ship with JPEG XL enabled on every platform.",
-    "source_urls": [
-      "https://groups.google.com/a/mozilla.org/g/dev-platform/c/3YMV4MS34KA?pli=1"
-    ]
-  },
-  {
-    "date": "2026-08-26",
-    "title": "A 4-Bit Model That Beats the Full-Size Original",
-    "summary": "Multiverse Computing describes an approach it calls quantization-aware healing: shrink a model down to four bits per parameter first, then retrain it to recover what the compression cost.",
-    "source_urls": [
-      "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing"
-    ]
-  },
-  {
-    "date": "2026-08-26",
-    "title": "In Python, Lowercasing Text Can Open a Security Hole",
-    "summary": "Seth Larson walks through what goes wrong when code normalises text with str.",
-    "source_urls": [
-      "https://sethmlarson.dev/when-str-lower-is-a-security-vulnerability"
-    ]
-  },
-  {
     "date": "2026-08-27",
     "title": "Nvidia Is Buying Hugging Face, Where Most Open AI Models Live",
     "summary": "Business Insider reports that Nvidia has agreed to acquire Hugging Face for $13 billion.",
@@ -445,6 +389,62 @@
     "summary": "A developer posted slotstream, a project that runs Qwen3.",
     "source_urls": [
       "https://github.com/carloslfu/slotstream"
+    ]
+  },
+  {
+    "date": "2026-09-03",
+    "title": "Google Keeps Its Ad Business in One Piece",
+    "summary": "A US court has decided what Google must do about its advertising technology business, and stopped short of ordering a breakup.",
+    "source_urls": [
+      "https://www.nytimes.com/2026/09/02/technology/google-ad-tech-remedies.html"
+    ]
+  },
+  {
+    "date": "2026-09-03",
+    "title": "Thousands of Web Pages Exist Only to Be Quoted by AI",
+    "summary": "A report found three websites that between them published 215,128 \"best software\" pages — pages written not for readers but to be picked up and cited by AI search engines, and Perplexity does cite them.",
+    "source_urls": [
+      "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/"
+    ]
+  },
+  {
+    "date": "2026-09-03",
+    "title": "Google Ships Gemini 3.8 Flash, Plus a Version Built for Security Work",
+    "summary": "Google released Gemini 3.",
+    "source_urls": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+    ]
+  },
+  {
+    "date": "2026-09-03",
+    "title": "Research Says the World's Writing Is Getting More Alike",
+    "summary": "A paper in Nature Human Behaviour reports that the range of language people use is narrowing as large language models spread — the same phrasings and structures turning up across more of what gets written.",
+    "source_urls": [
+      "https://www.nature.com/articles/s41562-026-02550-0"
+    ]
+  },
+  {
+    "date": "2026-09-03",
+    "title": "Why a Shorter AI Answer Can Cost You More",
+    "summary": "GitHub published what it learned about the cost of AI coding assistants, and the headline finding is counterintuitive: forcing a model to answer briefly often makes the whole job more expensive, because the short answer is wrong and the work gets redone.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/"
+    ]
+  },
+  {
+    "date": "2026-09-03",
+    "title": "BenchMIRT: What AI Benchmarks Are Actually Measuring",
+    "summary": "Allen Institute researchers borrowed a technique from educational testing — item response theory, the maths behind well-designed exams — and applied it to AI benchmarks.",
+    "source_urls": [
+      "https://huggingface.co/blog/allenai/benchmirt"
+    ]
+  },
+  {
+    "date": "2026-09-03",
+    "title": "Cloudflare Wants to Recompress the Cached Web",
+    "summary": "Cloudflare stores copies of web files close to users so pages load fast, and much of that cache is compressed with older formats.",
+    "source_urls": [
+      "https://blog.cloudflare.com/cache-transcoding/"
     ]
   }
 ]
