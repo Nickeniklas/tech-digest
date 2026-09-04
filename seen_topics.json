@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-08-27",
-    "title": "Nvidia Is Buying Hugging Face, Where Most Open AI Models Live",
-    "summary": "Business Insider reports that Nvidia has agreed to acquire Hugging Face for $13 billion.",
-    "source_urls": [
-      "https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8"
-    ]
-  },
-  {
-    "date": "2026-08-27",
-    "title": "Amazon Is Shutting Down Mechanical Turk on September 30",
-    "summary": "Mechanical Turk, the marketplace Amazon ran for two decades to hire people for small online tasks, closes at the end of September.",
-    "source_urls": [
-      "https://www.mturk.com/"
-    ]
-  },
-  {
-    "date": "2026-08-27",
-    "title": "Developers Replaced by AI Built an Open Source AI CEO",
-    "summary": "After a chief executive cut developer roles to make room for AI, a group of developers responded by publishing OpenExecutive, an open source AI that does the executive's job instead.",
-    "source_urls": [
-      "https://github.com/SenteLabsAI/OpenExecutive"
-    ]
-  },
-  {
-    "date": "2026-08-27",
-    "title": "Offline Maps Guided Rescuers Where There Was No Signal",
-    "summary": "During the emergency response in Venezuela, rescue teams navigated using CoMaps, a mapping app that works with no mobile network at all, on map data volunteers had prepared in advance.",
-    "source_urls": [
-      "https://hotosm.org/en/news/comaps-the-offline-app-that-guided-rescuers-without-a-signal-in-the-venezuela-response/"
-    ]
-  },
-  {
-    "date": "2026-08-27",
-    "title": "The FDA Approved a First-of-Its-Kind Drug for Pancreatic Cancer",
-    "summary": "The FDA has approved the first targeted therapy of its class for metastatic pancreatic cancer, one of the hardest cancers to treat.",
-    "source_urls": [
-      "https://www.fda.gov/news-events/press-announcements/fda-approves-first-class-targeted-therapy-metastatic-pancreatic-cancer"
-    ]
-  },
-  {
-    "date": "2026-08-27",
-    "title": "What GitHub Learned Testing Language Models Before Shipping Them",
-    "summary": "GitHub published how it evaluated language models for secret scanning — spotting passwords and API keys accidentally committed into code.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/"
-    ]
-  },
-  {
-    "date": "2026-08-27",
-    "title": "Search That Compares Many Vectors Instead of One",
-    "summary": "Hugging Face released a guide to training and finetuning multi-vector embedding models with Sentence Transformers.",
-    "source_urls": [
-      "https://huggingface.co/blog/train-multi-vector-encoder"
-    ]
-  },
-  {
     "date": "2026-08-28",
     "title": "Anthropic Opens a Standard for AI That Operates Physical Machines",
     "summary": "Anthropic has opened a research preview of the Model Hardware Standard, a shared specification that lets AI agents safely operate physical devices such as lab and manufacturing instruments.",
@@ -445,6 +389,62 @@
     "summary": "Cloudflare stores copies of web files close to users so pages load fast, and much of that cache is compressed with older formats.",
     "source_urls": [
       "https://blog.cloudflare.com/cache-transcoding/"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "title": "OpenAI Released GPT-6 Astra",
+    "summary": "OpenAI published GPT-6 Astra, its next flagship model.",
+    "source_urls": [
+      "https://openai.com/index/gpt-6-astra/"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "title": "A Model That Answers Faster Than You Can Read It",
+    "summary": "Qwen 3.",
+    "source_urls": [
+      "https://inference-docs.cerebras.ai/models/overview"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "title": "Fake Beaver Dams Took Salmon Survival From 8% to 60%",
+    "summary": "Researchers in California built artificial versions of beaver dams in salmon streams, and juvenile coho survival rose from 8 percent to 60 percent.",
+    "source_urls": [
+      "https://www.discoverwildlife.com/animal-facts/artificial-beaver-dams-california"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "title": "Google's Antigravity Terms Can Cost You Your Whole Account",
+    "summary": "The terms of service for Google's Antigravity product say that using it in certain third-party ways can get your Google account suspended — not just the product, the account.",
+    "source_urls": [
+      "https://twitter.com/GergelyOrosz/status/2095453567955968398"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "title": "GitHub Walks Through Running Several AI Agents at Once",
+    "summary": "GitHub published a beginner's guide to running multiple Copilot agents in parallel rather than one at a time.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "title": "Giving a Coding Agent a Memory You Actually Own",
+    "summary": "Hugging Face published Funes, an approach that stores an AI agent's accumulated memory as a plain dataset you keep, rather than inside whichever vendor's product you happen to be using.",
+    "source_urls": [
+      "https://huggingface.co/blog/funes"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "title": "A 350M Model Taught to Follow a Format in 100 Training Steps",
+    "summary": "A public recipe walks through fine-tuning a 350-million-parameter model — small enough to run on modest hardware — so it reliably returns structured output like JSON.",
+    "source_urls": [
+      "https://huggingface.co/blog/grpo-with-trl-ifstruct"
     ]
   }
 ]
