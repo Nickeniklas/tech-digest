@@ -1,450 +1,58 @@
 [
   {
-    "date": "2026-08-28",
-    "title": "Anthropic Opens a Standard for AI That Operates Physical Machines",
-    "summary": "Anthropic has opened a research preview of the Model Hardware Standard, a shared specification that lets AI agents safely operate physical devices such as lab and manufacturing instruments.",
-    "source_urls": [
-      "https://www.anthropic.com/news/model-hardware-standard-research-preview"
-    ]
-  },
-  {
-    "date": "2026-08-28",
-    "title": "A Judge Says Blacklisting Anthropic Was Illegal",
-    "summary": "A court has ruled that the Trump administration's move to blacklist Anthropic was unlawful.",
-    "source_urls": [
-      "https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html"
-    ]
-  },
-  {
-    "date": "2026-08-28",
-    "title": "Google Releases a New Transcription Model",
-    "summary": "Google published Gemini 3.",
-    "source_urls": [
-      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/"
-    ]
-  },
-  {
-    "date": "2026-08-28",
-    "title": "MIT Publishes Its Report on AI in Teaching and Research",
-    "summary": "MIT's ad hoc committee on AI use in teaching, learning and research training has released its report.",
-    "source_urls": [
-      "https://aiandeducation.mit.edu/report/"
-    ]
-  },
-  {
-    "date": "2026-08-28",
-    "title": "The Maintainers Behind the Fastest-Growing Project on GitHub",
-    "summary": "OpenClaw became the fastest-growing project in GitHub's history, and its maintainers have written up what the first six months were like — including the security work that comes with sudden popularity.",
-    "source_urls": [
-      "https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it/"
-    ]
-  },
-  {
-    "date": "2026-08-28",
-    "title": "Cloudflare Cut 100 Terabytes of Memory From Its DNS Cache",
-    "summary": "Cloudflare runs 1.",
-    "source_urls": [
-      "https://blog.cloudflare.com/dns-cache-memory-optimization-1111/"
-    ]
-  },
-  {
-    "date": "2026-08-28",
-    "title": "IBM Shows Its Work on How Granite 4.2 Was Built",
-    "summary": "IBM published a detailed account of how it built its Granite 4.",
-    "source_urls": [
-      "https://huggingface.co/blog/ibm-granite/granite-4-2"
-    ]
-  },
-  {
-    "date": "2026-08-29",
-    "title": "Voice AI Gets Its First Public Scoreboard Outside English",
-    "summary": "Hugging Face and Voice Arena have added Hindi and Indian English to the Open ASR Leaderboard, the public ranking that compares how accurately speech recognition systems turn audio into text.",
-    "source_urls": [
-      "https://huggingface.co/blog/open-asr-leaderboard-global-south"
-    ]
-  },
-  {
-    "date": "2026-08-29",
-    "title": "SpaceX Bought Cursor, and OpenAI Has Published Where That Leaves Things",
-    "summary": "Cursor, one of the most widely used AI coding tools, has been acquired by SpaceX.",
-    "source_urls": [
-      "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/"
-    ]
-  },
-  {
-    "date": "2026-08-29",
-    "title": "A Free Tool That Splits Any Song Into Its Separate Tracks, On Your Own Laptop",
-    "summary": "StemDeck is a free, open source app that pulls a recording apart into its component parts — vocals, drums, bass — and runs entirely on your own machine rather than uploading your audio to a service.",
-    "source_urls": [
-      "https://github.com/stemdeckapp/stemdeck"
-    ]
-  },
-  {
-    "date": "2026-08-29",
-    "title": "Telling Real Cosmetics From Counterfeits With a Model",
-    "summary": "Grover Lab has published work on using AI to identify counterfeit cosmetics — a category where fakes are common and the difference is not something a shopper can see.",
-    "source_urls": [
-      "https://groverlab.org/hnbfpr/2026-08-26-ai-counterfeit-cosmetics.html"
-    ]
-  },
-  {
-    "date": "2026-08-29",
-    "title": "How a Bank Stays Open When Its Cloud Provider Goes Down",
-    "summary": "Monzo has written up Stand-In, the backup system it built so customers can keep spending and moving money through a complete outage of its cloud provider.",
-    "source_urls": [
-      "https://monzo.com/blog/tolerating-full-cloud-outages-with-monzo-stand-in"
-    ]
-  },
-  {
-    "date": "2026-08-29",
-    "title": "Same GPUs, 33 Points More Utilization — Only the Order Changed",
-    "summary": "Dharma AI reports raising utilization on an unchanged GPU cluster by 33 percentage points.",
-    "source_urls": [
-      "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2"
-    ]
-  },
-  {
-    "date": "2026-08-29",
-    "title": "Liquid AI Claims Up to 3.2x Faster Inference From LFM2.5-DSpark",
-    "summary": "Liquid AI has published LFM2.",
-    "source_urls": [
-      "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
-    ]
-  },
-  {
-    "date": "2026-08-30",
-    "title": "Texans Paid for a Camera Network One Dollar at a Time",
-    "summary": "Texas lawmakers added a $1 fee to every car insurance policy in the state, routed through a state auto-theft grant programme.",
-    "source_urls": [
-      "https://www.texastribune.org/2026/08/28/texas-flock-cameras-auto-insurance-fee-mvcpa-grants/"
-    ]
-  },
-  {
-    "date": "2026-08-30",
-    "title": "Tencent Releases Its Hy4 Model and Gives Away the Weights",
-    "summary": "Tencent has published a preview of Hy4 and open-sourced it, meaning anyone can download and run the model rather than only renting access through an API.",
-    "source_urls": [
-      "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/"
-    ]
-  },
-  {
-    "date": "2026-08-30",
-    "title": "DHS Is Using an Obscure Summons to Pull Records on Journalists and Nonprofits",
-    "summary": "The Guardian reports that the Department of Homeland Security has been using a little-known administrative summons to demand records about journalists, nonprofit organisations and unions — without a judge signing off first.",
-    "source_urls": [
-      "https://www.theguardian.com/us-news/2026/aug/29/trump-dhs-1509-summons-records-journalists-nonprofits"
-    ]
-  },
-  {
-    "date": "2026-08-30",
-    "title": "Courts Are Filling Up With Algorithmic Rent-Pricing Cases",
-    "summary": "New state and local laws restricting software that recommends rent prices are producing a wave of litigation, according to a Morgan Lewis analysis.",
-    "source_urls": [
-      "https://www.morganlewis.com/pubs/2026/08/algorithmic-rent-pricing-litigation-expands-under-new-state-and-local-laws"
-    ]
-  },
-  {
-    "date": "2026-08-30",
-    "title": "The Ocean Just Set a Temperature Record as an El Niño Builds",
-    "summary": "The highest ocean temperature ever measured was recorded as a powerful El Niño forms, the Los Angeles Times reports.",
-    "source_urls": [
-      "https://www.latimes.com/environment/story/2026-08-26/highest-ever-ocean-temperature-measured-as-powerful-el-nino-forms"
-    ]
-  },
-  {
-    "date": "2026-08-30",
-    "title": "Why Calling print() Inside a Python Signal Handler Can Hang Your Program",
-    "summary": "A signal handler is code Python runs the instant an interrupt arrives — pressing Ctrl-C, for example.",
-    "source_urls": [
-      "https://iafisher.com/2026/08/sigprint"
-    ]
-  },
-  {
-    "date": "2026-08-30",
-    "title": "Handing Dependency-Update Pull Requests to an Agent",
-    "summary": "GitHub published a beginner's walkthrough for building a Copilot app that triages Dependabot pull requests — the automated ones that bump a library to a newer version.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-automate-dependabot-pull-request-triage/"
-    ]
-  },
-  {
-    "date": "2026-08-31",
-    "title": "Hugging Face Tried to Reproduce 2,200 AI Papers",
-    "summary": "Hugging Face ran an open effort to reproduce 2,200 papers from ICML, one of machine learning's largest conferences, and published what the attempt taught them.",
-    "source_urls": [
-      "https://huggingface.co/blog/icml-2026-open-reproductions"
-    ]
-  },
-  {
-    "date": "2026-08-31",
-    "title": "The Head of America's Biggest Camera Network Got a Taste of It",
-    "summary": "Neowin reports that the chief executive of Flock Safety — the company behind the licence plate camera network now covering much of the United States — has ended up on the receiving end of the kind of tracking his own product enables.",
-    "source_urls": [
-      "https://www.neowin.net/news/the-ceo-of-americas-biggest-surveillance-network-just-got-a-taste-of-his-own-medicine/"
-    ]
-  },
-  {
-    "date": "2026-08-31",
-    "title": "A Solar Panel Thin Enough to Stick Onto a Window",
-    "summary": "SolarWindow has launched a self-adhesive solar film 0.",
-    "source_urls": [
-      "https://www.pv-magazine.com/2026/08/27/https-www-pv-magazine-com-2026-08-27-solarwindow-launches-flexible-self-adhesive-solar-film/"
-    ]
-  },
-  {
-    "date": "2026-08-31",
-    "title": "GitHub Explains Its August 17 Outage",
-    "summary": "GitHub has published an account of the August 17 outage and the reliability work it plans to do next.",
-    "source_urls": [
-      "https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/"
-    ]
-  },
-  {
-    "date": "2026-08-31",
-    "title": "What 2,500 Projects Taught GitHub About Briefing an AI",
-    "summary": "GitHub studied more than 2,500 repositories that keep an agents.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/"
-    ]
-  },
-  {
-    "date": "2026-08-31",
-    "title": "Language Models That Don't Write Left to Right",
-    "summary": "Two write-ups landed recently on the same idea: diffusion language models.",
-    "source_urls": [
-      "https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model/"
-    ]
-  },
-  {
-    "date": "2026-08-31",
-    "title": "Qubes OS Patches a Hole in Copying Files Between Machines",
-    "summary": "Qubes OS — the security-focused operating system that runs each of your activities inside its own isolated virtual machine — published advisory QSB-118.",
-    "source_urls": [
-      "https://www.qubes-os.org/news/2026/08/29/qsb-118/"
-    ]
-  },
-  {
-    "date": "2026-09-01",
-    "title": "Chrome Has Pulled the Old uBlock Origin From Its Store",
-    "summary": "Google has removed every Manifest V2 extension from the Chrome Web Store — the older format a large share of browser add-ons were built on.",
-    "source_urls": [
-      "https://webiterate.dev/google-removed-extensions-ublock-origin-108/"
-    ]
-  },
-  {
-    "date": "2026-09-01",
-    "title": "Cheap GPS Jammers Are Creating Navigation Dead Zones",
-    "summary": "Low-cost jammers — small devices that drown out satellite signals — have spread widely enough to knock out navigation across whole areas, the Wall Street Journal reports.",
-    "source_urls": [
-      "https://www.wsj.com/tech/gps-jammers-dead-zones-e76f3261"
-    ]
-  },
-  {
-    "date": "2026-09-01",
-    "title": "Your Phone's Flash Can Now Spot a Hidden Camera",
-    "summary": "Researchers in South Korea have built a method that uses a smartphone's LED and an AI model to detect concealed cameras, Chosun reports.",
-    "source_urls": [
-      "https://www.chosun.com/english/industry-en/2026/08/30/SBFXUIJQYZEARKP5T4FBAY25HQ/"
-    ]
-  },
-  {
-    "date": "2026-09-01",
-    "title": "Apple's New Macs Are Selling as AI Workstations",
-    "summary": "Previously covered on 2026-08-26: Apple launched a new Mac Studio and Mac mini built on its M6 and M5 Ultra chips.",
-    "source_urls": [
-      "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/"
-    ]
-  },
-  {
-    "date": "2026-09-01",
-    "title": "A Famous Procrastination Study Looks Like Fraud",
-    "summary": "Data Colada, the research-integrity blog that has unpicked several high-profile psychology papers, has published evidence of fraud in an influential study on procrastination.",
-    "source_urls": [
-      "https://datacolada.org/138"
-    ]
-  },
-  {
-    "date": "2026-09-01",
-    "title": "Where Open-Weight Models Stand This Summer",
-    "summary": "Hugging Face published its summer 2026 read on the state of open models — the ones you can download and run yourself, rather than rent through an API.",
-    "source_urls": [
-      "https://huggingface.co/blog/state-of-open-models-summer-2026"
-    ]
-  },
-  {
-    "date": "2026-09-01",
-    "title": "Security Cameras, Repurposed as a Bird Census",
-    "summary": "A developer wired their existing home security cameras into BirdNET-Go, an open source tool that identifies bird species from sound alone, so the cameras now log which birds turn up in the garden and when.",
-    "source_urls": [
-      "https://jasontucker.blog/how-i-turned-my-security-cameras-into-an-automatic-bird-identification-system-with-birdnet-go/"
-    ]
-  },
-  {
-    "date": "2026-09-02",
-    "title": "Anthropic Releases Claude Fable 5.1 and Mythos 5.1",
+    "date": "2026-09-18",
+    "title": "Anthropic releases Claude Fable 5.1 and Claude Mythos 5.1",
     "summary": "Anthropic released two new models, Claude Fable 5.",
     "source_urls": [
       "https://www.anthropic.com/claude-fable-and-mythos-5-1"
     ]
   },
   {
-    "date": "2026-09-02",
-    "title": "The FBI Is Investigating a Service That Sold 153 Million Driver's Licenses",
-    "summary": "Brian Krebs reports the FBI is probing a service that was selling data from more than 153 million driver's licenses.",
+    "date": "2026-09-18",
+    "title": "OpenAI launches Astra, a product built for legal work",
+    "summary": "OpenAI announced Astra for Law, a version of its technology aimed specifically at legal professionals.",
     "source_urls": [
-      "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/"
+      "https://openai.com/index/astra-for-law/"
     ]
   },
   {
-    "date": "2026-09-02",
-    "title": "Firefox on iOS Now Has an Ad Blocker",
-    "summary": "Mozilla has shipped a built-in ad blocker for Firefox on iPhone and iPad.",
+    "date": "2026-09-18",
+    "title": "Waymo's driverless taxis are going to Singapore",
+    "summary": "Waymo announced it is bringing its self-driving service to Singapore, its first move into Asia.",
     "source_urls": [
-      "https://blog.mozilla.org/en/firefox/ad-blocker-on-ios/"
+      "https://waymo.com/waymo-in-singapore/"
     ]
   },
   {
-    "date": "2026-09-02",
-    "title": "World Labs Published Atlas, a Model That Reasons About Space",
-    "summary": "World Labs released Atlas, which it describes as a world model for spatial intelligence — a system built to understand three-dimensional space rather than text.",
+    "date": "2026-09-18",
+    "title": "A marketing team put its event process into code — and automated it",
+    "summary": "A GitHub marketer wrote up how their APAC team turned event planning and follow-up into automated workflows, on the argument that if you can write down how you do your work, you can automate it.",
     "source_urls": [
-      "https://www.worldlabs.ai/blog/atlas"
+      "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github/"
     ]
   },
   {
-    "date": "2026-09-02",
-    "title": "The ChatGPT Desktop App Ships With a Whole Office Suite Inside It",
-    "summary": "Simon Willison found that OpenAI's ChatGPT/Codex app bundles a complete copy of LibreOffice, the free office suite.",
+    "date": "2026-09-18",
+    "title": "A 27-billion-parameter model squeezed into a ninth of the space",
+    "summary": "Researchers released Bonsai 2 27B, a compressed model they say keeps almost all of the original's quality in a footprint nine times smaller.",
     "source_urls": [
-      "https://simonwillison.net/2026/Sep/1/codex-libreoffice/"
+      "https://prismml.com/news/bonsai-2-27b"
     ]
   },
   {
-    "date": "2026-09-02",
-    "title": "Hugging Face Released 200+ WebGPU Kernels for Running AI in the Browser",
-    "summary": "Hugging Face published @huggingface/kernels, a library of more than 200 WebGPU kernels.",
+    "date": "2026-09-18",
+    "title": "GitHub rewrote the Copilot runtime in Rust — 800,000 lines of it",
+    "summary": "GitHub moved the runtime behind Copilot to Rust, ending up with roughly 800,000 lines of production code, and used Copilot itself to do much of the porting.",
     "source_urls": [
-      "https://huggingface.co/blog/webgpu-kernels"
+      "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/"
     ]
   },
   {
-    "date": "2026-09-02",
-    "title": "Running a 104GB Model on a Mac With 48GB of Memory",
-    "summary": "A developer posted slotstream, a project that runs Qwen3.",
+    "date": "2026-09-18",
+    "title": "Your AI agent passed the test. Will it pass it again?",
+    "summary": "IBM researchers argue that almost nobody reports the metric that matters most for agents: consistency.",
     "source_urls": [
-      "https://github.com/carloslfu/slotstream"
-    ]
-  },
-  {
-    "date": "2026-09-03",
-    "title": "Google Keeps Its Ad Business in One Piece",
-    "summary": "A US court has decided what Google must do about its advertising technology business, and stopped short of ordering a breakup.",
-    "source_urls": [
-      "https://www.nytimes.com/2026/09/02/technology/google-ad-tech-remedies.html"
-    ]
-  },
-  {
-    "date": "2026-09-03",
-    "title": "Thousands of Web Pages Exist Only to Be Quoted by AI",
-    "summary": "A report found three websites that between them published 215,128 \"best software\" pages — pages written not for readers but to be picked up and cited by AI search engines, and Perplexity does cite them.",
-    "source_urls": [
-      "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/"
-    ]
-  },
-  {
-    "date": "2026-09-03",
-    "title": "Google Ships Gemini 3.8 Flash, Plus a Version Built for Security Work",
-    "summary": "Google released Gemini 3.",
-    "source_urls": [
-      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
-    ]
-  },
-  {
-    "date": "2026-09-03",
-    "title": "Research Says the World's Writing Is Getting More Alike",
-    "summary": "A paper in Nature Human Behaviour reports that the range of language people use is narrowing as large language models spread — the same phrasings and structures turning up across more of what gets written.",
-    "source_urls": [
-      "https://www.nature.com/articles/s41562-026-02550-0"
-    ]
-  },
-  {
-    "date": "2026-09-03",
-    "title": "Why a Shorter AI Answer Can Cost You More",
-    "summary": "GitHub published what it learned about the cost of AI coding assistants, and the headline finding is counterintuitive: forcing a model to answer briefly often makes the whole job more expensive, because the short answer is wrong and the work gets redone.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/"
-    ]
-  },
-  {
-    "date": "2026-09-03",
-    "title": "BenchMIRT: What AI Benchmarks Are Actually Measuring",
-    "summary": "Allen Institute researchers borrowed a technique from educational testing — item response theory, the maths behind well-designed exams — and applied it to AI benchmarks.",
-    "source_urls": [
-      "https://huggingface.co/blog/allenai/benchmirt"
-    ]
-  },
-  {
-    "date": "2026-09-03",
-    "title": "Cloudflare Wants to Recompress the Cached Web",
-    "summary": "Cloudflare stores copies of web files close to users so pages load fast, and much of that cache is compressed with older formats.",
-    "source_urls": [
-      "https://blog.cloudflare.com/cache-transcoding/"
-    ]
-  },
-  {
-    "date": "2026-09-04",
-    "title": "OpenAI Released GPT-6 Astra",
-    "summary": "OpenAI published GPT-6 Astra, its next flagship model.",
-    "source_urls": [
-      "https://openai.com/index/gpt-6-astra/"
-    ]
-  },
-  {
-    "date": "2026-09-04",
-    "title": "A Model That Answers Faster Than You Can Read It",
-    "summary": "Qwen 3.",
-    "source_urls": [
-      "https://inference-docs.cerebras.ai/models/overview"
-    ]
-  },
-  {
-    "date": "2026-09-04",
-    "title": "Fake Beaver Dams Took Salmon Survival From 8% to 60%",
-    "summary": "Researchers in California built artificial versions of beaver dams in salmon streams, and juvenile coho survival rose from 8 percent to 60 percent.",
-    "source_urls": [
-      "https://www.discoverwildlife.com/animal-facts/artificial-beaver-dams-california"
-    ]
-  },
-  {
-    "date": "2026-09-04",
-    "title": "Google's Antigravity Terms Can Cost You Your Whole Account",
-    "summary": "The terms of service for Google's Antigravity product say that using it in certain third-party ways can get your Google account suspended — not just the product, the account.",
-    "source_urls": [
-      "https://twitter.com/GergelyOrosz/status/2095453567955968398"
-    ]
-  },
-  {
-    "date": "2026-09-04",
-    "title": "GitHub Walks Through Running Several AI Agents at Once",
-    "summary": "GitHub published a beginner's guide to running multiple Copilot agents in parallel rather than one at a time.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/"
-    ]
-  },
-  {
-    "date": "2026-09-04",
-    "title": "Giving a Coding Agent a Memory You Actually Own",
-    "summary": "Hugging Face published Funes, an approach that stores an AI agent's accumulated memory as a plain dataset you keep, rather than inside whichever vendor's product you happen to be using.",
-    "source_urls": [
-      "https://huggingface.co/blog/funes"
-    ]
-  },
-  {
-    "date": "2026-09-04",
-    "title": "A 350M Model Taught to Follow a Format in 100 Training Steps",
-    "summary": "A public recipe walks through fine-tuning a 350-million-parameter model — small enough to run on modest hardware — so it reliably returns structured output like JSON.",
-    "source_urls": [
-      "https://huggingface.co/blog/grpo-with-trl-ifstruct"
+      "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
     ]
   }
 ]
