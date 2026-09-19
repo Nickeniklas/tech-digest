@@ -54,5 +54,61 @@
     "source_urls": [
       "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
     ]
+  },
+  {
+    "date": "2026-09-19",
+    "title": "Google's Gemini was reportedly used to hack three companies",
+    "summary": "According to a Wall Street Journal report relayed by Reuters, Google's Gemini model was used to break into three companies — described as the first known case of Google's AI being turned on real targets rather than test systems.",
+    "source_urls": [
+      "https://www.reuters.com/business/gemini-hacked-three-companies-first-known-breakout-by-google-ai-wsj-reports-2026-09-18/"
+    ]
+  },
+  {
+    "date": "2026-09-19",
+    "title": "Alibaba released a free medical AI that screens for cancer and ~150 other conditions",
+    "summary": "Alibaba open-sourced a medical model it says can detect cancer and close to 150 other conditions, meaning any hospital or researcher can download and run it rather than paying for access.",
+    "source_urls": [
+      "https://www.scmp.com/tech/big-tech/article/3368055/alibaba-open-sources-medical-ai-model-can-detect-cancer-and-nearly-150-conditions"
+    ]
+  },
+  {
+    "date": "2026-09-19",
+    "title": "Cloudflare found another 100TB of memory it wasn't using",
+    "summary": "Cloudflare published how it cut a further 100 terabytes of memory from its servers, following an earlier round that saved the same amount — not by buying hardware, but by changing the maths behind how data is stored.",
+    "source_urls": [
+      "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/"
+    ]
+  },
+  {
+    "date": "2026-09-19",
+    "title": "OpenAI used its own models to help design a chip",
+    "summary": "IEEE Spectrum detailed how OpenAI put its own language models to work designing Jalapeño, its in-house chip.",
+    "source_urls": [
+      "https://spectrum.ieee.org/llms-for-chip-design"
+    ]
+  },
+  {
+    "date": "2026-09-19",
+    "title": "Tiny models, measured in megabytes, are catching up",
+    "summary": "Cactus released Needle 3, a set of automation models between 8 and 29 megabytes that it claims match DeepSeek V4 Flash on the tasks they are built for.",
+    "source_urls": [
+      "https://cactuscompute.com/needle"
+    ]
+  },
+  {
+    "date": "2026-09-19",
+    "title": "AUTOMATIC1111, rebuilt as a drag-and-drop canvas",
+    "summary": "Hugging Face rebuilt AUTOMATIC1111 — the interface most people used for local image generation — on top of Gradio Workflow, turning its stack of tabs into a node canvas.",
+    "source_urls": [
+      "https://huggingface.co/blog/gradio-workflow-1111"
+    ]
+  },
+  {
+    "date": "2026-09-19",
+    "title": "200+ WebGPU kernels for running models in the browser",
+    "summary": "Hugging Face released @huggingface/kernels, a library of more than 200 WebGPU kernels — the low-level routines that do the actual arithmetic of a model — written to run in a browser tab.",
+    "source_urls": [
+      "https://huggingface.co/blog/webgpu-kernels"
+    ]
   }
 ]
