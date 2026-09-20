@@ -110,5 +110,61 @@
     "source_urls": [
       "https://huggingface.co/blog/webgpu-kernels"
     ]
+  },
+  {
+    "date": "2026-09-20",
+    "title": "GitHub is testing a Copilot that uses several models at once",
+    "summary": "GitHub opened Project HydraFusion as a research preview inside Copilot.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/"
+    ]
+  },
+  {
+    "date": "2026-09-20",
+    "title": "Two essays, two opposite answers on writing with AI",
+    "summary": "Two pieces sat on the Hacker News front page at the same time: one a practical guide to drafting with a language model, the other an argument that you should almost never use one for writing.",
+    "source_urls": [
+      "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/"
+    ]
+  },
+  {
+    "date": "2026-09-20",
+    "title": "Benchmark scores may not measure what you assume",
+    "summary": "Researchers at the Allen Institute published BenchMIRT, a look at what AI benchmarks are actually testing.",
+    "source_urls": [
+      "https://huggingface.co/blog/allenai/benchmirt"
+    ]
+  },
+  {
+    "date": "2026-09-20",
+    "title": "A case for AI that refuses less, but more precisely",
+    "summary": "A new write-up argues that safety filters too often block an entire subject when only a narrow slice of it is genuinely risky.",
+    "source_urls": [
+      "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom"
+    ]
+  },
+  {
+    "date": "2026-09-20",
+    "title": "Speech-to-text leaderboard adds its first Global South language",
+    "summary": "The Open ASR Leaderboard — the public scoreboard for speech recognition systems — has added its first language from the Global South.",
+    "source_urls": [
+      "https://huggingface.co/blog/open-asr-leaderboard-global-south"
+    ]
+  },
+  {
+    "date": "2026-09-20",
+    "title": "A 4-bit model that outscores the full-size original",
+    "summary": "Multiverse Computing published what it calls quantization-aware healing.",
+    "source_urls": [
+      "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing"
+    ]
+  },
+  {
+    "date": "2026-09-20",
+    "title": "Teaching a 350M model to return clean structured output",
+    "summary": "A Hugging Face walkthrough fine-tunes a 350-million-parameter model — small enough to run on a single GPU — to reliably emit well-formed structured output, using GRPO reinforcement learning over roughly 100 training steps with the TRL library.",
+    "source_urls": [
+      "https://huggingface.co/blog/grpo-with-trl-ifstruct"
+    ]
   }
 ]
