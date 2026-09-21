@@ -166,5 +166,61 @@
     "source_urls": [
       "https://huggingface.co/blog/grpo-with-trl-ifstruct"
     ]
+  },
+  {
+    "date": "2026-09-21",
+    "title": "ChatGPT is reportedly collecting what you do on other websites",
+    "summary": "A report circulating today says ChatGPT has started gathering data about the sites you visit outside the chat window, through an advertising data collector.",
+    "source_urls": [
+      "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/"
+    ]
+  },
+  {
+    "date": "2026-09-21",
+    "title": "Qwen released a new image model",
+    "summary": "Alibaba's Qwen team published Qwen Image 2.",
+    "source_urls": [
+      "https://qwen.ai/blog?id=qwen-image-2.1"
+    ]
+  },
+  {
+    "date": "2026-09-21",
+    "title": "Spain has ordered blocks on Archive.today",
+    "summary": "Spanish authorities ordered internet providers to block Archive.",
+    "source_urls": [
+      "https://reclaimthenet.org/spain-blocks-archive-today-and-mirrors"
+    ]
+  },
+  {
+    "date": "2026-09-21",
+    "title": "Terence Tao asks what human mathematicians are still for",
+    "summary": "One of the world's leading mathematicians wrote about what remains of his field's work now that machines can handle more of the proving.",
+    "source_urls": [
+      "https://terrytao.wordpress.com/2026/09/19/why-do-we-need-human-mathematicians-anymore/"
+    ]
+  },
+  {
+    "date": "2026-09-21",
+    "title": "Do you still need to read the code an AI wrote?",
+    "summary": "GitHub's podcast took on the question directly, alongside arguments about which AI techniques are already obsolete.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/"
+    ]
+  },
+  {
+    "date": "2026-09-21",
+    "title": "Training a model across rented cloud jobs, without the usual plumbing",
+    "summary": "Hugging Face documented running asynchronous GRPO — a reinforcement learning method — with LoRA adapters spread across separate Hugging Face Jobs.",
+    "source_urls": [
+      "https://huggingface.co/blog/asyncgrpo-lora-hfjobs"
+    ]
+  },
+  {
+    "date": "2026-09-21",
+    "title": "Google published an open orchestrator for AI agents",
+    "summary": "Google released AX, an open agentic orchestrator — software whose job is to co-ordinate several AI agents working on the same task, deciding what runs when and how results are passed along.",
+    "source_urls": [
+      "https://agentexecutor.io"
+    ]
   }
 ]
