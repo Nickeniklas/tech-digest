@@ -222,5 +222,61 @@
     "source_urls": [
       "https://agentexecutor.io"
     ]
+  },
+  {
+    "date": "2026-09-22",
+    "title": "Robin Williams' daughter to fans making AI videos of him: 'Have some shame'",
+    "summary": "Zelda Williams asked fans publicly to stop making and sharing AI-generated videos of her late father, Robin Williams, telling them to \"have some shame.",
+    "source_urls": [
+      "https://variety.com/2026/film/news/robin-williams-daughter-ai-videos-1236871568/"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "title": "xAI released Grok 4.7",
+    "summary": "xAI published release notes for Grok 4.",
+    "source_urls": [
+      "https://x.ai/news/grok-4-7"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "title": "NASA's plan to bring Mars rocks home is dead",
+    "summary": "Science reports that Mars Sample Return, the long-planned effort to fly Martian rock samples back to Earth, has been cancelled.",
+    "source_urls": [
+      "https://www.science.org/content/article/nasa-s-mars-sample-return-mission-dead"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "title": "Apple documents how to switch Apple Intelligence off",
+    "summary": "Apple published a support guide for turning off and restricting Apple Intelligence features on a Mac.",
+    "source_urls": [
+      "https://support.apple.com/guide/mac-help/turn-restrict-access-apple-intelligence-mchlb2e44f94/mac"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "title": "The maths-and-AI question gets a formal advisory group",
+    "summary": "Previously covered on 2026-09-21: the mathematician Terence Tao wrote about what human mathematicians are still for now that machines can handle more of the proving.",
+    "source_urls": [
+      "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "title": "tokenizers v1: the unglamorous step before the model, measured",
+    "summary": "Hugging Face released version 1.",
+    "source_urls": [
+      "https://huggingface.co/blog/tokenizers-v1"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "title": "Cutting layers out of a model, framed as a physics problem",
+    "summary": "Multiverse Computing treats the choice of which transformer blocks to delete as an energy-minimisation problem — an Ising model, the same maths used to describe magnets — rather than scoring each block on its own.",
+    "source_urls": [
+      "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an"
+    ]
   }
 ]
