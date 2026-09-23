@@ -278,5 +278,61 @@
     "source_urls": [
       "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an"
     ]
+  },
+  {
+    "date": "2026-09-23",
+    "title": "OpenAI released GPT-6 — and one version broke a cipher nobody had solved since 2005",
+    "summary": "OpenAI released GPT-6 in two versions, Sol and Luna.",
+    "source_urls": [
+      "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "title": "Anthropic's new Opus costs 40% less to run",
+    "summary": "Anthropic released Claude Opus 5.",
+    "source_urls": [
+      "https://www.anthropic.com/claude-opus-5-5"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "title": "The Pentagon says overreliance on AI contributed to a strike on an Iranian school",
+    "summary": "A Bloomberg investigation reports the Pentagon's finding that leaning too heavily on AI played a part in a missile strike that hit a school in Iran.",
+    "source_urls": [
+      "https://www.bloomberg.com/graphics/2026-iran-school-attack/"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "title": "A WordPress flaw can let strangers run code on your site",
+    "summary": "WordPress published a security advisory for a path traversal bug that needs no login to exploit and can lead to remote code execution under certain conditions.",
+    "source_urls": [
+      "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-7hp8-65ch-5whp"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "title": "Apple is putting ads in iOS that won't go away",
+    "summary": "TechRadar reports that recent iOS releases show persistent promotional prompts for Apple services, and that users are finding them difficult to dismiss for good.",
+    "source_urls": [
+      "https://www.techradar.com/phones/iphone/i-wish-apple-would-just-stop-that-crap-apple-has-added-persistent-ads-to-ios-and-its-driving-users-crazy"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "title": "Transformers now loads llama.cpp's compressed models directly",
+    "summary": "Hugging Face's transformers library can now read GGUF files — the compressed model format llama.",
+    "source_urls": [
+      "https://huggingface.co/blog/transformers-llama-cpp-quants"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "title": "The standard behind your work login is called a fractal of bad design",
+    "summary": "Trail of Bits published a long critique of SAML, the protocol behind most \"sign in with your work account\" buttons.",
+    "source_urls": [
+      "https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/"
+    ]
   }
 ]
