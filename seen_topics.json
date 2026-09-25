@@ -390,5 +390,61 @@
     "source_urls": [
       "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp"
     ]
+  },
+  {
+    "date": "2026-09-25",
+    "title": "A tutoring company tells parents: save your money, use AI instead",
+    "summary": "The Australian Financial Review reports that a tutoring company is advising parents to skip paid tutoring and have their children use AI tools instead.",
+    "source_urls": [
+      "https://www.afr.com/policy/health-and-education/tutoring-company-tell-parents-to-save-their-money-and-use-ai-instead-20260923-p60z0r"
+    ]
+  },
+  {
+    "date": "2026-09-25",
+    "title": "The UK's AI safety institute is opening up how it tests models",
+    "summary": "The UK AI Security Institute is publishing its evaluation results through the EvalEval Coalition's shared infrastructure, so others can check and repeat them.",
+    "source_urls": [
+      "https://huggingface.co/blog/evaleval-aisi"
+    ]
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Historians are using AI to decode 17th-century letters",
+    "summary": "A historian describes using language models to trace alchemical knowledge and read hard-to-decipher 17th-century correspondence, and argues AI labs should fund this kind of historical work.",
+    "source_urls": [
+      "https://resobscura.substack.com/p/ai-labs-need-to-start-funding-historical"
+    ]
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Google's Project Suncatcher aims to put AI computing in space",
+    "summary": "Google published a fact sheet on Project Suncatcher, its research effort to run machine-learning infrastructure in orbit.",
+    "source_urls": [
+      "https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/"
+    ]
+  },
+  {
+    "date": "2026-09-25",
+    "title": "GitHub: sometimes a chat box is the wrong way to work with AI",
+    "summary": "GitHub makes the case for \"canvases\" — shared workspaces you can see and edit — instead of typing everything into a chat window.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui/"
+    ]
+  },
+  {
+    "date": "2026-09-25",
+    "title": "Speeding up a vision model by letting a small model guess ahead",
+    "summary": "Liquid AI released an experimental DSpark draft model for its 3-billion-parameter vision-language model, LFM2.",
+    "source_urls": [
+      "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark"
+    ]
+  },
+  {
+    "date": "2026-09-25",
+    "title": "GitHub's security team hands fuzzing to an AI agent",
+    "summary": "The GitHub Security Lab published a new fuzzing taskflow for its Taskflow Agent framework.",
+    "source_urls": [
+      "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/"
+    ]
   }
 ]
