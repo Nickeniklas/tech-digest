@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-09-18",
-    "title": "Anthropic releases Claude Fable 5.1 and Claude Mythos 5.1",
-    "summary": "Anthropic released two new models, Claude Fable 5.",
-    "source_urls": [
-      "https://www.anthropic.com/claude-fable-and-mythos-5-1"
-    ]
-  },
-  {
-    "date": "2026-09-18",
-    "title": "OpenAI launches Astra, a product built for legal work",
-    "summary": "OpenAI announced Astra for Law, a version of its technology aimed specifically at legal professionals.",
-    "source_urls": [
-      "https://openai.com/index/astra-for-law/"
-    ]
-  },
-  {
-    "date": "2026-09-18",
-    "title": "Waymo's driverless taxis are going to Singapore",
-    "summary": "Waymo announced it is bringing its self-driving service to Singapore, its first move into Asia.",
-    "source_urls": [
-      "https://waymo.com/waymo-in-singapore/"
-    ]
-  },
-  {
-    "date": "2026-09-18",
-    "title": "A marketing team put its event process into code — and automated it",
-    "summary": "A GitHub marketer wrote up how their APAC team turned event planning and follow-up into automated workflows, on the argument that if you can write down how you do your work, you can automate it.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github/"
-    ]
-  },
-  {
-    "date": "2026-09-18",
-    "title": "A 27-billion-parameter model squeezed into a ninth of the space",
-    "summary": "Researchers released Bonsai 2 27B, a compressed model they say keeps almost all of the original's quality in a footprint nine times smaller.",
-    "source_urls": [
-      "https://prismml.com/news/bonsai-2-27b"
-    ]
-  },
-  {
-    "date": "2026-09-18",
-    "title": "GitHub rewrote the Copilot runtime in Rust — 800,000 lines of it",
-    "summary": "GitHub moved the runtime behind Copilot to Rust, ending up with roughly 800,000 lines of production code, and used Copilot itself to do much of the porting.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/"
-    ]
-  },
-  {
-    "date": "2026-09-18",
-    "title": "Your AI agent passed the test. Will it pass it again?",
-    "summary": "IBM researchers argue that almost nobody reports the metric that matters most for agents: consistency.",
-    "source_urls": [
-      "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
-    ]
-  },
-  {
     "date": "2026-09-19",
     "title": "Google's Gemini was reportedly used to hack three companies",
     "summary": "According to a Wall Street Journal report relayed by Reuters, Google's Gemini model was used to break into three companies — described as the first known case of Google's AI being turned on real targets rather than test systems.",
@@ -445,6 +389,62 @@
     "summary": "The GitHub Security Lab published a new fuzzing taskflow for its Taskflow Agent framework.",
     "source_urls": [
       "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/"
+    ]
+  },
+  {
+    "date": "2026-09-26",
+    "title": "Microsoft is reportedly giving up on the personal AI chatbot race",
+    "summary": "Bloomberg reports that Microsoft is abandoning its push to compete as a personal, consumer AI chatbot and is rebooting Copilot instead.",
+    "source_urls": [
+      "https://www.bloomberg.com/news/articles/2026-09-25/microsoft-abandons-personal-ai-chatbot-race-with-copilot-reboot"
+    ]
+  },
+  {
+    "date": "2026-09-26",
+    "title": "Excel now lets one cell hold several values",
+    "summary": "Microsoft is adding lists and arrays to Excel, so a single cell can contain multiple values instead of one.",
+    "source_urls": [
+      "https://techcommunity.microsoft.com/blog/microsoft365insiderblog/put-multiple-values-in-one-cell-with-lists-and-arrays-in-excel/4559395"
+    ]
+  },
+  {
+    "date": "2026-09-26",
+    "title": "Jury finds Facebook liable in the Cambridge Analytica case",
+    "summary": "A jury found Facebook liable for deceiving its users over the Cambridge Analytica data scandal.",
+    "source_urls": [
+      "https://www.cbsnews.com/news/facebook-liable-deceiving-users-cambridge-analytica/"
+    ]
+  },
+  {
+    "date": "2026-09-26",
+    "title": "Court upholds Pentagon's label of Anthropic as a supply chain risk",
+    "summary": "A U.",
+    "source_urls": [
+      "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html"
+    ]
+  },
+  {
+    "date": "2026-09-26",
+    "title": "Camera data put an innocent woman in jail for 13 days",
+    "summary": "A single piece of data from Flock, a network of automated licence-plate cameras, led to an innocent woman spending 13 days in jail, and she is now suing.",
+    "source_urls": [
+      "https://www.jezebel.com/flock-cameras-data-innocent-woman-arrested-lindsey-isaacs-palm-beach-florida-lawsuit-vehicular-homicide"
+    ]
+  },
+  {
+    "date": "2026-09-26",
+    "title": "GitHub rewrote Copilot's engine in Rust — with Copilot",
+    "summary": "GitHub ported the runtime that powers its Copilot coding agent to 800,000 lines of production Rust, using Copilot's own agents to do much of the work.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/"
+    ]
+  },
+  {
+    "date": "2026-09-26",
+    "title": "GitHub had five service-degrading incidents in August",
+    "summary": "GitHub's monthly availability report lists five incidents in August that degraded performance across its services, down from eight in July and six in June.",
+    "source_urls": [
+      "https://github.blog/news-insights/company-news/github-availability-report-august-2026/"
     ]
   }
 ]
