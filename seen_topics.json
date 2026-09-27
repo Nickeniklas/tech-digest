@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-09-19",
-    "title": "Google's Gemini was reportedly used to hack three companies",
-    "summary": "According to a Wall Street Journal report relayed by Reuters, Google's Gemini model was used to break into three companies — described as the first known case of Google's AI being turned on real targets rather than test systems.",
-    "source_urls": [
-      "https://www.reuters.com/business/gemini-hacked-three-companies-first-known-breakout-by-google-ai-wsj-reports-2026-09-18/"
-    ]
-  },
-  {
-    "date": "2026-09-19",
-    "title": "Alibaba released a free medical AI that screens for cancer and ~150 other conditions",
-    "summary": "Alibaba open-sourced a medical model it says can detect cancer and close to 150 other conditions, meaning any hospital or researcher can download and run it rather than paying for access.",
-    "source_urls": [
-      "https://www.scmp.com/tech/big-tech/article/3368055/alibaba-open-sources-medical-ai-model-can-detect-cancer-and-nearly-150-conditions"
-    ]
-  },
-  {
-    "date": "2026-09-19",
-    "title": "Cloudflare found another 100TB of memory it wasn't using",
-    "summary": "Cloudflare published how it cut a further 100 terabytes of memory from its servers, following an earlier round that saved the same amount — not by buying hardware, but by changing the maths behind how data is stored.",
-    "source_urls": [
-      "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/"
-    ]
-  },
-  {
-    "date": "2026-09-19",
-    "title": "OpenAI used its own models to help design a chip",
-    "summary": "IEEE Spectrum detailed how OpenAI put its own language models to work designing Jalapeño, its in-house chip.",
-    "source_urls": [
-      "https://spectrum.ieee.org/llms-for-chip-design"
-    ]
-  },
-  {
-    "date": "2026-09-19",
-    "title": "Tiny models, measured in megabytes, are catching up",
-    "summary": "Cactus released Needle 3, a set of automation models between 8 and 29 megabytes that it claims match DeepSeek V4 Flash on the tasks they are built for.",
-    "source_urls": [
-      "https://cactuscompute.com/needle"
-    ]
-  },
-  {
-    "date": "2026-09-19",
-    "title": "AUTOMATIC1111, rebuilt as a drag-and-drop canvas",
-    "summary": "Hugging Face rebuilt AUTOMATIC1111 — the interface most people used for local image generation — on top of Gradio Workflow, turning its stack of tabs into a node canvas.",
-    "source_urls": [
-      "https://huggingface.co/blog/gradio-workflow-1111"
-    ]
-  },
-  {
-    "date": "2026-09-19",
-    "title": "200+ WebGPU kernels for running models in the browser",
-    "summary": "Hugging Face released @huggingface/kernels, a library of more than 200 WebGPU kernels — the low-level routines that do the actual arithmetic of a model — written to run in a browser tab.",
-    "source_urls": [
-      "https://huggingface.co/blog/webgpu-kernels"
-    ]
-  },
-  {
     "date": "2026-09-20",
     "title": "GitHub is testing a Copilot that uses several models at once",
     "summary": "GitHub opened Project HydraFusion as a research preview inside Copilot.",
@@ -445,6 +389,62 @@
     "summary": "GitHub's monthly availability report lists five incidents in August that degraded performance across its services, down from eight in July and six in June.",
     "source_urls": [
       "https://github.blog/news-insights/company-news/github-availability-report-august-2026/"
+    ]
+  },
+  {
+    "date": "2026-09-27",
+    "title": "A teacher rethinks the job after AI did all the homework",
+    "summary": "A teacher wrote up what they changed after finding that AI could complete every one of their homework assignments.",
+    "source_urls": [
+      "https://thelastsoftwareengineer.substack.com/p/how-i-changed-teaching-after-ai-managed"
+    ]
+  },
+  {
+    "date": "2026-09-27",
+    "title": "ASML says it sold \"absolutely nothing\" in Europe this year",
+    "summary": "ASML, the Dutch company that makes the machines used to produce the world's most advanced chips, says it has sold nothing in Europe in 2026 and is asking the EU to help create demand.",
+    "source_urls": [
+      "https://www.tomshardware.com/tech-industry/semiconductors/asml-says-its-sells-absolutely-nothing-in-europe-calls-on-eu-to-help-create-demand"
+    ]
+  },
+  {
+    "date": "2026-09-27",
+    "title": "One Twitch chat message was enough to take over a streamer's PC",
+    "summary": "Security researchers describe how a single message typed into a Twitch chat ended up running code on the streamer's own computer.",
+    "source_urls": [
+      "https://blog.scrt.ch/2026/09/22/how-one-twitch-chat-message-became-code-execution-on-a-streamers-pc/"
+    ]
+  },
+  {
+    "date": "2026-09-27",
+    "title": "GitHub shows beginners how to build their own AI workspaces",
+    "summary": "Previously covered on 2026-09-25: GitHub argued that a chat box is sometimes the wrong way to work with AI.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/"
+    ]
+  },
+  {
+    "date": "2026-09-27",
+    "title": "New signs that Saturn's moon Enceladus could support life",
+    "summary": "Researchers at Freie Universität Berlin report promising findings, drawn from Cassini spacecraft data, about the potential for microbial life on Enceladus, one of Saturn's icy moons.",
+    "source_urls": [
+      "https://www.fu-berlin.de/en/presse/informationen/fup/2026/fup_26_116-enceladus-cassini-mikroben-science-postberg/index.html"
+    ]
+  },
+  {
+    "date": "2026-09-27",
+    "title": "Your AI agent passed once. Will it pass again?",
+    "summary": "IBM Research published a piece on consistency in AI agents: an agent that completes a task on one run may fail the same task on the next.",
+    "source_urls": [
+      "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
+    ]
+  },
+  {
+    "date": "2026-09-27",
+    "title": "Why shorter AI answers can cost more",
+    "summary": "GitHub explained how it makes Copilot's coding work cheaper without lowering quality, and why a shorter model output doesn't always mean a cheaper task.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/"
     ]
   }
 ]
