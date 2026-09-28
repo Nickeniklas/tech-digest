@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-09-20",
-    "title": "GitHub is testing a Copilot that uses several models at once",
-    "summary": "GitHub opened Project HydraFusion as a research preview inside Copilot.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/"
-    ]
-  },
-  {
-    "date": "2026-09-20",
-    "title": "Two essays, two opposite answers on writing with AI",
-    "summary": "Two pieces sat on the Hacker News front page at the same time: one a practical guide to drafting with a language model, the other an argument that you should almost never use one for writing.",
-    "source_urls": [
-      "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/"
-    ]
-  },
-  {
-    "date": "2026-09-20",
-    "title": "Benchmark scores may not measure what you assume",
-    "summary": "Researchers at the Allen Institute published BenchMIRT, a look at what AI benchmarks are actually testing.",
-    "source_urls": [
-      "https://huggingface.co/blog/allenai/benchmirt"
-    ]
-  },
-  {
-    "date": "2026-09-20",
-    "title": "A case for AI that refuses less, but more precisely",
-    "summary": "A new write-up argues that safety filters too often block an entire subject when only a narrow slice of it is genuinely risky.",
-    "source_urls": [
-      "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom"
-    ]
-  },
-  {
-    "date": "2026-09-20",
-    "title": "Speech-to-text leaderboard adds its first Global South language",
-    "summary": "The Open ASR Leaderboard — the public scoreboard for speech recognition systems — has added its first language from the Global South.",
-    "source_urls": [
-      "https://huggingface.co/blog/open-asr-leaderboard-global-south"
-    ]
-  },
-  {
-    "date": "2026-09-20",
-    "title": "A 4-bit model that outscores the full-size original",
-    "summary": "Multiverse Computing published what it calls quantization-aware healing.",
-    "source_urls": [
-      "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing"
-    ]
-  },
-  {
-    "date": "2026-09-20",
-    "title": "Teaching a 350M model to return clean structured output",
-    "summary": "A Hugging Face walkthrough fine-tunes a 350-million-parameter model — small enough to run on a single GPU — to reliably emit well-formed structured output, using GRPO reinforcement learning over roughly 100 training steps with the TRL library.",
-    "source_urls": [
-      "https://huggingface.co/blog/grpo-with-trl-ifstruct"
-    ]
-  },
-  {
     "date": "2026-09-21",
     "title": "ChatGPT is reportedly collecting what you do on other websites",
     "summary": "A report circulating today says ChatGPT has started gathering data about the sites you visit outside the chat window, through an advertising data collector.",
@@ -445,6 +389,54 @@
     "summary": "GitHub explained how it makes Copilot's coding work cheaper without lowering quality, and why a shorter model output doesn't always mean a cheaper task.",
     "source_urls": [
       "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "title": "AI makes law firms faster — clients want a discount",
+    "summary": "The New York Times reports that as AI tools speed up legal work, clients are pushing their law firms for lower fees.",
+    "source_urls": [
+      "https://www.nytimes.com/2026/09/26/business/dealbook/ai-law-discount-billable-hour.html"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "title": "Microsoft quietly drops the Copilot+ label from new laptops",
+    "summary": "Previously covered on 2026-09-26: Bloomberg reported Microsoft was rebooting Copilot and stepping back from the consumer chatbot race.",
+    "source_urls": [
+      "https://www.tomshardware.com/tablets/microsoft-surface/microsoft-quietly-drops-copilot-branding-from-its-new-laptops-surface-cvp-confirms-new-devices-meet-hardware-requirements-but-lack-controversial-branding"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "title": "485 chemicals in US pesticide products linked to breast cancer",
+    "summary": "New research reported by The Guardian finds 485 chemicals used in US pesticide products that are linked to breast cancer.",
+    "source_urls": [
+      "https://www.theguardian.com/us-news/2026/sep/26/breast-cancer-us-pesticide-products"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "title": "A discovery about life's origins, made in an $80 motel room",
+    "summary": "The New York Times tells the story of a scientist whose work in a cheap motel room led to a finding that could shed light on how life began.",
+    "source_urls": [
+      "https://www.nytimes.com/2026/09/26/science/motel-science-discovery.html"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "title": "A model that doesn't train beat tuned XGBoost 14 times out of 14",
+    "summary": "A new benchmark write-up compares TabPFN and TabICL — pre-trained models that make predictions on a spreadsheet-style dataset without being trained on it — against XGBoost, the long-time standard for tabular data, carefully tuned.",
+    "source_urls": [
+      "https://efraingaray.com/en/blog/tabpfn-vs-xgboost/"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "title": "GitHub made its site faster by shipping more CSS",
+    "summary": "GitHub fully migrated github.",
+    "source_urls": [
+      "https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/"
     ]
   }
 ]
