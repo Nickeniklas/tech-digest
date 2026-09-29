@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-09-21",
-    "title": "ChatGPT is reportedly collecting what you do on other websites",
-    "summary": "A report circulating today says ChatGPT has started gathering data about the sites you visit outside the chat window, through an advertising data collector.",
-    "source_urls": [
-      "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/"
-    ]
-  },
-  {
-    "date": "2026-09-21",
-    "title": "Qwen released a new image model",
-    "summary": "Alibaba's Qwen team published Qwen Image 2.",
-    "source_urls": [
-      "https://qwen.ai/blog?id=qwen-image-2.1"
-    ]
-  },
-  {
-    "date": "2026-09-21",
-    "title": "Spain has ordered blocks on Archive.today",
-    "summary": "Spanish authorities ordered internet providers to block Archive.",
-    "source_urls": [
-      "https://reclaimthenet.org/spain-blocks-archive-today-and-mirrors"
-    ]
-  },
-  {
-    "date": "2026-09-21",
-    "title": "Terence Tao asks what human mathematicians are still for",
-    "summary": "One of the world's leading mathematicians wrote about what remains of his field's work now that machines can handle more of the proving.",
-    "source_urls": [
-      "https://terrytao.wordpress.com/2026/09/19/why-do-we-need-human-mathematicians-anymore/"
-    ]
-  },
-  {
-    "date": "2026-09-21",
-    "title": "Do you still need to read the code an AI wrote?",
-    "summary": "GitHub's podcast took on the question directly, alongside arguments about which AI techniques are already obsolete.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/"
-    ]
-  },
-  {
-    "date": "2026-09-21",
-    "title": "Training a model across rented cloud jobs, without the usual plumbing",
-    "summary": "Hugging Face documented running asynchronous GRPO — a reinforcement learning method — with LoRA adapters spread across separate Hugging Face Jobs.",
-    "source_urls": [
-      "https://huggingface.co/blog/asyncgrpo-lora-hfjobs"
-    ]
-  },
-  {
-    "date": "2026-09-21",
-    "title": "Google published an open orchestrator for AI agents",
-    "summary": "Google released AX, an open agentic orchestrator — software whose job is to co-ordinate several AI agents working on the same task, deciding what runs when and how results are passed along.",
-    "source_urls": [
-      "https://agentexecutor.io"
-    ]
-  },
-  {
     "date": "2026-09-22",
     "title": "Robin Williams' daughter to fans making AI videos of him: 'Have some shame'",
     "summary": "Zelda Williams asked fans publicly to stop making and sharing AI-generated videos of her late father, Robin Williams, telling them to \"have some shame.",
@@ -437,6 +381,62 @@
     "summary": "GitHub fully migrated github.",
     "source_urls": [
       "https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/"
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Claude Sonnet 5.5: faster and cheaper than Sonnet 5",
+    "summary": "Anthropic released Claude Sonnet 5.",
+    "source_urls": [
+      "https://www.anthropic.com/claude-sonnet-5-5"
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Nvidia wants a watchdog chip next to every AI agent",
+    "summary": "CNBC reports that Nvidia is pitching a dedicated \"watchdog\" chip designed to sit alongside AI agents — software that takes actions on its own rather than just answering questions.",
+    "source_urls": [
+      "https://www.cnbc.com/2026/09/28/nvidia-releases.html"
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "title": "GitHub's open-source AI agent found 24 Android security flaws",
+    "summary": "GitHub's security team used its open-source AI security agent to uncover 24 vulnerabilities in Android, including critical bugs.",
+    "source_urls": [
+      "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/"
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Holo4: an AI that operates computer programs the way you do",
+    "summary": "H Company released Holo4, a family of models built to use software interfaces directly — clicking and typing through apps rather than relying on special connections.",
+    "source_urls": [
+      "https://huggingface.co/blog/Hcompany/holo4"
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Cloudflare launches a command-line tool built for AI agents",
+    "summary": "Cloudflare released cf, a command-line tool for its services that it describes as \"agentic\" — designed to be driven by AI assistants as well as people.",
+    "source_urls": [
+      "https://blog.cloudflare.com/cloudflare-cf-cli-launch/"
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Language models small enough for a browser tab — or a cluster of $5 chips",
+    "summary": "Two hobby projects on Hacker News push AI onto tiny hardware.",
+    "source_urls": [
+      "https://github.com/Low-Zi-Hong/ESP32s3-LLM-Cluster"
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Git 2.56 is out",
+    "summary": "The open-source Git project released version 2.",
+    "source_urls": [
+      "https://github.blog/open-source/git/highlights-from-git-2-56/"
     ]
   }
 ]
