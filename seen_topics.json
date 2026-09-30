@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-09-22",
-    "title": "Robin Williams' daughter to fans making AI videos of him: 'Have some shame'",
-    "summary": "Zelda Williams asked fans publicly to stop making and sharing AI-generated videos of her late father, Robin Williams, telling them to \"have some shame.",
-    "source_urls": [
-      "https://variety.com/2026/film/news/robin-williams-daughter-ai-videos-1236871568/"
-    ]
-  },
-  {
-    "date": "2026-09-22",
-    "title": "xAI released Grok 4.7",
-    "summary": "xAI published release notes for Grok 4.",
-    "source_urls": [
-      "https://x.ai/news/grok-4-7"
-    ]
-  },
-  {
-    "date": "2026-09-22",
-    "title": "NASA's plan to bring Mars rocks home is dead",
-    "summary": "Science reports that Mars Sample Return, the long-planned effort to fly Martian rock samples back to Earth, has been cancelled.",
-    "source_urls": [
-      "https://www.science.org/content/article/nasa-s-mars-sample-return-mission-dead"
-    ]
-  },
-  {
-    "date": "2026-09-22",
-    "title": "Apple documents how to switch Apple Intelligence off",
-    "summary": "Apple published a support guide for turning off and restricting Apple Intelligence features on a Mac.",
-    "source_urls": [
-      "https://support.apple.com/guide/mac-help/turn-restrict-access-apple-intelligence-mchlb2e44f94/mac"
-    ]
-  },
-  {
-    "date": "2026-09-22",
-    "title": "The maths-and-AI question gets a formal advisory group",
-    "summary": "Previously covered on 2026-09-21: the mathematician Terence Tao wrote about what human mathematicians are still for now that machines can handle more of the proving.",
-    "source_urls": [
-      "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/"
-    ]
-  },
-  {
-    "date": "2026-09-22",
-    "title": "tokenizers v1: the unglamorous step before the model, measured",
-    "summary": "Hugging Face released version 1.",
-    "source_urls": [
-      "https://huggingface.co/blog/tokenizers-v1"
-    ]
-  },
-  {
-    "date": "2026-09-22",
-    "title": "Cutting layers out of a model, framed as a physics problem",
-    "summary": "Multiverse Computing treats the choice of which transformer blocks to delete as an energy-minimisation problem — an Ising model, the same maths used to describe magnets — rather than scoring each block on its own.",
-    "source_urls": [
-      "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an"
-    ]
-  },
-  {
     "date": "2026-09-23",
     "title": "OpenAI released GPT-6 — and one version broke a cipher nobody had solved since 2005",
     "summary": "OpenAI released GPT-6 in two versions, Sol and Luna.",
@@ -437,6 +381,62 @@
     "summary": "The open-source Git project released version 2.",
     "source_urls": [
       "https://github.blog/open-source/git/highlights-from-git-2-56/"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "title": "GPT-6.1 Sol: near-top performance at a fifth of the price",
+    "summary": "Previously covered on 2026-09-23: OpenAI released GPT-6 in two versions, Sol and Luna.",
+    "source_urls": [
+      "https://openai.com/index/introducing-gpt-6-1-sol/"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "title": "OpenAI introduces Dots, agents that stay on",
+    "summary": "OpenAI announced Dots, which it describes as always-on agents.",
+    "source_urls": [
+      "https://openai.com/index/introducing-dots/"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "title": "NVIDIA releases a free model that predicts spreadsheet columns without training",
+    "summary": "NVIDIA published Kumo Tabular, an open model for table-shaped data.",
+    "source_urls": [
+      "https://huggingface.co/blog/nvidia/kumo-tabular"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "title": "How Delhi cut electricity losses from 50% to 5%",
+    "summary": "IEEE Spectrum looks at how Delhi reduced the share of electricity lost between the power plant and the customer from about half to about one in twenty.",
+    "source_urls": [
+      "https://spectrum.ieee.org/delhi-electricity-loss"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Vermont is swapping power plants for home batteries",
+    "summary": "The BBC reports on a \"virtual power plant\" in Vermont: batteries in ordinary homes, pooled together, that keep the lights on during storms.",
+    "source_urls": [
+      "https://www.bbc.com/future/article/20260928-a-virtual-power-plant-hidden-in-vermont-homes-is-keeping-the-lights-on-during-storms"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Checking that an AI agent cited the right source, not just a true fact",
+    "summary": "Multiverse Computing published ProvenanceGuard, a checker for AI agents that pull information from several tools at once.",
+    "source_urls": [
+      "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "title": "Cloudflare is building a certificate authority for the whole internet",
+    "summary": "Cloudflare wrote about building its own certificate authority — the kind of organisation that issues the certificates behind the padlock icon in your browser, which prove a website is who it claims to be.",
+    "source_urls": [
+      "https://blog.cloudflare.com/cloudflare-certificate-authority/"
     ]
   }
 ]
