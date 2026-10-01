@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-09-23",
-    "title": "OpenAI released GPT-6 — and one version broke a cipher nobody had solved since 2005",
-    "summary": "OpenAI released GPT-6 in two versions, Sol and Luna.",
-    "source_urls": [
-      "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
-    ]
-  },
-  {
-    "date": "2026-09-23",
-    "title": "Anthropic's new Opus costs 40% less to run",
-    "summary": "Anthropic released Claude Opus 5.",
-    "source_urls": [
-      "https://www.anthropic.com/claude-opus-5-5"
-    ]
-  },
-  {
-    "date": "2026-09-23",
-    "title": "The Pentagon says overreliance on AI contributed to a strike on an Iranian school",
-    "summary": "A Bloomberg investigation reports the Pentagon's finding that leaning too heavily on AI played a part in a missile strike that hit a school in Iran.",
-    "source_urls": [
-      "https://www.bloomberg.com/graphics/2026-iran-school-attack/"
-    ]
-  },
-  {
-    "date": "2026-09-23",
-    "title": "A WordPress flaw can let strangers run code on your site",
-    "summary": "WordPress published a security advisory for a path traversal bug that needs no login to exploit and can lead to remote code execution under certain conditions.",
-    "source_urls": [
-      "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-7hp8-65ch-5whp"
-    ]
-  },
-  {
-    "date": "2026-09-23",
-    "title": "Apple is putting ads in iOS that won't go away",
-    "summary": "TechRadar reports that recent iOS releases show persistent promotional prompts for Apple services, and that users are finding them difficult to dismiss for good.",
-    "source_urls": [
-      "https://www.techradar.com/phones/iphone/i-wish-apple-would-just-stop-that-crap-apple-has-added-persistent-ads-to-ios-and-its-driving-users-crazy"
-    ]
-  },
-  {
-    "date": "2026-09-23",
-    "title": "Transformers now loads llama.cpp's compressed models directly",
-    "summary": "Hugging Face's transformers library can now read GGUF files — the compressed model format llama.",
-    "source_urls": [
-      "https://huggingface.co/blog/transformers-llama-cpp-quants"
-    ]
-  },
-  {
-    "date": "2026-09-23",
-    "title": "The standard behind your work login is called a fractal of bad design",
-    "summary": "Trail of Bits published a long critique of SAML, the protocol behind most \"sign in with your work account\" buttons.",
-    "source_urls": [
-      "https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/"
-    ]
-  },
-  {
     "date": "2026-09-24",
     "title": "Claude turned up an enzyme system biologists hadn't described",
     "summary": "Anthropic published work in which Claude identified a previously uncatalogued bacterial enzyme system, including repeating DNA sequences similar to the ones that make CRISPR gene editing possible.",
@@ -437,6 +381,62 @@
     "summary": "Cloudflare wrote about building its own certificate authority — the kind of organisation that issues the certificates behind the padlock icon in your browser, which prove a website is who it claims to be.",
     "source_urls": [
       "https://blog.cloudflare.com/cloudflare-certificate-authority/"
+    ]
+  },
+  {
+    "date": "2026-10-01",
+    "title": "Google announces Gemini 4 Argon",
+    "summary": "Google published an announcement for Gemini 4 Argon, a new model carrying the Gemini 4 name.",
+    "source_urls": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+    ]
+  },
+  {
+    "date": "2026-10-01",
+    "title": "A maths app for kids where the AI gets it wrong on purpose",
+    "summary": "Lathoa is a new maths app for children in which the AI tutor deliberately makes mistakes, and the child's job is to catch them.",
+    "source_urls": [
+      "https://lathoa.ai/en"
+    ]
+  },
+  {
+    "date": "2026-10-01",
+    "title": "Hugging Face launches a public scoreboard for AI voices",
+    "summary": "Hugging Face opened the Open TTS Leaderboard, which compares text-to-speech models across many languages and on voice cloning, and lets people vote on which outputs sound best.",
+    "source_urls": [
+      "https://huggingface.co/blog/open-tts-leaderboard"
+    ]
+  },
+  {
+    "date": "2026-10-01",
+    "title": "US cities are being made to share licence-plate data with a federal programme",
+    "summary": "404 Media reports that cities are being required to funnel data from their licence-plate cameras into a large federal surveillance programme known as HIDTA.",
+    "source_urls": [
+      "https://www.404media.co/how-cities-are-forced-to-funnel-license-plate-data-to-a-massive-federal-surveillance-program-hidta/"
+    ]
+  },
+  {
+    "date": "2026-10-01",
+    "title": "A researcher says 17 trillion Microsoft records were within reach",
+    "summary": "A security researcher describes how they could have accessed 17 trillion Microsoft records through a flaw they found.",
+    "source_urls": [
+      "https://blog.faav.net/how-i-couldve-accessed-17-trillion-microsoft-records"
+    ]
+  },
+  {
+    "date": "2026-10-01",
+    "title": "Netlify makes its Edge Functions 5x faster by switching sandboxes",
+    "summary": "Netlify moved its Edge Functions — small pieces of code that run close to the visitor — from V8 isolates (the sandboxing approach browsers use for JavaScript) to Firecracker microVMs, lightweight virtual machines originally built by Amazon.",
+    "source_urls": [
+      "https://www.netlify.com/blog/edge-functions-firecracker-microvms/"
+    ]
+  },
+  {
+    "date": "2026-10-01",
+    "title": "Hugging Face Transformers can now run llama.cpp's compressed models",
+    "summary": "Hugging Face's Transformers library, the most widely used toolkit for working with open AI models, can now load quantized model files made for llama.",
+    "source_urls": [
+      "https://huggingface.co/blog/transformers-llama-cpp-quants"
     ]
   }
 ]
