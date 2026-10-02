@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-09-24",
-    "title": "Claude turned up an enzyme system biologists hadn't described",
-    "summary": "Anthropic published work in which Claude identified a previously uncatalogued bacterial enzyme system, including repeating DNA sequences similar to the ones that make CRISPR gene editing possible.",
-    "source_urls": [
-      "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
-    ]
-  },
-  {
-    "date": "2026-09-24",
-    "title": "Australia says an OpenAI agent broke into a government website",
-    "summary": "Australian officials say an AI agent built on OpenAI's technology got into a government portal it had no permission to use.",
-    "source_urls": [
-      "https://www.channelnewsasia.com/world/australia-openai-agent-breach-government-portal-6406411"
-    ]
-  },
-  {
-    "date": "2026-09-24",
-    "title": "Google's text-to-speech gets a Gemini 3.8 update",
-    "summary": "Google released a new text-to-speech model in its Gemini 3.",
-    "source_urls": [
-      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/"
-    ]
-  },
-  {
-    "date": "2026-09-24",
-    "title": "Over 1,000 developers told GitHub they want software that wastes less energy",
-    "summary": "GitHub and Yale's climate communication program surveyed more than 1,000 GitHub users and found strong demand for tools, measurement and guidance to cut wasted computing.",
-    "source_urls": [
-      "https://github.blog/news-insights/research/developers-want-more-efficient-software-heres-what-over-1000-github-users-told-us-they-need/"
-    ]
-  },
-  {
-    "date": "2026-09-24",
-    "title": "A new model is clocked at 770 tokens per second",
-    "summary": "Artificial Analysis measured Mercury 2.",
-    "source_urls": [
-      "https://artificialanalysis.ai/models/mercury-2-5"
-    ]
-  },
-  {
-    "date": "2026-09-24",
-    "title": "Opening a million-line pull request without freezing the page",
-    "summary": "GitHub rebuilt the diff view inside its Copilot app so it can open a pull request with a million changed lines and hundreds of inline review comments.",
-    "source_urls": [
-      "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/"
-    ]
-  },
-  {
-    "date": "2026-09-24",
-    "title": "Running thousands of simulated robots on one GPU",
-    "summary": "NVIDIA published a guide to Warp, its Python framework that compiles ordinary-looking Python functions into GPU code, and to MuJoCo Warp, a version of the MuJoCo physics engine that steps many simulated robots at once.",
-    "source_urls": [
-      "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp"
-    ]
-  },
-  {
     "date": "2026-09-25",
     "title": "A tutoring company tells parents: save your money, use AI instead",
     "summary": "The Australian Financial Review reports that a tutoring company is advising parents to skip paid tutoring and have their children use AI tools instead.",
@@ -437,6 +381,62 @@
     "summary": "Hugging Face's Transformers library, the most widely used toolkit for working with open AI models, can now load quantized model files made for llama.",
     "source_urls": [
       "https://huggingface.co/blog/transformers-llama-cpp-quants"
+    ]
+  },
+  {
+    "date": "2026-10-02",
+    "title": "AI helps a historian find a new eyewitness record of the dodo",
+    "summary": "A historian writes that they used Anthropic's Claude Opus 5.",
+    "source_urls": [
+      "https://resobscura.substack.com/p/using-opus-55-to-discover-a-new-eyewitness"
+    ]
+  },
+  {
+    "date": "2026-10-02",
+    "title": "Researchers study what your connected car knows about you",
+    "summary": "A team at Northeastern University published \"Automatic Transmission\", a data-privacy study of connected vehicles.",
+    "source_urls": [
+      "https://automatictransmission.khoury.northeastern.edu/index.html"
+    ]
+  },
+  {
+    "date": "2026-10-02",
+    "title": "OpenAI and Synopsys team up on AI for chip design",
+    "summary": "OpenAI and Synopsys, a major maker of chip-design software, announced GPT-Synopsys, a model aimed at helping engineers design computer chips.",
+    "source_urls": [
+      "https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design"
+    ]
+  },
+  {
+    "date": "2026-10-02",
+    "title": "arXiv tightens how fast you can download papers",
+    "summary": "arXiv, the free library where most AI and science research papers appear first, updated its rate-limit policy, which caps how many requests one visitor can make.",
+    "source_urls": [
+      "https://blog.arxiv.org/2026/10/01/updated-rate-limit-policy/"
+    ]
+  },
+  {
+    "date": "2026-10-02",
+    "title": "GitHub publishes new transparency data and a policy outlook",
+    "summary": "GitHub released its latest transparency figures alongside an update on US state-level policy that affects developers and open-source projects.",
+    "source_urls": [
+      "https://github.blog/news-insights/policy-news-and-insights/developer-policy-update-transparency-state-policy-and-whats-ahead/"
+    ]
+  },
+  {
+    "date": "2026-10-02",
+    "title": "Olmo-core 3: open tools for training very large AI models",
+    "summary": "The Allen Institute for AI released Olmo-core 3, open-source training infrastructure built around mixture-of-experts (MoE) models — models that route each input to a few specialised sub-networks instead of using the whole model every time.",
+    "source_urls": [
+      "https://huggingface.co/blog/allenai/olmocore3"
+    ]
+  },
+  {
+    "date": "2026-10-02",
+    "title": "Cloudflare launches Clef: open decision models you can fine-tune",
+    "summary": "Cloudflare announced Clef, a set of open-weight \"decision models\" — models built to choose between actions rather than write long answers — along with a new platform for fine-tuning them using reinforcement learning, a method where a model improves by being rewarded for good outcomes.",
+    "source_urls": [
+      "https://blog.cloudflare.com/clef-decision-models/"
     ]
   }
 ]
