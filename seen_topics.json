@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-09-25",
-    "title": "A tutoring company tells parents: save your money, use AI instead",
-    "summary": "The Australian Financial Review reports that a tutoring company is advising parents to skip paid tutoring and have their children use AI tools instead.",
-    "source_urls": [
-      "https://www.afr.com/policy/health-and-education/tutoring-company-tell-parents-to-save-their-money-and-use-ai-instead-20260923-p60z0r"
-    ]
-  },
-  {
-    "date": "2026-09-25",
-    "title": "The UK's AI safety institute is opening up how it tests models",
-    "summary": "The UK AI Security Institute is publishing its evaluation results through the EvalEval Coalition's shared infrastructure, so others can check and repeat them.",
-    "source_urls": [
-      "https://huggingface.co/blog/evaleval-aisi"
-    ]
-  },
-  {
-    "date": "2026-09-25",
-    "title": "Historians are using AI to decode 17th-century letters",
-    "summary": "A historian describes using language models to trace alchemical knowledge and read hard-to-decipher 17th-century correspondence, and argues AI labs should fund this kind of historical work.",
-    "source_urls": [
-      "https://resobscura.substack.com/p/ai-labs-need-to-start-funding-historical"
-    ]
-  },
-  {
-    "date": "2026-09-25",
-    "title": "Google's Project Suncatcher aims to put AI computing in space",
-    "summary": "Google published a fact sheet on Project Suncatcher, its research effort to run machine-learning infrastructure in orbit.",
-    "source_urls": [
-      "https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/"
-    ]
-  },
-  {
-    "date": "2026-09-25",
-    "title": "GitHub: sometimes a chat box is the wrong way to work with AI",
-    "summary": "GitHub makes the case for \"canvases\" — shared workspaces you can see and edit — instead of typing everything into a chat window.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui/"
-    ]
-  },
-  {
-    "date": "2026-09-25",
-    "title": "Speeding up a vision model by letting a small model guess ahead",
-    "summary": "Liquid AI released an experimental DSpark draft model for its 3-billion-parameter vision-language model, LFM2.",
-    "source_urls": [
-      "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark"
-    ]
-  },
-  {
-    "date": "2026-09-25",
-    "title": "GitHub's security team hands fuzzing to an AI agent",
-    "summary": "The GitHub Security Lab published a new fuzzing taskflow for its Taskflow Agent framework.",
-    "source_urls": [
-      "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/"
-    ]
-  },
-  {
     "date": "2026-09-26",
     "title": "Microsoft is reportedly giving up on the personal AI chatbot race",
     "summary": "Bloomberg reports that Microsoft is abandoning its push to compete as a personal, consumer AI chatbot and is rebooting Copilot instead.",
@@ -437,6 +381,62 @@
     "summary": "Cloudflare announced Clef, a set of open-weight \"decision models\" — models built to choose between actions rather than write long answers — along with a new platform for fine-tuning them using reinforcement learning, a method where a model improves by being rewarded for good outcomes.",
     "source_urls": [
       "https://blog.cloudflare.com/clef-decision-models/"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "title": "AI beats the best Stratego player in history — on a budget",
+    "summary": "Ars Technica reports that an AI system has beaten the strongest Stratego player on record.",
+    "source_urls": [
+      "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "title": "GitHub names three skills to strengthen as AI changes the job",
+    "summary": "GitHub published advice for developers whose work is being reshaped by AI: learn to direct AI agents, review what they produce with a critical eye, and keep your own judgment at the centre of the work.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "title": "Court sides with EFF: Utah's VPN law asks for the impossible",
+    "summary": "A court agreed with the Electronic Frontier Foundation that Utah's law on VPNs — tools that hide where your internet connection comes from — demands something that can't technically be done.",
+    "source_urls": [
+      "https://www.eff.org/deeplinks/2026/10/court-agrees-eff-utahs-vpn-law-demands-technical-impossibility"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "title": "Black Forest Labs releases FLUX 3 Image",
+    "summary": "Black Forest Labs, the company behind the FLUX family of image generators, has published FLUX 3 Image, its new image model.",
+    "source_urls": [
+      "https://bfl.ai/models/flux-3-image"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "title": "ChatGPT gets a \"Sites\" feature",
+    "summary": "OpenAI has a new feature page for Sites in ChatGPT, which drew wide attention on Hacker News today.",
+    "source_urls": [
+      "https://chatgpt.com/features/sites/"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "title": "AstaBrief: an open model for writing research reports with sources",
+    "summary": "The Allen Institute for AI open-sourced AstaBrief, the fast report-generation model inside its Asta research assistant.",
+    "source_urls": [
+      "https://huggingface.co/blog/allenai/astabrief"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "title": "AutoSynthData: making practice tasks for workplace AI agents",
+    "summary": "ServiceNow described AutoSynthData, a system that generates training tasks for AI agents working inside enterprise software.",
+    "source_urls": [
+      "https://huggingface.co/blog/ServiceNow-AI/autosynthdata"
     ]
   }
 ]
