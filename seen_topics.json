@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-09-26",
-    "title": "Microsoft is reportedly giving up on the personal AI chatbot race",
-    "summary": "Bloomberg reports that Microsoft is abandoning its push to compete as a personal, consumer AI chatbot and is rebooting Copilot instead.",
-    "source_urls": [
-      "https://www.bloomberg.com/news/articles/2026-09-25/microsoft-abandons-personal-ai-chatbot-race-with-copilot-reboot"
-    ]
-  },
-  {
-    "date": "2026-09-26",
-    "title": "Excel now lets one cell hold several values",
-    "summary": "Microsoft is adding lists and arrays to Excel, so a single cell can contain multiple values instead of one.",
-    "source_urls": [
-      "https://techcommunity.microsoft.com/blog/microsoft365insiderblog/put-multiple-values-in-one-cell-with-lists-and-arrays-in-excel/4559395"
-    ]
-  },
-  {
-    "date": "2026-09-26",
-    "title": "Jury finds Facebook liable in the Cambridge Analytica case",
-    "summary": "A jury found Facebook liable for deceiving its users over the Cambridge Analytica data scandal.",
-    "source_urls": [
-      "https://www.cbsnews.com/news/facebook-liable-deceiving-users-cambridge-analytica/"
-    ]
-  },
-  {
-    "date": "2026-09-26",
-    "title": "Court upholds Pentagon's label of Anthropic as a supply chain risk",
-    "summary": "A U.",
-    "source_urls": [
-      "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html"
-    ]
-  },
-  {
-    "date": "2026-09-26",
-    "title": "Camera data put an innocent woman in jail for 13 days",
-    "summary": "A single piece of data from Flock, a network of automated licence-plate cameras, led to an innocent woman spending 13 days in jail, and she is now suing.",
-    "source_urls": [
-      "https://www.jezebel.com/flock-cameras-data-innocent-woman-arrested-lindsey-isaacs-palm-beach-florida-lawsuit-vehicular-homicide"
-    ]
-  },
-  {
-    "date": "2026-09-26",
-    "title": "GitHub rewrote Copilot's engine in Rust — with Copilot",
-    "summary": "GitHub ported the runtime that powers its Copilot coding agent to 800,000 lines of production Rust, using Copilot's own agents to do much of the work.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/"
-    ]
-  },
-  {
-    "date": "2026-09-26",
-    "title": "GitHub had five service-degrading incidents in August",
-    "summary": "GitHub's monthly availability report lists five incidents in August that degraded performance across its services, down from eight in July and six in June.",
-    "source_urls": [
-      "https://github.blog/news-insights/company-news/github-availability-report-august-2026/"
-    ]
-  },
-  {
     "date": "2026-09-27",
     "title": "A teacher rethinks the job after AI did all the homework",
     "summary": "A teacher wrote up what they changed after finding that AI could complete every one of their homework assignments.",
@@ -437,6 +381,62 @@
     "summary": "ServiceNow described AutoSynthData, a system that generates training tasks for AI agents working inside enterprise software.",
     "source_urls": [
       "https://huggingface.co/blog/ServiceNow-AI/autosynthdata"
+    ]
+  },
+  {
+    "date": "2026-10-04",
+    "title": "The case for hard spending caps on everything",
+    "summary": "Simon Willison, a widely read developer and AI commentator, argues that we are going to need default hard budget caps on pretty much every paid service — limits that stop spending outright rather than just sending a warning.",
+    "source_urls": [
+      "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/"
+    ]
+  },
+  {
+    "date": "2026-10-04",
+    "title": "Federal judge calls Flock cameras \"indiscriminate mass surveillance\"",
+    "summary": "A US federal judge described Flock's licence-plate camera network as indiscriminate mass surveillance, TechCrunch reports.",
+    "source_urls": [
+      "https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/"
+    ]
+  },
+  {
+    "date": "2026-10-04",
+    "title": "Aleph Alpha releases Kolibri, a \"sovereign\" open AI model",
+    "summary": "German AI company Aleph Alpha released Kolibri, an open-weight model — one whose files anyone can download and run on their own servers.",
+    "source_urls": [
+      "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/"
+    ]
+  },
+  {
+    "date": "2026-10-04",
+    "title": "Inside Anthropic's effort to give Claude a moral compass",
+    "summary": "The New York Times looks at how Anthropic tries to instill moral values into its Claude models.",
+    "source_urls": [
+      "https://www.nytimes.com/2026/09/29/us/anthropic-claude-morals-ai.html"
+    ]
+  },
+  {
+    "date": "2026-10-04",
+    "title": "AI agents don't see the same web everywhere",
+    "summary": "A write-up compares three AI agents working in two countries and finds the web they navigate is uneven across languages.",
+    "source_urls": [
+      "https://royapakzad.substack.com/p/multilingual-ai-agents"
+    ]
+  },
+  {
+    "date": "2026-10-04",
+    "title": "When an AI agent says \"done\" but the work isn't",
+    "summary": "Microsoft published ThinkingBox on the Hugging Face blog, an approach for checking whether an AI agent actually achieved its goal.",
+    "source_urls": [
+      "https://huggingface.co/blog/microsoft/thinkingbox"
+    ]
+  },
+  {
+    "date": "2026-10-04",
+    "title": "How GitHub opens a million-line pull request",
+    "summary": "GitHub explained how it rebuilt the code-change viewer in its Copilot app so it can open a pull request with a million changed lines and hundreds of inline review comments.",
+    "source_urls": [
+      "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/"
     ]
   }
 ]
