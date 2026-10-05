@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-09-27",
-    "title": "A teacher rethinks the job after AI did all the homework",
-    "summary": "A teacher wrote up what they changed after finding that AI could complete every one of their homework assignments.",
-    "source_urls": [
-      "https://thelastsoftwareengineer.substack.com/p/how-i-changed-teaching-after-ai-managed"
-    ]
-  },
-  {
-    "date": "2026-09-27",
-    "title": "ASML says it sold \"absolutely nothing\" in Europe this year",
-    "summary": "ASML, the Dutch company that makes the machines used to produce the world's most advanced chips, says it has sold nothing in Europe in 2026 and is asking the EU to help create demand.",
-    "source_urls": [
-      "https://www.tomshardware.com/tech-industry/semiconductors/asml-says-its-sells-absolutely-nothing-in-europe-calls-on-eu-to-help-create-demand"
-    ]
-  },
-  {
-    "date": "2026-09-27",
-    "title": "One Twitch chat message was enough to take over a streamer's PC",
-    "summary": "Security researchers describe how a single message typed into a Twitch chat ended up running code on the streamer's own computer.",
-    "source_urls": [
-      "https://blog.scrt.ch/2026/09/22/how-one-twitch-chat-message-became-code-execution-on-a-streamers-pc/"
-    ]
-  },
-  {
-    "date": "2026-09-27",
-    "title": "GitHub shows beginners how to build their own AI workspaces",
-    "summary": "Previously covered on 2026-09-25: GitHub argued that a chat box is sometimes the wrong way to work with AI.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/"
-    ]
-  },
-  {
-    "date": "2026-09-27",
-    "title": "New signs that Saturn's moon Enceladus could support life",
-    "summary": "Researchers at Freie Universität Berlin report promising findings, drawn from Cassini spacecraft data, about the potential for microbial life on Enceladus, one of Saturn's icy moons.",
-    "source_urls": [
-      "https://www.fu-berlin.de/en/presse/informationen/fup/2026/fup_26_116-enceladus-cassini-mikroben-science-postberg/index.html"
-    ]
-  },
-  {
-    "date": "2026-09-27",
-    "title": "Your AI agent passed once. Will it pass again?",
-    "summary": "IBM Research published a piece on consistency in AI agents: an agent that completes a task on one run may fail the same task on the next.",
-    "source_urls": [
-      "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
-    ]
-  },
-  {
-    "date": "2026-09-27",
-    "title": "Why shorter AI answers can cost more",
-    "summary": "GitHub explained how it makes Copilot's coding work cheaper without lowering quality, and why a shorter model output doesn't always mean a cheaper task.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/"
-    ]
-  },
-  {
     "date": "2026-09-28",
     "title": "AI makes law firms faster — clients want a discount",
     "summary": "The New York Times reports that as AI tools speed up legal work, clients are pushing their law firms for lower fees.",
@@ -437,6 +381,62 @@
     "summary": "GitHub explained how it rebuilt the code-change viewer in its Copilot app so it can open a pull request with a million changed lines and hundreds of inline review comments.",
     "source_urls": [
       "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/"
+    ]
+  },
+  {
+    "date": "2026-10-05",
+    "title": "A redaction mistake reveals a Google data center's water and power use",
+    "summary": "Local outlet 1011 Now reports that an improperly redacted document exposed water and electricity figures for Google's data center in Lincoln, Nebraska — numbers that were meant to stay hidden.",
+    "source_urls": [
+      "https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/"
+    ]
+  },
+  {
+    "date": "2026-10-05",
+    "title": "UK safety institute works to make AI test scores repeatable",
+    "summary": "The UK's AI Security Institute and the EvalEval group described how they are making AI benchmark results reproducible, so a score one lab reports can be checked by someone else.",
+    "source_urls": [
+      "https://huggingface.co/blog/evaleval-aisi"
+    ]
+  },
+  {
+    "date": "2026-10-05",
+    "title": "GitHub Universe 2026: checking AI-written code takes centre stage",
+    "summary": "GitHub previewed ten talks from its upcoming Universe conference, with sessions on verifying code written by AI and on keeping software building blocks secure.",
+    "source_urls": [
+      "https://github.blog/news-insights/company-news/10-technical-talks-im-excited-about-at-github-universe-2026/"
+    ]
+  },
+  {
+    "date": "2026-10-05",
+    "title": "A free tool turns off Apple Intelligence on Macs and reclaims the space",
+    "summary": "An open-source project shows how to switch off Apple Intelligence on macOS 27 and recover the disk space its AI models take up.",
+    "source_urls": [
+      "https://github.com/omlahore/RemoveMacAI"
+    ]
+  },
+  {
+    "date": "2026-10-05",
+    "title": "A software glitch leaves F1 drivers without power in Bahrain",
+    "summary": "Formula 1 drivers were left frustrated over a software glitch in Bahrain that left them powerless, Motorsport.",
+    "source_urls": [
+      "https://www.motorsport.com/f1/news/horrible-totally-unacceptable-powerless-f1-drivers-frustrated-by-bahrain-f1-software-glitch/10861968/"
+    ]
+  },
+  {
+    "date": "2026-10-05",
+    "title": "A 125-billion-parameter model running on a single gaming graphics card",
+    "summary": "A project called Strata claims to run Qwen 3.",
+    "source_urls": [
+      "https://github.com/Niko1221/Strata"
+    ]
+  },
+  {
+    "date": "2026-10-05",
+    "title": "Your AI agent passed once. Will it pass again?",
+    "summary": "IBM Research wrote on the Hugging Face blog about measuring whether an AI agent succeeds consistently on the same task, not just once.",
+    "source_urls": [
+      "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
     ]
   }
 ]
