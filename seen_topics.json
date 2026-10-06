@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-09-28",
-    "title": "AI makes law firms faster — clients want a discount",
-    "summary": "The New York Times reports that as AI tools speed up legal work, clients are pushing their law firms for lower fees.",
-    "source_urls": [
-      "https://www.nytimes.com/2026/09/26/business/dealbook/ai-law-discount-billable-hour.html"
-    ]
-  },
-  {
-    "date": "2026-09-28",
-    "title": "Microsoft quietly drops the Copilot+ label from new laptops",
-    "summary": "Previously covered on 2026-09-26: Bloomberg reported Microsoft was rebooting Copilot and stepping back from the consumer chatbot race.",
-    "source_urls": [
-      "https://www.tomshardware.com/tablets/microsoft-surface/microsoft-quietly-drops-copilot-branding-from-its-new-laptops-surface-cvp-confirms-new-devices-meet-hardware-requirements-but-lack-controversial-branding"
-    ]
-  },
-  {
-    "date": "2026-09-28",
-    "title": "485 chemicals in US pesticide products linked to breast cancer",
-    "summary": "New research reported by The Guardian finds 485 chemicals used in US pesticide products that are linked to breast cancer.",
-    "source_urls": [
-      "https://www.theguardian.com/us-news/2026/sep/26/breast-cancer-us-pesticide-products"
-    ]
-  },
-  {
-    "date": "2026-09-28",
-    "title": "A discovery about life's origins, made in an $80 motel room",
-    "summary": "The New York Times tells the story of a scientist whose work in a cheap motel room led to a finding that could shed light on how life began.",
-    "source_urls": [
-      "https://www.nytimes.com/2026/09/26/science/motel-science-discovery.html"
-    ]
-  },
-  {
-    "date": "2026-09-28",
-    "title": "A model that doesn't train beat tuned XGBoost 14 times out of 14",
-    "summary": "A new benchmark write-up compares TabPFN and TabICL — pre-trained models that make predictions on a spreadsheet-style dataset without being trained on it — against XGBoost, the long-time standard for tabular data, carefully tuned.",
-    "source_urls": [
-      "https://efraingaray.com/en/blog/tabpfn-vs-xgboost/"
-    ]
-  },
-  {
-    "date": "2026-09-28",
-    "title": "GitHub made its site faster by shipping more CSS",
-    "summary": "GitHub fully migrated github.",
-    "source_urls": [
-      "https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/"
-    ]
-  },
-  {
     "date": "2026-09-29",
     "title": "Claude Sonnet 5.5: faster and cheaper than Sonnet 5",
     "summary": "Anthropic released Claude Sonnet 5.",
@@ -437,6 +389,62 @@
     "summary": "IBM Research wrote on the Hugging Face blog about measuring whether an AI agent succeeds consistently on the same task, not just once.",
     "source_urls": [
       "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
+    ]
+  },
+  {
+    "date": "2026-10-06",
+    "title": "ChatGPT is signing fake New Yorker cartoons with real cartoonists' names",
+    "summary": "Nieman Lab reports that when people ask ChatGPT for cartoons in the style of The New Yorker, it sometimes adds the signatures of real, working cartoonists to images those artists never drew.",
+    "source_urls": [
+      "https://www.niemanlab.org/2026/10/chatgpt-is-adding-real-cartoonists-signatures-to-fake-new-yorker-cartoons/"
+    ]
+  },
+  {
+    "date": "2026-10-06",
+    "title": "Reflection releases Beam, a 501-billion-parameter open model",
+    "summary": "Reflection has released Beam, an open-weight AI model with 501 billion parameters.",
+    "source_urls": [
+      "https://reflection.ai/blog/introducing-beam"
+    ]
+  },
+  {
+    "date": "2026-10-06",
+    "title": "A two-year school study puts AI tutor Khanmigo to the test",
+    "summary": "A new working paper reports on a two-year experiment that used Khanmigo, Khan Academy's AI tutor, in schools.",
+    "source_urls": [
+      "https://edworkingpapers.com/ai26-1551"
+    ]
+  },
+  {
+    "date": "2026-10-06",
+    "title": "Anthropic reported a user's diary entry to police",
+    "summary": "TechSpot reports that a Florida woman who used Claude as a diary now faces a felony charge after Anthropic reported one of her entries to police.",
+    "source_urls": [
+      "https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html"
+    ]
+  },
+  {
+    "date": "2026-10-06",
+    "title": "AI agents propose two new materials for faster electronics",
+    "summary": "Vals AI says AI agents built on Claude Opus 5.",
+    "source_urls": [
+      "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors"
+    ]
+  },
+  {
+    "date": "2026-10-06",
+    "title": "ReviewBench: an open benchmark for AI code reviewers",
+    "summary": "GitHub launched ReviewBench, a public benchmark for AI agents that review code.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/"
+    ]
+  },
+  {
+    "date": "2026-10-06",
+    "title": "Dust: training AI models without backpropagation",
+    "summary": "Qlabs published Dust, research on pretraining transformer models (the design behind most chatbots) without backpropagation.",
+    "source_urls": [
+      "https://qlabs.sh/research/dust"
     ]
   }
 ]
