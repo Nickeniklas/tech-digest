@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-09-29",
-    "title": "Claude Sonnet 5.5: faster and cheaper than Sonnet 5",
-    "summary": "Anthropic released Claude Sonnet 5.",
-    "source_urls": [
-      "https://www.anthropic.com/claude-sonnet-5-5"
-    ]
-  },
-  {
-    "date": "2026-09-29",
-    "title": "Nvidia wants a watchdog chip next to every AI agent",
-    "summary": "CNBC reports that Nvidia is pitching a dedicated \"watchdog\" chip designed to sit alongside AI agents — software that takes actions on its own rather than just answering questions.",
-    "source_urls": [
-      "https://www.cnbc.com/2026/09/28/nvidia-releases.html"
-    ]
-  },
-  {
-    "date": "2026-09-29",
-    "title": "GitHub's open-source AI agent found 24 Android security flaws",
-    "summary": "GitHub's security team used its open-source AI security agent to uncover 24 vulnerabilities in Android, including critical bugs.",
-    "source_urls": [
-      "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/"
-    ]
-  },
-  {
-    "date": "2026-09-29",
-    "title": "Holo4: an AI that operates computer programs the way you do",
-    "summary": "H Company released Holo4, a family of models built to use software interfaces directly — clicking and typing through apps rather than relying on special connections.",
-    "source_urls": [
-      "https://huggingface.co/blog/Hcompany/holo4"
-    ]
-  },
-  {
-    "date": "2026-09-29",
-    "title": "Cloudflare launches a command-line tool built for AI agents",
-    "summary": "Cloudflare released cf, a command-line tool for its services that it describes as \"agentic\" — designed to be driven by AI assistants as well as people.",
-    "source_urls": [
-      "https://blog.cloudflare.com/cloudflare-cf-cli-launch/"
-    ]
-  },
-  {
-    "date": "2026-09-29",
-    "title": "Language models small enough for a browser tab — or a cluster of $5 chips",
-    "summary": "Two hobby projects on Hacker News push AI onto tiny hardware.",
-    "source_urls": [
-      "https://github.com/Low-Zi-Hong/ESP32s3-LLM-Cluster"
-    ]
-  },
-  {
-    "date": "2026-09-29",
-    "title": "Git 2.56 is out",
-    "summary": "The open-source Git project released version 2.",
-    "source_urls": [
-      "https://github.blog/open-source/git/highlights-from-git-2-56/"
-    ]
-  },
-  {
     "date": "2026-09-30",
     "title": "GPT-6.1 Sol: near-top performance at a fifth of the price",
     "summary": "Previously covered on 2026-09-23: OpenAI released GPT-6 in two versions, Sol and Luna.",
@@ -445,6 +389,62 @@
     "summary": "Qlabs published Dust, research on pretraining transformer models (the design behind most chatbots) without backpropagation.",
     "source_urls": [
       "https://qlabs.sh/research/dust"
+    ]
+  },
+  {
+    "date": "2026-10-07",
+    "title": "Claude Sonnet 5.5: faster and cheaper than the model it replaces",
+    "summary": "Anthropic released Claude Sonnet 5.",
+    "source_urls": [
+      "https://www.anthropic.com/claude-sonnet-5-5"
+    ]
+  },
+  {
+    "date": "2026-10-07",
+    "title": "Utah will let AI examine patients and prescribe without human oversight",
+    "summary": "TechSpot reports that Utah is set to become the first US state to let an AI system examine patients and prescribe medication with no human reviewing the decision.",
+    "source_urls": [
+      "https://www.techspot.com/news/114111-utah-become-first-state-ai-examine-patients-prescribe.html"
+    ]
+  },
+  {
+    "date": "2026-10-07",
+    "title": "South Korea says AI agents appear to have been used to hack its banks",
+    "summary": "South Korea's president said AI agents — AI systems that can carry out tasks on their own — appear to have been used in attacks on the country's banks, Reuters reports.",
+    "source_urls": [
+      "https://www.reuters.com/world/south-koreas-lee-says-ai-appears-have-been-used-bank-hacks-2026-10-06/"
+    ]
+  },
+  {
+    "date": "2026-10-07",
+    "title": "OpenAI shares progress on AI doing new mathematics",
+    "summary": "OpenAI published an update on its AI's work in mathematics, alongside a preprint claiming a faster method for multiplying very large whole numbers.",
+    "source_urls": [
+      "https://openai.com/index/sharing-ai-progress-in-mathematics/"
+    ]
+  },
+  {
+    "date": "2026-10-07",
+    "title": "Google releases EmbeddingGemma 2",
+    "summary": "Google released EmbeddingGemma 2, a small, open model that turns text and images into a form computers can search and compare.",
+    "source_urls": [
+      "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/"
+    ]
+  },
+  {
+    "date": "2026-10-07",
+    "title": "GitHub's open-source AI agent finds 24 Android vulnerabilities",
+    "summary": "GitHub's security team used an open-source AI security agent, run as a series of targeted tasks, to find 24 vulnerabilities in Android apps, including critical bugs.",
+    "source_urls": [
+      "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/"
+    ]
+  },
+  {
+    "date": "2026-10-07",
+    "title": "Small \"decision models\" keep arriving: Strands Decider 2B and OpenAI's Decisions API",
+    "summary": "Strands released Decider 2B, a small open-source model built to choose between actions rather than write long answers, and OpenAI put its Decisions API into public beta.",
+    "source_urls": [
+      "https://strandsagents.com/blog/introducing-strands-decider/"
     ]
   }
 ]
