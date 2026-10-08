@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-09-30",
-    "title": "GPT-6.1 Sol: near-top performance at a fifth of the price",
-    "summary": "Previously covered on 2026-09-23: OpenAI released GPT-6 in two versions, Sol and Luna.",
-    "source_urls": [
-      "https://openai.com/index/introducing-gpt-6-1-sol/"
-    ]
-  },
-  {
-    "date": "2026-09-30",
-    "title": "OpenAI introduces Dots, agents that stay on",
-    "summary": "OpenAI announced Dots, which it describes as always-on agents.",
-    "source_urls": [
-      "https://openai.com/index/introducing-dots/"
-    ]
-  },
-  {
-    "date": "2026-09-30",
-    "title": "NVIDIA releases a free model that predicts spreadsheet columns without training",
-    "summary": "NVIDIA published Kumo Tabular, an open model for table-shaped data.",
-    "source_urls": [
-      "https://huggingface.co/blog/nvidia/kumo-tabular"
-    ]
-  },
-  {
-    "date": "2026-09-30",
-    "title": "How Delhi cut electricity losses from 50% to 5%",
-    "summary": "IEEE Spectrum looks at how Delhi reduced the share of electricity lost between the power plant and the customer from about half to about one in twenty.",
-    "source_urls": [
-      "https://spectrum.ieee.org/delhi-electricity-loss"
-    ]
-  },
-  {
-    "date": "2026-09-30",
-    "title": "Vermont is swapping power plants for home batteries",
-    "summary": "The BBC reports on a \"virtual power plant\" in Vermont: batteries in ordinary homes, pooled together, that keep the lights on during storms.",
-    "source_urls": [
-      "https://www.bbc.com/future/article/20260928-a-virtual-power-plant-hidden-in-vermont-homes-is-keeping-the-lights-on-during-storms"
-    ]
-  },
-  {
-    "date": "2026-09-30",
-    "title": "Checking that an AI agent cited the right source, not just a true fact",
-    "summary": "Multiverse Computing published ProvenanceGuard, a checker for AI agents that pull information from several tools at once.",
-    "source_urls": [
-      "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source"
-    ]
-  },
-  {
-    "date": "2026-09-30",
-    "title": "Cloudflare is building a certificate authority for the whole internet",
-    "summary": "Cloudflare wrote about building its own certificate authority — the kind of organisation that issues the certificates behind the padlock icon in your browser, which prove a website is who it claims to be.",
-    "source_urls": [
-      "https://blog.cloudflare.com/cloudflare-certificate-authority/"
-    ]
-  },
-  {
     "date": "2026-10-01",
     "title": "Google announces Gemini 4 Argon",
     "summary": "Google published an announcement for Gemini 4 Argon, a new model carrying the Gemini 4 name.",
@@ -445,6 +389,62 @@
     "summary": "Strands released Decider 2B, a small open-source model built to choose between actions rather than write long answers, and OpenAI put its Decisions API into public beta.",
     "source_urls": [
       "https://strandsagents.com/blog/introducing-strands-decider/"
+    ]
+  },
+  {
+    "date": "2026-10-08",
+    "title": "Claude Haiku 5.5: Anthropic's cheapest, fastest small model",
+    "summary": "Anthropic released Claude Haiku 5.",
+    "source_urls": [
+      "https://www.anthropic.com/claude-haiku-5-5"
+    ]
+  },
+  {
+    "date": "2026-10-08",
+    "title": "OpenAI announces GPT-6 and \"Intelligent UI for everyone\"",
+    "summary": "OpenAI published an announcement titled \"GPT-6 and Intelligent UI for everyone\", introducing the next generation of the model family behind ChatGPT.",
+    "source_urls": [
+      "https://openai.com/index/gpt-6-for-everyone/"
+    ]
+  },
+  {
+    "date": "2026-10-08",
+    "title": "Chrome is shipping support for JPEG XL images",
+    "summary": "Google's Chrome team says the browser is shipping support for JPEG XL, a modern image format designed to keep photos sharp at smaller file sizes.",
+    "source_urls": [
+      "https://developer.chrome.com/blog/jpeg-xl-in-chrome"
+    ]
+  },
+  {
+    "date": "2026-10-08",
+    "title": "SynthID Detector goes public",
+    "summary": "SynthID Detector, a tool for checking content for SynthID — Google's invisible watermark on AI-generated media — now has its own public site.",
+    "source_urls": [
+      "https://synthid.com/"
+    ]
+  },
+  {
+    "date": "2026-10-08",
+    "title": "Margaret Hamilton, computing pioneer, has died",
+    "summary": "MIT reports the death of Margaret Hamilton, the computing pioneer known for leading the software work behind NASA's Apollo missions.",
+    "source_urls": [
+      "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007"
+    ]
+  },
+  {
+    "date": "2026-10-08",
+    "title": "Liquid AI releases open d1 decision models for devices",
+    "summary": "Liquid AI released two open \"decision models\" — small models built to pick the right action rather than write long answers: d1-3B and an experimental d1-omni-600M that also handles more than text.",
+    "source_urls": [
+      "https://huggingface.co/blog/LiquidAI/open-d1"
+    ]
+  },
+  {
+    "date": "2026-10-08",
+    "title": "NVIDIA fine-tunes Nemotron to gold-level olympiad results",
+    "summary": "NVIDIA describes how it fine-tuned one open model family, Nemotron, to reach gold-level results at both the International Olympiad in Informatics (programming) and the International Mathematical Olympiad.",
+    "source_urls": [
+      "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026"
     ]
   }
 ]
