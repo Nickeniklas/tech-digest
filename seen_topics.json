@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-01",
-    "title": "Google announces Gemini 4 Argon",
-    "summary": "Google published an announcement for Gemini 4 Argon, a new model carrying the Gemini 4 name.",
-    "source_urls": [
-      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
-    ]
-  },
-  {
-    "date": "2026-10-01",
-    "title": "A maths app for kids where the AI gets it wrong on purpose",
-    "summary": "Lathoa is a new maths app for children in which the AI tutor deliberately makes mistakes, and the child's job is to catch them.",
-    "source_urls": [
-      "https://lathoa.ai/en"
-    ]
-  },
-  {
-    "date": "2026-10-01",
-    "title": "Hugging Face launches a public scoreboard for AI voices",
-    "summary": "Hugging Face opened the Open TTS Leaderboard, which compares text-to-speech models across many languages and on voice cloning, and lets people vote on which outputs sound best.",
-    "source_urls": [
-      "https://huggingface.co/blog/open-tts-leaderboard"
-    ]
-  },
-  {
-    "date": "2026-10-01",
-    "title": "US cities are being made to share licence-plate data with a federal programme",
-    "summary": "404 Media reports that cities are being required to funnel data from their licence-plate cameras into a large federal surveillance programme known as HIDTA.",
-    "source_urls": [
-      "https://www.404media.co/how-cities-are-forced-to-funnel-license-plate-data-to-a-massive-federal-surveillance-program-hidta/"
-    ]
-  },
-  {
-    "date": "2026-10-01",
-    "title": "A researcher says 17 trillion Microsoft records were within reach",
-    "summary": "A security researcher describes how they could have accessed 17 trillion Microsoft records through a flaw they found.",
-    "source_urls": [
-      "https://blog.faav.net/how-i-couldve-accessed-17-trillion-microsoft-records"
-    ]
-  },
-  {
-    "date": "2026-10-01",
-    "title": "Netlify makes its Edge Functions 5x faster by switching sandboxes",
-    "summary": "Netlify moved its Edge Functions — small pieces of code that run close to the visitor — from V8 isolates (the sandboxing approach browsers use for JavaScript) to Firecracker microVMs, lightweight virtual machines originally built by Amazon.",
-    "source_urls": [
-      "https://www.netlify.com/blog/edge-functions-firecracker-microvms/"
-    ]
-  },
-  {
-    "date": "2026-10-01",
-    "title": "Hugging Face Transformers can now run llama.cpp's compressed models",
-    "summary": "Hugging Face's Transformers library, the most widely used toolkit for working with open AI models, can now load quantized model files made for llama.",
-    "source_urls": [
-      "https://huggingface.co/blog/transformers-llama-cpp-quants"
-    ]
-  },
-  {
     "date": "2026-10-02",
     "title": "AI helps a historian find a new eyewitness record of the dodo",
     "summary": "A historian writes that they used Anthropic's Claude Opus 5.",
@@ -445,6 +389,62 @@
     "summary": "NVIDIA describes how it fine-tuned one open model family, Nemotron, to reach gold-level results at both the International Olympiad in Informatics (programming) and the International Mathematical Olympiad.",
     "source_urls": [
       "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026"
+    ]
+  },
+  {
+    "date": "2026-10-09",
+    "title": "The AI model you need doesn't exist? Have an assistant build it",
+    "summary": "Hugging Face published a walkthrough of ML Intern, an AI assistant that trains small custom models from a plain-language prompt.",
+    "source_urls": [
+      "https://huggingface.co/blog/building-with-ml-intern"
+    ]
+  },
+  {
+    "date": "2026-10-09",
+    "title": "Falcon ASR: speech recognition built with Arabic in mind",
+    "summary": "The Technology Innovation Institute released Falcon ASR, a model that turns spoken audio into text, with a focus on Arabic — including Emirati speech — as well as English and other languages.",
+    "source_urls": [
+      "https://huggingface.co/blog/tiiuae/falcon-asr"
+    ]
+  },
+  {
+    "date": "2026-10-09",
+    "title": "Whistle: speech-to-text in a 16.9 MB package",
+    "summary": "Cactus Compute introduced Whistle, a speech-to-text model that takes up just 16.",
+    "source_urls": [
+      "https://cactuscompute.com/blog/whistle"
+    ]
+  },
+  {
+    "date": "2026-10-09",
+    "title": "Prison sentence for faking music streams with bots",
+    "summary": "A US man has been sentenced to prison for using bot farms to generate fake streams of music, The Quietus reports.",
+    "source_urls": [
+      "https://thequietus.com/news/us-man-given-prison-sentence-for-bot-farming-music-streams/"
+    ]
+  },
+  {
+    "date": "2026-10-09",
+    "title": "GitHub: protecting passwords and keys has to keep up with AI",
+    "summary": "GitHub argues that developers aren't getting more careless about leaking passwords and access keys — they're being outpaced by how much software AI now helps them produce.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/"
+    ]
+  },
+  {
+    "date": "2026-10-09",
+    "title": "GitHub rebuilds its Git backbone for AI agents",
+    "summary": "GitHub is rebuilding the Git infrastructure that stores and serves every repository — while the site keeps running.",
+    "source_urls": [
+      "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/"
+    ]
+  },
+  {
+    "date": "2026-10-09",
+    "title": "StepFun's Step 5 Preview appears with a 1M-token memory",
+    "summary": "Step 5 Preview, a new model from Chinese AI company StepFun, has shown up on OpenRouter, a service that gives developers access to many AI models through one account.",
+    "source_urls": [
+      "https://openrouter.ai/stepfun/step-5-preview"
     ]
   }
 ]
