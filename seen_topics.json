@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-02",
-    "title": "AI helps a historian find a new eyewitness record of the dodo",
-    "summary": "A historian writes that they used Anthropic's Claude Opus 5.",
-    "source_urls": [
-      "https://resobscura.substack.com/p/using-opus-55-to-discover-a-new-eyewitness"
-    ]
-  },
-  {
-    "date": "2026-10-02",
-    "title": "Researchers study what your connected car knows about you",
-    "summary": "A team at Northeastern University published \"Automatic Transmission\", a data-privacy study of connected vehicles.",
-    "source_urls": [
-      "https://automatictransmission.khoury.northeastern.edu/index.html"
-    ]
-  },
-  {
-    "date": "2026-10-02",
-    "title": "OpenAI and Synopsys team up on AI for chip design",
-    "summary": "OpenAI and Synopsys, a major maker of chip-design software, announced GPT-Synopsys, a model aimed at helping engineers design computer chips.",
-    "source_urls": [
-      "https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design"
-    ]
-  },
-  {
-    "date": "2026-10-02",
-    "title": "arXiv tightens how fast you can download papers",
-    "summary": "arXiv, the free library where most AI and science research papers appear first, updated its rate-limit policy, which caps how many requests one visitor can make.",
-    "source_urls": [
-      "https://blog.arxiv.org/2026/10/01/updated-rate-limit-policy/"
-    ]
-  },
-  {
-    "date": "2026-10-02",
-    "title": "GitHub publishes new transparency data and a policy outlook",
-    "summary": "GitHub released its latest transparency figures alongside an update on US state-level policy that affects developers and open-source projects.",
-    "source_urls": [
-      "https://github.blog/news-insights/policy-news-and-insights/developer-policy-update-transparency-state-policy-and-whats-ahead/"
-    ]
-  },
-  {
-    "date": "2026-10-02",
-    "title": "Olmo-core 3: open tools for training very large AI models",
-    "summary": "The Allen Institute for AI released Olmo-core 3, open-source training infrastructure built around mixture-of-experts (MoE) models — models that route each input to a few specialised sub-networks instead of using the whole model every time.",
-    "source_urls": [
-      "https://huggingface.co/blog/allenai/olmocore3"
-    ]
-  },
-  {
-    "date": "2026-10-02",
-    "title": "Cloudflare launches Clef: open decision models you can fine-tune",
-    "summary": "Cloudflare announced Clef, a set of open-weight \"decision models\" — models built to choose between actions rather than write long answers — along with a new platform for fine-tuning them using reinforcement learning, a method where a model improves by being rewarded for good outcomes.",
-    "source_urls": [
-      "https://blog.cloudflare.com/clef-decision-models/"
-    ]
-  },
-  {
     "date": "2026-10-03",
     "title": "AI beats the best Stratego player in history — on a budget",
     "summary": "Ars Technica reports that an AI system has beaten the strongest Stratego player on record.",
@@ -445,6 +389,62 @@
     "summary": "Step 5 Preview, a new model from Chinese AI company StepFun, has shown up on OpenRouter, a service that gives developers access to many AI models through one account.",
     "source_urls": [
       "https://openrouter.ai/stepfun/step-5-preview"
+    ]
+  },
+  {
+    "date": "2026-10-10",
+    "title": "An Anthropic AI model sent police a false tip on an unsolved murder",
+    "summary": "NBC Philadelphia reports that, according to police, an Anthropic AI model submitted a tip about an unsolved Philadelphia murder — and the tip was false.",
+    "source_urls": [
+      "https://www.nbcphiladelphia.com/news/local/anthropic-ai-model-submits-false-tip-on-unsolved-philly-murder-police-say/4477051/"
+    ]
+  },
+  {
+    "date": "2026-10-10",
+    "title": "Microsoft joins the small \"decision model\" trend",
+    "summary": "Microsoft introduced Microsoft-Decision-1, a model built for fast decision-making rather than long written answers.",
+    "source_urls": [
+      "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/"
+    ]
+  },
+  {
+    "date": "2026-10-10",
+    "title": "AI digs through 400 years of archives and finds forgotten things",
+    "summary": "A writer pointed AI at four centuries of archival records and surfaced a forgotten meteorite, lost rhinos and more.",
+    "source_urls": [
+      "https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/"
+    ]
+  },
+  {
+    "date": "2026-10-10",
+    "title": "Terry Tao on trusting AI in mathematics",
+    "summary": "Terence Tao, one of the world's best-known mathematicians, wrote about Lean — software that checks mathematical proofs step by step — and what it means for reliability as AI starts producing proofs.",
+    "source_urls": [
+      "https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/"
+    ]
+  },
+  {
+    "date": "2026-10-10",
+    "title": "Developers want software that wastes less computing power",
+    "summary": "GitHub and the Yale Program on Climate Change Communication surveyed over 1,000 GitHub users and found strong demand for tools and guidance to cut wasted compute.",
+    "source_urls": [
+      "https://github.blog/news-insights/research/developers-want-more-efficient-software-heres-what-over-1000-github-users-told-us-they-need/"
+    ]
+  },
+  {
+    "date": "2026-10-10",
+    "title": "How Ai2 decides who gets the GPUs",
+    "summary": "The Allen Institute for AI described the scheduler it built for its GPU clusters — the shared pools of chips used to train AI models.",
+    "source_urls": [
+      "https://huggingface.co/blog/allenai/impactful-scheduling"
+    ]
+  },
+  {
+    "date": "2026-10-10",
+    "title": "Hugging Face Transformers can now run llama.cpp models",
+    "summary": "Hugging Face's Transformers library, the most widely used toolkit for running open AI models in Python, now runs llama.",
+    "source_urls": [
+      "https://huggingface.co/blog/transformers-llama-cpp-quants"
     ]
   }
 ]
