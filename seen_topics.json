@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-03",
-    "title": "AI beats the best Stratego player in history — on a budget",
-    "summary": "Ars Technica reports that an AI system has beaten the strongest Stratego player on record.",
-    "source_urls": [
-      "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/"
-    ]
-  },
-  {
-    "date": "2026-10-03",
-    "title": "GitHub names three skills to strengthen as AI changes the job",
-    "summary": "GitHub published advice for developers whose work is being reshaped by AI: learn to direct AI agents, review what they produce with a critical eye, and keep your own judgment at the centre of the work.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/"
-    ]
-  },
-  {
-    "date": "2026-10-03",
-    "title": "Court sides with EFF: Utah's VPN law asks for the impossible",
-    "summary": "A court agreed with the Electronic Frontier Foundation that Utah's law on VPNs — tools that hide where your internet connection comes from — demands something that can't technically be done.",
-    "source_urls": [
-      "https://www.eff.org/deeplinks/2026/10/court-agrees-eff-utahs-vpn-law-demands-technical-impossibility"
-    ]
-  },
-  {
-    "date": "2026-10-03",
-    "title": "Black Forest Labs releases FLUX 3 Image",
-    "summary": "Black Forest Labs, the company behind the FLUX family of image generators, has published FLUX 3 Image, its new image model.",
-    "source_urls": [
-      "https://bfl.ai/models/flux-3-image"
-    ]
-  },
-  {
-    "date": "2026-10-03",
-    "title": "ChatGPT gets a \"Sites\" feature",
-    "summary": "OpenAI has a new feature page for Sites in ChatGPT, which drew wide attention on Hacker News today.",
-    "source_urls": [
-      "https://chatgpt.com/features/sites/"
-    ]
-  },
-  {
-    "date": "2026-10-03",
-    "title": "AstaBrief: an open model for writing research reports with sources",
-    "summary": "The Allen Institute for AI open-sourced AstaBrief, the fast report-generation model inside its Asta research assistant.",
-    "source_urls": [
-      "https://huggingface.co/blog/allenai/astabrief"
-    ]
-  },
-  {
-    "date": "2026-10-03",
-    "title": "AutoSynthData: making practice tasks for workplace AI agents",
-    "summary": "ServiceNow described AutoSynthData, a system that generates training tasks for AI agents working inside enterprise software.",
-    "source_urls": [
-      "https://huggingface.co/blog/ServiceNow-AI/autosynthdata"
-    ]
-  },
-  {
     "date": "2026-10-04",
     "title": "The case for hard spending caps on everything",
     "summary": "Simon Willison, a widely read developer and AI commentator, argues that we are going to need default hard budget caps on pretty much every paid service — limits that stop spending outright rather than just sending a warning.",
@@ -445,6 +389,54 @@
     "summary": "Hugging Face's Transformers library, the most widely used toolkit for running open AI models in Python, now runs llama.",
     "source_urls": [
       "https://huggingface.co/blog/transformers-llama-cpp-quants"
+    ]
+  },
+  {
+    "date": "2026-10-11",
+    "title": "Anthropic expands its program for vetted security professionals",
+    "summary": "Anthropic launched an expanded Cyber Verification Program, which gives qualifying security professionals access to Claude's advanced cyber capabilities with fewer automatic blocks.",
+    "source_urls": [
+      "https://www.anthropic.com/news/cyber-verification-program"
+    ]
+  },
+  {
+    "date": "2026-10-11",
+    "title": "AI models struggled to match a human algorithmic breakthrough",
+    "summary": "Research group Epoch AI tested whether recent AI models could reproduce a genuine human innovation in algorithm design, and found they struggled to match it.",
+    "source_urls": [
+      "https://epoch.ai/publications/innovationeval"
+    ]
+  },
+  {
+    "date": "2026-10-11",
+    "title": "Rampart hides personal details right inside your browser",
+    "summary": "Rampart is a new tool that removes personal information, such as names and contact details, from text directly on your device, without sending it anywhere.",
+    "source_urls": [
+      "https://ndstudio.gov/posts/say-hello-to-rampart"
+    ]
+  },
+  {
+    "date": "2026-10-11",
+    "title": "Microsoft releases containers to keep AI agents in bounds",
+    "summary": "Microsoft released version 1.",
+    "source_urls": [
+      "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/"
+    ]
+  },
+  {
+    "date": "2026-10-11",
+    "title": "AI agents took apart a classic shooter game",
+    "summary": "A developer let AI agents reverse-engineer a first-person shooter, turning the finished game back into readable code, and used about 500 billion tokens (units of text AI processes) to do it.",
+    "source_urls": [
+      "https://momo5502.com/posts/2026-10-09-game-decompilation/"
+    ]
+  },
+  {
+    "date": "2026-10-11",
+    "title": "Teaching language models to read raw bytes",
+    "summary": "A paper in Nature describes retrofitting existing language models so they work directly on bytes — the raw building blocks of digital text — instead of on tokens, the word chunks most models split text into.",
+    "source_urls": [
+      "https://www.nature.com/articles/s41586-026-11111-4"
     ]
   }
 ]
