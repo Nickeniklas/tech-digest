@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-04",
-    "title": "The case for hard spending caps on everything",
-    "summary": "Simon Willison, a widely read developer and AI commentator, argues that we are going to need default hard budget caps on pretty much every paid service — limits that stop spending outright rather than just sending a warning.",
-    "source_urls": [
-      "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/"
-    ]
-  },
-  {
-    "date": "2026-10-04",
-    "title": "Federal judge calls Flock cameras \"indiscriminate mass surveillance\"",
-    "summary": "A US federal judge described Flock's licence-plate camera network as indiscriminate mass surveillance, TechCrunch reports.",
-    "source_urls": [
-      "https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/"
-    ]
-  },
-  {
-    "date": "2026-10-04",
-    "title": "Aleph Alpha releases Kolibri, a \"sovereign\" open AI model",
-    "summary": "German AI company Aleph Alpha released Kolibri, an open-weight model — one whose files anyone can download and run on their own servers.",
-    "source_urls": [
-      "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/"
-    ]
-  },
-  {
-    "date": "2026-10-04",
-    "title": "Inside Anthropic's effort to give Claude a moral compass",
-    "summary": "The New York Times looks at how Anthropic tries to instill moral values into its Claude models.",
-    "source_urls": [
-      "https://www.nytimes.com/2026/09/29/us/anthropic-claude-morals-ai.html"
-    ]
-  },
-  {
-    "date": "2026-10-04",
-    "title": "AI agents don't see the same web everywhere",
-    "summary": "A write-up compares three AI agents working in two countries and finds the web they navigate is uneven across languages.",
-    "source_urls": [
-      "https://royapakzad.substack.com/p/multilingual-ai-agents"
-    ]
-  },
-  {
-    "date": "2026-10-04",
-    "title": "When an AI agent says \"done\" but the work isn't",
-    "summary": "Microsoft published ThinkingBox on the Hugging Face blog, an approach for checking whether an AI agent actually achieved its goal.",
-    "source_urls": [
-      "https://huggingface.co/blog/microsoft/thinkingbox"
-    ]
-  },
-  {
-    "date": "2026-10-04",
-    "title": "How GitHub opens a million-line pull request",
-    "summary": "GitHub explained how it rebuilt the code-change viewer in its Copilot app so it can open a pull request with a million changed lines and hundreds of inline review comments.",
-    "source_urls": [
-      "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/"
-    ]
-  },
-  {
     "date": "2026-10-05",
     "title": "A redaction mistake reveals a Google data center's water and power use",
     "summary": "Local outlet 1011 Now reports that an improperly redacted document exposed water and electricity figures for Google's data center in Lincoln, Nebraska — numbers that were meant to stay hidden.",
@@ -437,6 +381,62 @@
     "summary": "A paper in Nature describes retrofitting existing language models so they work directly on bytes — the raw building blocks of digital text — instead of on tokens, the word chunks most models split text into.",
     "source_urls": [
       "https://www.nature.com/articles/s41586-026-11111-4"
+    ]
+  },
+  {
+    "date": "2026-10-12",
+    "title": "Google's Finnish data centre work halted over forest clearing",
+    "summary": "The Guardian reports that work linked to Google's data centres in Finland has been temporarily halted, with critics saying forest was cut without the required environmental impact assessment.",
+    "source_urls": [
+      "https://www.theguardian.com/technology/2026/oct/06/google-datacentres-finland-temporary-halt-environmental-impact-assessment"
+    ]
+  },
+  {
+    "date": "2026-10-12",
+    "title": "New York City's \"Click to Cancel\" rule is now in effect",
+    "summary": "New York City's rule requiring businesses to make cancelling a subscription as easy as signing up has taken effect.",
+    "source_urls": [
+      "https://www.nyc.gov/main/click-to-cancel"
+    ]
+  },
+  {
+    "date": "2026-10-12",
+    "title": "Fingerprints are the new cookies",
+    "summary": "A widely shared essay argues that browser fingerprinting — identifying you from the unique mix of your device and browser settings — is replacing cookies as the main way websites track you.",
+    "source_urls": [
+      "https://royfish.dev/fingerprints-are-the-new-cookies"
+    ]
+  },
+  {
+    "date": "2026-10-12",
+    "title": "Karpathy: people increasingly disagree about what AI can do",
+    "summary": "Andrej Karpathy, a well-known AI researcher and OpenAI co-founder, posted that the gap in shared understanding of what AI language models can actually do is widening.",
+    "source_urls": [
+      "https://twitter.com/karpathy/status/2109361546505966046"
+    ]
+  },
+  {
+    "date": "2026-10-12",
+    "title": "GitHub: three skills that matter more as AI writes code",
+    "summary": "GitHub says AI is reshaping developer careers and names three skills to strengthen: directing AI agents, critically reviewing their output, and keeping human judgment at the centre.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/"
+    ]
+  },
+  {
+    "date": "2026-10-12",
+    "title": "A public leaderboard for AI voices in many languages",
+    "summary": "Hugging Face launched the Open TTS Leaderboard, which scores text-to-speech models (AI that reads text aloud) across multiple languages and on voice cloning — copying a specific person's voice.",
+    "source_urls": [
+      "https://huggingface.co/blog/open-tts-leaderboard"
+    ]
+  },
+  {
+    "date": "2026-10-12",
+    "title": "Sakana AI: AI systems that improve themselves as a group",
+    "summary": "Tokyo-based Sakana AI published research on recursive self-improvement through collective intelligence — many AI agents working together to make the overall system better over time, rather than one model improving alone.",
+    "source_urls": [
+      "https://pub.sakana.ai/mass/"
     ]
   }
 ]
