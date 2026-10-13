@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-05",
-    "title": "A redaction mistake reveals a Google data center's water and power use",
-    "summary": "Local outlet 1011 Now reports that an improperly redacted document exposed water and electricity figures for Google's data center in Lincoln, Nebraska — numbers that were meant to stay hidden.",
-    "source_urls": [
-      "https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/"
-    ]
-  },
-  {
-    "date": "2026-10-05",
-    "title": "UK safety institute works to make AI test scores repeatable",
-    "summary": "The UK's AI Security Institute and the EvalEval group described how they are making AI benchmark results reproducible, so a score one lab reports can be checked by someone else.",
-    "source_urls": [
-      "https://huggingface.co/blog/evaleval-aisi"
-    ]
-  },
-  {
-    "date": "2026-10-05",
-    "title": "GitHub Universe 2026: checking AI-written code takes centre stage",
-    "summary": "GitHub previewed ten talks from its upcoming Universe conference, with sessions on verifying code written by AI and on keeping software building blocks secure.",
-    "source_urls": [
-      "https://github.blog/news-insights/company-news/10-technical-talks-im-excited-about-at-github-universe-2026/"
-    ]
-  },
-  {
-    "date": "2026-10-05",
-    "title": "A free tool turns off Apple Intelligence on Macs and reclaims the space",
-    "summary": "An open-source project shows how to switch off Apple Intelligence on macOS 27 and recover the disk space its AI models take up.",
-    "source_urls": [
-      "https://github.com/omlahore/RemoveMacAI"
-    ]
-  },
-  {
-    "date": "2026-10-05",
-    "title": "A software glitch leaves F1 drivers without power in Bahrain",
-    "summary": "Formula 1 drivers were left frustrated over a software glitch in Bahrain that left them powerless, Motorsport.",
-    "source_urls": [
-      "https://www.motorsport.com/f1/news/horrible-totally-unacceptable-powerless-f1-drivers-frustrated-by-bahrain-f1-software-glitch/10861968/"
-    ]
-  },
-  {
-    "date": "2026-10-05",
-    "title": "A 125-billion-parameter model running on a single gaming graphics card",
-    "summary": "A project called Strata claims to run Qwen 3.",
-    "source_urls": [
-      "https://github.com/Niko1221/Strata"
-    ]
-  },
-  {
-    "date": "2026-10-05",
-    "title": "Your AI agent passed once. Will it pass again?",
-    "summary": "IBM Research wrote on the Hugging Face blog about measuring whether an AI agent succeeds consistently on the same task, not just once.",
-    "source_urls": [
-      "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
-    ]
-  },
-  {
     "date": "2026-10-06",
     "title": "ChatGPT is signing fake New Yorker cartoons with real cartoonists' names",
     "summary": "Nieman Lab reports that when people ask ChatGPT for cartoons in the style of The New Yorker, it sometimes adds the signatures of real, working cartoonists to images those artists never drew.",
@@ -437,6 +381,62 @@
     "summary": "Tokyo-based Sakana AI published research on recursive self-improvement through collective intelligence — many AI agents working together to make the overall system better over time, rather than one model improving alone.",
     "source_urls": [
       "https://pub.sakana.ai/mass/"
+    ]
+  },
+  {
+    "date": "2026-10-13",
+    "title": "Hackers defrost supermarket fridges across Europe",
+    "summary": "Tom's Hardware reports a cyberattack that hit supermarket refrigeration across Europe: attackers remotely triggered the fridges' automatic defrosting.",
+    "source_urls": [
+      "https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident"
+    ]
+  },
+  {
+    "date": "2026-10-13",
+    "title": "GLM-Legal: an AI model aimed at legal work",
+    "summary": "Chinese AI company Z.",
+    "source_urls": [
+      "https://z.ai/blog/glm-legal"
+    ]
+  },
+  {
+    "date": "2026-10-13",
+    "title": "Anthropic tightens defenses against model copying",
+    "summary": "Anthropic published research on strengthening its defenses against \"distillation attacks\" — when someone trains their own AI model on another model's answers to copy its abilities cheaply.",
+    "source_urls": [
+      "https://www.anthropic.com/research/distillation-defenses"
+    ]
+  },
+  {
+    "date": "2026-10-13",
+    "title": "OpenAI's Codex tool runs a background program by default",
+    "summary": "A widely discussed bug report says OpenAI's Codex CLI, a coding assistant that runs on your computer, installs a self-updating background program by default.",
+    "source_urls": [
+      "https://github.com/openai/codex/issues/48195"
+    ]
+  },
+  {
+    "date": "2026-10-13",
+    "title": "Paper: AI models can provably hide abilities",
+    "summary": "A new research paper argues that AI models can be built to hide arbitrary capabilities in a way that can be mathematically proven.",
+    "source_urls": [
+      "https://arxiv.org/abs/2610.13928"
+    ]
+  },
+  {
+    "date": "2026-10-13",
+    "title": "Teaching GitHub Copilot about your codebase",
+    "summary": "GitHub published a beginner's guide to the Copilot app that shows how to add custom instructions and skills to a repository, set up custom agents, and connect MCP servers — plug-ins that give the assistant extra tools, such as Playwright for controlling a web browser.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/"
+    ]
+  },
+  {
+    "date": "2026-10-13",
+    "title": "Intel's D270: an AI accelerator with up to 480 GB of memory",
+    "summary": "Intel lists the D270, a data-centre GPU built as an AI accelerator, with up to 480 GB of LPDDR5X memory — a type of memory more common in laptops and phones than in AI chips.",
+    "source_urls": [
+      "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html"
     ]
   }
 ]
