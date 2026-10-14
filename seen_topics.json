@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-06",
-    "title": "ChatGPT is signing fake New Yorker cartoons with real cartoonists' names",
-    "summary": "Nieman Lab reports that when people ask ChatGPT for cartoons in the style of The New Yorker, it sometimes adds the signatures of real, working cartoonists to images those artists never drew.",
-    "source_urls": [
-      "https://www.niemanlab.org/2026/10/chatgpt-is-adding-real-cartoonists-signatures-to-fake-new-yorker-cartoons/"
-    ]
-  },
-  {
-    "date": "2026-10-06",
-    "title": "Reflection releases Beam, a 501-billion-parameter open model",
-    "summary": "Reflection has released Beam, an open-weight AI model with 501 billion parameters.",
-    "source_urls": [
-      "https://reflection.ai/blog/introducing-beam"
-    ]
-  },
-  {
-    "date": "2026-10-06",
-    "title": "A two-year school study puts AI tutor Khanmigo to the test",
-    "summary": "A new working paper reports on a two-year experiment that used Khanmigo, Khan Academy's AI tutor, in schools.",
-    "source_urls": [
-      "https://edworkingpapers.com/ai26-1551"
-    ]
-  },
-  {
-    "date": "2026-10-06",
-    "title": "Anthropic reported a user's diary entry to police",
-    "summary": "TechSpot reports that a Florida woman who used Claude as a diary now faces a felony charge after Anthropic reported one of her entries to police.",
-    "source_urls": [
-      "https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html"
-    ]
-  },
-  {
-    "date": "2026-10-06",
-    "title": "AI agents propose two new materials for faster electronics",
-    "summary": "Vals AI says AI agents built on Claude Opus 5.",
-    "source_urls": [
-      "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors"
-    ]
-  },
-  {
-    "date": "2026-10-06",
-    "title": "ReviewBench: an open benchmark for AI code reviewers",
-    "summary": "GitHub launched ReviewBench, a public benchmark for AI agents that review code.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/"
-    ]
-  },
-  {
-    "date": "2026-10-06",
-    "title": "Dust: training AI models without backpropagation",
-    "summary": "Qlabs published Dust, research on pretraining transformer models (the design behind most chatbots) without backpropagation.",
-    "source_urls": [
-      "https://qlabs.sh/research/dust"
-    ]
-  },
-  {
     "date": "2026-10-07",
     "title": "Claude Sonnet 5.5: faster and cheaper than the model it replaces",
     "summary": "Anthropic released Claude Sonnet 5.",
@@ -437,6 +381,62 @@
     "summary": "Intel lists the D270, a data-centre GPU built as an AI accelerator, with up to 480 GB of LPDDR5X memory — a type of memory more common in laptops and phones than in AI chips.",
     "source_urls": [
       "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html"
+    ]
+  },
+  {
+    "date": "2026-10-14",
+    "title": "Google DeepMind lists Gemini 4 Argon",
+    "summary": "Google DeepMind's Gemini models page now features Gemini 4 Argon, a new model in the family that powers Google's Gemini assistant.",
+    "source_urls": [
+      "https://deepmind.google/models/gemini/"
+    ]
+  },
+  {
+    "date": "2026-10-14",
+    "title": "Ledger confirms a spy chip was behind crypto wallet thefts",
+    "summary": "Ledger, which makes hardware devices for storing cryptocurrency, confirmed that a spy implant hidden in wallets was behind thefts from its customers, BleepingComputer reports.",
+    "source_urls": [
+      "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/"
+    ]
+  },
+  {
+    "date": "2026-10-14",
+    "title": "Character.ai files for Chapter 11 bankruptcy",
+    "summary": "Character.",
+    "source_urls": [
+      "https://blog.character.ai/an-update-on-character-ai/"
+    ]
+  },
+  {
+    "date": "2026-10-14",
+    "title": "A capable AI assistant that runs privately on your own device",
+    "summary": "Liquid AI released LFM2.",
+    "source_urls": [
+      "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b"
+    ]
+  },
+  {
+    "date": "2026-10-14",
+    "title": "Physical Intelligence opens its robot AI to other companies",
+    "summary": "Robotics AI company Physical Intelligence launched a beta of its API, offering its most advanced models to anyone building robots.",
+    "source_urls": [
+      "https://www.pi.website/blog/api-beta"
+    ]
+  },
+  {
+    "date": "2026-10-14",
+    "title": "GitHub's AI finds leaked passwords with fewer false alarms",
+    "summary": "GitHub built a context-aware classifier — a model that looks at the code around a suspected password or access key, not just the string itself — for its secret scanning.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/"
+    ]
+  },
+  {
+    "date": "2026-10-14",
+    "title": "ReviewBench: an open test for AI code reviewers",
+    "summary": "GitHub launched ReviewBench, a benchmark for AI agents that review code.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/"
     ]
   }
 ]
