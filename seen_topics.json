@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-07",
-    "title": "Claude Sonnet 5.5: faster and cheaper than the model it replaces",
-    "summary": "Anthropic released Claude Sonnet 5.",
-    "source_urls": [
-      "https://www.anthropic.com/claude-sonnet-5-5"
-    ]
-  },
-  {
-    "date": "2026-10-07",
-    "title": "Utah will let AI examine patients and prescribe without human oversight",
-    "summary": "TechSpot reports that Utah is set to become the first US state to let an AI system examine patients and prescribe medication with no human reviewing the decision.",
-    "source_urls": [
-      "https://www.techspot.com/news/114111-utah-become-first-state-ai-examine-patients-prescribe.html"
-    ]
-  },
-  {
-    "date": "2026-10-07",
-    "title": "South Korea says AI agents appear to have been used to hack its banks",
-    "summary": "South Korea's president said AI agents — AI systems that can carry out tasks on their own — appear to have been used in attacks on the country's banks, Reuters reports.",
-    "source_urls": [
-      "https://www.reuters.com/world/south-koreas-lee-says-ai-appears-have-been-used-bank-hacks-2026-10-06/"
-    ]
-  },
-  {
-    "date": "2026-10-07",
-    "title": "OpenAI shares progress on AI doing new mathematics",
-    "summary": "OpenAI published an update on its AI's work in mathematics, alongside a preprint claiming a faster method for multiplying very large whole numbers.",
-    "source_urls": [
-      "https://openai.com/index/sharing-ai-progress-in-mathematics/"
-    ]
-  },
-  {
-    "date": "2026-10-07",
-    "title": "Google releases EmbeddingGemma 2",
-    "summary": "Google released EmbeddingGemma 2, a small, open model that turns text and images into a form computers can search and compare.",
-    "source_urls": [
-      "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/"
-    ]
-  },
-  {
-    "date": "2026-10-07",
-    "title": "GitHub's open-source AI agent finds 24 Android vulnerabilities",
-    "summary": "GitHub's security team used an open-source AI security agent, run as a series of targeted tasks, to find 24 vulnerabilities in Android apps, including critical bugs.",
-    "source_urls": [
-      "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/"
-    ]
-  },
-  {
-    "date": "2026-10-07",
-    "title": "Small \"decision models\" keep arriving: Strands Decider 2B and OpenAI's Decisions API",
-    "summary": "Strands released Decider 2B, a small open-source model built to choose between actions rather than write long answers, and OpenAI put its Decisions API into public beta.",
-    "source_urls": [
-      "https://strandsagents.com/blog/introducing-strands-decider/"
-    ]
-  },
-  {
     "date": "2026-10-08",
     "title": "Claude Haiku 5.5: Anthropic's cheapest, fastest small model",
     "summary": "Anthropic released Claude Haiku 5.",
@@ -437,6 +381,54 @@
     "summary": "GitHub launched ReviewBench, a benchmark for AI agents that review code.",
     "source_urls": [
       "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/"
+    ]
+  },
+  {
+    "date": "2026-10-15",
+    "title": "AI simulates extreme weather at 3 km detail for a fraction of the cost",
+    "summary": "The Allen Institute for AI (Ai2) released HiRO-ACEv2, an AI climate emulator — a model that imitates expensive physics-based climate simulations.",
+    "source_urls": [
+      "https://huggingface.co/blog/allenai/hiro-acev2"
+    ]
+  },
+  {
+    "date": "2026-10-15",
+    "title": "Experts: AI \"hacking\" incidents come down to basic security lapses",
+    "summary": "Security experts quoted by CSO Online argue that recent reports of AI agents hacking systems aren't about AI going rogue — they're about AI labs skipping basic containment and monitoring.",
+    "source_urls": [
+      "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html"
+    ]
+  },
+  {
+    "date": "2026-10-15",
+    "title": "Google is quietly linking your phone number across accounts",
+    "summary": "Android Authority reports that Google is automatically linking your phone number to every Google account signed in on your phone, without asking.",
+    "source_urls": [
+      "https://www.androidauthority.com/google-auto-phone-number-verification-android-3723117/"
+    ]
+  },
+  {
+    "date": "2026-10-15",
+    "title": "OpenCode 2.0 is out",
+    "summary": "OpenCode, an open-source AI coding assistant, has released version 2.",
+    "source_urls": [
+      "https://anoma.ly/notes/opencode-2-0/"
+    ]
+  },
+  {
+    "date": "2026-10-15",
+    "title": "Security researcher: passkeys are not a trap",
+    "summary": "Security researcher Scott Helme pushes back on the worry that passkeys — sign-ins that use your phone or laptop's fingerprint, face or PIN instead of a password — lock you into one company's ecosystem.",
+    "source_urls": [
+      "https://scotthelme.co.uk/passkeys-are-not-a-trap/"
+    ]
+  },
+  {
+    "date": "2026-10-15",
+    "title": "GitHub rebuilds star history with 99% fewer requests",
+    "summary": "GitHub launched a new API for a repository's star history — how a project's popularity has grown over time.",
+    "source_urls": [
+      "https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/"
     ]
   }
 ]

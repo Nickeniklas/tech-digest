@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Digest — Thursday, October 15 2026</title>
+<link rel="icon" type="image/svg+xml" href="/tech-digest/assets/favicon.svg">
+<link rel="manifest" href="/tech-digest/manifest.json">
+<link rel="apple-touch-icon" href="/tech-digest/assets/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Tech Digest">
+<meta name="theme-color" content="#1B4332">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper:        #F8F7F4;
+    --paper-warm:   #F2EFE6;
+    --ink:          #14201B;
+    --ink-soft:     #384A42;
+    --ink-dim:      #73857C;
+    --rule:         #E2E8E4;
+    --rule-strong:  #C5D3CB;
+    --accent-deep:  #1B4332;
+    --accent-mid:   #2D6A4F;
+    --accent-light: #74C69D;
+    --accent-soft:  #95D5B2;
+    --font-display: "Newsreader", "Cambria", Georgia, serif;
+    --font-sans:    "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-mono:    "IBM Plex Mono", "SF Mono", "Courier New", monospace;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  body {
+    margin: 0; padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--accent-soft); color: var(--accent-deep); }
+
+  /* ── Masthead ── */
+  .masthead { background: var(--accent-deep); }
+  .masthead-inner {
+    max-width: 1240px; margin: 0 auto;
+    padding: 18px 40px;
+    display: flex; align-items: center; justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .masthead-brand { display: flex; align-items: center; gap: 14px; }
+  .masthead-logo { flex-shrink: 0; width: 28px; height: 28px; position: relative; }
+  .masthead-logo svg { display: block; }
+  .masthead-wordmark {
+    font-family: var(--font-mono); font-size: 14px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent-light);
+  }
+  .masthead-sub {
+    font-family: var(--font-sans); font-size: 12px;
+    color: rgba(255,255,255,0.40); letter-spacing: 0.02em;
+  }
+  .masthead-date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: rgba(255,255,255,0.40);
+  }
+
+  /* ── Hero ── */
+  .hero-wrap { background: var(--paper); }
+  .hero {
+    max-width: 1240px; margin: 0 auto;
+    padding: 52px 40px 40px;
+  }
+  .hero-overline {
+    display: flex; align-items: center; gap: 14px;
+    margin-bottom: 28px;
+  }
+  .hero-overline-label {
+    font-family: var(--font-mono); font-size: 11px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent-deep); white-space: nowrap;
+  }
+  .hero-overline-rule { flex: 1; height: 1px; background: var(--rule); }
+  .hero-overline-date {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--ink-dim); white-space: nowrap;
+  }
+  .hero-teaser {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 4vw, 56px);
+    line-height: 1.07; letter-spacing: -0.02em;
+    font-weight: 500; color: var(--ink);
+    margin: 0 0 36px; max-width: 22ch;
+    text-wrap: balance;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 52px;
+    padding-top: 40px;
+    border-top: 1px solid var(--rule-strong);
+  }
+
+  /* ── Lead Story ── */
+  .lead-kicker {
+    font-family: var(--font-mono); font-size: 11px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent-deep); margin-bottom: 12px;
+  }
+  .lead-title {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 2.8vw, 36px);
+    line-height: 1.12; letter-spacing: -0.015em;
+    font-weight: 500; color: var(--ink);
+    margin: 0 0 20px;
+    text-wrap: balance;
+  }
+  .lead-what {
+    font-family: var(--font-display);
+    font-size: 18px; line-height: 1.6;
+    color: var(--ink); margin: 0 0 22px;
+    max-width: 56ch; font-weight: 400;
+  }
+  .why-callout {
+    border-left: 2px solid var(--accent-deep);
+    padding: 2px 0 2px 18px;
+    margin: 0 0 24px;
+  }
+  .why-callout-label {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent-deep); margin-bottom: 6px;
+  }
+  .why-callout-text {
+    font-family: var(--font-sans); font-size: 15px; line-height: 1.6;
+    color: var(--ink-soft); margin: 0; max-width: 56ch;
+  }
+  .source-row {
+    display: flex; align-items: center; gap: 12px;
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--ink-dim);
+    padding-top: 16px; border-top: 1px solid var(--rule);
+  }
+  .source-link {
+    color: var(--accent-deep);
+    border-bottom: 1px solid var(--accent-mid);
+    padding-bottom: 1px; font-weight: 600;
+  }
+
+  /* ── Quick Hits Sidebar ── */
+  .qh-sidebar {
+    background: var(--accent-deep);
+    color: var(--paper);
+    padding: 32px 28px; border-radius: 6px;
+    align-self: start; position: sticky; top: 28px;
+  }
+  .qh-sidebar-label {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--accent-light); margin-bottom: 16px;
+  }
+  .qh-preview-list {
+    list-style: none; margin: 0; padding: 0;
+  }
+  .qh-preview-item {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+  .qh-preview-item:first-child { border-top: 1px solid rgba(255,255,255,0.12); }
+  .qh-preview-title {
+    display: block;
+    font-family: var(--font-display); font-size: 15px;
+    line-height: 1.3; letter-spacing: -0.005em;
+    font-weight: 500; color: var(--paper); margin: 0 0 4px;
+    text-decoration: none; cursor: pointer;
+  }
+  .qh-preview-title:hover { color: var(--accent-light); }
+  .qh-preview-source {
+    font-family: var(--font-mono); font-size: 10px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: rgba(255,255,255,0.50);
+  }
+
+  /* ── Visuals ── */
+  .visual-wrap { margin: 0 0 22px; }
+  .visual-img {
+    width: 100%; height: auto; border-radius: 4px; display: block;
+  }
+  .visual-chart { margin: 0; }
+  .chart-row {
+    display: grid;
+    grid-template-columns: 100px 1fr 48px;
+    align-items: center; gap: 10px;
+    font-family: var(--font-sans); font-size: 13px;
+    color: var(--ink); margin-bottom: 8px;
+  }
+  .chart-label { color: var(--ink-soft); }
+  .chart-bar-track {
+    height: 6px; background: var(--rule);
+    border-radius: 999px; overflow: hidden;
+  }
+  .chart-bar-fill {
+    height: 100%; border-radius: 999px;
+    background: var(--accent-mid);
+  }
+  .chart-value {
+    font-family: var(--font-mono); font-size: 12px;
+    color: var(--ink-dim); text-align: right;
+  }
+  .visual-table-wrap { overflow-x: auto; margin: 0 0 22px; }
+  .visual-table {
+    width: 100%; border-collapse: collapse;
+    font-family: var(--font-sans); font-size: 13px;
+    color: var(--ink);
+  }
+  .visual-table th {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--accent-deep);
+    padding: 8px 12px; border-bottom: 2px solid var(--rule-strong);
+    text-align: left;
+  }
+  .visual-table td {
+    padding: 8px 12px; border-bottom: 1px solid var(--rule);
+    color: var(--ink-soft);
+  }
+  .visual-table tr:last-child td { border-bottom: none; }
+
+  /* ── Quick Hits Grid ── */
+  .quick-hits-wrap { background: var(--paper-warm); border-top: 1px solid var(--rule); }
+  .quick-hits-inner { max-width: 1240px; margin: 0 auto; padding: 56px 40px; }
+  .section-kicker {
+    font-family: var(--font-mono); font-size: 11px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent-deep); margin-bottom: 8px;
+  }
+  .section-title {
+    font-family: var(--font-display); font-size: 30px;
+    line-height: 1.1; letter-spacing: -0.015em;
+    font-weight: 500; color: var(--ink); margin: 0 0 28px;
+  }
+  /* ── Quick Hits Accordion ── */
+  .qh-accordion { border-top: 2px solid var(--accent-deep); }
+  .qh-item { scroll-margin-top: 28px; }
+  .qh-item-header {
+    display: flex; align-items: center; gap: 16px;
+    padding: 18px 0; border-bottom: 1px solid var(--rule);
+    cursor: pointer; list-style: none; user-select: none;
+  }
+  .qh-item-header::-webkit-details-marker { display: none; }
+  .qh-item-header::marker { display: none; }
+  .qh-item-chevron {
+    font-family: var(--font-mono); font-size: 11px;
+    color: var(--accent-mid); flex-shrink: 0;
+    transition: transform 0.18s ease;
+    display: inline-block;
+  }
+  details[open] > .qh-item-header .qh-item-chevron { transform: rotate(90deg); }
+  .qh-item-title {
+    font-family: var(--font-display); font-size: 19px;
+    line-height: 1.25; letter-spacing: -0.01em;
+    font-weight: 500; color: var(--ink); flex: 1;
+    text-wrap: balance;
+  }
+  .qh-item-source-pill {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--accent-deep); background: var(--accent-light);
+    padding: 3px 9px; border-radius: 3px; flex-shrink: 0;
+  }
+  .qh-item-body {
+    padding: 20px 0 28px 27px;
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  .qh-item-summary {
+    font-family: var(--font-display); font-size: 16px;
+    line-height: 1.65; color: var(--ink-soft);
+    margin: 0 0 18px; max-width: 68ch;
+  }
+  .qh-item-footer {
+    font-family: var(--font-mono); font-size: 10px;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+  .qh-item-footer a {
+    color: var(--accent-deep); font-weight: 600;
+    border-bottom: 1px solid var(--rule-strong); padding-bottom: 1px;
+  }
+
+  /* ── Under the Hood ── */
+  .hood-wrap { background: var(--paper); border-top: 1px solid var(--rule); }
+  .hood-inner { max-width: 1240px; margin: 0 auto; padding: 56px 40px; }
+  .hood-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 48px;
+    padding-top: 28px;
+    border-top: 1px solid var(--rule-strong);
+  }
+  .hood-label {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent-mid); margin-bottom: 10px;
+  }
+  .hood-title {
+    font-family: var(--font-display); font-size: 22px;
+    line-height: 1.15; letter-spacing: -0.01em;
+    font-weight: 500; color: var(--ink);
+    margin: 0 0 16px; text-wrap: balance;
+  }
+  .hood-what {
+    font-family: var(--font-display); font-size: 15px; line-height: 1.65;
+    color: var(--ink); margin: 0 0 18px; font-weight: 400;
+  }
+  .hood-why {
+    border-left: 2px solid var(--accent-mid);
+    padding: 2px 0 2px 16px;
+    margin: 0 0 20px;
+  }
+  .hood-why-label {
+    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent-mid); margin-bottom: 6px;
+  }
+  .hood-why-text {
+    font-family: var(--font-sans); font-size: 14px; line-height: 1.6;
+    color: var(--ink-soft); margin: 0;
+  }
+  .hood-code {
+    font-family: var(--font-mono); font-size: 13px; line-height: 1.65;
+    background: var(--ink); color: #E4EDE7;
+    padding: 18px 20px; border-radius: 6px;
+    overflow-x: auto; white-space: pre;
+    margin: 0 0 20px; display: block;
+  }
+  .hood-source {
+    display: flex; align-items: center; gap: 8px;
+    font-family: var(--font-mono); font-size: 10px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--ink-dim);
+    padding-top: 14px; border-top: 1px solid var(--rule);
+  }
+  .hood-source-link {
+    color: var(--accent-deep);
+    border-bottom: 1px solid var(--accent-mid);
+    padding-bottom: 1px; font-weight: 600;
+  }
+
+  /* ── Fun Fact ── */
+  .funfact-wrap { background: var(--ink); }
+  .funfact-inner {
+    max-width: 1240px; margin: 0 auto;
+    padding: 32px 40px;
+    display: flex; align-items: center; gap: 32px;
+  }
+  .funfact-label {
+    font-family: var(--font-mono); font-size: 11px; font-weight: 600;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--accent-light); flex-shrink: 0; white-space: nowrap;
+  }
+  .funfact-text {
+    font-family: var(--font-display); font-style: italic;
+    font-size: clamp(16px, 2vw, 22px); line-height: 1.4;
+    color: var(--paper); margin: 0; font-weight: 400;
+  }
+
+  /* ── Footer ── */
+  .footer-wrap { background: var(--paper-warm); border-top: 1px solid var(--rule); }
+  .footer-inner {
+    max-width: 1240px; margin: 0 auto;
+    padding: 20px 40px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .footer-text {
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.07em; color: var(--ink-dim);
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 800px) {
+    .masthead-inner, .hero, .quick-hits-inner,
+    .hood-inner, .funfact-inner, .footer-inner {
+      padding-left: 20px !important; padding-right: 20px !important;
+    }
+    .hero { padding-top: 32px !important; padding-bottom: 24px !important; }
+    .hero-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+    .qh-sidebar { position: static !important; }
+    .hood-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+    .qh-item-body { padding-left: 0 !important; }
+    .masthead-sub { display: none !important; }
+    .funfact-inner { flex-direction: column !important; gap: 10px !important; }
+    .footer-inner { flex-direction: column !important; gap: 6px !important; }
+  }
+
+  @media (max-width: 600px) {
+    .hero-teaser { font-size: 26px !important; }
+    .lead-what { font-size: 16px !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── Masthead ── -->
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-brand">
+      <div class="masthead-logo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="8" y="8" width="18" height="18" rx="4" fill="#2D6A4F"/>
+          <rect x="2" y="2" width="18" height="18" rx="4" fill="#74C69D"/>
+        </svg>
+      </div>
+      <span class="masthead-wordmark">Tech Digest</span>
+      <span class="masthead-sub">Daily Signal for Professionals</span>
+    </div>
+    <span class="masthead-date">Thursday, October 15 2026</span>
+  </div>
+</header>
+
+<!-- ── Hero (Lead Story) ── -->
+<div class="hero-wrap">
+  <div class="hero">
+
+    <div class="hero-overline">
+      <span class="hero-overline-label">Today's Digest</span>
+      <div class="hero-overline-rule"></div>
+      <span class="hero-overline-date">Thursday, October 15 2026</span>
+    </div>
+
+    <h1 class="hero-teaser">AI can now produce detailed, town-scale climate simulations for a tiny fraction of what supercomputers cost — including the rare extreme storms that matter most.</h1>
+
+    <div class="hero-grid">
+
+      <!-- Lead article -->
+      <article>
+        <div class="lead-kicker">Lead Story</div>
+        <h2 class="lead-title">AI simulates extreme weather at 3 km detail for a fraction of the cost</h2>
+        <p class="lead-what">The Allen Institute for AI (Ai2) released HiRO-ACEv2, an AI climate emulator — a model that imitates expensive physics-based climate simulations. It can reproduce even very rare rain, wind and pressure extremes with high accuracy, and the full system generates global climate data at 3 km resolution for about 1/300th of the cost of a comparable traditional simulation.</p>
+
+        
+        <div class="visual-wrap">
+          <img src="https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/Y8t8GnfI2lUa40iX4_sxA.png" alt="AI simulates extreme weather at 3 km detail for a fraction of the cost" class="visual-img">
+        </div>
+        
+
+        <div class="why-callout">
+          <div class="why-callout-label">What this means</div>
+          <p class="why-callout-text">Detailed local climate projections have mostly been available to a few well-funded labs. Cheaper simulations could put flood, storm and heat risk data in front of city planners, insurers, farmers and teachers far sooner.</p>
+        </div>
+
+        <div class="source-row">
+          <span>Source</span>
+          <a href="https://huggingface.co/blog/allenai/hiro-acev2" class="source-link" target="_blank" rel="noopener">Hugging Face Blog (Ai2) ↗</a>
+        </div>
+      </article>
+
+      <!-- Quick Hits sidebar preview -->
+      
+      <aside class="qh-sidebar">
+        <div class="qh-sidebar-label">Quick Hits</div>
+        <ul class="qh-preview-list">
+          
+          <li class="qh-preview-item">
+            <a class="qh-preview-title" href="#qh-item-0" data-qh-target="qh-item-0">Experts: AI &#34;hacking&#34; incidents come down to basic security lapses</a>
+            <span class="qh-preview-source">CSO Online</span>
+          </li>
+          
+          <li class="qh-preview-item">
+            <a class="qh-preview-title" href="#qh-item-1" data-qh-target="qh-item-1">Google is quietly linking your phone number across accounts</a>
+            <span class="qh-preview-source">Android Authority</span>
+          </li>
+          
+          <li class="qh-preview-item">
+            <a class="qh-preview-title" href="#qh-item-2" data-qh-target="qh-item-2">OpenCode 2.0 is out</a>
+            <span class="qh-preview-source">Hacker News</span>
+          </li>
+          
+          <li class="qh-preview-item">
+            <a class="qh-preview-title" href="#qh-item-3" data-qh-target="qh-item-3">Security researcher: passkeys are not a trap</a>
+            <span class="qh-preview-source">Scott Helme</span>
+          </li>
+          
+        </ul>
+      </aside>
+      
+
+    </div>
+  </div>
+</div>
+
+<!-- ── Quick Hits ── -->
+
+<div class="quick-hits-wrap">
+  <div class="quick-hits-inner">
+    <div class="section-kicker">Quick Hits</div>
+    <h2 class="section-title">What else happened today</h2>
+
+    <div class="qh-accordion">
+      
+      <details class="qh-item" id="qh-item-0">
+        <summary class="qh-item-header">
+          <span class="qh-item-chevron">▸</span>
+          <span class="qh-item-title">Experts: AI &#34;hacking&#34; incidents come down to basic security lapses</span>
+          <span class="qh-item-source-pill">CSO Online</span>
+        </summary>
+        <div class="qh-item-body">
+          <p class="qh-item-summary">Security experts quoted by CSO Online argue that recent reports of AI agents hacking systems aren&#x27;t about AI going rogue — they&#x27;re about AI labs skipping basic containment and monitoring. If your organisation runs AI agents, the lesson is familiar: limit what they can reach and watch what they do.</p>
+
+          
+
+          <p class="qh-item-footer">
+            VIA <a href="https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html" target="_blank" rel="noopener">CSO Online ↗</a>
+          </p>
+        </div>
+      </details>
+      
+      <details class="qh-item" id="qh-item-1">
+        <summary class="qh-item-header">
+          <span class="qh-item-chevron">▸</span>
+          <span class="qh-item-title">Google is quietly linking your phone number across accounts</span>
+          <span class="qh-item-source-pill">Android Authority</span>
+        </summary>
+        <div class="qh-item-body">
+          <p class="qh-item-summary">Android Authority reports that Google is automatically linking your phone number to every Google account signed in on your phone, without asking. If you keep separate work and personal accounts on one device, they may now be tied together by your number.</p>
+
+          
+
+          <p class="qh-item-footer">
+            VIA <a href="https://www.androidauthority.com/google-auto-phone-number-verification-android-3723117/" target="_blank" rel="noopener">Android Authority ↗</a>
+          </p>
+        </div>
+      </details>
+      
+      <details class="qh-item" id="qh-item-2">
+        <summary class="qh-item-header">
+          <span class="qh-item-chevron">▸</span>
+          <span class="qh-item-title">OpenCode 2.0 is out</span>
+          <span class="qh-item-source-pill">Hacker News</span>
+        </summary>
+        <div class="qh-item-body">
+          <p class="qh-item-summary">OpenCode, an open-source AI coding assistant, has released version 2.0, and it was one of the most discussed posts on Hacker News today. Open-source tools like this are an alternative to paid assistants from the big AI companies, letting teams choose which AI model sits behind them.</p>
+
+          
+
+          <p class="qh-item-footer">
+            VIA <a href="https://anoma.ly/notes/opencode-2-0/" target="_blank" rel="noopener">Hacker News ↗</a>
+          </p>
+        </div>
+      </details>
+      
+      <details class="qh-item" id="qh-item-3">
+        <summary class="qh-item-header">
+          <span class="qh-item-chevron">▸</span>
+          <span class="qh-item-title">Security researcher: passkeys are not a trap</span>
+          <span class="qh-item-source-pill">Scott Helme</span>
+        </summary>
+        <div class="qh-item-body">
+          <p class="qh-item-summary">Security researcher Scott Helme pushes back on the worry that passkeys — sign-ins that use your phone or laptop&#x27;s fingerprint, face or PIN instead of a password — lock you into one company&#x27;s ecosystem. If you&#x27;ve been hesitating to switch on passkeys for work or personal accounts, it&#x27;s a useful counterpoint.</p>
+
+          
+
+          <p class="qh-item-footer">
+            VIA <a href="https://scotthelme.co.uk/passkeys-are-not-a-trap/" target="_blank" rel="noopener">Scott Helme ↗</a>
+          </p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- ── Under the Hood ── -->
+
+<div class="hood-wrap">
+  <div class="hood-inner">
+    <div class="section-kicker">Under the Hood</div>
+    <h2 class="section-title">For the technically curious</h2>
+
+    <div class="hood-grid">
+      
+      <article>
+        <div class="hood-label">Deep Dive</div>
+        <h3 class="hood-title">GitHub rebuilds star history with 99% fewer requests</h3>
+        <p class="hood-what">GitHub launched a new API for a repository&#x27;s star history — how a project&#x27;s popularity has grown over time. Instead of returning the list of individual people who starred a project, it returns trends, cutting the work needed from about 2,500 requests to 24.</p>
+
+        
+        <div class="visual-wrap visual-table-wrap">
+          <table class="visual-table">
+            <thead><tr><th>Approach</th><th>Requests needed</th><th>Returns individual identities?</th></tr></thead>
+            <tbody><tr><td>Old: list every stargazer</td><td>~2,500</td><td>Yes</td></tr><tr><td>New: star history API</td><td>24</td><td>No</td></tr></tbody>
+          </table>
+        </div>
+        
+
+        <div class="hood-why">
+          <div class="hood-why-label">Why it matters</div>
+          <p class="hood-why-text">It&#x27;s a clean example of privacy and performance pulling in the same direction: by not exposing individual identities, GitHub also avoided unbounded database work. Useful reading for anyone designing analytics features over user activity.</p>
+        </div>
+
+        
+
+        <div class="hood-source">
+          <span>Source</span>
+          <a href="https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/" class="hood-source-link" target="_blank" rel="noopener">GitHub Blog ↗</a>
+        </div>
+      </article>
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- ── Fun Fact ── -->
+
+<div class="funfact-wrap">
+  <div class="funfact-inner">
+    <div class="funfact-label">◇ Fun fact</div>
+    <p class="funfact-text">"GitHub cut a feature&#39;s database work from 2,500 requests to just 24 — by asking for less."</p>
+  </div>
+</div>
+
+
+<!-- ── Footer ── -->
+<footer class="footer-wrap">
+  <div class="footer-inner">
+    <span class="footer-text">Daily tech digest for curious professionals · AI news that affects your work.</span>
+  </div>
+</footer>
+
+<script>
+  function openQuickHit(id) {
+    var details = document.getElementById(id);
+    if (details && details.tagName === 'DETAILS') details.open = true;
+  }
+  document.querySelectorAll('[data-qh-target]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      openQuickHit(link.getAttribute('data-qh-target'));
+    });
+  });
+  if (window.location.hash) {
+    openQuickHit(window.location.hash.slice(1));
+  }
+</script>
+</body>
+</html>
