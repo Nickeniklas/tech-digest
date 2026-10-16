@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-08",
-    "title": "Claude Haiku 5.5: Anthropic's cheapest, fastest small model",
-    "summary": "Anthropic released Claude Haiku 5.",
-    "source_urls": [
-      "https://www.anthropic.com/claude-haiku-5-5"
-    ]
-  },
-  {
-    "date": "2026-10-08",
-    "title": "OpenAI announces GPT-6 and \"Intelligent UI for everyone\"",
-    "summary": "OpenAI published an announcement titled \"GPT-6 and Intelligent UI for everyone\", introducing the next generation of the model family behind ChatGPT.",
-    "source_urls": [
-      "https://openai.com/index/gpt-6-for-everyone/"
-    ]
-  },
-  {
-    "date": "2026-10-08",
-    "title": "Chrome is shipping support for JPEG XL images",
-    "summary": "Google's Chrome team says the browser is shipping support for JPEG XL, a modern image format designed to keep photos sharp at smaller file sizes.",
-    "source_urls": [
-      "https://developer.chrome.com/blog/jpeg-xl-in-chrome"
-    ]
-  },
-  {
-    "date": "2026-10-08",
-    "title": "SynthID Detector goes public",
-    "summary": "SynthID Detector, a tool for checking content for SynthID — Google's invisible watermark on AI-generated media — now has its own public site.",
-    "source_urls": [
-      "https://synthid.com/"
-    ]
-  },
-  {
-    "date": "2026-10-08",
-    "title": "Margaret Hamilton, computing pioneer, has died",
-    "summary": "MIT reports the death of Margaret Hamilton, the computing pioneer known for leading the software work behind NASA's Apollo missions.",
-    "source_urls": [
-      "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007"
-    ]
-  },
-  {
-    "date": "2026-10-08",
-    "title": "Liquid AI releases open d1 decision models for devices",
-    "summary": "Liquid AI released two open \"decision models\" — small models built to pick the right action rather than write long answers: d1-3B and an experimental d1-omni-600M that also handles more than text.",
-    "source_urls": [
-      "https://huggingface.co/blog/LiquidAI/open-d1"
-    ]
-  },
-  {
-    "date": "2026-10-08",
-    "title": "NVIDIA fine-tunes Nemotron to gold-level olympiad results",
-    "summary": "NVIDIA describes how it fine-tuned one open model family, Nemotron, to reach gold-level results at both the International Olympiad in Informatics (programming) and the International Mathematical Olympiad.",
-    "source_urls": [
-      "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026"
-    ]
-  },
-  {
     "date": "2026-10-09",
     "title": "The AI model you need doesn't exist? Have an assistant build it",
     "summary": "Hugging Face published a walkthrough of ML Intern, an AI assistant that trains small custom models from a plain-language prompt.",
@@ -429,6 +373,62 @@
     "summary": "GitHub launched a new API for a repository's star history — how a project's popularity has grown over time.",
     "source_urls": [
       "https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "title": "Meta releases Muse Spark Open, a free-to-download AI model",
+    "summary": "Meta published Muse Spark Open, an open-weight AI model — the full model files are free to download — that understands text, images and audio and can work with long documents.",
+    "source_urls": [
+      "https://huggingface.co/blog/meta-muse-spark-open"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "title": "Meta's new terms let it scrape business websites from October 30",
+    "summary": "Nieman Lab reports that Meta's new commercial terms mean business accounts will consent to Meta scraping their websites starting October 30.",
+    "source_urls": [
+      "https://www.niemanlab.org/2026/10/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say/"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "title": "Targeted ads used to deliver spyware with zero clicks",
+    "summary": "Researchers at Citizen Lab describe how a company called Discover Tech turned targeted online ads into a delivery route for mercenary spyware.",
+    "source_urls": [
+      "https://citizenlab.ca/research/how-discover-tech-turned-targeted-ads-into-a-pipeline-for-spyware/"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "title": "Krea 3: an AI image model built for editing",
+    "summary": "Krea released Krea 3, an image model designed for editing pictures at scale rather than only creating new ones from scratch.",
+    "source_urls": [
+      "https://www.krea.ai/krea-3"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "title": "Internet routes are now 70% protected against hijacking",
+    "summary": "IPinfo reports that RPKI, a system that verifies who is allowed to direct internet traffic to a given address, now protects 70% of internet routes.",
+    "source_urls": [
+      "https://ipinfo.io/blog/rpki-protects-70-internet-routes"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "title": "IBM's Granite Switch 4.1: chat, decisions and speech from one endpoint",
+    "summary": "IBM released Granite Switch 4.",
+    "source_urls": [
+      "https://huggingface.co/blog/ibm-granite/granite-switch-4-1"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "title": "NVIDIA opens a 2.8-trillion-token dataset for Indian languages",
+    "summary": "NVIDIA published a 2.",
+    "source_urls": [
+      "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
     ]
   }
 ]
