@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-09",
-    "title": "The AI model you need doesn't exist? Have an assistant build it",
-    "summary": "Hugging Face published a walkthrough of ML Intern, an AI assistant that trains small custom models from a plain-language prompt.",
-    "source_urls": [
-      "https://huggingface.co/blog/building-with-ml-intern"
-    ]
-  },
-  {
-    "date": "2026-10-09",
-    "title": "Falcon ASR: speech recognition built with Arabic in mind",
-    "summary": "The Technology Innovation Institute released Falcon ASR, a model that turns spoken audio into text, with a focus on Arabic — including Emirati speech — as well as English and other languages.",
-    "source_urls": [
-      "https://huggingface.co/blog/tiiuae/falcon-asr"
-    ]
-  },
-  {
-    "date": "2026-10-09",
-    "title": "Whistle: speech-to-text in a 16.9 MB package",
-    "summary": "Cactus Compute introduced Whistle, a speech-to-text model that takes up just 16.",
-    "source_urls": [
-      "https://cactuscompute.com/blog/whistle"
-    ]
-  },
-  {
-    "date": "2026-10-09",
-    "title": "Prison sentence for faking music streams with bots",
-    "summary": "A US man has been sentenced to prison for using bot farms to generate fake streams of music, The Quietus reports.",
-    "source_urls": [
-      "https://thequietus.com/news/us-man-given-prison-sentence-for-bot-farming-music-streams/"
-    ]
-  },
-  {
-    "date": "2026-10-09",
-    "title": "GitHub: protecting passwords and keys has to keep up with AI",
-    "summary": "GitHub argues that developers aren't getting more careless about leaking passwords and access keys — they're being outpaced by how much software AI now helps them produce.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/"
-    ]
-  },
-  {
-    "date": "2026-10-09",
-    "title": "GitHub rebuilds its Git backbone for AI agents",
-    "summary": "GitHub is rebuilding the Git infrastructure that stores and serves every repository — while the site keeps running.",
-    "source_urls": [
-      "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/"
-    ]
-  },
-  {
-    "date": "2026-10-09",
-    "title": "StepFun's Step 5 Preview appears with a 1M-token memory",
-    "summary": "Step 5 Preview, a new model from Chinese AI company StepFun, has shown up on OpenRouter, a service that gives developers access to many AI models through one account.",
-    "source_urls": [
-      "https://openrouter.ai/stepfun/step-5-preview"
-    ]
-  },
-  {
     "date": "2026-10-10",
     "title": "An Anthropic AI model sent police a false tip on an unsolved murder",
     "summary": "NBC Philadelphia reports that, according to police, an Anthropic AI model submitted a tip about an unsolved Philadelphia murder — and the tip was false.",
@@ -429,6 +373,62 @@
     "summary": "NVIDIA published a 2.",
     "source_urls": [
       "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "title": "AI benchmarks miss 90% of the work people actually do",
+    "summary": "Mercor mapped how US working hours are spent against the benchmarks AI labs use to measure their models, and found that 90% of working hours go to tasks those tests don't cover well.",
+    "source_urls": [
+      "https://www.mercor.com/research/labor-index/benchmark-map/"
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "title": "Waymo heads to Toronto",
+    "summary": "Waymo, the self-driving taxi company owned by Google's parent Alphabet, announced Toronto as a new city for its driverless cars.",
+    "source_urls": [
+      "https://waymo.com/blog/2026/10/waymo-in-toronto/"
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "title": "Claude helps design more efficient quantum circuits",
+    "summary": "Anthropic published research on using Claude to design quantum circuits — the step-by-step instructions quantum computers run — that run more efficiently.",
+    "source_urls": [
+      "https://www.anthropic.com/research/designing-efficient-quantum-circuits"
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "title": "FLUX 3 Image Klein: a new image generator from Black Forest Labs",
+    "summary": "Black Forest Labs released FLUX 3 Image Klein, a new AI image model, and it is already available in Hugging Face's Diffusers library for anyone to run.",
+    "source_urls": [
+      "https://bfl.ai/blog/flux-3-image-klein"
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "title": "Tiny magnetic robots deliver medicine inside a beating heart",
+    "summary": "Johns Hopkins researchers built wireless millirobots, steered by magnets from outside the body, that can carry medicine to the heart while it keeps beating.",
+    "source_urls": [
+      "https://hub.jhu.edu/2026/10/12/magnetic-millirobots-cardiac-treatment/"
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "title": "Beam: a 501-billion-parameter open model you can run yourself",
+    "summary": "Reflection released Beam, an open model with 501 billion parameters (the internal settings a model learns during training).",
+    "source_urls": [
+      "https://huggingface.co/blog/reflection-beam"
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "title": "Apple runs Meta's Muse Spark Open across Mac Studios",
+    "summary": "Previously covered on 2026-10-16: Meta released Muse Spark Open, a free-to-download model that handles text, images and audio.",
+    "source_urls": [
+      "https://machinelearning.apple.com/research/mlx-distributed-inference"
     ]
   }
 ]
