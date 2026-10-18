@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-10",
-    "title": "An Anthropic AI model sent police a false tip on an unsolved murder",
-    "summary": "NBC Philadelphia reports that, according to police, an Anthropic AI model submitted a tip about an unsolved Philadelphia murder — and the tip was false.",
-    "source_urls": [
-      "https://www.nbcphiladelphia.com/news/local/anthropic-ai-model-submits-false-tip-on-unsolved-philly-murder-police-say/4477051/"
-    ]
-  },
-  {
-    "date": "2026-10-10",
-    "title": "Microsoft joins the small \"decision model\" trend",
-    "summary": "Microsoft introduced Microsoft-Decision-1, a model built for fast decision-making rather than long written answers.",
-    "source_urls": [
-      "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/"
-    ]
-  },
-  {
-    "date": "2026-10-10",
-    "title": "AI digs through 400 years of archives and finds forgotten things",
-    "summary": "A writer pointed AI at four centuries of archival records and surfaced a forgotten meteorite, lost rhinos and more.",
-    "source_urls": [
-      "https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/"
-    ]
-  },
-  {
-    "date": "2026-10-10",
-    "title": "Terry Tao on trusting AI in mathematics",
-    "summary": "Terence Tao, one of the world's best-known mathematicians, wrote about Lean — software that checks mathematical proofs step by step — and what it means for reliability as AI starts producing proofs.",
-    "source_urls": [
-      "https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/"
-    ]
-  },
-  {
-    "date": "2026-10-10",
-    "title": "Developers want software that wastes less computing power",
-    "summary": "GitHub and the Yale Program on Climate Change Communication surveyed over 1,000 GitHub users and found strong demand for tools and guidance to cut wasted compute.",
-    "source_urls": [
-      "https://github.blog/news-insights/research/developers-want-more-efficient-software-heres-what-over-1000-github-users-told-us-they-need/"
-    ]
-  },
-  {
-    "date": "2026-10-10",
-    "title": "How Ai2 decides who gets the GPUs",
-    "summary": "The Allen Institute for AI described the scheduler it built for its GPU clusters — the shared pools of chips used to train AI models.",
-    "source_urls": [
-      "https://huggingface.co/blog/allenai/impactful-scheduling"
-    ]
-  },
-  {
-    "date": "2026-10-10",
-    "title": "Hugging Face Transformers can now run llama.cpp models",
-    "summary": "Hugging Face's Transformers library, the most widely used toolkit for running open AI models in Python, now runs llama.",
-    "source_urls": [
-      "https://huggingface.co/blog/transformers-llama-cpp-quants"
-    ]
-  },
-  {
     "date": "2026-10-11",
     "title": "Anthropic expands its program for vetted security professionals",
     "summary": "Anthropic launched an expanded Cyber Verification Program, which gives qualifying security professionals access to Claude's advanced cyber capabilities with fewer automatic blocks.",
@@ -429,6 +373,62 @@
     "summary": "Previously covered on 2026-10-16: Meta released Muse Spark Open, a free-to-download model that handles text, images and audio.",
     "source_urls": [
       "https://machinelearning.apple.com/research/mlx-distributed-inference"
+    ]
+  },
+  {
+    "date": "2026-10-18",
+    "title": "New York bill would make bought games yours to keep",
+    "summary": "A New York state representative has announced a game ownership bill that would require publishers to sell games to consumers outright, rather than selling a licence to play them.",
+    "source_urls": [
+      "https://www.tomshardware.com/video-games/new-york-rep-announces-game-ownership-bill-that-would-require-consumer-ownership-rather-than-sale-of-licenses-would-also-require-publishers-to-keep-the-game-functional-after-support-ends"
+    ]
+  },
+  {
+    "date": "2026-10-18",
+    "title": "DeepSeek publishes a new Flash model",
+    "summary": "Chinese AI lab DeepSeek has posted DeepSeek-V4.",
+    "source_urls": [
+      "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+    ]
+  },
+  {
+    "date": "2026-10-18",
+    "title": "Solar now generates more power than nuclear worldwide",
+    "summary": "For the first time, solar power has overtaken nuclear power globally, pv magazine reports.",
+    "source_urls": [
+      "https://www.pv-magazine.com/2026/09/29/solar-surpasses-nuclear-power-globally-for-first-time/"
+    ]
+  },
+  {
+    "date": "2026-10-18",
+    "title": "Estonia's online voting code is public",
+    "summary": "The source code of Estonia's online voting system is available on GitHub for anyone to read.",
+    "source_urls": [
+      "https://github.com/valimised/ivxv"
+    ]
+  },
+  {
+    "date": "2026-10-18",
+    "title": "GitHub: the next developer interface is 'ambient intelligence'",
+    "summary": "GitHub argues that AI, agents, voice and physical controls are shifting software work from operating tools to simply saying what you want.",
+    "source_urls": [
+      "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/"
+    ]
+  },
+  {
+    "date": "2026-10-18",
+    "title": "GitHub's September reliability: two incidents, down from five",
+    "summary": "GitHub's availability report for September 2026 lists two incidents that degraded performance across its services.",
+    "source_urls": [
+      "https://github.blog/news-insights/company-news/github-availability-report-september-2026/"
+    ]
+  },
+  {
+    "date": "2026-10-18",
+    "title": "Lean now ships with verified kernels",
+    "summary": "Lean, a programming language used to write mathematical proofs that a computer can check, now ships with verified kernels, according to its creator Leonardo de Moura.",
+    "source_urls": [
+      "https://leodemoura.github.io/blog/2026-10-15-lean-now-ships-with-verified-kernels/"
     ]
   }
 ]
