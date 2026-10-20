@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-12",
-    "title": "Google's Finnish data centre work halted over forest clearing",
-    "summary": "The Guardian reports that work linked to Google's data centres in Finland has been temporarily halted, with critics saying forest was cut without the required environmental impact assessment.",
-    "source_urls": [
-      "https://www.theguardian.com/technology/2026/oct/06/google-datacentres-finland-temporary-halt-environmental-impact-assessment"
-    ]
-  },
-  {
-    "date": "2026-10-12",
-    "title": "New York City's \"Click to Cancel\" rule is now in effect",
-    "summary": "New York City's rule requiring businesses to make cancelling a subscription as easy as signing up has taken effect.",
-    "source_urls": [
-      "https://www.nyc.gov/main/click-to-cancel"
-    ]
-  },
-  {
-    "date": "2026-10-12",
-    "title": "Fingerprints are the new cookies",
-    "summary": "A widely shared essay argues that browser fingerprinting — identifying you from the unique mix of your device and browser settings — is replacing cookies as the main way websites track you.",
-    "source_urls": [
-      "https://royfish.dev/fingerprints-are-the-new-cookies"
-    ]
-  },
-  {
-    "date": "2026-10-12",
-    "title": "Karpathy: people increasingly disagree about what AI can do",
-    "summary": "Andrej Karpathy, a well-known AI researcher and OpenAI co-founder, posted that the gap in shared understanding of what AI language models can actually do is widening.",
-    "source_urls": [
-      "https://twitter.com/karpathy/status/2109361546505966046"
-    ]
-  },
-  {
-    "date": "2026-10-12",
-    "title": "GitHub: three skills that matter more as AI writes code",
-    "summary": "GitHub says AI is reshaping developer careers and names three skills to strengthen: directing AI agents, critically reviewing their output, and keeping human judgment at the centre.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/"
-    ]
-  },
-  {
-    "date": "2026-10-12",
-    "title": "A public leaderboard for AI voices in many languages",
-    "summary": "Hugging Face launched the Open TTS Leaderboard, which scores text-to-speech models (AI that reads text aloud) across multiple languages and on voice cloning — copying a specific person's voice.",
-    "source_urls": [
-      "https://huggingface.co/blog/open-tts-leaderboard"
-    ]
-  },
-  {
-    "date": "2026-10-12",
-    "title": "Sakana AI: AI systems that improve themselves as a group",
-    "summary": "Tokyo-based Sakana AI published research on recursive self-improvement through collective intelligence — many AI agents working together to make the overall system better over time, rather than one model improving alone.",
-    "source_urls": [
-      "https://pub.sakana.ai/mass/"
-    ]
-  },
-  {
     "date": "2026-10-13",
     "title": "Hackers defrost supermarket fridges across Europe",
     "summary": "Tom's Hardware reports a cyberattack that hit supermarket refrigeration across Europe: attackers remotely triggered the fridges' automatic defrosting.",
@@ -429,6 +373,62 @@
     "summary": "A new research paper proposes AI agents that do their reasoning in latent space — the model's internal numerical representation — instead of writing out every step as text, and only switch to text when they act.",
     "source_urls": [
       "https://arxiv.org/abs/2610.18861"
+    ]
+  },
+  {
+    "date": "2026-10-20",
+    "title": "WhatsApp's help pages hid instructions aimed at AI assistants",
+    "summary": "Privacy company Redact reports that WhatsApp's help pages contained hidden text written for AI chatbots, instructing them not to recommend contacting a regulator.",
+    "source_urls": [
+      "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions"
+    ]
+  },
+  {
+    "date": "2026-10-20",
+    "title": "MiniMax releases M3.1 Flash",
+    "summary": "Chinese AI company MiniMax published M3.",
+    "source_urls": [
+      "https://www.minimax.io/blog/minimax-m31f"
+    ]
+  },
+  {
+    "date": "2026-10-20",
+    "title": "France's supermarket fridges were exposed online for months",
+    "summary": "Previously covered on 2026-10-13: hackers remotely defrosted supermarket fridges across Europe.",
+    "source_urls": [
+      "https://ipinfo.io/blog/france-fridges-hack"
+    ]
+  },
+  {
+    "date": "2026-10-20",
+    "title": "Move a Copilot app session into VS Code without starting over",
+    "summary": "GitHub explains how to hand off a session from its Copilot app to the VS Code editor while keeping the conversation, code changes and working context.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/"
+    ]
+  },
+  {
+    "date": "2026-10-20",
+    "title": "RuneScape Bench tests AI agents inside an online game",
+    "summary": "RuneScape Bench uses the long-running online game RuneScape as a testing ground for AI agents — programs that act on their own toward a goal.",
+    "source_urls": [
+      "https://www.youtube.com/watch?v=cNm4zyUtWj0"
+    ]
+  },
+  {
+    "date": "2026-10-20",
+    "title": "How \"abliterated\" models can get you hacked",
+    "summary": "Security firm ProjectDiscovery published research on the risks of abliterated models — open AI models that have been modified to remove their built-in refusals, so they'll answer anything.",
+    "source_urls": [
+      "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned"
+    ]
+  },
+  {
+    "date": "2026-10-20",
+    "title": "TorchNeuron: Hugging Face models now run natively on AWS Trainium",
+    "summary": "Hugging Face introduced TorchNeuron, a new native backend for PyTorch on AWS Trainium, Amazon's own AI chips.",
+    "source_urls": [
+      "https://huggingface.co/blog/hf-torchneuron"
     ]
   }
 ]
