@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-13",
-    "title": "Hackers defrost supermarket fridges across Europe",
-    "summary": "Tom's Hardware reports a cyberattack that hit supermarket refrigeration across Europe: attackers remotely triggered the fridges' automatic defrosting.",
-    "source_urls": [
-      "https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident"
-    ]
-  },
-  {
-    "date": "2026-10-13",
-    "title": "GLM-Legal: an AI model aimed at legal work",
-    "summary": "Chinese AI company Z.",
-    "source_urls": [
-      "https://z.ai/blog/glm-legal"
-    ]
-  },
-  {
-    "date": "2026-10-13",
-    "title": "Anthropic tightens defenses against model copying",
-    "summary": "Anthropic published research on strengthening its defenses against \"distillation attacks\" — when someone trains their own AI model on another model's answers to copy its abilities cheaply.",
-    "source_urls": [
-      "https://www.anthropic.com/research/distillation-defenses"
-    ]
-  },
-  {
-    "date": "2026-10-13",
-    "title": "OpenAI's Codex tool runs a background program by default",
-    "summary": "A widely discussed bug report says OpenAI's Codex CLI, a coding assistant that runs on your computer, installs a self-updating background program by default.",
-    "source_urls": [
-      "https://github.com/openai/codex/issues/48195"
-    ]
-  },
-  {
-    "date": "2026-10-13",
-    "title": "Paper: AI models can provably hide abilities",
-    "summary": "A new research paper argues that AI models can be built to hide arbitrary capabilities in a way that can be mathematically proven.",
-    "source_urls": [
-      "https://arxiv.org/abs/2610.13928"
-    ]
-  },
-  {
-    "date": "2026-10-13",
-    "title": "Teaching GitHub Copilot about your codebase",
-    "summary": "GitHub published a beginner's guide to the Copilot app that shows how to add custom instructions and skills to a repository, set up custom agents, and connect MCP servers — plug-ins that give the assistant extra tools, such as Playwright for controlling a web browser.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/"
-    ]
-  },
-  {
-    "date": "2026-10-13",
-    "title": "Intel's D270: an AI accelerator with up to 480 GB of memory",
-    "summary": "Intel lists the D270, a data-centre GPU built as an AI accelerator, with up to 480 GB of LPDDR5X memory — a type of memory more common in laptops and phones than in AI chips.",
-    "source_urls": [
-      "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html"
-    ]
-  },
-  {
     "date": "2026-10-14",
     "title": "Google DeepMind lists Gemini 4 Argon",
     "summary": "Google DeepMind's Gemini models page now features Gemini 4 Argon, a new model in the family that powers Google's Gemini assistant.",
@@ -429,6 +373,62 @@
     "summary": "Hugging Face introduced TorchNeuron, a new native backend for PyTorch on AWS Trainium, Amazon's own AI chips.",
     "source_urls": [
       "https://huggingface.co/blog/hf-torchneuron"
+    ]
+  },
+  {
+    "date": "2026-10-21",
+    "title": "Claude Opus 5.5: top-tier performance at 40% lower cost",
+    "summary": "Anthropic released Claude Opus 5.",
+    "source_urls": [
+      "https://www.anthropic.com/claude-opus-5-5"
+    ]
+  },
+  {
+    "date": "2026-10-21",
+    "title": "Google Cloud outage disrupts banks across Europe",
+    "summary": "A Google Cloud outage knocked out services at banks and financial firms across Europe, Neowin reports, including HSBC, Revolut, Bank of Scotland, Lloyds and Equifax.",
+    "source_urls": [
+      "https://www.neowin.net/news/google-cloud-outage-takes-down-hsbc-revolut-bank-of-scotland-llyods-equifax-more/"
+    ]
+  },
+  {
+    "date": "2026-10-21",
+    "title": "Mistral releases Voxtral 3",
+    "summary": "French AI company Mistral released Voxtral 3, the latest version of its speech-focused AI model.",
+    "source_urls": [
+      "https://mistral.ai/news/voxtral-3/"
+    ]
+  },
+  {
+    "date": "2026-10-21",
+    "title": "A website security certificate authority was compromised",
+    "summary": "A public report describes a compromise of an intermediate certificate authority belonging to eMudhra — one of the organisations that vouch for websites so your browser shows them as secure.",
+    "source_urls": [
+      "https://emudhra.we-have-a-problem.com/"
+    ]
+  },
+  {
+    "date": "2026-10-21",
+    "title": "Google open-sources TorchTPU",
+    "summary": "Google open-sourced TorchTPU, which lets PyTorch — the most widely used toolkit for building AI models — run natively on Google's own AI chips, called TPUs.",
+    "source_urls": [
+      "https://github.com/google-pytorch/torch_tpu"
+    ]
+  },
+  {
+    "date": "2026-10-21",
+    "title": "ALTK-Evolve: learned memory beats bigger models at customer service",
+    "summary": "IBM Research showed that giving a basic AI agent running GPT-4.",
+    "source_urls": [
+      "https://huggingface.co/blog/ibm-research/altk-evolve-bc"
+    ]
+  },
+  {
+    "date": "2026-10-21",
+    "title": "FairStress: testing whether AI is fair in how it decides, not just what it decides",
+    "summary": "The Allen Institute for AI released FairStress, an evaluation that measures fairness in AI decision-making beyond the final answer.",
+    "source_urls": [
+      "https://huggingface.co/blog/allenai/fairstress"
     ]
   }
 ]
