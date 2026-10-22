@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-14",
-    "title": "Google DeepMind lists Gemini 4 Argon",
-    "summary": "Google DeepMind's Gemini models page now features Gemini 4 Argon, a new model in the family that powers Google's Gemini assistant.",
-    "source_urls": [
-      "https://deepmind.google/models/gemini/"
-    ]
-  },
-  {
-    "date": "2026-10-14",
-    "title": "Ledger confirms a spy chip was behind crypto wallet thefts",
-    "summary": "Ledger, which makes hardware devices for storing cryptocurrency, confirmed that a spy implant hidden in wallets was behind thefts from its customers, BleepingComputer reports.",
-    "source_urls": [
-      "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/"
-    ]
-  },
-  {
-    "date": "2026-10-14",
-    "title": "Character.ai files for Chapter 11 bankruptcy",
-    "summary": "Character.",
-    "source_urls": [
-      "https://blog.character.ai/an-update-on-character-ai/"
-    ]
-  },
-  {
-    "date": "2026-10-14",
-    "title": "A capable AI assistant that runs privately on your own device",
-    "summary": "Liquid AI released LFM2.",
-    "source_urls": [
-      "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b"
-    ]
-  },
-  {
-    "date": "2026-10-14",
-    "title": "Physical Intelligence opens its robot AI to other companies",
-    "summary": "Robotics AI company Physical Intelligence launched a beta of its API, offering its most advanced models to anyone building robots.",
-    "source_urls": [
-      "https://www.pi.website/blog/api-beta"
-    ]
-  },
-  {
-    "date": "2026-10-14",
-    "title": "GitHub's AI finds leaked passwords with fewer false alarms",
-    "summary": "GitHub built a context-aware classifier — a model that looks at the code around a suspected password or access key, not just the string itself — for its secret scanning.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/"
-    ]
-  },
-  {
-    "date": "2026-10-14",
-    "title": "ReviewBench: an open test for AI code reviewers",
-    "summary": "GitHub launched ReviewBench, a benchmark for AI agents that review code.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/"
-    ]
-  },
-  {
     "date": "2026-10-15",
     "title": "AI simulates extreme weather at 3 km detail for a fraction of the cost",
     "summary": "The Allen Institute for AI (Ai2) released HiRO-ACEv2, an AI climate emulator — a model that imitates expensive physics-based climate simulations.",
@@ -429,6 +373,62 @@
     "summary": "The Allen Institute for AI released FairStress, an evaluation that measures fairness in AI decision-making beyond the final answer.",
     "source_urls": [
       "https://huggingface.co/blog/allenai/fairstress"
+    ]
+  },
+  {
+    "date": "2026-10-22",
+    "title": "OpenAI's models are coming to Google Cloud",
+    "summary": "OpenAI announced that its AI models will be available through Google Cloud, one of the big three cloud platforms many businesses already pay for.",
+    "source_urls": [
+      "https://openai.com/index/openai-models-google-cloud/"
+    ]
+  },
+  {
+    "date": "2026-10-22",
+    "title": "Australian court orders Apple to open up the iPhone",
+    "summary": "In the Epic vs.",
+    "source_urls": [
+      "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/2026/2026fca1552"
+    ]
+  },
+  {
+    "date": "2026-10-22",
+    "title": "Meta ordered to pay $25 billion in New Mexico Cambridge Analytica case",
+    "summary": "CNBC reports that Meta has been ordered to pay a $25 billion penalty in New Mexico over the Cambridge Analytica scandal, in which Facebook users' data was harvested for political targeting.",
+    "source_urls": [
+      "https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html"
+    ]
+  },
+  {
+    "date": "2026-10-22",
+    "title": "A popular AI software tool was hijacked to steal passwords",
+    "summary": "Security firm SafeDep found that version 1.",
+    "source_urls": [
+      "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/"
+    ]
+  },
+  {
+    "date": "2026-10-22",
+    "title": "IBM releases Granite Speech 5.0",
+    "summary": "IBM published Granite Speech 5.",
+    "source_urls": [
+      "https://huggingface.co/blog/ibm-granite/granite-speech-5"
+    ]
+  },
+  {
+    "date": "2026-10-22",
+    "title": "NVIDIA Kumo Relational predicts from business databases with no training",
+    "summary": "NVIDIA introduced Kumo Relational, a pre-trained model that makes predictions directly on company databases.",
+    "source_urls": [
+      "https://huggingface.co/blog/nvidia/kumo-relational"
+    ]
+  },
+  {
+    "date": "2026-10-22",
+    "title": "Trimming a small model's vocabulary cuts running costs by 77%",
+    "summary": "Dharma AI describes VocabX, a method for specialising the vocabulary of small language models.",
+    "source_urls": [
+      "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
     ]
   }
 ]
