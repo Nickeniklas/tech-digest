@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-10-15",
-    "title": "AI simulates extreme weather at 3 km detail for a fraction of the cost",
-    "summary": "The Allen Institute for AI (Ai2) released HiRO-ACEv2, an AI climate emulator — a model that imitates expensive physics-based climate simulations.",
-    "source_urls": [
-      "https://huggingface.co/blog/allenai/hiro-acev2"
-    ]
-  },
-  {
-    "date": "2026-10-15",
-    "title": "Experts: AI \"hacking\" incidents come down to basic security lapses",
-    "summary": "Security experts quoted by CSO Online argue that recent reports of AI agents hacking systems aren't about AI going rogue — they're about AI labs skipping basic containment and monitoring.",
-    "source_urls": [
-      "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html"
-    ]
-  },
-  {
-    "date": "2026-10-15",
-    "title": "Google is quietly linking your phone number across accounts",
-    "summary": "Android Authority reports that Google is automatically linking your phone number to every Google account signed in on your phone, without asking.",
-    "source_urls": [
-      "https://www.androidauthority.com/google-auto-phone-number-verification-android-3723117/"
-    ]
-  },
-  {
-    "date": "2026-10-15",
-    "title": "OpenCode 2.0 is out",
-    "summary": "OpenCode, an open-source AI coding assistant, has released version 2.",
-    "source_urls": [
-      "https://anoma.ly/notes/opencode-2-0/"
-    ]
-  },
-  {
-    "date": "2026-10-15",
-    "title": "Security researcher: passkeys are not a trap",
-    "summary": "Security researcher Scott Helme pushes back on the worry that passkeys — sign-ins that use your phone or laptop's fingerprint, face or PIN instead of a password — lock you into one company's ecosystem.",
-    "source_urls": [
-      "https://scotthelme.co.uk/passkeys-are-not-a-trap/"
-    ]
-  },
-  {
-    "date": "2026-10-15",
-    "title": "GitHub rebuilds star history with 99% fewer requests",
-    "summary": "GitHub launched a new API for a repository's star history — how a project's popularity has grown over time.",
-    "source_urls": [
-      "https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/"
-    ]
-  },
-  {
     "date": "2026-10-16",
     "title": "Meta releases Muse Spark Open, a free-to-download AI model",
     "summary": "Meta published Muse Spark Open, an open-weight AI model — the full model files are free to download — that understands text, images and audio and can work with long documents.",
@@ -429,6 +381,62 @@
     "summary": "Dharma AI describes VocabX, a method for specialising the vocabulary of small language models.",
     "source_urls": [
       "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
+    ]
+  },
+  {
+    "date": "2026-10-23",
+    "title": "OlmoEarth v1.3 maps the whole planet with AI — and you can explore it in your browser",
+    "summary": "The Allen Institute for AI released OlmoEarth v1.",
+    "source_urls": [
+      "https://huggingface.co/blog/allenai/olmoearth-v1-3"
+    ]
+  },
+  {
+    "date": "2026-10-23",
+    "title": "Xbox wants to charge per hour to stream games you already bought",
+    "summary": "Ars Technica reports that Xbox plans to charge 24 to 40 cents per hour to stream games from the cloud, including games you've already paid for.",
+    "source_urls": [
+      "https://arstechnica.com/gaming/2026/10/xbox-wants-you-to-pay-24-to-40-cents-per-hour-to-stream-games-you-already-bought/"
+    ]
+  },
+  {
+    "date": "2026-10-23",
+    "title": "Quad9 is leaving France",
+    "summary": "Quad9, a free non-profit service that translates website names into addresses and blocks known malicious sites, announced it is exiting France.",
+    "source_urls": [
+      "https://quad9.net/news/blog/au-revoir-france/"
+    ]
+  },
+  {
+    "date": "2026-10-23",
+    "title": "eMudhra quits the website certificate business",
+    "summary": "Previously covered on 2026-10-21: a report described a compromise of one of eMudhra's certificate authorities, the organisations that vouch for websites as secure.",
+    "source_urls": [
+      "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business"
+    ]
+  },
+  {
+    "date": "2026-10-23",
+    "title": "Anthropic: AI is making mathematically proven software practical",
+    "summary": "Anthropic published research arguing that AI models are making formal verification — mathematically proving that software does exactly what it should — feasible at a much larger scale.",
+    "source_urls": [
+      "https://www.anthropic.com/research/formal-verification"
+    ]
+  },
+  {
+    "date": "2026-10-23",
+    "title": "GitHub has copied 99.99999% of its repositories to Azure",
+    "summary": "GitHub says it has moved a copy of 99.",
+    "source_urls": [
+      "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/"
+    ]
+  },
+  {
+    "date": "2026-10-23",
+    "title": "Rebuilding GitHub's star history: from 2,500 requests to 24",
+    "summary": "GitHub launched a new API that shows how a project's star count changed over time.",
+    "source_urls": [
+      "https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/"
     ]
   }
 ]
