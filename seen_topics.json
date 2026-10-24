@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-16",
-    "title": "Meta releases Muse Spark Open, a free-to-download AI model",
-    "summary": "Meta published Muse Spark Open, an open-weight AI model — the full model files are free to download — that understands text, images and audio and can work with long documents.",
-    "source_urls": [
-      "https://huggingface.co/blog/meta-muse-spark-open"
-    ]
-  },
-  {
-    "date": "2026-10-16",
-    "title": "Meta's new terms let it scrape business websites from October 30",
-    "summary": "Nieman Lab reports that Meta's new commercial terms mean business accounts will consent to Meta scraping their websites starting October 30.",
-    "source_urls": [
-      "https://www.niemanlab.org/2026/10/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say/"
-    ]
-  },
-  {
-    "date": "2026-10-16",
-    "title": "Targeted ads used to deliver spyware with zero clicks",
-    "summary": "Researchers at Citizen Lab describe how a company called Discover Tech turned targeted online ads into a delivery route for mercenary spyware.",
-    "source_urls": [
-      "https://citizenlab.ca/research/how-discover-tech-turned-targeted-ads-into-a-pipeline-for-spyware/"
-    ]
-  },
-  {
-    "date": "2026-10-16",
-    "title": "Krea 3: an AI image model built for editing",
-    "summary": "Krea released Krea 3, an image model designed for editing pictures at scale rather than only creating new ones from scratch.",
-    "source_urls": [
-      "https://www.krea.ai/krea-3"
-    ]
-  },
-  {
-    "date": "2026-10-16",
-    "title": "Internet routes are now 70% protected against hijacking",
-    "summary": "IPinfo reports that RPKI, a system that verifies who is allowed to direct internet traffic to a given address, now protects 70% of internet routes.",
-    "source_urls": [
-      "https://ipinfo.io/blog/rpki-protects-70-internet-routes"
-    ]
-  },
-  {
-    "date": "2026-10-16",
-    "title": "IBM's Granite Switch 4.1: chat, decisions and speech from one endpoint",
-    "summary": "IBM released Granite Switch 4.",
-    "source_urls": [
-      "https://huggingface.co/blog/ibm-granite/granite-switch-4-1"
-    ]
-  },
-  {
-    "date": "2026-10-16",
-    "title": "NVIDIA opens a 2.8-trillion-token dataset for Indian languages",
-    "summary": "NVIDIA published a 2.",
-    "source_urls": [
-      "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
-    ]
-  },
-  {
     "date": "2026-10-17",
     "title": "AI benchmarks miss 90% of the work people actually do",
     "summary": "Mercor mapped how US working hours are spent against the benchmarks AI labs use to measure their models, and found that 90% of working hours go to tasks those tests don't cover well.",
@@ -437,6 +381,62 @@
     "summary": "GitHub launched a new API that shows how a project's star count changed over time.",
     "source_urls": [
       "https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/"
+    ]
+  },
+  {
+    "date": "2026-10-24",
+    "title": "Google may use your Gmail and Photos to target ads",
+    "summary": "The Verge reports that Google has updated its privacy policy, tied to its 'personal intelligence' AI features, to say it might use data from your Gmail and Google Photos to target ads.",
+    "source_urls": [
+      "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update"
+    ]
+  },
+  {
+    "date": "2026-10-24",
+    "title": "Anthropic maps out possible futures for an AI economy",
+    "summary": "Anthropic published 'Scenarios for our economic future', which starts from an honest admission: nobody yet knows how AI will reshape the economy.",
+    "source_urls": [
+      "https://www.anthropic.com/institute/econ-scenarios"
+    ]
+  },
+  {
+    "date": "2026-10-24",
+    "title": "From a health worker's notebook to an Ebola situation report",
+    "summary": "Anthropic's feature 'The Situation Report' follows the Ebola response in the eastern Democratic Republic of the Congo, where community health workers record fevers, recoveries and deaths and text their notes over WhatsApp.",
+    "source_urls": [
+      "https://www.anthropic.com/features/ebola-response"
+    ]
+  },
+  {
+    "date": "2026-10-24",
+    "title": "Kimi releases K3.1 Pro and a faster Highspeed version",
+    "summary": "Kimi, the AI assistant from Chinese company Moonshot AI, released two new models: K3.",
+    "source_urls": [
+      "https://www.kimi.ai/blog/kimi-k3-1-pro"
+    ]
+  },
+  {
+    "date": "2026-10-24",
+    "title": "LitPivot helps researchers see where their idea fits",
+    "summary": "The Allen Institute for AI introduced LitPivot, a tool that helps researchers develop ideas by showing them how relevant papers change the picture.",
+    "source_urls": [
+      "https://huggingface.co/blog/allenai/litpivot"
+    ]
+  },
+  {
+    "date": "2026-10-24",
+    "title": "Hugging Face lists which models run on AWS Trainium",
+    "summary": "Previously covered on 2026-10-20: Hugging Face introduced TorchNeuron, a native PyTorch backend for Amazon's Trainium AI chips.",
+    "source_urls": [
+      "https://huggingface.co/blog/torch-neuronx-model-support"
+    ]
+  },
+  {
+    "date": "2026-10-24",
+    "title": "Astral brings its uv and ty Python tools together",
+    "summary": "Astral, the company behind uv (a fast tool for installing Python packages and managing projects) and ty (a tool that checks Python code for type errors before it runs), announced an integration between the two.",
+    "source_urls": [
+      "https://astral.sh/blog/uv-ty-integration"
     ]
   }
 ]
