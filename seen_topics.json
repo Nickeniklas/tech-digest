@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-17",
-    "title": "AI benchmarks miss 90% of the work people actually do",
-    "summary": "Mercor mapped how US working hours are spent against the benchmarks AI labs use to measure their models, and found that 90% of working hours go to tasks those tests don't cover well.",
-    "source_urls": [
-      "https://www.mercor.com/research/labor-index/benchmark-map/"
-    ]
-  },
-  {
-    "date": "2026-10-17",
-    "title": "Waymo heads to Toronto",
-    "summary": "Waymo, the self-driving taxi company owned by Google's parent Alphabet, announced Toronto as a new city for its driverless cars.",
-    "source_urls": [
-      "https://waymo.com/blog/2026/10/waymo-in-toronto/"
-    ]
-  },
-  {
-    "date": "2026-10-17",
-    "title": "Claude helps design more efficient quantum circuits",
-    "summary": "Anthropic published research on using Claude to design quantum circuits — the step-by-step instructions quantum computers run — that run more efficiently.",
-    "source_urls": [
-      "https://www.anthropic.com/research/designing-efficient-quantum-circuits"
-    ]
-  },
-  {
-    "date": "2026-10-17",
-    "title": "FLUX 3 Image Klein: a new image generator from Black Forest Labs",
-    "summary": "Black Forest Labs released FLUX 3 Image Klein, a new AI image model, and it is already available in Hugging Face's Diffusers library for anyone to run.",
-    "source_urls": [
-      "https://bfl.ai/blog/flux-3-image-klein"
-    ]
-  },
-  {
-    "date": "2026-10-17",
-    "title": "Tiny magnetic robots deliver medicine inside a beating heart",
-    "summary": "Johns Hopkins researchers built wireless millirobots, steered by magnets from outside the body, that can carry medicine to the heart while it keeps beating.",
-    "source_urls": [
-      "https://hub.jhu.edu/2026/10/12/magnetic-millirobots-cardiac-treatment/"
-    ]
-  },
-  {
-    "date": "2026-10-17",
-    "title": "Beam: a 501-billion-parameter open model you can run yourself",
-    "summary": "Reflection released Beam, an open model with 501 billion parameters (the internal settings a model learns during training).",
-    "source_urls": [
-      "https://huggingface.co/blog/reflection-beam"
-    ]
-  },
-  {
-    "date": "2026-10-17",
-    "title": "Apple runs Meta's Muse Spark Open across Mac Studios",
-    "summary": "Previously covered on 2026-10-16: Meta released Muse Spark Open, a free-to-download model that handles text, images and audio.",
-    "source_urls": [
-      "https://machinelearning.apple.com/research/mlx-distributed-inference"
-    ]
-  },
-  {
     "date": "2026-10-18",
     "title": "New York bill would make bought games yours to keep",
     "summary": "A New York state representative has announced a game ownership bill that would require publishers to sell games to consumers outright, rather than selling a licence to play them.",
@@ -437,6 +381,62 @@
     "summary": "Astral, the company behind uv (a fast tool for installing Python packages and managing projects) and ty (a tool that checks Python code for type errors before it runs), announced an integration between the two.",
     "source_urls": [
       "https://astral.sh/blog/uv-ty-integration"
+    ]
+  },
+  {
+    "date": "2026-10-25",
+    "title": "How much of the creative job slump is AI?",
+    "summary": "Economics newsletter Apricitas looks at the roughly 200,000 jobs the US has lost in media, film and the arts, and asks how much of that decline AI can actually explain.",
+    "source_urls": [
+      "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class"
+    ]
+  },
+  {
+    "date": "2026-10-25",
+    "title": "Terence Tao launches a hub to check OpenAI's math write-ups",
+    "summary": "Mathematician Terence Tao announced oai-math-revised, a community project where people can review and revise the write-ups OpenAI has published about math results.",
+    "source_urls": [
+      "https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/"
+    ]
+  },
+  {
+    "date": "2026-10-25",
+    "title": "A security flaw spreads to many web software libraries",
+    "summary": "Security firm Aikido reports that a vulnerability known as Node2Shell has evolved into HTTP2Shell, and now affects many libraries and apps that handle web traffic, including Python packages.",
+    "source_urls": [
+      "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497"
+    ]
+  },
+  {
+    "date": "2026-10-25",
+    "title": "How three Java experts use GitHub Copilot day to day",
+    "summary": "GitHub asked three Java Champions — recognised experts in the Java programming language — how they use its Copilot AI assistant.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/"
+    ]
+  },
+  {
+    "date": "2026-10-25",
+    "title": "Roku moves its developer projects from GitHub to GitLab",
+    "summary": "Roku says its developer code repositories have moved from GitHub to GitLab, a competing platform.",
+    "source_urls": [
+      "https://blog.roku.com/developer/gitlab-move"
+    ]
+  },
+  {
+    "date": "2026-10-25",
+    "title": "ThinkingBox: training AI agents by checking the database, not their word",
+    "summary": "Microsoft released ThinkingBox-Training on GitHub, a follow-up to its earlier post 'The Agent Said It Was Done.",
+    "source_urls": [
+      "https://huggingface.co/blog/microsoft/thinkingbox-training"
+    ]
+  },
+  {
+    "date": "2026-10-25",
+    "title": "Cerebras explains how it runs trillion-parameter models",
+    "summary": "AI chipmaker Cerebras published a write-up on how it deploys frontier AI models with around a trillion parameters — the internal settings a model learns during training — on its own hardware.",
+    "source_urls": [
+      "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras"
     ]
   }
 ]
