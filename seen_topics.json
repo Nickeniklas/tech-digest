@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-18",
-    "title": "New York bill would make bought games yours to keep",
-    "summary": "A New York state representative has announced a game ownership bill that would require publishers to sell games to consumers outright, rather than selling a licence to play them.",
-    "source_urls": [
-      "https://www.tomshardware.com/video-games/new-york-rep-announces-game-ownership-bill-that-would-require-consumer-ownership-rather-than-sale-of-licenses-would-also-require-publishers-to-keep-the-game-functional-after-support-ends"
-    ]
-  },
-  {
-    "date": "2026-10-18",
-    "title": "DeepSeek publishes a new Flash model",
-    "summary": "Chinese AI lab DeepSeek has posted DeepSeek-V4.",
-    "source_urls": [
-      "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
-    ]
-  },
-  {
-    "date": "2026-10-18",
-    "title": "Solar now generates more power than nuclear worldwide",
-    "summary": "For the first time, solar power has overtaken nuclear power globally, pv magazine reports.",
-    "source_urls": [
-      "https://www.pv-magazine.com/2026/09/29/solar-surpasses-nuclear-power-globally-for-first-time/"
-    ]
-  },
-  {
-    "date": "2026-10-18",
-    "title": "Estonia's online voting code is public",
-    "summary": "The source code of Estonia's online voting system is available on GitHub for anyone to read.",
-    "source_urls": [
-      "https://github.com/valimised/ivxv"
-    ]
-  },
-  {
-    "date": "2026-10-18",
-    "title": "GitHub: the next developer interface is 'ambient intelligence'",
-    "summary": "GitHub argues that AI, agents, voice and physical controls are shifting software work from operating tools to simply saying what you want.",
-    "source_urls": [
-      "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/"
-    ]
-  },
-  {
-    "date": "2026-10-18",
-    "title": "GitHub's September reliability: two incidents, down from five",
-    "summary": "GitHub's availability report for September 2026 lists two incidents that degraded performance across its services.",
-    "source_urls": [
-      "https://github.blog/news-insights/company-news/github-availability-report-september-2026/"
-    ]
-  },
-  {
-    "date": "2026-10-18",
-    "title": "Lean now ships with verified kernels",
-    "summary": "Lean, a programming language used to write mathematical proofs that a computer can check, now ships with verified kernels, according to its creator Leonardo de Moura.",
-    "source_urls": [
-      "https://leodemoura.github.io/blog/2026-10-15-lean-now-ships-with-verified-kernels/"
-    ]
-  },
-  {
     "date": "2026-10-19",
     "title": "Anthropic expands its program for verified security professionals",
     "summary": "Anthropic launched an expanded Cyber Verification Program, which gives qualifying security professionals access to Claude's advanced cyber capabilities with fewer automatic blocks.",
@@ -437,6 +381,62 @@
     "summary": "AI chipmaker Cerebras published a write-up on how it deploys frontier AI models with around a trillion parameters — the internal settings a model learns during training — on its own hardware.",
     "source_urls": [
       "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras"
+    ]
+  },
+  {
+    "date": "2026-10-26",
+    "title": "AI prices have fallen by up to 80% in a few months",
+    "summary": "Data scientist Max Woolf looks at why OpenAI and Anthropic have cut the prices of their AI models by up to 80% within just a few months.",
+    "source_urls": [
+      "https://minimaxir.com/2026/10/cheap-llms/"
+    ]
+  },
+  {
+    "date": "2026-10-26",
+    "title": "A decade-old specialist AI beats today's chatbots at spotting skin cancer",
+    "summary": "Researchers report that a 10-year-old image-recognition model built only for skin cancer diagnosis outperforms today's leading general-purpose AI models at the task.",
+    "source_urls": [
+      "https://lynchlab.net/llm-skin-cancer"
+    ]
+  },
+  {
+    "date": "2026-10-26",
+    "title": "IBM's CEO: open AI models are now good and cheap enough to run in-house",
+    "summary": "IBM's chief executive says open-weight models — AI models that companies can download and run on their own computers — are now 'irresistibly good and cheap' to run on-premises, The Register reports.",
+    "source_urls": [
+      "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640"
+    ]
+  },
+  {
+    "date": "2026-10-26",
+    "title": "DreamHost is forcing password resets during an active incident",
+    "summary": "Web hosting company DreamHost's status page reports an active incident that is forcing customers to reset their passwords.",
+    "source_urls": [
+      "https://www.dreamhoststatus.com/"
+    ]
+  },
+  {
+    "date": "2026-10-26",
+    "title": "Losing a job to AI costs more than a paycheck",
+    "summary": "The Economist argues that if AI displaces human workers, they will lose more than just their pay.",
+    "source_urls": [
+      "https://www.economist.com/business/2026/10/22/if-ai-displaces-human-workers-they-will-lose-more-than-just-pay"
+    ]
+  },
+  {
+    "date": "2026-10-26",
+    "title": "Reflection releases Beam, a 501-billion-parameter open model",
+    "summary": "Hugging Face welcomed Beam, a new open model with 501 billion parameters — the internal settings a model learns during training, and a rough measure of its size.",
+    "source_urls": [
+      "https://huggingface.co/blog/reflection-beam"
+    ]
+  },
+  {
+    "date": "2026-10-26",
+    "title": "The state of context engineering",
+    "summary": "Writer Drew Breunig surveys the state of context engineering — the practice of carefully choosing what information you feed an AI model alongside your request, so it has exactly what it needs to do the job well.",
+    "source_urls": [
+      "https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html"
     ]
   }
 ]
