@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-10-19",
-    "title": "Anthropic expands its program for verified security professionals",
-    "summary": "Anthropic launched an expanded Cyber Verification Program, which gives qualifying security professionals access to Claude's advanced cyber capabilities with fewer automatic blocks.",
-    "source_urls": [
-      "https://www.anthropic.com/news/cyber-verification-program"
-    ]
-  },
-  {
-    "date": "2026-10-19",
-    "title": "Terence Tao: mathematics is on a \"war footing\" over AI",
-    "summary": "The New York Times profiles Terence Tao, one of the world's leading mathematicians, on what it calls a crisis in math as AI becomes able to do more of the work.",
-    "source_urls": [
-      "https://www.nytimes.com/2026/10/16/us/math-ai-terence-tao.html"
-    ]
-  },
-  {
-    "date": "2026-10-19",
-    "title": "Footage released of a Flock camera search a judge ruled unconstitutional",
-    "summary": "404 Media published footage of a search using Flock, a network of licence-plate-reading cameras used by police, which a judge ruled unconstitutional.",
-    "source_urls": [
-      "https://www.404media.co/watch-footage-of-the-flock-search-a-judge-ruled-unconstitutional/"
-    ]
-  },
-  {
-    "date": "2026-10-19",
-    "title": "Two bugs in Broadcom WiFi code affect many routers",
-    "summary": "A security researcher found two flaws in a single piece of Broadcom WiFi software that ships inside many different routers, running on more than one operating system.",
-    "source_urls": [
-      "https://quentinkaiser.be/security/2026/10/16/one-parser-two-bugs/"
-    ]
-  },
-  {
-    "date": "2026-10-19",
-    "title": "GitHub shows how it cleans up old access and stale projects automatically",
-    "summary": "GitHub explained how it uses its own built-in features to regularly review which outside collaborators still have access and to archive projects nobody uses anymore.",
-    "source_urls": [
-      "https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/"
-    ]
-  },
-  {
-    "date": "2026-10-19",
-    "title": "Hybrid reasoning agents: think silently, act in words",
-    "summary": "A new research paper proposes AI agents that do their reasoning in latent space — the model's internal numerical representation — instead of writing out every step as text, and only switch to text when they act.",
-    "source_urls": [
-      "https://arxiv.org/abs/2610.18861"
-    ]
-  },
-  {
     "date": "2026-10-20",
     "title": "WhatsApp's help pages hid instructions aimed at AI assistants",
     "summary": "Privacy company Redact reports that WhatsApp's help pages contained hidden text written for AI chatbots, instructing them not to recommend contacting a regulator.",
@@ -437,6 +389,62 @@
     "summary": "Writer Drew Breunig surveys the state of context engineering — the practice of carefully choosing what information you feed an AI model alongside your request, so it has exactly what it needs to do the job well.",
     "source_urls": [
       "https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html"
+    ]
+  },
+  {
+    "date": "2026-10-27",
+    "title": "OpenAI reports three new discoveries in maths, computer science and physics",
+    "summary": "OpenAI published a post describing three new results in mathematics, computer science and physics, built with academic researchers.",
+    "source_urls": [
+      "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
+    ]
+  },
+  {
+    "date": "2026-10-27",
+    "title": "OpenAI introduces GPT-6.1 Terra",
+    "summary": "OpenAI announced a new model, GPT-6.",
+    "source_urls": [
+      "https://openai.com/index/introducing-gpt-6-1-terra/"
+    ]
+  },
+  {
+    "date": "2026-10-27",
+    "title": "Cloudflare's AI service leaked responses between users",
+    "summary": "Cloudflare disclosed that its Workers AI service exposed parts of some requests to other users when running the GLM-5.",
+    "source_urls": [
+      "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+    ]
+  },
+  {
+    "date": "2026-10-27",
+    "title": "Microsoft offers buyouts to about a quarter of its staff",
+    "summary": "The Seattle Times reports that Microsoft is offering voluntary buyouts to roughly a quarter of its workforce.",
+    "source_urls": [
+      "https://www.seattletimes.com/business/microsoft/microsoft-offers-mass-buyouts-for-roughly-a-quarter-of-its-workforce/"
+    ]
+  },
+  {
+    "date": "2026-10-27",
+    "title": "Solar power is overtaking nuclear",
+    "summary": "BBC Future looks at how solar power is becoming a bigger source of electricity than nuclear.",
+    "source_urls": [
+      "https://www.bbc.com/future/article/20261023-how-solar-became-bigger-than-nuclear"
+    ]
+  },
+  {
+    "date": "2026-10-27",
+    "title": "Blaze claims Rust builds up to 92x faster",
+    "summary": "A new open-source project, Blaze, says it makes incremental builds of Rust programs — rebuilding after a small code change — up to 92 times faster than Rust's standard tools, cargo and rustc.",
+    "source_urls": [
+      "https://github.com/indexable-inc/blaze"
+    ]
+  },
+  {
+    "date": "2026-10-27",
+    "title": "Sebastian Raschka's course on building reasoning models from scratch",
+    "summary": "Machine learning author Sebastian Raschka released a from-scratch video course on building reasoning models — AI models that work through a problem step by step before answering.",
+    "source_urls": [
+      "https://magazine.sebastianraschka.com/p/building-reasoning-models"
     ]
   }
 ]
