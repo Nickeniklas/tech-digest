@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-20",
-    "title": "WhatsApp's help pages hid instructions aimed at AI assistants",
-    "summary": "Privacy company Redact reports that WhatsApp's help pages contained hidden text written for AI chatbots, instructing them not to recommend contacting a regulator.",
-    "source_urls": [
-      "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions"
-    ]
-  },
-  {
-    "date": "2026-10-20",
-    "title": "MiniMax releases M3.1 Flash",
-    "summary": "Chinese AI company MiniMax published M3.",
-    "source_urls": [
-      "https://www.minimax.io/blog/minimax-m31f"
-    ]
-  },
-  {
-    "date": "2026-10-20",
-    "title": "France's supermarket fridges were exposed online for months",
-    "summary": "Previously covered on 2026-10-13: hackers remotely defrosted supermarket fridges across Europe.",
-    "source_urls": [
-      "https://ipinfo.io/blog/france-fridges-hack"
-    ]
-  },
-  {
-    "date": "2026-10-20",
-    "title": "Move a Copilot app session into VS Code without starting over",
-    "summary": "GitHub explains how to hand off a session from its Copilot app to the VS Code editor while keeping the conversation, code changes and working context.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/"
-    ]
-  },
-  {
-    "date": "2026-10-20",
-    "title": "RuneScape Bench tests AI agents inside an online game",
-    "summary": "RuneScape Bench uses the long-running online game RuneScape as a testing ground for AI agents — programs that act on their own toward a goal.",
-    "source_urls": [
-      "https://www.youtube.com/watch?v=cNm4zyUtWj0"
-    ]
-  },
-  {
-    "date": "2026-10-20",
-    "title": "How \"abliterated\" models can get you hacked",
-    "summary": "Security firm ProjectDiscovery published research on the risks of abliterated models — open AI models that have been modified to remove their built-in refusals, so they'll answer anything.",
-    "source_urls": [
-      "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned"
-    ]
-  },
-  {
-    "date": "2026-10-20",
-    "title": "TorchNeuron: Hugging Face models now run natively on AWS Trainium",
-    "summary": "Hugging Face introduced TorchNeuron, a new native backend for PyTorch on AWS Trainium, Amazon's own AI chips.",
-    "source_urls": [
-      "https://huggingface.co/blog/hf-torchneuron"
-    ]
-  },
-  {
     "date": "2026-10-21",
     "title": "Claude Opus 5.5: top-tier performance at 40% lower cost",
     "summary": "Anthropic released Claude Opus 5.",
@@ -445,6 +389,62 @@
     "summary": "Machine learning author Sebastian Raschka released a from-scratch video course on building reasoning models — AI models that work through a problem step by step before answering.",
     "source_urls": [
       "https://magazine.sebastianraschka.com/p/building-reasoning-models"
+    ]
+  },
+  {
+    "date": "2026-10-28",
+    "title": "Liquid AI releases LFM3: one family of small models for text, images and audio",
+    "summary": "Liquid AI released LFM3, a new generation of its foundation models that puts text, vision, audio, combined 'omni' and decision-making models on one shared base.",
+    "source_urls": [
+      "https://huggingface.co/blog/LiquidAI/lfm3"
+    ]
+  },
+  {
+    "date": "2026-10-28",
+    "title": "Anthropic expands deal to bring Claude to all levels of US government",
+    "summary": "Anthropic is expanding its partnership with the GSA, the US agency that buys goods and services for the federal government, to make Claude available across all levels of government.",
+    "source_urls": [
+      "https://www.anthropic.com/news/expanding-partnership-gsa"
+    ]
+  },
+  {
+    "date": "2026-10-28",
+    "title": "Google DeepMind unveils Genie 4 for simulating virtual worlds",
+    "summary": "Google DeepMind introduced Genie 4, a new generation of its world-simulation models — AI that generates interactive environments you can move around in.",
+    "source_urls": [
+      "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+    ]
+  },
+  {
+    "date": "2026-10-28",
+    "title": "Anthropic reports early progress using Claude to speed up drug development",
+    "summary": "Anthropic published research on early results from using Claude to help accelerate the development of new medicines.",
+    "source_urls": [
+      "https://www.anthropic.com/research/early-progress-drug-development"
+    ]
+  },
+  {
+    "date": "2026-10-28",
+    "title": "Firmware flaw puts most of the world's servers at risk",
+    "summary": "Ars Technica reports a code-execution flaw in UEFI firmware — the low-level software that starts a computer before its operating system loads — that threatens most servers in use today.",
+    "source_urls": [
+      "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/"
+    ]
+  },
+  {
+    "date": "2026-10-28",
+    "title": "Can AI judge whether a research idea is actually new?",
+    "summary": "The Allen Institute for AI released 'Old Ideas, Novel Problems', a study of how reliably large language models can judge the novelty of scientific research ideas.",
+    "source_urls": [
+      "https://huggingface.co/blog/allenai/novelty-bench"
+    ]
+  },
+  {
+    "date": "2026-10-28",
+    "title": "Python's experimental speed-up compiler is being removed",
+    "summary": "LWN reports that Python's experimental JIT compiler — a feature that translates code into faster machine instructions while a program runs — is set to be removed from the language.",
+    "source_urls": [
+      "https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/"
     ]
   }
 ]
