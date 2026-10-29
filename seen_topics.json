@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-21",
-    "title": "Claude Opus 5.5: top-tier performance at 40% lower cost",
-    "summary": "Anthropic released Claude Opus 5.",
-    "source_urls": [
-      "https://www.anthropic.com/claude-opus-5-5"
-    ]
-  },
-  {
-    "date": "2026-10-21",
-    "title": "Google Cloud outage disrupts banks across Europe",
-    "summary": "A Google Cloud outage knocked out services at banks and financial firms across Europe, Neowin reports, including HSBC, Revolut, Bank of Scotland, Lloyds and Equifax.",
-    "source_urls": [
-      "https://www.neowin.net/news/google-cloud-outage-takes-down-hsbc-revolut-bank-of-scotland-llyods-equifax-more/"
-    ]
-  },
-  {
-    "date": "2026-10-21",
-    "title": "Mistral releases Voxtral 3",
-    "summary": "French AI company Mistral released Voxtral 3, the latest version of its speech-focused AI model.",
-    "source_urls": [
-      "https://mistral.ai/news/voxtral-3/"
-    ]
-  },
-  {
-    "date": "2026-10-21",
-    "title": "A website security certificate authority was compromised",
-    "summary": "A public report describes a compromise of an intermediate certificate authority belonging to eMudhra — one of the organisations that vouch for websites so your browser shows them as secure.",
-    "source_urls": [
-      "https://emudhra.we-have-a-problem.com/"
-    ]
-  },
-  {
-    "date": "2026-10-21",
-    "title": "Google open-sources TorchTPU",
-    "summary": "Google open-sourced TorchTPU, which lets PyTorch — the most widely used toolkit for building AI models — run natively on Google's own AI chips, called TPUs.",
-    "source_urls": [
-      "https://github.com/google-pytorch/torch_tpu"
-    ]
-  },
-  {
-    "date": "2026-10-21",
-    "title": "ALTK-Evolve: learned memory beats bigger models at customer service",
-    "summary": "IBM Research showed that giving a basic AI agent running GPT-4.",
-    "source_urls": [
-      "https://huggingface.co/blog/ibm-research/altk-evolve-bc"
-    ]
-  },
-  {
-    "date": "2026-10-21",
-    "title": "FairStress: testing whether AI is fair in how it decides, not just what it decides",
-    "summary": "The Allen Institute for AI released FairStress, an evaluation that measures fairness in AI decision-making beyond the final answer.",
-    "source_urls": [
-      "https://huggingface.co/blog/allenai/fairstress"
-    ]
-  },
-  {
     "date": "2026-10-22",
     "title": "OpenAI's models are coming to Google Cloud",
     "summary": "OpenAI announced that its AI models will be available through Google Cloud, one of the big three cloud platforms many businesses already pay for.",
@@ -445,6 +389,62 @@
     "summary": "LWN reports that Python's experimental JIT compiler — a feature that translates code into faster machine instructions while a program runs — is set to be removed from the language.",
     "source_urls": [
       "https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/"
+    ]
+  },
+  {
+    "date": "2026-10-29",
+    "title": "Anthropic releases Claude Opus 5.5, at 40% lower cost",
+    "summary": "Anthropic introduced Claude Opus 5.",
+    "source_urls": [
+      "https://www.anthropic.com/claude-opus-5-5"
+    ]
+  },
+  {
+    "date": "2026-10-29",
+    "title": "Google introduces Gemini 4 Carbon",
+    "summary": "Google announced Gemini 4 Carbon, a new model in its Gemini family, on its official blog.",
+    "source_urls": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+    ]
+  },
+  {
+    "date": "2026-10-29",
+    "title": "Developers are building with AI agents at record levels",
+    "summary": "GitHub's 2026 Octoverse report says commits and pushes — the basic units of saving and sharing code — reached new highs this year as developers increasingly work with AI agents.",
+    "source_urls": [
+      "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"
+    ]
+  },
+  {
+    "date": "2026-10-29",
+    "title": "Testing AI agents on 50 real tax assignments",
+    "summary": "Surge AI published Dayjob: Tax, an evaluation of how well AI agents handle 50 professional tax assignments.",
+    "source_urls": [
+      "https://surgehq.ai/blog/dayjob-tax"
+    ]
+  },
+  {
+    "date": "2026-10-29",
+    "title": "GitHub lays out its vision at Universe 2026",
+    "summary": "At its annual Universe conference, GitHub described its plan to become an end-to-end system for delivering software, from writing code to shipping it.",
+    "source_urls": [
+      "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/"
+    ]
+  },
+  {
+    "date": "2026-10-29",
+    "title": "NVIDIA's Nemotron 3.5 Transcribe: speech-to-text you can steer",
+    "summary": "NVIDIA released Nemotron 3.",
+    "source_urls": [
+      "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+    ]
+  },
+  {
+    "date": "2026-10-29",
+    "title": "Qwenputer: a working computer chip simulated inside an AI model",
+    "summary": "A developer built Qwenputer, a functioning, deterministic RISC-V CPU — a simple processor design — running inside the Qwen3.",
+    "source_urls": [
+      "https://divagr.com/blog/qwenputer"
     ]
   }
 ]
