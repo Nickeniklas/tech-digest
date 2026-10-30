@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-22",
-    "title": "OpenAI's models are coming to Google Cloud",
-    "summary": "OpenAI announced that its AI models will be available through Google Cloud, one of the big three cloud platforms many businesses already pay for.",
-    "source_urls": [
-      "https://openai.com/index/openai-models-google-cloud/"
-    ]
-  },
-  {
-    "date": "2026-10-22",
-    "title": "Australian court orders Apple to open up the iPhone",
-    "summary": "In the Epic vs.",
-    "source_urls": [
-      "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/2026/2026fca1552"
-    ]
-  },
-  {
-    "date": "2026-10-22",
-    "title": "Meta ordered to pay $25 billion in New Mexico Cambridge Analytica case",
-    "summary": "CNBC reports that Meta has been ordered to pay a $25 billion penalty in New Mexico over the Cambridge Analytica scandal, in which Facebook users' data was harvested for political targeting.",
-    "source_urls": [
-      "https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html"
-    ]
-  },
-  {
-    "date": "2026-10-22",
-    "title": "A popular AI software tool was hijacked to steal passwords",
-    "summary": "Security firm SafeDep found that version 1.",
-    "source_urls": [
-      "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/"
-    ]
-  },
-  {
-    "date": "2026-10-22",
-    "title": "IBM releases Granite Speech 5.0",
-    "summary": "IBM published Granite Speech 5.",
-    "source_urls": [
-      "https://huggingface.co/blog/ibm-granite/granite-speech-5"
-    ]
-  },
-  {
-    "date": "2026-10-22",
-    "title": "NVIDIA Kumo Relational predicts from business databases with no training",
-    "summary": "NVIDIA introduced Kumo Relational, a pre-trained model that makes predictions directly on company databases.",
-    "source_urls": [
-      "https://huggingface.co/blog/nvidia/kumo-relational"
-    ]
-  },
-  {
-    "date": "2026-10-22",
-    "title": "Trimming a small model's vocabulary cuts running costs by 77%",
-    "summary": "Dharma AI describes VocabX, a method for specialising the vocabulary of small language models.",
-    "source_urls": [
-      "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
-    ]
-  },
-  {
     "date": "2026-10-23",
     "title": "OlmoEarth v1.3 maps the whole planet with AI — and you can explore it in your browser",
     "summary": "The Allen Institute for AI released OlmoEarth v1.",
@@ -445,6 +389,62 @@
     "summary": "A developer built Qwenputer, a functioning, deterministic RISC-V CPU — a simple processor design — running inside the Qwen3.",
     "source_urls": [
       "https://divagr.com/blog/qwenputer"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "title": "Mistral releases Large 4 as a free, downloadable model",
+    "summary": "French AI company Mistral released the weights of Mistral Large 4 — the files you need to run the model yourself — and it is now on Hugging Face.",
+    "source_urls": [
+      "https://huggingface.co/blog/mistral-large4"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "title": "Study: school-wide phone bans show no clear mental health effect",
+    "summary": "A study in JAMA Network Open found that school-wide phone bans had no significant impact on students' mental health.",
+    "source_urls": [
+      "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855858"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "title": "$5.6 billion reported stolen from Binance",
+    "summary": "Blockchain tracking site Arkham is tracking an entity it labels a Binance hacker, linked to about $5.",
+    "source_urls": [
+      "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "title": "Project ProtoStar aims to make public research easier for AI to use",
+    "summary": "Hugging Face announced Project ProtoStar, which brings together universities, research organisations, industry and the open science community.",
+    "source_urls": [
+      "https://huggingface.co/blog/announcing-project-protostar"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "title": "New open models for speech and decisions on Apple devices",
+    "summary": "Hugging Face introduced AnySpeechRecognizer and AnyDecisionModel, open models built to run on Apple platforms.",
+    "source_urls": [
+      "https://huggingface.co/blog/anydecisionmodel"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "title": "Granite Switch 4.1.1: updating AI models like software",
+    "summary": "IBM released Granite Switch 4.",
+    "source_urls": [
+      "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "title": "Shrinking a small model's vocabulary cuts running costs by 77%",
+    "summary": "Dharma AI reports that specialising the vocabulary of small language models — trimming the set of word-pieces a model knows down to those a given application actually uses — cut inference cost, the cost of running the model, by up to 77% in real applications.",
+    "source_urls": [
+      "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
     ]
   }
 ]
