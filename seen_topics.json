@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-25",
-    "title": "How much of the creative job slump is AI?",
-    "summary": "Economics newsletter Apricitas looks at the roughly 200,000 jobs the US has lost in media, film and the arts, and asks how much of that decline AI can actually explain.",
-    "source_urls": [
-      "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class"
-    ]
-  },
-  {
-    "date": "2026-10-25",
-    "title": "Terence Tao launches a hub to check OpenAI's math write-ups",
-    "summary": "Mathematician Terence Tao announced oai-math-revised, a community project where people can review and revise the write-ups OpenAI has published about math results.",
-    "source_urls": [
-      "https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/"
-    ]
-  },
-  {
-    "date": "2026-10-25",
-    "title": "A security flaw spreads to many web software libraries",
-    "summary": "Security firm Aikido reports that a vulnerability known as Node2Shell has evolved into HTTP2Shell, and now affects many libraries and apps that handle web traffic, including Python packages.",
-    "source_urls": [
-      "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497"
-    ]
-  },
-  {
-    "date": "2026-10-25",
-    "title": "How three Java experts use GitHub Copilot day to day",
-    "summary": "GitHub asked three Java Champions — recognised experts in the Java programming language — how they use its Copilot AI assistant.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/"
-    ]
-  },
-  {
-    "date": "2026-10-25",
-    "title": "Roku moves its developer projects from GitHub to GitLab",
-    "summary": "Roku says its developer code repositories have moved from GitHub to GitLab, a competing platform.",
-    "source_urls": [
-      "https://blog.roku.com/developer/gitlab-move"
-    ]
-  },
-  {
-    "date": "2026-10-25",
-    "title": "ThinkingBox: training AI agents by checking the database, not their word",
-    "summary": "Microsoft released ThinkingBox-Training on GitHub, a follow-up to its earlier post 'The Agent Said It Was Done.",
-    "source_urls": [
-      "https://huggingface.co/blog/microsoft/thinkingbox-training"
-    ]
-  },
-  {
-    "date": "2026-10-25",
-    "title": "Cerebras explains how it runs trillion-parameter models",
-    "summary": "AI chipmaker Cerebras published a write-up on how it deploys frontier AI models with around a trillion parameters — the internal settings a model learns during training — on its own hardware.",
-    "source_urls": [
-      "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras"
-    ]
-  },
-  {
     "date": "2026-10-26",
     "title": "AI prices have fallen by up to 80% in a few months",
     "summary": "Data scientist Max Woolf looks at why OpenAI and Anthropic have cut the prices of their AI models by up to 80% within just a few months.",
@@ -445,6 +389,62 @@
     "summary": "The open-source Memdoor project shows a workflow where five copies of Qwen3.",
     "source_urls": [
       "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve"
+    ]
+  },
+  {
+    "date": "2026-11-02",
+    "title": "Postgres 19 is running late — because AI keeps finding bugs",
+    "summary": "Robert Haas, a long-time developer of PostgreSQL — the free database behind countless websites and business apps — writes that the next release, Postgres 19, is delayed because far more bugs are being reported than before.",
+    "source_urls": [
+      "http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html"
+    ]
+  },
+  {
+    "date": "2026-11-02",
+    "title": "Terence Tao: mathematics has changed, so let's act like it",
+    "summary": "Fields Medal-winning mathematician Terence Tao has published an essay titled 'Mathematics has changed.",
+    "source_urls": [
+      "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/"
+    ]
+  },
+  {
+    "date": "2026-11-02",
+    "title": "AI-written fan wikis are spreading errors about video games",
+    "summary": "Eurogamer reports that fan wikis generated with AI are riddled with mistakes, making it harder for players to find reliable information about games.",
+    "source_urls": [
+      "https://www.eurogamer.net/ai-fan-wikis-errors-complicating-games-culture"
+    ]
+  },
+  {
+    "date": "2026-11-02",
+    "title": "Trigger.dev exposed customers' secret settings",
+    "summary": "Developer platform Trigger.",
+    "source_urls": [
+      "https://trigger.dev/blog/security-incident-nov-2026"
+    ]
+  },
+  {
+    "date": "2026-11-02",
+    "title": "GitHub's month-long game jam is back, with the theme SHIFT",
+    "summary": "GitHub's annual Game Off returns for its 14th year this November, inviting anyone to make a game inspired by the theme SHIFT.",
+    "source_urls": [
+      "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/"
+    ]
+  },
+  {
+    "date": "2026-11-02",
+    "title": "The AI cost of JavaScript frameworks",
+    "summary": "Web developer Nolan Lawson has written about 'the AI cost of JavaScript frameworks' — how the tools developers choose to build websites affect working with AI coding assistants.",
+    "source_urls": [
+      "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/"
+    ]
+  },
+  {
+    "date": "2026-11-02",
+    "title": "Lenovo's 'encrypted' fingerprint USB drive is just an SD card in a case",
+    "summary": "A widely shared report says a Lenovo USB drive marketed as encrypted and unlocked by fingerprint turns out to be an ordinary, unencrypted SD memory card inside a casing.",
+    "source_urls": [
+      "https://www.reddit.com/r/technology/comments/1xl2pr3/lenovos_encrypted_fingerprint_usb_drive_is_just/"
     ]
   }
 ]
