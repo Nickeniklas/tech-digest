@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-26",
-    "title": "AI prices have fallen by up to 80% in a few months",
-    "summary": "Data scientist Max Woolf looks at why OpenAI and Anthropic have cut the prices of their AI models by up to 80% within just a few months.",
-    "source_urls": [
-      "https://minimaxir.com/2026/10/cheap-llms/"
-    ]
-  },
-  {
-    "date": "2026-10-26",
-    "title": "A decade-old specialist AI beats today's chatbots at spotting skin cancer",
-    "summary": "Researchers report that a 10-year-old image-recognition model built only for skin cancer diagnosis outperforms today's leading general-purpose AI models at the task.",
-    "source_urls": [
-      "https://lynchlab.net/llm-skin-cancer"
-    ]
-  },
-  {
-    "date": "2026-10-26",
-    "title": "IBM's CEO: open AI models are now good and cheap enough to run in-house",
-    "summary": "IBM's chief executive says open-weight models — AI models that companies can download and run on their own computers — are now 'irresistibly good and cheap' to run on-premises, The Register reports.",
-    "source_urls": [
-      "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640"
-    ]
-  },
-  {
-    "date": "2026-10-26",
-    "title": "DreamHost is forcing password resets during an active incident",
-    "summary": "Web hosting company DreamHost's status page reports an active incident that is forcing customers to reset their passwords.",
-    "source_urls": [
-      "https://www.dreamhoststatus.com/"
-    ]
-  },
-  {
-    "date": "2026-10-26",
-    "title": "Losing a job to AI costs more than a paycheck",
-    "summary": "The Economist argues that if AI displaces human workers, they will lose more than just their pay.",
-    "source_urls": [
-      "https://www.economist.com/business/2026/10/22/if-ai-displaces-human-workers-they-will-lose-more-than-just-pay"
-    ]
-  },
-  {
-    "date": "2026-10-26",
-    "title": "Reflection releases Beam, a 501-billion-parameter open model",
-    "summary": "Hugging Face welcomed Beam, a new open model with 501 billion parameters — the internal settings a model learns during training, and a rough measure of its size.",
-    "source_urls": [
-      "https://huggingface.co/blog/reflection-beam"
-    ]
-  },
-  {
-    "date": "2026-10-26",
-    "title": "The state of context engineering",
-    "summary": "Writer Drew Breunig surveys the state of context engineering — the practice of carefully choosing what information you feed an AI model alongside your request, so it has exactly what it needs to do the job well.",
-    "source_urls": [
-      "https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html"
-    ]
-  },
-  {
     "date": "2026-10-27",
     "title": "OpenAI reports three new discoveries in maths, computer science and physics",
     "summary": "OpenAI published a post describing three new results in mathematics, computer science and physics, built with academic researchers.",
@@ -445,6 +389,62 @@
     "summary": "A widely shared report says a Lenovo USB drive marketed as encrypted and unlocked by fingerprint turns out to be an ordinary, unencrypted SD memory card inside a casing.",
     "source_urls": [
       "https://www.reddit.com/r/technology/comments/1xl2pr3/lenovos_encrypted_fingerprint_usb_drive_is_just/"
+    ]
+  },
+  {
+    "date": "2026-11-03",
+    "title": "NIST publishes a cybersecurity guide for the self-employed",
+    "summary": "NIST, the US agency that sets widely used cybersecurity standards, has released a cybersecurity guide written specifically for self-employed people and solopreneurs.",
+    "source_urls": [
+      "https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you"
+    ]
+  },
+  {
+    "date": "2026-11-03",
+    "title": "Ubuntu still hasn't patched a critical Linux flaw after nearly three weeks",
+    "summary": "Previously covered on 2026-11-01: a Linux networking bug, CVE-2026-98432, rated 9.",
+    "source_urls": [
+      "https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432"
+    ]
+  },
+  {
+    "date": "2026-11-03",
+    "title": "Terence Tao on 'egoless mathematics' in the AI era",
+    "summary": "Previously covered on 2026-11-02: Tao's essay arguing that mathematics has changed.",
+    "source_urls": [
+      "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/"
+    ]
+  },
+  {
+    "date": "2026-11-03",
+    "title": "An essay on resisting 'cognitive surrender' to AI",
+    "summary": "A widely discussed essay, 'Resisting Cognitive Surrender', looks at the risk of handing over your thinking — not just your tasks — to AI tools.",
+    "source_urls": [
+      "https://knlb.dev/essays/surrender"
+    ]
+  },
+  {
+    "date": "2026-11-03",
+    "title": "If you love a website, back it up",
+    "summary": "A popular blog post makes a simple case: websites you rely on can vanish, so save copies of the ones that matter to you.",
+    "source_urls": [
+      "https://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/"
+    ]
+  },
+  {
+    "date": "2026-11-03",
+    "title": "Cloudflare halves DNS build delay and cuts memory use by 85%",
+    "summary": "Cloudflare describes switching to targeted zone builds in its DNS system — the internet's address book, which turns website names into server addresses.",
+    "source_urls": [
+      "https://blog.cloudflare.com/dns-targeted-zone-builds/"
+    ]
+  },
+  {
+    "date": "2026-11-03",
+    "title": "OpenAI explains how it scales Git",
+    "summary": "OpenAI published an engineering post on scaling Git — the tool developers use to track every change to their code — inside the company.",
+    "source_urls": [
+      "https://openai.com/index/scaling-git-at-openai/"
     ]
   }
 ]
