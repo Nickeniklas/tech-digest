@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-27",
-    "title": "OpenAI reports three new discoveries in maths, computer science and physics",
-    "summary": "OpenAI published a post describing three new results in mathematics, computer science and physics, built with academic researchers.",
-    "source_urls": [
-      "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
-    ]
-  },
-  {
-    "date": "2026-10-27",
-    "title": "OpenAI introduces GPT-6.1 Terra",
-    "summary": "OpenAI announced a new model, GPT-6.",
-    "source_urls": [
-      "https://openai.com/index/introducing-gpt-6-1-terra/"
-    ]
-  },
-  {
-    "date": "2026-10-27",
-    "title": "Cloudflare's AI service leaked responses between users",
-    "summary": "Cloudflare disclosed that its Workers AI service exposed parts of some requests to other users when running the GLM-5.",
-    "source_urls": [
-      "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
-    ]
-  },
-  {
-    "date": "2026-10-27",
-    "title": "Microsoft offers buyouts to about a quarter of its staff",
-    "summary": "The Seattle Times reports that Microsoft is offering voluntary buyouts to roughly a quarter of its workforce.",
-    "source_urls": [
-      "https://www.seattletimes.com/business/microsoft/microsoft-offers-mass-buyouts-for-roughly-a-quarter-of-its-workforce/"
-    ]
-  },
-  {
-    "date": "2026-10-27",
-    "title": "Solar power is overtaking nuclear",
-    "summary": "BBC Future looks at how solar power is becoming a bigger source of electricity than nuclear.",
-    "source_urls": [
-      "https://www.bbc.com/future/article/20261023-how-solar-became-bigger-than-nuclear"
-    ]
-  },
-  {
-    "date": "2026-10-27",
-    "title": "Blaze claims Rust builds up to 92x faster",
-    "summary": "A new open-source project, Blaze, says it makes incremental builds of Rust programs — rebuilding after a small code change — up to 92 times faster than Rust's standard tools, cargo and rustc.",
-    "source_urls": [
-      "https://github.com/indexable-inc/blaze"
-    ]
-  },
-  {
-    "date": "2026-10-27",
-    "title": "Sebastian Raschka's course on building reasoning models from scratch",
-    "summary": "Machine learning author Sebastian Raschka released a from-scratch video course on building reasoning models — AI models that work through a problem step by step before answering.",
-    "source_urls": [
-      "https://magazine.sebastianraschka.com/p/building-reasoning-models"
-    ]
-  },
-  {
     "date": "2026-10-28",
     "title": "Liquid AI releases LFM3: one family of small models for text, images and audio",
     "summary": "Liquid AI released LFM3, a new generation of its foundation models that puts text, vision, audio, combined 'omni' and decision-making models on one shared base.",
@@ -445,6 +389,62 @@
     "summary": "OpenAI published an engineering post on scaling Git — the tool developers use to track every change to their code — inside the company.",
     "source_urls": [
       "https://openai.com/index/scaling-git-at-openai/"
+    ]
+  },
+  {
+    "date": "2026-11-04",
+    "title": "IBM's Palette teaches a small AI model to build decks in your own design style",
+    "summary": "IBM Research introduced Palette, a small AI model trained to build slide decks that follow a specific company template rather than a generic look.",
+    "source_urls": [
+      "https://huggingface.co/blog/ibm-research/palette-deck-building"
+    ]
+  },
+  {
+    "date": "2026-11-04",
+    "title": "Postman accused of quietly installing AI plugins",
+    "summary": "A widely discussed bug report on GitHub says the Postman app, a popular tool for testing how software services talk to each other, silently auto-installs AI plugins and attempts to share all of a user's API data.",
+    "source_urls": [
+      "https://github.com/postmanlabs/postman-app-support/issues/14370"
+    ]
+  },
+  {
+    "date": "2026-11-04",
+    "title": "Figma is training an AI model that speaks its language",
+    "summary": "Figma says it is training an editing model that is 'Figma-fluent' — built to understand and change designs inside Figma itself rather than describe them from the outside.",
+    "source_urls": [
+      "https://www.figma.com/blog/training-a-figma-fluent-editing-model/"
+    ]
+  },
+  {
+    "date": "2026-11-04",
+    "title": "AI is driving a comeback for magnetic tape",
+    "summary": "Fujifilm plans to boost its tape production fivefold as AI fuels demand for long-term data archiving, Ars Technica reports.",
+    "source_urls": [
+      "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/"
+    ]
+  },
+  {
+    "date": "2026-11-04",
+    "title": "Safari adds Adaptive Dark Mode",
+    "summary": "Apple's WebKit team introduced Adaptive Dark Mode in Safari 27.",
+    "source_urls": [
+      "https://webkit.org/blog/18541/introducing-adaptive-dark-mode/"
+    ]
+  },
+  {
+    "date": "2026-11-04",
+    "title": "StateBench: can AI keep track of what changes in a long document?",
+    "summary": "The Allen Institute for AI introduced StateBench, a benchmark for long-context state tracking — measuring how well language models keep track of information about people, things and places as it changes over the course of a long document.",
+    "source_urls": [
+      "https://huggingface.co/blog/allenai/statebench"
+    ]
+  },
+  {
+    "date": "2026-11-04",
+    "title": "CWE-bench v2 opens 100 public cybersecurity tasks for AI agents",
+    "summary": "Collinear AI released CWE-bench v2, a test of frontier AI models' cyber capabilities.",
+    "source_urls": [
+      "https://huggingface.co/blog/cwe-bench"
     ]
   }
 ]
