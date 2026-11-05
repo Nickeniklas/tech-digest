@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-28",
-    "title": "Liquid AI releases LFM3: one family of small models for text, images and audio",
-    "summary": "Liquid AI released LFM3, a new generation of its foundation models that puts text, vision, audio, combined 'omni' and decision-making models on one shared base.",
-    "source_urls": [
-      "https://huggingface.co/blog/LiquidAI/lfm3"
-    ]
-  },
-  {
-    "date": "2026-10-28",
-    "title": "Anthropic expands deal to bring Claude to all levels of US government",
-    "summary": "Anthropic is expanding its partnership with the GSA, the US agency that buys goods and services for the federal government, to make Claude available across all levels of government.",
-    "source_urls": [
-      "https://www.anthropic.com/news/expanding-partnership-gsa"
-    ]
-  },
-  {
-    "date": "2026-10-28",
-    "title": "Google DeepMind unveils Genie 4 for simulating virtual worlds",
-    "summary": "Google DeepMind introduced Genie 4, a new generation of its world-simulation models — AI that generates interactive environments you can move around in.",
-    "source_urls": [
-      "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
-    ]
-  },
-  {
-    "date": "2026-10-28",
-    "title": "Anthropic reports early progress using Claude to speed up drug development",
-    "summary": "Anthropic published research on early results from using Claude to help accelerate the development of new medicines.",
-    "source_urls": [
-      "https://www.anthropic.com/research/early-progress-drug-development"
-    ]
-  },
-  {
-    "date": "2026-10-28",
-    "title": "Firmware flaw puts most of the world's servers at risk",
-    "summary": "Ars Technica reports a code-execution flaw in UEFI firmware — the low-level software that starts a computer before its operating system loads — that threatens most servers in use today.",
-    "source_urls": [
-      "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/"
-    ]
-  },
-  {
-    "date": "2026-10-28",
-    "title": "Can AI judge whether a research idea is actually new?",
-    "summary": "The Allen Institute for AI released 'Old Ideas, Novel Problems', a study of how reliably large language models can judge the novelty of scientific research ideas.",
-    "source_urls": [
-      "https://huggingface.co/blog/allenai/novelty-bench"
-    ]
-  },
-  {
-    "date": "2026-10-28",
-    "title": "Python's experimental speed-up compiler is being removed",
-    "summary": "LWN reports that Python's experimental JIT compiler — a feature that translates code into faster machine instructions while a program runs — is set to be removed from the language.",
-    "source_urls": [
-      "https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/"
-    ]
-  },
-  {
     "date": "2026-10-29",
     "title": "Anthropic releases Claude Opus 5.5, at 40% lower cost",
     "summary": "Anthropic introduced Claude Opus 5.",
@@ -445,6 +389,62 @@
     "summary": "Collinear AI released CWE-bench v2, a test of frontier AI models' cyber capabilities.",
     "source_urls": [
       "https://huggingface.co/blog/cwe-bench"
+    ]
+  },
+  {
+    "date": "2026-11-05",
+    "title": "A small, cheap AI model beats the giants at pulling data out of documents",
+    "summary": "Dharma AI released Dharma Field Extractor, a compact model that reads any type of document and returns exactly the fields you ask for — names, dates, amounts — in a structured format.",
+    "source_urls": [
+      "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor"
+    ]
+  },
+  {
+    "date": "2026-11-05",
+    "title": "OpenAI releases Images 2.6",
+    "summary": "OpenAI has introduced Images 2.",
+    "source_urls": [
+      "https://openai.com/index/introducing-images-2-6/"
+    ]
+  },
+  {
+    "date": "2026-11-05",
+    "title": "Almost nobody is letting AI agents order their DoorDash",
+    "summary": "DoorDash says outside AI agents — assistants that act on your behalf — have only led to a few hundred orders so far, Ars Technica reports.",
+    "source_urls": [
+      "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/"
+    ]
+  },
+  {
+    "date": "2026-11-05",
+    "title": "AI is forcing companies to fix 40 years of old software problems",
+    "summary": "IEEE Spectrum argues that AI is pushing organisations to finally pay off decades of 'technical debt' — the shortcuts and outdated code that pile up in older systems — because AI tools make long-hidden security weaknesses easier to find.",
+    "source_urls": [
+      "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability"
+    ]
+  },
+  {
+    "date": "2026-11-05",
+    "title": "One person, an AI assistant, and a tool that turns any place into Minecraft",
+    "summary": "Louis Erbkamm built Arnis, which recreates any real location on Earth as a Minecraft world, as a spare-time project.",
+    "source_urls": [
+      "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/"
+    ]
+  },
+  {
+    "date": "2026-11-05",
+    "title": "Anthropic reports progress on provable AI inference",
+    "summary": "Anthropic published research on 'provable inference' for large language models.",
+    "source_urls": [
+      "https://www.anthropic.com/research/provable-inference"
+    ]
+  },
+  {
+    "date": "2026-11-05",
+    "title": "Qualcomm's Cloud AI 100 Ultra: a 150-watt card for running AI models",
+    "summary": "Qualcomm's Cloud AI 100 Ultra is an accelerator card — a plug-in chip board for servers — built to run AI models.",
+    "source_urls": [
+      "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra"
     ]
   }
 ]
