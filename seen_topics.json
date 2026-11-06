@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-29",
-    "title": "Anthropic releases Claude Opus 5.5, at 40% lower cost",
-    "summary": "Anthropic introduced Claude Opus 5.",
-    "source_urls": [
-      "https://www.anthropic.com/claude-opus-5-5"
-    ]
-  },
-  {
-    "date": "2026-10-29",
-    "title": "Google introduces Gemini 4 Carbon",
-    "summary": "Google announced Gemini 4 Carbon, a new model in its Gemini family, on its official blog.",
-    "source_urls": [
-      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
-    ]
-  },
-  {
-    "date": "2026-10-29",
-    "title": "Developers are building with AI agents at record levels",
-    "summary": "GitHub's 2026 Octoverse report says commits and pushes — the basic units of saving and sharing code — reached new highs this year as developers increasingly work with AI agents.",
-    "source_urls": [
-      "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"
-    ]
-  },
-  {
-    "date": "2026-10-29",
-    "title": "Testing AI agents on 50 real tax assignments",
-    "summary": "Surge AI published Dayjob: Tax, an evaluation of how well AI agents handle 50 professional tax assignments.",
-    "source_urls": [
-      "https://surgehq.ai/blog/dayjob-tax"
-    ]
-  },
-  {
-    "date": "2026-10-29",
-    "title": "GitHub lays out its vision at Universe 2026",
-    "summary": "At its annual Universe conference, GitHub described its plan to become an end-to-end system for delivering software, from writing code to shipping it.",
-    "source_urls": [
-      "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/"
-    ]
-  },
-  {
-    "date": "2026-10-29",
-    "title": "NVIDIA's Nemotron 3.5 Transcribe: speech-to-text you can steer",
-    "summary": "NVIDIA released Nemotron 3.",
-    "source_urls": [
-      "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
-    ]
-  },
-  {
-    "date": "2026-10-29",
-    "title": "Qwenputer: a working computer chip simulated inside an AI model",
-    "summary": "A developer built Qwenputer, a functioning, deterministic RISC-V CPU — a simple processor design — running inside the Qwen3.",
-    "source_urls": [
-      "https://divagr.com/blog/qwenputer"
-    ]
-  },
-  {
     "date": "2026-10-30",
     "title": "Mistral releases Large 4 as a free, downloadable model",
     "summary": "French AI company Mistral released the weights of Mistral Large 4 — the files you need to run the model yourself — and it is now on Hugging Face.",
@@ -445,6 +389,62 @@
     "summary": "Qualcomm's Cloud AI 100 Ultra is an accelerator card — a plug-in chip board for servers — built to run AI models.",
     "source_urls": [
       "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra"
+    ]
+  },
+  {
+    "date": "2026-11-06",
+    "title": "Anthropic releases Claude Opus 5.5, cheaper to run than Opus 5",
+    "summary": "Anthropic introduced Claude Opus 5.",
+    "source_urls": [
+      "https://www.anthropic.com/claude-opus-5-5"
+    ]
+  },
+  {
+    "date": "2026-11-06",
+    "title": "Bug report: Claude Code sends your email address to websites",
+    "summary": "A widely discussed GitHub issue on Anthropic's Claude Code repository is titled 'Claude Code sends your email address to websites'.",
+    "source_urls": [
+      "https://github.com/anthropics/claude-code/issues/107757"
+    ]
+  },
+  {
+    "date": "2026-11-06",
+    "title": "Mark Cuban: Facebook knowingly runs AI deepfake scam ads",
+    "summary": "Mark Cuban says Facebook knowingly runs scam ads built on AI deepfakes — fake videos of real people — and the report cites documents pointing to $16 billion in fraud-related revenue.",
+    "source_urls": [
+      "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html"
+    ]
+  },
+  {
+    "date": "2026-11-06",
+    "title": "Accessibility statements now have a home on GitHub",
+    "summary": "GitHub now highlights ACCESSIBILITY.",
+    "source_urls": [
+      "https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/"
+    ]
+  },
+  {
+    "date": "2026-11-06",
+    "title": "Phonon: speech that runs entirely on your device",
+    "summary": "Phonon is a small text-to-speech model that turns text into spoken audio on your own device, with no server or internet connection — so what you type stays with you.",
+    "source_urls": [
+      "https://huggingface.co/blog/phonon-tts"
+    ]
+  },
+  {
+    "date": "2026-11-06",
+    "title": "Inside GitHub's new Git storage built for thousands of agents",
+    "summary": "GitHub explained its new Git storage architecture, designed so thousands of AI agents can push changes to a single repository at the same time.",
+    "source_urls": [
+      "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/"
+    ]
+  },
+  {
+    "date": "2026-11-06",
+    "title": "Firenook rebuilds Firebase's local test tools in Rust",
+    "summary": "Firenook is a new set of Firebase emulators — local copies of Google's app backend that developers use for testing — written in the Rust programming language.",
+    "source_urls": [
+      "https://firenook.dev/"
     ]
   }
 ]
