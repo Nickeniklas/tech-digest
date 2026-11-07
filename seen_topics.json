@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-30",
-    "title": "Mistral releases Large 4 as a free, downloadable model",
-    "summary": "French AI company Mistral released the weights of Mistral Large 4 — the files you need to run the model yourself — and it is now on Hugging Face.",
-    "source_urls": [
-      "https://huggingface.co/blog/mistral-large4"
-    ]
-  },
-  {
-    "date": "2026-10-30",
-    "title": "Study: school-wide phone bans show no clear mental health effect",
-    "summary": "A study in JAMA Network Open found that school-wide phone bans had no significant impact on students' mental health.",
-    "source_urls": [
-      "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855858"
-    ]
-  },
-  {
-    "date": "2026-10-30",
-    "title": "$5.6 billion reported stolen from Binance",
-    "summary": "Blockchain tracking site Arkham is tracking an entity it labels a Binance hacker, linked to about $5.",
-    "source_urls": [
-      "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8"
-    ]
-  },
-  {
-    "date": "2026-10-30",
-    "title": "Project ProtoStar aims to make public research easier for AI to use",
-    "summary": "Hugging Face announced Project ProtoStar, which brings together universities, research organisations, industry and the open science community.",
-    "source_urls": [
-      "https://huggingface.co/blog/announcing-project-protostar"
-    ]
-  },
-  {
-    "date": "2026-10-30",
-    "title": "New open models for speech and decisions on Apple devices",
-    "summary": "Hugging Face introduced AnySpeechRecognizer and AnyDecisionModel, open models built to run on Apple platforms.",
-    "source_urls": [
-      "https://huggingface.co/blog/anydecisionmodel"
-    ]
-  },
-  {
-    "date": "2026-10-30",
-    "title": "Granite Switch 4.1.1: updating AI models like software",
-    "summary": "IBM released Granite Switch 4.",
-    "source_urls": [
-      "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1"
-    ]
-  },
-  {
-    "date": "2026-10-30",
-    "title": "Shrinking a small model's vocabulary cuts running costs by 77%",
-    "summary": "Dharma AI reports that specialising the vocabulary of small language models — trimming the set of word-pieces a model knows down to those a given application actually uses — cut inference cost, the cost of running the model, by up to 77% in real applications.",
-    "source_urls": [
-      "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
-    ]
-  },
-  {
     "date": "2026-10-31",
     "title": "Backdoored Claude Code extension found on the Cursor Marketplace",
     "summary": "Security firm Phorion reports that a version of the Claude Code extension for VS Code, listed on the Cursor Marketplace, had been compromised with a backdoor: hidden code that can give an attacker access to the computer it is installed on.",
@@ -445,6 +389,62 @@
     "summary": "Firenook is a new set of Firebase emulators — local copies of Google's app backend that developers use for testing — written in the Rust programming language.",
     "source_urls": [
       "https://firenook.dev/"
+    ]
+  },
+  {
+    "date": "2026-11-07",
+    "title": "Egyptian and Nigerian English join a major speech-recognition leaderboard",
+    "summary": "Hugging Face's Open ASR Leaderboard, a public ranking of how accurately AI tools turn speech into text, now tests models on Egyptian and Nigerian English.",
+    "source_urls": [
+      "https://huggingface.co/blog/open-asr-leaderboard-liva"
+    ]
+  },
+  {
+    "date": "2026-11-07",
+    "title": "Google releases Gemini Omni 1.2 Flash",
+    "summary": "Google has introduced Gemini Omni 1.",
+    "source_urls": [
+      "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+    ]
+  },
+  {
+    "date": "2026-11-07",
+    "title": "A cheaper AI 'judge' that asks Opus for help matches Opus at a quarter of the cost",
+    "summary": "Data company Hightouch describes using a smaller AI model to check whether two customer records belong to the same person, calling on Anthropic's larger Opus model only when it's unsure.",
+    "source_urls": [
+      "https://hightouch.com/blog/llm-judges-identity-resolution"
+    ]
+  },
+  {
+    "date": "2026-11-07",
+    "title": "RealPage rent-pricing case ends with nearly $360M for renters",
+    "summary": "A legal case over RealPage's rent-pricing software — accused of helping landlords push rents up by feeding them shared pricing recommendations — has wrapped up with nearly $360 million going to renters.",
+    "source_urls": [
+      "https://www.multifamilydive.com/news/realpage-rent-pricing-case-360m-renters/873553/"
+    ]
+  },
+  {
+    "date": "2026-11-07",
+    "title": "US air traffic control will stop using floppy disks by 2028",
+    "summary": "The US Federal Aviation Administration says it will phase out floppy disks from its air traffic control systems by 2028, Reuters reports.",
+    "source_urls": [
+      "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/"
+    ]
+  },
+  {
+    "date": "2026-11-07",
+    "title": "NVIDIA adds four open Cosmos 3 models for simulated worlds",
+    "summary": "NVIDIA's Cosmos platform for 'world models' — AI that generates realistic, interactive simulations of physical environments — has added four new open-weight checkpoints to its Cosmos 3 family.",
+    "source_urls": [
+      "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
+    ]
+  },
+  {
+    "date": "2026-11-07",
+    "title": "ToyBlocks: a controlled test world for robot learning",
+    "summary": "The Allen Institute for AI introduced ToyBlocks, a controlled environment for training and evaluating robots.",
+    "source_urls": [
+      "https://huggingface.co/blog/allenai/toyblocks"
     ]
   }
 ]
