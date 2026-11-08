@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-10-31",
-    "title": "Backdoored Claude Code extension found on the Cursor Marketplace",
-    "summary": "Security firm Phorion reports that a version of the Claude Code extension for VS Code, listed on the Cursor Marketplace, had been compromised with a backdoor: hidden code that can give an attacker access to the computer it is installed on.",
-    "source_urls": [
-      "https://phorion.io/blog/offical-claude-code-vsx-compromise/"
-    ]
-  },
-  {
-    "date": "2026-10-31",
-    "title": "Cisco gives one engineer unlimited AI to rewrite old code",
-    "summary": "Fortune reports that Cisco president Jeetu Patel has given a 27-year-old engineer unlimited AI usage to rewrite the company's legacy code.",
-    "source_urls": [
-      "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/"
-    ]
-  },
-  {
-    "date": "2026-10-31",
-    "title": "AI isn't replacing site reliability engineers — it's deskilling them",
-    "summary": "An essay from the SigNoz newsletter argues that AI isn't taking jobs from the engineers who keep websites and apps running, but is slowly eroding their skills as they hand off more of the hands-on work.",
-    "source_urls": [
-      "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling"
-    ]
-  },
-  {
-    "date": "2026-10-31",
-    "title": "Police camera searches fell 95% after misconduct was caught",
-    "summary": "WKYC reports that searches of Flock licence-plate camera data in Highland Heights, Ohio dropped 95% after a police dispatcher's misconduct with the system was discovered.",
-    "source_urls": [
-      "https://www.wkyc.com/article/news/investigations/flock-camera-searches-fall-95-percent-highland-heights-dispatcher-misconduct-caught/95-94b18f33-60e2-4bc7-a00f-d71d1e1fdd5e"
-    ]
-  },
-  {
-    "date": "2026-10-31",
-    "title": "A grumpy AI pirate ship greets trick-or-treaters",
-    "summary": "For Halloween, a developer built MonsterHouse, an interactive projection that listens to trick-or-treaters and answers in the voice of a grumpy old pirate ship, softening when visitors remember their manners.",
-    "source_urls": [
-      "https://huggingface.co/blog/nvidia/nemotron-halloween"
-    ]
-  },
-  {
-    "date": "2026-10-31",
-    "title": "GitHub moves its repositories to Azure for the agent era",
-    "summary": "GitHub says it has moved a copy of 99.",
-    "source_urls": [
-      "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/"
-    ]
-  },
-  {
-    "date": "2026-10-31",
-    "title": "Google's 'Sleep' framework helps AI models keep what they learn",
-    "summary": "Google Research introduced the Sleep framework, a new approach to continual learning — teaching a language model new information over time without it forgetting what it already knew.",
-    "source_urls": [
-      "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/"
-    ]
-  },
-  {
     "date": "2026-11-01",
     "title": "Anthropic maps out possible futures for an AI-shaped economy",
     "summary": "Anthropic published 'Scenarios for our economic future', starting from a frank admission: nobody yet knows whether AI will bring unprecedented growth, widespread unemployment, neither, or something else.",
@@ -445,6 +389,62 @@
     "summary": "The Allen Institute for AI introduced ToyBlocks, a controlled environment for training and evaluating robots.",
     "source_urls": [
       "https://huggingface.co/blog/allenai/toyblocks"
+    ]
+  },
+  {
+    "date": "2026-11-08",
+    "title": "Brain-wave headsets may be collecting your brain data to train AI",
+    "summary": "A report in Science says makers of consumer brain-wave headsets — wearables sold for meditation, focus or sleep — are harvesting users' brain data to train AI, without telling them.",
+    "source_urls": [
+      "https://www.science.org/content/article/wearable-device-makers-are-harvesting-brain-data-train-ai-without-telling-users?referrer=https%3A%2F%2Fwww.google.com%2F"
+    ]
+  },
+  {
+    "date": "2026-11-08",
+    "title": "Claude Code's \"Don't Ask Again\" option has leaked passwords into 1,122 public files",
+    "summary": "Security firm Apiiro reports that Claude Code's \"Don't Ask Again\" permission option has led to passwords and other secrets ending up in 1,122 public files on GitHub.",
+    "source_urls": [
+      "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again"
+    ]
+  },
+  {
+    "date": "2026-11-08",
+    "title": "Your Mac may be quietly sorting people into family members",
+    "summary": "A widely shared write-up says every Mac ships with an undocumented classifier — a small AI that sorts things into categories — that guesses which people in your life are family, as part of Apple Intelligence's personal knowledge graph.",
+    "source_urls": [
+      "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph"
+    ]
+  },
+  {
+    "date": "2026-11-08",
+    "title": "Apple's 'grey list' of words your iPhone won't help you spell",
+    "summary": "The Guardian reports that iPhones keep a grey list of words and phrases that autocorrect and suggestions won't help you type — including some perfectly ordinary insults.",
+    "source_urls": [
+      "https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you"
+    ]
+  },
+  {
+    "date": "2026-11-08",
+    "title": "A law firm explains how it runs entirely on free software",
+    "summary": "UK firm decoded.",
+    "source_urls": [
+      "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/"
+    ]
+  },
+  {
+    "date": "2026-11-08",
+    "title": "Mistral Large 4 lands on Hugging Face",
+    "summary": "French AI company Mistral's Large 4 model — nicknamed 'Le Chonk' — is now available on Hugging Face, the main public hub for sharing AI models.",
+    "source_urls": [
+      "https://huggingface.co/blog/mistral-large4"
+    ]
+  },
+  {
+    "date": "2026-11-08",
+    "title": "MaxxBench asks whether AI coding scores can be trusted",
+    "summary": "A new benchmark project, MaxxBench, opens with a pointed question about a popular AI coding test: \"Nice DeepSWE score.",
+    "source_urls": [
+      "https://maxxbench.unlap.ai/research/why-maxxbench/"
     ]
   }
 ]
