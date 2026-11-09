@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-11-01",
-    "title": "Anthropic maps out possible futures for an AI-shaped economy",
-    "summary": "Anthropic published 'Scenarios for our economic future', starting from a frank admission: nobody yet knows whether AI will bring unprecedented growth, widespread unemployment, neither, or something else.",
-    "source_urls": [
-      "https://www.anthropic.com/institute/econ-scenarios"
-    ]
-  },
-  {
-    "date": "2026-11-01",
-    "title": "Brazilian court sanctions lawyers for prompt injection in a filing",
-    "summary": "A Brazilian court has sanctioned lawyers for prompt injection — hiding instructions in a document meant to manipulate any AI that reads it — in a court filing.",
-    "source_urls": [
-      "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/"
-    ]
-  },
-  {
-    "date": "2026-11-01",
-    "title": "ChatGPT and Codex usage limits are merging",
-    "summary": "OpenAI published a help article explaining that usage limits for ChatGPT and Codex, its coding assistant, are being merged.",
-    "source_urls": [
-      "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits"
-    ]
-  },
-  {
-    "date": "2026-11-01",
-    "title": "Researchers describe taking over ChatGPT accounts",
-    "summary": "Security firm Parameter published a write-up titled 'Do the math: How we took over ChatGPT accounts', describing a gap they found at OpenAI.",
-    "source_urls": [
-      "https://www.parameter.ai/labs/we-found-a-gap-at-openai"
-    ]
-  },
-  {
-    "date": "2026-11-01",
-    "title": "How AI helps turn field notes into Ebola situation reports",
-    "summary": "Anthropic's feature 'The Situation Report' follows community health workers in eastern Democratic Republic of the Congo, whose handwritten counts of fevers, recoveries and deaths travel by WhatsApp and become the data responders rely on.",
-    "source_urls": [
-      "https://www.anthropic.com/features/ebola-response"
-    ]
-  },
-  {
-    "date": "2026-11-01",
-    "title": "Critical Linux networking flaw scores 9.8 out of 10",
-    "summary": "A write-up details CVE-2026-98432, a use-after-free bug — where software keeps using memory it has already released — in the Linux kernel's IPv4 TCP code, the part that handles most internet connections.",
-    "source_urls": [
-      "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf"
-    ]
-  },
-  {
-    "date": "2026-11-01",
-    "title": "A team of five small open models beats Fable 5 on hard coding tests",
-    "summary": "The open-source Memdoor project shows a workflow where five copies of Qwen3.",
-    "source_urls": [
-      "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve"
-    ]
-  },
-  {
     "date": "2026-11-02",
     "title": "Postgres 19 is running late — because AI keeps finding bugs",
     "summary": "Robert Haas, a long-time developer of PostgreSQL — the free database behind countless websites and business apps — writes that the next release, Postgres 19, is delayed because far more bugs are being reported than before.",
@@ -445,6 +389,62 @@
     "summary": "A new benchmark project, MaxxBench, opens with a pointed question about a popular AI coding test: \"Nice DeepSWE score.",
     "source_urls": [
       "https://maxxbench.unlap.ai/research/why-maxxbench/"
+    ]
+  },
+  {
+    "date": "2026-11-09",
+    "title": "Outlook.com is quietly rejecting email from domains without DMARC",
+    "summary": "A widely shared report from email provider MailRoute says Outlook.",
+    "source_urls": [
+      "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc"
+    ]
+  },
+  {
+    "date": "2026-11-09",
+    "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+    "summary": "A report says Goldman Sachs is taking Anthropic's AI coding assistant, Claude Code, away from staff in its banking and trading teams.",
+    "source_urls": [
+      "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers"
+    ]
+  },
+  {
+    "date": "2026-11-09",
+    "title": "Anthropic maps out possible futures for an AI economy",
+    "summary": "Anthropic published 'Scenarios for our economic future', which starts from a plain admission: nobody knows yet whether AI will bring rapid growth, widespread unemployment, neither, or something else.",
+    "source_urls": [
+      "https://www.anthropic.com/institute/econ-scenarios"
+    ]
+  },
+  {
+    "date": "2026-11-09",
+    "title": "A security researcher says one car brand's vehicles can be unlocked worldwide",
+    "summary": "A widely discussed write-up titled 'Unlocking any car from X brand in most of the world' describes a security flaw that a researcher says affects one car maker's vehicles in most countries.",
+    "source_urls": [
+      "https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/"
+    ]
+  },
+  {
+    "date": "2026-11-09",
+    "title": "How one writer fights 'AI brain fry'",
+    "summary": "A popular blog post describes the mental fatigue of working with AI tools all day and the habits the author uses to stay sharp.",
+    "source_urls": [
+      "https://sergeykuhne.com/blog/fighting-ai-brain-fry"
+    ]
+  },
+  {
+    "date": "2026-11-09",
+    "title": "Llama-modchip runs a 284-billion-parameter DeepSeek model on 64GB of RAM, no GPU",
+    "summary": "An open-source project called llama-modchip says it can run a 284-billion-parameter DeepSeek model on a machine with 64GB of ordinary memory and no graphics card.",
+    "source_urls": [
+      "https://github.com/synchopate/llama-modchip"
+    ]
+  },
+  {
+    "date": "2026-11-09",
+    "title": "GitHub has copied almost every repository to Azure on the way to 'agent-scale' Git",
+    "summary": "Previously covered on 2026-11-06: GitHub described a new Git storage design built so thousands of AI agents can push to one repository at once.",
+    "source_urls": [
+      "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/"
     ]
   }
 ]
