@@ -439,6 +439,7 @@
     <div class="hero-grid">
 
       <!-- Lead article -->
+      {% if lead_story %}
       <article>
         <div class="lead-kicker">Lead Story</div>
         <h2 class="lead-title">{{ lead_story.title }}</h2>
@@ -483,6 +484,7 @@
           {%- endif %}
         </div>
       </article>
+      {% endif %}
 
       <!-- Quick Hits sidebar preview -->
       {% if quick_hits %}

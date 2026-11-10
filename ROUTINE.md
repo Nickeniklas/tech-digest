@@ -62,3 +62,7 @@ git add digests/ index.html seen_topics.json archive.html
 git commit -m "Daily digest for $(date +%Y-%m-%d)"
 git push
 ```
+
+The routine works on a `claude/*` branch, so this push goes to that branch, not to
+`main`. `.github/workflows/auto-merge-claude.yml` then merges `main` into it (the
+new digest files win conflicts), opens a PR and squash-merges it into `main`.

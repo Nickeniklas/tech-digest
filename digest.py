@@ -384,7 +384,10 @@ def _md_links_to_html(text: str) -> str:
     The output of this function is rendered with the Jinja `| safe` filter, so it
     must do its own escaping. Only http(s) URLs become real links — anything else
     (e.g. a javascript: URI from a manipulated story) degrades to plain text.
+    A missing field (Jinja Undefined) or a non-string renders as empty.
     """
+    if not isinstance(text, str):
+        return ""
     parts = []
     last_end = 0
     for m in _MD_LINK_RE.finditer(text):
@@ -422,46 +425,48 @@ def _chart_bars(visual_data: dict) -> list[dict]:
 
 
 def _source_line(story: dict) -> str:
+    name = story.get("source_name", "")
     if story.get("source_url"):
-        return f"Source: [{story['source_name']} ↗]({story['source_url']})"
-    return f"Source: {story['source_name']}"
+        return f"Source: [{name} ↗]({story['source_url']})"
+    return f"Source: {name}"
 
 
 def render_markdown(data: dict, full_date: str) -> str:
     lines = [
         f"# Daily Tech Digest — {full_date}", "",
-        f"> {data['teaser']}", "",
+        f"> {data.get('teaser', '')}", "",
         "---",
     ]
 
-    lead = data["lead_story"]
-    lines += [
-        f"## {lead['title']}", "",
-        "**What happened**", lead["what_happened"], "",
-        "**What this means**", lead["what_this_means"], "",
-        _source_line(lead), "",
-        "---",
-    ]
+    lead = data.get("lead_story")
+    if isinstance(lead, dict):
+        lines += [
+            f"## {lead.get('title', '')}", "",
+            "**What happened**", lead.get("what_happened", ""), "",
+            "**What this means**", lead.get("what_this_means", ""), "",
+            _source_line(lead), "",
+            "---",
+        ]
 
-    quick_hits = data.get("quick_hits", [])
+    quick_hits = [s for s in data.get("quick_hits") or [] if isinstance(s, dict)]
     if quick_hits:
         lines += ["## Quick Hits", ""]
         for story in quick_hits:
             lines += [
-                f"### {story['title']}", "",
-                story["summary"], "",
+                f"### {story.get('title', '')}", "",
+                story.get("summary", ""), "",
                 _source_line(story), "",
             ]
         lines.append("---")
 
-    under = data.get("under_the_hood", [])
+    under = [s for s in data.get("under_the_hood") or [] if isinstance(s, dict)]
     if under:
         lines += ["## Under the Hood", ""]
         for story in under:
             lines += [
-                f"### {story['title']}", "",
-                "**What happened**", story["what_happened"], "",
-                "**Why it matters**", story["why_it_matters"], "",
+                f"### {story.get('title', '')}", "",
+                "**What happened**", story.get("what_happened", ""), "",
+                "**Why it matters**", story.get("why_it_matters", ""), "",
             ]
             if story.get("code_example"):
                 lines += [f"```python\n{story['code_example']}\n```", ""]
@@ -556,6 +561,28 @@ def sanitize_story_urls(data: dict, known_urls: set[str]) -> dict:
     return data
 
 
+def normalize_digest_data(data: dict) -> dict:
+    """Coerce the model's JSON into the shape both renderers expect. Model output is
+    untrusted: lead_story may be null or not a dict, a section may be null, and a
+    section may contain bare strings. A bad lead_story is dropped (the digest renders
+    without a lead) rather than crashing finish; non-dict stories are skipped.
+    """
+    if not isinstance(data, dict):
+        raise ValueError(f"Model JSON is a {type(data).__name__}, expected an object.")
+    if not isinstance(data.get("lead_story"), dict):
+        if data.get("lead_story") is not None:
+            logging.warning(f"Dropping non-dict lead_story: {data['lead_story']!r:.200}")
+        data["lead_story"] = None
+    for key in ("quick_hits", "under_the_hood"):
+        section = data.get(key)
+        if not isinstance(section, list):
+            section = []
+        data[key] = [s for s in section if isinstance(s, dict)]
+    if not isinstance(data.get("teaser"), str):
+        data["teaser"] = ""
+    return data
+
+
 def save_files(date_str: str, md: str, html: str) -> tuple[Path, Path]:
     os.makedirs("digests", exist_ok=True)
     md_path   = Path(f"digests/tech-digest-{date_str}.md")
@@ -616,7 +643,7 @@ def gather_stage() -> dict | None:
 
 def finish_stage(date_str: str, full_date: str, raw: str, known_urls: set[str]) -> tuple[Path, Path]:
     """Parse, sanitize, render, save, and regenerate archive.html + index.html."""
-    data = parse_output(raw)
+    data = normalize_digest_data(parse_output(raw))
     data = sanitize_story_urls(data, known_urls)
 
     md   = render_markdown(data, full_date)

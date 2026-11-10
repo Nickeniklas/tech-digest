@@ -10,6 +10,27 @@ marketers, lawyers, designers, managers) and saves it as HTML and Markdown files
 to `digests/`. The audience is smart and busy — they follow AI news because it
 affects their work, not because they love technology.
 
+## Status
+
+- **Published** as a GitHub Pages project site at
+  `https://nickeniklas.github.io/tech-digest/`. `index.html` is the full latest
+  digest; `archive.html` lists all past digests but is not linked from
+  `index.html` (reachable only at `/archive.html`).
+- **Pipeline:** `digest.py` with `gather` / `finish` subcommands plus a full
+  local run. Four sources (Hacker News, HuggingFace Blog, Anthropic News, GitHub
+  Blog); aborts with `RuntimeError` if fewer than 3 return content
+  (`MIN_SOURCES = 3`). Default model `claude-haiku-4-5-20251001`.
+- **Scheduled routine:** daily at 03:45 UTC. Its commits reach `main` as
+  squash-merged PRs by `github-actions[bot]` (see Scheduling).
+- The routine commits a digest every day; `git pull` before working, since
+  local `main` falls behind daily. `digests/` has a gap with no digests for
+  2026-09-05 through 2026-09-17.
+- **Tests:** `tests/test_sanitize.py` (3) and `tests/test_finish_stage.py` (3),
+  all passing.
+- **Open gap:** `archive.html` not linked from the digest.
+
+Session history: docs/STATUS_LOG.md (read when needed)
+
 ## Environment setup
 
 Always use a virtual environment for this project.
@@ -93,11 +114,15 @@ independently, at zero API cost:
 
 - `gather` only skips (`SKIP`) if today's `digests/tech-digest-{date}.html`
   already exists — otherwise it does a real (free) fetch of all four sources
-  and writes `build/gather_output.txt` + `build/known_urls.txt`.
+  and writes `build/gather_output.txt` + `build/known_urls.txt`. It raises
+  `RuntimeError` instead if fewer than 3 of the 4 sources return content.
 - `finish` needs a raw JSON response file (delimited by `<!-- BEGIN_JSON -->` /
   `<!-- END_JSON -->`) and `build/known_urls.txt` to already exist. Write a
   small synthetic JSON matching the schema (see the schema below), or reuse
   `digests/raw_response.txt` from a prior real run.
+- `finish` always stamps **today's** date on the output files, whatever day the
+  raw response was generated for — finishing an old raw file overwrites today's
+  digest, `index.html`, and `archive.html`.
 
 If today's real digest already exists and you need `gather` to actually run
 (not `SKIP`), temporarily move `digests/tech-digest-{date}.md`/`.html` (and
@@ -138,8 +163,20 @@ above, so it needs no venv and no installed dependencies:
 python tests/test_sanitize.py    # prints PASS/FAIL per test, exit 1 on failure
 ```
 
+`tests/test_finish_stage.py` runs `finish_stage` end to end on malformed model
+output (null or non-dict `lead_story`, null or non-list sections, stories with
+missing keys) in a temp dir, with `SEEN_TOPICS_PATH` patched, so no repo files
+are touched. It renders `template.html`, so it needs `jinja2` (use the venv):
+
+```bash
+venv/Scripts/python.exe tests/test_finish_stage.py
+```
+
 No pytest — plain asserts and a `__main__` runner, deliberately, so the routine
-environment can run it without installing anything.
+environment can run them without installing anything beyond `requirements.txt`.
+
+Importing `digest` runs `logging.basicConfig(filename="digest.log")`, so a test
+run appends its `Dropping unverified ...` warnings to `digest.log` (gitignored).
 
 ## Scheduling
 Claude Code remote trigger — runs daily at 06:45 Europe/Helsinki (03:45 UTC).
@@ -147,12 +184,18 @@ Trigger ID: `trig_01H3NViVVFhGYrTXS4VyNu35`
 Manage at: https://claude.ai/code/routines
 
 **The scheduled run's entire prompt is just "open `ROUTINE.md` and follow it."**
-As of the July 2026 pipeline-unification pass, all pipeline logic lives in
-`digest.py` — the trigger config no longer contains any inline `python -c`
+All pipeline logic lives in `digest.py`; the trigger config contains no inline
 pipeline steps. `ROUTINE.md` calls `python digest.py gather`, has the routine
 agent generate the digest JSON itself (reading `prompts/system_prompt.md` as
 its system prompt — the same file the local API path loads), then
 `python digest.py finish build/digest_raw.txt`, then commits and pushes.
+
+**How the routine's commit reaches `main`:** the routine pushes to a `claude/*`
+branch, not to `main`. `.github/workflows/auto-merge-claude.yml` then merges
+`origin/main` into that branch with `-X ours` (the branch's freshly generated
+files win conflicts), opens a PR, and squash-merges it as `github-actions[bot]`
+("Daily digest for {date} (#N)"). The `claude/*` branches still on the remote
+are leftovers from early runs, not active work.
 
 Because both the local (`python digest.py`) and routine paths call the same
 `gather_stage()` / `finish_stage()` functions, there is nothing left to keep in
@@ -162,16 +205,15 @@ tool) if the schedule, model, or top-level instructions change; day-to-day
 pipeline changes only need `digest.py` and `ROUTINE.md` edited.
 
 > **Gotcha:** `index.html`, `archive.html`, and `seen_topics.json` are
-> regenerated by the routine every morning at 03:45 UTC and pushed straight to
-> `main`. If a local session has uncommitted edits to those same files (e.g.
+> regenerated by the routine every morning at 03:45 UTC and land on `main` via
+> the auto-merge PR above. If a local session has uncommitted edits to those same files (e.g.
 > template/rendering changes staged for testing) sitting around past that
 > time, `git pull` will refuse to overwrite them and `git status` reports a
 > divergence once the routine's commit lands. Fix: commit local work first,
 > then `git pull --rebase`, resolving `index.html`/`archive.html` conflicts by
 > taking the incoming (origin) version — they're generated files, so
 > regenerate them afterward from the new code (recipes above) rather than
-> hand-merging. Happened once, July 19 2026, when a PWA/template change sat
-> uncommitted overnight.
+> hand-merging.
 
 ## Architecture
 
@@ -183,7 +225,7 @@ stages plus a thin CLI:
   `date_str`, `full_date`, `seen_topics`, `seen_block`, `image_refs`, `context`,
   `known_urls`.
 - `finish_stage(date_str, full_date, raw, known_urls)` — `parse_output` →
-  `sanitize_story_urls` → `render_markdown` → `render_html` → `save_files` →
+  `normalize_digest_data` → `sanitize_story_urls` → `render_markdown` → `render_html` → `save_files` →
   `extract_seen_entries` + `save_seen_topics` → regenerate `archive.html` →
   `update_index_html`.
 
@@ -204,13 +246,7 @@ Three ways to invoke them:
 `build/` is gitignored — everything in it is regenerated every run, same as
 `digests/raw_response.txt` and `digests/raw_context.txt`.
 
-Since both the local API path and the scheduled routine call these same two
-functions, there is exactly one implementation of each pipeline stage — nothing
-to keep in sync by hand across two code paths anymore.
-
-The six logical stages below are unchanged in behavior from before the CLI
-refactor — only how they're invoked (directly in `main()` vs. via the `gather`/
-`finish` subcommands) changed:
+The logical stages inside `gather_stage()` / `finish_stage()`:
 
 **1. Load seen topics (`load_seen_topics`)**
 Reads `seen_topics.json` from the project root. Prunes entries older than 7 days
@@ -222,10 +258,15 @@ Uses `requests` + `BeautifulSoup` to fetch these sources directly:
 - Hacker News front page — top 30 story titles + URLs
 - HuggingFace Blog, Anthropic News, GitHub Blog — titles + URLs via generic `<h2>`/`<h3>` extractor (description up to 250 chars)
 
-> GitHub Trending was dropped as a source in July 2026 — GitHub blocks `/trending`
-> scraping origin-side (not a routine-environment proxy issue; `github.com` stays
-> allowlisted for git push, and `github.blog` is unaffected), and it was a
-> permanently dead source rather than an intermittent failure.
+If fewer than 3 of these 4 return content (an empty item list counts as a
+failure), `gather_context` raises `RuntimeError` rather than build a digest from
+partial data (`MIN_SOURCES = 3`). `fetch_page` logs any `x-deny-reason` header on
+an HTTP error, which tells a routine-proxy denial apart from an origin-side 403.
+
+> Don't re-add GitHub Trending: GitHub blocks `/trending` scraping origin-side
+> (not a routine-environment proxy issue; `github.com` stays allowlisted for git
+> push, and `github.blog` is unaffected), so it is a permanently dead source,
+> not an intermittent failure.
 
 > OpenAI News is excluded — it reliably returns 403. OpenAI stories are well-covered via Hacker News.
 
@@ -235,7 +276,7 @@ Uses `requests` + `BeautifulSoup` to fetch these sources directly:
 > server-side block. The same `www` URL is passed as `extract_generic`'s
 > `base_url`, since relative hrefs are joined onto it and would otherwise
 > reintroduce the redirect on every enriched article fetch. `www.anthropic.com`
-> is on the routine environment's allowlist (added July 2026).
+> is on the routine environment's allowlist.
 
 After extraction, the top 3 articles from each blog source (HuggingFace, Anthropic,
 GitHub Blog) are **enriched** via `enrich_items()`:
@@ -281,8 +322,8 @@ this order:
 (`SYSTEM_PROMPT = (Path(__file__).parent / "prompts" / "system_prompt.md").read_text(...).strip()`)
 — that file is the single source of truth for the editorial brief, read by both
 the local API path and the routine agent (via `ROUTINE.md`, which tells it to
-read that file directly and follow it as its own system prompt). Never edit the
-brief as an inline string in `digest.py` again. It targets a non-technical
+read that file directly and follow it as its own system prompt). Never put the
+brief back as an inline string in `digest.py`. It targets a non-technical
 professional audience with a calm, clear journalistic voice. Claude does NOT
 generate HTML or Markdown — only structured JSON.
 
@@ -339,8 +380,12 @@ The JSON schema:
 - `visual_data`: Claude-synthesized from numbers, benchmarks, or comparisons in the story text — do not leave `null` when quantitative data exists; format `{"headers": [...], "rows": [[...]]}`
 - The prompt mandates **at least 2 visuals** across the full digest; lead_story always attempts one
 
-**2.5. Sanitize URLs (`sanitize_story_urls`)**
-Called in `finish_stage()` right after `parse_output`. Drops any `source_url`/`visual_url`
+**2.5. Normalize and sanitize (`normalize_digest_data`, `sanitize_story_urls`)**
+`normalize_digest_data` runs first, right after `parse_output`: it sets a non-dict
+`lead_story` to `None` (the digest then renders without a lead, and
+`template.html` wraps the lead `<article>` in `{% if lead_story %}`), turns
+`quick_hits`/`under_the_hood` into lists of dicts only, and makes `teaser` a
+string. `sanitize_story_urls` then Drops any `source_url`/`visual_url`
 not in `known_urls` — the real enforcement, since the prompt instruction alone
 isn't a safety boundary against scraped content designed to override it.
 
@@ -350,6 +395,10 @@ non-dict entries inside a section are all skipped rather than raised on. Note
 `data.get("quick_hits", [])` is *not* sufficient — a key present with a `null`
 value returns `None`, not the default, and blows up the `*` unpack. Use
 `data.get("quick_hits") or []`.
+
+`render_markdown` also reads every field with `.get` and skips non-dict stories,
+and the `md_links` filter renders a missing field (Jinja `Undefined`) as empty,
+so a story with missing keys renders blanks instead of raising.
 
 **3. Render Markdown (`render_markdown`)**
 Python derives the `.md` file deterministically from the JSON:
@@ -406,7 +455,8 @@ Visual rendering (same pattern in all three sections):
 - `visual_type == "table"`: `<table>` with headers + rows from `visual_data`
 - `null`: nothing rendered
 
-Max-width 1240px. Responsive breakpoint at `≤800px` collapses to single column.
+Max-width 1240px. Responsive breakpoint at `≤800px` collapses to single column;
+a second one at `≤600px` shrinks the hero teaser and lead text.
 
 **5. Save files (`save_files`)**
 Writes to `digests/tech-digest-{YYYY-MM-DD}.md` and `.html`.
@@ -423,15 +473,15 @@ Called in `finish_stage()` after `save_files` succeeds — never on error paths.
 `extract_seen_entries(data, date_str)` collects entries from all three sections:
 lead_story and under_the_hood use `what_happened`, quick_hits uses `summary`.
 Extracts the first sentence as a summary, merges with prior entries, re-prunes
-to 7 days, and writes `seen_topics.json`. Accumulates at most ~42 entries
-(6–7 stories × 7 days).
+to 7 days, and writes `seen_topics.json`. The cutoff is inclusive
+(`date >= today − 7 days`), so the file spans up to 8 dates: at 5–7 stories a
+day that is up to ~56 entries (56 observed in practice).
 
 `source_urls` must be `[]`, never `[None]`, when the story has no `source_url`.
 This matters across days, not just within a run: `extract_seen_entries` runs
 *after* `sanitize_story_urls` may have nulled a URL, and the next day's
 `format_seen_topics_context` does `", ".join(e["source_urls"])` — a `[None]`
-written today raises `TypeError` on tomorrow's run. Fixed July 2026; entries
-written before then age out of the 7-day window on their own.
+written today raises `TypeError` on tomorrow's run.
 
 **7. Regenerate archive and index (`build_archive_entries`, `render_archive`, `update_index_html`)**
 Runs at the end of every `finish_stage()` call — i.e. both the local and routine
@@ -441,12 +491,11 @@ rendered digest HTML **directly to `index.html`** (`update_index_html(html)`
 takes the already-rendered string, not a date). Not linked from `index.html` —
 v0.1, reachable only by typing `/archive.html` directly.
 
-> As of July 2026, `index.html` is no longer a meta-refresh redirect to
-> `digests/tech-digest-{date}.html` — it *is* the latest digest, verbatim. iOS
-> "Add to Home Screen" bookmarks the current page's URL, so a redirect page
-> would permanently pin whatever date happened to be live when the user added
-> it. Serving the content at the root instead means the bookmark always shows
-> today's digest.
+> `index.html` must *be* the latest digest, verbatim — never a meta-refresh
+> redirect to `digests/tech-digest-{date}.html`. iOS "Add to Home Screen"
+> bookmarks the current page's URL, so a redirect page would permanently pin
+> whatever date happened to be live when the user added it. Serving the content
+> at the root means the bookmark always shows today's digest.
 >
 > This repo is a GitHub Pages **project site** (`github.com/Nickeniklas/tech-digest`,
 > no `CNAME`), served at `https://nickeniklas.github.io/tech-digest/` — not at
