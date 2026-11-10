@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-11-02",
-    "title": "Postgres 19 is running late — because AI keeps finding bugs",
-    "summary": "Robert Haas, a long-time developer of PostgreSQL — the free database behind countless websites and business apps — writes that the next release, Postgres 19, is delayed because far more bugs are being reported than before.",
-    "source_urls": [
-      "http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html"
-    ]
-  },
-  {
-    "date": "2026-11-02",
-    "title": "Terence Tao: mathematics has changed, so let's act like it",
-    "summary": "Fields Medal-winning mathematician Terence Tao has published an essay titled 'Mathematics has changed.",
-    "source_urls": [
-      "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/"
-    ]
-  },
-  {
-    "date": "2026-11-02",
-    "title": "AI-written fan wikis are spreading errors about video games",
-    "summary": "Eurogamer reports that fan wikis generated with AI are riddled with mistakes, making it harder for players to find reliable information about games.",
-    "source_urls": [
-      "https://www.eurogamer.net/ai-fan-wikis-errors-complicating-games-culture"
-    ]
-  },
-  {
-    "date": "2026-11-02",
-    "title": "Trigger.dev exposed customers' secret settings",
-    "summary": "Developer platform Trigger.",
-    "source_urls": [
-      "https://trigger.dev/blog/security-incident-nov-2026"
-    ]
-  },
-  {
-    "date": "2026-11-02",
-    "title": "GitHub's month-long game jam is back, with the theme SHIFT",
-    "summary": "GitHub's annual Game Off returns for its 14th year this November, inviting anyone to make a game inspired by the theme SHIFT.",
-    "source_urls": [
-      "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/"
-    ]
-  },
-  {
-    "date": "2026-11-02",
-    "title": "The AI cost of JavaScript frameworks",
-    "summary": "Web developer Nolan Lawson has written about 'the AI cost of JavaScript frameworks' — how the tools developers choose to build websites affect working with AI coding assistants.",
-    "source_urls": [
-      "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/"
-    ]
-  },
-  {
-    "date": "2026-11-02",
-    "title": "Lenovo's 'encrypted' fingerprint USB drive is just an SD card in a case",
-    "summary": "A widely shared report says a Lenovo USB drive marketed as encrypted and unlocked by fingerprint turns out to be an ordinary, unencrypted SD memory card inside a casing.",
-    "source_urls": [
-      "https://www.reddit.com/r/technology/comments/1xl2pr3/lenovos_encrypted_fingerprint_usb_drive_is_just/"
-    ]
-  },
-  {
     "date": "2026-11-03",
     "title": "NIST publishes a cybersecurity guide for the self-employed",
     "summary": "NIST, the US agency that sets widely used cybersecurity standards, has released a cybersecurity guide written specifically for self-employed people and solopreneurs.",
@@ -445,6 +389,62 @@
     "summary": "Previously covered on 2026-11-06: GitHub described a new Git storage design built so thousands of AI agents can push to one repository at once.",
     "source_urls": [
       "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/"
+    ]
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Anthropic releases Claude Fable 5.2 and Claude Mythos 5.2",
+    "summary": "Anthropic has upgraded Claude Fable and Claude Mythos, the models it builds for its hardest technical work, saying the 5.",
+    "source_urls": [
+      "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+    ]
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Claim: Gemini sends some personal Drive files and emails to human reviewers",
+    "summary": "A GitHub repository that drew wide attention on Hacker News claims that Google Gemini routes personal Google Drive files and emails to human annotators, the people who review AI output to improve it.",
+    "source_urls": [
+      "https://github.com/thisisme6598/gemini_files/"
+    ]
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Canada launches Real-Time Rail, a 24/7 instant payment system",
+    "summary": "Payments Canada has launched Real-Time Rail, a national system that lets money move between accounts instantly, any hour of any day.",
+    "source_urls": [
+      "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy"
+    ]
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Meta introduces Muse Ember, its smallest and most efficient model",
+    "summary": "Meta has released Muse Ember, which it calls the smallest and most efficient model in its Muse family.",
+    "source_urls": [
+      "https://research.meta.ai/blog/muse-ember"
+    ]
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Parking apps charge a median $0.35 convenience fee per session",
+    "summary": "A new dataset from ParkGraph tracks the extra convenience fees parking apps add in 312 US cities, and finds a typical charge of 35 cents each time you park.",
+    "source_urls": [
+      "https://parkgraph.com/parking-app-fees"
+    ]
+  },
+  {
+    "date": "2026-11-10",
+    "title": "HOPE: shrinking 'mixture-of-experts' models by keeping expert partners together",
+    "summary": "Amazon researchers describe HOPE, a method for pruning mixture-of-experts (MoE) models.",
+    "source_urls": [
+      "https://huggingface.co/blog/amazon/higher-order-pruning-experts"
+    ]
+  },
+  {
+    "date": "2026-11-10",
+    "title": "E-means claims to beat k-means in a tenth of the training passes",
+    "summary": "A new clustering method called E-means says it outperforms k-means, the classic algorithm for grouping similar data points, while needing only one-tenth as many epochs, or full passes over the data.",
+    "source_urls": [
+      "https://e-means.github.io/"
     ]
   }
 ]
