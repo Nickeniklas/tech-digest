@@ -215,6 +215,11 @@ pipeline changes only need `digest.py` and `ROUTINE.md` edited.
 > regenerate them afterward from the new code (recipes above) rather than
 > hand-merging.
 
+> **Gotcha:** GitHub Pages serves this repo **without Jekyll** (empty `.nojekyll`
+> at the repo root), so files are published as they are. Keep it: with Jekyll, the
+> Jinja `{% if %}` / `{{ }}` examples in `.md` files are parsed as Liquid and break
+> the Pages build.
+
 ## Architecture
 
 `digest.py` is the single entry point, structured as two composable pipeline
