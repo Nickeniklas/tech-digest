@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-11-03",
-    "title": "NIST publishes a cybersecurity guide for the self-employed",
-    "summary": "NIST, the US agency that sets widely used cybersecurity standards, has released a cybersecurity guide written specifically for self-employed people and solopreneurs.",
-    "source_urls": [
-      "https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you"
-    ]
-  },
-  {
-    "date": "2026-11-03",
-    "title": "Ubuntu still hasn't patched a critical Linux flaw after nearly three weeks",
-    "summary": "Previously covered on 2026-11-01: a Linux networking bug, CVE-2026-98432, rated 9.",
-    "source_urls": [
-      "https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432"
-    ]
-  },
-  {
-    "date": "2026-11-03",
-    "title": "Terence Tao on 'egoless mathematics' in the AI era",
-    "summary": "Previously covered on 2026-11-02: Tao's essay arguing that mathematics has changed.",
-    "source_urls": [
-      "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/"
-    ]
-  },
-  {
-    "date": "2026-11-03",
-    "title": "An essay on resisting 'cognitive surrender' to AI",
-    "summary": "A widely discussed essay, 'Resisting Cognitive Surrender', looks at the risk of handing over your thinking — not just your tasks — to AI tools.",
-    "source_urls": [
-      "https://knlb.dev/essays/surrender"
-    ]
-  },
-  {
-    "date": "2026-11-03",
-    "title": "If you love a website, back it up",
-    "summary": "A popular blog post makes a simple case: websites you rely on can vanish, so save copies of the ones that matter to you.",
-    "source_urls": [
-      "https://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/"
-    ]
-  },
-  {
-    "date": "2026-11-03",
-    "title": "Cloudflare halves DNS build delay and cuts memory use by 85%",
-    "summary": "Cloudflare describes switching to targeted zone builds in its DNS system — the internet's address book, which turns website names into server addresses.",
-    "source_urls": [
-      "https://blog.cloudflare.com/dns-targeted-zone-builds/"
-    ]
-  },
-  {
-    "date": "2026-11-03",
-    "title": "OpenAI explains how it scales Git",
-    "summary": "OpenAI published an engineering post on scaling Git — the tool developers use to track every change to their code — inside the company.",
-    "source_urls": [
-      "https://openai.com/index/scaling-git-at-openai/"
-    ]
-  },
-  {
     "date": "2026-11-04",
     "title": "IBM's Palette teaches a small AI model to build decks in your own design style",
     "summary": "IBM Research introduced Palette, a small AI model trained to build slide decks that follow a specific company template rather than a generic look.",
@@ -445,6 +389,62 @@
     "summary": "A new clustering method called E-means says it outperforms k-means, the classic algorithm for grouping similar data points, while needing only one-tenth as many epochs, or full passes over the data.",
     "source_urls": [
       "https://e-means.github.io/"
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "title": "AI bug-hunting project Glasswing is swamping volunteer maintainers, report says",
+    "summary": "Security firm VulnCheck reviewed seven months of Project Glasswing, Anthropic's effort to use AI to find security flaws in widely used open-source software, and says it has overwhelmed the volunteers who maintain that software with findings that are mostly underwhelming.",
+    "source_urls": [
+      "https://www.vulncheck.com/blog/anthropic-glasswing-november-update"
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "title": "From a health worker's notebook to the Ebola response",
+    "summary": "Anthropic published 'The Situation Report', a feature on the Ebola response in eastern Democratic Republic of the Congo.",
+    "source_urls": [
+      "https://www.anthropic.com/features/ebola-response"
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "title": "People use AI to find news, but don't want it writing the news",
+    "summary": "Nieman Lab reports that AI is becoming a common gateway to information, yet audiences still don't want AI producing the journalism itself.",
+    "source_urls": [
+      "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/"
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "title": "Hugging Face can now go on your Google Cloud bill",
+    "summary": "Organizations can link their Hugging Face account to Google Cloud so usage appears on their existing Google Cloud bill instead of a credit card.",
+    "source_urls": [
+      "https://huggingface.co/blog/hub-gcp-marketplace"
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "title": "A large study measures how easily websites can recognise you",
+    "summary": "A new study looks at how 'fingerprintable' web users are — how easily sites can identify you from details of your browser and device, without cookies.",
+    "source_urls": [
+      "https://fingerprinting.study/"
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "title": "Git patches six security vulnerabilities",
+    "summary": "Git, the version-control tool almost all software teams use to track changes, released updates fixing six security vulnerabilities.",
+    "source_urls": [
+      "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/"
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "title": "Hugging Face adds 'decision models' for problems that aren't about text",
+    "summary": "Hugging Face introduced Decision Models, starting from the point that large language models excel at generating text but many problems don't need text at all — they need a choice, a score or an action.",
+    "source_urls": [
+      "https://huggingface.co/blog/decision"
     ]
   }
 ]
