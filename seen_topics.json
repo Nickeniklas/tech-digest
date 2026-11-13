@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-11-05",
-    "title": "A small, cheap AI model beats the giants at pulling data out of documents",
-    "summary": "Dharma AI released Dharma Field Extractor, a compact model that reads any type of document and returns exactly the fields you ask for — names, dates, amounts — in a structured format.",
-    "source_urls": [
-      "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor"
-    ]
-  },
-  {
-    "date": "2026-11-05",
-    "title": "OpenAI releases Images 2.6",
-    "summary": "OpenAI has introduced Images 2.",
-    "source_urls": [
-      "https://openai.com/index/introducing-images-2-6/"
-    ]
-  },
-  {
-    "date": "2026-11-05",
-    "title": "Almost nobody is letting AI agents order their DoorDash",
-    "summary": "DoorDash says outside AI agents — assistants that act on your behalf — have only led to a few hundred orders so far, Ars Technica reports.",
-    "source_urls": [
-      "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/"
-    ]
-  },
-  {
-    "date": "2026-11-05",
-    "title": "AI is forcing companies to fix 40 years of old software problems",
-    "summary": "IEEE Spectrum argues that AI is pushing organisations to finally pay off decades of 'technical debt' — the shortcuts and outdated code that pile up in older systems — because AI tools make long-hidden security weaknesses easier to find.",
-    "source_urls": [
-      "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability"
-    ]
-  },
-  {
-    "date": "2026-11-05",
-    "title": "One person, an AI assistant, and a tool that turns any place into Minecraft",
-    "summary": "Louis Erbkamm built Arnis, which recreates any real location on Earth as a Minecraft world, as a spare-time project.",
-    "source_urls": [
-      "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/"
-    ]
-  },
-  {
-    "date": "2026-11-05",
-    "title": "Anthropic reports progress on provable AI inference",
-    "summary": "Anthropic published research on 'provable inference' for large language models.",
-    "source_urls": [
-      "https://www.anthropic.com/research/provable-inference"
-    ]
-  },
-  {
-    "date": "2026-11-05",
-    "title": "Qualcomm's Cloud AI 100 Ultra: a 150-watt card for running AI models",
-    "summary": "Qualcomm's Cloud AI 100 Ultra is an accelerator card — a plug-in chip board for servers — built to run AI models.",
-    "source_urls": [
-      "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra"
-    ]
-  },
-  {
     "date": "2026-11-06",
     "title": "Anthropic releases Claude Opus 5.5, cheaper to run than Opus 5",
     "summary": "Anthropic introduced Claude Opus 5.",
@@ -445,6 +389,62 @@
     "summary": "GitHub published a guide arguing that while writing code got faster with AI, the work around it — planning, reviewing changes, investigating production issues — didn't.",
     "source_urls": [
       "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Google introduces Gemini 4 Hydrogen",
+    "summary": "Google has announced Gemini 4 Hydrogen, a new model in its Gemini AI family.",
+    "source_urls": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Edge0-145B promises frontier AI on your own computer",
+    "summary": "A company called Edge0 has introduced Edge0-145B, a 145-billion-parameter model it says brings frontier AI capabilities to a personal computer.",
+    "source_urls": [
+      "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "title": "AI is making Apple's app review a nightmare for music-software makers",
+    "summary": "Synth Anatomy reports that developers of synthesizer and music apps are struggling with Apple's app review process, which they say AI is now making harder.",
+    "source_urls": [
+      "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Jane Street is changing its software engineering interviews",
+    "summary": "Trading firm Jane Street says its software engineering interviews are \"changing a little\".",
+    "source_urls": [
+      "https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Brave lets AI agents pay for search on their own",
+    "summary": "Brave's Search API now accepts payments from AI agents through a protocol called x402, so an assistant can pay for the searches it runs without a person entering card details.",
+    "source_urls": [
+      "https://brave.com/blog/search-api-agentic-payments/"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "title": "LLMON: a markup language built for AI models, now in IBM's Granite 4.1",
+    "summary": "IBM introduced LLMON, a markup language designed for how large language models read their context.",
+    "source_urls": [
+      "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "title": "GitHub's guide to agent skills that work in any AI tool",
+    "summary": "GitHub published a practical guide to agent skills: files that capture repeatable engineering work so teams can review and reuse them.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/"
     ]
   }
 ]
