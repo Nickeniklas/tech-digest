@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-11-06",
-    "title": "Anthropic releases Claude Opus 5.5, cheaper to run than Opus 5",
-    "summary": "Anthropic introduced Claude Opus 5.",
-    "source_urls": [
-      "https://www.anthropic.com/claude-opus-5-5"
-    ]
-  },
-  {
-    "date": "2026-11-06",
-    "title": "Bug report: Claude Code sends your email address to websites",
-    "summary": "A widely discussed GitHub issue on Anthropic's Claude Code repository is titled 'Claude Code sends your email address to websites'.",
-    "source_urls": [
-      "https://github.com/anthropics/claude-code/issues/107757"
-    ]
-  },
-  {
-    "date": "2026-11-06",
-    "title": "Mark Cuban: Facebook knowingly runs AI deepfake scam ads",
-    "summary": "Mark Cuban says Facebook knowingly runs scam ads built on AI deepfakes — fake videos of real people — and the report cites documents pointing to $16 billion in fraud-related revenue.",
-    "source_urls": [
-      "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html"
-    ]
-  },
-  {
-    "date": "2026-11-06",
-    "title": "Accessibility statements now have a home on GitHub",
-    "summary": "GitHub now highlights ACCESSIBILITY.",
-    "source_urls": [
-      "https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/"
-    ]
-  },
-  {
-    "date": "2026-11-06",
-    "title": "Phonon: speech that runs entirely on your device",
-    "summary": "Phonon is a small text-to-speech model that turns text into spoken audio on your own device, with no server or internet connection — so what you type stays with you.",
-    "source_urls": [
-      "https://huggingface.co/blog/phonon-tts"
-    ]
-  },
-  {
-    "date": "2026-11-06",
-    "title": "Inside GitHub's new Git storage built for thousands of agents",
-    "summary": "GitHub explained its new Git storage architecture, designed so thousands of AI agents can push changes to a single repository at the same time.",
-    "source_urls": [
-      "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/"
-    ]
-  },
-  {
-    "date": "2026-11-06",
-    "title": "Firenook rebuilds Firebase's local test tools in Rust",
-    "summary": "Firenook is a new set of Firebase emulators — local copies of Google's app backend that developers use for testing — written in the Rust programming language.",
-    "source_urls": [
-      "https://firenook.dev/"
-    ]
-  },
-  {
     "date": "2026-11-07",
     "title": "Egyptian and Nigerian English join a major speech-recognition leaderboard",
     "summary": "Hugging Face's Open ASR Leaderboard, a public ranking of how accurately AI tools turn speech into text, now tests models on Egyptian and Nigerian English.",
@@ -445,6 +389,54 @@
     "summary": "GitHub published a practical guide to agent skills: files that capture repeatable engineering work so teams can review and reuse them.",
     "source_urls": [
       "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/"
+    ]
+  },
+  {
+    "date": "2026-11-14",
+    "title": "llama.cpp, the engine behind much of 'local AI', hits version 1.0",
+    "summary": "llama.",
+    "source_urls": [
+      "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+    ]
+  },
+  {
+    "date": "2026-11-14",
+    "title": "US flights halted nationwide for 4.5 hours",
+    "summary": "The FAA ordered a nationwide ground stop on departing flights, lifting it about 4.",
+    "source_urls": [
+      "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247"
+    ]
+  },
+  {
+    "date": "2026-11-14",
+    "title": "XYBench tests whether AI can help when you ask the wrong question",
+    "summary": "The Allen Institute for AI released XYBench, a set of more than 8,000 questions built on misconceptions, to test whether assistants spot the real problem behind a request.",
+    "source_urls": [
+      "https://huggingface.co/blog/allenai/xybench"
+    ]
+  },
+  {
+    "date": "2026-11-14",
+    "title": "Security agencies found using an ad-based surveillance system",
+    "summary": "Researchers at Citizen Lab report that security agencies in several countries use a surveillance system built on online advertising data.",
+    "source_urls": [
+      "https://citizenlab.ca/security-agencies-worldwide-found-to-use-ad-based-surveillance-system/"
+    ]
+  },
+  {
+    "date": "2026-11-14",
+    "title": "Accessibility statements get a home on GitHub",
+    "summary": "GitHub now highlights ACCESSIBILITY.",
+    "source_urls": [
+      "https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/"
+    ]
+  },
+  {
+    "date": "2026-11-14",
+    "title": "GitHub's October outages: eight incidents, up from two",
+    "summary": "GitHub's monthly availability report says it had eight incidents in October 2026 that degraded performance across its services, compared with two in September.",
+    "source_urls": [
+      "https://github.blog/news-insights/company-news/github-availability-report-october-2026/"
     ]
   }
 ]
