@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-11-07",
-    "title": "Egyptian and Nigerian English join a major speech-recognition leaderboard",
-    "summary": "Hugging Face's Open ASR Leaderboard, a public ranking of how accurately AI tools turn speech into text, now tests models on Egyptian and Nigerian English.",
-    "source_urls": [
-      "https://huggingface.co/blog/open-asr-leaderboard-liva"
-    ]
-  },
-  {
-    "date": "2026-11-07",
-    "title": "Google releases Gemini Omni 1.2 Flash",
-    "summary": "Google has introduced Gemini Omni 1.",
-    "source_urls": [
-      "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
-    ]
-  },
-  {
-    "date": "2026-11-07",
-    "title": "A cheaper AI 'judge' that asks Opus for help matches Opus at a quarter of the cost",
-    "summary": "Data company Hightouch describes using a smaller AI model to check whether two customer records belong to the same person, calling on Anthropic's larger Opus model only when it's unsure.",
-    "source_urls": [
-      "https://hightouch.com/blog/llm-judges-identity-resolution"
-    ]
-  },
-  {
-    "date": "2026-11-07",
-    "title": "RealPage rent-pricing case ends with nearly $360M for renters",
-    "summary": "A legal case over RealPage's rent-pricing software — accused of helping landlords push rents up by feeding them shared pricing recommendations — has wrapped up with nearly $360 million going to renters.",
-    "source_urls": [
-      "https://www.multifamilydive.com/news/realpage-rent-pricing-case-360m-renters/873553/"
-    ]
-  },
-  {
-    "date": "2026-11-07",
-    "title": "US air traffic control will stop using floppy disks by 2028",
-    "summary": "The US Federal Aviation Administration says it will phase out floppy disks from its air traffic control systems by 2028, Reuters reports.",
-    "source_urls": [
-      "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/"
-    ]
-  },
-  {
-    "date": "2026-11-07",
-    "title": "NVIDIA adds four open Cosmos 3 models for simulated worlds",
-    "summary": "NVIDIA's Cosmos platform for 'world models' — AI that generates realistic, interactive simulations of physical environments — has added four new open-weight checkpoints to its Cosmos 3 family.",
-    "source_urls": [
-      "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
-    ]
-  },
-  {
-    "date": "2026-11-07",
-    "title": "ToyBlocks: a controlled test world for robot learning",
-    "summary": "The Allen Institute for AI introduced ToyBlocks, a controlled environment for training and evaluating robots.",
-    "source_urls": [
-      "https://huggingface.co/blog/allenai/toyblocks"
-    ]
-  },
-  {
     "date": "2026-11-08",
     "title": "Brain-wave headsets may be collecting your brain data to train AI",
     "summary": "A report in Science says makers of consumer brain-wave headsets — wearables sold for meditation, focus or sleep — are harvesting users' brain data to train AI, without telling them.",
@@ -437,6 +381,62 @@
     "summary": "GitHub's monthly availability report says it had eight incidents in October 2026 that degraded performance across its services, compared with two in September.",
     "source_urls": [
       "https://github.blog/news-insights/company-news/github-availability-report-october-2026/"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "title": "Apps made with AI builder Lovable exposed passport details and 200,000+ private messages",
+    "summary": "Security researchers report that apps created with Lovable — a popular tool that lets you build a working app by describing it in plain words — left users' passport details and more than 200,000 private messages open to anyone who knew where to look.",
+    "source_urls": [
+      "https://www.crissyfield.de/research/lovable-en/"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "title": "AI uses more energy when you write in languages other than English",
+    "summary": "University of Michigan researchers report that generative AI consumes more energy to handle non-English text than English.",
+    "source_urls": [
+      "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "title": "LinkedIn and Monster remove 1,000+ fake job postings",
+    "summary": "After an investigation by Canadian broadcaster CBC, LinkedIn and Monster took down more than 1,000 fake job ads.",
+    "source_urls": [
+      "https://www.cbc.ca/news/canada/linkedin-monster-take-down-over-1-000-fake-job-postings-after-cbc-investigation-9.7415379"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "title": "Digital-rights group asks court to require warrants for license-plate camera searches",
+    "summary": "The Electronic Frontier Foundation is asking a US appeals court to rule that police need a warrant before searching data from automated license plate readers — cameras that log where cars go.",
+    "source_urls": [
+      "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "title": "The US flight halt came down to one router in Arkansas",
+    "summary": "Previously covered on 2026-11-14: the FAA stopped departing flights nationwide for about 4.",
+    "source_urls": [
+      "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "title": "Google Project Zero will disclose bugs 90 days after reporting them",
+    "summary": "Google's Project Zero, its team that hunts security flaws in other companies' software, says it will make vulnerabilities public 90 days after reporting them to the vendor.",
+    "source_urls": [
+      "https://projectzero.google/2026/11/disclosure-policy.html"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "title": "DeepSeek V3 rebuilt in about 200 lines of code",
+    "summary": "A developer has published a compact version of DeepSeek V3, a large open AI model, written in roughly 200 lines of pure JAX — Google's library for numerical computing.",
+    "source_urls": [
+      "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax"
     ]
   }
 ]
