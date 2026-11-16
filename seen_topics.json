@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-11-08",
-    "title": "Brain-wave headsets may be collecting your brain data to train AI",
-    "summary": "A report in Science says makers of consumer brain-wave headsets — wearables sold for meditation, focus or sleep — are harvesting users' brain data to train AI, without telling them.",
-    "source_urls": [
-      "https://www.science.org/content/article/wearable-device-makers-are-harvesting-brain-data-train-ai-without-telling-users?referrer=https%3A%2F%2Fwww.google.com%2F"
-    ]
-  },
-  {
-    "date": "2026-11-08",
-    "title": "Claude Code's \"Don't Ask Again\" option has leaked passwords into 1,122 public files",
-    "summary": "Security firm Apiiro reports that Claude Code's \"Don't Ask Again\" permission option has led to passwords and other secrets ending up in 1,122 public files on GitHub.",
-    "source_urls": [
-      "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again"
-    ]
-  },
-  {
-    "date": "2026-11-08",
-    "title": "Your Mac may be quietly sorting people into family members",
-    "summary": "A widely shared write-up says every Mac ships with an undocumented classifier — a small AI that sorts things into categories — that guesses which people in your life are family, as part of Apple Intelligence's personal knowledge graph.",
-    "source_urls": [
-      "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph"
-    ]
-  },
-  {
-    "date": "2026-11-08",
-    "title": "Apple's 'grey list' of words your iPhone won't help you spell",
-    "summary": "The Guardian reports that iPhones keep a grey list of words and phrases that autocorrect and suggestions won't help you type — including some perfectly ordinary insults.",
-    "source_urls": [
-      "https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you"
-    ]
-  },
-  {
-    "date": "2026-11-08",
-    "title": "A law firm explains how it runs entirely on free software",
-    "summary": "UK firm decoded.",
-    "source_urls": [
-      "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/"
-    ]
-  },
-  {
-    "date": "2026-11-08",
-    "title": "Mistral Large 4 lands on Hugging Face",
-    "summary": "French AI company Mistral's Large 4 model — nicknamed 'Le Chonk' — is now available on Hugging Face, the main public hub for sharing AI models.",
-    "source_urls": [
-      "https://huggingface.co/blog/mistral-large4"
-    ]
-  },
-  {
-    "date": "2026-11-08",
-    "title": "MaxxBench asks whether AI coding scores can be trusted",
-    "summary": "A new benchmark project, MaxxBench, opens with a pointed question about a popular AI coding test: \"Nice DeepSWE score.",
-    "source_urls": [
-      "https://maxxbench.unlap.ai/research/why-maxxbench/"
-    ]
-  },
-  {
     "date": "2026-11-09",
     "title": "Outlook.com is quietly rejecting email from domains without DMARC",
     "summary": "A widely shared report from email provider MailRoute says Outlook.",
@@ -437,6 +381,62 @@
     "summary": "A developer has published a compact version of DeepSeek V3, a large open AI model, written in roughly 200 lines of pure JAX — Google's library for numerical computing.",
     "source_urls": [
       "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax"
+    ]
+  },
+  {
+    "date": "2026-11-16",
+    "title": "Old Bitly links are being hijacked",
+    "summary": "A report says old Bitly short links — including one in a past Burger King tweet — are being taken over so they now point to different, unintended destinations.",
+    "source_urls": [
+      "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/"
+    ]
+  },
+  {
+    "date": "2026-11-16",
+    "title": "Qwen4-Max is out",
+    "summary": "The Qwen team has published Qwen4-Max, the newest flagship model in its Qwen AI family.",
+    "source_urls": [
+      "https://qwen.ai/blog?id=qwen4-max"
+    ]
+  },
+  {
+    "date": "2026-11-16",
+    "title": "A Microsoft 365 outage is linked to chlorine gas exposure at a German hotel",
+    "summary": "German broadcaster WDR reports that 15 hotel guests at the Phantasialand resort were exposed to chlorine gas after a technical defect, which the widely shared headline ties to a Microsoft 365 outage.",
+    "source_urls": [
+      "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html"
+    ]
+  },
+  {
+    "date": "2026-11-16",
+    "title": "Australian supermarket Coles hit by a cybersecurity incident",
+    "summary": "Coles, one of Australia's largest supermarket chains, has posted an update confirming a cybersecurity incident.",
+    "source_urls": [
+      "https://www.colesgroup.com.au/updates/"
+    ]
+  },
+  {
+    "date": "2026-11-16",
+    "title": "AI coding assistants decoded a 1994 Jeep's engine computer",
+    "summary": "A video shows Claude Code and Codex working out how a 1994 Jeep's engine control unit works, using a $3 Arduino board as the connection.",
+    "source_urls": [
+      "https://www.youtube.com/watch?v=WPj3aQ-xxpI"
+    ]
+  },
+  {
+    "date": "2026-11-16",
+    "title": "A cross-site scripting flaw in uBlock Origin",
+    "summary": "A security write-up describes a 'universal XSS' bug in uBlock Origin, the popular ad blocker, triggered through its element picker — the tool you use to click on and hide parts of a page.",
+    "source_urls": [
+      "https://iter.ca/post/ubo-uxss/"
+    ]
+  },
+  {
+    "date": "2026-11-16",
+    "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
+    "summary": "Hugging Face's Open ASR Leaderboard, which ranks speech-recognition models (software that turns spoken audio into text), now includes Egyptian English and Nigerian English test sets.",
+    "source_urls": [
+      "https://huggingface.co/blog/open-asr-leaderboard-liva"
     ]
   }
 ]
