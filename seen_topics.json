@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-11-09",
-    "title": "Outlook.com is quietly rejecting email from domains without DMARC",
-    "summary": "A widely shared report from email provider MailRoute says Outlook.",
-    "source_urls": [
-      "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc"
-    ]
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
-    "summary": "A report says Goldman Sachs is taking Anthropic's AI coding assistant, Claude Code, away from staff in its banking and trading teams.",
-    "source_urls": [
-      "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers"
-    ]
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Anthropic maps out possible futures for an AI economy",
-    "summary": "Anthropic published 'Scenarios for our economic future', which starts from a plain admission: nobody knows yet whether AI will bring rapid growth, widespread unemployment, neither, or something else.",
-    "source_urls": [
-      "https://www.anthropic.com/institute/econ-scenarios"
-    ]
-  },
-  {
-    "date": "2026-11-09",
-    "title": "A security researcher says one car brand's vehicles can be unlocked worldwide",
-    "summary": "A widely discussed write-up titled 'Unlocking any car from X brand in most of the world' describes a security flaw that a researcher says affects one car maker's vehicles in most countries.",
-    "source_urls": [
-      "https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/"
-    ]
-  },
-  {
-    "date": "2026-11-09",
-    "title": "How one writer fights 'AI brain fry'",
-    "summary": "A popular blog post describes the mental fatigue of working with AI tools all day and the habits the author uses to stay sharp.",
-    "source_urls": [
-      "https://sergeykuhne.com/blog/fighting-ai-brain-fry"
-    ]
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Llama-modchip runs a 284-billion-parameter DeepSeek model on 64GB of RAM, no GPU",
-    "summary": "An open-source project called llama-modchip says it can run a 284-billion-parameter DeepSeek model on a machine with 64GB of ordinary memory and no graphics card.",
-    "source_urls": [
-      "https://github.com/synchopate/llama-modchip"
-    ]
-  },
-  {
-    "date": "2026-11-09",
-    "title": "GitHub has copied almost every repository to Azure on the way to 'agent-scale' Git",
-    "summary": "Previously covered on 2026-11-06: GitHub described a new Git storage design built so thousands of AI agents can push to one repository at once.",
-    "source_urls": [
-      "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/"
-    ]
-  },
-  {
     "date": "2026-11-10",
     "title": "Anthropic releases Claude Fable 5.2 and Claude Mythos 5.2",
     "summary": "Anthropic has upgraded Claude Fable and Claude Mythos, the models it builds for its hardest technical work, saying the 5.",
@@ -437,6 +381,54 @@
     "summary": "Hugging Face's Open ASR Leaderboard, which ranks speech-recognition models (software that turns spoken audio into text), now includes Egyptian English and Nigerian English test sets.",
     "source_urls": [
       "https://huggingface.co/blog/open-asr-leaderboard-liva"
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "title": "Hugging Face and OpenRouter team up to make open AI models easy to use",
+    "summary": "Hugging Face, where nearly every major open-weight AI model is published, is partnering with OpenRouter, a service that runs those models at scale and routes each request across more than 80 providers based on live measurements of how each one is performing.",
+    "source_urls": [
+      "https://huggingface.co/blog/openrouter"
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "title": "Report: Windows 11 tracks which AI coding tools you use",
+    "summary": "A developer's blog post, widely discussed on Hacker News, says Windows 11 collects data on which coding agents and developer tools are installed and used on a machine.",
+    "source_urls": [
+      "https://xusheng.dev/posts/windows-coding-agent-telemetry/"
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "title": "Optimizely breach served malware on major sites, including Zoom and GitLab",
+    "summary": "Report URI says Optimizely — a widely used tool companies add to their websites to test different page designs — was compromised and used to deliver malware through brands such as Zoom and GitLab.",
+    "source_urls": [
+      "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/"
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "title": "Carnegie Mellon puts computer science courses on YouTube for free",
+    "summary": "Carnegie Mellon University, one of the top computer science schools in the US, is publishing its computer science courses on YouTube at no cost.",
+    "source_urls": [
+      "https://www.cs.cmu.edu/learn/"
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "title": "Anthropic maps out possible futures for an AI economy",
+    "summary": "Anthropic published 'Scenarios for our economic future', starting from an honest premise: nobody yet knows whether AI will bring unprecedented growth, widespread unemployment, neither, or something else.",
+    "source_urls": [
+      "https://www.anthropic.com/institute/econ-scenarios"
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "title": "GitHub rebuilds Git storage so thousands of AI agents can work in one project",
+    "summary": "GitHub described a new architecture for storing Git repositories, built so that thousands of AI agents can push changes to a single repository at the same time.",
+    "source_urls": [
+      "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/"
     ]
   }
 ]
