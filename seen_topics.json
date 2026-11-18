@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-11-10",
-    "title": "Anthropic releases Claude Fable 5.2 and Claude Mythos 5.2",
-    "summary": "Anthropic has upgraded Claude Fable and Claude Mythos, the models it builds for its hardest technical work, saying the 5.",
-    "source_urls": [
-      "https://www.anthropic.com/claude-fable-and-mythos-5-2"
-    ]
-  },
-  {
-    "date": "2026-11-10",
-    "title": "Claim: Gemini sends some personal Drive files and emails to human reviewers",
-    "summary": "A GitHub repository that drew wide attention on Hacker News claims that Google Gemini routes personal Google Drive files and emails to human annotators, the people who review AI output to improve it.",
-    "source_urls": [
-      "https://github.com/thisisme6598/gemini_files/"
-    ]
-  },
-  {
-    "date": "2026-11-10",
-    "title": "Canada launches Real-Time Rail, a 24/7 instant payment system",
-    "summary": "Payments Canada has launched Real-Time Rail, a national system that lets money move between accounts instantly, any hour of any day.",
-    "source_urls": [
-      "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy"
-    ]
-  },
-  {
-    "date": "2026-11-10",
-    "title": "Meta introduces Muse Ember, its smallest and most efficient model",
-    "summary": "Meta has released Muse Ember, which it calls the smallest and most efficient model in its Muse family.",
-    "source_urls": [
-      "https://research.meta.ai/blog/muse-ember"
-    ]
-  },
-  {
-    "date": "2026-11-10",
-    "title": "Parking apps charge a median $0.35 convenience fee per session",
-    "summary": "A new dataset from ParkGraph tracks the extra convenience fees parking apps add in 312 US cities, and finds a typical charge of 35 cents each time you park.",
-    "source_urls": [
-      "https://parkgraph.com/parking-app-fees"
-    ]
-  },
-  {
-    "date": "2026-11-10",
-    "title": "HOPE: shrinking 'mixture-of-experts' models by keeping expert partners together",
-    "summary": "Amazon researchers describe HOPE, a method for pruning mixture-of-experts (MoE) models.",
-    "source_urls": [
-      "https://huggingface.co/blog/amazon/higher-order-pruning-experts"
-    ]
-  },
-  {
-    "date": "2026-11-10",
-    "title": "E-means claims to beat k-means in a tenth of the training passes",
-    "summary": "A new clustering method called E-means says it outperforms k-means, the classic algorithm for grouping similar data points, while needing only one-tenth as many epochs, or full passes over the data.",
-    "source_urls": [
-      "https://e-means.github.io/"
-    ]
-  },
-  {
     "date": "2026-11-11",
     "title": "AI bug-hunting project Glasswing is swamping volunteer maintainers, report says",
     "summary": "Security firm VulnCheck reviewed seven months of Project Glasswing, Anthropic's effort to use AI to find security flaws in widely used open-source software, and says it has overwhelmed the volunteers who maintain that software with findings that are mostly underwhelming.",
@@ -429,6 +373,62 @@
     "summary": "GitHub described a new architecture for storing Git repositories, built so that thousands of AI agents can push changes to a single repository at the same time.",
     "source_urls": [
       "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/"
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "title": "Anthropic releases Claude Fable 5.2 and Claude Mythos 5.2",
+    "summary": "Anthropic upgraded its two most capable models, Claude Fable 5.",
+    "source_urls": [
+      "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "title": "OpenAI introduces GPT-6.2 Astra and Sol",
+    "summary": "OpenAI announced two new models, GPT-6.",
+    "source_urls": [
+      "https://openai.com/index/introducing-gpt-6-2-astra-sol/"
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "title": "Google's AI answers are cutting search traffic by 40%, report says",
+    "summary": "A new analysis says Google's AI-generated answers are reducing the traffic websites get from search by 40%, because people get their answer without clicking through.",
+    "source_urls": [
+      "https://revscope.co/blog/search-seo-geo-2026/"
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "title": "GitHub and Microsoft turn AI bug reports into actual fixes",
+    "summary": "In a pilot called Codename MDASH, GitHub and Microsoft filtered thousands of raw AI-found bugs down to 99 checked, private reports — each with a suggested fix — for six widely used open-source projects.",
+    "source_urls": [
+      "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/"
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "title": "'Java4Shell': a serious security flaw in Java",
+    "summary": "Researchers disclosed a flaw in OpenJDK, the standard version of Java, that can let attackers run their own code when a system processes Base64 data — an extremely common way of encoding information.",
+    "source_urls": [
+      "https://calif.io/java4shell/"
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "title": "GitHub's Agent Host Protocol lets AI sessions follow you between devices",
+    "summary": "GitHub built the Agent Host Protocol, an open standard that keeps an AI agent's working session available across editors, apps, phones, and the cloud.",
+    "source_urls": [
+      "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/"
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "title": "Harvard study: AI coding agents moved the bottleneck to code review",
+    "summary": "Harvard researchers found that AI coding agents shifted where software work gets stuck: writing code is faster, but reviewing that code has become the slow step.",
+    "source_urls": [
+      "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/"
     ]
   }
 ]
