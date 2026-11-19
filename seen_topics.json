@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-11-11",
-    "title": "AI bug-hunting project Glasswing is swamping volunteer maintainers, report says",
-    "summary": "Security firm VulnCheck reviewed seven months of Project Glasswing, Anthropic's effort to use AI to find security flaws in widely used open-source software, and says it has overwhelmed the volunteers who maintain that software with findings that are mostly underwhelming.",
-    "source_urls": [
-      "https://www.vulncheck.com/blog/anthropic-glasswing-november-update"
-    ]
-  },
-  {
-    "date": "2026-11-11",
-    "title": "From a health worker's notebook to the Ebola response",
-    "summary": "Anthropic published 'The Situation Report', a feature on the Ebola response in eastern Democratic Republic of the Congo.",
-    "source_urls": [
-      "https://www.anthropic.com/features/ebola-response"
-    ]
-  },
-  {
-    "date": "2026-11-11",
-    "title": "People use AI to find news, but don't want it writing the news",
-    "summary": "Nieman Lab reports that AI is becoming a common gateway to information, yet audiences still don't want AI producing the journalism itself.",
-    "source_urls": [
-      "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/"
-    ]
-  },
-  {
-    "date": "2026-11-11",
-    "title": "Hugging Face can now go on your Google Cloud bill",
-    "summary": "Organizations can link their Hugging Face account to Google Cloud so usage appears on their existing Google Cloud bill instead of a credit card.",
-    "source_urls": [
-      "https://huggingface.co/blog/hub-gcp-marketplace"
-    ]
-  },
-  {
-    "date": "2026-11-11",
-    "title": "A large study measures how easily websites can recognise you",
-    "summary": "A new study looks at how 'fingerprintable' web users are — how easily sites can identify you from details of your browser and device, without cookies.",
-    "source_urls": [
-      "https://fingerprinting.study/"
-    ]
-  },
-  {
-    "date": "2026-11-11",
-    "title": "Git patches six security vulnerabilities",
-    "summary": "Git, the version-control tool almost all software teams use to track changes, released updates fixing six security vulnerabilities.",
-    "source_urls": [
-      "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/"
-    ]
-  },
-  {
-    "date": "2026-11-11",
-    "title": "Hugging Face adds 'decision models' for problems that aren't about text",
-    "summary": "Hugging Face introduced Decision Models, starting from the point that large language models excel at generating text but many problems don't need text at all — they need a choice, a score or an action.",
-    "source_urls": [
-      "https://huggingface.co/blog/decision"
-    ]
-  },
-  {
     "date": "2026-11-12",
     "title": "United Airlines bans AI agents from booking flights for travelers",
     "summary": "United Airlines has barred AI agents — assistants that browse and buy on your behalf — from booking flights for its customers, CBS News reports.",
@@ -429,6 +373,62 @@
     "summary": "Harvard researchers found that AI coding agents shifted where software work gets stuck: writing code is faster, but reviewing that code has become the slow step.",
     "source_urls": [
       "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/"
+    ]
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Google releases Gemini 4 Neon",
+    "summary": "Google has introduced Gemini 4 Neon, the newest model in its Gemini AI family, a week after it announced Gemini 4 Hydrogen.",
+    "source_urls": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+    ]
+  },
+  {
+    "date": "2026-11-19",
+    "title": "AI agents asked better questions than KPMG accountants in an audit trial",
+    "summary": "European Business Magazine reports on an audit trial in which AI agents asked better questions than KPMG's human accountants.",
+    "source_urls": [
+      "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/"
+    ]
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Microsoft unveils seven new AI models at Ignite",
+    "summary": "At its Ignite 2026 conference, Microsoft announced seven new AI models, pitched on 'scalable price-performance': a range of sizes, so businesses can pay less for simpler tasks.",
+    "source_urls": [
+      "https://microsoft.ai/news/microsoft-ignite-2026/"
+    ]
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Serious security flaws found in Nginx, a common web server",
+    "summary": "Security firm Wiz reports flaws in Nginx, the software that serves a large share of the world's websites, that could let attackers run their own code without logging in.",
+    "source_urls": [
+      "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities"
+    ]
+  },
+  {
+    "date": "2026-11-19",
+    "title": "How AI helps turn field notes into Ebola situation reports",
+    "summary": "Anthropic published a feature on the Ebola response in the eastern Democratic Republic of the Congo, where health workers text their daily counts of fevers, recoveries, and deaths over WhatsApp.",
+    "source_urls": [
+      "https://www.anthropic.com/features/ebola-response"
+    ]
+  },
+  {
+    "date": "2026-11-19",
+    "title": "DaisyRose-27B: a strong agent model trained on a small budget",
+    "summary": "RadixArk released DaisyRose-27B, its first model, built on Qwen3.",
+    "source_urls": [
+      "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin"
+    ]
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Running a 180-billion-parameter model on 32GB of RAM",
+    "summary": "Hugging Face shows how to run a 180-billion-parameter 'mixture of experts' model, one that switches on only a few specialist sub-networks for each word, on a machine with just 32GB of memory.",
+    "source_urls": [
+      "https://huggingface.co/blog/moe-expert-streaming"
     ]
   }
 ]
