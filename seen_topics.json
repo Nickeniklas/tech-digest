@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-11-12",
-    "title": "United Airlines bans AI agents from booking flights for travelers",
-    "summary": "United Airlines has barred AI agents — assistants that browse and buy on your behalf — from booking flights for its customers, CBS News reports.",
-    "source_urls": [
-      "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/"
-    ]
-  },
-  {
-    "date": "2026-11-12",
-    "title": "A personal AI assistant small enough to run on your own device",
-    "summary": "BotPsy is an AI assistant built on a model with under a billion parameters, small enough to run directly on your phone or laptop instead of in the cloud.",
-    "source_urls": [
-      "https://huggingface.co/blog/qvac/botpsy"
-    ]
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Yogurt: a free, private, open-source AI meeting notetaker",
-    "summary": "A new open-source project called Yogurt pitches itself as a free and private alternative to Granola, the popular AI meeting-notes app.",
-    "source_urls": [
-      "https://github.com/FrigadeHQ/yogurt"
-    ]
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Critical security flaw found in Apache, a widely used web server",
-    "summary": "Security firm Wiz reports a critical flaw in Apache HTTP Server — software that powers a large share of the world's websites — that could let attackers run their own code on affected servers.",
-    "source_urls": [
-      "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability"
-    ]
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Google launches the Gemini Decisions API",
-    "summary": "Google has announced a Gemini Decisions API for developers, a tool aimed at having AI make choices rather than write text.",
-    "source_urls": [
-      "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
-    ]
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Shrinking AI search indexes with token pooling",
-    "summary": "Multi-vector embedding models power a precise kind of AI search: each word in your query gets its own chance to match something in a document.",
-    "source_urls": [
-      "https://huggingface.co/blog/token-pooling"
-    ]
-  },
-  {
-    "date": "2026-11-12",
-    "title": "GitHub's guide to 'agentic engineering'",
-    "summary": "GitHub published a guide arguing that while writing code got faster with AI, the work around it — planning, reviewing changes, investigating production issues — didn't.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/"
-    ]
-  },
-  {
     "date": "2026-11-13",
     "title": "Google introduces Gemini 4 Hydrogen",
     "summary": "Google has announced Gemini 4 Hydrogen, a new model in its Gemini AI family.",
@@ -429,6 +373,62 @@
     "summary": "Hugging Face shows how to run a 180-billion-parameter 'mixture of experts' model, one that switches on only a few specialist sub-networks for each word, on a machine with just 32GB of memory.",
     "source_urls": [
       "https://huggingface.co/blog/moe-expert-streaming"
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "title": "Claude solves two open problems in black hole physics",
+    "summary": "Anthropic reports that Claude, its AI model, solved two open problems in the physics of black holes — questions researchers had not yet answered.",
+    "source_urls": [
+      "https://www.anthropic.com/research/claude-black-hole-physics"
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "title": "Critical security flaw found in OpenSSL",
+    "summary": "OpenSSL, the software that encrypts traffic for a huge share of websites and apps, has a buffer overflow bug rated 9.",
+    "source_urls": [
+      "https://github.com/openssl/openssl/pull/33652"
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "title": "Visa, Mastercard and JPMorgan customer data leaked",
+    "summary": "The Wall Street Journal reports that hackers leaked customer data from Visa, Mastercard and JPMorgan.",
+    "source_urls": [
+      "https://www.wsj.com/finance/banking/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers-3b5a0f87"
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "title": "UK admits it secretly ordered Apple to weaken encryption",
+    "summary": "The UK government has been forced to admit it issued Apple a secret order about encryption — the technology that keeps your messages and files private.",
+    "source_urls": [
+      "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/"
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "title": "GitHub launches open-source projects for accessibility",
+    "summary": "GitHub introduced Replica and the Open Source Accessibility Framework, two new open-source projects aimed at collaboration and inclusion.",
+    "source_urls": [
+      "https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/"
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "title": "Why AI fine-tuning jobs run longer than expected",
+    "summary": "A Hugging Face blog post analyses 272 real production runs to predict how long fine-tuning — retraining an AI model on your own data — actually takes on shared GPU clusters.",
+    "source_urls": [
+      "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time"
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "title": "PostgreSQL 19 is out",
+    "summary": "PostgreSQL 19, a new major version of one of the most widely used open-source databases, has been released.",
+    "source_urls": [
+      "https://www.postgresql.org/docs/release/19.0/"
     ]
   }
 ]
