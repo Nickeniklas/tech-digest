@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-11-13",
-    "title": "Google introduces Gemini 4 Hydrogen",
-    "summary": "Google has announced Gemini 4 Hydrogen, a new model in its Gemini AI family.",
-    "source_urls": [
-      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
-    ]
-  },
-  {
-    "date": "2026-11-13",
-    "title": "Edge0-145B promises frontier AI on your own computer",
-    "summary": "A company called Edge0 has introduced Edge0-145B, a 145-billion-parameter model it says brings frontier AI capabilities to a personal computer.",
-    "source_urls": [
-      "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer"
-    ]
-  },
-  {
-    "date": "2026-11-13",
-    "title": "AI is making Apple's app review a nightmare for music-software makers",
-    "summary": "Synth Anatomy reports that developers of synthesizer and music apps are struggling with Apple's app review process, which they say AI is now making harder.",
-    "source_urls": [
-      "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html"
-    ]
-  },
-  {
-    "date": "2026-11-13",
-    "title": "Jane Street is changing its software engineering interviews",
-    "summary": "Trading firm Jane Street says its software engineering interviews are \"changing a little\".",
-    "source_urls": [
-      "https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/"
-    ]
-  },
-  {
-    "date": "2026-11-13",
-    "title": "Brave lets AI agents pay for search on their own",
-    "summary": "Brave's Search API now accepts payments from AI agents through a protocol called x402, so an assistant can pay for the searches it runs without a person entering card details.",
-    "source_urls": [
-      "https://brave.com/blog/search-api-agentic-payments/"
-    ]
-  },
-  {
-    "date": "2026-11-13",
-    "title": "LLMON: a markup language built for AI models, now in IBM's Granite 4.1",
-    "summary": "IBM introduced LLMON, a markup language designed for how large language models read their context.",
-    "source_urls": [
-      "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite"
-    ]
-  },
-  {
-    "date": "2026-11-13",
-    "title": "GitHub's guide to agent skills that work in any AI tool",
-    "summary": "GitHub published a practical guide to agent skills: files that capture repeatable engineering work so teams can review and reuse them.",
-    "source_urls": [
-      "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/"
-    ]
-  },
-  {
     "date": "2026-11-14",
     "title": "llama.cpp, the engine behind much of 'local AI', hits version 1.0",
     "summary": "llama.",
@@ -429,6 +373,62 @@
     "summary": "PostgreSQL 19, a new major version of one of the most widely used open-source databases, has been released.",
     "source_urls": [
       "https://www.postgresql.org/docs/release/19.0/"
+    ]
+  },
+  {
+    "date": "2026-11-21",
+    "title": "A claimed proof of the Generalized Riemann Hypothesis has mathematicians buzzing",
+    "summary": "Mathematician Levent Alpöge has posted a claimed proof of the Generalized Riemann Hypothesis, a question about prime numbers that has stood unsolved for over a century, and leading mathematicians including Terence Tao are already writing about it.",
+    "source_urls": [
+      "https://scottaaronson.blog/?p=10344"
+    ]
+  },
+  {
+    "date": "2026-11-21",
+    "title": "Inkling 2 Mini: a capable AI model built to run on your own computer",
+    "summary": "Thinking Machines released Inkling 2 Mini, an open model that can work with text and images and is designed for local use.",
+    "source_urls": [
+      "https://huggingface.co/blog/inkling2mini"
+    ]
+  },
+  {
+    "date": "2026-11-21",
+    "title": "Signal pushes back on AI agents reading your phone screen",
+    "summary": "Signal, the encrypted messaging app, published a post on restricting AI agents built into mobile operating systems from capturing your data.",
+    "source_urls": [
+      "https://signal.org/blog/protecting-your-privacy/"
+    ]
+  },
+  {
+    "date": "2026-11-21",
+    "title": "Backblaze's privacy policy now says it can sell data for advertising",
+    "summary": "Backblaze, a popular cloud backup service, now explicitly states in its privacy policy that it sells data for advertising purposes, according to a widely discussed Hacker News thread.",
+    "source_urls": [
+      "https://www.backblaze.com/company/policy/privacy"
+    ]
+  },
+  {
+    "date": "2026-11-21",
+    "title": "Research paper: AI chatbots may carry hidden commercial incentives",
+    "summary": "A new paper calls it \"The Hungry Butler Effect\": concealed commercial incentives in large language models that can erode how rigorous their answers are.",
+    "source_urls": [
+      "https://www.researchgate.net/publication/418143113_The_Hungry_Butler_Effect_Concealed_Commercial_Incentives_and_the_Erosion_of_Epistemic_Rigour_in_Large_Language_Models"
+    ]
+  },
+  {
+    "date": "2026-11-21",
+    "title": "Valkey swaps the skiplist for a B+ tree and cuts memory use",
+    "summary": "Valkey, the open-source in-memory database that forked from Redis, replaced the skiplist behind its sorted sets with a B+ tree.",
+    "source_urls": [
+      "https://valkey.io/blog/from-skiplist-to-b+tree/"
+    ]
+  },
+  {
+    "date": "2026-11-21",
+    "title": "Harness adapters: tuning a model for the agent tool you actually use",
+    "summary": "Hugging Face introduced harness adapters, a way to train an AI model with reinforcement learning on your own set of tasks inside your chosen agent harness — the software that wraps a model with tools and instructions.",
+    "source_urls": [
+      "https://huggingface.co/blog/harness-adapters-at-scale"
     ]
   }
 ]
