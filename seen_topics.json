@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-11-14",
-    "title": "llama.cpp, the engine behind much of 'local AI', hits version 1.0",
-    "summary": "llama.",
-    "source_urls": [
-      "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
-    ]
-  },
-  {
-    "date": "2026-11-14",
-    "title": "US flights halted nationwide for 4.5 hours",
-    "summary": "The FAA ordered a nationwide ground stop on departing flights, lifting it about 4.",
-    "source_urls": [
-      "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247"
-    ]
-  },
-  {
-    "date": "2026-11-14",
-    "title": "XYBench tests whether AI can help when you ask the wrong question",
-    "summary": "The Allen Institute for AI released XYBench, a set of more than 8,000 questions built on misconceptions, to test whether assistants spot the real problem behind a request.",
-    "source_urls": [
-      "https://huggingface.co/blog/allenai/xybench"
-    ]
-  },
-  {
-    "date": "2026-11-14",
-    "title": "Security agencies found using an ad-based surveillance system",
-    "summary": "Researchers at Citizen Lab report that security agencies in several countries use a surveillance system built on online advertising data.",
-    "source_urls": [
-      "https://citizenlab.ca/security-agencies-worldwide-found-to-use-ad-based-surveillance-system/"
-    ]
-  },
-  {
-    "date": "2026-11-14",
-    "title": "Accessibility statements get a home on GitHub",
-    "summary": "GitHub now highlights ACCESSIBILITY.",
-    "source_urls": [
-      "https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/"
-    ]
-  },
-  {
-    "date": "2026-11-14",
-    "title": "GitHub's October outages: eight incidents, up from two",
-    "summary": "GitHub's monthly availability report says it had eight incidents in October 2026 that degraded performance across its services, compared with two in September.",
-    "source_urls": [
-      "https://github.blog/news-insights/company-news/github-availability-report-october-2026/"
-    ]
-  },
-  {
     "date": "2026-11-15",
     "title": "Apps made with AI builder Lovable exposed passport details and 200,000+ private messages",
     "summary": "Security researchers report that apps created with Lovable — a popular tool that lets you build a working app by describing it in plain words — left users' passport details and more than 200,000 private messages open to anyone who knew where to look.",
@@ -429,6 +381,62 @@
     "summary": "Hugging Face introduced harness adapters, a way to train an AI model with reinforcement learning on your own set of tasks inside your chosen agent harness — the software that wraps a model with tools and instructions.",
     "source_urls": [
       "https://huggingface.co/blog/harness-adapters-at-scale"
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "title": "The Riemann Hypothesis proof gets a computer-checked verification",
+    "summary": "Previously covered on 2026-11-21: mathematician Levent Alpöge posted a claimed proof of the Generalized Riemann Hypothesis, a century-old question about prime numbers.",
+    "source_urls": [
+      "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/"
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "title": "Two AI providers disclose incidents with customer prompts",
+    "summary": "OpenRouter, a service that routes AI requests to many model providers, published a post on data processing incidents at those providers, and Together.",
+    "source_urls": [
+      "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026"
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "title": "A pill for pancreatic cancer is called the biggest breakthrough in decades",
+    "summary": "The Guardian reports that daraxonrasib, a pill to treat pancreatic cancer, is being hailed as the biggest advance against the disease in decades.",
+    "source_urls": [
+      "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib"
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "title": "Git fixes six security flaws — update your tools",
+    "summary": "Git, the version-control system behind almost all software projects, released updates for six security vulnerabilities.",
+    "source_urls": [
+      "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/"
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "title": "Pandex gives AI agents direct access to official European law",
+    "summary": "Pandex is a new service that lets AI agents look up official European legal texts through MCP, a standard way of connecting AI tools to outside data.",
+    "source_urls": [
+      "https://www.pandex.io"
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "title": "LLMs can read and write programs straight from a hex dump",
+    "summary": "A blog post shows large language models reading and writing executable files byte by byte from a hex dump — the raw numbers a computer actually runs — without any source code or programming language in between.",
+    "source_urls": [
+      "https://sgiannopoulos.github.io/blog/machine-code-programming/"
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "title": "Inkling 2 Mini squeezed into 5.4 GB of memory",
+    "summary": "Previously covered on 2026-11-21: Thinking Machines released Inkling 2 Mini, an open model built to run locally.",
+    "source_urls": [
+      "https://github.com/ShinMegamiBoson/lookatmyquant"
     ]
   }
 ]
