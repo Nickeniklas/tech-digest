@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-11-15",
-    "title": "Apps made with AI builder Lovable exposed passport details and 200,000+ private messages",
-    "summary": "Security researchers report that apps created with Lovable — a popular tool that lets you build a working app by describing it in plain words — left users' passport details and more than 200,000 private messages open to anyone who knew where to look.",
-    "source_urls": [
-      "https://www.crissyfield.de/research/lovable-en/"
-    ]
-  },
-  {
-    "date": "2026-11-15",
-    "title": "AI uses more energy when you write in languages other than English",
-    "summary": "University of Michigan researchers report that generative AI consumes more energy to handle non-English text than English.",
-    "source_urls": [
-      "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/"
-    ]
-  },
-  {
-    "date": "2026-11-15",
-    "title": "LinkedIn and Monster remove 1,000+ fake job postings",
-    "summary": "After an investigation by Canadian broadcaster CBC, LinkedIn and Monster took down more than 1,000 fake job ads.",
-    "source_urls": [
-      "https://www.cbc.ca/news/canada/linkedin-monster-take-down-over-1-000-fake-job-postings-after-cbc-investigation-9.7415379"
-    ]
-  },
-  {
-    "date": "2026-11-15",
-    "title": "Digital-rights group asks court to require warrants for license-plate camera searches",
-    "summary": "The Electronic Frontier Foundation is asking a US appeals court to rule that police need a warrant before searching data from automated license plate readers — cameras that log where cars go.",
-    "source_urls": [
-      "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches"
-    ]
-  },
-  {
-    "date": "2026-11-15",
-    "title": "The US flight halt came down to one router in Arkansas",
-    "summary": "Previously covered on 2026-11-14: the FAA stopped departing flights nationwide for about 4.",
-    "source_urls": [
-      "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c"
-    ]
-  },
-  {
-    "date": "2026-11-15",
-    "title": "Google Project Zero will disclose bugs 90 days after reporting them",
-    "summary": "Google's Project Zero, its team that hunts security flaws in other companies' software, says it will make vulnerabilities public 90 days after reporting them to the vendor.",
-    "source_urls": [
-      "https://projectzero.google/2026/11/disclosure-policy.html"
-    ]
-  },
-  {
-    "date": "2026-11-15",
-    "title": "DeepSeek V3 rebuilt in about 200 lines of code",
-    "summary": "A developer has published a compact version of DeepSeek V3, a large open AI model, written in roughly 200 lines of pure JAX — Google's library for numerical computing.",
-    "source_urls": [
-      "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax"
-    ]
-  },
-  {
     "date": "2026-11-16",
     "title": "Old Bitly links are being hijacked",
     "summary": "A report says old Bitly short links — including one in a past Burger King tweet — are being taken over so they now point to different, unintended destinations.",
@@ -437,6 +381,54 @@
     "summary": "Previously covered on 2026-11-21: Thinking Machines released Inkling 2 Mini, an open model built to run locally.",
     "source_urls": [
       "https://github.com/ShinMegamiBoson/lookatmyquant"
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "title": "llama.cpp hits version 1.0, a milestone for AI that runs on your own computer",
+    "summary": "llama.",
+    "source_urls": [
+      "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "title": "Rumble-2-Flash: a tiny open speech model for 40+ languages",
+    "summary": "Hugging Face introduced Rumble-2-Flash, an open speech model that handles more than 40 languages.",
+    "source_urls": [
+      "https://huggingface.co/blog/rumble-2-flash"
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "title": "GitHub had four times as many outages in October as in September",
+    "summary": "GitHub's monthly availability report counts eight incidents that degraded its services in October, up from two in September.",
+    "source_urls": [
+      "https://github.blog/news-insights/company-news/github-availability-report-october-2026/"
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "title": "GL.iNet issues a security notice for its routers",
+    "summary": "GL.",
+    "source_urls": [
+      "https://www.gl-inet.com/en-us/blogs/blog/glinet-security-notice-2026-11-20"
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "title": "A beginner's guide to running AI on your own machine",
+    "summary": "A new step-by-step guide walks newcomers through running local AI with Inkling, Qwen and Unsloth, three widely used open models and tools.",
+    "source_urls": [
+      "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth"
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "title": "Agent skills: write the instructions once, use them with any AI agent",
+    "summary": "GitHub published a practical guide to agent skills — files that capture a repeatable piece of work, such as a release checklist or a review routine, so an AI coding agent can follow it.",
+    "source_urls": [
+      "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/"
     ]
   }
 ]
