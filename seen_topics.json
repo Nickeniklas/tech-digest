@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-11-16",
-    "title": "Old Bitly links are being hijacked",
-    "summary": "A report says old Bitly short links — including one in a past Burger King tweet — are being taken over so they now point to different, unintended destinations.",
-    "source_urls": [
-      "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/"
-    ]
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Qwen4-Max is out",
-    "summary": "The Qwen team has published Qwen4-Max, the newest flagship model in its Qwen AI family.",
-    "source_urls": [
-      "https://qwen.ai/blog?id=qwen4-max"
-    ]
-  },
-  {
-    "date": "2026-11-16",
-    "title": "A Microsoft 365 outage is linked to chlorine gas exposure at a German hotel",
-    "summary": "German broadcaster WDR reports that 15 hotel guests at the Phantasialand resort were exposed to chlorine gas after a technical defect, which the widely shared headline ties to a Microsoft 365 outage.",
-    "source_urls": [
-      "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html"
-    ]
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Australian supermarket Coles hit by a cybersecurity incident",
-    "summary": "Coles, one of Australia's largest supermarket chains, has posted an update confirming a cybersecurity incident.",
-    "source_urls": [
-      "https://www.colesgroup.com.au/updates/"
-    ]
-  },
-  {
-    "date": "2026-11-16",
-    "title": "AI coding assistants decoded a 1994 Jeep's engine computer",
-    "summary": "A video shows Claude Code and Codex working out how a 1994 Jeep's engine control unit works, using a $3 Arduino board as the connection.",
-    "source_urls": [
-      "https://www.youtube.com/watch?v=WPj3aQ-xxpI"
-    ]
-  },
-  {
-    "date": "2026-11-16",
-    "title": "A cross-site scripting flaw in uBlock Origin",
-    "summary": "A security write-up describes a 'universal XSS' bug in uBlock Origin, the popular ad blocker, triggered through its element picker — the tool you use to click on and hide parts of a page.",
-    "source_urls": [
-      "https://iter.ca/post/ubo-uxss/"
-    ]
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
-    "summary": "Hugging Face's Open ASR Leaderboard, which ranks speech-recognition models (software that turns spoken audio into text), now includes Egyptian English and Nigerian English test sets.",
-    "source_urls": [
-      "https://huggingface.co/blog/open-asr-leaderboard-liva"
-    ]
-  },
-  {
     "date": "2026-11-17",
     "title": "Hugging Face and OpenRouter team up to make open AI models easy to use",
     "summary": "Hugging Face, where nearly every major open-weight AI model is published, is partnering with OpenRouter, a service that runs those models at scale and routes each request across more than 80 providers based on live measurements of how each one is performing.",
@@ -429,6 +373,62 @@
     "summary": "GitHub published a practical guide to agent skills — files that capture a repeatable piece of work, such as a release checklist or a review routine, so an AI coding agent can follow it.",
     "source_urls": [
       "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/"
+    ]
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Claude gets a zero data retention option for enterprises, now in beta",
+    "summary": "Anthropic has put zero data retention with Enterprise Frontier Safeguards into beta.",
+    "source_urls": [
+      "https://claude.com/resources/articles/zero-data-retention-with-enterprise-frontier-safeguards"
+    ]
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Kagi launches a paid email service in public beta",
+    "summary": "Kagi, the company behind the ad-free, subscription search engine, has opened Kagi Mail to the public as a beta.",
+    "source_urls": [
+      "https://blog.kagi.com/kagi-mail-public-beta"
+    ]
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Stalwart now works as a drop-in replacement for Microsoft Exchange",
+    "summary": "Stalwart, an open-source mail server, says it can now stand in directly for Microsoft Exchange, the system many organisations run their email and calendars on.",
+    "source_urls": [
+      "https://stalw.art/blog/microsoft-exchange-replacement/"
+    ]
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Ladybird, a web browser built from scratch, reaches alpha",
+    "summary": "Ladybird, an independent browser that doesn't reuse Chrome's or Firefox's engine, is now in alpha — an early version for testing.",
+    "source_urls": [
+      "https://ladybird.org/posts/alpha/"
+    ]
+  },
+  {
+    "date": "2026-11-24",
+    "title": "A 27-billion-parameter AI model shrunk into a 10 GB file",
+    "summary": "Nari Labs released NariQ, a compressed version of the open Qwen3.",
+    "source_urls": [
+      "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF"
+    ]
+  },
+  {
+    "date": "2026-11-24",
+    "title": "How to build an evaluation that keeps up with AI agents",
+    "summary": "Hugging Face published a guide to building and maintaining agentic evaluations — tests that give an AI agent tasks, check its answers or actions, and produce a score.",
+    "source_urls": [
+      "https://huggingface.co/blog/agentic-evals"
+    ]
+  },
+  {
+    "date": "2026-11-24",
+    "title": "RoboTrack: teaching robots to keep their eye on the object",
+    "summary": "AllenAI introduced RoboTrack, a point-tracking system for real-world robotic manipulation.",
+    "source_urls": [
+      "https://huggingface.co/blog/allenai/robotrack"
     ]
   }
 ]
