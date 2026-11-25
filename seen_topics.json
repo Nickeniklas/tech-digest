@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-11-17",
-    "title": "Hugging Face and OpenRouter team up to make open AI models easy to use",
-    "summary": "Hugging Face, where nearly every major open-weight AI model is published, is partnering with OpenRouter, a service that runs those models at scale and routes each request across more than 80 providers based on live measurements of how each one is performing.",
-    "source_urls": [
-      "https://huggingface.co/blog/openrouter"
-    ]
-  },
-  {
-    "date": "2026-11-17",
-    "title": "Report: Windows 11 tracks which AI coding tools you use",
-    "summary": "A developer's blog post, widely discussed on Hacker News, says Windows 11 collects data on which coding agents and developer tools are installed and used on a machine.",
-    "source_urls": [
-      "https://xusheng.dev/posts/windows-coding-agent-telemetry/"
-    ]
-  },
-  {
-    "date": "2026-11-17",
-    "title": "Optimizely breach served malware on major sites, including Zoom and GitLab",
-    "summary": "Report URI says Optimizely — a widely used tool companies add to their websites to test different page designs — was compromised and used to deliver malware through brands such as Zoom and GitLab.",
-    "source_urls": [
-      "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/"
-    ]
-  },
-  {
-    "date": "2026-11-17",
-    "title": "Carnegie Mellon puts computer science courses on YouTube for free",
-    "summary": "Carnegie Mellon University, one of the top computer science schools in the US, is publishing its computer science courses on YouTube at no cost.",
-    "source_urls": [
-      "https://www.cs.cmu.edu/learn/"
-    ]
-  },
-  {
-    "date": "2026-11-17",
-    "title": "Anthropic maps out possible futures for an AI economy",
-    "summary": "Anthropic published 'Scenarios for our economic future', starting from an honest premise: nobody yet knows whether AI will bring unprecedented growth, widespread unemployment, neither, or something else.",
-    "source_urls": [
-      "https://www.anthropic.com/institute/econ-scenarios"
-    ]
-  },
-  {
-    "date": "2026-11-17",
-    "title": "GitHub rebuilds Git storage so thousands of AI agents can work in one project",
-    "summary": "GitHub described a new architecture for storing Git repositories, built so that thousands of AI agents can push changes to a single repository at the same time.",
-    "source_urls": [
-      "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/"
-    ]
-  },
-  {
     "date": "2026-11-18",
     "title": "Anthropic releases Claude Fable 5.2 and Claude Mythos 5.2",
     "summary": "Anthropic upgraded its two most capable models, Claude Fable 5.",
@@ -429,6 +381,62 @@
     "summary": "AllenAI introduced RoboTrack, a point-tracking system for real-world robotic manipulation.",
     "source_urls": [
       "https://huggingface.co/blog/allenai/robotrack"
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "title": "A paper claims matrix multiplication can be done far faster than anyone had shown",
+    "summary": "A preprint posted in OpenAI's public math repository claims that multiplying two large grids of numbers (matrices) can be done in roughly n^2.",
+    "source_urls": [
+      "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf"
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "title": "OpenAI says GPT-6 models can design proteins without special training",
+    "summary": "OpenAI reports that its GPT-6 models show built-in ability to design proteins, the molecules that do most of the work inside living cells.",
+    "source_urls": [
+      "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/"
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "title": "Anthropic maps out scenarios for how AI could reshape the economy",
+    "summary": "Anthropic published a set of possible economic futures — from rapid growth to widespread job loss, or neither — and the signs that would tell you which one is unfolding.",
+    "source_urls": [
+      "https://www.anthropic.com/institute/econ-scenarios"
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "title": "Sandboxed AI models can still pass messages to each other",
+    "summary": "A new write-up shows that AI models locked inside separate sandboxes can still communicate through the shared servers that run them.",
+    "source_urls": [
+      "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being"
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "title": "Hackers are actively targeting Check Point security servers",
+    "summary": "Security firm GreyNoise reports an active intrusion campaign against Check Point's management servers, which many companies use to control their firewalls.",
+    "source_urls": [
+      "https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign"
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "title": "Running an AI model across 5,600 cloud functions — at 80x negative profit",
+    "summary": "A developer split the open Qwen model across about 5,600 AWS Lambda functions — small, pay-per-second cloud programs — to serve it without renting a GPU.",
+    "source_urls": [
+      "https://noahbuilt.it/writing/qwen-on-5600-lambdas"
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "title": "Teaching a small walking robot to dodge obstacles in simulation first",
+    "summary": "NVIDIA published a tutorial on adding obstacle avoidance to Microduck, a small walking robot, without retraining how it walks.",
+    "source_urls": [
+      "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance"
     ]
   }
 ]
