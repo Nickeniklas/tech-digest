@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-11-19",
-    "title": "Google releases Gemini 4 Neon",
-    "summary": "Google has introduced Gemini 4 Neon, the newest model in its Gemini AI family, a week after it announced Gemini 4 Hydrogen.",
-    "source_urls": [
-      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
-    ]
-  },
-  {
-    "date": "2026-11-19",
-    "title": "AI agents asked better questions than KPMG accountants in an audit trial",
-    "summary": "European Business Magazine reports on an audit trial in which AI agents asked better questions than KPMG's human accountants.",
-    "source_urls": [
-      "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/"
-    ]
-  },
-  {
-    "date": "2026-11-19",
-    "title": "Microsoft unveils seven new AI models at Ignite",
-    "summary": "At its Ignite 2026 conference, Microsoft announced seven new AI models, pitched on 'scalable price-performance': a range of sizes, so businesses can pay less for simpler tasks.",
-    "source_urls": [
-      "https://microsoft.ai/news/microsoft-ignite-2026/"
-    ]
-  },
-  {
-    "date": "2026-11-19",
-    "title": "Serious security flaws found in Nginx, a common web server",
-    "summary": "Security firm Wiz reports flaws in Nginx, the software that serves a large share of the world's websites, that could let attackers run their own code without logging in.",
-    "source_urls": [
-      "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities"
-    ]
-  },
-  {
-    "date": "2026-11-19",
-    "title": "How AI helps turn field notes into Ebola situation reports",
-    "summary": "Anthropic published a feature on the Ebola response in the eastern Democratic Republic of the Congo, where health workers text their daily counts of fevers, recoveries, and deaths over WhatsApp.",
-    "source_urls": [
-      "https://www.anthropic.com/features/ebola-response"
-    ]
-  },
-  {
-    "date": "2026-11-19",
-    "title": "DaisyRose-27B: a strong agent model trained on a small budget",
-    "summary": "RadixArk released DaisyRose-27B, its first model, built on Qwen3.",
-    "source_urls": [
-      "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin"
-    ]
-  },
-  {
-    "date": "2026-11-19",
-    "title": "Running a 180-billion-parameter model on 32GB of RAM",
-    "summary": "Hugging Face shows how to run a 180-billion-parameter 'mixture of experts' model, one that switches on only a few specialist sub-networks for each word, on a machine with just 32GB of memory.",
-    "source_urls": [
-      "https://huggingface.co/blog/moe-expert-streaming"
-    ]
-  },
-  {
     "date": "2026-11-20",
     "title": "Claude solves two open problems in black hole physics",
     "summary": "Anthropic reports that Claude, its AI model, solved two open problems in the physics of black holes — questions researchers had not yet answered.",
@@ -437,6 +381,62 @@
     "summary": "Researchers disclosed CVE-2026-99362, a bug in the Linux kernel's NFS server — the part that shares folders over a network.",
     "source_urls": [
       "https://opensec.in/blog/nfs2root-cve-2026-99362"
+    ]
+  },
+  {
+    "date": "2026-11-27",
+    "title": "The Situation Report: Anthropic on AI in an Ebola response",
+    "summary": "Anthropic published a feature on the Ebola response in Butembo, in the eastern Democratic Republic of the Congo, where community health workers text daily notes on fevers, recoveries and deaths over WhatsApp.",
+    "source_urls": [
+      "https://www.anthropic.com/features/ebola-response"
+    ]
+  },
+  {
+    "date": "2026-11-27",
+    "title": "Google will route AI agents through its own Workspace connectors — and the Gmail one can't send email",
+    "summary": "Google plans to make AI agents use its own MCP servers, the official connectors that let AI tools reach Gmail, Docs and other Workspace apps.",
+    "source_urls": [
+      "https://techstackups.com/articles/google-workspace-ai-agents-mcp/"
+    ]
+  },
+  {
+    "date": "2026-11-27",
+    "title": "Google Play will show solo developers' phone numbers and addresses",
+    "summary": "Google says it will display the phone numbers and addresses of Android developers who publish apps as individuals.",
+    "source_urls": [
+      "https://support.google.com/googleplay/android-developer/answer/17594752?hl=en"
+    ]
+  },
+  {
+    "date": "2026-11-27",
+    "title": "Hugging Face and OpenRouter team up on open models",
+    "summary": "Hugging Face, the largest hub for open AI models, is partnering with OpenRouter, a service that gives you one account for many AI providers.",
+    "source_urls": [
+      "https://huggingface.co/blog/openrouter"
+    ]
+  },
+  {
+    "date": "2026-11-27",
+    "title": "AI agents now manage part of DeepMind's computing power",
+    "summary": "The Decoder reports that AI agents now control part of the computing resources Google DeepMind uses for Gemini experiments.",
+    "source_urls": [
+      "https://the-decoder.com/ai-agents-now-control-part-of-deepminds-compute-for-gemini-experiments-but-recursive-self-improvement-remains-distant/"
+    ]
+  },
+  {
+    "date": "2026-11-27",
+    "title": "A benchmark dashboard for running AI locally on AMD hardware",
+    "summary": "The llama.",
+    "source_urls": [
+      "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench"
+    ]
+  },
+  {
+    "date": "2026-11-27",
+    "title": "NVIDIA opens up data and fine-tuning for its document-reading model",
+    "summary": "NVIDIA followed up on Nemotron 3.",
+    "source_urls": [
+      "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin"
     ]
   }
 ]
