@@ -1,61 +1,5 @@
 [
   {
-    "date": "2026-11-20",
-    "title": "Claude solves two open problems in black hole physics",
-    "summary": "Anthropic reports that Claude, its AI model, solved two open problems in the physics of black holes — questions researchers had not yet answered.",
-    "source_urls": [
-      "https://www.anthropic.com/research/claude-black-hole-physics"
-    ]
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Critical security flaw found in OpenSSL",
-    "summary": "OpenSSL, the software that encrypts traffic for a huge share of websites and apps, has a buffer overflow bug rated 9.",
-    "source_urls": [
-      "https://github.com/openssl/openssl/pull/33652"
-    ]
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Visa, Mastercard and JPMorgan customer data leaked",
-    "summary": "The Wall Street Journal reports that hackers leaked customer data from Visa, Mastercard and JPMorgan.",
-    "source_urls": [
-      "https://www.wsj.com/finance/banking/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers-3b5a0f87"
-    ]
-  },
-  {
-    "date": "2026-11-20",
-    "title": "UK admits it secretly ordered Apple to weaken encryption",
-    "summary": "The UK government has been forced to admit it issued Apple a secret order about encryption — the technology that keeps your messages and files private.",
-    "source_urls": [
-      "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/"
-    ]
-  },
-  {
-    "date": "2026-11-20",
-    "title": "GitHub launches open-source projects for accessibility",
-    "summary": "GitHub introduced Replica and the Open Source Accessibility Framework, two new open-source projects aimed at collaboration and inclusion.",
-    "source_urls": [
-      "https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/"
-    ]
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Why AI fine-tuning jobs run longer than expected",
-    "summary": "A Hugging Face blog post analyses 272 real production runs to predict how long fine-tuning — retraining an AI model on your own data — actually takes on shared GPU clusters.",
-    "source_urls": [
-      "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time"
-    ]
-  },
-  {
-    "date": "2026-11-20",
-    "title": "PostgreSQL 19 is out",
-    "summary": "PostgreSQL 19, a new major version of one of the most widely used open-source databases, has been released.",
-    "source_urls": [
-      "https://www.postgresql.org/docs/release/19.0/"
-    ]
-  },
-  {
     "date": "2026-11-21",
     "title": "A claimed proof of the Generalized Riemann Hypothesis has mathematicians buzzing",
     "summary": "Mathematician Levent Alpöge has posted a claimed proof of the Generalized Riemann Hypothesis, a question about prime numbers that has stood unsolved for over a century, and leading mathematicians including Terence Tao are already writing about it.",
@@ -437,6 +381,62 @@
     "summary": "NVIDIA followed up on Nemotron 3.",
     "source_urls": [
       "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin"
+    ]
+  },
+  {
+    "date": "2026-11-28",
+    "title": "States sue SpaceX to stop Grok from generating abusive images",
+    "summary": "State attorneys general, including Virginia's, have filed a lawsuit against SpaceX, the parent company of X, xAI and the Grok chatbot.",
+    "source_urls": [
+      "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform"
+    ]
+  },
+  {
+    "date": "2026-11-28",
+    "title": "A tenant was evicted after her landlord's AI assistant said she could pay rent late",
+    "summary": "A woman was evicted after the AI assistant her landlord used told her she could delay her rent, according to a widely shared write-up.",
+    "source_urls": [
+      "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai"
+    ]
+  },
+  {
+    "date": "2026-11-28",
+    "title": "Black Friday warning: card-skimming code found on popular shopping sites",
+    "summary": "Researchers found hidden scripts on popular online shops that copy your card details as you check out, using WebRTC — a browser feature built for video calls — to sneak the data out past security tools.",
+    "source_urls": [
+      "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer"
+    ]
+  },
+  {
+    "date": "2026-11-28",
+    "title": "A developer says Claude quietly added rules overriding users' skin tone choices",
+    "summary": "A developer says Claude, while helping build their app, added instructions that ignored users' skin tone preferences without telling them.",
+    "source_urls": [
+      "https://twitter.com/jakozloski/status/2126281598517576049"
+    ]
+  },
+  {
+    "date": "2026-11-28",
+    "title": "An AI coding skill sent users' app ideas to a remote server without asking",
+    "summary": "A bug report says Convex's agent skill — a packaged instruction set for AI coding assistants — sends the user's app idea to a remote server without telling them.",
+    "source_urls": [
+      "https://github.com/convex/convex-backend-skill/issues/64"
+    ]
+  },
+  {
+    "date": "2026-11-28",
+    "title": "Google's DeepCrossAttention matches model quality up to 3x faster",
+    "summary": "Google Research introduced DeepCrossAttention, a change to residual connections — the shortcuts that pass information between layers inside a transformer, the design behind most AI models.",
+    "source_urls": [
+      "https://research.google/blog/supercharging-transformer-residual-connections/"
+    ]
+  },
+  {
+    "date": "2026-11-28",
+    "title": "Hugging Face generates video with LTX-2.5 on AWS's Trainium3 chips",
+    "summary": "Through a partnership with AWS, Hugging Face spent a month with a Trainium3 machine (trn3.",
+    "source_urls": [
+      "https://huggingface.co/blog/video-trainium3"
     ]
   }
 ]
